@@ -1,0 +1,103 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/wargames_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/alerts.png", "x": 19, "y": 18, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": 4, "y": 5, "recolor_palette": "red" },
+        { "image_path": "assets/dashboard/alerts.png", "x": 19, "y": 18, "recolor_palette": "white" },
+        { "text": "ALERTS", "x": -211, "y":  92, "text_size": "large", "text_color_palette": "red" }
+      ],
+      "x": 263,
+      "y": 79,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/payloads.png", "x": 23, "y": 18, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "red" },
+        { "image_path": "assets/dashboard/payloads.png", "x": 23, "y": 18,  "recolor_palette": "white" },
+        { "text": "PAYLOADS", "x": -247, "y":  55, "text_size": "large", "text_color_palette": "red" }
+      ],
+      "x": 299,
+      "y": 116,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/recon.png", "x": 19, "y": 22, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "red"  },
+        { "image_path": "assets/dashboard/recon.png", "x": 19, "y": 22, "recolor_palette": "white"  },
+        { "text": "RECON", "x": -283, "y":  91, "text_size": "large", "text_color_palette": "red" }
+      ],
+      "x": 335,
+      "y": 80,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/pineap.png", "x": 19, "y": 19, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "red"  },
+        { "image_path": "assets/dashboard/pineap.png", "x": 19, "y": 19, "recolor_palette": "white"  },
+        { "text": "PINEAP", "x": -321, "y":  55, "text_size": "large", "text_color_palette": "red" }
+      ],
+      "x": 373,
+      "y": 115,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/settings.png", "x": 19, "y": 19, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "red" },
+        { "image_path": "assets/dashboard/settings.png", "x": 19, "y": 19, "recolor_palette": "white" },
+        { "text": "SETTINGS", "x": -358, "y":  90, "text_size": "large", "text_color_palette": "red" }
+      ],
+      "x": 410,
+      "y": 80,
+      "target": "settings_menu"
+    }
+  ]
+}
