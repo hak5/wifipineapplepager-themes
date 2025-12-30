@@ -1,0 +1,10 @@
+{
+ "animation": {
+    "frames": [
+        { "image_path": "assets/boot_animation/init-1.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-2.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-3.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-4.png","x": 0, "y": 0 }
+    ]
+ }
+}
