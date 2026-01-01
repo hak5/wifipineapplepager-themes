@@ -47,6 +47,7 @@ Join the community on **[Hak5 Discord](https://hak5.org/discord)**
 
 - [About the WiFi Pineapple Pager](#about-the-wifi-pineapple-pager)
 - [About Pager Themes](#about-pager-themes)
+- [Installing Pager Themes](#installing-pager-themes)
 - [Contributing Themes](#contributing-themes)
 - [Theme Guidelines](#theme-guidelines)
 - [Legal](#legal)
@@ -105,6 +106,10 @@ Themes are loaded dynamically by the Pager UI framework and can be switched at r
 Themes in this repository are the **source assets** used directly by the device — **no compilation required**.
 
 ---
+
+## Installing Pager Themes
+
+To install a new theme, simply copy it to `/root/themes/`, or `/mmc/root/themes/` (Create the `themes` directory if it doesn't exist yet).
 
 ## Contributing Themes
 
