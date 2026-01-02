@@ -1,8 +1,0 @@
-{
-  "enabled": [
-    { "text": "Allow", "text_size": "medium", "text_color_palette": "disabled_light_gray" }
-  ],
-  "disabled": [
-    { "text": "Deny", "text_size": "medium", "text_color_palette": "disabled_light_gray" }
-  ]
-}
