@@ -26,12 +26,12 @@
             "id": "Slot0",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 76, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 78, "recolor_palette": "magenta" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 78 },
               { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "medium_gray" }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 76, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 78, "recolor_palette": "magenta" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 78 },
               { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "medium_gray" }
             ],
             "target": "launch_payload_dialog",
@@ -41,11 +41,11 @@
             "id": "Slot1",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 103, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 105,"recolor_palette": "magenta"  }
+              { "image_path": "assets/flame.png", "x": 64, "y": 105  }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 103, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 105,"recolor_palette": "magenta"  }
+              { "image_path": "assets/flame.png", "x": 64, "y": 105  }
             ],
             "target": "launch_payload_dialog",
             "variable": "$_LIST_ITEM"
@@ -54,11 +54,11 @@
             "id": "Slot2",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 130, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 132,"recolor_palette": "magenta"  }
+              { "image_path": "assets/flame.png", "x": 64, "y": 132  }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 130, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 132,"recolor_palette": "magenta"  }
+              { "image_path": "assets/flame.png", "x": 64, "y": 132  }
             ],
             "target": "launch_payload_dialog",
             "variable": "$_LIST_ITEM"
@@ -67,12 +67,12 @@
             "id": "Slot3",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 157, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 160,"recolor_palette": "magenta"  },
+              { "image_path": "assets/flame.png", "x": 64, "y": 160  },
               { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette":  "medium_gray"}
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 84, "y": 157, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 160,"recolor_palette": "magenta"  },
+              { "image_path": "assets/flame.png", "x": 64, "y": 160  },
               { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette":  "medium_gray"}
             ],
             "target": "launch_payload_dialog",

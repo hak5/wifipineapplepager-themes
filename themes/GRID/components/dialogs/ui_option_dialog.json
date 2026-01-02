@@ -112,13 +112,13 @@
             "layers": [
               { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 36 },
               { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 36 },
-              { "image_path": "assets/optiondialog/check.png", "x": 418, "y": 62 },
+              { "image_path": "assets/optiondialog/check.png", "x": 412, "y": 50 },
               { "_comment": "this is just a required cache busting hack", "variable_name": "$_LIST_ITEM" }
             ],
             "selected_layers": [
-              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 36, "recolor_palette": "green" },
-              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 36, "recolor_palette": "black" },
-              { "image_path": "assets/optiondialog/check.png", "x": 418, "y": 62, "recolor_palette": "black" },
+              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 36, "recolor_palette": "black" },
+              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 36, "recolor_palette": "green" },
+              { "image_path": "assets/optiondialog/check.png", "x": 412, "y": 50 },
               { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
             ],
             "target": "save",
@@ -136,13 +136,13 @@
             "layers": [
               { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 118 },
               { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 118 },
-              { "image_path": "assets/optiondialog/x.png", "x": 423, "y": 146 },
+              { "image_path": "assets/optiondialog/x.png", "x": 412, "y": 135 },
               { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
             ],
             "selected_layers": [
-              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 118, "recolor_palette": "red" },
-              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 118, "recolor_palette": "black" },
-              { "image_path": "assets/optiondialog/x.png", "x": 423, "y": 146, "recolor_palette": "black" },
+              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 118, "recolor_palette": "black" },
+              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 118, "recolor_palette": "red" },
+              { "image_path": "assets/optiondialog/x.png", "x": 412, "y": 135},
               { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
             ],
             "target": "back",

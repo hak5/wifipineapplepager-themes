@@ -16,7 +16,7 @@
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
       { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "yellow" },
+      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "red" },
       { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" },
       { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "gray" },
       { "text": "System",   "x": 10, "y": 190, "text_color_palette": "gray" }
@@ -32,11 +32,11 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "blue" }
+            { "text": "Brightness", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Brightness", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_BRIGHTNESS"
@@ -47,11 +47,11 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "blue" }
+            { "text": "Screen Timeout", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Screen Timeout", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog",
           "variable": "$_SCREEN_OFF_TIMEOUT"
@@ -62,11 +62,11 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "blue" }
+            { "text": "Dim Brightness", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Dim Brightness", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_DIM_BRIGHTNESS"
@@ -77,11 +77,11 @@
           "y":155,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "blue" }
+            { "text": "Dim Timeout", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Dim Timeout", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog",
           "variable": "$_SCREEN_DIM_TIMEOUT"

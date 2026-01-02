@@ -44,10 +44,10 @@
           "x":226,
           "y":62,
           "layers": [
-            { "text": "Connected Clients", "text_color_palette": "blue" }
+            { "text": "Connected Clients", "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Connected Clients", "text_color_palette": "yellow" }
+            { "text": "Connected Clients", "text_color_palette": "red" }
           ],
           "target": "recon_ap_clients_list"
         },
@@ -56,10 +56,10 @@
           "x":226,
           "y":95,
           "layers": [
-            { "text": "Targeted Payload", "text_color_palette": "blue" }
+            { "text": "Targeted Payload", "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Targeted Payload", "text_color_palette": "yellow" }
+            { "text": "Targeted Payload", "text_color_palette": "red" }
           ],
           "target": "recon_payload_dashboard",
           "variable": "$_RECON_PAYLOAD_CATEGORIES"
@@ -69,10 +69,10 @@
           "x":226,
           "y":128,
           "layers": [
-            { "text": "Add SSID to Filters", "text_color_palette": "blue" }
+            { "text": "Add SSID to Filters", "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Add SSID to Filters", "text_color_palette": "yellow" }
+            { "text": "Add SSID to Filters", "text_color_palette": "red" }
           ],
           "target": "function_add_selected_ap_ssid_to_filters"
         },
@@ -81,10 +81,10 @@
           "x":226,
           "y":161,
           "layers": [
-            { "text": "Add SSID to Pool", "text_color_palette": "blue" }
+            { "text": "Add SSID to Pool", "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Add SSID to Pool", "text_color_palette": "yellow" }
+            { "text": "Add SSID to Pool", "text_color_palette": "red" }
           ],
           "target": "function_add_selected_ap_ssid_to_pool"
         },
@@ -93,10 +93,10 @@
           "x":226,
           "y":194,
           "layers": [
-            { "text": "Deauth All Clients", "text_color_palette": "blue" }
+            { "text": "Deauth All Clients", "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Deauth All Clients", "text_color_palette": "yellow" }
+            { "text": "Deauth All Clients", "text_color_palette": "red" }
           ],
           "target": "function_selected_ap_deauth_all_clients"
         }

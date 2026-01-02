@@ -1,0 +1,102 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/background.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "layers": [
+      ],
+      "selected_layers": [
+        { "text": "PINEAP", "x": 85, "y":  38, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "SETTINGS", "x": 88, "y":  76, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "image_path": "assets/dashboard/alerts.png", "x": 60, "y": 113 },
+        { "text": "ALERTS", "x": 98, "y":  113, "text_size": "large", "text_color_palette": "red" },
+        { "text": "PAYLOADS", "x": 86, "y":  161, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "RECON", "x": 80, "y":  195, "text_size": "medium", "text_color_palette": "soft_white" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+      ],
+      "selected_layers": [
+        { "text": "SETTINGS", "x": 85, "y":  38, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "ALERTS", "x": 88, "y":  76, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "image_path": "assets/dashboard/payloads.png", "x": 60, "y": 113},
+        { "text": "PAYLOADS", "x": 98, "y":  113, "text_size": "large", "text_color_palette": "red" },
+        { "text": "RECON", "x": 86, "y":  161, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "PINEAP", "x": 80, "y":  195, "text_size": "medium", "text_color_palette": "soft_white" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+      ],
+      "selected_layers": [
+        { "text": "ALERTS", "x": 85, "y":  38, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "PAYLOADS", "x": 88, "y":  76, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "image_path": "assets/dashboard/recon.png", "x": 60, "y": 113 },
+        { "text": "RECON", "x": 98, "y":  113, "text_size": "large", "text_color_palette": "red" },
+        { "text": "PINEAP", "x": 86, "y":  161, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "SETTINGS", "x": 80, "y":  195, "text_size": "medium", "text_color_palette": "soft_white" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+      ],
+      "selected_layers": [
+        { "text": "PAYLOADS", "x": 85, "y":  38, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "RECON", "x": 88, "y":  76, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "PINEAP", "x": 98, "y":  113, "text_size": "large", "text_color_palette": "red" },
+        { "text": "SETTINGS", "x": 86, "y":  161, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "ALERTS", "x": 80, "y":  195, "text_size": "medium", "text_color_palette": "soft_white" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+      ],
+      "selected_layers": [
+        { "text": "RECON", "x": 85, "y":  38, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "PINEAP", "x": 88, "y":  76, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "image_path": "assets/dashboard/settings.png", "x": 60, "y": 113 },
+        { "text": "SETTINGS", "x": 98, "y":  113, "text_size": "large", "text_color_palette": "red" },
+        { "text": "ALERTS", "x": 86, "y":  161, "text_size": "medium", "text_color_palette": "soft_white" },
+        { "text": "PAYLOADS", "x": 80, "y":  195, "text_size": "medium", "text_color_palette": "soft_white" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "settings_menu"
+    }
+  ]
+}

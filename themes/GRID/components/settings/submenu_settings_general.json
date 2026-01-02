@@ -15,7 +15,7 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "yellow" },
+      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "red" },
       { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "gray" },
       { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" },
       { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "gray" },
@@ -32,11 +32,11 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Volume", "x": 40, "text_color_palette": "blue" }
+            { "text": "Volume", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Volume", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Volume", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_VOLUME"
@@ -47,11 +47,11 @@
           "y":85,
           "layers": [
             { "variable_name":  "$_VIBRATE", "use_template": "toggle" },
-            { "text": "Vibrate", "x": 40, "text_color_palette": "blue" }
+            { "text": "Vibrate", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "variable_name":  "$_VIBRATE", "use_template": "toggle" },
-            { "text": "Vibrate", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Vibrate", "x": 40, "text_color_palette": "red" }
           ],
           "target": "inline_toggle",
           "variable": "$_VIBRATE"
@@ -62,11 +62,11 @@
           "y":120,
           "layers": [
             { "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "toggle" },
-            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "blue" }
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "toggle" },
-            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "red" }
           ],
           "target": "inline_toggle",
           "variable": "$_RINGTONE_VIBRATE"
@@ -77,11 +77,11 @@
           "y":155,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Theme", "x": 40, "text_color_palette": "blue" }
+            { "text": "Theme", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Theme", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Theme", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog",
           "variable": "$_THEME"
@@ -92,11 +92,11 @@
           "y":190,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "D-Pad LED", "x": 40, "text_color_palette": "blue" }
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "D-Pad LED", "x": 40, "text_color_palette": "yellow" }
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "red" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_DPAD_LED_COLOR"
