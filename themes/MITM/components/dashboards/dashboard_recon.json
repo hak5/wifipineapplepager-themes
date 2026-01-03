@@ -1,0 +1,23 @@
+{
+  "background_path": "assets/recon/recon_dashboard.png",
+  "graph_width": 45,
+  "bar_w": 8,
+  "bar_gap": 1,
+  "x_start": 23,
+  "y_top": 92,
+  "y_bottom": 178,
+  "y_label_x": 440,
+  "y_label_y": 83,
+  "y_half_label_x": 440,
+  "y_half_label_y": 132,
+  "title_x": 20,
+  "title_y": 45,
+  "bar_color_palette": "blue",
+  "text_color_palette": "blue",
+  "debug_graph_bounds": false,
+  "debug_nice_max_line": false,
+  "tight_scale_bars": false,
+  "use_nice_labels": true,
+  "target_recon_list": "recon_list",
+  "status_bar": "recon"
+}

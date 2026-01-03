@@ -1,0 +1,148 @@
+{
+  "screen_name": "regulatory",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 28, "y": 0 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "reg1",
+          "selected_layers": [
+            {
+              "x":60, "y":60,
+              "text": "This device complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. Warning (Part 15.21) Changes or modifications not expressly approved by the party responsible for compliance could void the user’s authority to operate the equipment. RF Exposure (OET Bulletin 65) To comply with FCC RF exposure", 
+              "text_color_palette": "blue",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 13,
+              "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
+            },
+            { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 450, "y": 190 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "reg2",
+          "selected_layers": [
+            {
+              "x":60, "y":60,
+              "text": "requirements for mobile transmitting devices, this transmitter should only be used or installed at locations where there is at least 20cm separation distance between the antenna and all persons.  Information to the User - Part 15.105 (b) Note: This equipment has been tested and found to comply with the limits for a Class B digital device, pursuant to part 15 of the FCC Rules. These limits are designed to provide reasonable protection against harmful interference in a residential installation.", 
+              "text_color_palette": "blue",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 13,
+              "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
+            },
+            { "image_path": "assets/payloadlog/scroll_up_indicator.png",   "x": 450, "y": 30  },
+            { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 450, "y": 190 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "reg3",
+          "selected_layers": [
+            {
+              "x":60, "y":60,
+              "text": "This equipment generates, uses and can radiate radio frequency energy and, if not installed and used in accordance with the instructions, may cause harmful interference to radio communications. However, there is no guarantee that interference will not occur in a particular installation. If this equipment does cause harmful interference to radio or television reception, which can be determined by turning the equipment off and on, the user is encouraged to try to correct the interference", 
+              "text_color_palette": "blue",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 13,
+              "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
+            },
+            { "image_path": "assets/payloadlog/scroll_up_indicator.png",   "x": 450, "y": 30  },
+            { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 450, "y": 190 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "menu_items": [
+        {
+          "id": "reg4",
+          "selected_layers": [
+            {
+              "x":60, "y":60,
+              "text": " by one or more of the following measures: * Reorient or relocate the receiving antenna. * Increase the separation between the equipment and receiver. * Connect the equipment into an outlet on a circuit different from that to which the receiver is connected. * Consult the dealer or an experienced radio/TV technician for help. ", 
+              "text_color_palette": "blue",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 13,
+              "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
+            },
+            { "image_path": "assets/payloadlog/scroll_up_indicator.png",   "x": 450, "y": 30  }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
