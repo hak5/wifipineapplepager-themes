@@ -1,0 +1,205 @@
+{
+  "screen_name": "settings_datetime_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divright.png", "x": 140, "y": 50, "recolor_palette": "pngsettingsarrow" },
+	  { "text": "Settings", "text_size": "large", "text_color_palette": "textsettingstitle", "x": 5 },
+      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "textsettingsmenuselect" },
+      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "textsettingsgray" },
+      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "textsettingsgray" },
+      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "textsettingsgray" },
+      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "textsettingsgray" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Date/Time",
+          "x":170,
+          "y":50,
+          "unselectable": true,
+          "layers": [
+            { "variable_name": "$_DATETIME", "string_template":
+              { "text_size": "medium",
+                "text_color_palette": "textsettingsmenu",
+                "max_chars": 24,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "Timezone",
+          "x":170,
+          "y":85,
+          "layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Timezone", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Timezone", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_TIMEZONE"
+        },
+        {
+          "id": "Year",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Year", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Year", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_YEAR"
+        },
+        {
+          "id": "Month",
+          "x":170,
+          "y":155,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Month", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Month", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_MONTH"
+        },
+        {
+          "id": "Day",
+          "x":170,
+          "y":190,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Day", "x": 40, "text_color_palette": "textsettingsmenu" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "pngsettingsarrow"}
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Day", "x": 40, "text_color_palette": "textsettingsmenuselect" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "pngsettingsarrow"}
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_DAY"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Hour",
+          "x":170,
+          "y":50,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Hour", "x": 40, "text_color_palette": "textsettingsmenu" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "pngsettingsarrow"}
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Hour", "x": 40, "text_color_palette": "textsettingsmenuselect" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "pngsettingsarrow"}
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_HOUR"
+        },
+        {
+          "id": "Minute",
+          "x":170,
+          "y":85,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Minute", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Minute", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_MINUTE"
+        },
+        {
+          "id": "Second",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Second", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Second", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SECOND"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

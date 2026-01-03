@@ -1,0 +1,77 @@
+{
+  "screen_name": "settings_general_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": []
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Restart PineaAPd",
+          "layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 64 },
+            { "text": "Restart PineaAPd", "x": 216, "y": 60, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 64, "recolor_palette": "yellow"  },
+            { "text": "Restart PineaAPd", "x": 216, "y": 60, "text_color_palette": "yellow" }
+          ],
+          "target": "execute_restart_pineapd"
+        },
+        {
+          "id": "Restart Networking",
+          "layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 92 },
+            { "text": "Restart Networking", "x": 216, "y": 87, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 92, "recolor_palette": "yellow"  },
+            { "text": "Restart Networking", "x": 216, "y": 87, "text_color_palette": "yellow" }
+          ],
+          "target": "execute_restart_networking"
+        },
+        {
+          "id": "Restart Go",
+          "layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 120 },
+            { "text": "Restart Go", "x": 216, "y": 114, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 120, "recolor_palette": "yellow"  },
+            { "text": "Restart Go", "x": 216, "y": 114, "text_color_palette": "yellow" }
+          ],
+          "target": "execute_restart_go"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "launch test1",
+          "layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 64 },
+            { "text": "launch test1", "x": 216, "y": 60, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/triangle.png","x": 173, "y": 64, "recolor_palette": "yellow"  },
+            { "text": "launch test1", "x": 216, "y": 60, "text_color_palette": "yellow" }
+          ],
+          "target": "execute_payload_test1"
+        }
+      ]
+    }
+  ]
+}

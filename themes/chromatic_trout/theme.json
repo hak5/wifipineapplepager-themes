@@ -8,7 +8,8 @@
     "recon": "components/status_bars/status_bar_recon.json",
     "min": "components/status_bars/status_bar_min.json",
     "gps": "components/status_bars/status_bar_gps.json",
-    "green": "components/status_bars/status_bar_green.json"
+    "green": "components/status_bars/status_bar_green.json",
+    "settings": "components/status_bars/status_bar_settings.json"
   },
 
   "generic_menus": {

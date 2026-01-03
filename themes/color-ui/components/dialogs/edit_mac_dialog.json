@@ -1,0 +1,85 @@
+{
+  "screen_name": "edit_mac_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+	  { "image_path": "assets/edit_string_dialog_bg.png", "x": 6, "y": 17, "recolor_palette": "pngeditbg" },
+	  { "image_path": "assets/edit_string_dialog_bg_hlt.png", "x": 6, "y": 17, "recolor_palette": "pngeditbghlt" }
+    ]
+  },
+  "title_x": 29,
+  "title_y": 70,
+  "menu_items": [
+    {
+      "id": "Save",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107, "recolor_palette": "pngeditbutton" },
+        { "image_path": "assets/flame.png","x": 92, "y": 148, "recolor_palette": "pngediticonsaveselect" },
+        { "text": "Save", "x": 61, "y": 115, "text_color_palette": "texteditsave", "text_size": "large" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107, "recolor_palette": "pngeditbutton" },
+        { "image_path": "assets/flame.png","x": 92, "y": 148, "recolor_palette":  "pngediticonsaveselect" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 107, "recolor_palette": "pngeditbuttonsavehlt" },
+        { "text": "Save", "x": 61, "y": 115, "text_color_palette": "texteditsave", "text_size": "large" }
+      ],
+      "target": "save"
+    },
+    {
+      "id": "Edit",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107, "recolor_palette": "pngeditbutton" },
+        { "image_path": "assets/keyboard.png","x": 234, "y": 150, "recolor_palette": "pngediticoneditselect" },
+        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "texteditedit", "text_size": "large" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107, "recolor_palette": "pngeditbutton" },
+        { "image_path": "assets/keyboard.png","x": 234, "y": 150, "recolor_palette":  "pngediticoneditselect" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 107, "recolor_palette": "pngeditbuttonedithlt" },
+        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "texteditedit", "text_size": "large" }
+      ],
+      "target": "mac_keyboard",
+      "variable": "$_INPUT"
+    },
+    {
+      "id": "Cancel",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 315, "y": 107, "recolor_palette": "pngeditbutton" },
+        { "image_path": "assets/x.png","x": 376, "y": 150, "recolor_palette": "pngediticoncancelselect" },
+        { "text": "Cancel", "x": 338, "y": 115, "text_color_palette": "texteditcancel", "text_size": "large" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 315, "y": 107, "recolor_palette": "pngeditbutton" },
+        { "image_path": "assets/x.png","x": 376, "y": 150, "recolor_palette":  "pngediticoncancelselect" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 315, "y": 107, "recolor_palette": "pngeditbuttoncancelhlt" },
+        { "text": "Cancel", "x": 338, "y": 115, "text_color_palette": "texteditcancel", "text_size": "large" }
+      ],
+      "target": "back"
+    },
+    {
+      "id": "Title",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 40,
+          "y": 35,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "textedittitle"
+          }
+        },
+        {
+          "variable_name": "$_INPUT",
+          "x": 40,
+          "y": 65,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "textedittitle"
+          }
+        }
+      ]
+    }
+  ]
+}

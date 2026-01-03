@@ -1,0 +1,320 @@
+{
+  "screen_name": "developer_menu",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "uidebug",
+          "x": 110,
+          "y": 20,
+          "layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngdevicon" },
+            { "variable_name": "$_UI_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "UI Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngdeviconselect" },
+            { "variable_name": "$_UI_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "UI Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_UI_DEBUG_LOG",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "previous_page",
+            "right": "next_page"
+          }
+        },
+        {
+          "id": "renderdebug",
+          "x": 110,
+          "y": 55,
+          "layers": [
+            { "variable_name": "$_RENDER_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Render Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RENDER_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Render Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RENDER_DEBUG_LOG"
+        },
+        {
+          "id": "datadebug",
+          "x": 110,
+          "y": 90,
+          "layers": [
+            { "variable_name": "$_DATA_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Data Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_DATA_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Data Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_DATA_DEBUG_LOG"
+        },
+        {
+          "id": "eventdebug",
+          "x": 110,
+          "y": 125,
+          "layers": [
+            { "variable_name": "$_EVENT_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Event Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_EVENT_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Event Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_EVENT_DEBUG_LOG"
+        },
+        {
+          "id": "statsdebuglog",
+          "x": 110,
+          "y": 160,
+          "layers": [
+            { "variable_name": "$_STATS_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_STATS_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_STATS_DEBUG_LOG"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "isolatederror",
+          "x": 110,
+          "y": 20,
+          "layers": [
+            { "variable_name": "$_ISOLATED_ERROR_LOG", "use_template": "green_toggle" },
+            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_ISOLATED_ERROR_LOG", "use_template": "green_toggle" },
+            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_ISOLATED_ERROR_LOG"
+        },
+        {
+          "id": "cachedebug",
+          "x": 110,
+          "y": 55,
+          "layers": [
+            { "variable_name": "$_CACHE_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_CACHE_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CACHE_DEBUG_LOG"
+        },
+        {
+          "id": "servicedebug",
+          "x": 110,
+          "y": 90,
+          "layers": [
+            { "variable_name": "$_SERVICE_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Service Debug Log", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_SERVICE_DEBUG_LOG", "use_template": "green_toggle" },
+            { "text": "Service Debug Log", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_SERVICE_DEBUG_LOG"
+        },
+        {
+          "id": "backgroundchanges",
+          "x": 110,
+          "y": 125,
+          "layers": [
+            { "variable_name": "$_BACKGROUND_CHANGES", "use_template": "green_toggle" },
+            { "text": "Background Changes", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BACKGROUND_CHANGES", "use_template": "green_toggle" },
+            { "text": "Background Changes", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BACKGROUND_CHANGES"
+        },
+        {
+          "id": "trace",
+          "x": 110,
+          "y": 160,
+          "layers": [
+            { "variable_name": "$_TRACE", "use_template": "green_toggle" },
+            { "text": "Trace ", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_TRACE", "use_template": "green_toggle" },
+            { "text": "Trace ", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_TRACE",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "goto todisk",
+            "left": "goto tracedepth",
+            "right": "goto tracedepth"
+          }
+        },
+        {
+          "id": "tracedepth",
+          "x": 230,
+          "y": 160,
+          "layers": [
+            { "variable_name": "$_TRACE_DEPTH", "x": 120, "use_template": "string" },
+            { "text": "Depth:", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_TRACE_DEPTH", "x": 120, "use_template": "string" },
+            { "text": "Depth:", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_TRACE_DEPTH",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto backgroundchanges",
+            "down": "next",
+            "left": "goto trace",
+            "right": "goto trace"
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "todisk",
+          "x": 110,
+          "y": 20,
+          "layers": [
+            { "variable_name": "$_DEBUG_LOG_TO_DISK", "use_template": "green_toggle" },
+            { "text": "Write logs to disk", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_DEBUG_LOG_TO_DISK", "use_template": "green_toggle" },
+            { "text": "Write logs to disk", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_DEBUG_LOG_TO_DISK",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto trace",
+            "down": "next",
+            "left": "previous_page",
+            "right": "next_page"
+          }
+        },
+        {
+          "id": "restartserver",
+          "x": 110,
+          "y": 55,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdevicon"},
+            { "text": "Restart Server", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 2, "y": 2, "recolor_palette": "pngdeviconselect" },
+            { "text": "Restart Server", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "debug_function_restart_server"
+        },
+        {
+          "id": "restartpineap",
+          "x": 110,
+          "y": 90,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdevicon"},
+            { "text": "Restart PineAPd", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdeviconselect"},
+            { "text": "Restart PineAPd", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "debug_function_restart_pineap"
+        },
+        {
+          "id": "restartnetwork",
+          "x": 110,
+          "y": 125,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdevicon"},
+            { "text": "Restart Networking", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdeviconselect"},
+            { "text": "Restart Networking", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "debug_function_restart_networking"
+        },
+        {
+          "id": "restartpager",
+          "x": 110,
+          "y": 160,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdevicon"},
+            { "text": "Restart Device", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "pngdeviconselect"},
+            { "text": "Restart Device", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "debug_function_restart_device"
+        },
+        {
+          "id": "mirror",
+          "x": 110,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_MIRRORED_SCREEN", "use_template": "green_toggle" },
+            { "text": "Flip Screen", "x": 40, "text_color_palette": "textdev" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_MIRRORED_SCREEN", "use_template": "green_toggle" },
+            { "text": "Flip Screen", "x": 40, "text_color_palette": "textdevselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_MIRRORED_SCREEN"
+        }
+      ]
+    }
+  ]
+}

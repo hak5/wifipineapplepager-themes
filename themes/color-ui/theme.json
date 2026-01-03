@@ -1,0 +1,379 @@
+{
+  "theme_version": "1.0",
+  "theme_framework_version": "0.5",
+
+  "status_bars": {
+    "default": "components/status_bars/status_bar.json",
+    "network": "components/status_bars/status_bar_network.json",
+    "recon": "components/status_bars/status_bar_recon.json",
+    "min": "components/status_bars/status_bar_min.json",
+    "gps" : "components/status_bars/status_bar_gps.json"
+  },
+
+  "generic_menus": {
+    "tutorial": "components/tutorial.json",
+    "os_licenses": "components/os_licenses.json",
+    "management_ap_wizard": "components/management_ap_wizard.json",
+    "client_mode_wizard": "components/client_mode_wizard.json",
+    "evilwpa_wizard": "components/pineap/evilwpa_wizard.json",
+    "power_menu": "components/dashboards/power_menu.json",
+    "regulatory": "components/settings/regulatory.json",
+    "dashboard_path": "components/dashboards/wargames_dashboard.json",
+    "alerts_dashboard": "components/dashboards/dashboard_alerts.json",
+
+    "pineap_pineap_submenu": "components/pineap/submenu_pineap_pineap.json",
+    "pineap_evilwpa_submenu": "components/pineap/submenu_pineap_evilwpa.json",
+    "pineap_filters_submenu": "components/pineap/submenu_pineap_filters.json",
+    "pineap_openap_submenu": "components/pineap/submenu_pineap_openap.json",
+    "pineap_ssidpool_submenu": "components/pineap/submenu_pineap_ssidpool.json",
+
+    "settings_general_submenu": "components/settings/submenu_settings_general.json",
+    "settings_display_submenu": "components/settings/submenu_settings_display.json",
+    "settings_ringtone_submenu": "components/settings/submenu_settings_ringtone.json",
+    "settings_network_submenu": "components/settings/submenu_settings_network.json",
+    "settings_system_submenu": "components/settings/submenu_settings_system.json",
+    "settings_datetime_submenu": "components/settings/submenu_settings_datetime.json",
+    "settings_gps_submenu": "components/settings/submenu_settings_gps.json",
+    "settings_updates_submenu": "components/settings/submenu_settings_updates.json",
+    "settings_help_submenu": "components/settings/submenu_settings_help.json",
+    "settings_about_submenu": "components/settings/submenu_settings_about.json",
+
+    "recon_settings": "components/recon/recon_settings.json",
+    "recon_band_settings": "components/recon/recon_band_settings.json",
+    "recon_selected_ap_menu": "components/recon/recon_selected_ap_menu.json",
+    "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
+
+    "pineap_menu": "components/dashboards/dashboard_pineap.json",
+    "settings_menu": "components/dashboards/dashboard_settings.json"
+  },
+
+  "option_dialogs": {
+    "option_dialog":  "components/dialogs/ui_option_dialog.json",
+    "option_dialog_recon":  "components/dialogs/ui_option_dialog_recon.json",
+    "option_dialog_alerts":  "components/dialogs/ui_option_dialog_alerts.json",
+    "option_dialog_payloads":  "components/dialogs/ui_option_dialog_payloads.json",
+    "option_dialog_narrow":  "components/dialogs/ui_option_dialog_narrow.json"
+  },
+
+
+  "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
+  "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
+  "payloads_for_category_list_path": "components/payloads_for_category_list.json",
+  "payload_log_path": "components/payload_log.json",
+
+  "filter_list_path": "components/filter_list.json",
+  "pineap_ssid_pool_list_path": "components/pineap_ssid_pool_list.json",
+  "pineap_clients_list_path": "components/pineap/submenu_pineap_clients.json",
+
+  "alerts_dialog_submenu_path": "components/alert_payloads_for_category_list.json",
+
+  "low_battery_alert_path": "components/alerts/low_battery_alert.json",
+  "critical_battery_alert_path": "components/alerts/critical_battery_alert.json",
+
+  "error_dialog_path": "components/alerts/alert_error_dialog.json",
+  "alert_dialog_path": "components/alerts/alert_info_dialog.json",
+  "warning_dialog_path": "components/alerts/alert_warning_dialog.json",
+
+  "spinner_path": "components/spinner.json",
+  "boot_spinner_path": "components/boot_animation.json",
+
+  "keyboard_path": "components/keyboards/ui_keyboard.json",
+  "number_keyboard_path": "components/keyboards/ui_keyboard_numeric.json",
+  "ip_keyboard_path": "components/keyboards/ui_keyboard_ip.json",
+  "mac_keyboard_path": "components/keyboards/ui_keyboard_hex.json",
+
+  "recon_payloads_dashboard_path": "components/dashboards/dashboard_recon_payloads.json",
+  "recon_payloads_for_category_list_path": "components/recon_payloads_for_category_list.json",
+  "recon_dashboard_path": "components/dashboards/dashboard_recon.json",
+  "recon_lists": {
+    "recon_list": "components/recon/recon_results_list.json"
+  },
+  "recon_ap_clients_list_path": "components/recon/recon_ap_clients_list.json",
+
+  "edit_string_dialog_path": "components/dialogs/edit_string_dialog.json",
+  "edit_ip_dialog_path": "components/dialogs/edit_ip_dialog.json",
+  "edit_mac_dialog_path": "components/dialogs/edit_mac_dialog.json",
+  "edit_number_dialog_path": "components/dialogs/edit_number_dialog.json",
+
+  "confirmation_dialog_path": "components/dialogs/confirmation_dialog.json",
+
+  "setup_wizard_path": "components/setup_wizard.json",
+  "checking_for_updates_path": "components/check_for_updates.json",
+  "developer_menu_path": "components/developer_menu.json",
+  "lock_screen_path": "components/lock_screen.json",
+  "buttons_locked_screen_path": "components/buttons_locked_screen.json",
+  "device_too_hot_warning_path": "assets/warn_device_too_hot.png",
+  "device_dimming_screen_path": "assets/warn_device_dimming_screen.png",
+  "help_info_path": "assets/help_qr.png",
+  "license_info_path": "assets/license_qr.png",
+  "virtual_pager_info_path": "assets/virt_qr.png",
+
+  "toggle_templates" : {
+    "toggle": "components/templates/toggle.json",
+	"toggle_pineap": "components/templates/toggle_pineap.json",
+	"toggle_alert": "components/templates/toggle_alert.json",
+	"toggle_recon": "components/templates/toggle_recon.json",
+    "green_toggle": "components/templates/green_toggle.json",
+    "disabled_toggle": "components/templates/disabled_toggle.json",
+    "checkbox": "components/templates/checkbox.json",
+    "pineap_filter_mode": "components/templates/pineap_filter_mode.json",
+    "disabled_pineap_filter_mode": "components/templates/disabled_pineap_filter_mode.json"
+  },
+
+  "string_templates": {
+    "recon_payload_title": "components/templates/recon_payload_title.json",
+    "recon_payload_title_selected": "components/templates/recon_payload_title_selected.json",
+    "alert_payload_title": "components/templates/alert_payload_title.json",
+    "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
+    "client_ssid": "components/templates/client_ssid.json",
+    "client_ssid_selected": "components/templates/client_ssid_selected.json",
+    "client_mac": "components/templates/client_mac.json",
+    "client_mac_selected": "components/templates/client_mac_selected.json",
+    "timestamp": "components/templates/timestamp.json",
+    "spinner_text": "components/templates/spinner_text.json",
+    "string": "components/templates/string.json",
+    "payload_name": "components/templates/payload_name_in_list.json",
+    "payload_name_selected": "components/templates/payload_name_in_list_selected.json",
+    "alert_info_dialog_text": "components/templates/alert_info_dialog_text.json",
+    "string_title": "components/templates/string_title.json",
+	"string_title_recon": "components/templates/string_title_recon.json",
+    "selected_string": "components/templates/selected_string.json",
+    "error_text": "components/templates/error_text.json",
+    "confirmation_dialog_text": "components/templates/confirmation_dialog_text.json",
+    "option_dialog_string": "components/templates/option_dialog_string.json",
+    "option_dialog_string_selected": "components/templates/option_dialog_string_selected.json",
+	"option_dialog_string_recon": "components/templates/option_dialog_string_recon.json",
+    "option_dialog_string_selected_recon": "components/templates/option_dialog_string_selected_recon.json",
+    "ssid_pool_string": "components/templates/ssid_pool_string.json",
+    "ssid_pool_string_selected": "components/templates/ssid_pool_string_selected.json",
+    "network_filter_string": "components/templates/network_filter_string.json",
+    "network_filter_string_selected": "components/templates/network_filter_string_selected.json",
+    "payload_title": "components/templates/payload_title.json",
+    "list_count": "components/templates/list_count.json",
+    "list_page_total": "components/templates/list_page_total.json",
+    "list_page_current": "components/templates/list_page_total.json",
+    "list_pagination_label": "components/templates/list_pagination_label.json"
+  },
+
+  "radio_templates": {
+    "radio": "components/templates/radio.json",
+	"radio_recon": "components/templates/radio_recon.json",
+    "selected_radio": "components/templates/selected_radio.json",
+	"selected_radio_recon": "components/templates/selected_radio_recon.json"
+  },
+
+  "signal_templates": {
+    "signal": "components/templates/signal.json",
+    "selected_signal": "components/templates/selected_signal.json"
+  },
+
+  "color_palette":{
+	"pngstatusbar":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngstatusbaroff":{ "r":128, "g":128, "b":128, "_comment":"gray" },
+	
+	"pngpayloadicon":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pngpayloadiconselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpayload":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textpayloadselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpayloadtitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpayloadpagecounts":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	
+	"pngpayloadlaunchbg":{ "r":77, "g":45, "b":99, "_comment":"purpled" },
+	"pngpayloadlaunchhlt":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngpayloadlaunchimage":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngpayloadlaunchbutton":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngpayloadlaunchbuttonhltlaunch":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngpayloadlaunchbuttonhltcancel":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	"textpayloadlaunchtitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"testpayloadlaunchbutton":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	"pngpayloadcatbg":{ "r":77, "g":45, "b":99, "_comment":"purpled" },
+	"pngpayloadcatbghlt":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngpayloadcaticon":{ "r":0, "g":0, "b":0,"a":0, "_comment":"black" },
+	"pngpayloadcaticonselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpayloadcatmenu":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textpayloadcatmenuselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	
+	"pngpagelabels":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	
+	"pngmainicon":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngmainiconselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"pngmainhlt":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngmainitem":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textmaintitle":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	
+	"pngalertsub":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textalert":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textalertselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"textalerttitle":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"pngalertcatbg":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngalertcatbghlt":{ "r":2, "g":101, "b":2, "_comment":"greend" },
+	"textalertcatmenu":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textalertcatmenuselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"pngalertcatarrow":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngalerttogglelight":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngalerttoggledark":{ "r":2, "g":101, "b":2, "_comment":"greend" },
+	"textalertcatcount":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	
+	"pngpowersub":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpower":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpowerselect":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	
+	"pngsettingsarrow":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngsettingsicongray":{ "r":128, "g":128, "b":128, "_comment":"gray" },
+	"pngsettingsincon":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pngsettingsiconselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textsettingsgray":{ "r":128, "g":128, "b":128, "_comment":"gray" },
+	"textsettingsmenu":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textsettingsmenuselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textsettingstitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	
+	"pngtogglelight":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pngtoggledark":{ "r":77, "g":45, "b":99, "_comment":"purpled" },
+	
+	"pngtogglelightdev":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngtoggledarkdev":{ "r":15, "g":35, "b":75, "_comment":"navy" },
+	"pngdevicon":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngdeviconselect":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	"textdev":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"textdevselect":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	
+	"pngediticonsaveselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngediticoneditselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"pngediticoncancelselect":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	"pngeditbg":{ "r":77, "g":45, "b":99, "_comment":"purpled" },
+	"pngeditbghlt":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngeditbutton":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngeditbuttonsavehlt":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngeditbuttonedithlt":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"pngeditbuttoncancelhlt":{ "r":250, "g":72, "b":9, "_comment":"red" },	
+	"textedittitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"texteditsave":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"texteditedit":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"texteditcancel":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	
+	"pngpineaparrow":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngpineapicongray":{ "r":128, "g":128, "b":128, "_comment":"gray" },
+	"pngpineapincon":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pngpineapiconselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngtogglepineaplight":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pngtogglepineapdark":{ "r":77, "g":45, "b":99, "_comment":"purpled" },
+	"textpineapgray":{ "r":128, "g":128, "b":128, "_comment":"gray" },
+	"textpineapmenu":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textpineapmenuselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpineaptitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	
+	"pngpineapwizardwpatitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpineapwizardmenu":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textpineapwizardmenuselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngpineapwizardicon":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pngpineapwizardiconselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngpineapewizardbg":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngpineapwizardhlt":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpineapwizardsaveselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textpineapwizardclearselect":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	
+	"pnguidialogarrow":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pnguidialogicon":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"pnguidialogbg":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pnguidialogbghlt":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	"pnguidialogbuttonbggreen":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pnguidialogbuttonbggreenselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pnguidialogbuttonbgred":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	"pnguidialogbuttonbgredselect":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	"pnguidialogbuttonhltselect":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	"pnguidialogbuttonicon":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	"pnguidialogbuttoniconselect":{ "r":230, "g":230, "b":220, "_comment":"white" },
+	"pnguidialogiconselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textuidialogmenu":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+	"textuidialogmenuselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"textuidialogtitle":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	
+	"pngrecontogglelight":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecontoggledark":{ "r":15, "g":35, "b":75, "_comment":"navy" },
+	"pngreconsettingsicon":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngreconsettingsiconselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"textreconsettingsmenu":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"textreconsettingsmenuselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"pngreconsettingsarrow":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	
+	"pngrecondialogbg":{ "r":15, "g":35, "b":75, "_comment":"navy" },
+	"pngrecondialogbghlt":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecondialogarrow":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecondialogradio":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecondialogradioselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"textrecondialogmenu":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"textrecondialogmenuselect":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+	"textrecondialogtittle":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	
+	"pngrecondialogbuttonbg":{ "r":15, "g":35, "b":75, "_comment":"navy" },
+	"pngrecondialogbuttonhlt":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecondialogbuttonbgcheckselect":{ "r":42, "g":180, "b":42, "_comment":"green" },
+	"pngrecondialogbuttonbgxselect":{ "r":250, "g":72, "b":9, "_comment":"red" },
+	"pngrecondialogbuttoncheckhltselect":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngrecondialogbuttonxhltselect":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngrecondialogbuttoncheck":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecondialogbuttonx":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+	"pngrecondialogbuttoncheckselect":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	"pngrecondialogbuttonxselect":{ "r":0, "g":0, "b":0, "_comment":"black" },
+	
+	
+	
+	"FUTUREUSE":{ "r":2, "g":101, "b":2 },
+	"keyboardbuttonsmall":{ "r":2, "g":101, "b":2 },
+	"keyboardbuttonlarge":{ "r":2, "g":101, "b":2 },
+	"keyboardletters":{ "r":42, "g":180, "b":42 },
+	"keyboardinput":{ "r":42, "g":180, "b":42 },
+	"keyboardletterhlt":{ "r":42, "g":180, "b":42 },
+	"keyboardbg":{ "r":0, "g":0, "b":0 },
+	
+	"HELPFULCOLORLIST":{ "r":2, "g":101, "b":2 },
+	"black":{ "r":0, "g":0, "b":0, "_comment":"black" },
+    "blue":{ "r":106, "g":210, "b":249, "_comment":"blue" },
+    "red":{ "r":250, "g":72, "b":9, "_comment":"red" },
+    "dark_red":{ "r":110, "g":31, "b":23 },
+    "yellow":{ "r":231, "g":197, "b":74, "_comment":"yellow" },
+    "gray":{ "r":128, "g":128, "b":128, "_comment":"gray" },
+    "green":{ "r":42, "g":180, "b":42, "_comment":"green" },
+    "dark_green":{ "r":2, "g":101, "b":2, "_comment":"greend" },
+    "disabled_light_gray":{ "r":167, "g":167, "b":167 },
+    "disabled_dark_gray":{ "r":61, "g":61, "b":61 },
+    "medium_gray":{ "r":100, "g":100, "b":100 },
+    "orange":{ "r":214, "g":133, "b":39 },
+    "dark_orange":{ "r":142, "g":76, "b":26 },
+    "light_blue":{ "r":156, "g":226, "b":255 },
+    "cyan":{ "r":96, "g":205, "b":205 },
+    "dark_cyan":{ "r":40, "g":120, "b":120 },
+    "purple":{ "r":132, "g":87, "b":162, "_comment":"purple" },
+    "dark_purple":{ "r":77, "g":45, "b":99, "_comment":"purpled" },
+    "magenta":{ "r":205, "g":85, "b":155 },
+    "dark_magenta":{ "r":120, "g":45, "b":90 },
+    "light_green":{ "r":110, "g":220, "b":110 },
+    "olive":{ "r":140, "g":135, "b":55 },
+    "dark_olive":{ "r":80, "g":75, "b":30 },
+    "brown":{ "r":120, "g":72, "b":30 },
+    "tan":{ "r":200, "g":170, "b":120 },
+    "teal":{ "r":48, "g":150, "b":140 },
+    "dark_teal":{ "r":20, "g":90, "b":85 },
+    "navy":{ "r":15, "g":35, "b":75, "_comment":"navy" },
+    "light_yellow":{ "r":250, "g":225, "b":120 },
+    "soft_white":{ "r":230, "g":230, "b":220, "_comment":"white" }
+  },
+
+  "_unused" : {
+    "commands" : {
+      "restart_pineapd": "service pineapd restart",
+      "restart_networking": "service network restart",
+      "reboot": "reboot",
+      "log_temps": "/root/battest.sh > /tmp/temps.log",
+      "restart_go": "service pineapplepager restart"
+    },
+
+    "payload_shortcuts": {
+      "test1": "/root/payloads/user/cat1/test1",
+      "test2": "/root/payloads/user/cat1/test2"
+    },
+
+    "simple_images": {
+    }
+  }
+}

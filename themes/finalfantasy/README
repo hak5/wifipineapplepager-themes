@@ -2,6 +2,6 @@ Editing these files here within /lib/pager/themes/ will have no effect. Do not p
 
 If you would like to modify the theme, create a new one by copying this to /root/themes with a new directory name
 
-cp -r /lib/pager/themes/wargames /root/themes/mycooltheme
+cp -r /lib/pager/themes/finalfantasy /root/themes/finalfantasy
 
 Find more information at docs.hak5.org

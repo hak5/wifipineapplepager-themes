@@ -1,6 +1,6 @@
 {
-  "screen_name": "settings_general_submenu",
-  "status_bar": "default",
+  "screen_name": "settings_display_submenu",
+  "status_bar": "settings",
   "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
@@ -12,15 +12,11 @@
     "right": "noop"
   },
   "background": {
-    "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "yellow" },
-      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" },
-      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "gray" }
-    ]
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
   },
   "pages": [
     {
@@ -28,60 +24,60 @@
       "menu_items": [
         {
           "id": "Brightness",
-          "x":170,
-          "y":50,
-          "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "blue" }
-          ],
+          "x": 0,
+          "y": 0,
+          "layers": [],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/settings/Display/display_1_brightness.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_BRIGHTNESS"
         },
         {
           "id": "Screen Timeout",
-          "x":170,
-          "y":85,
-          "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "blue" }
-          ],
+          "x": 0,
+          "y": 0,
+          "layers": [],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/settings/Display/settings_2_timeout.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
           "variable": "$_SCREEN_OFF_TIMEOUT"
         },
         {
           "id": "Dim Brightness",
-          "x":170,
-          "y":120,
-          "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "blue" }
-          ],
+          "x": 0,
+          "y": 0,
+          "layers": [],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/settings/Display/settings_3_dim_brightness.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_DIM_BRIGHTNESS"
         },
         {
           "id": "Dim Timeout",
-          "x":170,
-          "y":155,
-          "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "blue" }
-          ],
+          "x": 0,
+          "y": 0,
+          "layers": [],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/settings/Display/settings_4_dim_timeout.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
           "variable": "$_SCREEN_DIM_TIMEOUT"
@@ -89,54 +85,5 @@
       ]
     }
   ]
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

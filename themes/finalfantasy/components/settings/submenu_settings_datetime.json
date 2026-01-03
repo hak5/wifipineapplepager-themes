@@ -1,7 +1,6 @@
 {
   "screen_name": "settings_datetime_submenu",
-  "status_bar": "default",
-  "windowed_canvas": false,
+  "windowed_canvas": true,
   "cache_canvases": false,
   "button_map": {
     "a": "select",

@@ -1,0 +1,84 @@
+{
+  "screen_name": "edit_mac_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/edit_string_dialog_bg.png", "x": 6, "y": 17 }
+    ]
+  },
+  "title_x": 29,
+  "title_y": 70,
+  "menu_items": [
+    {
+      "id": "Save",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
+        { "image_path": "assets/flame.png","x": 92, "y": 148 },
+        { "text": "Save", "x": 61, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
+        { "image_path": "assets/flame.png","x": 92, "y": 148, "recolor_palette":  "green" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 107 },
+        { "text": "Save", "x": 61, "y": 115, "text_color_palette": "green", "text_size": "large" }
+      ],
+      "target": "save"
+    },
+    {
+      "id": "Edit",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
+        { "image_path": "assets/keyboard.png","x": 234, "y": 150 },
+        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
+        { "image_path": "assets/keyboard.png","x": 234, "y": 150, "recolor_palette":  "yellow" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 107 },
+        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "yellow", "text_size": "large" }
+      ],
+      "target": "mac_keyboard",
+      "variable": "$_INPUT"
+    },
+    {
+      "id": "Cancel",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 315, "y": 107 },
+        { "image_path": "assets/x.png","x": 376, "y": 150 },
+        { "text": "Cancel", "x": 338, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 315, "y": 107 },
+        { "image_path": "assets/x.png","x": 376, "y": 150, "recolor_palette":  "red" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 315, "y": 107 },
+        { "text": "Cancel", "x": 338, "y": 115, "text_color_palette": "red", "text_size": "large" }
+      ],
+      "target": "back"
+    },
+    {
+      "id": "Title",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 40,
+          "y": 35,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "yellow"
+          }
+        },
+        {
+          "variable_name": "$_INPUT",
+          "x": 40,
+          "y": 65,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "blue"
+          }
+        }
+      ]
+    }
+  ]
+}

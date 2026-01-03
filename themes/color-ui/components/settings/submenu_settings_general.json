@@ -1,0 +1,158 @@
+{
+  "screen_name": "settings_general_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divright.png", "x": 140, "y": 50, "recolor_palette": "pngsettingsarrow" },
+	  { "text": "Settings", "text_size": "large", "text_color_palette": "textsettingstitle", "x": 5 },
+      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "textsettingsmenuselect" },
+      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "textsettingsgray" },
+      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "textsettingsgray" },
+      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "textsettingsgray" },
+      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "textsettingsgray" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Volume",
+          "x":170,
+          "y":50,
+          "layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Volume", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Volume", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_VOLUME"
+        },
+        {
+          "id": "Vibrate",
+          "x":170,
+          "y":85,
+          "layers": [
+            { "variable_name":  "$_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_VIBRATE"
+        },
+        {
+          "id": "Vibrate w/ Ringtone",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RINGTONE_VIBRATE"
+        },
+        {
+          "id": "Theme",
+          "x":170,
+          "y":155,
+          "layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "Theme", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "Theme", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_THEME"
+        },
+        {
+          "id": "DPADLED",
+          "x":170,
+          "y":190,
+          "layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsincon" },
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "textsettingsmenu" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "recolor_palette": "pngsettingsiconselect" },
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "textsettingsmenuselect" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_DPAD_LED_COLOR"
+        }
+      ]
+    }
+  ]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

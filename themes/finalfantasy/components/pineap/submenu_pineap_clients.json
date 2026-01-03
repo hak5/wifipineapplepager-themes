@@ -2,8 +2,7 @@
   "template":
   {
     "screen_name": "pineap_clients_submenu",
-    "status_bar": "default",
-    "windowed_canvas": false,
+    "windowed_canvas": true,
     "cache_canvases": true,
     "button_map": {
       "a": "select",
