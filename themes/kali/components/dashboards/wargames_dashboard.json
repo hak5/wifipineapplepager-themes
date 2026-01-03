@@ -1,0 +1,98 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/wargames_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/alerts.png", "x": 24, "y": 4, "recolor_palette": "navy" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": 7, "y": -65, "recolor_palette": "navy" },
+        { "image_path": "assets/dashboard/alerts.png", "x": -248, "y": 17, "recolor_palette": "blue" }
+      ],
+      "x": 250,
+      "y": 159,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/payloads.png", "x": 24, "y": 4, "recolor_palette": "navy" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 7, "y": -65, "recolor_palette": "navy" },
+        { "image_path": "assets/dashboard/payloads.png", "x": -289, "y": 17,  "recolor_palette": "blue" }
+      ],
+      "x": 291,
+      "y": 159,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/recon.png", "x": 24, "y": 4, "recolor_palette": "navy" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 7, "y": -65, "recolor_palette": "navy"  },
+        { "image_path": "assets/dashboard/recon.png", "x": -330, "y": 17, "recolor_palette": "blue"  }
+      ],
+      "x": 332,
+      "y": 159,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/pineap.png", "x": 24, "y": 4, "recolor_palette": "navy" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 7, "y": -65, "recolor_palette": "navy"  },
+        { "image_path": "assets/dashboard/pineap.png", "x": -379, "y": 17, "recolor_palette": "blue"  }
+      ],
+      "x": 373,
+      "y": 159,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/settings.png", "x": 24, "y": 4, "recolor_palette": "navy" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 7, "y": -65, "recolor_palette": "navy" },
+        { "image_path": "assets/dashboard/settings.png", "x": -412, "y": 17, "recolor_palette": "blue" }
+      ],
+      "x": 414,
+      "y": 159,
+      "target": "settings_menu"
+    }
+  ]
+}
