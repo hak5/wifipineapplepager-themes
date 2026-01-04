@@ -1,0 +1,8 @@
+{
+  "text_size": "medium",
+  "text_color_palette": "red",
+  "max_chars": 30,
+  "wrap_text": true,
+  "max_lines": 11,
+  "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
+}

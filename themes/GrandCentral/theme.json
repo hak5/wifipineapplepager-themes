@@ -1,0 +1,216 @@
+{
+  "author": "r3dfish",
+  "theme_version": "1.0",
+  "theme_framework_version": "0.5",
+
+  "status_bars": {
+    "default": "components/status_bars/status_bar.json",
+    "top_right": "components/status_bars/status_bar_top_right.json",
+    "network": "components/status_bars/status_bar_network.json",
+    "recon": "components/status_bars/status_bar_recon.json",
+    "min": "components/status_bars/status_bar_min.json",
+    "gps" : "components/status_bars/status_bar_gps.json"
+  },
+
+  "generic_menus": {
+    "tutorial": "components/tutorial.json",
+    "os_licenses": "components/os_licenses.json",
+    "management_ap_wizard": "components/management_ap_wizard.json",
+    "client_mode_wizard": "components/client_mode_wizard.json",
+    "evilwpa_wizard": "components/pineap/evilwpa_wizard.json",
+    "power_menu": "components/dashboards/power_menu.json",
+    "regulatory": "components/settings/regulatory.json",
+    "dashboard_path": "components/dashboards/pager_dashboard.json",
+    "alerts_dashboard": "components/dashboards/dashboard_alerts.json",
+
+    "pineap_pineap_submenu": "components/pineap/submenu_pineap_pineap.json",
+    "pineap_evilwpa_submenu": "components/pineap/submenu_pineap_evilwpa.json",
+    "pineap_filters_submenu": "components/pineap/submenu_pineap_filters.json",
+    "pineap_openap_submenu": "components/pineap/submenu_pineap_openap.json",
+    "pineap_ssidpool_submenu": "components/pineap/submenu_pineap_ssidpool.json",
+
+    "settings_general_submenu": "components/settings/submenu_settings_general.json",
+    "settings_display_submenu": "components/settings/submenu_settings_display.json",
+    "settings_ringtone_submenu": "components/settings/submenu_settings_ringtone.json",
+    "settings_network_submenu": "components/settings/submenu_settings_network.json",
+    "settings_system_submenu": "components/settings/submenu_settings_system.json",
+    "settings_datetime_submenu": "components/settings/submenu_settings_datetime.json",
+    "settings_gps_submenu": "components/settings/submenu_settings_gps.json",
+    "settings_updates_submenu": "components/settings/submenu_settings_updates.json",
+    "settings_help_submenu": "components/settings/submenu_settings_help.json",
+    "settings_about_submenu": "components/settings/submenu_settings_about.json",
+
+    "recon_settings": "components/recon/recon_settings.json",
+    "recon_band_settings": "components/recon/recon_band_settings.json",
+    "recon_selected_ap_menu": "components/recon/recon_selected_ap_menu.json",
+    "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
+
+    "pineap_menu": "components/dashboards/dashboard_pineap.json",
+    "settings_menu": "components/dashboards/dashboard_settings.json"
+  },
+
+  "option_dialogs": {
+    "option_dialog":  "components/dialogs/ui_option_dialog.json",
+    "option_dialog_recon":  "components/dialogs/ui_option_dialog_recon.json",
+    "option_dialog_alerts":  "components/dialogs/ui_option_dialog_alerts.json",
+    "option_dialog_payloads":  "components/dialogs/ui_option_dialog_payloads.json",
+    "option_dialog_narrow":  "components/dialogs/ui_option_dialog_narrow.json",
+    "option_dialog_volume":  "components/dialogs/ui_option_dialog_volume.json"
+  },
+
+
+  "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
+  "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
+  "payloads_for_category_list_path": "components/payloads_for_category_list.json",
+  "payload_log_path": "components/payload_log.json",
+
+  "filter_list_path": "components/filter_list.json",
+  "pineap_ssid_pool_list_path": "components/pineap_ssid_pool_list.json",
+  "pineap_clients_list_path": "components/pineap/submenu_pineap_clients.json",
+
+  "alerts_dialog_submenu_path": "components/alert_payloads_for_category_list.json",
+
+  "low_battery_alert_path": "components/alerts/low_battery_alert.json",
+  "critical_battery_alert_path": "components/alerts/critical_battery_alert.json",
+
+  "error_dialog_path": "components/alerts/alert_error_dialog.json",
+  "alert_dialog_path": "components/alerts/alert_info_dialog.json",
+  "warning_dialog_path": "components/alerts/alert_warning_dialog.json",
+
+  "spinner_path": "components/spinner.json",
+  "boot_spinner_path": "components/boot_animation.json",
+
+  "keyboard_path": "components/keyboards/ui_keyboard.json",
+  "number_keyboard_path": "components/keyboards/ui_keyboard_numeric.json",
+  "ip_keyboard_path": "components/keyboards/ui_keyboard_ip.json",
+  "mac_keyboard_path": "components/keyboards/ui_keyboard_hex.json",
+
+  "recon_payloads_dashboard_path": "components/dashboards/dashboard_recon_payloads.json",
+  "recon_payloads_for_category_list_path": "components/recon_payloads_for_category_list.json",
+  "recon_dashboard_path": "components/dashboards/dashboard_recon.json",
+  "recon_lists": {
+    "recon_list": "components/recon/recon_results_list.json"
+  },
+  "recon_ap_clients_list_path": "components/recon/recon_ap_clients_list.json",
+
+  "edit_string_dialog_path": "components/dialogs/edit_string_dialog.json",
+  "edit_ip_dialog_path": "components/dialogs/edit_ip_dialog.json",
+  "edit_mac_dialog_path": "components/dialogs/edit_mac_dialog.json",
+  "edit_number_dialog_path": "components/dialogs/edit_number_dialog.json",
+
+  "confirmation_dialog_path": "components/dialogs/confirmation_dialog.json",
+
+  "setup_wizard_path": "components/setup_wizard.json",
+  "checking_for_updates_path": "components/check_for_updates.json",
+  "developer_menu_path": "components/developer_menu.json",
+  "lock_screen_path": "components/lock_screen.json",
+  "buttons_locked_screen_path": "components/buttons_locked_screen.json",
+  "device_too_hot_warning_path": "assets/warn_device_too_hot.png",
+  "device_dimming_screen_path": "assets/warn_device_dimming_screen.png",
+  "help_info_path": "assets/help_qr.png",
+  "license_info_path": "assets/license_qr.png",
+  "virtual_pager_info_path": "assets/virt_qr.png",
+
+  "toggle_templates" : {
+    "toggle": "components/templates/toggle.json",
+    "green_toggle": "components/templates/green_toggle.json",
+    "disabled_toggle": "components/templates/disabled_toggle.json",
+    "checkbox": "components/templates/checkbox.json",
+    "pineap_filter_mode": "components/templates/pineap_filter_mode.json",
+    "disabled_pineap_filter_mode": "components/templates/disabled_pineap_filter_mode.json"
+  },
+
+  "string_templates": {
+    "recon_payload_title": "components/templates/recon_payload_title.json",
+    "recon_payload_title_selected": "components/templates/recon_payload_title_selected.json",
+    "alert_payload_title": "components/templates/alert_payload_title.json",
+    "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
+    "client_ssid": "components/templates/client_ssid.json",
+    "client_ssid_selected": "components/templates/client_ssid_selected.json",
+    "client_mac": "components/templates/client_mac.json",
+    "client_mac_selected": "components/templates/client_mac_selected.json",
+    "timestamp": "components/templates/timestamp.json",
+    "spinner_text": "components/templates/spinner_text.json",
+    "string": "components/templates/string.json",
+    "payload_name": "components/templates/payload_name_in_list.json",
+    "payload_name_selected": "components/templates/payload_name_in_list_selected.json",
+    "alert_info_dialog_text": "components/templates/alert_info_dialog_text.json",
+    "string_title": "components/templates/string_title.json",
+    "selected_string": "components/templates/selected_string.json",
+    "error_text": "components/templates/error_text.json",
+    "confirmation_dialog_text": "components/templates/confirmation_dialog_text.json",
+    "option_dialog_string": "components/templates/option_dialog_string.json",
+    "option_dialog_string_selected": "components/templates/option_dialog_string_selected.json",
+    "ssid_pool_string": "components/templates/ssid_pool_string.json",
+    "ssid_pool_string_selected": "components/templates/ssid_pool_string_selected.json",
+    "network_filter_string": "components/templates/network_filter_string.json",
+    "network_filter_string_selected": "components/templates/network_filter_string_selected.json",
+    "payload_title": "components/templates/payload_title.json",
+    "list_count": "components/templates/list_count.json",
+    "list_page_total": "components/templates/list_page_total.json",
+    "list_page_current": "components/templates/list_page_total.json",
+    "list_pagination_label": "components/templates/list_pagination_label.json"
+  },
+
+  "radio_templates": {
+    "radio": "components/templates/radio.json",
+    "selected_radio": "components/templates/selected_radio.json"
+  },
+
+  "signal_templates": {
+    "signal": "components/templates/signal.json",
+    "selected_signal": "components/templates/selected_signal.json"
+  },
+
+  "color_palette":{
+    "black":{ "r":0, "g":0, "b":0 },
+    "blue":{ "r":106, "g":210, "b":249 },
+    "red":{ "r":250, "g":72, "b":9 },
+    "dark_red":{ "r":110, "g":31, "b":23 },
+    "yellow":{ "r":231, "g":197, "b":74 },
+    "gray":{ "r":128, "g":128, "b":128 },
+    "green":{ "r":42, "g":180, "b":42 },
+    "dark_green":{ "r":2, "g":101, "b":2 },
+    "disabled_light_gray":{ "r":167, "g":167, "b":167 },
+    "disabled_dark_gray":{ "r":61, "g":61, "b":61 },
+    "medium_gray":{ "r":100, "g":100, "b":100 },
+
+    "orange":{ "r":214, "g":133, "b":39 },
+    "dark_orange":{ "r":142, "g":76, "b":26 },
+    "light_blue":{ "r":156, "g":226, "b":255 },
+    "cyan":{ "r":96, "g":205, "b":205 },
+    "dark_cyan":{ "r":40, "g":120, "b":120 },
+    "purple":{ "r":132, "g":87, "b":162 },
+    "dark_purple":{ "r":77, "g":45, "b":99 },
+    "magenta":{ "r":205, "g":85, "b":155 },
+    "dark_magenta":{ "r":120, "g":45, "b":90 },
+    "light_green":{ "r":110, "g":220, "b":110 },
+    "olive":{ "r":140, "g":135, "b":55 },
+    "dark_olive":{ "r":80, "g":75, "b":30 },
+    "brown":{ "r":120, "g":72, "b":30 },
+    "tan":{ "r":200, "g":170, "b":120 },
+    "teal":{ "r":48, "g":150, "b":140 },
+    "dark_teal":{ "r":20, "g":90, "b":85 },
+    "navy":{ "r":15, "g":35, "b":75 },
+    "light_yellow":{ "r":250, "g":225, "b":120 },
+    "soft_white":{ "r":230, "g":230, "b":220 }
+  },
+
+  "_unused" : {
+    "commands" : {
+      "restart_pineapd": "service pineapd restart",
+      "restart_networking": "service network restart",
+      "reboot": "reboot",
+      "log_temps": "/root/battest.sh > /tmp/temps.log",
+      "restart_go": "service pineapplepager restart"
+    },
+
+    "payload_shortcuts": {
+      "test1": "/root/payloads/user/cat1/test1",
+      "test2": "/root/payloads/user/cat1/test2"
+    },
+
+    "simple_images": {
+    }
+  }
+}
