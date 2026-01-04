@@ -1,0 +1,104 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/fenrir_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/logo/hound_logo_dash.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/alerts.png", "x": 4, "y": 7 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/alerts.png", "x": 4, "y": 7 },
+        { "text": "ALERTS", "x": 0, "y": -20, "text_size": "small", "text_color_palette": "dark_red" }
+      ],
+      "x": 15,
+      "y": 145,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/payloads.png", "x": 10, "y": 4 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/payloads.png", "x": 10, "y": 4 },
+        { "text": "PAYLOADS", "x": -8, "y": -20, "text_size": "small", "text_color_palette": "dark_red" }
+      ],
+      "x": 105,
+      "y": 145,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/recon.png", "x": 4, "y": 10 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/recon.png", "x": 4, "y": 10 },
+        { "text": "RECON", "x": 2, "y": -20, "text_size": "small", "text_color_palette": "dark_red" }
+      ],
+      "x": 200,
+      "y": 145,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/pineap.png", "x": 4, "y": 4 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/pineap.png", "x": 4, "y": 4 },
+        { "text": "PINEAP", "x": 0, "y": -20, "text_size": "small", "text_color_palette": "dark_red" }
+      ],
+      "x": 295,
+      "y": 145,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/settings.png", "x": 4, "y": 4 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/settings.png", "x": 4, "y": 4 },
+        { "text": "SETTINGS", "x": -5, "y": -20, "text_size": "small", "text_color_palette": "dark_red" }
+      ],
+      "x": 390,
+      "y": 145,
+      "target": "settings_menu"
+    }
+  ]
+}

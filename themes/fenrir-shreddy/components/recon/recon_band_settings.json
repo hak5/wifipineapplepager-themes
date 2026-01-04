@@ -1,0 +1,104 @@
+{
+  "screen_name": "recon_band_settings",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "6ghz",
+          "x":180,
+          "y":60,
+          "layers": [
+            { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "6Ghz", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "6Ghz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED"
+        },
+        {
+          "id": "5ghz",
+          "x":180,
+          "y":95,
+          "layers": [
+            { "variable_name":  "$_5Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "5Ghz", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_5Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "5Ghz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED"
+        },
+        {
+          "id": "2.4Ghz",
+          "x":180,
+          "y":130,
+          "layers": [
+            { "variable_name":  "$_2.4Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "2.4Ghz", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_2.4Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "2.4Ghz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
