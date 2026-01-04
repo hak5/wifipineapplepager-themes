@@ -44,7 +44,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Serial Device", "x": 40, "text_color_palette": "blue" }
+            { "text": "Serial Device", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -59,7 +59,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Baud Rate", "x": 40, "text_color_palette": "blue" }
+            { "text": "Baud Rate", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -73,8 +73,8 @@
           "x":170,
           "y":155,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "blue" },
-            { "text": "Restart GPSd", "x": 40,  "text_color_palette": "blue" }
+            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "magenta" },
+            { "text": "Restart GPSd", "x": 40,  "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "red" },

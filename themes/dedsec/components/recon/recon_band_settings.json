@@ -25,7 +25,7 @@
           "y":60,
           "layers": [
             { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "6Ghz", "x": 40, "text_color_palette": "blue" }
+            { "text": "6Ghz", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle" },
@@ -40,7 +40,7 @@
           "y":95,
           "layers": [
             { "variable_name":  "$_5Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "5Ghz", "x": 40, "text_color_palette": "blue" }
+            { "text": "5Ghz", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_5Ghz_ENABLED", "use_template": "toggle" },
@@ -55,7 +55,7 @@
           "y":130,
           "layers": [
             { "variable_name":  "$_2.4Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "2.4Ghz", "x": 40, "text_color_palette": "blue" }
+            { "text": "2.4Ghz", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_2.4Ghz_ENABLED", "use_template": "toggle" },

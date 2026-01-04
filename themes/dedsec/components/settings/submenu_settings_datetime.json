@@ -34,7 +34,7 @@
           "layers": [
             { "variable_name": "$_DATETIME", "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 24,
                 "wrap_text": false,
                 "max_lines": 1
@@ -48,7 +48,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Timezone", "x": 40, "text_color_palette": "blue" }
+            { "text": "Timezone", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -63,7 +63,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Year", "x": 40, "text_color_palette": "blue" }
+            { "text": "Year", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
@@ -78,7 +78,7 @@
           "y":155,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "blue" }
+            { "text": "Month", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
@@ -93,7 +93,7 @@
           "y":190,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "blue" },
+            { "text": "Day", "x": 40, "text_color_palette": "magenta" },
             { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "selected_layers": [
@@ -115,7 +115,7 @@
           "y":50,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "blue" },
+            { "text": "Hour", "x": 40, "text_color_palette": "magenta" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "selected_layers": [
@@ -132,7 +132,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Minute", "x": 40, "text_color_palette": "blue" }
+            { "text": "Minute", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
@@ -147,7 +147,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Second", "x": 40, "text_color_palette": "blue" }
+            { "text": "Second", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },

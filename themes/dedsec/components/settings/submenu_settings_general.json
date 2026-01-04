@@ -32,7 +32,7 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Volume", "x": 40, "text_color_palette": "blue" }
+            { "text": "Volume", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -47,7 +47,7 @@
           "y":85,
           "layers": [
             { "variable_name":  "$_VIBRATE", "use_template": "toggle" },
-            { "text": "Vibrate", "x": 40, "text_color_palette": "blue" }
+            { "text": "Vibrate", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_VIBRATE", "use_template": "toggle" },
@@ -62,7 +62,7 @@
           "y":120,
           "layers": [
             { "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "toggle" },
-            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "blue" }
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "toggle" },
@@ -77,7 +77,7 @@
           "y":155,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Theme", "x": 40, "text_color_palette": "blue" }
+            { "text": "Theme", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -92,7 +92,7 @@
           "y":190,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "D-Pad LED", "x": 40, "text_color_palette": "blue" }
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },

@@ -32,7 +32,7 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "blue" }
+            { "text": "Brightness", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -47,7 +47,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "blue" }
+            { "text": "Screen Timeout", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -62,7 +62,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "blue" }
+            { "text": "Dim Brightness", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -77,7 +77,7 @@
           "y":155,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "blue" }
+            { "text": "Dim Timeout", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },

@@ -32,10 +32,10 @@
           "y":50,
           "unselectable": true,
           "layers": [
-            { "text": "Current Version:", "text_color_palette": "blue" },
+            { "text": "Current Version:", "text_color_palette": "magenta" },
             { "variable_name": "$_FIRMWARE_VERSION", "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 24,
                 "wrap_text": false,
                 "max_lines": 1
@@ -50,7 +50,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/wizard.png" },
-            { "text": "Check for Updates", "x": 40, "text_color_palette": "blue" }
+            { "text": "Check for Updates", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/wizard.png" },

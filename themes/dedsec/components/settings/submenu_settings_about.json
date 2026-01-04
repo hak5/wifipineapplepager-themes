@@ -34,7 +34,7 @@
             { "text": "Uptime:", "text_color_palette": "yellow" },
             { "variable_name": "$_UPTIME", "x": 120, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -45,7 +45,7 @@
             { "text": "Uptime:", "text_color_palette": "yellow" },
             { "variable_name": "$_UPTIME", "x": 120, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -70,7 +70,7 @@
             { "text": "Battery:", "text_color_palette": "yellow" },
             { "variable_name": "$_BATTERY_INFO", "x": 110, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 16,
                 "wrap_text": false,
                 "max_lines": 1
@@ -81,7 +81,7 @@
             { "text": "Battery:", "text_color_palette": "yellow" },
             { "variable_name": "$_BATTERY_INFO", "x": 110, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 16,
                 "wrap_text": false,
                 "max_lines": 1
@@ -97,7 +97,7 @@
             { "text": "Temperature:", "text_color_palette": "yellow" },
             { "variable_name": "$_TEMP", "x": 180, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -108,7 +108,7 @@
             { "text": "Temperature:", "text_color_palette": "yellow" },
             { "variable_name": "$_TEMP", "x": 180, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -124,7 +124,7 @@
             { "text": "Free Disk Space:", "text_color_palette": "yellow" },
             { "variable_name": "$_STORAGE", "x": 215, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -135,7 +135,7 @@
             { "text": "Free Disk Space:", "text_color_palette": "yellow" },
             { "variable_name": "$_STORAGE", "x": 215, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -151,7 +151,7 @@
             { "text": "WAN IP:", "text_color_palette": "yellow" },
             { "variable_name": "$_WLAN0CLI_IP", "x": 100, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 17,
                 "wrap_text": false,
                 "max_lines": 1
@@ -163,7 +163,7 @@
             { "text": "WAN IP:", "text_color_palette": "yellow" },
             { "variable_name": "$_WLAN0CLI_IP", "x": 100, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 17,
                 "wrap_text": false,
                 "max_lines": 1
@@ -185,7 +185,7 @@
             { "text": "Loot:", "text_color_palette": "yellow" },
             { "variable_name": "$_LOOT", "x": 80, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -197,7 +197,7 @@
             { "text": "Loot:", "text_color_palette": "yellow" },
             { "variable_name": "$_LOOT", "x": 80, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -223,7 +223,7 @@
             { "variable_name": "$_PACKAGES", "x": 120, "string_template":
               {
                 "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -234,7 +234,7 @@
             { "text": "Packages:", "text_color_palette": "yellow" },
             { "variable_name": "$_PACKAGES", "x": 120,  "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -250,7 +250,7 @@
             { "text": "Handshakes:", "text_color_palette": "yellow" },
             { "variable_name": "$_HANDSHAKES", "x": 150, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -261,7 +261,7 @@
             { "text": "Handshakes:", "text_color_palette": "yellow" },
             { "variable_name": "$_HANDSHAKES", "x": 150, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "magenta",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1

@@ -32,7 +32,7 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Alert", "x": 40, "text_color_palette": "blue" }
+            { "text": "Alert", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -47,7 +47,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Boot", "x": 40, "text_color_palette": "blue" }
+            { "text": "Boot", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -62,7 +62,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Battery Low", "x": 40, "text_color_palette": "blue" }
+            { "text": "Battery Low", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -77,7 +77,7 @@
           "y":155,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Battery Critical", "x": 40, "text_color_palette": "blue" }
+            { "text": "Battery Critical", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -92,7 +92,7 @@
           "y":190,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Power Connected", "x": 40, "text_color_palette": "blue" },
+            { "text": "Power Connected", "x": 40, "text_color_palette": "magenta" },
             { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "selected_layers": [
@@ -114,7 +114,7 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Power Disconnected", "x": 40, "text_color_palette": "blue" },
+            { "text": "Power Disconnected", "x": 40, "text_color_palette": "magenta" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "selected_layers": [
@@ -131,7 +131,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Payload Complete", "x": 40, "text_color_palette": "blue" }
+            { "text": "Payload Complete", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
@@ -146,7 +146,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Error", "x": 40, "text_color_palette": "blue" }
+            { "text": "Error", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },

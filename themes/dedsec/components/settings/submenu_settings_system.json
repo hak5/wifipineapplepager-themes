@@ -32,7 +32,7 @@
           "y":50,
           "layers": [
             { "variable_name":  "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
-            { "text": "Virtual Pager", "x": 40, "text_color_palette": "blue" }
+            { "text": "Virtual Pager", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
@@ -47,7 +47,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Root Password", "x": 40, "text_color_palette": "blue" }
+            { "text": "Root Password", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
@@ -62,7 +62,7 @@
           "y":120,
           "layers": [
             { "variable_name":  "$_SSH_ENABLED", "use_template": "toggle" },
-            { "text": "SSH", "x": 40, "text_color_palette": "blue" }
+            { "text": "SSH", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_SSH_ENABLED", "use_template": "toggle" },
@@ -77,7 +77,7 @@
           "y":155,
           "layers": [
             { "variable_name":  "$_PIN_ENABLED", "use_template": "toggle" },
-            { "text": "PIN Code", "x": 40, "text_color_palette": "blue" }
+            { "text": "PIN Code", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "variable_name":  "$_PIN_ENABLED", "use_template": "toggle" },
@@ -92,7 +92,7 @@
           "y":190,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "PIN Setup", "x": 40, "text_color_palette": "blue" },
+            { "text": "PIN Setup", "x": 40, "text_color_palette": "magenta" },
             { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "selected_layers": [
@@ -114,7 +114,7 @@
           "y":50,
           "layers": [
             { "variable_name":  "$_NTP_ENABLED", "use_template": "toggle" },
-            { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "blue" },
+            { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "magenta" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "selected_layers": [
@@ -131,7 +131,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/warning.png" },
-            { "text": "Factory Reset", "x": 40, "text_color_palette": "blue" }
+            { "text": "Factory Reset", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/warning.png" },

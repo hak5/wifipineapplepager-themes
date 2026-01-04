@@ -26,7 +26,7 @@
             "id": "Slot0",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 60, "y": 60,
-                "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+                "string_template": { "text_size": "medium", "text_color_palette": "magenta", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
               { "image_path": "assets/folder.png", "x": 35, "y": 58, "recolor_palette": "gray" }
             ],
             "selected_layers": [
@@ -42,7 +42,7 @@
             "id": "Slot1",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 60, "y": 89,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              "string_template": { "text_size": "medium", "text_color_palette": "magenta", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
               { "image_path": "assets/folder.png", "x": 35, "y": 87, "recolor_palette": "gray" }
             ],
             "selected_layers": [
@@ -58,7 +58,7 @@
             "id": "Slot2",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 60, "y": 118,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              "string_template": { "text_size": "medium", "text_color_palette": "magenta", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
               { "image_path": "assets/folder.png", "x": 35, "y": 116, "recolor_palette": "gray" }
             ],
             "selected_layers": [
@@ -74,7 +74,7 @@
             "id": "Slot3",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 60, "y": 147,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              "string_template": { "text_size": "medium", "text_color_palette": "magenta", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
               { "image_path": "assets/folder.png", "x": 35, "y": 146, "recolor_palette": "gray" }
             ],
             "selected_layers": [
@@ -90,7 +90,7 @@
             "id": "Slot4",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 60, "y": 176,
-              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              "string_template": { "text_size": "medium", "text_color_palette": "magenta", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
               { "image_path": "assets/folder.png", "x": 35, "y": 174, "recolor_palette": "gray" }
             ],
             "selected_layers": [

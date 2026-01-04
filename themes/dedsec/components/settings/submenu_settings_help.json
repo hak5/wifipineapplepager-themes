@@ -32,7 +32,7 @@
           "y":50,
           "layers": [
             { "image_path": "assets/wizard.png" },
-            { "text": "Tutorial", "x": 40, "text_color_palette": "blue" }
+            { "text": "Tutorial", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/wizard.png" },
@@ -46,7 +46,7 @@
           "y":85,
           "layers": [
             { "image_path": "assets/info.png" },
-            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "blue" }
+            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/info.png" },
@@ -60,7 +60,7 @@
           "y":120,
           "layers": [
             { "image_path": "assets/info.png" },
-            { "text": "License Agreement", "x": 40, "text_color_palette": "blue" }
+            { "text": "License Agreement", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/info.png" },
@@ -74,7 +74,7 @@
           "y":155,
           "layers": [
             { "image_path": "assets/info.png" },
-            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "blue" }
+            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/info.png" },
@@ -88,7 +88,7 @@
           "y":190,
           "layers": [
             { "image_path": "assets/info.png" },
-            { "text": "Help", "x": 40, "text_color_palette": "blue" }
+            { "text": "Help", "x": 40, "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "image_path": "assets/info.png" },

@@ -15,7 +15,7 @@
     "layers": [
       { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divider.png", "x": 200, "y": 65 },
-      { "text": "Access Point Data", "x": 5, "y": 0, "text_size": "large", "text_color_palette": "blue" },
+      { "text": "Access Point Data", "x": 5, "y": 0, "text_size": "large", "text_color_palette": "magenta" },
 
       { "x": 15,   "y": 33, "variable_name": "$_RECON_SELECTED_AP_SSID", "string_template": {"text_size": "medium", "text_color_palette": "green"}},
       { "x": 19,  "y": 59, "variable_name": "$_RECON_SELECTED_AP_BSSID", "string_template": { "text_size": "small", "text_color_palette": "green"}},
@@ -44,7 +44,7 @@
           "x":226,
           "y":62,
           "layers": [
-            { "text": "Connected Clients", "text_color_palette": "blue" }
+            { "text": "Connected Clients", "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "text": "Connected Clients", "text_color_palette": "yellow" }
@@ -56,7 +56,7 @@
           "x":226,
           "y":95,
           "layers": [
-            { "text": "Targeted Payload", "text_color_palette": "blue" }
+            { "text": "Targeted Payload", "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "text": "Targeted Payload", "text_color_palette": "yellow" }
@@ -69,7 +69,7 @@
           "x":226,
           "y":128,
           "layers": [
-            { "text": "Add SSID to Filters", "text_color_palette": "blue" }
+            { "text": "Add SSID to Filters", "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "text": "Add SSID to Filters", "text_color_palette": "yellow" }
@@ -81,7 +81,7 @@
           "x":226,
           "y":161,
           "layers": [
-            { "text": "Add SSID to Pool", "text_color_palette": "blue" }
+            { "text": "Add SSID to Pool", "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "text": "Add SSID to Pool", "text_color_palette": "yellow" }
@@ -93,7 +93,7 @@
           "x":226,
           "y":194,
           "layers": [
-            { "text": "Deauth All Clients", "text_color_palette": "blue" }
+            { "text": "Deauth All Clients", "text_color_palette": "magenta" }
           ],
           "selected_layers": [
             { "text": "Deauth All Clients", "text_color_palette": "yellow" }
