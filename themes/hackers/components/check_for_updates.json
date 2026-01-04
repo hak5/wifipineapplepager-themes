@@ -1,0 +1,21 @@
+{
+  "checking_image_path": "assets/upgrade/checking_for_update-min.png",
+  "downloading_image_path": "assets/upgrade/downloading_upgrade.png",
+  "downloading_percentage": {
+    "string_template": {
+      "text_size": "large",
+      "text_color_palette": "red",
+      "max_chars": 5,
+      "wrap_text": false,
+      "max_lines": 1,
+      "center_text_within": {
+        "draw_bounds": false,
+        "start_x": 110,
+        "end_x": 380,
+        "start_y": 72,
+        "end_y": 105
+      }
+  }
+  },
+  "validating_image_path": "assets/upgrade/validating_upgrade.png"
+}

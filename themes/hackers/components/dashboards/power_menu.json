@@ -1,0 +1,93 @@
+{
+  "screen_name": "power_menu",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/power_menu_bg.png", "x": 0, "y": 0 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Sleep Screen",
+          "x":45,
+          "y":35,
+          "layers": [
+            { "text": "Sleep Screen", "text_color_palette": "green" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
+            { "text": "Sleep Screen", "text_color_palette": "yellow" }
+          ],
+          "target": "function_sleep_screen"
+        },
+        {
+          "id": "Lock Screen",
+          "x":45,
+          "y":70,
+          "layers": [
+            { "text": "Lock Screen", "text_color_palette": "green" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
+            { "text": "Lock Screen", "text_color_palette": "yellow" }
+          ],
+          "target": "function_lock_screen"
+        },
+        {
+          "id": "Lock Buttons",
+          "x":45,
+          "y":105,
+          "layers": [
+            { "text": "Lock Buttons", "text_color_palette": "green" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
+            { "text": "Lock Buttons", "text_color_palette": "yellow" }
+          ],
+          "target": "function_lock_buttons"
+        },
+        {
+          "id": "Nerd Stats",
+          "x":45,
+          "y":140,
+          "layers": [
+            { "text": "Nerd Stats", "text_color_palette": "green" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_STATS_FOR_NERDS", "x": -38, "use_template": "green_toggle" },
+            { "text": "Nerd Stats", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_STATS_FOR_NERDS"
+        },
+        {
+          "id": "shutdown",
+          "x":45,
+          "y":175,
+          "layers": [
+            { "text": "Shutdown", "text_color_palette": "green" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
+            { "text": "Shutdown", "text_color_palette": "yellow" }
+          ],
+          "target": "function_shutdown"
+        }
+      ]
+    }
+  ]
+
+}
+
