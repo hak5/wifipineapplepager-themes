@@ -1,0 +1,11 @@
+{
+  "enabled": [
+    { "image_path": "assets/toggle/enabled_selected/toggle_bg.png", "x": 0, "y": 4 },
+    { "image_path": "assets/toggle/enabled_selected/circle.png","x": 14, "y": 6 },
+    { "image_path": "assets/toggle/enabled_selected/check.png","x": 16, "y": 9 }
+  ],
+  "disabled": [
+    { "image_path": "assets/toggle/disabled_selected/toggle_disabled_bg.png", "x": 0, "y": 4 },
+    { "image_path": "assets/toggle/disabled_selected/circle.png","x": 2, "y": 6 }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "screen_name": "gv_alerts_menu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "select"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
+      { "text": "Google Voice Alerts", "x": 170, "y": 30, "text_size": "large", "text_color_palette": "light_purple" },
+      { "text": "Payloads > Notifications\n> gv_alerts > Launch", "x": 170, "y": 70, "text_color_palette": "gray" }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "Launch",
+      "layers": [
+        { "text": "Go to Payloads", "x": 170, "y": 130, "text_color_palette": "light_purple" }
+      ],
+      "selected_layers": [
+        { "text": "Go to Payloads", "x": 170, "y": 130, "text_color_palette": "green" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "Back",
+      "layers": [
+        { "text": "Back", "x": 170, "y": 165, "text_color_palette": "light_purple" }
+      ],
+      "selected_layers": [
+        { "text": "Back", "x": 170, "y": 165, "text_color_palette": "green" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "back"
+    }
+  ]
+}
