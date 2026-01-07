@@ -1,5 +1,5 @@
 {
-  "text_size": "medium",
+  "text_size": "small",
   "text_color_palette": "magenta",
   "max_chars": 42,
   "wrap_text": true,

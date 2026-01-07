@@ -1,5 +1,6 @@
 {
   "screen_name": "wigle_dashboard",
+  "status_bar": "gps",
   "windowed_canvas": true,
   "cache_canvases": false,
   "button_map": {
@@ -14,10 +15,10 @@
     "layers": [
       { "image_path": "assets/dashboard/wigle_bg.png", "x": 0, "y": 0 },
       { "text": "Wigle", "text_size": "large", "text_color_palette": "blue", "x": 5 },
-      { "x":320, "text": "Lat:", "text_size": "medium", "text_color": "blue"},
-            { "variable_name": "$_GPS_LAT", "x": 380, "string_template": {"text_size": "medium", "text_color_palette": "blue" } },
-            { "x":320, "y":30, "text": "Lon:", "text_size": "medium", "text_color": "blue"},
-            { "variable_name": "$_GPS_LON", "x": 380, "y":30, "string_template": {"text_size": "medium", "text_color_palette": "blue" }} 
+      { "x":60, "y":155, "text": "Lat:", "text_size": "medium", "text_color_palette": "blue"},
+            { "variable_name": "$_GPS_LAT", "x": 120, "y":155, "string_template": {"text_size": "medium", "text_color_palette": "blue" } },
+            { "x":60, "y":180, "text": "Lon:", "text_size": "medium", "text_color_palette": "blue"},
+            { "variable_name": "$_GPS_LON", "x": 120, "y":180, "string_template": {"text_size": "medium", "text_color_palette": "blue" }} 
     ]
   },
   "title_x": 57,
