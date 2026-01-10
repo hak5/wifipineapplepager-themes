@@ -1,6 +1,7 @@
+# macOS Finder metadata
 .DS_Store
-themes/radar/assets/boot_animation/.DS_Store
-themes/radar/assets/boot_animation/.DS_Store
-themes/radar/assets/boot_animation/.DS_Store
-themes/radar/assets/launch_payload_dialog/.DS_Store
-themes/radar/components/.DS_Store
+**/.DS_Store
+
+# AppleDouble / resource fork files (created by scp, Finder, etc)
+._*
+**/._*
