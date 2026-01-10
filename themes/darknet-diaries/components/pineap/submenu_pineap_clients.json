@@ -17,7 +17,7 @@
       "layers": [
         { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
         { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-        { "text": "Clients",    "x": 10, "y": 50,  "text_color_palette": "yellow" }
+        { "text": "Clients",    "x": 10, "y": 50,  "text_color_palette": "red" }
       ]
     },
     "pages": [

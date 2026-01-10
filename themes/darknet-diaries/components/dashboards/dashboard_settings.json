@@ -29,7 +29,7 @@
             { "image_path": "assets/down.png", "x": 124, "y": 200, "recolor_palette": "gray"}
           ],
           "selected_layers": [
-            { "x": 10,  "y": 50,  "text_color_palette": "yellow",         "text": "General" },
+            { "x": 10,  "y": 50,  "text_color_palette": "red",         "text": "General" },
 
             { "x": 170, "y": 50,  "image_path": "assets/menu_disabled.png" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Volume" },
@@ -57,7 +57,7 @@
             { "text": "Display", "x": 10, "y": 85, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Display", "x": 10, "y": 85, "text_color_palette": "yellow" },
+            { "text": "Display", "x": 10, "y": 85, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "image_path": "assets/menu_disabled.png" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Brightness" },
@@ -81,7 +81,7 @@
             { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "yellow" },
+            { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "image_path": "assets/menu_disabled.png" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Alert" },
@@ -108,7 +108,7 @@
             { "text": "Network", "x": 10, "y": 155, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Network", "x": 10, "y": 155, "text_color_palette": "yellow" },
+            { "text": "Network", "x": 10, "y": 155, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",           "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Client Mode" },
@@ -135,7 +135,7 @@
             { "text": "System", "x": 10, "y": 190, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "System", "x": 10, "y": 190, "text_color_palette": "yellow" },
+            { "text": "System", "x": 10, "y": 190, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "variable_name": "$_VIRTUAL_PAGER_ENABLED",           "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Virtual Pager" },
@@ -168,7 +168,7 @@
             { "image_path": "assets/up.png", "x": 124, "y": 46, "recolor_palette": "medium_gray"}
           ],
           "selected_layers": [
-            { "text": "Clock", "x": 10, "y": 50, "text_color_palette": "yellow" },
+            { "text": "Clock", "x": 10, "y": 50, "text_color_palette": "red" },
             { "image_path": "assets/up.png", "x": 124, "y": 46, "recolor_palette": "medium_gray"},
 
             { "variable_name": "$_DATETIME", "string_template":
@@ -205,7 +205,7 @@
           ],
           "selected_layers": [
 
-            { "text": "GPS", "x": 10, "y": 85, "text_color_palette": "yellow" },
+            { "text": "GPS", "x": 10, "y": 85, "text_color_palette": "red" },
 
             { "x":170, "y": 50, "text": "Lat: ....", "text_size": "medium", "text_color": "gray"},
             { "x":330, "y": 50, "text": "Lon: ....", "text_size": "medium", "text_color": "gray"},
@@ -229,7 +229,7 @@
             { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "yellow" },
+            { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "red" },
 
             { "x": 170, "y": 50, "text_color_palette": "gray",           "text": "Current Version:" },
             { "variable_name": "$_FIRMWARE_VERSION", "string_template":
@@ -256,7 +256,7 @@
             { "text": "Help", "x": 10, "y": 155, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Help", "x": 10, "y": 155, "text_color_palette": "yellow" },
+            { "text": "Help", "x": 10, "y": 155, "text_color_palette": "red" },
 
             { "x": 170, "y": 50, "image_path": "assets/disabled_wizard.png"  },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Tutorial" },
@@ -283,7 +283,7 @@
             { "text": "About", "x": 10, "y": 190, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "About", "x": 10, "y": 190, "text_color_palette": "yellow" },
+            { "text": "About", "x": 10, "y": 190, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "text_color_palette": "gray",           "text": "Uptime: ..." },
 

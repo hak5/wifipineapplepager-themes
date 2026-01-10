@@ -29,7 +29,7 @@
             { "image_path": "assets/down.png", "x": 124, "y": 200, "recolor_palette": "gray"}
           ],
           "selected_layers": [
-            { "text": "PineAP", "x": 10, "y": 50, "text_color_palette": "yellow" },
+            { "text": "PineAP", "x": 10, "y": 50, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS",       "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Mimic Open Networks" },
@@ -57,7 +57,7 @@
             { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "yellow" },
+            { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "variable_name": "$_OPEN_AP_ENABLED",       "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Open AP" },
@@ -81,7 +81,7 @@
             { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "yellow" },
+            { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "red" },
 
             { "x": 170, "y": 50,  "variable_name": "$_EVIL_WPA_ENABLED",       "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "gray",           "text": "Evil WPA AP" },
@@ -103,7 +103,7 @@
             { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "yellow" },
+            { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "red" },
 
             { "x": 170, "y": 50, "image_path": "assets/menu_disabled.png"  },
             { "x": 210, "y": 50, "text_color_palette": "gray",           "text": "SSID Pool" },
@@ -124,7 +124,7 @@
             { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "yellow" },
+            { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "red" },
 
             { "x": 170, "y": 50, "text_color_palette": "gray",           "text": "Client Filter:" },
             { "variable_name": "$_FILTER_CLIENT_MODE", "x": 370, "y":50, "toggle_template": {
@@ -164,7 +164,7 @@
             { "image_path": "assets/up.png", "x": 124, "y": 46, "recolor_palette": "medium_gray"}
           ],
           "selected_layers": [
-            { "text": "Clients", "x": 10, "y": 50, "text_color_palette": "yellow" },
+            { "text": "Clients", "x": 10, "y": 50, "text_color_palette": "red" },
             { "image_path": "assets/up.png", "x": 124, "y": 46, "recolor_palette": "medium_gray"},
 
             { "text": "Click to view\n\nconnected clients", "x": 206, "y": 60, "text_color_palette": "gray", "center_text_within": { "draw_bounds": false, "start_x": 200, "end_x": 440, "start_y": 50, "end_y": 200 }}

@@ -5,8 +5,7 @@
   "cache_canvases": true,
   "background": {
     "layers": [
-      { "image_path": "assets/alerts_dashboard/alerts_bg.png", "x": 0, "y": 0 },
-      { "text": "Alerts", "text_size": "large", "text_color_palette": "gray", "x": 5 }
+      { "image_path": "assets/alerts_dashboard/alerts_bg.png", "x": 0, "y": 0 }
     ],
     "background_color": { "r": 0, "g": 0, "b": 0 }
   },
@@ -22,7 +21,7 @@
             { "text": "Evil AP Auth Captured", "x": 160, "y": 60, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Evil AP Auth Captured", "x": 160, "y": 60, "text_color_palette": "yellow" },
+            { "text": "Evil AP Auth Captured", "x": 160, "y": 60, "text_color_palette": "red" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 85, "y": 40 }
 
           ],
@@ -37,7 +36,7 @@
             { "text": "Deauth Flood Detected", "x": 160, "y": 87, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Deauth Flood Detected", "x": 160, "y": 87, "text_color_palette": "yellow" },
+            { "text": "Deauth Flood Detected", "x": 160, "y": 87, "text_color_palette": "red" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 85, "y": 70 }
 
           ],
@@ -52,7 +51,7 @@
             { "text": "New Client Connected", "x": 160, "y": 118, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "New Client Connected", "x": 160, "y": 118, "text_color_palette": "yellow" },
+            { "text": "New Client Connected", "x": 160, "y": 118, "text_color_palette": "red" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 85, "y": 100 }
 
           ],
@@ -67,7 +66,7 @@
             { "text": "Handshake Captured", "x": 160, "y": 146, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Handshake Captured", "x": 160, "y": 146, "text_color_palette": "yellow" },
+            { "text": "Handshake Captured", "x": 160, "y": 146, "text_color_palette": "red" },
             { "image_path": "assets/alerts_dashboard/sub.png","x": 85, "y": 130 }
           ],
           "x": 0,

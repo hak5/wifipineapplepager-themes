@@ -19,7 +19,7 @@
       { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "gray" },
       { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "gray" },
       { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "yellow" }
+      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "red" }
     ]
   },
   "pages": [
@@ -31,10 +31,10 @@
           "x":170,
           "y":50,
           "layers": [
-            { "text": "Uptime:", "text_color_palette": "yellow" },
+            { "text": "Uptime:", "text_color_palette": "red" },
             { "variable_name": "$_UPTIME", "x": 120, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -42,10 +42,10 @@
             }
           ],
           "selected_layers": [
-            { "text": "Uptime:", "text_color_palette": "yellow" },
+            { "text": "Uptime:", "text_color_palette": "red" },
             { "variable_name": "$_UPTIME", "x": 120, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -67,10 +67,10 @@
           "x":170,
           "y":85,
           "layers": [
-            { "text": "Battery:", "text_color_palette": "yellow" },
+            { "text": "Battery:", "text_color_palette": "red" },
             { "variable_name": "$_BATTERY_INFO", "x": 110, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 16,
                 "wrap_text": false,
                 "max_lines": 1
@@ -78,10 +78,10 @@
             }
           ],
           "selected_layers": [
-            { "text": "Battery:", "text_color_palette": "yellow" },
+            { "text": "Battery:", "text_color_palette": "red" },
             { "variable_name": "$_BATTERY_INFO", "x": 110, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 16,
                 "wrap_text": false,
                 "max_lines": 1
@@ -94,10 +94,10 @@
           "x":170,
           "y":120,
           "layers": [
-            { "text": "Temperature:", "text_color_palette": "yellow" },
+            { "text": "Temperature:", "text_color_palette": "red" },
             { "variable_name": "$_TEMP", "x": 180, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -105,10 +105,10 @@
             }
           ],
           "selected_layers": [
-            { "text": "Temperature:", "text_color_palette": "yellow" },
+            { "text": "Temperature:", "text_color_palette": "red" },
             { "variable_name": "$_TEMP", "x": 180, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -121,10 +121,10 @@
           "x":170,
           "y":155,
           "layers": [
-            { "text": "Free Disk Space:", "text_color_palette": "yellow" },
+            { "text": "Free Disk Space:", "text_color_palette": "red" },
             { "variable_name": "$_STORAGE", "x": 215, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -132,10 +132,10 @@
             }
           ],
           "selected_layers": [
-            { "text": "Free Disk Space:", "text_color_palette": "yellow" },
+            { "text": "Free Disk Space:", "text_color_palette": "red" },
             { "variable_name": "$_STORAGE", "x": 215, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -148,19 +148,19 @@
           "x":170,
           "y":190,
           "layers": [
-            { "text": "WAN IP:", "text_color_palette": "yellow" },
+            { "text": "WAN IP:", "text_color_palette": "red" },
             { "variable_name": "$_WLAN0CLI_IP", "x": 100, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 17,
                 "wrap_text": false,
                 "max_lines": 1
               }
             },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "red"}
           ],
           "selected_layers": [
-            { "text": "WAN IP:", "text_color_palette": "yellow" },
+            { "text": "WAN IP:", "text_color_palette": "grey" },
             { "variable_name": "$_WLAN0CLI_IP", "x": 100, "string_template":
               { "text_size": "medium",
                 "text_color_palette": "blue",
@@ -182,10 +182,10 @@
           "x":170,
           "y":50,
           "layers": [
-            { "text": "Loot:", "text_color_palette": "yellow" },
+            { "text": "Loot:", "text_color_palette": "red" },
             { "variable_name": "$_LOOT", "x": 80, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -194,10 +194,10 @@
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "selected_layers": [
-            { "text": "Loot:", "text_color_palette": "yellow" },
+            { "text": "Loot:", "text_color_palette": "red" },
             { "variable_name": "$_LOOT", "x": 80, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -219,11 +219,11 @@
           "x":170,
           "y":85,
           "layers": [
-            { "text": "Packages:", "text_color_palette": "yellow" },
+            { "text": "Packages:", "text_color_palette": "red" },
             { "variable_name": "$_PACKAGES", "x": 120, "string_template":
               {
                 "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -231,10 +231,10 @@
             }
           ],
           "selected_layers": [
-            { "text": "Packages:", "text_color_palette": "yellow" },
+            { "text": "Packages:", "text_color_palette": "red" },
             { "variable_name": "$_PACKAGES", "x": 120,  "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -247,10 +247,10 @@
           "x":170,
           "y":120,
           "layers": [
-            { "text": "Handshakes:", "text_color_palette": "yellow" },
+            { "text": "Handshakes:", "text_color_palette": "red" },
             { "variable_name": "$_HANDSHAKES", "x": 150, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -258,10 +258,10 @@
             }
           ],
           "selected_layers": [
-            { "text": "Handshakes:", "text_color_palette": "yellow" },
+            { "text": "Handshakes:", "text_color_palette": "red" },
             { "variable_name": "$_HANDSHAKES", "x": 150, "string_template":
               { "text_size": "medium",
-                "text_color_palette": "blue",
+                "text_color_palette": "grey",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1

@@ -1,6 +1,6 @@
 {
   "text_size": "small",
-  "text_color_palette": "yellow",
+  "text_color_palette": "red",
   "max_chars": 42,
   "wrap_text": true,
   "max_lines": 11,
