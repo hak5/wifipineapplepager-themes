@@ -15,7 +15,7 @@
     "background": {
       "layers": [
         { "image_path": "assets/payloads_dashboard/payloads_bg.png", "x": 0, "y": 0 },
-        { "text": "Payloads", "text_size": "large", "text_color_palette": "orange", "x": 5 },
+        { "text": "Payloads", "text_size": "large", "text_color_palette": "orange", "x": 75 },
         { "variable_name": "$_LIST_SIZE", "x": 375, "y": 206, "string_template": {"text_size":"small","text_color_palette": "medium_gray", "center_text_within": { "draw_bounds": false, "start_x": 365, "end_x": 385, "start_y": 206, "end_y": 218 }}},
         { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 390, "y": 206, "use_template": "list_pagination_label" }
       ]

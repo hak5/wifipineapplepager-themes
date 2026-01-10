@@ -32,11 +32,11 @@
           "y": 60,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
+            { "text": "Network Name", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Network Name", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_EVIL_WPA_SSID",
@@ -55,11 +55,11 @@
           "y": 90,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "BSSID Override", "x": 40, "text_color_palette": "blue" }
+            { "text": "BSSID Override", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "BSSID Override", "x": 40, "text_color_palette": "yellow" }
+            { "text": "BSSID Override", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "edit_mac_dialog",
           "variable": "$_SETUP_EVIL_WPA_BSSID"
@@ -70,11 +70,11 @@
           "y": 120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "blue" }
+            { "text": "Encryption Type", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Encryption Type", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "option_dialog",
           "variable": "$_SETUP_EVIL_WPA_ENCRYPTION_TYPE"
@@ -85,11 +85,11 @@
           "y": 150,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "blue" }
+            { "text": "Passphrase", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Passphrase", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_EVIL_WPA_PASSPHRASE"
@@ -100,7 +100,7 @@
           "y": 180,
           "layers": [
             { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 34, "text_color_palette": "blue" }
+            { "text": "Save", "x": 34, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/wizard.png", "recolor_palette": "green" },
@@ -122,7 +122,7 @@
           "y": 180,
           "layers": [
             { "image_path": "assets/x.png", "x": 12, "y": 4 },
-            { "text": "Clear", "x": 38, "text_color_palette": "blue" }
+            { "text": "Clear", "x": 38, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/x.png", "x": 12, "y": 4, "recolor_palette": "red" },
