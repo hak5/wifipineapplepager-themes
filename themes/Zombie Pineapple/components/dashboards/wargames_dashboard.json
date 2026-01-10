@@ -18,6 +18,16 @@
     "background_color": { "r": 0, "g": 0, "b": 0 }
   },
   "menu_items": [
+	{
+      "id": "WARDRIVING",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/wardriving.png","x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "wardriving_dashboard"
+    },
     {
       "id": "ALERTS",
       "layers": [],
