@@ -14,7 +14,8 @@
   "background": {
     "layers": [
       { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divleft.png", "x": 138, "y": 50 }
+      { "image_path": "assets/divleft.png", "x": 138, "y": 50 },
+      { "text": "PineAP", "text_size": "large", "text_color_palette": "orange", "x": 5 }
     ],
     "background_color": { "r": 0, "g": 0, "b": 0 }
   },

@@ -15,7 +15,7 @@
       "layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
         { "image_path": "assets/flame.png","x": 92, "y": 148 },
-        { "text": "Save", "x": 61, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "text": "Save", "x": 61, "y": 115, "text_color_palette": "orange", "text_size": "large" }
       ],
       "selected_layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
@@ -30,13 +30,13 @@
       "layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
         { "image_path": "assets/keyboard.png","x": 234, "y": 150 },
-        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "orange", "text_size": "large" }
       ],
       "selected_layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
         { "image_path": "assets/keyboard.png","x": 234, "y": 150, "recolor_palette":  "yellow" },
         { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 107 },
-        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "yellow", "text_size": "large" }
+        { "text": "Edit", "x": 205, "y": 115, "text_color_palette": "purple", "text_size": "large" }
       ],
       "target": "ip_keyboard",
       "variable": "$_INPUT"
@@ -46,7 +46,7 @@
       "layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 315, "y": 107 },
         { "image_path": "assets/x.png","x": 376, "y": 150 },
-        { "text": "Cancel", "x": 338, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "text": "Cancel", "x": 338, "y": 115, "text_color_palette": "orange", "text_size": "large" }
       ],
       "selected_layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 315, "y": 107 },
@@ -66,7 +66,7 @@
           "y": 35,
           "string_template": {
             "text_size": "large",
-            "text_color_palette": "yellow"
+            "text_color_palette": "purple"
           }
         },
         {
@@ -75,7 +75,7 @@
           "y": 65,
           "string_template": {
             "text_size": "large",
-            "text_color_palette": "blue"
+            "text_color_palette": "orange"
           }
         }
       ]

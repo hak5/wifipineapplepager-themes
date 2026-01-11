@@ -6,7 +6,7 @@
   "background": {
     "layers": [
       { "image_path": "assets/alerts_dashboard/alerts_bg.png", "x": 0, "y": 0 },
-      { "text": "Alerts", "text_size": "large", "text_color_palette": "orange", "x": 5 }
+      { "text": "Alerts", "text_size": "large", "text_color_palette": "orange", "x": 75 }
     ],
     "background_color": { "r": 0, "g": 0, "b": 0 }
   },
