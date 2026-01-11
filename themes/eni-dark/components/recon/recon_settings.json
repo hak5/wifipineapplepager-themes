@@ -1,0 +1,207 @@
+{
+  "screen_name": "recon_settings",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Recon Audio Enabled",
+          "x":110,
+          "y":20,
+          "layers": [
+            { "variable_name":  "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
+            { "text": "Recon Audio", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
+            { "text": "Recon Audio", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_ENABLED"
+        },
+        {
+          "id": "Audio Source",
+          "x":110,
+          "y":55,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "variable_name":  "$_RECON_AUDIO_SRC","x":220, "string_template": { "text_color_palette": "red" } },
+            { "text": "Audio Source:", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "variable_name":  "$_RECON_AUDIO_SRC","x":220, "string_template": { "text_color_palette": "red" } },
+            { "text": "Audio Source:", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_RECON_AUDIO_SRC"
+        },
+        {
+          "id": "Audio Mode",
+          "x":110,
+          "y":90,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "variable_name":  "$_RECON_AUDIO_MODE","x":200, "string_template": { "text_color_palette": "red" }},
+            { "text": "Audio Mode:", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "variable_name":  "$_RECON_AUDIO_MODE", "x": 200, "string_template": { "text_color_palette": "red" }},
+            { "text": "Audio Mode:", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_RECON_AUDIO_MODE"
+        },
+        {
+          "id": "Audio BG",
+          "x":110,
+          "y":125,
+          "layers": [
+            { "variable_name":  "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
+            { "text": "Background Audio", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
+            { "text": "Background Audio", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_BACKGROUND"
+        },
+        {
+          "id": "Radio Settings",
+          "x":110,
+          "y":160,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Radio Settings", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 15, "recolor_palette": "blue"}
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Radio Settings", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 15, "recolor_palette": "blue"}
+          ],
+          "target": "recon_band_settings"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Persist DB",
+          "x":110,
+          "y":20,
+          "layers": [
+            { "variable_name":  "$_PERSIST_RECON_DB", "use_template": "toggle" },
+            { "text": "Save to Recon DB", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -5, "recolor_palette": "blue"}
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_PERSIST_RECON_DB", "use_template": "toggle" },
+            { "text": "Save to Recon DB", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -5, "recolor_palette": "blue"}
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PERSIST_RECON_DB"
+        },
+        {
+          "id": "Record PCAP",
+          "x":110,
+          "y":55,
+          "layers": [
+            { "variable_name":  "$_RECORD_PCAP", "use_template": "toggle" },
+            { "text": "Record PCAP", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_RECORD_PCAP", "use_template": "toggle" },
+            { "text": "Record PCAP", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECORD_PCAP"
+        },
+        {
+          "id": "Wigle Mode",
+          "x":110,
+          "y":90,
+          "layers": [
+            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "Keep Screen Awake",
+          "x":110,
+          "y":125,
+          "layers": [
+            { "variable_name":  "$_RECON_KEEP_SCREEN_AWAKE", "use_template": "toggle" },
+            { "text": "Keep Screen Awake", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_RECON_KEEP_SCREEN_AWAKE", "use_template": "toggle" },
+            { "text": "Keep Screen Awake", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_KEEP_SCREEN_AWAKE"
+        }
+      ]
+    }
+
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

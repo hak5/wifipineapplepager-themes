@@ -1,0 +1,85 @@
+{
+  "template": {
+    "screen_name": "payloads_for_category_list",
+    "windowed_canvas": true,
+    "cache_canvases": true,
+    "background": {
+      "layers": [
+        { "image_path": "assets/optiondialog/option_dialog_bg_windowed_purple.png", "x": 8, "y": 12 },
+        { "variable_name": "$_INPUT_NAME", "x": 35, "y": 25, "use_template": "string_title" },
+        { "variable_name": "$_LIST_SIZE", "x": 425, "y": 45, "string_template":{ "text_size": "small", "text_color_palette": "medium_gray","center_text_within": { "draw_bounds": false, "start_x": 415, "end_x": 440, "start_y": 45, "end_y": 58 }}},
+        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 415, "y": 32, "use_template": "list_pagination_label" }
+      ]
+    },
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 76, "use_template": "payload_name" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 78, "recolor_palette": "magenta" },
+              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "medium_gray" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 76, "use_template": "payload_name_selected" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 78, "recolor_palette": "magenta" },
+              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "medium_gray" }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 103, "use_template": "payload_name" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 105,"recolor_palette": "magenta"  }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 103, "use_template": "payload_name_selected" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 105,"recolor_palette": "magenta"  }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 130, "use_template": "payload_name" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 132,"recolor_palette": "magenta"  }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 130, "use_template": "payload_name_selected" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 132,"recolor_palette": "magenta"  }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 157, "use_template": "payload_name" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 160,"recolor_palette": "magenta"  },
+              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette":  "medium_gray"}
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 157, "use_template": "payload_name_selected" },
+              { "image_path": "assets/flame.png", "x": 64, "y": 160,"recolor_palette": "magenta"  },
+              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette":  "medium_gray"}
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}
