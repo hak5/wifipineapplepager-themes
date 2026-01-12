@@ -1,0 +1,46 @@
+{
+  "screen_name": "confirmation_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/confirmation_dialog_bg_term.png", "x": 28, "y": 0 },
+      { "variable_name": "$_INPUT", "x": 60, "y": 60, "use_template": "confirmation_dialog_text" }
+    ]
+  },
+  "pages": [
+    {
+      "menu_items": [
+        {
+          "id": "Save",
+          "y": 10,
+          "x": 2,
+          "layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 114, "y": 157 },
+            { "image_path":  "assets/optiondialog/x.png", "x": 167, "y": 170,  "recolor_palette": "disabled_dark_gray" }
+          ],
+          "selected_layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 114, "y": 157 },
+            { "image_path":  "assets/optiondialog/x.png", "x": 167, "y": 170, "recolor_palette": "red"}
+          ],
+          "target": "back"
+        },
+        {
+          "id": "Cancel",
+          "y": 10,
+          "x": 2,
+          "layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 252, "y": 157 },
+            { "image_path":  "assets/optiondialog/check.png", "x": 299, "y": 168,  "recolor_palette": "disabled_dark_gray" }
+          ],
+          "selected_layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 252, "y": 157 },
+            { "image_path":  "assets/optiondialog/check.png", "x": 299, "y": 168, "recolor_palette": "green" }
+          ],
+          "target": "confirm"
+        }
+      ]
+    }
+  ]
+}
+
