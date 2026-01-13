@@ -1,5 +1,5 @@
 {
-  "author": "Hak5",
+  "author": "WaterYouDoing",
   "theme_version": "1.0",
   "theme_framework_version": "0.5",
 
@@ -45,7 +45,8 @@
     "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
 
     "pineap_menu": "components/dashboards/dashboard_pineap.json",
-    "settings_menu": "components/dashboards/dashboard_settings.json"
+    "settings_menu": "components/dashboards/dashboard_settings.json",
+    "status_screen": "components/dashboards/status_screen.json"
   },
 
   "option_dialogs": {

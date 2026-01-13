@@ -93,6 +93,21 @@
       "x": 414,
       "y": 159,
       "target": "settings_menu"
+    },
+    {
+      "id": "WARDRIVING",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/gps.png", "x": 24, "y": 4, "recolor_palette": "navy" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": -15 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 7, "y": -65, "recolor_palette": "navy" },
+        { "image_path": "assets/dashboard/gps.png", "x": -207, "y": 17, "recolor_palette": "blue" }
+      ],
+      "x": 209,
+      "y": 159,
+      "target": "status_screen"
     }
   ]
 }
