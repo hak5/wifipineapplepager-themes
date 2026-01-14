@@ -1,0 +1,60 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 395,
+      "y": 202,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "black"
+    },
+    "Battery": {
+      "x": 356,
+      "y": 202,
+      "recolor_palette": "black",
+      "text_color_palette": "black",
+      "layers": {
+        "discharging":  [{ "image_path": "assets/statusbar/dashboard_battery_text.png",       "x": 4, "y": 0 }],
+        "charging_25":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_25.png",  "x": 4, "y": 0 }],
+        "charging_50":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_50.png",  "x": 4, "y": 0 }],
+        "charging_75":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_75.png",  "x": 4, "y": 0 }],
+        "charging_100": [{ "image_path": "assets/statusbar/dashboard_battery_charge_100.png", "x": 4, "y": 0 }],
+        "charged":      [{ "image_path": "assets/statusbar/dashboard_battery_full.png",       "x": 4, "y": 0 }]
+      }
+    },
+    "Volume": {
+      "x": 337,
+      "y": 202,
+      "layers": {
+        "mute":   [{ "image_path": "assets/statusbar/mute.png", "x": 0, "y": 0 }],
+        "low":    [{ "image_path": "assets/statusbar/volume_low.png", "x": 0, "y": 0 }],
+        "medium": [{ "image_path": "assets/statusbar/volume_medium.png", "x": 0, "y": 0 }],
+        "high":   [{ "image_path": "assets/statusbar/volume_high.png", "x": 0, "y": 0 }]
+      }
+    },
+    "Brightness": {
+      "x": 315,
+      "y": 202,
+      "layers": {
+        "15": [{ "image_path": "assets/statusbar/dashboard_brightness_2.png" }],
+        "25": [{ "image_path": "assets/statusbar/dashboard_brightness_3.png" }],
+        "50": [{ "image_path": "assets/statusbar/dashboard_brightness_5.png" }],
+        "75": [{ "image_path": "assets/statusbar/dashboard_brightness_7.png" }],
+        "100": [{ "image_path": "assets/statusbar/dashboard_brightness_8.png" }]
+      }
+    },
+    "Vibrate": {
+      "x": 290,
+      "y": 202,
+      "layers": {
+        "on":  [{ "image_path": "assets/statusbar/vibrate.png", "x": 0, "y": 0 }],
+        "off": [{ "image_path": "assets/statusbar/vibrate.png", "x": 0, "y": 0, "recolor_palette": "gray" }]
+      }
+    }
+  }
+}

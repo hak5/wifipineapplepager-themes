@@ -1,0 +1,131 @@
+{
+  "screen_name": "pineap_openap_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/slider.png", "x": 127, "y": 38},
+      { "text": "PineAP",    "x": 10, "y": 30,  "text_color_palette": "gray" },
+      { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 63},
+      { "text": "Open AP",   "x": 10, "y": 65,  "text_color_palette": "black"  },
+      { "text": "Evil WPA",  "x": 10, "y": 100, "text_color_palette": "gray" },
+      { "text": "SSID Pool", "x": 10, "y": 135, "text_color_palette": "gray" },
+      { "text": "Filters",   "x": 10, "y": 170, "text_color_palette": "gray" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Open AP",
+          "x": 160,
+          "y":30,
+          "layers": [
+            { "variable_name":  "$_OPEN_AP_ENABLED", "use_template": "checkbox" },
+            { "text": "Open AP", "x": 40, "text_color_palette": "black"  }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_OPEN_AP_ENABLED", "use_template": "checkbox" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3},
+            { "text": "Open AP", "x": 40, "text_color_palette": "black"  }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_OPEN_AP_ENABLED"
+        },
+        {
+          "id": "Hidden",
+          "x": 160,
+          "y":65,
+          "layers": [
+            { "variable_name":  "$_OPEN_AP_HIDDEN", "use_template": "checkbox" },
+            { "text": "Hidden", "x": 40, "text_color_palette": "black"  }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_OPEN_AP_HIDDEN", "use_template": "checkbox" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3},
+            { "text": "Hidden", "x": 40, "text_color_palette": "black"  }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_OPEN_AP_HIDDEN"
+        },
+        {
+          "id": "Network Name",
+          "x": 160,
+          "y":100,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "black" },
+            { "text": "Network Name", "x": 40, "text_color_palette": "black"  }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "black" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3},
+            { "text": "Network Name", "x": 40, "text_color_palette": "black"  }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_OPEN_AP_SSID"
+        },
+        {
+          "id": "BSSID",
+          "x": 160,
+          "y":135,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "black" },
+            { "text": "BSSID Override", "x": 40, "text_color_palette": "black"  }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "recolor_palette": "black" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3},
+            { "text": "BSSID Override", "x": 40, "text_color_palette": "black"  }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_OPEN_AP_BSSID"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

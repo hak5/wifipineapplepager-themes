@@ -1,0 +1,313 @@
+{
+  "screen_name": "settings_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "select"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "General",
+          "layers": [
+            { "text": "General", "x": 10, "y": 30, "text_color_palette": "black" },
+            { "image_path": "assets/slider.png", "x": 127, "y": 38}
+          ],
+          "selected_layers": [
+            { "x": 10,  "y": 30,  "text_color_palette": "black",         "text": "General" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 28},
+
+            { "x": 160, "y": 30,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 30,  "text_color_palette": "gray",           "text": "Volume" },
+
+            { "x": 160, "y": 65,  "variable_name": "$_VIBRATE",           "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 65,  "text_color_palette": "gray",           "text": "Vibrate" },
+
+            { "x": 160, "y": 100, "variable_name":  "$_RINGTONE_VIBRATE", "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 100, "text_color_palette": "gray",           "text": "Vibrate w/ Ringtone" },
+
+            { "x": 160, "y": 135, "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 135, "text_color_palette": "gray",           "text": "Theme" },
+
+            { "x": 160, "y": 170, "image_path": "assets/menu_disabled.png"  },
+            { "x": 200, "y": 170, "text_color_palette": "gray",           "text": "D-Pad LED" },
+            { "image_path": "assets/slider.png", "x": 127, "y": 38}
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_general_submenu"
+        },
+        {
+          "id": "Display",
+          "layers": [
+            { "text": "Display", "x": 10, "y": 65, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Display", "x": 10, "y": 65, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 63},
+
+            { "x": 160, "y": 30,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 30,  "text_color_palette": "gray",           "text": "Brightness" },
+
+            { "x": 160, "y": 65,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 65,  "text_color_palette": "gray",           "text": "Screen Timeout" },
+
+            { "x": 160, "y": 100,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 100,  "text_color_palette": "gray",           "text": "Dim Brightness" },
+
+            { "x": 160, "y": 135,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 135,  "text_color_palette": "gray",           "text": "Dim Timeout" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_display_submenu"
+        },
+        {
+          "id": "Ringtone",
+          "layers": [
+            { "text": "Ringtone", "x": 10, "y": 100, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Ringtone", "x": 10, "y": 100, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 98},
+
+            { "x": 160, "y": 30,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 30,  "text_color_palette": "gray",           "text": "Alert" },
+
+            { "x": 160, "y": 65,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 65,  "text_color_palette": "gray",           "text": "Boot" },
+
+            { "x": 160, "y": 100,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 100,  "text_color_palette": "gray",           "text": "Battery Low" },
+
+            { "x": 160, "y": 135,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 135,  "text_color_palette": "gray",           "text": "Battery Critical" },
+
+            { "x": 160, "y": 170,  "image_path": "assets/menu_disabled.png" },
+            { "x": 200, "y": 170,  "text_color_palette": "gray",           "text": "Power Connected" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_ringtone_submenu"
+        },
+        {
+          "id": "Network",
+          "layers": [
+            { "text": "Network", "x": 10, "y": 135, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Network", "x": 10, "y": 135, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 133},
+
+            { "x": 160, "y": 30,  "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",           "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 30,  "text_color_palette": "gray",           "text": "Client Mode" },
+
+            { "x": 160, "y": 65, "image_path": "assets/wizard.png", "recolor_palette": "gray" },
+            { "x": 200, "y": 65,  "text_color_palette": "gray",           "text": "Client Mode Setup" },
+
+            { "x": 160, "y": 100,  "variable_name": "$_WIFI_MGMT_AP_ENABLED",           "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 100, "text_color_palette": "gray",           "text": "Management AP" },
+
+            { "x": 160, "y": 135, "image_path": "assets/wizard.png", "recolor_palette": "gray"  },
+            { "x": 200, "y": 135, "text_color_palette": "gray",           "text": "Management AP Setup" },
+
+            { "x": 160, "y": 170, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 200, "y": 170, "text_color_palette": "gray",           "text": "Hostname" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_network_submenu"
+        },
+        {
+          "id": "System",
+          "layers": [
+            { "text": "System", "x": 10, "y": 170, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "System", "x": 10, "y": 170, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 168},
+
+            { "x": 160, "y": 30,  "variable_name": "$_VIRTUAL_PAGER_ENABLED",           "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 30,  "text_color_palette": "gray",           "text": "Virtual Pager" },
+
+            { "x": 160, "y": 65, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 200, "y": 65, "text_color_palette": "gray",           "text": "Root Password" },
+
+            { "x": 160, "y": 100,  "variable_name": "$_SSH_ENABLED",           "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 100, "text_color_palette": "gray",           "text": "SSH" },
+
+            { "x": 160, "y": 135,  "variable_name": "$_PIN_ENABLED",           "use_template": "disabled_checkbox" },
+            { "x": 200, "y": 135, "text_color_palette": "gray",           "text": "PIN Code" },
+
+            { "x": 160, "y": 170, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 200, "y": 170, "text_color_palette": "gray",           "text": "PIN Setup" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_system_submenu"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Date/Time",
+          "layers": [
+            { "text": "Clock", "x": 10, "y": 30, "text_color_palette": "black" },
+			{ "image_path": "assets/slider.png", "x": 127, "y": 139}
+          ],
+          "selected_layers": [
+            { "text": "Clock", "x": 10, "y": 30, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 28},
+			{ "image_path": "assets/slider.png", "x": 127, "y": 139},
+            { "variable_name": "$_DATETIME", "string_template":
+              { "text_size": "medium",
+                "text_color_palette": "gray",
+                "max_chars": 24,
+                "wrap_text": false,
+                "max_lines": 1
+              },
+              "x": 160,
+              "y":30
+            },
+
+            { "x": 160, "y": 65, "image_path": "assets/menu_disabled.png"  },
+            { "x": 200, "y": 65, "text_color_palette": "gray",           "text": "Timezone" },
+
+            { "x": 160, "y": 100, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 200, "y": 100, "text_color_palette": "gray",           "text": "Year" },
+
+            { "x": 160, "y": 135, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 200, "y": 135, "text_color_palette": "gray",           "text": "Month" },
+
+            { "x": 160, "y": 170, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 200, "y": 170, "text_color_palette": "gray",           "text": "Day" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_datetime_submenu"
+        },
+        {
+          "id": "GPS",
+          "layers": [
+            { "text": "GPS", "x": 10, "y": 65, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+
+            { "text": "GPS", "x": 10, "y": 65, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 63},
+
+            { "x": 160, "y": 30, "text": "Lat: ....", "text_size": "medium", "text_color": "gray"},
+            { "x":330, "y": 30, "text": "Lon: ....", "text_size": "medium", "text_color": "gray"},
+
+            { "image_path": "assets/menu_disabled.png", "x": 160, "y": 65 },
+            { "text": "Serial Device", "x": 200, "y": 65, "text_color_palette": "gray" },
+
+            { "image_path": "assets/menu_disabled.png", "x": 160, "y": 100 },
+            { "text": "Baud Rate", "x": 200, "y": 100,  "text_color_palette": "gray" },
+
+            { "image_path": "assets/start.png", "x": 174, "y": 135, "recolor_palette": "gray" },
+            { "text": "Restart GPSd", "x": 200, "y": 135, "text_color_palette": "gray" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_gps_submenu"
+        },
+        {
+          "id": "Updates",
+          "layers": [
+            { "text": "Updates", "x": 10, "y": 100, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Updates", "x": 10, "y": 100, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 98},
+
+            { "x": 160, "y": 30, "text_color_palette": "gray",           "text": "Current Version:" },
+            { "variable_name": "$_FIRMWARE_VERSION", "string_template":
+              { "text_size": "medium",
+                "text_color_palette": "gray",
+                "max_chars": 24,
+                "wrap_text": false,
+                "max_lines": 1
+              },
+              "x": 391,
+              "y": 30
+            },
+
+            { "x": 160, "y": 65, "image_path": "assets/disabled_wizard.png" },
+            { "x": 200, "y": 65, "text_color_palette": "gray",           "text": "Check for Updates" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_updates_submenu"
+        },
+        {
+          "id": "Help",
+          "layers": [
+            { "text": "Help", "x": 10, "y": 135, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Help", "x": 10, "y": 135, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 133},
+
+            { "x": 160, "y": 30, "image_path": "assets/disabled_wizard.png"  },
+            { "x": 200, "y": 30,  "text_color_palette": "gray",           "text": "Tutorial" },
+
+            { "x": 160, "y": 65, "image_path": "assets/disabled_info.png"  },
+            { "x": 200, "y": 65, "text_color_palette": "gray",           "text": "FCC ID: 2A52Y-MK1" },
+
+            { "x": 160, "y": 100, "image_path": "assets/disabled_info.png"  },
+            { "x": 200, "y": 100, "text_color_palette": "gray",           "text": "License Agreement" },
+
+            { "x": 160, "y": 135, "image_path": "assets/disabled_info.png"  },
+            { "x": 200, "y": 135, "text_color_palette": "gray",           "text": "Open Source Licenses" },
+
+            { "x": 160, "y": 170, "image_path": "assets/disabled_info.png"  },
+            { "x": 200, "y": 170, "text_color_palette": "gray",           "text": "Help" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_help_submenu"
+        },
+        {
+          "id": "About",
+          "layers": [
+            { "text": "About", "x": 10, "y": 170, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "About", "x": 10, "y": 170, "text_color_palette": "black" },
+            { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 168},
+
+            { "x": 160, "y": 30,  "text_color_palette": "gray",           "text": "Uptime: ..." },
+
+            { "x": 160, "y": 65,  "text_color_palette": "gray",           "text": "Battery: ..." },
+
+            { "x": 160, "y": 100, "text_color_palette": "gray",           "text": "Temperature: ..." },
+
+            { "x": 160, "y": 135, "text_color_palette": "gray",           "text": "Free Disk Space: ..." },
+
+            { "x": 160, "y": 170, "text_color_palette": "gray",           "text": "WAN IP: ..." }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "settings_about_submenu"
+        }
+      ]
+    }
+  ]
+}
