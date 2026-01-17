@@ -47,7 +47,7 @@
             { "text": "Targeted Payload", "text_color_palette": "green" }
           ],
           "selected_layers": [
-            { "text": "Targeted Payload", "text_color_palette": "yellow" }
+            { "text": "Targeted Payload", "text_color_palette": "white" }
           ],
           "target": "recon_payload_dashboard",
           "variable": "$_RECON_PAYLOAD_CATEGORIES"
@@ -60,7 +60,7 @@
             { "text": "Add to Allow Filter", "text_color_palette": "green" }
           ],
           "selected_layers": [
-            { "text": "Add to Allow Filter", "text_color_palette": "yellow" }
+            { "text": "Add to Allow Filter", "text_color_palette": "white" }
           ],
           "target": "function_selected_ap_client_add_to_allow_filter"
         },
@@ -72,7 +72,7 @@
             { "text": "Add to Deny Filter", "text_color_palette": "green" }
           ],
           "selected_layers": [
-            { "text": "Add to Deny Filter", "text_color_palette": "yellow" }
+            { "text": "Add to Deny Filter", "text_color_palette": "white" }
           ],
           "target": "function_selected_ap_client_add_to_deny_filter"
         },
@@ -84,7 +84,7 @@
             { "text": "Deauth Client", "text_color_palette": "green" }
           ],
           "selected_layers": [
-            { "text": "Deauth Client", "text_color_palette": "yellow" }
+            { "text": "Deauth Client", "text_color_palette": "white" }
           ],
           "target": "function_selected_ap_client_deauth"
         }

@@ -4,7 +4,7 @@
   "cache_canvases": false,
   "background": {
     "layers": [
-      { "image_path": "assets/confirmation_dialog_bg_term.png", "x": 28, "y": 0 },
+      { "image_path": "assets/confirmation_dialog_bg_term.png", "x": 38, "y": 0 },
       { "variable_name": "$_INPUT", "x": 60, "y": 60, "use_template": "confirmation_dialog_text" }
     ]
   },

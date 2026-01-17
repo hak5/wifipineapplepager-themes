@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 }
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 38, "y": 0 }
     ]
   },
   "pages": [

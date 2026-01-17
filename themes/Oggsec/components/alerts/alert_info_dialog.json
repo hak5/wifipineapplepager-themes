@@ -4,7 +4,7 @@
   "screen_name": "alert_info_dialog",
   "background": {
     "layers": [
-      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 28, "y": 0 }
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 38, "y": 0 }
     ]
   },
   "menu_items": [
