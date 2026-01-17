@@ -1,0 +1,107 @@
+{
+  "screen_name": "recon_selected_ap_menu",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divider.png", "x": 200, "y": 65 },
+      { "text": "Access Point Data", "x": 5, "y": 0, "text_size": "large", "text_color_palette": "blue" },
+
+      { "x": 15,   "y": 33, "variable_name": "$_RECON_SELECTED_AP_SSID", "string_template": {"text_size": "medium", "text_color_palette": "green"}},
+      { "x": 19,  "y": 59, "variable_name": "$_RECON_SELECTED_AP_BSSID", "string_template": { "text_size": "small", "text_color_palette": "green"}},
+
+      { "x": 150, "y": 80, "variable_name": "$_RECON_SELECTED_AP_RSSI", "string_template": {"text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 80, "end_y": 92 }}},
+      { "x": 17,  "y": 80, "text": "Signal:",   "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 100, "variable_name": "$_RECON_SELECTED_AP_ENCRYPTION_TYPE", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 100, "end_y": 112 }}},
+      { "x": 17,  "y": 100, "text": "Encryption:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 120, "variable_name": "$_RECON_SELECTED_AP_FREQ", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 120, "end_y": 132 }}},
+      { "x": 17,  "y": 120, "text": "Frequency:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 140, "variable_name": "$_RECON_SELECTED_AP_CHANNEL", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 140, "end_y": 152 }}},
+      { "x": 17,  "y": 140,  "text": "Channel:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 160, "variable_name": "$_RECON_SELECTED_AP_PACKETS", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 160, "end_y": 172 }}},
+      { "x": 17,  "y": 160, "text": "Packets:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 180, "variable_name": "$_RECON_SELECTED_AP_CLIENT_COUNT", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 180, "end_y": 192 }}},
+      { "x": 17,  "y": 180, "text": "Clients:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 200, "variable_name": "$_RECON_SELECTED_AP_TIMESTAMP", "string_template": { "text_size": "small", "text_color_palette": "disabled_dark_gray", "center_text_within": { "draw_bounds": false, "start_x": 0, "end_x": 200, "start_y": 200, "end_y": 212 }}}
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "connectedclients",
+          "x":226,
+          "y":62,
+          "layers": [
+            { "text": "Connected Clients", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Connected Clients", "text_color_palette": "yellow" }
+          ],
+          "target": "recon_ap_clients_list"
+        },
+        {
+          "id": "payload",
+          "x":226,
+          "y":95,
+          "layers": [
+            { "text": "Targeted Payload", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Targeted Payload", "text_color_palette": "yellow" }
+          ],
+          "target": "recon_payload_dashboard",
+          "variable": "$_RECON_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "addtofilters",
+          "x":226,
+          "y":128,
+          "layers": [
+            { "text": "Add SSID to Filters", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Add SSID to Filters", "text_color_palette": "yellow" }
+          ],
+          "target": "function_add_selected_ap_ssid_to_filters"
+        },
+        {
+          "id": "addtopool",
+          "x":226,
+          "y":161,
+          "layers": [
+            { "text": "Add SSID to Pool", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Add SSID to Pool", "text_color_palette": "yellow" }
+          ],
+          "target": "function_add_selected_ap_ssid_to_pool"
+        },
+        {
+          "id": "deauth all",
+          "x":226,
+          "y":194,
+          "layers": [
+            { "text": "Deauth All Clients", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Deauth All Clients", "text_color_palette": "yellow" }
+          ],
+          "target": "function_selected_ap_deauth_all_clients"
+        }
+      ]
+    }
+  ]
+
+}

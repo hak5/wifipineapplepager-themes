@@ -1,0 +1,103 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/neon_biker_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/alerts.png", "x": 19, "y": 18, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": 4, "y": 5, "recolor_palette": "red" },
+        { "image_path": "assets/dashboard/alerts.png", "x": 19, "y": 18, "recolor_palette": "cyan" },
+        { "text": "ALERTS", "x": -173, "y": 92, "text_size": "large", "text_color_palette": "red" }
+      ],
+      "x": 225,
+      "y": 70,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/payloads.png", "x": 23, "y": 18, "recolor_palette": "magenta" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/payloads.png", "x": 23, "y": 18, "recolor_palette": "cyan" },
+        { "text": "PAYLOADS", "x": -218, "y": 55, "text_size": "large", "text_color_palette": "magenta" }
+      ],
+      "x": 270,
+      "y": 125,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/recon.png", "x": 19, "y": 22, "recolor_palette": "cyan" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "cyan" },
+        { "image_path": "assets/dashboard/recon.png", "x": 19, "y": 22, "recolor_palette": "magenta" },
+        { "text": "RECON", "x": -263, "y": 91, "text_size": "large", "text_color_palette": "cyan" }
+      ],
+      "x": 315,
+      "y": 70,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/pineap.png", "x": 19, "y": 19, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "green" },
+        { "image_path": "assets/dashboard/pineap.png", "x": 19, "y": 19, "recolor_palette": "cyan" },
+        { "text": "PINEAP", "x": -308, "y": 55, "text_size": "large", "text_color_palette": "green" }
+      ],
+      "x": 360,
+      "y": 125,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/settings.png", "x": 19, "y": 19, "recolor_palette": "purple" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "purple" },
+        { "image_path": "assets/dashboard/settings.png", "x": 19, "y": 19, "recolor_palette": "cyan" },
+        { "text": "SETTINGS", "x": -353, "y": 90, "text_size": "large", "text_color_palette": "purple" }
+      ],
+      "x": 405,
+      "y": 70,
+      "target": "settings_menu"
+    }
+  ]
+}
