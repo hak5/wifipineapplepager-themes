@@ -90,7 +90,7 @@
             { "x": 286, "y": 5, "image_path": "assets/statusbar/dashboard_brightness_7.png", "recolor_palette": "blue" },
             { "x": 317, "y": 5, "image_path": "assets/statusbar/volume_high.png" },
             { "x": 346, "y": 5, "image_path": "assets/statusbar/dashboard_battery_charge_75.png" },
-            { "x": 400, "y": 7, "text": "1:37 PM", "text_color_palette": "blue", "text_size": "small" }
+            { "x": 400, "y": 7, "text": "1:37 PM", "text_color_palette": "orange", "text_size": "small" }
           ]
         }
       ]

@@ -13,7 +13,7 @@
   "title_x": 20,
   "title_y": 45,
   "bar_color_palette": "blue",
-  "text_color_palette": "blue",
+  "text_color_palette": "orange",
   "debug_graph_bounds": false,
   "debug_nice_max_line": false,
   "tight_scale_bars": false,
