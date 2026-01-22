@@ -14,7 +14,7 @@
   "background": {
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/slider.png", "x": 127, "y": 139},
+      { "image_path": "assets/slider.png", "x": 127, "y": 38},
       { "text": "General",  "x": 10, "y": 30,  "text_color_palette": "black" },
       { "image_path": "assets/settings/listhighlight.png", "x": 8, "y": 28},
       { "text": "Display",  "x": 10, "y": 65,  "text_color_palette": "gray" },
