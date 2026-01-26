@@ -22,7 +22,10 @@
       "id": "WARDRIVING",
       "layers": [],
       "selected_layers": [
-        { "image_path": "assets/dashboard/wardriving.png","x": 45, "y": 85 }
+        { "image_path": "assets/dashboard/wardriving.png","x": 45, "y": 85 },
+		{ "image_path": "assets/dashboard/Industrial_Lights1.png","x": 40, "y": 190 },
+		{ "image_path": "assets/dashboard/Industrial_Dials1.png","x": 210, "y": 60 },
+		{ "image_path": "assets/dashboard/Industrial_Knob1.png","x": 420, "y": 98 }
       ],
       "x": 0,
       "y": 0,
@@ -32,7 +35,10 @@
       "id": "ALERTS",
       "layers": [],
       "selected_layers": [
-        { "image_path": "assets/dashboard/alerts.png", "x": 45, "y": 85 }
+        { "image_path": "assets/dashboard/alerts.png", "x": 45, "y": 85 },
+		{ "image_path": "assets/dashboard/Industrial_Lights2.png","x": 40, "y": 190 },
+		{ "image_path": "assets/dashboard/Industrial_Dials2.png","x": 210, "y": 60 },
+		{ "image_path": "assets/dashboard/Industrial_Knob2.png","x": 420, "y": 98 }
       ],
       "x": 0,
       "y": 0,
@@ -42,7 +48,10 @@
       "id": "PAYLOADS",
       "layers": [],
       "selected_layers": [
-        { "image_path": "assets/dashboard/payloads.png", "x": 45, "y": 85 }
+        { "image_path": "assets/dashboard/payloads.png", "x": 45, "y": 85 },
+		{ "image_path": "assets/dashboard/Industrial_Lights3.png","x": 40, "y": 190 },
+		{ "image_path": "assets/dashboard/Industrial_Dials3.png","x": 210, "y": 60 },
+		{ "image_path": "assets/dashboard/Industrial_Knob3.png","x": 420, "y": 98 }
       ],
       "x": 0,
       "y": 0,
@@ -53,7 +62,10 @@
       "id": "RECON",
       "layers": [],
       "selected_layers": [
-        { "image_path": "assets/dashboard/recon.png", "x": 45, "y": 85 }
+        { "image_path": "assets/dashboard/recon.png", "x": 45, "y": 85 },
+		{ "image_path": "assets/dashboard/Industrial_Lights4.png","x": 40, "y": 190 },
+		{ "image_path": "assets/dashboard/Industrial_Dials4.png","x": 210, "y": 60 },
+		{ "image_path": "assets/dashboard/Industrial_Knob4.png","x": 420, "y": 98 }
       ],
       "x": 0,
       "y": 0,
@@ -63,7 +75,10 @@
       "id": "PINEAP",
       "layers": [],
       "selected_layers": [
-        { "image_path": "assets/dashboard/pineap.png", "x": 45, "y": 85 }
+        { "image_path": "assets/dashboard/pineap.png", "x": 45, "y": 85 },
+		{ "image_path": "assets/dashboard/Industrial_Lights5.png","x": 40, "y": 190 },
+		{ "image_path": "assets/dashboard/Industrial_Dials5.png","x": 210, "y": 60 },
+		{ "image_path": "assets/dashboard/Industrial_Knob5.png","x": 420, "y": 98 }
       ],
       "x": 0,
       "y": 0,
@@ -73,7 +88,10 @@
       "id": "SETTINGS",
       "layers": [],
       "selected_layers": [
-        { "image_path": "assets/dashboard/settings.png", "x": 45, "y": 85 }
+        { "image_path": "assets/dashboard/settings.png", "x": 45, "y": 85 },
+		{ "image_path": "assets/dashboard/Industrial_Lights6.png","x": 40, "y": 190 },
+		{ "image_path": "assets/dashboard/Industrial_Dials6.png","x": 210, "y": 60 },
+		{ "image_path": "assets/dashboard/Industrial_Knob6.png","x": 420, "y": 98 }
       ],
       "x": 0,
       "y": 0,
