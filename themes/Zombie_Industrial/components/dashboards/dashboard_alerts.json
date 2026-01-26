@@ -1,0 +1,69 @@
+{
+  "screen_name": "alerts_dashboard",
+  "status_bar": "",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "background": {
+    "layers": [
+      { "image_path": "assets/alerts_dashboard/alerts_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "auth captured",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/alerts_1.png","x": 60, "y": 70 }
+
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_AUTH_CAPTURED"
+        },
+        {
+          "id": "deauth flood",
+          "layers": [],
+          "selected_layers": [
+
+            { "image_path": "assets/alerts_dashboard/alerts_2.png","x": 60, "y": 70 }
+
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_DEAUTH_FLOOD"
+        },
+        {
+          "id": "new client",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/alerts_3.png","x": 60, "y": 70 }
+
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_NEW_CLIENT"
+        },
+        {
+          "id": "handshake capture",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/alerts_4.png","x": 60, "y": 70 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_HANDSHAKE_CAPTURE"
+        }
+      ]
+    }
+  ]
+}
