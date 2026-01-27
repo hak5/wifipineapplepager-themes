@@ -1,0 +1,288 @@
+{
+  "screen_name": "tutorial",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "background_color": { "r": 0, "g": 0, "b": 0 },
+    "layers": [
+      { "image_path": "assets/messagebox.png", "x": 12, "y": 56 },
+      { "image_path": "assets/pager-16bit.png", "x": 30, "y": 80 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "tut0",
+          "button_map": {
+            "a": "select",
+            "b": "noop",
+            "up": "noop",
+            "down": "next",
+            "left": "noop",
+            "right": "noop"
+          },
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "1 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Double-tap the power button to open\nthe quick access menu. From here you\ncan perform actions at any time like\nlocking the screen or shutting down\nthe Pager. Press the B or power\nbutton again to dismiss it."
+            },
+            { "x": 50, "y": 7, "image_path": "assets/arrow_up.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "tut1",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "2 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "The 'A' button (Green) is typically\nused to interact with the selected\nelement.\n\nThe 'B' button (Red) is usually used\nto return to the previous screen."
+            },
+            { "x": 50, "y": 175, "image_path": "assets/arrow_down.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "tut2",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "3 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "The direction buttons (D-Pad) allow\nyou to select on screen elements and\nnavigate menus. Their LED colors can\nbe controlled by payloads or from\nthe Settings > General > D-Pad LED\noptions menu."
+            },
+            { "x": 370, "y": 175, "image_path": "assets/arrow_down.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "menu_items": [
+        {
+          "id": "tut3",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "4 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "The status bar displays the time, as\nwell as the battery state, volume,\nbrightness and vibration status.\n\nFrom Recon, the status bar will show\nGPS, database, PCAP and frequency."
+            },
+            { "x": 300, "y": 25, "image_path": "assets/arrow_up.png" },
+            { "x": 251, "y": 5, "image_path": "assets/statusbar/vibrate.png" },
+            { "x": 286, "y": 5, "image_path": "assets/statusbar/dashboard_brightness_7.png", "recolor_palette": "blue" },
+            { "x": 317, "y": 5, "image_path": "assets/statusbar/volume_high.png" },
+            { "x": 346, "y": 5, "image_path": "assets/statusbar/dashboard_battery_charge_75.png" },
+            { "x": 400, "y": 7, "text": "1:37 PM", "text_color_palette": "blue", "text_size": "small" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 4,
+      "menu_items": [
+        {
+          "id": "tut4",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "5 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "The Pager has three main components:\nPineAP, Recon, and Payloads.\n\nIf you have experience with the WiFi\nPineapple or Hak5 gear, these should\nsound familiar. Let's break 'em down"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 5,
+      "menu_items": [
+        {
+          "id": "tut5",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "6 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "PineAP is the engine that allows you\nto perform WiFi attacks. In addition\nto handshake captures, you may mimic\nopen and WPA networks while staying\nwithin the scope of engagement using\nClient and Network filtering."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 6,
+      "menu_items": [
+        {
+          "id": "tut6",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "7 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Recon displays the wireless airspace\nat a glance with graphics, sounds\nand actionable data. Wardrive, save\npacket captures and interact with\nthe WiFi environment using payloads.\nSpeaking of payloads..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 7,
+      "menu_items": [
+        {
+          "id": "tut7",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "8 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Payloads are simple scripts written\nin Bash and DuckyScript that let you\nwield the Linux power of the Pager.\n\nThere are three kinds of payloads:\nAlert, User and Recon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 8,
+      "menu_items": [
+        {
+          "id": "tut8",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "9 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Alert payloads automatically trigger\nwhen events occur in the airspace --\nsuch as detecting deauth floods, new\nhandshakes being captured or clients\nconnecting to your WiFi Pineapple\nPager's rogue access point."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 9,
+      "menu_items": [
+        {
+          "id": "tut9",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "10 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "User payloads can be run anytime\nfrom the main Dashboard > Payloads\nmenu. You'll find a repository of\ncommunity developed payloads, as\nwell as documentation to write your\nown at https://hak5.org/pager\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 10,
+      "menu_items": [
+        {
+          "id": "tut10",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "11 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Recon payloads are a special type\nof payload which execute against a\ntarget observed from within Recon.\n\nUsing Recon payloads, you can easily\ninteract with the WiFi environment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 11,
+      "menu_items": [
+        {
+          "id": "tut11",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "12 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Settings is home to many features,\nlike 'Virtual Pager'. It lets you\ninteract with the Pager, access its\nterminal, download loot and more\nfrom a web browser via USB-C or WiFi\nvia the Management Access Point."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 12,
+      "menu_items": [
+        {
+          "id": "tut11",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "13 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "The Management Access Point is your\nWiFi Pineapple Pager's private WiFi\nnetwork. It's intended for you, the\noperator, to access the Pager's SSH\nand Virtual Pager interfaces. Set\nit up from the Settings > Network."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 13,
+      "menu_items": [
+        {
+          "id": "tut12",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "14 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "You can connect your Pager to the \nInternet from the Network section of\nthe Settings menu. Scroll down to \nClient Mode Setup and follow the \nwizard. Then enable using the Client\nMode toggle switch anytime.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 14,
+      "menu_items": [
+        {
+          "id": "tut13",
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "15 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "Once connected to the Internet via\nWiFi Client Mode, you're encouraged\nto check for firmware updates from\nthe Settings > Updates menu. Be sure\nto set your Timezone, date and time\nfor a reliable network connection."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 15,
+      "menu_items": [
+        {
+          "id": "tut14",
+          "button_map": {
+            "a": "back",
+            "b": "back",
+            "up": "previous",
+            "down": "back",
+            "left": "noop",
+            "right": "noop"
+          },
+          "selected_layers": [
+            { "x": 400, "y": 40, "text": "16 of 16", "text_color_palette": "green", "text_size": "small" },
+            {
+              "x":128, "y":74, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,
+              "text": "That's the gist - now go exploring.\nFind the full documentation, library\nof payloads, ringtones, themes and\nWiFi Pineapple Pager community at:\n\nhttps://hak5.org/pager"
+            }
+          ],
+          "target": "back"
+        }
+      ]
+    }
+  ]
+}
