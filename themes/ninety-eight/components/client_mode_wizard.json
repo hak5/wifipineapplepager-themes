@@ -166,7 +166,7 @@
                         "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png"
                     }
                 ],
-                "target": "function_clear_client_mode",
+                "target": "function_clear_wifi_client_mode",
                 "button_map": {
                     "a": "select",
                     "b": "back",

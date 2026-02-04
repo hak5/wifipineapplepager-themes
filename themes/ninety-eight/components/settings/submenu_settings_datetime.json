@@ -163,6 +163,22 @@
           ],
           "target": "edit_number_dialog",
           "variable": "$_SECOND"
+        },
+        {
+          "id": "24 Hour Clock",
+          "x": 160,
+          "y":135,
+          "layers": [
+            { "variable_name":  "$_CLOCK_24HR", "use_template": "checkbox" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_CLOCK_24HR", "use_template": "checkbox" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3},
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "black" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLOCK_24HR"
         }
       ]
     }
