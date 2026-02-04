@@ -1,0 +1,7 @@
+{
+  "text_size": "medium",
+  "text_color_palette": "blue",
+  "max_chars": 32,
+  "wrap_text": true,
+  "max_lines": 1
+}
