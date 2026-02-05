@@ -1,0 +1,9 @@
+{
+  "enabled": [
+    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
+    { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+  ],
+  "disabled": [
+    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+  ]
+}

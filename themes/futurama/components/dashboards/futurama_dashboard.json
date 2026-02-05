@@ -1,0 +1,73 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/futurama_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "selected_layers": [
+        { "image_path": "assets/dashboard/alerts1.png", "x": -186, "y": -51 },
+        { "text": "ALERTS", "x": -211, "y":  92, "text_size": "large", "text_color_palette": "textmaintitle" }
+      ],
+      "x": 263,
+      "y": 79,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "selected_layers": [
+        { "image_path": "assets/dashboard/payloads1.png", "x": -18, "y": -53 },
+        { "text": "PAYLOADS", "x": -249, "y":  53, "text_size": "large", "text_color_palette": "textmaintitle" }
+      ],
+      "x": 299,
+      "y": 116,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "PINEAP",
+      "selected_layers": [
+        { "image_path": "assets/dashboard/pineap.png", "x": -118, "y": -18 },
+        { "text": "PINEAP", "x": -321, "y":  55, "text_size": "large", "text_color_palette": "textmaintitle" }
+      ],
+      "x": 373,
+      "y": 115,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "selected_layers": [
+        { "image_path": "assets/dashboard/settings.png", "x": -234, "y": 16 },
+        { "text": "SETTINGS", "x": -358, "y":  90, "text_size": "large", "text_color_palette": "textmaintitle" }
+      ],
+      "x": 410,
+      "y": 80,
+      "target": "settings_menu"
+    },
+    {
+      "id": "RECON",
+      "selected_layers": [
+        { "image_path": "assets/dashboard/recon1.png", "x": -185, "y": -20 },
+        { "text": "RECON", "x": -283, "y":  91, "text_size": "large", "text_color_palette": "textmaintitle" }
+      ],
+      "x": 335,
+      "y": 80,
+      "target": "recon_dashboard"
+    }
+  ]
+}

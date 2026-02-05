@@ -1,0 +1,127 @@
+{
+  "template": {
+    "screen_name": "payloads_dashboard",
+    "status_bar": "",
+    "windowed_canvas": true,
+    "cache_canvases": true,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "back",
+      "right": "noop"
+    },
+    "background": {
+      "layers": [
+        { "image_path": "assets/payloads_dashboard/recon_payloads_bg.png", "x": 0, "y": 0 }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 75, "use_template": "recon_payload_title" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 75, "use_template": "recon_payload_title_selected" },
+              { "image_path": "assets/folder.png", "x": 55, "y": 75, "recolor_palette": "yellow" }
+            ],
+            "target": "recon_payloads_for_category_list",
+            "variable": "$_LIST_ITEM",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 97, "use_template": "recon_payload_title" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 97, "use_template": "recon_payload_title_selected" },
+              { "image_path": "assets/folder.png", "x": 55, "y": 97, "recolor_palette": "yellow" }
+            ],
+            "target": "recon_payloads_for_category_list",
+            "variable": "$_LIST_ITEM",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 119, "use_template": "recon_payload_title" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 119,  "use_template": "recon_payload_title_selected" },
+              { "image_path": "assets/folder.png", "x": 55, "y": 119, "recolor_palette": "yellow" }
+            ],
+            "target": "recon_payloads_for_category_list",
+            "variable": "$_LIST_ITEM",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 141, "use_template": "recon_payload_title" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 141,  "use_template": "recon_payload_title_selected" },
+              { "image_path": "assets/folder.png", "x": 55, "y": 141, "recolor_palette": "yellow" }
+            ],
+            "target": "recon_payloads_for_category_list",
+            "variable": "$_LIST_ITEM",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 163, "use_template": "recon_payload_title" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 85, "y": 163, "string_template": { "text_color_palette":  "yellow" } },
+              { "image_path": "assets/folder.png", "x": 55, "y": 163, "recolor_palette": "yellow" }
+            ],
+            "target": "recon_payloads_for_category_list",
+            "variable": "$_LIST_ITEM",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/wargames_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+	{
+      "id": "WARDRIVING",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/wardriving.png","x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "wardriving_dashboard"
+    },
+    {
+      "id": "ALERTS",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/alerts.png", "x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/payloads.png", "x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/recon.png", "x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/pineap.png", "x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/settings.png", "x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "settings_menu"
+    }
+  ]
+}

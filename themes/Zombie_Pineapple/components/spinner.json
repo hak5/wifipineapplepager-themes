@@ -1,0 +1,29 @@
+{
+  "screen_name": "spinner",
+  "windowed_canvas": true,
+  "cache_canvases": true,
+  "menu_items": [
+    {
+      "id": "spinner",
+      "animation_interval": 0.400,
+      "animation": [
+        { "image_path": "assets/spinner/spinner1.png","x": 137, "y": 72 },
+        { "image_path": "assets/spinner/spinner2.png","x": 137, "y": 72 },
+        { "image_path": "assets/spinner/spinner3.png","x": 137, "y": 72 },
+        { "image_path": "assets/spinner/spinner4.png","x": 137, "y": 72 }
+      ]
+    }, 
+	{
+    "layers": [
+	  { "image_path": "assets/dashboard/text_bg_150x61.png","x": 165, "y": 5 }
+      ]
+    },
+	{
+      "id": "spinner_text",
+      "unselectable": true,
+      "layers": [
+        { "variable_name": "$_INPUT", "use_template": "spinner_text" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "screen_name": "alerts_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "background": {
+    "layers": [
+      { "image_path": "assets/alerts_dashboard/alerts_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "auth captured",
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": 61, "y": 144 },
+            { "image_path": "assets/alerts_dashboard/evil.png","x": 225, "y": 103 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_AUTH_CAPTURED"
+        },
+        {
+          "id": "deauth flood",
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": 105, "y": 72 },
+            { "image_path": "assets/alerts_dashboard/deauth.png","x": 225, "y": 103 }
+
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_DEAUTH_FLOOD"
+        },
+        {
+          "id": "new client",
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": 331, "y": 48 },
+            { "image_path": "assets/alerts_dashboard/client.png","x": 227, "y": 100 }
+
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_NEW_CLIENT"
+        },
+        {
+          "id": "handshake capture",
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": 342, "y": 154 },
+            { "image_path": "assets/alerts_dashboard/handshake.png","x": 215, "y": 107 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_HANDSHAKE_CAPTURE"
+        }
+      ]
+    }
+  ]
+}

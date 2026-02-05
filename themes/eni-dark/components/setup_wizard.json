@@ -1,0 +1,433 @@
+{
+  "screen_name": "setup_wizard",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "page0_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "green", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "gray", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 100, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "setup0",
+          "selected_layers": [
+            { "image_path": "assets/flame.png", "recolor_palette": "green", "x": 119, "y": 17},
+            {
+              "x":142, "y":10,
+              "text": "WELCOME, HACKER",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "To the WiFi Pineapple Pager.\n\nLet's get started by going\n\nover a few important notices\n\nand configuring your device.",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":185,
+              "text": "Press down to continue.",
+              "text_color_palette": "green",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "page1_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "green", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 120, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "setup1",
+          "selected_layers": [
+            { "image_path": "assets/warning.png", "recolor_palette": "green", "x": 112, "y": 13},
+            {
+              "x":142, "y":10,
+              "text": "NOTICE: Firmware",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "Welcome to the cutting edge.\n\nNew features are released\n\noften. Please give feedback\n\nand join the community at\n\nhttps://hak5.org/pager",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "page2_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "green", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 120, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "setup2",
+          "selected_layers": [
+            { "image_path": "assets/warning.png", "recolor_palette": "green", "x": 112, "y": 13},
+            {
+              "x":142, "y":10,
+              "text": "NOTICE: Thermals",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "Ensure adequate airflow.\n\nDO NOT block cooling vents.\n\n\nThe screen will be HOT to\n\nthe touch with extended use.", 
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "menu_items": [
+        {
+          "id": "page3_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "green", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 120, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "setup3",
+          "selected_layers": [
+            { "image_path": "assets/warning.png", "recolor_palette": "green", "x": 112, "y": 13},
+            {
+              "x":142, "y":10,
+              "text": "NOTICE: Charging",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "Fully charge before each use\n\nusing a compatible charger.\n\n‎‎‎USB-C smartphone chargers\n\n‎‎‎Most computer USB-C ports\n\nLearn more at hak5.org/pager", 
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            { "image_path": "assets/optiondialog/check.png", "recolor_palette": "green", "x": 117, "y": 129},
+            { "image_path": "assets/optiondialog/x.png", "recolor_palette": "red",   "x": 120, "y": 161}
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 4,
+      "menu_items": [
+        {
+          "id": "page4_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "gray", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "green", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 140, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "setup4",
+          "selected_layers": [
+            { "image_path": "assets/dashboard/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
+            {
+              "x":160, "y":10,
+              "text": "PIN CODE",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "You may set a PIN Code for\n\nuse when locking the screen.", 
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            { "image_path": "assets/keyboard.png", "recolor_palette": "green", "x": 182, "y": 136},
+            { "text": "Set PIN Code", "x": 225, "y": 136, "text_color_palette": "green"},
+            {
+              "x":117, "y":185,
+              "text": "Press the green 'A' button to set a PIN,\nor press down to skip this for now.", 
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN"
+        }
+      ]
+    },
+    {
+      "page_index": 5,
+      "menu_items": [
+        {
+          "id": "page5_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "gray", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "green", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 160, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "root_password",
+          "selected_layers": [
+            { "image_path": "assets/dashboard/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
+            {
+              "x":160, "y":10,
+              "text": "ROOT PASSWORD",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "Set a root password for SSH\n\nand Virtual Pager access.", 
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            { "image_path": "assets/keyboard.png", "recolor_palette": "green", "x": 182, "y": 136},
+            { "text": "Set Password", "x": 225, "y": 136, "text_color_palette": "green"},
+            {
+              "x":117, "y":185,
+              "text": "Press the green 'A' button to set the\npassword, then press down to continue.", 
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SYSTEM_PASSWORD"
+        }
+      ]
+    },
+    {
+      "page_index": 6,
+      "menu_items": [
+        {
+          "id": "page6_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "gray", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "green", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "gray", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 180, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "set_timezone",
+          "selected_layers": [
+            { "image_path": "assets/dashboard/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
+            {
+              "x":160, "y":10,
+              "text": "SET TIMEZONE",
+              "text_color_palette": "green",
+              "text_size": "large",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x":117, "y":60,
+              "text": "Set your timezone now to\n\nenable over-the-air updates.", 
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            { "image_path": "assets/menu.png", "recolor_palette": "green", "x": 182, "y": 136},
+            { "text": "Set Timezone", "x": 225, "y": 136, "text_color_palette": "green"},
+            {
+              "x":117, "y":185,
+              "text": "Press the green 'A' button to set the\ntimezone, then press down to continue.",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_TIMEZONE"
+        }
+      ]
+    },
+    {
+      "page_index": 7,
+      "menu_items": [
+        {
+          "id": "page7_bg",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/pager-16bit.png", "x": 10, "y": 10 },
+            { "x": 112, "y": 13, "image_path": "assets/warning.png", "recolor_palette": "green" },
+            { "x": 142, "y": 10, "text": "License", "text_color_palette": "green", "text_size": "large" },
+            { "x": 117, "y":120, "text": "This pentest tool is intended for \nauthorized auditing & security analysis \nonly where permitted. Subject to local\nand international laws where applicable.\nUsers solely responsible for compliance.\n\nHak5 LLC claims no responsibility for\nunauthorized or unlawful use.", 
+              "text_color_palette": "disabled_light_gray", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10 },
+            { "x": 25, "y": 100, "text_size": "small", "text_color_palette": "gray", "text": "Welcome" },
+            { "x": 25, "y": 120, "text_size": "small", "text_color_palette": "gray", "text": "Notices" },
+            { "x": 25, "y": 140, "text_size": "small", "text_color_palette": "gray", "text": "PIN Code" },
+            { "x": 25, "y": 160, "text_size": "small", "text_color_palette": "gray", "text": "Password" },
+            { "x": 25, "y": 180, "text_size": "small", "text_color_palette": "gray", "text": "Timezone" },
+            { "x": 25, "y": 200, "text_size": "small", "text_color_palette": "green", "text": "License" },
+            { "image_path": "assets/triangle.png","x": 3, "y": 200, "recolor_palette": "green" }
+          ]
+        },
+        {
+          "id": "accept_eula",
+          "selected_layers": [
+            { "x": 117, "y": 64, "variable_name":  "$_EULA_ACCEPTED", "use_template": "checkbox" },
+            { "x": 147, "y": 60, "text": "I accept the License Agreement", "text_color_palette": "green", "text_size": "small" },
+            { "x": 147, "y": 75, "text": "Full terms: https://hak5.org/license", "text_color_palette": "disabled_light_gray", "text_size": "small" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_EULA_ACCEPTED"
+        }
+      ]
+    },
+    {
+      "page_index": 8,
+      "menu_items": [
+        {
+          "id": "page8_bg",
+          "unselectable": true,
+          "layers": [
+            { "x": 116, "y": 10,  "text": "Congratulations!", "text_color_palette": "green", "text_size": "large" },
+            { "x": 200, "y": 46, "image_path": "assets/pager-16bit.png" },
+            { "text": "Your WiFi Pineapple Pager\nis now ready to use.",
+              "text_color_palette": "disabled_light_gray", "text_size": "small",
+              "center_text_within" : { "draw_bounds": false, "start_x": 162, "end_x": 330, "start_y": 120, "end_y": 150 }
+            }
+          ]
+        },
+        {
+          "id": "finish_setup",
+          "layers": [
+            { "x": 155, "y": 160, "text": "Continue to Dashboard", "text_color_palette": "disabled_light_gray", "text_size": "small" }
+          ],
+          "selected_layers": [
+            { "x": 155, "y": 160, "text": "Continue to Dashboard", "text_color_palette": "green", "text_size": "small" },
+            { "x": 135, "y": 159, "image_path": "assets/triangle.png", "recolor_palette": "green" }
+          ],
+          "target": "exit_setup_wizard"
+        },
+        {
+          "id": "tutorial",
+          "layers": [
+            { "x": 210, "y": 175, "text": "Tutorial", "text_color_palette": "disabled_light_gray", "text_size": "small" }
+          ],
+          "selected_layers": [
+            { "x": 210, "y": 175, "text": "Tutorial", "text_color_palette": "green", "text_size": "small" },
+            { "x": 190, "y": 175, "image_path": "assets/triangle.png", "recolor_palette": "green" }
+          ],
+          "target": "tutorial"
+        }
+      ]
+    }
+  ]
+}

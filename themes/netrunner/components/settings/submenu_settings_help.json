@@ -1,0 +1,103 @@
+{
+  "screen_name": "settings_help_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
+      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "dark_red" },
+      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "dark_red" },
+      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "dark_red" },
+      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "cyan" },
+      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "dark_red" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Tutorial",
+          "x":170,
+          "y":50,
+          "layers": [
+            { "image_path": "assets/wizard.png", "recolor_palette": "dark_cyan" },
+            { "text": "Tutorial", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png", "recolor_palette": "cyan" },
+            { "text": "Tutorial", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "tutorial"
+        },
+        {
+          "id": "Regulatory",
+          "x":170,
+          "y":85,
+          "layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
+            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "cyan" },
+            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "regulatory"
+        },
+        {
+          "id": "License Agreement",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
+            { "text": "License Agreement", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "cyan" },
+            { "text": "License Agreement", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "license_dialog"
+        },
+        {
+          "id": "Open Source Licenses",
+          "x":170,
+          "y":155,
+          "layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
+            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "cyan" },
+            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "os_licenses"
+        },
+        {
+          "id": "Help",
+          "x":170,
+          "y":190,
+          "layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
+            { "text": "Help", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png", "recolor_palette": "cyan" },
+            { "text": "Help", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "help_dialog"
+        }
+      ]
+    }
+  ]
+
+}

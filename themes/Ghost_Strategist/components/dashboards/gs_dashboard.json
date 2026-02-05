@@ -1,0 +1,68 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/gs_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "selected_layers": [
+        { "text": "ALERTS", "x": 0, "y": 0, "text_size": "large", "text_color_palette": "gray" }
+      ],
+      "x": 330,
+      "y": 160,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "selected_layers": [
+        { "text": "PAYLOADS", "x": 0, "y": 0, "text_size": "large", "text_color_palette": "dark_purple" }
+      ],
+      "x": 330,
+      "y": 160,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "selected_layers": [
+        { "text": "RECON", "x": 0, "y": 0, "text_size": "large", "text_color_palette": "gray" }
+      ],
+      "x": 330,
+      "y": 160,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "selected_layers": [
+        { "text": "PINEAP", "x": 0, "y": 0, "text_size": "large", "text_color_palette": "dark_purple" }
+      ],
+      "x": 330,
+      "y": 160,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "selected_layers": [
+        { "text": "SETTINGS", "x": 0, "y": 0, "text_size": "large", "text_color_palette": "yellow" }
+      ],
+      "x": 330,
+      "y": 160,
+      "target": "settings_menu"
+    }
+  ]
+}

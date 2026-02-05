@@ -1,0 +1,8 @@
+{
+  "text_size": "small",
+  "text_color_palette": "black",
+  "max_chars": 35,
+  "wrap_text": true,
+  "max_lines": 13,
+  "center_text_within" : { "draw_bounds": false, "start_x": 100, "end_x": 430, "start_y": 20, "end_y": 190 }
+}

@@ -1,0 +1,66 @@
+{
+  "screen_name": "edit_string_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/edit_string_dialog_bg.png", "x": 0, "y": 0 }
+    ]
+  },
+  "title_x": 29,
+  "title_y": 70,
+  "menu_items": [
+    {
+      "id": "Save",
+      "layers": [
+      ],
+      "selected_layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 114, "y": 174 }
+      ],
+      "target": "save"
+    },
+    {
+      "id": "Edit",
+      "layers": [
+      ],
+      "selected_layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 202, "y": 174 }
+      ],
+      "target": "keyboard",
+      "variable": "$_INPUT"
+    },
+    {
+      "id": "Cancel",
+      "layers": [
+      ],
+      "selected_layers": [
+            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 290, "y": 174 }
+      ],
+      "target": "back"
+    },
+    {
+      "id": "Title",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 40,
+          "y": 50,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "black"
+          }
+        },
+        {
+          "variable_name": "$_INPUT",
+          "x": 40,
+          "y": 80,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "disabled_dark_gray"
+          }
+        }
+      ]
+    }
+  ]
+}

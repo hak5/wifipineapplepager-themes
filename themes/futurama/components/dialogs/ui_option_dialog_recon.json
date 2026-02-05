@@ -1,0 +1,176 @@
+{
+  "template": {
+    "screen_name": "option_picker",
+    "windowed_canvas": true,
+    "cache_canvases": true,
+    "background": {
+      "layers": [
+        { "image_path": "assets/optiondialog/option_dialog_bg_windowed_new.png", "x": 8, "y": 12, "recolor_palette": "pngrecondialogbg" },
+		{ "image_path": "assets/optiondialog/option_dialog_bg_windowed_mask.png", "x": 8, "y": 12 },
+		{ "image_path": "assets/optiondialog/option_dialog_bg_outline.png", "x": 8, "y": 12, "recolor_palette": "pngrecondialogbghlt" }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 70, "use_template": "option_dialog_string_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 72, "use_template": "radio_recon" },
+              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "pngrecondialogarrow" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 70, "use_template": "option_dialog_string_selected_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 72, "use_template": "selected_radio_recon" },
+              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "pngrecondialogarrow" }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 100, "use_template": "option_dialog_string_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 102, "use_template": "radio_recon" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 100, "use_template": "option_dialog_string_selected_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 102, "use_template": "selected_radio_recon" }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 130, "use_template": "option_dialog_string_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 132, "use_template": "radio_recon" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 130, "use_template": "option_dialog_string_selected_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 132, "use_template": "selected_radio_recon" }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 160, "use_template": "option_dialog_string_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 162, "use_template": "radio_recon" },
+              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette": "pngrecondialogarrow" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 160, "use_template": "option_dialog_string_selected_recon" },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 162, "use_template": "selected_radio_recon" },
+              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette": "pngrecondialogarrow" }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "save_cancel_menu": {
+    "screen_name": "option_picker",
+    "background": {
+      "layers": []
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Save",
+            "layers": [
+              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 36, "recolor_palette": "pngrecondialogbuttonbg" },
+              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 36, "recolor_palette": "pngrecondialogbuttonhlt" },
+              { "image_path": "assets/optiondialog/check.png", "x": 418, "y": 62, "recolor_palette": "pngrecondialogbuttoncheck" },
+              { "_comment": "this is just a required cache busting hack", "variable_name": "$_LIST_ITEM" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 36, "recolor_palette": "pngrecondialogbuttonbgcheckselect" },
+              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 36, "recolor_palette": "pngrecondialogbuttoncheckhltselect" },
+              { "image_path": "assets/optiondialog/check.png", "x": 418, "y": 62, "recolor_palette": "pngrecondialogbuttoncheckselect" },
+              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+            ],
+            "target": "save",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "next",
+              "left": "select_list",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Cancel",
+            "layers": [
+              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 118, "recolor_palette": "pngrecondialogbuttonbg" },
+              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 118, "recolor_palette": "pngrecondialogbuttonhlt" },
+              { "image_path": "assets/optiondialog/x.png", "x": 423, "y": 146, "recolor_palette": "pngrecondialogbuttonx" },
+              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/optiondialog/button_bg.png", "x": 401, "y": 118, "recolor_palette": "pngrecondialogbuttonbgxselect" },
+              { "image_path": "assets/optiondialog/button_outline.png", "x": 401, "y": 118, "recolor_palette": "pngrecondialogbuttonxhltselect" },
+              { "image_path": "assets/optiondialog/x.png", "x": 423, "y": 146, "recolor_palette": "pngrecondialogbuttonxselect" },
+              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+            ],
+            "target": "back",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "next",
+              "left": "select_list",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Title",
+            "unselectable": true,
+            "layers": [
+              {
+                "variable_name": "$_INPUT_NAME",
+                "x": 30,
+                "y": 30,
+                "use_template": "string_title_recon"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

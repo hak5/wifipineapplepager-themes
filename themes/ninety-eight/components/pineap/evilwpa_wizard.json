@@ -1,0 +1,224 @@
+{
+  "screen_name": "evilwpa_wizard",
+  "windowed_canvas": true,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "quit_wizard",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/optiondialog/option_dialog_bg_narrow_clear.png" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+        "menu_items": [
+            {
+                "id": "evilwpa_wizard_title",
+                "unselectable": true,
+                "layers": [
+                    {
+                        "x": 135,
+                        "y": 37,
+                        "text_size": "medium",
+                        "text_color_palette": "black",
+                        "text": "Evil WPA Setup"
+                    }
+                ]
+            },
+            {
+                "id": "ssid",
+                "x": 111,
+                "y": 60,
+                "layers": [
+                    {
+                        "image_path": "assets/keyboard.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "text": "Network Name",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "selected_layers": [
+                    {
+                        "image_path": "assets/keyboard.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "image_path": "assets/settings/bodyhighlight.png",
+                        "x": 35,
+                        "y": -2
+                    },
+                    {
+                        "text": "Network Name",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "target": "edit_string_dialog",
+                "variable": "$_SETUP_EVIL_WPA_SSID",
+                "button_map": {
+                    "a": "select",
+                    "b": "quit_wizard",
+                    "up": "goto save",
+                    "down": "next",
+                    "left": "noop",
+                    "right": "noop"
+                }
+            },
+            {
+                "id": "bssid",
+                "x": 111,
+                "y": 87,
+                "layers": [
+                    {
+                        "image_path": "assets/keyboard.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "text": "BSSID Override",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "selected_layers": [
+                    {
+                        "image_path": "assets/keyboard.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "image_path": "assets/settings/bodyhighlight.png",
+                        "x": 35,
+                        "y": -2
+                    },
+                    {
+                        "text": "BSSID Override",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "target": "edit_mac_dialog",
+                "variable": "$_SETUP_EVIL_WPA_BSSID"
+            },
+            {
+                "id": "enc",
+                "x": 111,
+                "y": 115,
+                "layers": [
+                    {
+                        "image_path": "assets/menu.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "text": "Encryption Type",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "selected_layers": [
+                    {
+                        "image_path": "assets/menu.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "image_path": "assets/settings/bodyhighlight.png",
+                        "x": 35,
+                        "y": -2
+                    },
+                    {
+                        "text": "Encryption Type",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "target": "option_dialog",
+                "variable": "$_SETUP_EVIL_WPA_ENCRYPTION_TYPE"
+            },
+            {
+                "id": "pass",
+                "x": 111,
+                "y": 145,
+                "layers": [
+                    {
+                        "image_path": "assets/keyboard.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "text": "Passphrase",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "selected_layers": [
+                    {
+                        "image_path": "assets/keyboard.png",
+                        "recolor_palette": "black"
+                    },
+                    {
+                        "image_path": "assets/settings/bodyhighlight.png",
+                        "x": 35,
+                        "y": -2
+                    },
+                    {
+                        "text": "Passphrase",
+                        "x": 40,
+                        "text_color_palette": "black"
+                    }
+                ],
+                "target": "edit_string_dialog",
+                "variable": "$_SETUP_EVIL_WPA_PASSPHRASE"
+            },
+            {
+                "id": "save",
+                "x": 160,
+                "y": 174,
+                "layers": [
+                ],
+                "selected_layers": [
+                    {
+                        "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png"
+                    }
+                ],
+                "target": "function_save_evil_wpa",
+				  "button_map": {
+					"a": "select",
+					"b": "quit_wizard",
+					"up": "previous",
+					"down": "goto ssid",
+					"left": "goto clear",
+					"right": "goto clear"
+				  }
+            },
+            {
+                "id": "clear",
+                "x": 244,
+                "y": 174,
+                "layers": [
+                ],
+                "selected_layers": [
+                    {
+                        "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png"
+                    }
+                ],
+				  "target": "function_clear_evil_wpa",
+				  "button_map": {
+					"a": "select",
+					"b": "quit_wizard",
+					"up": "goto pass",
+					"down": "next",
+					"left": "goto save",
+					"right": "goto save"
+				  }
+            }
+        ]
+    }
+  ]
+}

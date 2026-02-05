@@ -1,0 +1,99 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "gps",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/deadsec_r_bg.png", "x": 0, "y": 0 },
+      { "variable_name": "$_GPS_LAT", "x": 90, "y":29, "string_template": {"text_size": "small", "text_color_palette": "cyan" } },
+      { "variable_name": "$_GPS_LON", "x": 90, "y":41, "string_template": {"text_size": "small", "text_color_palette": "cyan" }}
+
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": 0, "y": 0, "recolor_palette": "white" }
+      ],
+      "x": 170,
+      "y": 41,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+        
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0, "recolor_palette": "white" }
+      ],
+      "x": 269,
+      "y": 42,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0, "recolor_palette": "white"  }
+      ],
+      "x": 367,
+      "y": 42,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0, "recolor_palette": "white"  }
+      ],
+      "x": 170,
+      "y": 131,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0, "recolor_palette": "white" }
+      ],
+      "x": 269,
+      "y": 131,
+      "target": "settings_menu"
+    },
+        {
+      "id": "WIGLE",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0, "recolor_palette": "white" }
+      ],
+      "x": 367,
+      "y": 131,
+      "target": "wigle_menu"
+    }
+  ]
+}
