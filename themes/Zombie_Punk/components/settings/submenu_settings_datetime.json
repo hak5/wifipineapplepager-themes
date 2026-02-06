@@ -45,7 +45,7 @@
         {
           "id": "Timezone",
           "x":170,
-          "y":85,
+          "y":75,
           "layers": [
             { "image_path": "assets/menu.png" },
             { "text": "Timezone", "x": 40, "text_color_palette": "blue" }
@@ -60,7 +60,7 @@
         {
           "id": "Year",
           "x":170,
-          "y":120,
+          "y":100,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Year", "x": 40, "text_color_palette": "blue" }
@@ -75,7 +75,7 @@
         {
           "id": "Month",
           "x":170,
-          "y":155,
+          "y":125,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Month", "x": 40, "text_color_palette": "blue" }
@@ -90,7 +90,7 @@
         {
           "id": "Day",
           "x":170,
-          "y":190,
+          "y":150,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Day", "x": 40, "text_color_palette": "blue" },
@@ -103,6 +103,21 @@
           ],
           "target": "edit_number_dialog",
           "variable": "$_DAY"
+        },
+		{
+          "id": "24 Hour Clock",
+          "x":170,
+          "y":175,
+          "layers": [
+            { "variable_name":  "$_CLOCK_24HR", "use_template": "toggle" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_CLOCK_24HR", "use_template": "toggle" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLOCK_24HR"
         }
       ]
     },

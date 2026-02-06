@@ -74,7 +74,7 @@
         { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
         { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
         { "id": "/",               "x": 336, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "?",               "x": 383, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "capslock",               "x": 383, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
         { "id": "done",            "x": 430, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
       ]
     ]
@@ -143,7 +143,7 @@
         { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
         { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
         { "id": "/",               "x": 336, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "?",               "x": 383, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "capslock",               "x": 383, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
         { "id": "done",            "x": 430, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
       ]
     ]
