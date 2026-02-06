@@ -192,7 +192,10 @@
             { "x": 210, "y": 125, "text_color_palette": "blue",           "text": "Month" },
 
             { "x": 170, "y": 150, "image_path": "assets/disabled_keyboard.png", "recolor_palette": "blue"  },
-            { "x": 210, "y": 150, "text_color_palette": "blue",           "text": "Day" }
+            { "x": 210, "y": 150, "text_color_palette": "blue",           "text": "Day" },
+			
+			{ "x": 173, "y": 175,  "variable_name": "$_CLOCK_24HR", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 175,  "text_color_palette": "blue",           "text": "24 Hour Clock" }
           ],
           "x": 0,
           "y": 0,

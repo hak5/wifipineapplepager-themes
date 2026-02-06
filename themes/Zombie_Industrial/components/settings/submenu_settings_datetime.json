@@ -103,6 +103,21 @@
           ],
           "target": "edit_number_dialog",
           "variable": "$_DAY"
+        },
+		{
+          "id": "24 Hour Clock",
+          "x":170,
+          "y":175,
+          "layers": [
+            { "variable_name":  "$_CLOCK_24HR", "use_template": "toggle", "x": 3 },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_CLOCK_24HR", "use_template": "toggle", "x": 3 },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLOCK_24HR"
         }
       ]
     },
