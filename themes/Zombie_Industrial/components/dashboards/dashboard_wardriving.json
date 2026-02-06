@@ -1,0 +1,218 @@
+{
+  "screen_name": "wardriving_dashboard",
+  "status_bar": "gps",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/wardriving_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "GPS_coords",
+          "x": 125,
+          "y": 37,
+          "unselectable": true,
+          "layers": [
+            { "text": "Lat:", "x": 145, "y": -8, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_GPS_LAT", "x": 205, "y": -8, "string_template": { "text_size": "small", "text_color_palette": "yellow", "max_chars": 10 }},
+            { "text": "Lon:", "x": 145, "y": 10,  "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_GPS_LON", "x": 205, "y": 10, "string_template": { "text_size": "small", "text_color_palette": "yellow", "max_chars": 10 }}
+          ]
+        },
+        {
+          "id": "Wigle",
+          "x": 60,
+          "y": 75,
+          "layers": [
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "WIGLE", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "WIGLE", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "restart_gpsd",
+          "x": 60,
+          "y": 95,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": -3, "recolor_palette": "blue" },
+            { "text": "RESTART GPSd", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": -1, "recolor_palette": "yellow" },
+            { "text": "RESTART GPSd", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "function_restart_gpsd"
+        },
+        {
+          "id": "2.4GHz",
+          "x": 60,
+          "y": 115,
+          "layers": [
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "2.4 GHz", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "2.4 GHz", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED"
+        },
+        {
+          "id": "5GHz",
+          "x": 60,
+          "y": 135,
+          "layers": [
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "5 GHz", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "5 GHz", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED"
+        },
+        {
+          "id": "6GHz",
+          "x": 60,
+          "y": 155,
+          "layers": [
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "6 GHz", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "6 GHz", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED"
+        },
+        {
+          "id": "Handshakes",
+          "x": 60,
+          "y": 175,
+          "layers": [
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "HANDSHAKES", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "HANDSHAKES", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES"
+        },
+        {
+          "id": "GPS_Device",
+          "x": 240,
+          "y": 75,
+          "layers": [
+            { "image_path": "assets/menu.png", "y": -4, "text_color_palette": "blue" },
+            { "text": "GPS DEVICE", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "y": -4, "text_color_palette": "yellow"  },
+            { "text": "GPS DEVICE", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_DEVICE"
+        },
+        {
+          "id": "GPS_Baud",
+          "x": 240,
+          "y": 95,
+          "layers": [
+            { "image_path": "assets/menu.png", "y": -4, "text_color_palette": "blue" },
+            { "text": "BAUD RATE", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "y": -4, "text_color_palette": "yellow" },
+            { "text": "BAUD RATE", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_BAUD"
+        },
+        {
+          "id": "PCAP",
+          "x": 240,
+          "y": 115,
+          "layers": [
+            { "variable_name": "$_RECORD_PCAP", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "RECORD PCAP", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RECORD_PCAP", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "RECORD PCAP", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECORD_PCAP"
+        },
+        {
+          "id": "Persist",
+          "x": 240,
+          "y": 135,
+          "layers": [
+            { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "SAVE RECON DB", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "SAVE RECON DB", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PERSIST_RECON_DB"
+        },
+        {
+          "id": "Geiger",
+          "x": 240,
+          "y": 155,
+          "layers": [
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "RECON AUDIO", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "RECON AUDIO", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_ENABLED"
+        },
+        {
+          "id": "BackgroundAudio",
+          "x": 240,
+          "y": 175,
+          "layers": [
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "BG AUDIO", "x": 40, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle", "x": 0, "y": -3 },
+            { "text": "BG AUDIO", "x": 40, "text_size": "small", "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_BACKGROUND"
+        }
+      ]
+    }
+  ]
+}

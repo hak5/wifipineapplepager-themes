@@ -14,16 +14,15 @@
       "recolor_palette": "black"
     },
     "Battery": {
-      "x": 356,
+      "x": 350,
       "y": 202,
-      "text_color_palette": "black",
       "layers": {
-        "discharging":  [{ "image_path": "assets/statusbar/dashboard_battery_text.png",       "x": 4, "y": 0 }],
-        "charging_25":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_25.png",  "x": 4, "y": 0 }],
-        "charging_50":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_50.png",  "x": 4, "y": 0 }],
-        "charging_75":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_75.png",  "x": 4, "y": 0 }],
-        "charging_100": [{ "image_path": "assets/statusbar/dashboard_battery_charge_100.png", "x": 4, "y": 0 }],
-        "charged":      [{ "image_path": "assets/statusbar/dashboard_battery_full.png",       "x": 4, "y": 0 }]
+        "discharging":  [{ "image_path": "assets/statusbar/dashboard_battery_text.png",       "x": 8, "y": 0 }],
+        "charging_25":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_25.png",  "x": 8, "y": 0 }],
+        "charging_50":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_50.png",  "x": 8, "y": 0 }],
+        "charging_75":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_75.png",  "x": 8, "y": 0 }],
+        "charging_100": [{ "image_path": "assets/statusbar/dashboard_battery_charge_100.png", "x": 8, "y": 0 }],
+        "charged":      [{ "image_path": "assets/statusbar/dashboard_battery_full.png",       "x": 8, "y": 0 }]
       }
     },
     "FrequencyIndicators": {

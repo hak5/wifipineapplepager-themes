@@ -7,8 +7,8 @@
       "layers": [
         { "image_path": "assets/dialog_select.png" },
         { "variable_name": "$_INPUT_NAME", "x": 35, "y": 25, "use_template": "string_title" },
-        { "variable_name": "$_LIST_SIZE", "x": 425, "y": 45, "string_template":{ "text_size": "small", "text_color_palette": "medium_gray","center_text_within": { "draw_bounds": false, "start_x": 415, "end_x": 440, "start_y": 45, "end_y": 58 }}},
-        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 415, "y": 32, "use_template": "list_pagination_label" }
+        { "variable_name": "$_LIST_SIZE", "x": 410, "y": 45, "string_template":{ "text_size": "small", "text_color_palette": "medium_gray","center_text_within": { "draw_bounds": false, "start_x": 410, "end_x": 425, "start_y": 45, "end_y": 58 }}},
+        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 400, "y": 32, "use_template": "list_pagination_label" }
       ]
     },
     "button_map": {

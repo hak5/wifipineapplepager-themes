@@ -23,7 +23,7 @@
       "layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
         { "image_path": "assets/flame.png","x": 92, "y": 149 },
-        { "text": "Launch", "x": 47, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "text": "Launch", "x": 47, "y": 115, "text_color_palette": "orange", "text_size": "large" }
       ],
       "selected_layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
@@ -43,7 +43,7 @@
       "layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
         { "image_path": "assets/x.png","x": 233, "y": 150 },
-        { "text": "Cancel", "x": 194, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "text": "Cancel", "x": 194, "y": 115, "text_color_palette": "orange", "text_size": "large" }
       ],
       "selected_layers": [
         { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },

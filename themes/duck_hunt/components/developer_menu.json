@@ -26,12 +26,12 @@
           "layers": [
             { "image_path": "assets/menu.png" },
             { "variable_name": "$_UI_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "UI Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "UI Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
             { "variable_name": "$_UI_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "UI Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "UI Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_UI_DEBUG_LOG",
@@ -50,11 +50,11 @@
           "y": 55,
           "layers": [
             { "variable_name": "$_RENDER_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Render Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Render Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_RENDER_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Render Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Render Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_RENDER_DEBUG_LOG"
@@ -65,11 +65,11 @@
           "y": 90,
           "layers": [
             { "variable_name": "$_DATA_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Data Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Data Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_DATA_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Data Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Data Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_DATA_DEBUG_LOG"
@@ -80,11 +80,11 @@
           "y": 125,
           "layers": [
             { "variable_name": "$_EVENT_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Event Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Event Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_EVENT_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Event Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Event Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_EVENT_DEBUG_LOG"
@@ -95,11 +95,11 @@
           "y": 160,
           "layers": [
             { "variable_name": "$_STATS_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_STATS_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_STATS_DEBUG_LOG"
@@ -115,11 +115,11 @@
           "y": 20,
           "layers": [
             { "variable_name": "$_ISOLATED_ERROR_LOG", "use_template": "toggle" },
-            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_ISOLATED_ERROR_LOG", "use_template": "toggle" },
-            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_ISOLATED_ERROR_LOG"
@@ -130,11 +130,11 @@
           "y": 55,
           "layers": [
             { "variable_name": "$_CACHE_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_CACHE_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_CACHE_DEBUG_LOG"
@@ -145,11 +145,11 @@
           "y": 90,
           "layers": [
             { "variable_name": "$_SERVICE_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Service Debug Log", "x": 40, "text_color_palette": "blue" }
+            { "text": "Service Debug Log", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_SERVICE_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Service Debug Log", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Service Debug Log", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_SERVICE_DEBUG_LOG"
@@ -160,11 +160,11 @@
           "y": 125,
           "layers": [
             { "variable_name": "$_BACKGROUND_CHANGES", "use_template": "toggle" },
-            { "text": "Background Changes", "x": 40, "text_color_palette": "blue" }
+            { "text": "Background Changes", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_BACKGROUND_CHANGES", "use_template": "toggle" },
-            { "text": "Background Changes", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Background Changes", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_BACKGROUND_CHANGES"
@@ -175,11 +175,11 @@
           "y": 160,
           "layers": [
             { "variable_name": "$_TRACE", "use_template": "toggle" },
-            { "text": "Trace ", "x": 40, "text_color_palette": "blue" }
+            { "text": "Trace ", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_TRACE", "use_template": "toggle" },
-            { "text": "Trace ", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Trace ", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_TRACE",
@@ -198,11 +198,11 @@
           "y": 160,
           "layers": [
             { "variable_name": "$_TRACE_DEPTH", "x": 120, "use_template": "string" },
-            { "text": "Depth:", "x": 40, "text_color_palette": "blue" }
+            { "text": "Depth:", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_TRACE_DEPTH", "x": 120, "use_template": "string" },
-            { "text": "Depth:", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Depth:", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_TRACE_DEPTH",
@@ -237,7 +237,7 @@
               ]
             }
             },
-            { "text": "Write logs to disk", "x": 40, "text_color_palette": "blue" }
+            { "text": "Write logs to disk", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "variable_name": "$_DEBUG_LOG_TO_DISK", "toggle_template": {
@@ -252,7 +252,7 @@
               ]
             }
             },
-            { "text": "Write logs to disk", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Write logs to disk", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_DEBUG_LOG_TO_DISK",
@@ -271,7 +271,7 @@
           "y": 55,
           "layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
-            { "text": "Restart Server", "x": 40, "text_color_palette": "blue" }
+            { "text": "Restart Server", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/start.png", "x": 2, "y": 2, "recolor_palette": "red" },
@@ -285,7 +285,7 @@
           "y": 90,
           "layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
-            { "text": "Restart PineAPd", "x": 40, "text_color_palette": "blue" }
+            { "text": "Restart PineAPd", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
@@ -299,7 +299,7 @@
           "y": 125,
           "layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
-            { "text": "Restart Networking", "x": 40, "text_color_palette": "blue" }
+            { "text": "Restart Networking", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
@@ -313,7 +313,7 @@
           "y": 160,
           "layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
-            { "text": "Restart Device", "x": 40, "text_color_palette": "blue" }
+            { "text": "Restart Device", "x": 40, "text_color_palette": "orange" }
           ],
           "selected_layers": [
             { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "blue"},
@@ -331,7 +331,7 @@
           ],
           "selected_layers": [
             { "variable_name": "$_MIRRORED_SCREEN", "use_template": "toggle" },
-            { "text": "Flip Screen", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Flip Screen", "x": 40, "text_color_palette": "purple" }
           ],
           "target": "inline_toggle",
           "variable": "$_MIRRORED_SCREEN"

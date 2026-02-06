@@ -19,8 +19,8 @@
     "background": {
       "layers": [
         { "image_path": "assets/recon/recon_list_bg.png", "x": 0, "y": 0 },
-        { "x": 0,  "y": 0, "variable_name": "$_RECON_LIST_PAGINATOR_LABEL_SHORT", "string_template": { "text_size": "small",  "text_color_palette": "blue", "center_text_within": { "draw_bounds": false, "start_x": 8, "end_x": 70, "start_y": 3, "end_y": 12 } }},
-        { "x": 0,  "y": 12, "variable_name": "$_RECON_LIST_SIZE", "string_template": { "text_size": "small",  "text_color_palette": "soft_white", "center_text_within": { "draw_bounds": false, "start_x": 8, "end_x": 72, "start_y": 13, "end_y": 28 }}}
+        { "x": 24,  "y": 5, "variable_name": "$_RECON_LIST_PAGINATOR_LABEL_SHORT", "string_template": { "text_size": "small",  "text_color_palette": "white"}},
+        { "x": 89,  "y": 5, "variable_name": "$_RECON_LIST_SIZE", "string_template": { "text_size": "small",  "text_color_palette": "soft_white"}}
       ]
     },
     "pages": [
@@ -28,8 +28,8 @@
         "menu_items": [
           { "_comment": "required menu item, must exist, must be first item, must have id autoupdate",
             "id": "autoupdate",
-            "x": 77,
-            "y": 3,
+            "x": 5,
+            "y": 4,
             "layers": [
               {"image_path": "assets/autoplay_stopped.png", "recolor_palette": "gray" }
             ],
@@ -54,10 +54,10 @@
               "right": "noop"
             }
           },
-          { "id": "Row0", "x":55, "y":40,
+          { "id": "Row0", "x":55, "y":30,
             "layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -66,7 +66,8 @@
             ],
             "selected_layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+			  { "image_path": "assets/settings/longskinnyhighlight.png", "x": -7, "y": 1},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -75,10 +76,10 @@
             ],
             "target": "recon_selected_ap_client_menu"
           },
-          { "id": "Row1", "x":55, "y":75,
+          { "id": "Row1", "x":55, "y":65,
             "layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -87,7 +88,8 @@
             ],
             "selected_layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+			  { "image_path": "assets/settings/longskinnyhighlight.png", "x": -7, "y": 1},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -96,10 +98,10 @@
             ],
             "target": "recon_selected_ap_client_menu"
           },
-          { "id": "Row2", "x":55, "y":110,
+          { "id": "Row2", "x":55, "y":100,
             "layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -108,7 +110,8 @@
             ],
             "selected_layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+			  { "image_path": "assets/settings/longskinnyhighlight.png", "x": -7, "y": 1},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -117,10 +120,10 @@
             ],
             "target": "recon_selected_ap_client_menu"
           },
-          { "id": "Row3", "x":55, "y":145,
+          { "id": "Row3", "x":55, "y":135,
             "layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -129,7 +132,8 @@
             ],
             "selected_layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+			  { "image_path": "assets/settings/longskinnyhighlight.png", "x": -7, "y": 1},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -138,10 +142,10 @@
             ],
             "target": "recon_selected_ap_client_menu"
           },
-          { "id": "Row4", "x":55, "y":180,
+          { "id": "Row4", "x":55, "y":170,
             "layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
@@ -150,7 +154,8 @@
             ],
             "selected_layers": [
               { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+              {                   "variable_name": "$_RECON_RESULT_OUI",            "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 32, "wrap_text": false, "max_lines": 1 }},
+			  { "image_path": "assets/settings/longskinnyhighlight.png", "x": -7, "y": 1},
               { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_MAC_ADDRESS",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
               { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},

@@ -33,9 +33,9 @@
         { "id": "3", "x": 266,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
       ],
       [
-        { "id": "done",      "x": 172,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "backspace", "x": 172,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
         { "id": "0",         "x": 219,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "backspace", "x": 266,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+        { "id": "done",      "x": 266,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
       ]
     ]
   }

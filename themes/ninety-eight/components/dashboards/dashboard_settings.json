@@ -185,7 +185,7 @@
               "x": 160,
               "y":30
             },
-
+			
             { "x": 160, "y": 65, "image_path": "assets/menu_disabled.png"  },
             { "x": 200, "y": 65, "text_color_palette": "gray",           "text": "Timezone" },
 

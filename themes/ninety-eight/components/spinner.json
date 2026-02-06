@@ -5,12 +5,23 @@
   "menu_items": [
     {
       "id": "spinner",
-      "animation_interval": 0.400,
+      "animation_interval": 0.100,
       "animation": [
         { "image_path": "assets/spinner/spinner1.png","x": 140, "y": 40 },
         { "image_path": "assets/spinner/spinner2.png","x": 140, "y": 40 },
         { "image_path": "assets/spinner/spinner3.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner4.png","x": 140, "y": 40 }
+        { "image_path": "assets/spinner/spinner4.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner5.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner6.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner7.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner8.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner9.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner10.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner11.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner12.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner13.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner14.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner15.png","x": 140, "y": 40 }
       ]
     }, {
       "id": "spinner_text",

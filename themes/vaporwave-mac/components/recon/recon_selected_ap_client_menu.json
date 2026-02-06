@@ -1,0 +1,95 @@
+{
+  "screen_name": "recon_selected_ap_client_menu",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divider.png", "x": 200, "y": 65 },
+      { "text": "Client", "x": 15, "y": 4, "text_size": "medium", "text_color_palette": "green" },
+
+      { "x": 105,  "y": 4, "variable_name": "$_RECON_SELECTED_CLIENT_MAC_ADDRESS", "string_template": {"text_size": "medium", "text_color_palette": "green"}},
+      { "x": 15,   "y": 33, "variable_name": "$_RECON_SELECTED_CLIENT_OUI", "string_template": {"text_size": "medium", "text_color_palette": "green"}},
+      { "x": 19,  "y": 59, "variable_name": "$_RECON_SELECTED_AP_SSID", "string_template": { "text_size": "small", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+      { "x": 19,  "y": 80, "variable_name": "$_RECON_SELECTED_AP_MAC_ADDRESS", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray" }},
+
+      { "x": 150, "y": 100, "variable_name": "$_RECON_SELECTED_CLIENT_RSSI", "string_template": {"text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 100, "end_y": 112 }}},
+      { "x": 17,  "y": 100, "text": "Signal:",   "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 120, "variable_name": "$_RECON_SELECTED_AP_ENCRYPTION_TYPE", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 120, "end_y": 132 }}},
+      { "x": 17,  "y": 120, "text": "Encryption:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 140, "variable_name": "$_RECON_SELECTED_AP_FREQ", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 140, "end_y": 152 }}},
+      { "x": 17,  "y": 140, "text": "Frequency:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 160, "variable_name": "$_RECON_SELECTED_AP_CHANNEL", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 160, "end_y": 182 }}},
+      { "x": 17,  "y": 160,  "text": "Channel:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 180, "variable_name": "$_RECON_SELECTED_CLIENT_PACKETS", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "center_text_within": { "draw_bounds": false, "start_x": 140, "end_x": 180, "start_y": 180, "end_y": 192 }}},
+      { "x": 17,  "y": 180, "text": "Packets:", "text_size": "small",  "text_color_palette": "medium_gray" },
+      { "x": 150, "y": 200, "variable_name": "$_RECON_SELECTED_AP_TIMESTAMP", "string_template": { "text_size": "small", "text_color_palette": "disabled_dark_gray", "center_text_within": { "draw_bounds": false, "start_x": 0, "end_x": 200, "start_y": 200, "end_y": 212 }}}
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "reconpayloads",
+          "x":226,
+          "y":81,
+          "layers": [
+            { "text": "Targeted Payload", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Targeted Payload", "text_color_palette": "yellow" }
+          ],
+          "target": "recon_payload_dashboard",
+          "variable": "$_RECON_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "addtoallow",
+          "x":226,
+          "y":114,
+          "layers": [
+            { "text": "Add to Allow Filter", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Add to Allow Filter", "text_color_palette": "yellow" }
+          ],
+          "target": "function_selected_ap_client_add_to_allow_filter"
+        },
+        {
+          "id": "addtodeny",
+          "x":226,
+          "y":147,
+          "layers": [
+            { "text": "Add to Deny Filter", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Add to Deny Filter", "text_color_palette": "yellow" }
+          ],
+          "target": "function_selected_ap_client_add_to_deny_filter"
+        },
+        {
+          "id": "deauthclient",
+          "x":226,
+          "y":180,
+          "layers": [
+            { "text": "Deauth Client", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Deauth Client", "text_color_palette": "yellow" }
+          ],
+          "target": "function_selected_ap_client_deauth"
+        }
+      ]
+    }
+  ]
+
+}
