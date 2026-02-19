@@ -93,31 +93,16 @@
           "y":190,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "blue" }
+            { "text": "Month", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Month", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "target": "edit_number_dialog",
           "variable": "$_MONTH"
-        },
-        {
-          "id": "Day",
-          "x":170,
-          "y":215,
-          "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "blue" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "yellow" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "target": "edit_number_dialog",
-          "variable": "$_DAY"
         }
       ]
     },
@@ -125,18 +110,33 @@
       "page_index": 1,
       "menu_items": [
         {
-          "id": "Hour",
+          "id": "Day",
           "x":170,
           "y":50,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "blue" },
+            { "text": "Day", "x": 40, "text_color_palette": "blue" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "yellow" },
+            { "text": "Day", "x": 40, "text_color_palette": "yellow" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_DAY"
+        },
+        {
+          "id": "Hour",
+          "x":170,
+          "y":85,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Hour", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Hour", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_number_dialog",
           "variable": "$_HOUR"
@@ -144,7 +144,7 @@
         {
           "id": "Minute",
           "x":170,
-          "y":85,
+          "y":120,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Minute", "x": 40, "text_color_palette": "blue" }
@@ -159,7 +159,7 @@
         {
           "id": "Second",
           "x":170,
-          "y":120,
+          "y":155,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Second", "x": 40, "text_color_palette": "blue" }
@@ -175,45 +175,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
