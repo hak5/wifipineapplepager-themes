@@ -1,0 +1,233 @@
+{
+  "template":
+  {
+    "screen_name": "pineap_clients_submenu",
+    "status_bar": "default",
+    "windowed_canvas": false,
+    "cache_canvases": true,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "back",
+      "right": "noop"
+    },
+    "background": {
+      "layers": [
+        { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
+        { "image_path": "assets/divright.png", "x": 140, "y": 50 },
+        { "text": "Clients",    "x": 10, "y": 50,  "text_color_palette": "yellow" }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Client 1",
+            "layers": [
+              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "blue"},
+              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
+                "text_size": "medium",
+                "text_color_palette": "blue",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } },
+              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "yellow"},
+              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } },
+              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } }
+            ],
+            "target": "function_pineap_client_kick",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Client 2",
+            "y": 50,
+            "layers": [
+              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "blue"},
+              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
+                "text_size": "medium",
+                "text_color_palette": "blue",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } },
+              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "yellow"},
+              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } },
+              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } }
+            ],
+            "target": "function_pineap_client_kick",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Client 3",
+            "y": 100,
+            "layers": [
+              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "blue"},
+              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
+                "text_size": "medium",
+                "text_color_palette": "blue",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } },
+              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "yellow"},
+              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              }  },
+              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } },
+              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
+                "text_size": "small",
+                "text_color_palette": "yellow",
+                "max_chars": 32,
+                "wrap_text": true,
+                "max_lines": 1
+              } }
+            ],
+            "target": "function_pineap_client_kick",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}

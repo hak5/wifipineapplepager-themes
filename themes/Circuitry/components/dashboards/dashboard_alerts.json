@@ -1,0 +1,77 @@
+{
+  "screen_name": "alerts_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "background": {
+    "layers": [
+      { "image_path": "assets/alerts_dashboard/alerts_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "auth captured",
+          "layers": [
+            { "text": "Evil AP Auth Captured", "x": 100, "y": 65, "text_color_palette": "lcd_text" }
+          ],
+          "selected_layers": [
+            { "text": "Evil AP Auth Captured", "x": 100, "y": 65, "text_color_palette": "dark_blue" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 75, "y": 70 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_AUTH_CAPTURED"
+        },
+        {
+          "id": "deauth flood",
+          "layers": [
+            { "text": "Deauth Flood Detected", "x": 100, "y": 95, "text_color_palette": "lcd_text" }
+          ],
+          "selected_layers": [
+            { "text": "Deauth Flood Detected", "x": 100, "y": 95, "text_color_palette": "dark_blue" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 75, "y": 100 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_DEAUTH_FLOOD"
+        },
+        {
+          "id": "new client",
+          "layers": [
+            { "text": "New Client Connected", "x": 100, "y": 125, "text_color_palette": "lcd_text" }
+          ],
+          "selected_layers": [
+            { "text": "New Client Connected", "x": 100, "y": 125, "text_color_palette": "dark_blue" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 75, "y": 130 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_NEW_CLIENT"
+        },
+        {
+          "id": "handshake capture",
+          "layers": [
+            { "text": "Handshake Captured", "x": 100, "y": 155, "text_color_palette": "lcd_text" }
+          ],
+          "selected_layers": [
+            { "text": "Handshake Captured", "x": 100, "y": 155, "text_color_palette": "dark_blue" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 75, "y": 160 }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_HANDSHAKE_CAPTURE"
+        }
+      ]
+    }
+  ]
+}

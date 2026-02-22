@@ -1,0 +1,108 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "has_navigation_memory": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/circuit_bg.png", "x": 0, "y": 0 },
+
+      { "image_path": "assets/dashboard/pushbutton-up.png", "x": 5, "y": 44 },
+      { "image_path": "assets/dashboard/pushbutton-up.png", "x": 5, "y": 93 },
+      { "image_path": "assets/dashboard/pushbutton-up.png", "x": 5, "y": 143 },
+
+      { "image_path": "assets/dashboard/pushbutton-up-right.png", "x": 437, "y": 44 },
+      { "image_path": "assets/dashboard/pushbutton-up-right.png", "x": 437, "y": 93 },
+      { "image_path": "assets/dashboard/pushbutton-up-right.png", "x": 437, "y": 143 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "ALERTS",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/dashboard/pushbutton-down.png", "x": 0, "y": 0 },
+            { "text": "ALERTS", "x": 101, "y": 17, "text_size": "large", "text_color_palette": "lcd_text" }
+          ],
+          "x": 5,
+          "y": 44,
+          "target": "alerts_dashboard"
+        },
+        {
+          "id": "PAYLOADS",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/dashboard/pushbutton-down.png", "x": 0, "y": 0 },
+            { "text": "PAYLOADS", "x": 101, "y": -32, "text_size": "large", "text_color_palette": "lcd_text" }
+          ],
+          "x": 5,
+          "y": 93,
+          "target": "payloads_dashboard",
+          "variable": "$_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "RECON",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/dashboard/pushbutton-down.png", "x": 0, "y": 0 },
+            { "text": "RECON", "x": 101, "y": -82, "text_size": "large", "text_color_palette": "lcd_text" }
+          ],
+          "x": 5,
+          "y": 143,
+          "target": "recon_dashboard"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "PINEAP",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/dashboard/pushbutton-down-right.png", "x": 0, "y": 0 },
+            { "text": "PINEAP", "x": -331, "y": 17, "text_size": "large", "text_color_palette": "lcd_text" }
+          ],
+          "x": 437,
+          "y": 44,
+          "target": "pineap_menu"
+        },
+        {
+          "id": "WARDRIVING",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/dashboard/pushbutton-down-right.png", "x": 0, "y": 0 },
+            { "text": "WARDRIVE", "x": -331, "y": -32, "text_size": "large", "text_color_palette": "lcd_text" }
+          ],
+          "x": 437,
+          "y": 93,
+          "target": "status_screen"
+        },
+        {
+          "id": "SETTINGS",
+          "layers": [],
+          "selected_layers": [
+            { "image_path": "assets/dashboard/pushbutton-down-right.png", "x": 0, "y": 0 },
+            { "text": "SETTINGS", "x": -331, "y": -82, "text_size": "large", "text_color_palette": "lcd_text" }
+          ],
+          "x": 437,
+          "y": 143,
+          "target": "settings_menu"
+        }
+      ]
+    }
+  ]
+}

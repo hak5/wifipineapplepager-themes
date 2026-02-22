@@ -1,0 +1,109 @@
+{
+  "template": {
+    "screen_name": "payloads_dashboard",
+    "status_bar": "default",
+    "windowed_canvas": true,
+    "cache_canvases": true,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "background": {
+      "layers": [
+        { "image_path": "assets/payloads_dashboard/payloads_bg.png", "x": 0, "y": 0 },
+        { "variable_name": "$_LIST_SIZE", "x": 410, "y": 191, "string_template": {"text_size":"small","text_color_palette": "light_green", "center_text_within": { "draw_bounds": false, "start_x": 400, "end_x": 420, "start_y": 191, "end_y": 203 }}},
+        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 425, "y": 191, "use_template": "list_pagination_label" }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 209, "y": 50,
+                "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 182, "y": 48, "recolor_palette": "light_green" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 209, "y": 50,
+              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 159, "y": 52 },
+              { "image_path": "assets/folder.png", "x": 182, "y": 48, "recolor_palette": "light_green" }
+            ],
+            "target": "payloads_for_category_list",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 79,
+              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 182, "y": 77, "recolor_palette": "light_green" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 79,
+              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 159, "y": 81 },
+              { "image_path": "assets/folder.png", "x": 182, "y": 77, "recolor_palette": "light_green" }
+            ],
+            "target": "payloads_for_category_list",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 108,
+              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 182, "y": 106, "recolor_palette": "light_green" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 108,
+              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png",  "x": 159, "y": 110 },
+              { "image_path": "assets/folder.png", "x": 182, "y": 106, "recolor_palette": "light_green" }
+            ],
+            "target": "payloads_for_category_list",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 137,
+              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 182, "y": 136, "recolor_palette": "light_green" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 137,
+              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 159, "y": 139 },
+              { "image_path": "assets/folder.png", "x": 182, "y": 136, "recolor_palette": "light_green" }
+            ],
+            "target": "payloads_for_category_list",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 166,
+              "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/folder.png", "x": 182, "y": 164, "recolor_palette": "light_green" }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 211, "y": 166,
+              "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "image_path": "assets/payloads_dashboard/arrow.png", "x": 159, "y": 168 },
+              { "image_path": "assets/folder.png", "x": 182, "y": 164, "recolor_palette": "light_green" }
+            ],
+            "target": "payloads_for_category_list",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "screen_name": "edit_string_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/edit_string_dialog_bg.png", "x": 0, "y": 0 }
+    ]
+  },
+  "title_x": 29,
+  "title_y": 70,
+  "menu_items": [
+    {
+      "id": "Save",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg_save.png","x": 28, "y": 107 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg_save.png","x": 28, "y": 107 },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 107 }
+      ],
+      "target": "save"
+    },
+    {
+      "id": "Edit",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg_edit.png","x": 172, "y": 107 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg_edit.png","x": 172, "y": 107 },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 107 }
+      ],
+      "target": "keyboard",
+      "variable": "$_INPUT"
+    },
+    {
+      "id": "Cancel",
+      "layers": [
+        { "image_path": "assets/payload_dialog_option_bg_cancel.png","x": 315, "y": 107 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/payload_dialog_option_bg_cancel.png","x": 315, "y": 107 },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 315, "y": 107 }
+      ],
+      "target": "back"
+    },
+    {
+      "id": "Title",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 40,
+          "y": 35,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "yellow"
+          }
+        },
+        {
+          "variable_name": "$_INPUT",
+          "x": 40,
+          "y": 65,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "blue"
+          }
+        }
+      ]
+    }
+  ]
+}
