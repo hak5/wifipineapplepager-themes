@@ -1,0 +1,13 @@
+{
+ "animation": {
+    "frames": [
+        { "image_path": "assets/init-1.png","x": 0, "y": 0 },
+        { "image_path": "assets/init-2.png","x": 0, "y": 0 },
+        { "image_path": "assets/init-3.png","x": 0, "y": 0 },
+        { "image_path": "assets/init-4.png","x": 0, "y": 0 },
+        { "image_path": "assets/init-5.png","x": 0, "y": 0 },
+        { "image_path": "assets/init-6.png","x": 0, "y": 0 },
+		{ "image_path": "assets/init-7.png","x": 0, "y": 0 }
+    ]
+ }
+}

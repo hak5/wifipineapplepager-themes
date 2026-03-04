@@ -1,0 +1,10 @@
+{
+  "enabled": [
+    { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": true, "start_x": 365, "end_x": 385, "start_y": 206, "end_y": 218 } },
+    { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" }
+  ],
+  "disabled": [
+    { "text": "Deny", "text_size": "medium", "text_color_palette": "red" },
+    { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"}
+  ]
+}
