@@ -1182,37 +1182,80 @@ def gen_boot():
 # ─── Keyboard ────────────────────────────────────────────────────────────────
 
 def gen_keyboard():
-    """Keyboard layouts — dark keys on near-black background."""
+    """Keyboard layouts — dark keys on near-black background with labels."""
     ensure_dir("keyboard")
     s = SS
     W, H = 480, 222
 
-    def draw_kb(d, rows, start_y=59, key_w=47, key_h=31):
+    # Fonts for key labels (supersampled)
+    try:
+        kb_font = ImageFont.truetype(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 14 * s)
+        kb_font_sm = ImageFont.truetype(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 10 * s)
+    except Exception:
+        kb_font = ImageFont.load_default()
+        kb_font_sm = kb_font
+
+    KEY_LABEL_COLOR = _c(EDGE)  # Bright PCARS blue for key text
+
+    # Display labels for special keys
+    SPECIAL = {
+        "backspace": "\u2190", "capslock": "\u21e7", "done": "\u2713",
+        "symbols_toggle": "#$", "space": "\u2423",
+    }
+
+    def draw_key_label(d, x, y, kw, kh, label):
+        """Draw centered text label on a key at display coords."""
+        display = SPECIAL.get(label, label)
+        font = kb_font_sm if len(display) > 1 else kb_font
+        cx = (x + kw // 2) * s
+        cy = (y + kh // 2) * s
+        bbox = font.getbbox(display)
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+        tx = cx - tw // 2
+        ty = cy - th // 2 - bbox[1]
+        d.text((tx, ty), display, fill=KEY_LABEL_COLOR, font=font)
+
+    def draw_kb(d, rows, start_y=59, key_w=47, key_h=31, cols=None):
+        max_cols = cols or max(len(row) for row in rows)
+        total = max_cols * key_w
+        x_off = (W - total) // 2
         for ri, row in enumerate(rows):
             y = start_y + ri * key_h
-            total = len(row) * key_w
-            x_off = (W - total) // 2
-            for ci in range(len(row)):
+            for ci, key in enumerate(row):
                 x = x_off + ci * key_w
                 rrect(d, (x + 1, y + 1, x + key_w - 2, y + key_h - 2),
                        fill=PANEL, outline=DARK_GRAY, radius=3, width=1)
+                draw_key_label(d, x, y, key_w, key_h, key)
 
     def draw_input_area(d):
         rrect(d, (8, 6, 472, 50), fill=PANEL, outline=DARK_GRAY, radius=3)
-        # Thin accent strip on top edge
         d.rectangle([8*s, 6*s, 472*s, 8*s], fill=_c(FRAME_L))
 
     def draw_fn_row(d):
-        rrect(d, (7, 183, 54, 214), fill=PANEL, outline=DARK_GRAY, radius=3)
-        rrect(d, (57, 183, 240, 214), fill=PANEL, outline=DARK_GRAY, radius=3)
-        rrect(d, (243, 183, 426, 214), fill=PANEL, outline=DARK_GRAY, radius=3)
-        rrect(d, (429, 183, 473, 214), fill=PANEL, outline=DARK_GRAY, radius=3)
+        """Bottom function row — individual keys matching JSON positions."""
+        y, kh, kw = 183, 31, 47
+        keys = [
+            (7, kw, "symbols_toggle"),
+            (54, kw, "-"),
+            (101, kw, "'"),
+            (148, 188, "space"),
+            (336, kw, "/"),
+            (383, kw, "?"),
+            (430, kw, "done"),
+        ]
+        for x, w, label in keys:
+            rrect(d, (x, y, x + w - 1, y + kh - 1),
+                   fill=PANEL, outline=DARK_GRAY, radius=3, width=1)
+            draw_key_label(d, x, y, w, kh, label)
 
-    # QWERTY lowercase
+    # QWERTY lowercase — 10 keys per row matching JSON
     img, d = ss_start(W, H, BG)
     draw_input_area(d)
     draw_kb(d, [list("1234567890"), list("qwertyuiop"),
-                list("asdfghjkl"), list("zxcvbnm")])
+                list("asdfghjkl") + ["backspace"],
+                ["capslock"] + list("zxcvbnm,.")])
     draw_fn_row(d)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_lower.png")
 
@@ -1220,37 +1263,44 @@ def gen_keyboard():
     img, d = ss_start(W, H, BG)
     draw_input_area(d)
     draw_kb(d, [list("1234567890"), list("QWERTYUIOP"),
-                list("ASDFGHJKL"), list("ZXCVBNM")])
+                list("ASDFGHJKL") + ["backspace"],
+                ["capslock"] + list("ZXCVBNM,.")])
     draw_fn_row(d)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_upper.png")
 
-    # Symbols
+    # Symbols — rows match JSON: 10 keys each
     img, d = ss_start(W, H, BG)
     draw_input_area(d)
-    draw_kb(d, [list("!@#$%^&*()"), list("-=[]\\;',./"),
-                list("`~{}|:\"<>?")])
+    draw_kb(d, [list("1234567890"), list("!@#$%^&*()"),
+                list("~<>+=:;[]") + ["backspace"],
+                ["capslock"] + list("_\"`{}|\\,.")])
     draw_fn_row(d)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_symbols.png")
 
-    # Numeric
+    # Numeric — 3 keys per row, key_w=47, matching JSON positions
     img, d = ss_start(W, H, BG)
     draw_input_area(d)
-    draw_kb(d, [list("789"), list("456"), list("123"), list("0.-")],
-            start_y=59, key_w=75, key_h=35)
+    draw_kb(d, [list("789"), list("456"), list("123"),
+                ["done", "0", "backspace"]],
+            start_y=59, key_w=47, key_h=31)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_numeric.png")
 
-    # IP
+    # IP — 5 cols, key_w=77 stride, key_h=56 stride, matching JSON
     img, d = ss_start(W, H, BG)
     draw_input_area(d)
-    draw_kb(d, [list("789"), list("456"), list("123"), list("0.")],
-            start_y=59, key_w=75, key_h=35)
+    draw_kb(d, [["0", "1", "2", "3", "done"],
+                ["/", "4", "5", "6", "backspace"],
+                [".", "7", "8", "9"]],
+            start_y=57, key_w=77, key_h=56, cols=5)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_ip.png")
 
-    # Hex
+    # Hex — 6 cols, key_w=77 stride, key_h=56 stride, matching JSON
     img, d = ss_start(W, H, BG)
     draw_input_area(d)
-    draw_kb(d, [list("789ABC"), list("456DEF"), list("1230")],
-            start_y=59, key_w=75, key_h=54)
+    draw_kb(d, [["0", "1", "2", "3", "4", "done"],
+                ["5", "6", "7", "8", "9", "backspace"],
+                list("ABCDEF")],
+            start_y=57, key_w=77, key_h=56)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_hex.png")
 
     # Key highlight (47x31) — white glow
