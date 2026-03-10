@@ -1,0 +1,221 @@
+{
+  "input_area": {
+    "x": 15,
+    "y": 16,
+    "width": 422,
+    "max_characters": 35,
+    "background": {
+      "layers": []
+    },
+    "per_key_canvas_cache": false
+  },
+
+  "qwerty": {
+    "screen_name": "US_keyboard_qwerty",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [{"image_path":  "assets/keyboard/keyboard_layout_lower.png", "x": 0, "y": 0}]
+    },
+    "rows": [
+      [
+        { "id": "1", "x": 7,    "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "2", "x": 54,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "3", "x": 101,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "4", "x": 148,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "5", "x": 195,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "6", "x": 242,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "7", "x": 289,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "8", "x": 336,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "9", "x": 383,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "0", "x": 430,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "q", "x": 7, "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}], "selected": true },
+        { "id": "w", "x": 54,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "e", "x": 101,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "r", "x": 148,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "t", "x": 195,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "y", "x": 242,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "u", "x": 289,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "i", "x": 336,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "o", "x": 383,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "p", "x": 430,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "a", "x": 7,    "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "s", "x": 54,   "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "d", "x": 101,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "f", "x": 148,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "g", "x": 195,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "h", "x": 242,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "j", "x": 289,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "k", "x": 336,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "l", "x": 383,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "backspace", "x": 430,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "capslock", "x": 7,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "z", "x": 54,   "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "x", "x": 101,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "c", "x": 148,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "v", "x": 195,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "b", "x": 242,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "n", "x": 289,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "m", "x": 336,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ",", "x": 383,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ".", "x": 430,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "symbols_toggle",  "x": 7,   "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "-",               "x": 54,  "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "'",               "x": 101, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "/",               "x": 336, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "?",               "x": 383, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "done",            "x": 430, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ]
+    ]
+  },
+  "QWERTY": {
+    "screen_name": "US_keyboard_QWERTY",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [{"image_path":  "assets/keyboard/keyboard_layout_upper.png", "x": 0, "y": 0}]
+    },
+    "rows": [
+      [
+        { "id": "1", "x": 7,    "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "2", "x": 54,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "3", "x": 101,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "4", "x": 148,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "5", "x": 195,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "6", "x": 242,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "7", "x": 289,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "8", "x": 336,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "9", "x": 383,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "0", "x": 430,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "Q", "x": 7, "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}], "selected": true },
+        { "id": "W", "x": 54,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "E", "x": 101,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "R", "x": 148,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "T", "x": 195,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "Y", "x": 242,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "U", "x": 289,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "I", "x": 336,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "O", "x": 383,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "P", "x": 430,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "A", "x": 7,    "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "S", "x": 54,   "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "D", "x": 101,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "F", "x": 148,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "G", "x": 195,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "H", "x": 242,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "J", "x": 289,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "K", "x": 336,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "L", "x": 383,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "backspace", "x": 430,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "capslock", "x": 7,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "Z", "x": 54,   "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "X", "x": 101,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "C", "x": 148,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "V", "x": 195,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "B", "x": 242,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "N", "x": 289,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "M", "x": 336,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ",", "x": 383,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ".", "x": 430,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "symbols_toggle",  "x": 7,   "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "-",               "x": 54,  "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "'",               "x": 101, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space",           "x": 148, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "/",               "x": 336, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "?",               "x": 383, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "done",            "x": 430, "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ]
+    ]
+  },
+  "symbols": {
+    "screen_name": "US_keyboard_symbols",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [{"image_path":  "assets/keyboard/keyboard_layout_symbols.png", "x": 0, "y": 0}]
+    },
+    "rows": [
+      [
+        { "id": "1", "x": 7,    "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "2", "x": 54,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "3", "x": 101,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "4", "x": 148,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "5", "x": 195,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "6", "x": 242,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "7", "x": 289,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "8", "x": 336,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "9", "x": 383,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "0", "x": 430,  "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "!", "x": 7,    "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "@", "x": 54,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "#", "x": 101,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "$", "x": 148,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "%", "x": 195,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "^", "x": 242,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "&", "x": 289,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "*", "x": 336,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "(", "x": 383,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ")", "x": 430,  "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "~", "x": 7,    "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "<", "x": 54,   "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ">", "x": 101,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "+", "x": 148,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "=", "x": 195,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ":", "x": 242,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ";", "x": 289,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "[", "x": 336,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "]", "x": 383,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "backspace", "x": 430,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "capslock", "x": 7,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "_",  "x": 54,   "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "\"", "x": 101,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "`",  "x": 148,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "{",  "x": 195,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "}",  "x": 242,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "|",  "x": 289,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "\\", "x": 336,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ",",  "x": 383,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": ".",  "x": 430,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "symbols_toggle", "x": 7,    "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}], "selected": true },
+        { "id": "-", "x": 54,   "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "'", "x": 101,  "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "space", "x": 148,  "y": 183,  "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space", "x": 148,  "y": 183,  "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space", "x": 148,  "y": 183,  "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "space", "x": 148,  "y": 183,  "selected_layers": [{"image_path":  "assets/keyboard/_spacebar-4x.png"}] },
+        { "id": "/", "x": 336,  "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "?", "x": 383,  "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "done", "x": 430,  "y": 183, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ]
+    ]
+  }
+}
+
