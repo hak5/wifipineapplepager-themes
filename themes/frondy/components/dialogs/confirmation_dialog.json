@@ -1,0 +1,94 @@
+{
+  "screen_name": "confirmation_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/confirmation_dialog_bg_term.png",
+        "x": 28,
+        "y": 0
+      },
+      {
+        "variable_name": "$_INPUT",
+        "x": 60,
+        "y": 60,
+        "use_template": "confirmation_dialog_text"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "menu_items": [
+        {
+          "id": "Save",
+          "y": 10,
+          "x": 2,
+          "layers": [
+            {
+              "image_path": "assets/payload_dialog_option_bg.png",
+              "x": 107,
+              "y": 145
+            },
+            {
+              "text": "Cancel",
+              "x": 142,
+              "y": 170,
+              "text_color_palette": "dark_red",
+              "text_size": "large"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/payload_dialog_option_bg.png",
+              "x": 107,
+              "y": 145
+            },
+            {
+              "text": "Cancel",
+              "x": 142,
+              "y": 170,
+              "text_color_palette": "white",
+              "text_size": "large"
+            }
+          ],
+          "target": "back"
+        },
+        {
+          "id": "Cancel",
+          "y": 10,
+          "x": 2,
+          "layers": [
+            {
+              "image_path": "assets/payload_dialog_selected_box.png",
+              "x": 252,
+              "y": 145
+            },
+            {
+              "text": "Confirm",
+              "x": 281,
+              "y": 170,
+              "text_color_palette": "black",
+              "text_size": "large"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/payload_dialog_selected_box.png",
+              "x": 252,
+              "y": 145
+            },
+            {
+              "text": "Confirm",
+              "x": 281,
+              "y": 170,
+              "text_color_palette": "black",
+              "text_size": "large"
+            }
+          ],
+          "target": "confirm"
+        }
+      ]
+    }
+  ]
+}
