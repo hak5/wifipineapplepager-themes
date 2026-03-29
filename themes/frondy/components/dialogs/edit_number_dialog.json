@@ -23,11 +23,10 @@
           "y": 107
         },
         {
-          "text": "Save",
-          "x": 73,
-          "y": 132,
-          "text_color_palette": "white",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/check.png",
+          "x": 84,
+          "y": 133,
+          "recolor_palette": "yellow"
         }
       ],
       "selected_layers": [
@@ -37,11 +36,10 @@
           "y": 107
         },
         {
-          "text": "Save",
-          "x": 73,
-          "y": 132,
-          "text_color_palette": "black",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/check.png",
+          "x": 84,
+          "y": 133,
+          "recolor_palette": "black"
         }
       ],
       "target": "save"
@@ -55,11 +53,10 @@
           "y": 107
         },
         {
-          "text": "Edit",
-          "x": 218,
+          "image_path": "assets/keyboard.png",
+          "x": 225,
           "y": 132,
-          "text_color_palette": "white",
-          "text_size": "large"
+          "recolor_palette": "yellow"
         }
       ],
       "selected_layers": [
@@ -69,11 +66,10 @@
           "y": 107
         },
         {
-          "text": "Edit",
-          "x": 218,
+          "image_path": "assets/keyboard.png",
+          "x": 225,
           "y": 132,
-          "text_color_palette": "black",
-          "text_size": "large"
+          "recolor_palette": "black"
         }
       ],
       "target": "number_keyboard",
@@ -88,11 +84,10 @@
           "y": 107
         },
         {
-          "text": "Cancel",
-          "x": 350,
-          "y": 132,
-          "text_color_palette": "dark_red",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/x.png",
+          "x": 375,
+          "y": 135,
+          "recolor_palette": "disabled_dark_gray"
         }
       ],
       "selected_layers": [
@@ -102,11 +97,10 @@
           "y": 107
         },
         {
-          "text": "Cancel",
-          "x": 350,
-          "y": 132,
-          "text_color_palette": "white",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/x.png",
+          "x": 375,
+          "y": 135,
+          "recolor_palette": "white"
         }
       ],
       "target": "back"
