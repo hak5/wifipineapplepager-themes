@@ -41,11 +41,10 @@
           "y": 107
         },
         {
-          "text": "Launch",
-          "x": 63,
-          "y": 132,
-          "text_color_palette": "white",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/check.png",
+          "x": 84,
+          "y": 133,
+          "recolor_palette": "yellow"
         }
       ],
       "selected_layers": [
@@ -55,11 +54,10 @@
           "y": 107
         },
         {
-          "text": "Launch",
-          "x": 63,
-          "y": 132,
-          "text_color_palette": "black",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/check.png",
+          "x": 84,
+          "y": 133,
+          "recolor_palette": "black"
         }
       ],
       "target": "launch_payload",
@@ -96,11 +94,10 @@
           "y": 107
         },
         {
-          "text": "Cancel",
-          "x": 207,
-          "y": 132,
-          "text_color_palette": "dark_red",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/x.png",
+          "x": 232,
+          "y": 135,
+          "recolor_palette": "disabled_dark_gray"
         }
       ],
       "selected_layers": [
@@ -110,11 +107,10 @@
           "y": 107
         },
         {
-          "text": "Cancel",
-          "x": 207,
-          "y": 132,
-          "text_color_palette": "white",
-          "text_size": "large"
+          "image_path": "assets/optiondialog/x.png",
+          "x": 232,
+          "y": 135,
+          "recolor_palette": "white"
         }
       ],
       "target": "back"

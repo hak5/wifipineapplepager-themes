@@ -7,10 +7,10 @@
       "id": "spinner",
       "animation_interval": 0.300,
       "animation": [
-        { "image_path": "assets/spinner/spinner1.png","x": 0, "y": 0 },
-        { "image_path": "assets/spinner/spinner2.png","x": 0, "y": 0 },
-        { "image_path": "assets/spinner/spinner3.png","x": 0, "y": 0 },
-        { "image_path": "assets/spinner/spinner4.png","x": 0, "y": 0 }
+        { "image_path": "assets/spinner/spinner1.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner2.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner3.png","x": 140, "y": 40 },
+        { "image_path": "assets/spinner/spinner4.png","x": 140, "y": 40 }
       ]
     }, {
       "id": "spinner_text",

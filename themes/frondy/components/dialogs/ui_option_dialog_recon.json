@@ -217,15 +217,17 @@
               {
                 "image_path": "assets/optiondialog/button_bg.png",
                 "x": 401,
-                "y": 36,
-                "recolor_palette": "yellow"
+                "y": 36
               },
               {
-                "text": "Save",
-                "x": 413,
-                "y": 63,
-                "text_color_palette": "black",
-                "text_size": "medium"
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 401,
+                "y": 36
+              },
+              {
+                "image_path": "assets/optiondialog/check.png",
+                "x": 418,
+                "y": 62
               },
               {
                 "_comment": "this is just a required cache busting hack",
@@ -240,11 +242,16 @@
                 "recolor_palette": "yellow"
               },
               {
-                "text": "Save",
-                "x": 413,
-                "y": 63,
-                "text_color_palette": "black",
-                "text_size": "medium"
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 401,
+                "y": 36,
+                "recolor_palette": "black"
+              },
+              {
+                "image_path": "assets/optiondialog/check.png",
+                "x": 418,
+                "y": 62,
+                "recolor_palette": "black"
               },
               {
                 "_comment": "this is just a required cache busting hack",
@@ -270,11 +277,14 @@
                 "y": 118
               },
               {
-                "text": "Cancel",
-                "x": 410,
-                "y": 145,
-                "text_color_palette": "dark_red",
-                "text_size": "small"
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 401,
+                "y": 118
+              },
+              {
+                "image_path": "assets/optiondialog/x.png",
+                "x": 423,
+                "y": 146
               },
               {
                 "_comment": "this is just a required cache busting hack",
@@ -285,14 +295,20 @@
               {
                 "image_path": "assets/optiondialog/button_bg.png",
                 "x": 401,
-                "y": 118
+                "y": 118,
+                "recolor_palette": "dark_red"
               },
               {
-                "text": "Cancel",
-                "x": 410,
-                "y": 145,
-                "text_color_palette": "white",
-                "text_size": "small"
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 401,
+                "y": 118,
+                "recolor_palette": "black"
+              },
+              {
+                "image_path": "assets/optiondialog/x.png",
+                "x": 423,
+                "y": 146,
+                "recolor_palette": "black"
               },
               {
                 "_comment": "this is just a required cache busting hack",

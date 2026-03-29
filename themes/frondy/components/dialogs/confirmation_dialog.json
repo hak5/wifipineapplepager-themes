@@ -26,30 +26,28 @@
           "x": 2,
           "layers": [
             {
-              "image_path": "assets/payload_dialog_option_bg.png",
-              "x": 107,
-              "y": 145
+              "image_path": "assets/confirmation_dialog/generic_confirmation_button_deselected.png",
+              "x": 114,
+              "y": 157
             },
             {
-              "text": "Cancel",
-              "x": 142,
+              "image_path": "assets/optiondialog/x.png",
+              "x": 167,
               "y": 170,
-              "text_color_palette": "dark_red",
-              "text_size": "large"
+              "recolor_palette": "disabled_dark_gray"
             }
           ],
           "selected_layers": [
             {
-              "image_path": "assets/payload_dialog_option_bg.png",
-              "x": 107,
-              "y": 145
+              "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png",
+              "x": 114,
+              "y": 157
             },
             {
-              "text": "Cancel",
-              "x": 142,
+              "image_path": "assets/optiondialog/x.png",
+              "x": 167,
               "y": 170,
-              "text_color_palette": "white",
-              "text_size": "large"
+              "recolor_palette": "dark_red"
             }
           ],
           "target": "back"
@@ -60,30 +58,28 @@
           "x": 2,
           "layers": [
             {
-              "image_path": "assets/payload_dialog_selected_box.png",
+              "image_path": "assets/confirmation_dialog/generic_confirmation_button_deselected.png",
               "x": 252,
-              "y": 145
+              "y": 157
             },
             {
-              "text": "Confirm",
-              "x": 281,
-              "y": 170,
-              "text_color_palette": "black",
-              "text_size": "large"
+              "image_path": "assets/optiondialog/check.png",
+              "x": 299,
+              "y": 168,
+              "recolor_palette": "disabled_dark_gray"
             }
           ],
           "selected_layers": [
             {
-              "image_path": "assets/payload_dialog_selected_box.png",
+              "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png",
               "x": 252,
-              "y": 145
+              "y": 157
             },
             {
-              "text": "Confirm",
-              "x": 281,
-              "y": 170,
-              "text_color_palette": "black",
-              "text_size": "large"
+              "image_path": "assets/optiondialog/check.png",
+              "x": 299,
+              "y": 168,
+              "recolor_palette": "black"
             }
           ],
           "target": "confirm"
