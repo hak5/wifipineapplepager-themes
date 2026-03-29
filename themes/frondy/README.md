@@ -4,26 +4,26 @@
 
 <img src="screenshots/mockup_dashboard_recon.png" width="600">
 
-A high-contrast theme for the WiFi Pineapple Pager that strips everything down to two colors and keeps it there. Named for the frond, the leafy crown of a pineapple.
+A high-contrast theme for the WiFi Pineapple Pager built on two colors and nothing else. Named for the frond, the leafy crown of a pineapple.
 
 ## Screenshots
 
 <details>
-<summary>Dashboard — All Five Bands</summary>
+<summary>Dashboard (all five bands)</summary>
 
 <img src="screenshots/frondy_dashboards.png" width="800">
 
 </details>
 
 <details>
-<summary>Full Theme Overview</summary>
+<summary>Full theme overview</summary>
 
 <img src="screenshots/frondy_grid.png" width="800">
 
 </details>
 
 <details>
-<summary>On Device</summary>
+<summary>On-device mockups</summary>
 
 | Alerts | Payloads | Recon |
 |--------|----------|-------|
@@ -40,9 +40,9 @@ A high-contrast theme for the WiFi Pineapple Pager that strips everything down t
 
 ## Description
 
-Two colors. Every screen. No exceptions.
+Two colors. Every screen. No exceptions. Black and yellow, black and yellow.
 
-Frondy runs pure black backgrounds against bold yellow accents across the entire Pager interface. Dashboards, submenus, dialogs, keyboards, wizards, boot animation — all of it lives in the same monochrome palette with no per-section color variation.
+Frondy runs pure black backgrounds against bold yellow accents across the entire Pager interface. Dashboards, submenus, dialogs, keyboards, wizards, boot animation, warning screens, all of it lives in the same monochrome palette with no per-section color variation.
 
 The dashboard uses five full-width horizontal bands instead of the standard grid. Pick a band and it fills solid yellow with black text and icons. The rest stay dark with dim yellow labels. Custom 8-bit pixel art icons mark each section.
 
@@ -50,27 +50,29 @@ Subpages have ghost watermarks and nav icons so you always know which section yo
 
 The boot sequence fades from a WOPR-style initialization screen into the Frondy title card over 16 frames.
 
-All 261 PNG assets are programmatically generated at 3x resolution and downscaled with LANCZOS anti-aliasing. The loading spinner runs a 4-frame retro progress bar on a full-bleed black background.
+All 261 PNG assets are programmatically generated at 3x resolution and downscaled with LANCZOS anti-aliasing. The loading indicator runs a thin progress bar on a full-bleed black background.
 
 ## The Palette
 
-- **Background** — Pure black (#000000), maximum contrast on the Pager LCD
-- **Primary** — Yellow (255, 200, 0), used for text, icons, and highlights
-- **Dim** — Dark yellow (140, 110, 0), unselected items and ghost watermarks
-- **Dashboard** — Five full-width horizontal bands, unique to this theme
-- **Selection** — Solid yellow fill with black text and icons
-- **Ghost watermarks** — Section icons tilted +25 degrees, bleeding off bottom-right
-- **Nav markers** — 48x48 section icons on the submenu left edge
-- **Spinner** — 4-frame thin progress bar (4px tall), full-bleed black
-- **Boot** — 16 frames, WOPR dissolve into clean Frondy title card
-- **Icons** — Custom 8-bit pixel art on 9x9 grids, rendered from SVG
-- **Coverage** — 113 JSON components, 261 PNG assets, every screen themed
+| Element | Description |
+|---------|-------------|
+| **Background** | Pure black (#000000), maximum contrast on the Pager LCD |
+| **Primary** | Yellow (255, 200, 0), used for text, icons, and highlights |
+| **Dim** | Dark yellow (140, 110, 0), unselected items and ghost watermarks |
+| **Dashboard** | Five full-width horizontal bands, unique to this theme |
+| **Selection** | Solid yellow fill with black text and icons |
+| **Ghost watermarks** | Section icons tilted +25 degrees, bleeding off bottom-right |
+| **Nav markers** | 48x48 section icons on the submenu left edge |
+| **Spinner** | Thin progress bar (4px tall), full-bleed black |
+| **Boot** | 16 frames, WOPR dissolve into clean Frondy title card |
+| **Icons** | Custom 8-bit pixel art on 9x9 grids, rendered from SVG |
+| **Coverage** | 113 JSON components, 261 PNG assets, every screen themed |
 
-## Grow Season
+## Compatibility
 
 Developed for WiFi Pineapple Pager firmware **1.0.7** (OpenWrt 24.10.1 base, theme framework 0.5).
 
-## Planting
+## Installation
 
 Transfer the `frondy` directory to your Pager:
 
@@ -82,7 +84,7 @@ Or drop it in through the Pager web UI theme manager.
 
 Then pick **Frondy** from Settings > Display > Theme.
 
-## Regrowth
+## Regenerating Assets
 
 The `generate_frondy_assets.py` script regenerates all 261 PNG assets from source parameters using Python + Pillow. Runs on your workstation, not the Pager.
 
@@ -91,9 +93,9 @@ pip install Pillow
 python3 generate_frondy_assets.py
 ```
 
-Handy for tweaking the palette, adjusting layouts, or forking into a variant without hand-editing individual assets.
+Useful for tweaking the palette, adjusting layouts, or forking into a variant without hand-editing individual assets.
 
-## Thorns
+## Known Issues
 
 - Font rendering is hardcoded in the Pager firmware, no typeface customization available yet
 - Theme framework version 0.5, the spec may shift between firmware updates
