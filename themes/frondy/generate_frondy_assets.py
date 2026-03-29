@@ -1135,14 +1135,31 @@ def gen_backgrounds():
             base_d.rounded_rectangle([160, 28, 420, 194], radius=4, fill=_c(WHITE))
             save(base, f"{qr_name}.png")
 
-    # Warning screens — pixel art triangle with exclamation
+    # Warning screens — pixel art triangle with exclamation + text labels
+    # Text matches default themes: too_hot="TOO HOT / TURNING OFF",
+    # dimming="TOO HOT / DIMMING SCREEN"
+    warn_text = {
+        "warn_device_too_hot": ("TOO HOT", "TURNING OFF"),
+        "warn_device_dimming_screen": ("TOO HOT", "DIMMING SCREEN"),
+    }
+    try:
+        warn_font_lg = ImageFont.truetype(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 18 * SS)
+        warn_font_sm = ImageFont.truetype(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 14 * SS)
+    except (IOError, OSError):
+        warn_font_lg = ImageFont.load_default()
+        warn_font_sm = ImageFont.load_default()
     for name, accent in [("warn_device_too_hot", RED), ("warn_device_dimming_screen", YELLOW)]:
         img, d = ss_start(W, H, BG)
         s = SS
         d.rectangle([0, 0, W*s, 4*s], fill=_c(accent))
         d.rectangle([0, (H-4)*s, W*s, H*s], fill=_c(accent))
         px = 8
-        ox, oy = 192, 40
+        # Triangle: 10 rows * 8px = 80px, text ~45px, gap 8px = ~133px total
+        # Usable area: 222 - 4 - 4 = 214px, center at 4 + 214/2 = 111
+        # Group top = 111 - 133/2 ≈ 44
+        ox, oy = 192, 36
         # Pixel art triangle (11 wide at base, 10 tall)
         tri_rows = [
             [5],
@@ -1167,16 +1184,39 @@ def gen_backgrounds():
         # Dot
         x1, y1 = (ox + 5 * px) * s, (oy + 8 * px) * s
         d.rectangle([x1, y1, x1 + px*s - s, y1 + px*s - s], fill=_c(BG))
+        # Text labels — centered below icon (8px gap after icon bottom)
+        # Icon bottom = oy + 10*px = 28 + 80 = 108, then 8px gap
+        line1, line2 = warn_text[name]
+        text_top = (oy + 10 * px + 8) * s
+        bbox1 = warn_font_lg.getbbox(line1)
+        tw1 = bbox1[2] - bbox1[0]
+        d.text(((W * s - tw1) // 2, text_top), line1, fill=_c(WHITE), font=warn_font_lg)
+        bbox2 = warn_font_sm.getbbox(line2)
+        tw2 = bbox2[2] - bbox2[0]
+        d.text(((W * s - tw2) // 2, text_top + 25 * s), line2, fill=_c(accent), font=warn_font_sm)
         save(ss_finish(img, W, H), f"{name}.png")
 
-    # Battery alerts — pixel art battery
+    # Battery alerts — pixel art battery + text labels
+    # Text matches default themes: low="LOW BATTERY", critical="CONNECT POWER"
+    batt_text = {
+        "low_battery_alert": "LOW BATTERY",
+        "critical_battery_alert": "CONNECT POWER",
+    }
+    try:
+        batt_font = ImageFont.truetype(
+            "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf", 20 * SS)
+    except (IOError, OSError):
+        batt_font = ImageFont.load_default()
     for name, color in [("low_battery_alert", YELLOW), ("critical_battery_alert", RED)]:
         img, d = ss_start(W, H, BG)
         s = SS
         d.rectangle([0, 0, W*s, 4*s], fill=_c(color))
         d.rectangle([0, (H-4)*s, W*s, H*s], fill=_c(color))
         px = 8
-        ox, oy = 200, 36
+        # Battery icon: 15 rows * 8px = 120px, text ~20px, gap 8px = ~148px total
+        # Usable area: 222 - 4 (top bar) - 4 (bottom bar) = 214px, center at 4 + 214/2 = 111
+        # Group top = 111 - 148/2 = 37
+        ox, oy = 200, 37
         # Battery terminal (top nub)
         for bx in [3, 4, 5]:
             x1, y1 = (ox + bx * px) * s, (oy + 0 * px) * s
@@ -1198,6 +1238,14 @@ def gen_backgrounds():
             for bx in range(1, 8):
                 x1, y1 = (ox + bx * px) * s, (oy + ry * px) * s
                 d.rectangle([x1, y1, x1 + px*s - s, y1 + px*s - s], fill=_c(color))
+        # Text label — centered below battery icon (8px gap after icon bottom)
+        # Icon bottom = oy + 15*px = 37 + 120 = 157, then 8px gap
+        label = batt_text[name]
+        bbox = batt_font.getbbox(label)
+        tw = bbox[2] - bbox[0]
+        text_x = (W * s - tw) // 2
+        text_y = (oy + 15 * px + 8) * s
+        d.text((text_x, text_y), label, fill=_c(color), font=batt_font)
         save(ss_finish(img, W, H), f"{name}.png")
 
     # Upgrade screens
