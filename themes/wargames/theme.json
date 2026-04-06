@@ -1,7 +1,6 @@
 {
-  "author": "Hak5",
-  "theme_version": "1.0.7",
-  "theme_framework_version": "0.5",
+  "theme_version": "1.0.8",
+  "theme_framework_version": "0.6",
 
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
@@ -56,6 +55,7 @@
     "option_dialog_narrow":  "components/dialogs/ui_option_dialog_narrow.json"
   },
 
+  "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
 
   "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
   "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
@@ -210,5 +210,7 @@
 
     "simple_images": {
     }
-  }
+  },
+
+  "failsafe_duckyscript_list_picker": "components/failsafe/failsafe_duckyscript_list_picker.json"
 }
