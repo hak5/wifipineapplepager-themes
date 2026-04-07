@@ -30,15 +30,15 @@
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 72,
                 "radio_template": {
                   "enabled": [
-                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
-                    { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                    { "image_path": "assets/radio_border.png", "x": 0, "y": 0 },
+                    { "image_path": "assets/radio_selected.png","x": 4, "y": 4 }
                   ],
                   "disabled": [
-                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                    { "image_path": "assets/radio_border.png", "x": 0, "y": 0 }
                   ]
                 }
               },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+              { "image_path": "assets/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 100, "y": 70, "string_template": {
@@ -49,15 +49,15 @@
               }  },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 72, "radio_template": {
                 "enabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
-                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ],
                 "disabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ]
               }
               },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+              { "image_path": "assets/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
             ],
             "target": "select",
             "button_map": {
@@ -80,11 +80,11 @@
               }  },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 102,  "radio_template": {
                   "enabled": [
-                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
-                    { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                    { "image_path": "assets/radio_border.png", "x": 0, "y": 0 },
+                    { "image_path": "assets/radio_selected.png","x": 4, "y": 4 }
                   ],
                   "disabled": [
-                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                    { "image_path": "assets/radio_border.png", "x": 0, "y": 0 }
                   ]
                 }
               }
@@ -98,11 +98,11 @@
               }  },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 102, "radio_template": {
                 "enabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
-                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ],
                 "disabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ]
               }}
             ],
@@ -127,11 +127,11 @@
               } },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 132, "radio_template": {
                 "enabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
-                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0 },
+                  { "image_path": "assets/radio_selected.png","x": 4, "y": 4 }
                 ],
                 "disabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0 }
                 ]
               }
               }
@@ -145,11 +145,11 @@
               }  },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 132, "radio_template": {
                 "enabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
-                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ],
                 "disabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ]
               }}
             ],
@@ -174,15 +174,15 @@
               } },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 162,"radio_template": {
                 "enabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
-                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0 },
+                  { "image_path": "assets/radio_selected.png","x": 4, "y": 4 }
                 ],
                 "disabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0 }
                 ]
               }
               },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+              { "image_path": "assets/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 100, "y": 160,"string_template": {
@@ -193,14 +193,14 @@
               }  },
               { "variable_name": "$_LIST_ITEM", "x": 66, "y": 162, "radio_template": {
                 "enabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
-                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ],
                 "disabled": [
-                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                  { "image_path": "assets/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
                 ]
               }},
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+              { "image_path": "assets/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
             ],
             "target": "select",
             "button_map": {
