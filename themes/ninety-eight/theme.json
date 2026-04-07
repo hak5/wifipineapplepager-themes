@@ -1,7 +1,7 @@
 {
   "author": "Cribbit",
-  "theme_version": "1.0.7",
-  "theme_framework_version": "0.5",
+  "theme_version": "1.0.8",
+  "theme_framework_version": "0.6",
 
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
@@ -59,6 +59,7 @@
   },
 
 
+  "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
   "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
   "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
   "payloads_for_category_list_path": "components/payloads_for_category_list.json",
@@ -215,5 +216,7 @@
 
     "simple_images": {
     }
-  }
+  },
+
+  "failsafe_duckyscript_list_picker": "components/failsafe/failsafe_duckyscript_list_picker.json"
 }
