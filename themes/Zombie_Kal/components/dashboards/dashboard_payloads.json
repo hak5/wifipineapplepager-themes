@@ -3,7 +3,7 @@
     "screen_name": "payloads_dashboard",
     "status_bar": "",
     "windowed_canvas": true,
-    "cache_canvases": true,
+    "cache_canvases": false,
     "button_map": {
       "a": "select",
       "b": "back",
