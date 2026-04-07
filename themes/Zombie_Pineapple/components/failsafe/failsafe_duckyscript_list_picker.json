@@ -1,0 +1,219 @@
+{
+  "template": {
+    "screen_name": "failsafe_duckyscript_option_picker",
+    "windowed_canvas": true,
+    "cache_canvases": true,
+    "background": {
+      "background_color": {"r": 0, "g": 0,"b":  0},
+      "layers": [
+        { "text": "Current theme missing LIST_PICKER component", "x": 30, "y": 205, "text_size": "small" },
+        { "variable_name": "$_INPUT_NAME", "x": 30, "y": 30, "string_template": {
+          "text_size": "medium",
+          "text_color_rgb": {"r": 255, "g": 255, "b": 255},
+          "max_chars": 23,
+          "wrap_text": false
+        }  }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 70,  "string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 255, "g": 255, "b": 255},
+                "max_chars": 23,
+                "wrap_text": false
+              }  },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 72,
+                "radio_template": {
+                  "enabled": [
+                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
+                    { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                  ],
+                  "disabled": [
+                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                  ]
+                }
+              },
+              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 70, "string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 0, "g": 255, "b": 0},
+                "max_chars": 23,
+                "wrap_text": false
+              }  },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 72, "radio_template": {
+                "enabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ],
+                "disabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ]
+              }
+              },
+              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 100, "string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 255, "g": 255, "b": 255},
+                "max_chars": 23,
+                "wrap_text": false
+              }  },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 102,  "radio_template": {
+                  "enabled": [
+                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
+                    { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                  ],
+                  "disabled": [
+                    { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                  ]
+                }
+              }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 100,"string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 0, "g": 255, "b": 0},
+                "max_chars": 23,
+                "wrap_text": false
+              }  },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 102, "radio_template": {
+                "enabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ],
+                "disabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ]
+              }}
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 130, "string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 255, "g": 255, "b": 255},
+                "max_chars": 23,
+                "wrap_text": false
+              } },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 132, "radio_template": {
+                "enabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
+                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                ],
+                "disabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                ]
+              }
+              }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 130,"string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 0, "g": 255, "b": 0},
+                "max_chars": 23,
+                "wrap_text": false
+              }  },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 132, "radio_template": {
+                "enabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ],
+                "disabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ]
+              }}
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 160, "string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 255, "g": 255, "b": 255},
+                "max_chars": 23,
+                "wrap_text": false
+              } },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 162,"radio_template": {
+                "enabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 },
+                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4 }
+                ],
+                "disabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0 }
+                ]
+              }
+              },
+              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+            ],
+            "selected_layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 100, "y": 160,"string_template": {
+                "text_size": "medium",
+                "text_color_rgb": {"r": 0, "g": 255, "b": 0},
+                "max_chars": 23,
+                "wrap_text": false
+              }  },
+              { "variable_name": "$_LIST_ITEM", "x": 66, "y": 162, "radio_template": {
+                "enabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}},
+                  { "image_path": "assets/radio/radio_selected.png","x": 4, "y": 4, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ],
+                "disabled": [
+                  { "image_path": "assets/radio/radio_border.png", "x": 0, "y": 0, "recolor_rgb": {"r": 255, "g": 255, "b": 255}}
+                ]
+              }},
+              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_rgb": {"r": 255, "g": 255, "b": 255} }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
