@@ -2,7 +2,7 @@
   "template": {
     "screen_name": "payloads_dashboard",
     "status_bar": "default",
-    "windowed_canvas": true,
+    "windowed_canvas": false,
     "cache_canvases": true,
     "button_map": {
       "a": "select",

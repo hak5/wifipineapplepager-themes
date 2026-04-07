@@ -14,22 +14,24 @@
   "background": {
     "layers": [
       { "image_path": "assets/launch_payload_dialog/launch_payload_bg.png", "x": 0, "y": 0 },
-      { "variable_name": "$_INPUT_NAME", "x":  30, "y": 76, "string_template": {"text_size": "medium", "max_chars": 22, "wrap_text": false, "max_lines": 1 }}
+	  { "variable_name": "$_PAYLOAD_TITLE", "x":  30, "y": 68, "string_template": {"text_color_palette": "white", "text_size": "medium", "max_chars": 22, "wrap_text": false, "max_lines": 1 }},
+      { "text": "Author:", "x": 30, "y": 90,  "text_size": "small" },
+      { "variable_name": "$_PAYLOAD_AUTHOR_NAME", "x":  95, "y": 90, "string_template": {"text_size": "small", "max_chars": 24, "wrap_text": false, "max_lines": 1 }}
     ]
   },
   "menu_items": [
     {
       "id": "Launch",
       "layers": [
-        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
-        { "image_path": "assets/flame.png","x": 92, "y": 149 },
-        { "text": "Launch", "x": 47, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 117 },
+        { "image_path": "assets/flame.png","x": 92, "y": 159 },
+        { "text": "Launch", "x": 47, "y": 125, "text_color_palette": "blue", "text_size": "large" }
       ],
       "selected_layers": [
-        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 107 },
-        { "image_path": "assets/flame.png","x": 92, "y": 149, "recolor_palette":  "green" },
-        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 107 },
-        { "text": "Launch", "x": 47, "y": 115, "text_color_palette": "green", "text_size": "large" }
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 28, "y": 117 },
+        { "image_path": "assets/flame.png","x": 92, "y": 159, "recolor_palette":  "green" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 117 },
+        { "text": "Launch", "x": 47, "y": 125, "text_color_palette": "green", "text_size": "large" }
       ],
       "target": "launch_payload",
       "variable": "$_INPUT",
@@ -41,15 +43,15 @@
     {
       "id": "Cancel",
       "layers": [
-        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
-        { "image_path": "assets/x.png","x": 233, "y": 150 },
-        { "text": "Cancel", "x": 194, "y": 115, "text_color_palette": "blue", "text_size": "large" }
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 117 },
+        { "image_path": "assets/x.png","x": 233, "y": 160 },
+        { "text": "Cancel", "x": 194, "y": 125, "text_color_palette": "blue", "text_size": "large" }
       ],
       "selected_layers": [
-        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 107 },
-        { "image_path": "assets/x.png","x": 233, "y": 150, "recolor_palette":  "red" },
-        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 107 },
-        { "text": "Cancel", "x": 194, "y": 115, "text_color_palette": "red", "text_size": "large" }
+        { "image_path": "assets/payload_dialog_option_bg.png","x": 172, "y": 117 },
+        { "image_path": "assets/x.png","x": 233, "y": 160, "recolor_palette":  "red" },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 117 },
+        { "text": "Cancel", "x": 194, "y": 125, "text_color_palette": "red", "text_size": "large" }
       ],
       "target": "back"
     }
