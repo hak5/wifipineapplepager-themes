@@ -216,7 +216,5 @@
 
     "simple_images": {
     }
-  },
-
-  "failsafe_duckyscript_list_picker": "components/failsafe/failsafe_duckyscript_list_picker.json"
+  }
 }
