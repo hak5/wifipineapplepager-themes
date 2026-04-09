@@ -1,0 +1,98 @@
+{
+  "screen_name": "os_licenses",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "osl0",
+          "selected_layers": [
+            {
+              "x":0, "y":0, "text_color_palette": "green", "text_size": "small", "max_chars": 256, "wrap_text": true, "max_lines": 25,              
+              "text": "Open Source Licenses"
+            },
+            {
+              "x":415, "y":0, "text_color_palette": "green", "text_size": "small", "max_chars": 256, "wrap_text": true, "max_lines": 25,              
+              "text": "1 of 2"
+            },
+            {
+              "x":0, "y":15, "text_color_palette": "disabled_light_gray", "text_size": "small", "max_chars": 256, "wrap_text": true, "max_lines": 25,              
+              "text": "gorillamux:......github.com/gorilla/mux\nmsgpack.V5:......github.com/vmihailenco/msgpack/v5\nprotobuf:........google.golang.org/protobuf\nfsnotify:........github.com/fsnotify/fsnotify\nuuid:............github.com/google/uuid\nmmap-go:.........github.com/edsrzf/mmap-go\npixfont:.........github.com/pbnjay/pixfont\ncrypt:...........github.com/GehirnInc/crypt\nsemver:..........github.com/blang/semver\ngopsutil:........github.com/shirou/gopsutil\nnanoid:..........github.com/sixafter/nanoid\nxxh3.hash:.......github.com/zeebo/xxh3\npty:.............github.com/creack/pty\ngorillawebsocket:github.com/gorilla/websocket\ngenetlink:.......github.com/mdlayher/genetlink"
+            }
+          ],
+          "target": "dashboard"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "osl1",
+          "selected_layers": [
+            {
+              "x":0, "y":0, "text_color_palette": "green", "text_size": "small", "max_chars": 256, "wrap_text": true, "max_lines": 25,              
+              "text": "Open Source Licenses"
+            },
+            {
+              "x":415, "y":0, "text_color_palette": "green", "text_size": "small", "max_chars": 256, "wrap_text": true, "max_lines": 25,              
+              "text": "2 of 2"
+            },
+            {
+              "x":0, "y":15, "text_color_palette": "disabled_light_gray", "text_size": "small", "max_chars": 256, "wrap_text": true, "max_lines": 25,              
+              "text": "netlink:.........github.com/mdlayher/netlink\ntagparser:.......github.com/vmihailenco/tagparser/v2\nnetlink.socket:..github.com/mdlayher/socket\ngo-cmp:..........github.com/google/go-cmp\nnative-byte:.....github.com/josharian/native\nsysconf:.........github.com/tklauser/go-sysconf\ncpuid:...........github.com/klauspost/cpuid/v2\nnumcpus:.........github.com/tklauser/numcpus\ncxxopts:.........github.com/jarro2783/cxxopts.git\nstduuid:.........github.com/mariusbancila/stduuid.git\nutfcpp:..........github.com/nemtrif/utfcpp.git\nlibwifi:.........libwifi.so\nboost:...........boost.org\nopenwrt:.........openwrt.org\n"
+            }
+          ],
+          "target": "dashboard"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
