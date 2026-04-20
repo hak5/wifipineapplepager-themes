@@ -767,19 +767,19 @@ def gen_keyboard():
             start_y=57, key_w=77, key_h=56)
     save(ss_finish(img, W, H), "keyboard/keyboard_layout_hex.png")
 
-    # Key highlight (47x31) — solid yellow fill, black text on top
+    # Key highlight (47x31) — yellow outline so label shows through
     img, d = ss_start(47, 31)
-    rrect(d, (0, 0, 46, 30), fill=YELLOW, radius=3)
+    rrect(d, (0, 0, 46, 30), fill=None, outline=YELLOW, width=SS*2, radius=3)
     save(ss_finish(img, 47, 31), "keyboard/_key-bg.png")
 
     # Spacebar (188x31)
     img, d = ss_start(188, 31)
-    rrect(d, (0, 0, 187, 30), fill=YELLOW, radius=3)
+    rrect(d, (0, 0, 187, 30), fill=None, outline=YELLOW, width=SS*2, radius=3)
     save(ss_finish(img, 188, 31), "keyboard/_spacebar-4x.png")
 
-    # Hex key (75x54)
+    # Hex key (75x54) — yellow outline so label shows through
     img, d = ss_start(75, 54)
-    rrect(d, (0, 0, 74, 53), fill=YELLOW, radius=3)
+    rrect(d, (0, 0, 74, 53), fill=None, outline=YELLOW, width=SS*2, radius=3)
     save(ss_finish(img, 75, 54), "keyboard/_hex-bg.png")
 
 

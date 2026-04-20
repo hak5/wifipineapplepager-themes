@@ -19,12 +19,32 @@
         "y": 0
       },
       {
-        "variable_name": "$_INPUT_NAME",
+        "variable_name": "$_PAYLOAD_TITLE",
         "x": 30,
-        "y": 76,
+        "y": 68,
         "string_template": {
+          "text_color_palette": "yellow",
           "text_size": "medium",
           "max_chars": 22,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      {
+        "text": "Author:",
+        "x": 30,
+        "y": 90,
+        "text_size": "small",
+        "text_color_palette": "medium_gray"
+      },
+      {
+        "variable_name": "$_PAYLOAD_AUTHOR_NAME",
+        "x": 95,
+        "y": 90,
+        "string_template": {
+          "text_color_palette": "soft_white",
+          "text_size": "small",
+          "max_chars": 24,
           "wrap_text": false,
           "max_lines": 1
         }
@@ -38,12 +58,12 @@
         {
           "image_path": "assets/payload_dialog_option_bg.png",
           "x": 28,
-          "y": 107
+          "y": 117
         },
         {
           "image_path": "assets/optiondialog/check.png",
           "x": 84,
-          "y": 133,
+          "y": 143,
           "recolor_palette": "yellow"
         }
       ],
@@ -51,12 +71,12 @@
         {
           "image_path": "assets/payload_dialog_selected_box.png",
           "x": 28,
-          "y": 107
+          "y": 117
         },
         {
           "image_path": "assets/optiondialog/check.png",
           "x": 84,
-          "y": 133,
+          "y": 143,
           "recolor_palette": "black"
         }
       ],
@@ -91,12 +111,12 @@
         {
           "image_path": "assets/payload_dialog_option_bg.png",
           "x": 172,
-          "y": 107
+          "y": 117
         },
         {
           "image_path": "assets/optiondialog/x.png",
           "x": 232,
-          "y": 135,
+          "y": 145,
           "recolor_palette": "disabled_dark_gray"
         }
       ],
@@ -104,12 +124,12 @@
         {
           "image_path": "assets/payload_dialog_option_bg.png",
           "x": 172,
-          "y": 107
+          "y": 117
         },
         {
           "image_path": "assets/optiondialog/x.png",
           "x": 232,
-          "y": 135,
+          "y": 145,
           "recolor_palette": "white"
         }
       ],
