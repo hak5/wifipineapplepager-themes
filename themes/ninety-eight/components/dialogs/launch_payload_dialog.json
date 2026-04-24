@@ -14,7 +14,9 @@
   "background": {
     "layers": [
       { "image_path": "assets/launch_payload_dialog/launch_payload_bg.png", "x": 0, "y": 0 },
-      { "variable_name": "$_INPUT_NAME", "x":  120, "y": 77, "string_template": {"text_size": "medium", "text_color_palette": "medium_gray", "max_chars": 22, "wrap_text": false, "max_lines": 1 }}
+      { "variable_name": "$_PAYLOAD_TITLE", "x":  120, "y": 70, "string_template": {"text_color_palette": "medium_gray", "text_size": "medium", "max_chars": 22, "wrap_text": false, "max_lines": 1 }},
+      { "text": "Author:", "x": 120, "y": 95,  "text_size": "small" },
+      { "variable_name": "$_PAYLOAD_AUTHOR_NAME", "x":  185, "y": 95, "string_template": {"text_size": "small", "max_chars": 24, "wrap_text": false, "max_lines": 1 }}
     ]
   },
   "menu_items": [
