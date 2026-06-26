@@ -1,11 +1,12 @@
 # Old Skool Green
 - Author: Cribbit
-- Version: 1.0
+- Version: 1.0.8
 
 ## Change Log
-| Version | Changes         |
-| ------- | --------------- |
-| 1.0     | Initial release |
+| Version | Changes          |
+| ------- | ---------------- |
+| 1.0     | Initial release  |
+| 1.0.8   | Updated to 1.0.8 |
 
 ## Installation
 
