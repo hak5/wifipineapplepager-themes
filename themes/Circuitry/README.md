@@ -21,6 +21,8 @@ A circuit board themed skin for the Hak5 WiFi Pineapple Pager. Every screen is d
 - Themed keyboards with PCB-style key highlights
 - Custom backgrounds for all dialogs, wizards, settings, and recon screens
 - Light green folder icons and payload UI elements
+- Payload launch dialog with metadata display (title, version, author, description)
+- DuckyScript LIST_PICKER component support
 
 ## Dashboard Layout
 
@@ -37,7 +39,9 @@ A circuit board themed skin for the Hak5 WiFi Pineapple Pager. Every screen is d
 
 ## Firmware Version
 
-Developed and tested on WiFi Pineapple Pager firmware version 1.0.7
+Developed and tested on WiFi Pineapple Pager firmware version 1.0.8
+
+![Payload Dialog](preview_payload_dialog.png)
 
 ## Credits
 

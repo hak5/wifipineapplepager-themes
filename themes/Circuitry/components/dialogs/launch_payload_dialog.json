@@ -14,18 +14,23 @@
   "background": {
     "layers": [
       { "image_path": "assets/launch_payload_dialog/launch_payload_bg.png", "x": 0, "y": 0 },
-      { "variable_name": "$_INPUT_NAME", "x":  30, "y": 30, "string_template": {"text_size": "medium", "text_color_palette": "light_green", "max_chars": 22, "wrap_text": false, "max_lines": 1 }}
+      { "variable_name": "$_PAYLOAD_TITLE", "x":  30, "y": 30, "string_template": {"text_size": "medium", "text_color_palette": "light_green", "max_chars": 22, "wrap_text": false, "max_lines": 1 }},
+      { "text": "Version:", "x": 30, "y": 53, "text_size": "small", "text_color_palette": "medium_gray" },
+      { "variable_name": "$_PAYLOAD_VERSION", "x": 105, "y": 53, "string_template": {"text_size": "small", "text_color_palette": "cyan", "max_chars": 10, "wrap_text": false, "max_lines": 1 }},
+      { "text": "Author:", "x": 30, "y": 69, "text_size": "small", "text_color_palette": "medium_gray" },
+      { "variable_name": "$_PAYLOAD_AUTHOR_NAME", "x": 95, "y": 69, "string_template": {"text_size": "small", "text_color_palette": "green", "max_chars": 24, "wrap_text": false, "max_lines": 1 }},
+      { "variable_name": "$_PAYLOAD_DESCRIPTION", "x": 30, "y": 85, "string_template": {"text_size": "small", "text_color_palette": "teal", "max_chars": 40, "wrap_text": true, "max_lines": 2 }}
     ]
   },
   "menu_items": [
     {
       "id": "Launch",
       "layers": [
-        { "image_path": "assets/payload_dialog_option_bg_launch.png","x": 28, "y": 107 }
+        { "image_path": "assets/payload_dialog_option_bg_launch.png","x": 28, "y": 127 }
       ],
       "selected_layers": [
-        { "image_path": "assets/payload_dialog_option_bg_launch.png","x": 28, "y": 107 },
-        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 107 }
+        { "image_path": "assets/payload_dialog_option_bg_launch.png","x": 28, "y": 127 },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 28, "y": 127 }
       ],
       "target": "launch_payload",
       "variable": "$_INPUT",
@@ -39,11 +44,11 @@
     {
       "id": "Cancel",
       "layers": [
-        { "image_path": "assets/payload_dialog_option_bg_cancel.png","x": 172, "y": 107 }
+        { "image_path": "assets/payload_dialog_option_bg_cancel.png","x": 172, "y": 127 }
       ],
       "selected_layers": [
-        { "image_path": "assets/payload_dialog_option_bg_cancel.png","x": 172, "y": 107 },
-        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 107 }
+        { "image_path": "assets/payload_dialog_option_bg_cancel.png","x": 172, "y": 127 },
+        { "image_path": "assets/payload_dialog_selected_box.png","x": 172, "y": 127 }
       ],
       "target": "back"
     }
