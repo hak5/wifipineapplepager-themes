@@ -1,0 +1,42 @@
+{
+  "input_area": {
+    "x": 15,
+    "y": 15,
+    "width": 422,
+    "max_characters": 24,
+    "background": {
+      "layers": []
+    },
+    "per_key_canvas_cache": false
+  },
+
+  "qwerty": {
+    "screen_name": "US_keyboard_ip",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [{"image_path":  "assets/keyboard/keyboard_layout_ip.png", "x": 0, "y": 0}]
+    },
+    "rows": [
+      [
+        { "id": "0", "x": 51,   "y": 57, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "1", "x": 128,   "y": 57, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "2", "x": 205,  "y": 57, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "3", "x": 282,  "y": 57, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "done", "x": 359,  "y": 57, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] }
+      ],
+      [
+        { "id": "/", "x": 51,   "y": 113, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "4", "x": 128,   "y": 113, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "5", "x": 205,  "y": 113, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "6", "x": 282,  "y": 113, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "backspace", "x": 359,  "y": 113, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] }
+      ],
+      [
+        { "id": ".", "x": 51,   "y": 169, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "7", "x": 128,  "y": 169, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "8", "x": 205,  "y": 169, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] },
+        { "id": "9", "x": 282,  "y": 169, "selected_layers": [{"image_path":  "assets/keyboard/_hex-bg.png"}] }
+      ]
+    ]
+  }
+}
