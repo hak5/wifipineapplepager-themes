@@ -1,0 +1,15 @@
+{
+ "animation": {
+    "frames": [
+        { "image_path": "assets/boot_animation/init-1.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-2.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-3.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-4.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-5.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-6.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-7.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-8.png","x": 0, "y": 0 },
+        { "image_path": "assets/boot_animation/init-9.png","x": 0, "y": 0 }
+    ]
+ }
+}
