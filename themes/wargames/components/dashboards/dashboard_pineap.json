@@ -136,7 +136,7 @@
               ]
             }  },
 
-            { "x": 170, "y": 85, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 170, "y": 85, "image_path": "assets/menu_disabled.png"  },
             { "x": 210, "y": 85, "text_color_palette": "gray",           "text": "Allowed Client List" },
 
             { "x": 170, "y": 120, "image_path": "assets/menu_disabled.png"  },
@@ -145,7 +145,7 @@
             { "x": 170, "y": 155, "image_path": "assets/disabled_keyboard.png"  },
             { "x": 210, "y": 155, "text_color_palette": "gray",           "text": "Add Allowed Client" },
 
-            { "x": 170, "y": 190, "image_path": "assets/menu_disabled.png"  },
+            { "x": 170, "y": 190, "image_path": "assets/disabled_keyboard.png"  },
             { "x": 210, "y": 190, "text_color_palette": "gray",           "text": "Add Denied Client" }
           ],
           "x": 0,

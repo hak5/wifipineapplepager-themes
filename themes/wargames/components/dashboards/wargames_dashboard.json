@@ -13,11 +13,27 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/dashboard/wargames_bg.png", "x": 0, "y": 0 }
+      { "image_path": "assets/dashboard/wargames_bg_updated.png", "x": 0, "y": 0 }
     ],
     "background_color": { "r": 0, "g": 0, "b": 0 }
   },
   "menu_items": [
+    {
+      "id": "pagerportal",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
+        { "image_path": "assets/dashboard/pagerportal_logo.png", "x": 19, "y": 18, "recolor_palette": "red" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": 4, "y": 5, "recolor_palette": "red" },
+        { "image_path": "assets/dashboard/pagerportal_logo.png", "x": 19, "y": 18, "recolor_palette": "blue" },
+        { "text": "PAGER PORTAL", "x": -211, "y":  55, "text_size": "large", "text_color_palette": "yellow" }
+      ],
+      "x": 227,
+      "y": 116,
+      "target": "pager_portal_dashboard"
+    },
     {
       "id": "ALERTS",
       "layers": [

@@ -57,6 +57,20 @@
             { "text": "Check for Updates", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "check_for_updates"
+        },
+        {
+          "id": "Check for Portal Updates",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "function_refresh_pager_portal_data"
         }
       ]
     }

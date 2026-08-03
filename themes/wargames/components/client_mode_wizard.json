@@ -1,7 +1,7 @@
 {
   "screen_name": "client_mode_wizard",
   "windowed_canvas": true,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",

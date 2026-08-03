@@ -1,8 +1,8 @@
 {
-  "screen_name": "settings_general_submenu",
+  "screen_name": "settings_display_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
