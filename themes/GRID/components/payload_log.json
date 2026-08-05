@@ -1,30 +1,30 @@
 {
   "background": {
     "layers": [
-      { "image_path": "assets/payloadlog/payload_log_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/payload_log_bg.png", "x": 0, "y": 0 },
       { "variable_name": "$_INPUT_NAME", "use_template": "payload_title", "x": 0, "y": 0 }
     ]
   },
   "scroll_pause_indicator": [
-      { "image_path": "assets/payloadlog/scroll_pause_indicator.png", "x": 457, "y": 108 }
+      { "image_path": "assets/scroll_pause_indicator.png", "x": 457, "y": 108 }
   ],
   "scroll_up_indicator": [
-      { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 465, "y": 40 }
+      { "image_path": "assets/scroll_up_indicator.png", "x": 465, "y": 40 }
   ],
   "scroll_down_indicator": [
-      { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 465, "y": 180 }
+      { "image_path": "assets/scroll_down_indicator.png", "x": 465, "y": 180 }
   ],
   "payload_running_indicator": [
-      { "image_path": "assets/payloadlog/payload_running_indicator.png", "x": 0, "y": 179 }
+      { "image_path": "assets/payload_running_indicator.png", "x": 0, "y": 179 }
   ],
   "payload_complete_indicator": [
-      { "image_path": "assets/payloadlog/payload_complete_indicator.png", "x": 0, "y": 179 }
+      { "image_path": "assets/payload_complete_indicator.png", "x": 0, "y": 179 }
   ],
   "payload_stopped_indicator": [
-    { "image_path": "assets/payloadlog/payload_stopped_indicator.png", "x": 0, "y": 179 }
+    { "image_path": "assets/payload_stopped_indicator.png", "x": 0, "y": 179 }
   ],
   "payload_error_indicator": [
-    { "image_path": "assets/payloadlog/payload_error_indicator.png", "x": 0, "y": 179 }
+    { "image_path": "assets/payload_error_indicator.png", "x": 0, "y": 179 }
   ],
   "status_bar": "default",
   "refresh_interval": 0.75,

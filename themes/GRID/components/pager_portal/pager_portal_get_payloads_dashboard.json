@@ -1,0 +1,67 @@
+{
+  "screen_name": "pager_portal_get_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal_dashboard_payloads.png", "x": 0, "y": 0 },
+      { "text": "Payload Types", "text_size": "large", "text_color_palette": "magenta", "x": 5 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "User Payloads",
+          "layers": [
+            { "text": "User Payloads", "x": 160, "y": 60, "text_color_palette": "dark_magenta" }
+          ],
+          "selected_layers": [
+            { "text": "User Payloads", "x": 160, "y": 60, "text_color_palette": "magenta" },
+            { "image_path": "assets/sub.png","x": 125, "y": 65 }
+
+          ],
+          "x": 60,
+          "y": 20,
+          "target": "pager_portal_get_user_payloads",
+          "variable":"$_GET_USER_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "Alert Payloads",
+          "layers": [
+            { "text": "Alert Payloads", "x": 160, "y": 87, "text_color_palette": "dark_magenta" }
+          ],
+          "selected_layers": [
+            { "text": "Alert Payloads", "x": 160, "y": 87, "text_color_palette": "magenta" },
+            { "image_path": "assets/sub.png","x": 125, "y": 92 }
+
+          ],
+          "x": 60,
+          "y": 20,
+          "target": "pager_portal_get_alert_payloads",
+          "variable":"$_GET_ALERT_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "Recon Payloads",
+          "layers": [
+            { "text": "Recon Payloads", "x": 160, "y": 114, "text_color_palette": "dark_magenta" }
+          ],
+          "selected_layers": [
+            { "text": "Recon Payloads", "x": 160, "y": 114, "text_color_palette": "magenta" },
+            { "image_path": "assets/sub.png","x": 125, "y": 119 }
+
+          ],
+          "x": 60,
+          "y": 20,
+          "target": "pager_portal_get_recon_payloads",
+          "variable":"$_GET_RECON_PAYLOAD_CATEGORIES"
+        }
+      ]
+    }
+  ]
+}

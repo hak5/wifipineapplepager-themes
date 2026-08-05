@@ -83,7 +83,7 @@
             { "image_path": "assets/keyboard.png" },
             { "text": "BSSID Override", "x": 40, "text_color_palette": "yellow" }
           ],
-          "target": "edit_string_dialog",
+          "target": "edit_mac_dialog",
           "variable": "$_OPEN_AP_BSSID"
         }
       ]

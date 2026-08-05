@@ -1,6 +1,6 @@
 {
   "template": {
-    "screen_name": "payloads_dashboard",
+    "screen_name": "recon_payloads_dashboard",
     "status_bar": "default",
     "windowed_canvas": true,
     "cache_canvases": true,
@@ -14,7 +14,7 @@
     },
     "background": {
       "layers": [
-        { "image_path": "assets/payloads_dashboard/recon_payloads_bg.png", "x": 0, "y": 0 },
+        { "image_path": "assets/recon_payloads_bg.png", "x": 0, "y": 0 },
         { "text":  "Payloads", "text_size": "large", "text_color_palette":  "red", "x": 3 }
       ]
     },
@@ -30,7 +30,7 @@
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
+              { "image_path": "assets/sub.png", "x": 0, "y": 7 },
               { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
             ],
             "target": "recon_payloads_for_category_list",
@@ -53,7 +53,7 @@
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
+              { "image_path": "assets/sub.png", "x": 0, "y": 7 },
               { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
             ],
             "target": "recon_payloads_for_category_list",
@@ -76,7 +76,7 @@
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0,  "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
+              { "image_path": "assets/sub.png", "x": 0, "y": 7 },
               { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
             ],
             "target": "recon_payloads_for_category_list",
@@ -99,7 +99,7 @@
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0,  "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
+              { "image_path": "assets/sub.png", "x": 0, "y": 7 },
               { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
             ],
             "target": "recon_payloads_for_category_list",
@@ -122,7 +122,7 @@
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "string_template": { "text_color_palette":  "red" } },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
+              { "image_path": "assets/sub.png", "x": 0, "y": 7 },
               { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
             ],
             "target": "recon_payloads_for_category_list",

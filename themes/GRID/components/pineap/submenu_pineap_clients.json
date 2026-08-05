@@ -4,7 +4,7 @@
     "screen_name": "pineap_clients_submenu",
     "status_bar": "default",
     "windowed_canvas": false,
-    "cache_canvases": true,
+    "cache_canvases": false,
     "button_map": {
       "a": "select",
       "b": "back",
@@ -87,7 +87,7 @@
                 "max_lines": 1
               } }
             ],
-            "target": "pineap_client_kick",
+            "target": "function_pineap_client_kick",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -155,7 +155,7 @@
                 "max_lines": 1
               } }
             ],
-            "target": "pineap_client_kick",
+            "target": "function_pineap_client_kick",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -223,7 +223,7 @@
                 "max_lines": 1
               } }
             ],
-            "target": "pineap_client_kick",
+            "target": "function_pineap_client_kick",
             "variable": "$_LIST_ITEM"
           }
         ]

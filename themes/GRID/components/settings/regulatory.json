@@ -32,7 +32,7 @@
               "max_lines": 13,
               "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
             },
-            { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 450, "y": 190 }
+            { "image_path": "assets/scroll_down_indicator.png", "x": 450, "y": 190 }
           ]
         }
       ]
@@ -53,8 +53,8 @@
               "max_lines": 13,
               "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
             },
-            { "image_path": "assets/payloadlog/scroll_up_indicator.png",   "x": 450, "y": 30  },
-            { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 450, "y": 190 }
+            { "image_path": "assets/scroll_up_indicator.png",   "x": 450, "y": 30  },
+            { "image_path": "assets/scroll_down_indicator.png", "x": 450, "y": 190 }
           ]
         }
       ]
@@ -75,8 +75,8 @@
               "max_lines": 13,
               "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
             },
-            { "image_path": "assets/payloadlog/scroll_up_indicator.png",   "x": 450, "y": 30  },
-            { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 450, "y": 190 }
+            { "image_path": "assets/scroll_up_indicator.png",   "x": 450, "y": 30  },
+            { "image_path": "assets/scroll_down_indicator.png", "x": 450, "y": 190 }
           ]
         }
       ]
@@ -97,7 +97,7 @@
               "max_lines": 13,
               "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }
             },
-            { "image_path": "assets/payloadlog/scroll_up_indicator.png",   "x": 450, "y": 30  }
+            { "image_path": "assets/scroll_up_indicator.png",   "x": 450, "y": 30  }
           ]
         }
       ]

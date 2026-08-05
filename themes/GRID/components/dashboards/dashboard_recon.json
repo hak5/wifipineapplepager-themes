@@ -1,5 +1,5 @@
 {
-  "background_path": "assets/recon/recon_dashboard.png",
+  "background_path": "assets/recon_dashboard.png",
   "graph_width": 45,
   "bar_w": 8,
   "bar_gap": 1,
