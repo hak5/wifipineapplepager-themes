@@ -1,6 +1,6 @@
 {
   "template": {
-    "screen_name": "payloads_dashboard",
+    "screen_name": "recon_payloads_dashboard",
     "status_bar": "default",
     "windowed_canvas": true,
     "cache_canvases": true,

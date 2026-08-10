@@ -1,7 +1,7 @@
 {
   "template": {
-    "screen_name": "payloads_dashboard",
-    "status_bar": "default",
+    "screen_name": "pager_portal_installed_payloads_list",
+    "status_bar": "min",
     "windowed_canvas": false,
     "cache_canvases": false,
     "button_map": {
@@ -46,7 +46,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 58, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 58, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_installed_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -73,7 +73,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 87, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 87, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_installed_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -100,7 +100,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 116, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 116, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_installed_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -127,7 +127,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 146, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 146, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_installed_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -154,7 +154,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 174, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 174, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_installed_payload_details",
             "variable": "$_LIST_ITEM"
           }
         ]

@@ -38,8 +38,8 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/payloads_up.png", "x": 0, "y": 0 }
       ],
-      "x": 85,
-      "y": 80,
+      "x": 65,
+      "y": 90,
       "target": "payloads_dashboard",
       "variable": "$_PAYLOAD_CATEGORIES"
     },
@@ -51,7 +51,7 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/recon_up.png", "x": 0, "y": 0  }
       ],
-      "x": 210,
+      "x": 155,
       "y": 45,
       "target": "recon_dashboard"
     },
@@ -63,8 +63,8 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/pineap_up.png", "x": 0, "y": 0  }
       ],
-      "x": 293,
-      "y": 80,
+      "x": 260,
+      "y": 45,
       "target": "pineap_menu"
     },
     {
@@ -75,9 +75,21 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/settings_up.png", "x": 0, "y": 0 }
       ],
+      "x": 310,
+      "y": 90,
+      "target": "settings_menu"
+    },
+	{
+      "id": "pagerportal",
+      "layers": [
+        { "image_path": "assets/dashboard/portal.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/portal_up.png", "x": 0, "y": 0 }
+      ],
       "x": 374,
       "y": 141,
-      "target": "settings_menu"
+      "target": "pager_portal_dashboard"
     }
   ]
 }

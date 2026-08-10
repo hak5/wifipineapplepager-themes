@@ -1,0 +1,80 @@
+{
+  "screen_name": "pager_portal_get_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+		{ "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+		{ "text": "Payload Types", "text_size": "large", "text_color_palette": "cyan3d", "x": 3 },
+		{ "text": "Payload Types", "text_size": "large", "text_color_palette": "red3d", "x": 7 },
+		{ "text": "Payload Types", "text_size": "large", "text_color_palette": "white", "x": 5 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "User Payloads",
+          "layers": [
+            { "text": "User Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "User Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "User Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "User Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "User Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "User Payloads", "text_color_palette": "white" }
+
+          ],
+          "x": 220,
+          "y": 80,
+          "target": "pager_portal_get_user_payloads",
+          "variable":"$_GET_USER_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "Alert Payloads",
+          "layers": [
+            { "text": "Alert Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Alert Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Alert Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "Alert Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Alert Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Alert Payloads", "text_color_palette": "white" }
+          ],
+          "x": 220,
+          "y": 107,
+          "target": "pager_portal_get_alert_payloads",
+          "variable":"$_GET_ALERT_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "Recon Payloads",
+          "layers": [
+            { "text": "Recon Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Recon Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Recon Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "Recon Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Recon Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Recon Payloads", "text_color_palette": "white" }
+
+          ],
+          "x": 220,
+          "y": 137,
+          "target": "pager_portal_get_recon_payloads",
+          "variable":"$_GET_RECON_PAYLOAD_CATEGORIES"
+        }
+      ]
+    }
+  ]
+}

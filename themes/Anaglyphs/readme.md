@@ -1,6 +1,6 @@
 # Anaglyphs
 - Author: Cribbit
-- Version: 1.0.8
+- Version: 1.1.0
 
 ## Discription
 Anaglyphs is a bold visual theme built around the iconic red and cyan 3D aesthetic is designed to create a 3D effect. 
@@ -12,6 +12,7 @@ When viewed through classic red/cyan 3D glasses, each eye sees a different layer
 | Version | Changes         |
 | ------- | --------------- |
 | 1.0.8     | Initial release |
+| 1.0.1     | Update for payload portal |
 
 ## Installation
 

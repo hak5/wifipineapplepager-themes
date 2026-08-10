@@ -1,0 +1,60 @@
+{
+  "screen_name": "pager_portal_update_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+      { "text": "Payload Portal", "text_size": "large", "text_color_palette": "cyan3d", "x": 3 },
+      { "text": "Payload Portal", "text_size": "large", "text_color_palette": "red3d", "x": 7 },
+      { "text": "Payload Portal", "text_size": "large", "text_color_palette": "white", "x": 5 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "View Updates",
+          "layers": [
+            { "text": "View Updates", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "View Updates", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "View Updates", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "View Updates", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "View Updates", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "View Updates", "text_color_palette": "white" }
+
+          ],
+          "x": 220,
+          "y": 80,
+          "target": "pager_portal_update_payloads_list",
+          "variable": "$_UPDATE_PAYLOADS_LIST"
+        },
+        {
+          "id": "Update All Payloads",
+          "layers": [
+            { "text": "Update All Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Update All Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Update All Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "Update All Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Update All Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Update All Payloads", "text_color_palette": "white" }
+          ],
+          "x": 220,
+          "y": 107,
+          "target": "function_update_all_payloads"
+        }
+      ]
+    }
+  ]
+}
