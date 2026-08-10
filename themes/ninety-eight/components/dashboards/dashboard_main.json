@@ -128,6 +128,28 @@
         "x": 275,
         "y": 82,
         "target": "settings_menu"
+    },
+    {
+        "id": "pagerportal",
+        "layers": [
+        ],
+        "selected_layers": [
+            {
+                "image_path": "assets/dashboard/highlight.png",
+                "x": 5,
+                "y": 1
+            },
+            {
+                "text": "Pager Portal",
+                "x": -336,
+                "y": 120,
+                "text_size": "small",
+                "text_color_palette": "black"
+            }
+        ],
+        "x": 347,
+        "y": 82,
+        "target": "pager_portal_dashboard"
     }
   ]
 }

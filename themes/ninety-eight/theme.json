@@ -1,7 +1,7 @@
 {
   "author": "Cribbit",
-  "theme_version": "1.0.8",
-  "theme_framework_version": "0.6",
+  "theme_version": "1.1.0",
+  "theme_framework_version": "0.7",
 
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
@@ -47,8 +47,25 @@
     "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
 
     "pineap_menu": "components/dashboards/dashboard_pineap.json",
-    "settings_menu": "components/dashboards/dashboard_settings.json"
+	"settings_menu": "components/dashboards/dashboard_settings.json",
+
+    "pager_portal_dashboard": "components/dashboards/dashboard_pager_portal.json",
+    "pager_portal_update_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_update_payloads.json",
+    "pager_portal_themes_dashboard": "components/pager_portal/dashboard_pager_portal_themes.json",
+    "pager_portal_get_payloads_dashboard": "components/pager_portal/pager_portal_get_payloads_dashboard.json",
+    "pager_portal_view_payload_details": "components/pager_portal/pager_portal_view_payload_info.json",
+    "pager_portal_view_updatable_payload_details": "components/pager_portal/pager_portal_view_updatable_payload_info.json",
+    "pager_portal_view_installed_payload_details": "components/pager_portal/pager_portal_view_installed_payload_info.json"
   },
+
+  "pager_portal_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_payloads.json",
+  "pager_portal_alert_payload_categories": "components/pager_portal/pager_portal_get_alert_payloads.json",
+  "pager_portal_user_payload_categories": "components/pager_portal/pager_portal_get_user_payloads.json",
+  "pager_portal_recon_payload_categories": "components/pager_portal/pager_portal_get_recon_payloads.json",
+  "pager_portal_installed_payloads_list": "components/pager_portal/pager_portal_installed_payloads_list.json",
+  "pager_portal_update_payloads_list": "components/pager_portal/pager_portal_update_payloads_list.json",
+  "pager_portal_get_payloads_for_category_list": "components/pager_portal/pager_portal_get_payloads_for_category_list.json",
+
 
   "option_dialogs": {
     "option_dialog":  "components/dialogs/ui_option_dialog.json",
@@ -216,5 +233,7 @@
 
     "simple_images": {
     }
-  }
+  },
+
+  "failsafe_duckyscript_list_picker": "components/failsafe/failsafe_duckyscript_list_picker.json"
 }

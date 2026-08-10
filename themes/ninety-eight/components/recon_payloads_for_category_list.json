@@ -1,6 +1,6 @@
 {
   "template": {
-    "screen_name": "payloads_for_category_list",
+    "screen_name": "recon_payloads_for_category_list",
     "windowed_canvas": true,
     "cache_canvases": true,
     "background": {

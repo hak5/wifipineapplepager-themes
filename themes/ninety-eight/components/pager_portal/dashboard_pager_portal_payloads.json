@@ -1,0 +1,63 @@
+{
+  "screen_name": "pager_portal_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+      { "text": "Payload Portal", "text_color_palette": "white", "text_size": "small", "x": 195, "y": 4 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Get Payloads",
+          "layers": [
+            { "text": "Get Payloads", "x": 5, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Get Payloads", "x": 5, "text_color_palette": "black" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "y": -3}
+
+          ],
+          "x": 160,
+          "y": 30,
+          "target": "pager_portal_get_payloads_dashboard"
+        },
+        {
+          "id": "Update Payloads",
+          "layers": [
+            { "text": "Update Payloads", "x": 5, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Update Payloads", "x": 5, "text_color_palette": "black" },
+            { "image_path": "assets/settings/bodyhighlight.png", "y": -3}
+
+          ],
+          "x": 160,
+          "y":65,
+          "target": "pager_portal_update_payloads_dashboard"
+        },
+        {
+          "id": "Uninstall Payloads",
+          "layers": [
+            { "text": "Uninstall Payloads", "x": 5, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Uninstall Payloads", "x": 5, "text_color_palette": "black" },
+            { "image_path": "assets/settings/bodyhighlight.png", "y": -3}
+
+          ],
+          "x": 160,
+          "y":100,
+          "target": "pager_portal_installed_payloads_list",
+          "variable": "$_INSTALLED_PAYLOADS_LIST"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "screen_name": "pager_portal_themes_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+      { "text": "Themes Portal",  "text_color_palette": "white", "text_size": "small", "x": 195, "y": 4 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "unselectable": true,
+          "id": "Coming soon",
+          "layers": [
+            { "text": "Coming soon", "x": 160, "y": 33, "text_color_palette": "red", "text_size": "large" }
+          ],
+          "x": 60,
+          "y": 10
+        },
+        {
+          "unselectable": true,
+          "id": "Get Themes",
+          "layers": [
+            { "text": "Browse Themes", "x": 160, "y": 60, "text_color_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "text": "Browse Themes", "x": 160, "y": 60, "text_color_palette": "gray" },
+            { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 65 }
+
+          ],
+          "x": 60,
+          "y": 20
+        },
+        {
+          "unselectable": true,
+          "id": "Installed Themes",
+          "layers": [
+            { "text": "Installed Themes", "x": 160, "y": 87, "text_color_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "text": "Installed Themes", "x": 160, "y": 87, "text_color_palette": "gray" },
+            { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 92 }
+
+          ],
+          "x": 60,
+          "y": 20
+        },
+        {
+          "unselectable": true,
+          "id": "Update Themes",
+          "layers": [
+            { "text": "Update Themes", "x": 160, "y": 114, "text_color_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "text": "Update Themes", "x": 160, "y": 114, "text_color_palette": "gray" }
+          ],
+          "x": 60,
+          "y": 20
+        }
+      ]
+    }
+  ]
+}

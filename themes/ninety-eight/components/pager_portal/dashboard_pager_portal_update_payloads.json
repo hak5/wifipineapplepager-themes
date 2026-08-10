@@ -1,0 +1,51 @@
+{
+  "screen_name": "pager_portal_update_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+      { "text": "Update",  "text_color_palette": "white", "text_size": "small", "x": 200, "y": 4 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "View Updates",
+          "layers": [
+            { "text": "View Updates", "x": 5, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "View Updates", "x": 5, "text_color_palette": "black" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "y": -3}
+
+          ],
+          "x": 160,
+          "y": 30,
+          "target": "pager_portal_update_payloads_list",
+          "variable": "$_UPDATE_PAYLOADS_LIST"
+        },
+        {
+          "id": "Update All Payloads",
+          "layers": [
+            { "text": "Update All Payloads", "x": 5, "text_color_palette": "black" }
+          ],
+          "selected_layers": [
+            { "text": "Update All Payloads", "x": 5, "text_color_palette": "black" },
+			{ "image_path": "assets/settings/bodyhighlight.png", "y": -3}
+
+          ],
+          "x": 160,
+          "y":65,
+          "target": "function_update_all_payloads"
+        }
+      ]
+    }
+  ]
+}
