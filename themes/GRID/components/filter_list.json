@@ -2,10 +2,10 @@
   "template": {
     "screen_name": "filters_list",
     "windowed_canvas": true,
-    "cache_canvases": true,
+    "cache_canvases": false,
     "background": {
       "layers": [
-        { "image_path": "assets/optiondialog/option_dialog_bg_windowed.png", "x": 8, "y": 12 },
+        { "image_path": "assets/option_dialog_bg_windowed.png", "x": 8, "y": 12 },
         { "variable_name": "$_INPUT_NAME", "x": 35, "y": 25, "use_template": "string_title" },
         { "text":  "Size:", "text_size":  "small", "x": 330, "y": 25 },
         { "variable_name": "$_LIST_SIZE", "x": 340, "y": 40, "use_template": "list_count" },
@@ -27,11 +27,11 @@
             "id": "Slot0",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 75, "y": 63, "use_template": "ssid_pool_string" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              { "image_path": "assets/scroll_up_indicator.png", "x": 37, "y": 70 }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 75, "y": 63, "use_template": "ssid_pool_string_selected" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              { "image_path": "assets/scroll_up_indicator.png", "x": 37, "y": 70 }
             ],
             "target": "function_remove_filter_entry",
             "variable": "$_LIST_ITEM"
@@ -40,11 +40,11 @@
             "id": "Slot1",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 75, "y": 90, "use_template": "ssid_pool_string" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              { "image_path": "assets/scroll_up_indicator.png", "x": 37, "y": 70 }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 75, "y": 90, "use_template": "ssid_pool_string_selected" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              { "image_path": "assets/scroll_up_indicator.png", "x": 37, "y": 70 }
             ],
             "target": "function_remove_filter_entry",
             "variable": "$_LIST_ITEM"
@@ -75,11 +75,11 @@
             "id": "Slot4",
             "layers": [
               { "variable_name": "$_LIST_ITEM", "x": 75, "y": 171, "use_template": "ssid_pool_string" },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175 }
+              { "image_path": "assets/scroll_down_indicator.png", "x": 37, "y": 175 }
             ],
             "selected_layers": [
               { "variable_name": "$_LIST_ITEM", "x": 75, "y": 171, "use_template": "ssid_pool_string_selected" },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175 }
+              { "image_path": "assets/scroll_down_indicator.png", "x": 37, "y": 175 }
             ],
             "target": "function_remove_filter_entry",
             "variable": "$_LIST_ITEM"

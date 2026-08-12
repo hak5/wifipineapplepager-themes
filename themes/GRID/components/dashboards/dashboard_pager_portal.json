@@ -1,0 +1,48 @@
+{
+  "screen_name": "pager_portal_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal_dashboard_bg2.png", "x": 0, "y": 0 },
+      { "text": "Pager Portal", "text_size": "large", "text_color_palette": "yellow", "x": 5 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Payloads",
+          "layers": [
+            { "text": "Payloads", "x": 254, "y": 60, "text_color_palette": "yellow", "text_size": "large" }
+          ],
+          "selected_layers": [
+            { "text": "Payloads", "x": 254, "y": 60, "text_color_palette": "red", "text_size": "large" },
+            { "image_path": "assets/sub.png","x": 215, "y": 73 }
+
+          ],
+          "x": 20,
+          "y": 35,
+          "target": "pager_portal_payloads_dashboard"
+        },
+        {
+          "id": "Themes",
+          "layers": [
+            { "text": "Themes", "x": 254, "y": 87, "text_color_palette": "yellow", "text_size": "large" }
+          ],
+          "selected_layers": [
+            { "text": "Themes", "x": 254, "y": 87, "text_color_palette": "red", "text_size": "large" },
+            { "image_path": "assets/sub.png","x": 215, "y": 100 }
+
+          ],
+          "x": 20,
+          "y": 35,
+          "target": "pager_portal_themes_dashboard"
+        }
+      ]
+    }
+  ]
+}

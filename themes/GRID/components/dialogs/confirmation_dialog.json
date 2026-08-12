@@ -16,12 +16,12 @@
           "y": 10,
           "x": 2,
           "layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 114, "y": 157 },
-            { "image_path":  "assets/optiondialog/x.png", "x": 155, "y": 157}
+            { "image_path":  "assets/generic_confirmation_button_deselected.png", "x": 114, "y": 157 },
+            { "image_path":  "assets/x.png", "x": 155, "y": 158,  "recolor_palette": "disabled_dark_gray" }
           ],
           "selected_layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 114, "y": 157 },
-            { "image_path":  "assets/optiondialog/x.png", "x": 155, "y": 157}
+            { "image_path":  "assets/generic_confirmation_button_selected.png", "x": 114, "y": 157 },
+            { "image_path":  "assets/x.png", "x": 155, "y": 158, "recolor_palette": "red"}
           ],
           "target": "back"
         },
@@ -30,12 +30,12 @@
           "y": 10,
           "x": 2,
           "layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 252, "y": 157 },
-            { "image_path":  "assets/optiondialog/check.png", "x": 295, "y": 157 }
+            { "image_path":  "assets/generic_confirmation_button_deselected.png", "x": 252, "y": 157 },
+            { "image_path":  "assets/check.png", "x": 290, "y": 158,  "recolor_palette": "disabled_dark_gray" }
           ],
           "selected_layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 252, "y": 157 },
-            { "image_path":  "assets/optiondialog/check.png", "x": 295, "y": 157 }
+            { "image_path":  "assets/generic_confirmation_button_selected.png", "x": 252, "y": 157 },
+            { "image_path":  "assets/check.png", "x": 290, "y": 158, "recolor_palette": "green" }
           ],
           "target": "confirm"
         }

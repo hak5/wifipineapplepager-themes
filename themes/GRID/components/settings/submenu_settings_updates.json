@@ -17,7 +17,7 @@
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
       { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "gray" },
       { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "red" },
+      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "yellow" },
       { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "gray" },
       { "text": "About",     "x": 10, "y": 190, "text_color_palette": "gray" }
     ]
@@ -57,6 +57,20 @@
             { "text": "Check for Updates", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "check_for_updates"
+        },
+        {
+          "id": "Check for Portal Updates",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "function_refresh_pager_portal_data"
         }
       ]
     }

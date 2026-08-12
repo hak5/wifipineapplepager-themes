@@ -1,10 +1,10 @@
 {
   "screen_name": "evilwpa_wizard",
   "windowed_canvas": true,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
-    "b": "back",
+    "b": "quit_wizard",
     "up": "previous",
     "down": "next",
     "left": "noop",
@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+      { "image_path": "assets/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
     ]
   },
   "pages": [
@@ -42,7 +42,7 @@
           "variable": "$_SETUP_EVIL_WPA_SSID",
           "button_map": {
             "a": "select",
-            "b": "back",
+            "b": "quit_wizard",
             "up": "goto save",
             "down": "next",
             "left": "noop",
@@ -109,7 +109,7 @@
           "target": "function_save_evil_wpa",
           "button_map": {
             "a": "select",
-            "b": "back",
+            "b": "quit_wizard",
             "up": "previous",
             "down": "goto ssid",
             "left": "goto clear",
@@ -131,7 +131,7 @@
           "target": "function_clear_evil_wpa",
           "button_map": {
             "a": "select",
-            "b": "back",
+            "b": "quit_wizard",
             "up": "goto pass",
             "down": "next",
             "left": "goto save",

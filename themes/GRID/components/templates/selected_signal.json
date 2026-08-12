@@ -4,15 +4,15 @@
   "strong_threshold": -60,
   "max_threshold": -40,
   "minimum_signal": [
-    { "image_path": "assets/recon/rssi_0.png", "recolor_palette": "red" }
+    { "image_path": "assets/rssi_0.png", "recolor_palette": "red" }
   ],
   "weak_signal": [
-    { "image_path": "assets/recon/rssi_1.png", "recolor_palette": "yellow" }
+    { "image_path": "assets/rssi_1.png", "recolor_palette": "yellow" }
   ],
   "strong_signal": [
-    { "image_path": "assets/recon/rssi_2.png", "recolor_palette": "light_green" }
+    { "image_path": "assets/rssi_2.png", "recolor_palette": "light_green" }
   ],
   "max_signal": [
-    { "image_path": "assets/recon/rssi_3.png", "recolor_palette": "green" }
+    { "image_path": "assets/rssi_3.png", "recolor_palette": "green" }
   ]
 }

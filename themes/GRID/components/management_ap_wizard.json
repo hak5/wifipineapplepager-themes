@@ -1,7 +1,7 @@
 {
   "screen_name": "management_ap_wizard",
   "windowed_canvas": true,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+      { "image_path": "assets/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
     ]
   },
   "pages": [

@@ -1,5 +1,5 @@
 {
-  "screen_name": "settings_general_submenu",
+  "screen_name": "settings_ringtone_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
   "cache_canvases": false,
@@ -17,7 +17,7 @@
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
       { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "gray" },
       { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "red" },
+      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "yellow" },
       { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "gray" },
       { "text": "System",   "x": 10, "y": 190, "text_color_palette": "gray" }
     ]
@@ -32,11 +32,11 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Alert", "x": 40, "text_color_palette": "gray" }
+            { "text": "Alert", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Alert", "x": 40, "text_color_palette": "red" }
+            { "text": "Alert", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_ALERT_RINGTONE"
@@ -47,11 +47,11 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Boot", "x": 40, "text_color_palette": "gray" }
+            { "text": "Boot", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Boot", "x": 40, "text_color_palette": "red" }
+            { "text": "Boot", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_BOOT_RINGTONE"
@@ -62,11 +62,11 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Battery Low", "x": 40, "text_color_palette": "gray" }
+            { "text": "Battery Low", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Battery Low", "x": 40, "text_color_palette": "red" }
+            { "text": "Battery Low", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_BATTERY_LOW_RINGTONE"
@@ -77,11 +77,11 @@
           "y":155,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Battery Critical", "x": 40, "text_color_palette": "gray" }
+            { "text": "Battery Critical", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Battery Critical", "x": 40, "text_color_palette": "red" }
+            { "text": "Battery Critical", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_BATTERY_CRITICAL_RINGTONE"
@@ -92,12 +92,12 @@
           "y":190,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Power Connected", "x": 40, "text_color_palette": "gray" },
+            { "text": "Power Connected", "x": 40, "text_color_palette": "blue" },
             { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Power Connected", "x": 40, "text_color_palette": "red" },
+            { "text": "Power Connected", "x": 40, "text_color_palette": "yellow" },
             { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
           ],
           "target": "option_dialog",
@@ -114,12 +114,12 @@
           "y":50,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Power Disconnected", "x": 40, "text_color_palette": "gray" },
+            { "text": "Power Disconnected", "x": 40, "text_color_palette": "blue" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Power Disconnected", "x": 40, "text_color_palette": "red" },
+            { "text": "Power Disconnected", "x": 40, "text_color_palette": "yellow" },
             { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
           ],
           "target": "option_dialog",
@@ -131,11 +131,11 @@
           "y":85,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Payload Complete", "x": 40, "text_color_palette": "gray" }
+            { "text": "Payload Complete", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Payload Complete", "x": 40, "text_color_palette": "red" }
+            { "text": "Payload Complete", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_PAYLOAD_COMPLETE_RINGTONE"
@@ -146,11 +146,11 @@
           "y":120,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Error", "x": 40, "text_color_palette": "gray" }
+            { "text": "Error", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Error", "x": 40, "text_color_palette": "red" }
+            { "text": "Error", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_ERROR_RINGTONE"

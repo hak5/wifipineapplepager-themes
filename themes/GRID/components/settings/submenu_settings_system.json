@@ -1,5 +1,5 @@
 {
-  "screen_name": "settings_general_submenu",
+  "screen_name": "settings_system_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
   "cache_canvases": false,
@@ -19,7 +19,7 @@
       { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "gray" },
       { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" },
       { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "red" }
+      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "yellow" }
     ]
   },
   "pages": [

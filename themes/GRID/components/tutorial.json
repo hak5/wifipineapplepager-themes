@@ -86,10 +86,10 @@
               "text": "The status bar displays the time, as\nwell as the battery state, volume,\nbrightness and vibration status.\n\nFrom Recon, the status bar will show\nGPS, database, PCAP and frequency."
             },
             { "x": 300, "y": 25, "image_path": "assets/arrow_up.png" },
-            { "x": 251, "y": 5, "image_path": "assets/statusbar/vibrate.png" },
-            { "x": 286, "y": 5, "image_path": "assets/statusbar/dashboard_brightness_7.png", "recolor_palette": "blue" },
-            { "x": 317, "y": 5, "image_path": "assets/statusbar/volume_high.png" },
-            { "x": 346, "y": 5, "image_path": "assets/statusbar/dashboard_battery_charge_75.png" },
+            { "x": 251, "y": 5, "image_path": "assets/vibrate.png" },
+            { "x": 286, "y": 5, "image_path": "assets/dashboard_brightness_7.png", "recolor_palette": "blue" },
+            { "x": 317, "y": 5, "image_path": "assets/volume_high.png" },
+            { "x": 346, "y": 5, "image_path": "assets/dashboard_battery_charge_75.png" },
             { "x": 400, "y": 7, "text": "1:37 PM", "text_color_palette": "blue", "text_size": "small" }
           ]
         }

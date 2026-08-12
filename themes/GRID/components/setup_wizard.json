@@ -186,8 +186,8 @@
               "wrap_text": true,
               "max_lines": 10
             },
-            { "image_path": "assets/optiondialog/check.png", "recolor_palette": "green", "x": 117, "y": 129},
-            { "image_path": "assets/optiondialog/x.png", "recolor_palette": "red",   "x": 120, "y": 161}
+            { "image_path": "assets/check.png", "recolor_palette": "green", "x": 117, "y": 129},
+            { "image_path": "assets/x.png", "recolor_palette": "red",   "x": 120, "y": 161}
           ]
         }
       ]
@@ -212,7 +212,7 @@
         {
           "id": "setup4",
           "selected_layers": [
-            { "image_path": "assets/dashboard/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
+            { "image_path": "assets/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
             {
               "x":160, "y":10,
               "text": "PIN CODE",
@@ -267,7 +267,7 @@
         {
           "id": "root_password",
           "selected_layers": [
-            { "image_path": "assets/dashboard/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
+            { "image_path": "assets/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
             {
               "x":160, "y":10,
               "text": "ROOT PASSWORD",
@@ -322,7 +322,7 @@
         {
           "id": "set_timezone",
           "selected_layers": [
-            { "image_path": "assets/dashboard/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
+            { "image_path": "assets/settings.png", "recolor_palette": "green", "x": 117, "y": 10},
             {
               "x":160, "y":10,
               "text": "SET TIMEZONE",
