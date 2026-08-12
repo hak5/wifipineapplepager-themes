@@ -250,7 +250,9 @@
             },
 
             { "x": 160, "y": 65, "image_path": "assets/disabled_wizard.png" },
-            { "x": 200, "y": 65, "text_color_palette": "gray",           "text": "Check for Updates" }
+            { "x": 200, "y": 65, "text_color_palette": "gray", "text": "Check for Updates" },
+            { "x": 160, "y": 100, "image_path": "assets/start.png", "recolor_palette": "gray" },
+            { "x": 200, "y": 100, "text_color_palette": "gray", "text": "Refresh Portal" }
           ],
           "x": 0,
           "y": 0,

@@ -4,7 +4,7 @@
     "screen_name": "pineap_clients_submenu",
     "status_bar": "default",
     "windowed_canvas": false,
-    "cache_canvases": true,
+    "cache_canvases": false,
     "button_map": {
       "a": "select",
       "b": "back",

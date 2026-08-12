@@ -1,0 +1,52 @@
+{
+  "screen_name": "pager_portal_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+      { "text": "Download, Update and Manage", "text_color_palette": "white", "text_size": "small", "x": 130, "y": 4 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Payloads",
+          "layers": [
+            { "text": "Payloads", "x": 7, "y": 50, "text_color_palette": "black", "text_size": "medium" },
+            { "image_path": "assets/pager_portal/briefcase.png", "x": 35, "y": 0}
+          ],
+          "selected_layers": [
+            { "text": "Payloads", "x": 7, "y": 50, "text_color_palette": "black", "text_size": "medium" },
+            { "image_path": "assets/pager_portal/briefcase.png", "x": 35, "y": 0},
+            { "image_path": "assets/settings/listhighlight.png", "x": 0, "y": 50}
+
+          ],
+          "x": 180,
+          "y": 55,
+          "target": "pager_portal_payloads_dashboard"
+        },
+        {
+          "id": "Themes",
+          "layers": [
+            { "text": "Themes", "x": 17, "y": 50, "text_color_palette": "black", "text_size": "medium" },
+            { "image_path": "assets/pager_portal/paint.png", "x": 35, "y": 0}
+          ],
+          "selected_layers": [
+            { "text": "Themes", "x": 17, "y": 50, "text_color_palette": "black", "text_size": "medium" },
+            { "image_path": "assets/pager_portal/paint.png", "x": 35, "y": 0},
+            { "image_path": "assets/settings/listhighlight.png", "x": 0, "y": 50}
+
+          ],
+          "x": 310,
+          "y": 55,
+          "target": "pager_portal_themes_dashboard"
+        }
+      ]
+    }
+  ]
+}
