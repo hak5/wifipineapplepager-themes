@@ -63,6 +63,24 @@
             { "text": "Check for Updates", "x": 40, "text_color_palette": "white" }
           ],
           "target": "check_for_updates"
+		},
+        {
+          "id": "Check for Portal Updates",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/autoplay.png" },
+            { "text": "Refresh Portal", "x": 39, "text_color_palette": "red3d" },
+            { "text": "Refresh Portal", "x": 41, "text_color_palette": "cyan3d" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/autoplay.png" },
+            { "text": "Refresh Portal", "x": 39, "text_color_palette": "cyan3d" },
+            { "text": "Refresh Portal", "x": 41, "text_color_palette": "red3d" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "white" }
+          ],
+          "target": "function_refresh_pager_portal_data"
         }
       ]
     }

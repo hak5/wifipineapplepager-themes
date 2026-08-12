@@ -1,7 +1,7 @@
 {
   "template": {
-    "screen_name": "payloads_dashboard",
-    "status_bar": "default",
+    "screen_name": "pager_portal_get_payloads_for_category_list",
+    "status_bar": "min",
     "windowed_canvas": false,
     "cache_canvases": false,
     "button_map": {
@@ -14,7 +14,10 @@
     },
     "background": {
       "layers": [
-        { "image_path": "assets/payloads_dashboard/payloads_bg.png", "x": 0, "y": 0 },
+        { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+        { "variable_name": "$_INPUT_NAME", "x": 3, "string_template": { "text_size": "large", "text_color_palette": "cyan3d", "max_chars": 21, "wrap_text": false, "max_lines": 1 } },
+        { "variable_name": "$_INPUT_NAME", "x": 7, "string_template": { "text_size": "large", "text_color_palette": "red3d", "max_chars": 21, "wrap_text": false, "max_lines": 1 } },
+        { "variable_name": "$_INPUT_NAME", "x": 5, "string_template": { "text_size": "large", "text_color_palette": "white", "max_chars": 21, "wrap_text": false, "max_lines": 1 } },
         { "variable_name": "$_LIST_SIZE", "x": 375, "y": 206, "string_template": {"text_size":"small","text_color_palette": "white", "center_text_within": { "draw_bounds": false, "start_x": 365, "end_x": 385, "start_y": 206, "end_y": 218 }}},
         { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 390, "y": 206, "use_template": "list_pagination_label" }
       ]
@@ -46,7 +49,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 58, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 58, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -73,7 +76,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 87, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 87, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -100,7 +103,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 116, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 116, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -127,7 +130,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 146, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 146, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_payload_details",
             "variable": "$_LIST_ITEM"
           },
           {
@@ -154,7 +157,7 @@
               { "image_path": "assets/folder.png", "x": 178, "y": 174, "recolor_palette": "red3d" },
               { "image_path": "assets/folder.png", "x": 177, "y": 174, "recolor_palette": "white" }
             ],
-            "target": "payloads_for_category_list",
+            "target": "pager_portal_view_payload_details",
             "variable": "$_LIST_ITEM"
           }
         ]

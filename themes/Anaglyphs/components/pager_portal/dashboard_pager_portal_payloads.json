@@ -1,0 +1,77 @@
+{
+  "screen_name": "pager_portal_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard.png", "x": 0, "y": 0 },
+      { "text": "Payload Portal", "text_size": "large", "text_color_palette": "cyan3d", "x": 3 },
+      { "text": "Payload Portal", "text_size": "large", "text_color_palette": "red3d", "x": 7 },
+      { "text": "Payload Portal", "text_size": "large", "text_color_palette": "white", "x": 5 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Get Payloads",
+          "layers": [
+            { "text": "Get Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Get Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Get Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "Get Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Get Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Get Payloads", "text_color_palette": "white" }
+
+          ],
+          "x": 220,
+          "y": 80,
+          "target": "pager_portal_get_payloads_dashboard"
+        },
+        {
+          "id": "Update Payloads",
+          "layers": [
+            { "text": "Update Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Update Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Update Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "Update Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Update Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Update Payloads", "text_color_palette": "white" }
+
+          ],
+          "x": 220,
+          "y": 107,
+          "target": "pager_portal_update_payloads_dashboard"
+        },
+        {
+          "id": "Uninstall Payloads",
+          "layers": [
+            { "text": "Uninstall Payloads", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Uninstall Payloads", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Uninstall Payloads", "text_color_palette": "white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -30, "y": 0 },
+            { "text": "Uninstall Payloads", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Uninstall Payloads", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Uninstall Payloads", "text_color_palette": "white" }
+
+          ],
+          "x": 220,
+          "y": 134,
+          "target": "pager_portal_installed_payloads_list",
+          "variable": "$_INSTALLED_PAYLOADS_LIST"
+        }
+      ]
+    }
+  ]
+}
