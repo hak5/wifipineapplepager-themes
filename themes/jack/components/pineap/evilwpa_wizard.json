@@ -1,0 +1,144 @@
+{
+  "screen_name": "evilwpa_wizard",
+  "windowed_canvas": true,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "quit_wizard",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "evilwpa_wizard_title",
+          "unselectable": true,
+          "layers": [
+            { "x": 125, "y": 20, "text_size": "large", "text_color_palette": "red", "text": "Evil WPA Setup" }
+          ]
+        },
+        {
+          "id": "ssid",
+          "x": 136,
+          "y": 60,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SETUP_EVIL_WPA_SSID",
+          "button_map": {
+            "a": "select",
+            "b": "quit_wizard",
+            "up": "goto save",
+            "down": "next",
+            "left": "noop",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "bssid",
+          "x": 136,
+          "y": 90,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "BSSID Override", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "BSSID Override", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_SETUP_EVIL_WPA_BSSID"
+        },
+        {
+          "id": "enc",
+          "x": 136,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Encryption Type", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Encryption Type", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_SETUP_EVIL_WPA_ENCRYPTION_TYPE"
+        },
+        {
+          "id": "pass",
+          "x": 136,
+          "y": 150,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Passphrase", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Passphrase", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SETUP_EVIL_WPA_PASSPHRASE"
+        },
+        {
+          "id": "save",
+          "x": 120,
+          "y": 180,
+          "layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Save", "x": 34, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png", "recolor_palette": "green" },
+            { "text": "Save", "x": 34, "text_color_palette": "green" }
+          ],
+          "target": "function_save_evil_wpa",
+          "button_map": {
+            "a": "select",
+            "b": "quit_wizard",
+            "up": "previous",
+            "down": "goto ssid",
+            "left": "goto clear",
+            "right": "goto clear"
+          }
+        },
+        {
+          "id": "clear",
+          "x": 250,
+          "y": 180,
+          "layers": [
+            { "image_path": "assets/x.png", "x": 12, "y": 4 },
+            { "text": "Clear", "x": 38, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/x.png", "x": 12, "y": 4, "recolor_palette": "red" },
+            { "text": "Clear", "x": 38, "text_color_palette": "red" }
+          ],
+          "target": "function_clear_evil_wpa",
+          "button_map": {
+            "a": "select",
+            "b": "quit_wizard",
+            "up": "goto pass",
+            "down": "next",
+            "left": "goto save",
+            "right": "goto save"
+          }
+        }
+      ]
+    }
+  ]
+}
