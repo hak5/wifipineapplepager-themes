@@ -18,50 +18,50 @@
           "unselectable": true,
           "id": "Coming soon",
           "layers": [
-            { "text": "Coming soon", "x": 160, "y": 33, "text_color_palette": "red", "text_size": "large" }
+            { "text": "Coming soon", "x": 5, "text_color_palette": "red", "text_size": "large" }
           ],
-          "x": 60,
-          "y": 10
+          "x": 160,
+          "y": 30
         },
         {
           "unselectable": true,
           "id": "Get Themes",
           "layers": [
-            { "text": "Browse Themes", "x": 160, "y": 60, "text_color_palette": "gray" }
+            { "text": "Browse Themes", "x": 5, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Browse Themes", "x": 160, "y": 60, "text_color_palette": "gray" },
-            { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 65 }
+            { "text": "Browse Themes", "x": 5, "text_color_palette": "gray" },
+            { "image_path": "assets/settings/bodyhighlight.png", "y": -3}
 
           ],
-          "x": 60,
-          "y": 20
+          "x": 160,
+          "y":65
         },
         {
           "unselectable": true,
           "id": "Installed Themes",
           "layers": [
-            { "text": "Installed Themes", "x": 160, "y": 87, "text_color_palette": "gray" }
+            { "text": "Installed Themes", "x": 5, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Installed Themes", "x": 160, "y": 87, "text_color_palette": "gray" },
-            { "image_path": "assets/alerts_dashboard/sub.png","x": 125, "y": 92 }
+            { "text": "Installed Themes", "x": 5, "text_color_palette": "gray" },
+            { "image_path": "assets/settings/bodyhighlight.png", "y": -3}
 
           ],
-          "x": 60,
-          "y": 20
+          "x": 160,
+          "y":100
         },
         {
           "unselectable": true,
           "id": "Update Themes",
           "layers": [
-            { "text": "Update Themes", "x": 160, "y": 114, "text_color_palette": "gray" }
+            { "text": "Update Themes", "x": 5, "text_color_palette": "gray" }
           ],
           "selected_layers": [
-            { "text": "Update Themes", "x": 160, "y": 114, "text_color_palette": "gray" }
+            { "text": "Update Themes", "x": 5, "text_color_palette": "gray" }
           ],
-          "x": 60,
-          "y": 20
+          "x": 160,
+          "y": 135
         }
       ]
     }
