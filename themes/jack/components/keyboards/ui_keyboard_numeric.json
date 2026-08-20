@@ -1,0 +1,42 @@
+{
+  "input_area": {
+    "x": 15,
+    "y": 15,
+    "width": 422,
+    "max_characters": 24,
+    "background": {
+      "layers": []
+    },
+    "per_key_canvas_cache": false
+  },
+
+  "qwerty": {
+    "screen_name": "US_keyboard_numeric",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [{"image_path":  "assets/keyboard/keyboard_layout_numeric.png", "x": 0, "y": 0}]
+    },
+    "rows": [
+      [
+        { "id": "7", "x": 172,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "8", "x": 219,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "9", "x": 266,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "4", "x": 172,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "5", "x": 219,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "6", "x": 266,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "1", "x": 172,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "2", "x": 219,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "3", "x": 266,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ],
+      [
+        { "id": "done",      "x": 172,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "0",         "x": 219,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
+        { "id": "backspace", "x": 266,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+      ]
+    ]
+  }
+}

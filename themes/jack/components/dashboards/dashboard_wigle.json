@@ -1,0 +1,100 @@
+{
+  "screen_name": "wigle_dashboard",
+  "status_bar": "gps",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/wigle_bg.png", "x": 0, "y": 0 },
+      { "text": "Wigle / GPS", "text_size": "large", "text_color_palette": "blue", "x": 5 },
+      { "x":40, "y":155, "text": "Lat:", "text_size": "medium", "text_color_palette": "blue"},
+      { "variable_name": "$_GPS_LAT", "x": 100, "y":155, "string_template": {"text_size": "medium", "text_color_palette": "blue" } },
+      { "x":40, "y":180, "text": "Lon:", "text_size": "medium", "text_color_palette": "blue"},
+      { "variable_name": "$_GPS_LON", "x": 100, "y":180, "string_template": {"text_size": "medium", "text_color_palette": "blue" }} 
+    ]
+  },
+  "title_x": 57,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Port",
+          "x":200,
+          "y":85,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Serial Device", "x": 40, "text_color_palette": "blue" }
+            
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Serial Device", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/dashboard/animation/laugh-1.png","x": -85, "y": -17 }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_DEVICE"
+    },
+        {
+          "id": "Baud Rate",
+          "x":200,
+          "y":110,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Baud Rate", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Baud Rate", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/dashboard/animation/laugh-2.png","x": -85, "y": -42 }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_BAUD"
+        },
+        {
+          "id": "restart",
+          "x":200,
+          "y":135,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "blue" },
+            { "text": "Restart GPSd", "x": 40,  "text_color_palette": "blue" }
+            
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "red" },
+            { "text": "Restart GPSd", "x": 40, "text_color_palette": "red" },
+            { "image_path": "assets/dashboard/animation/laugh-1.png","x": -85, "y": -67 }
+          ],
+          "target": "function_restart_gpsd"
+        },
+                {
+          "id": "Wigle Mode",
+          "x":200,
+          "y":160,
+          "layers": [
+            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"},
+            { "image_path": "assets/dashboard/animation/laugh-2.png","x": -85, "y": -91 }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        }
+      ]
+    }
+  ]
+}

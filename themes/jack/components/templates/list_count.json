@@ -1,0 +1,7 @@
+{
+  "text_size": "small",
+  "text_color_palette": "yellow",
+  "max_chars": 5,
+  "wrap_text": false,
+  "max_lines": 1
+}
