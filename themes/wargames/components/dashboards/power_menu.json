@@ -20,17 +20,17 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
+          "id": "Settings",
           "x":45,
           "y":35,
           "layers": [
-            { "text": "Sleep Screen", "text_color_palette": "green" }
+            { "text": "Settings", "text_color_palette": "green" }
           ],
           "selected_layers": [
             { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
-            { "text": "Sleep Screen", "text_color_palette": "yellow" }
+            { "text": "Settings", "text_color_palette": "yellow" }
           ],
-          "target": "function_sleep_screen"
+          "target": "quick_settings"
         },
         {
           "id": "Lock Screen",
@@ -90,4 +90,3 @@
   ]
 
 }
-
