@@ -2,7 +2,7 @@
   "screen_name": "main_dashboard",
   "status_bar": "horror",
   "windowed_canvas": false,
-  "cache_canvases": false,
+  "cache_canvases": true,
   "button_map": {
     "a": "select",
     "b": "noop",

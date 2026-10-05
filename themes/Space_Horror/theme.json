@@ -1,7 +1,9 @@
 {
   "author": "cncartist",
   "theme_version": "1.1.0",
-  "theme_framework_version": "0.7",
+  "theme_framework_version": "0.8",
+
+  "fallback_menu": "components/fallback_menu.json",
 
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
@@ -19,6 +21,7 @@
     "client_mode_wizard": "components/client_mode_wizard.json",
     "evilwpa_wizard": "components/pineap/evilwpa_wizard.json",
     "power_menu": "components/dashboards/power_menu.json",
+    "quick_settings": "components/dashboards/quick_settings.json",
     "regulatory": "components/settings/regulatory.json",
     "dashboard_path": "components/dashboards/wargames_dashboard.json",
 	"wardriving_dashboard": "components/dashboards/dashboard_wardriving.json",

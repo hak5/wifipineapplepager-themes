@@ -26,7 +26,7 @@
       }
     },
     "Volume": {
-      "x": 71,
+      "x": 317,
       "y": 5,
       "layers": {
         "mute":   [{ "image_path": "assets/mute.png", "x": 0, "y": 0 }],
@@ -36,7 +36,7 @@
       }
     },
     "Brightness": {
-      "x": 40,
+      "x": 286,
       "y": 5,
       "layers": {
         "15": [{ "image_path": "assets/dashboard_brightness_2.png", "recolor_palette": "yellow" }],
@@ -47,11 +47,20 @@
       }
     },
     "Vibrate": {
-      "x": 5,
+      "x": 154,
       "y": 5,
       "layers": {
         "on":  [{ "image_path": "assets/vibrate.png", "x": 0, "y": 0 }],
         "off": [{ "image_path": "assets/vibrate.png", "x": 0, "y": 0, "recolor_palette": "gray" }]
+      }
+    },
+    "WifiClient": {
+      "x": 120,
+      "y": 3,
+      "layers": {
+        "disabled": [{ "image_path": "assets/wifi_off.png", "x": 0, "y": 0 }],
+        "connected": [{ "image_path": "assets/wifi_on_connected.png", "x": 0, "y": 0 }],
+        "disconnected": [{ "image_path": "assets/wifi_on_disconnected.png", "x": 0, "y": 0 }]
       }
     }
   }

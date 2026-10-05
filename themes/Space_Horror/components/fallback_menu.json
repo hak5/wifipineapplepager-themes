@@ -1,0 +1,1610 @@
+{
+  "screen_name": "fallback_menu",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      { "text": "Navigation Safemode", "x": 10, "y": 10, "text_color_palette": "red" }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Pager Portal",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Pager Portal", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Pager Portal", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "pager_portal_dashboard"
+        },
+        {
+          "id": "Alerts",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Alerts Dashboard", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Alerts Dashboard", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "alerts_dashboard"
+        },
+        {
+          "id": "Payloads Dashboard",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Payloads Dashboard", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Payloads Dashboard", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "payloads_dashboard",
+          "variable": "$_PAYLOAD_CATEGORIES"
+        },
+        {
+          "id": "Recon Dashboard",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Recon Dashboard", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Recon Dashboard", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "recon_dashboard"
+        },
+        {
+          "id": "Shutdown Pager",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Shutdown Pager", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Shutdown Pager", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "function_shutdown"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Volume",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Volume", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Volume", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_VOLUME"
+        },
+        {
+          "id": "Vibrate",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_VIBRATE"
+        },
+        {
+          "id": "Vibrate w/ Ringtone",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "variable_name": "$_RINGTONE_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RINGTONE_VIBRATE", "use_template": "toggle" },
+            { "text": "Vibrate w/ Ringtone", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RINGTONE_VIBRATE"
+        },
+        {
+          "id": "Theme",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Theme", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Theme", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_THEME"
+        },
+        {
+          "id": "D-Pad LED",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "D-Pad LED", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_DPAD_LED_COLOR"
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "Brightness",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Brightness", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Brightness", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_BRIGHTNESS"
+        },
+        {
+          "id": "Screen Timeout",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Screen Timeout", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Screen Timeout", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_SCREEN_OFF_TIMEOUT"
+        },
+        {
+          "id": "Dim Brightness",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Dim Brightness", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Dim Brightness", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_DIM_BRIGHTNESS"
+        },
+        {
+          "id": "Dim Timeout",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Dim Timeout", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Dim Timeout", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_SCREEN_DIM_TIMEOUT"
+        },
+        {
+          "id": "Alert Ringtone",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Alert Ringtone", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Alert Ringtone", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_ALERT_RINGTONE"
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "menu_items": [
+        {
+          "id": "Boot Ringtone",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Boot Ringtone", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Boot Ringtone", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BOOT_RINGTONE"
+        },
+        {
+          "id": "Battery Low Ringtone",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Battery Low", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Battery Low", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BATTERY_LOW_RINGTONE"
+        },
+        {
+          "id": "Battery Critical Ringtone",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Battery Critical", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Battery Critical", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BATTERY_CRITICAL_RINGTONE"
+        },
+        {
+          "id": "Power Connected Ringtone",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Power Connected", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Power Connected", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_POWER_CONNECTED_RINGTONE"
+        },
+        {
+          "id": "Power Disconnected Ringtone",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Power Disconnected", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Power Disconnected", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_POWER_DISCONNECTED_RINGTONE"
+        }
+      ]
+    },
+    {
+      "page_index": 4,
+      "menu_items": [
+        {
+          "id": "Payload Complete Ringtone",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Payload Complete", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Payload Complete", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_PAYLOAD_COMPLETE_RINGTONE"
+        },
+        {
+          "id": "Error Ringtone",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Error Ringtone", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Error Ringtone", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_ERROR_RINGTONE"
+        },
+        {
+          "id": "6 GHz",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "6 GHz", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "6 GHz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED"
+        },
+        {
+          "id": "5 GHz",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "5 GHz", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "5 GHz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED"
+        },
+        {
+          "id": "2.4 GHz",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "2.4 GHz", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "2.4 GHz", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED"
+        }
+      ]
+    },
+    {
+      "page_index": 5,
+      "menu_items": [
+        {
+          "id": "Bluetooth",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle" },
+            { "text": "Bluetooth", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle" },
+            { "text": "Bluetooth", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BLUETOOTH_ENABLED"
+        },
+        {
+          "id": "Client Mode",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Client Mode", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Client Mode", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED"
+        },
+        {
+          "id": "Client Mode Setup",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Client Mode Setup", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Client Mode Setup", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "client_mode_wizard"
+        },
+        {
+          "id": "Management AP",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "use_template": "toggle" },
+            { "text": "Management AP", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "use_template": "toggle" },
+            { "text": "Management AP", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_MGMT_AP_ENABLED"
+        },
+        {
+          "id": "Management AP Setup",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Management AP Setup", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Management AP Setup", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "management_ap_wizard"
+        }
+      ]
+    },
+    {
+      "page_index": 6,
+      "menu_items": [
+        {
+          "id": "Hostname",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Hostname", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Hostname", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_HOSTNAME"
+        },
+        {
+          "id": "Virtual Pager",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
+            { "text": "Virtual Pager", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
+            { "text": "Virtual Pager", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_VIRTUAL_PAGER_ENABLED"
+        },
+        {
+          "id": "Root Password",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Root Password", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Root Password", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SYSTEM_PASSWORD"
+        },
+        {
+          "id": "SSH",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "variable_name": "$_SSH_ENABLED", "use_template": "toggle" },
+            { "text": "SSH", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_SSH_ENABLED", "use_template": "toggle" },
+            { "text": "SSH", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_SSH_ENABLED"
+        },
+        {
+          "id": "PIN Code",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_PIN_ENABLED", "use_template": "toggle" },
+            { "text": "PIN Code", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PIN_ENABLED", "use_template": "toggle" },
+            { "text": "PIN Code", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PIN_ENABLED"
+        }
+      ]
+    },
+    {
+      "page_index": 7,
+      "menu_items": [
+        {
+          "id": "PIN Setup",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "PIN Setup", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "PIN Setup", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN"
+        },
+        {
+          "id": "Network Time",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_NTP_ENABLED", "use_template": "toggle" },
+            { "text": "Network Time", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_NTP_ENABLED", "use_template": "toggle" },
+            { "text": "Network Time", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_NTP_ENABLED"
+        },
+        {
+          "id": "Factory Reset",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/warning.png" },
+            { "text": "Factory Reset", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/warning.png" },
+            { "text": "Factory Reset", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "function_factory_reset"
+        },
+        {
+          "id": "Date Time",
+          "x": 20,
+          "y": 155,
+          "unselectable": true,
+          "layers": [
+            {
+              "variable_name": "$_DATETIME",
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "blue",
+                "max_chars": 24,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "24 Hour Clock",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_CLOCK_24HR", "use_template": "toggle" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_CLOCK_24HR", "use_template": "toggle" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLOCK_24HR"
+        }
+      ]
+    },
+    {
+      "page_index": 8,
+      "menu_items": [
+        {
+          "id": "Timezone",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Timezone", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Timezone", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_TIMEZONE"
+        },
+        {
+          "id": "Year",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Year", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Year", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_YEAR"
+        },
+        {
+          "id": "Month",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Month", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Month", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_MONTH"
+        },
+        {
+          "id": "Day",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Day", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Day", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_DAY"
+        },
+        {
+          "id": "Hour",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Hour", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Hour", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_HOUR"
+        }
+      ]
+    },
+    {
+      "page_index": 9,
+      "menu_items": [
+        {
+          "id": "Minute",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Minute", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Minute", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_MINUTE"
+        },
+        {
+          "id": "Second",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Second", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Second", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SECOND"
+        },
+        {
+          "id": "GPS Coordinates",
+          "x": 20,
+          "y": 120,
+          "unselectable": true,
+          "layers": [
+            { "x": 0, "text": "Lat:", "text_size": "medium", "text_color": "medium_gray" },
+            {
+              "variable_name": "$_GPS_LAT",
+              "x": 60,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "gray"
+              }
+            },
+            { "x": 160, "text": "Lon:", "text_size": "medium", "text_color": "medium_gray" },
+            {
+              "variable_name": "$_GPS_LON",
+              "x": 220,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "gray"
+              }
+            }
+          ]
+        },
+        {
+          "id": "GPS Serial Device",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Serial Device", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Serial Device", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_DEVICE"
+        },
+        {
+          "id": "GPS Baud Rate",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "GPS Baud Rate", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "GPS Baud Rate", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_BAUD"
+        }
+      ]
+    },
+    {
+      "page_index": 10,
+      "menu_items": [
+        {
+          "id": "Restart GPSd",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "blue" },
+            { "text": "Restart GPSd", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "red" },
+            { "text": "Restart GPSd", "x": 40, "text_color_palette": "red" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "function_restart_gpsd"
+        },
+        {
+          "id": "Current Version",
+          "x": 20,
+          "y": 85,
+          "unselectable": true,
+          "layers": [
+            { "text": "Current Version:", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FIRMWARE_VERSION",
+              "x": 221,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "blue",
+                "max_chars": 24,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "Check for Updates",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Check for Updates", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Check for Updates", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "check_for_updates"
+        },
+        {
+          "id": "Refresh Portal",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "function_refresh_pager_portal_data"
+        },
+        {
+          "id": "Tutorial",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Tutorial", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Tutorial", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "tutorial"
+        }
+      ]
+    },
+    {
+      "page_index": 11,
+      "menu_items": [
+        {
+          "id": "Regulatory",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "regulatory"
+        },
+        {
+          "id": "License Agreement",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "License Agreement", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "License Agreement", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "license_dialog"
+        },
+        {
+          "id": "Open Source Licenses",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "os_licenses"
+        },
+        {
+          "id": "Help",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "Help", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/info.png" },
+            { "text": "Help", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "help_dialog"
+        }
+      ]
+    },
+    {
+      "page_index": 12,
+      "menu_items": [
+        {
+          "id": "Mimic Open Networks",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
+            { "text": "Mimic Open Networks", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
+            { "text": "Mimic Open Networks", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_IMPERSONATE_NETWORKS"
+        },
+        {
+          "id": "Collect Probes",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
+            { "text": "Collect Probes", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
+            { "text": "Collect Probes", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_NETWORKS"
+        },
+        {
+          "id": "Advertise Networks",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
+            { "text": "Advertise Networks", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
+            { "text": "Advertise Networks", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_ADVERTISE_NETWORKS"
+        },
+        {
+          "id": "Randomize Address",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
+            { "text": "Randomize Address", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
+            { "text": "Randomize Address", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_RANDOMIZE_MAC_ADDRESS"
+        },
+        {
+          "id": "Collect Handshakes",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "text": "Collect Handshakes", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "text": "Collect Handshakes", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES"
+        }
+      ]
+    },
+    {
+      "page_index": 13,
+      "menu_items": [
+        {
+          "id": "Wigle Mode",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "Open AP",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_OPEN_AP_ENABLED", "use_template": "toggle" },
+            { "text": "Open AP", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_OPEN_AP_ENABLED", "use_template": "toggle" },
+            { "text": "Open AP", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_OPEN_AP_ENABLED"
+        },
+        {
+          "id": "Open AP Hidden",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "variable_name": "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
+            { "text": "Open AP Hidden", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
+            { "text": "Open AP Hidden", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_OPEN_AP_HIDDEN"
+        },
+        {
+          "id": "Open AP Name",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Open AP Name", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Open AP Name", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_OPEN_AP_SSID"
+        },
+        {
+          "id": "Open AP BSSID",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Open AP BSSID", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Open AP BSSID", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_OPEN_AP_BSSID"
+        }
+      ]
+    },
+    {
+      "page_index": 14,
+      "menu_items": [
+        {
+          "id": "Evil WPA AP",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "variable_name": "$_EVIL_WPA_ENABLED", "use_template": "toggle" },
+            { "text": "Evil WPA AP", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_EVIL_WPA_ENABLED", "use_template": "toggle" },
+            { "text": "Evil WPA AP", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_EVIL_WPA_ENABLED"
+        },
+        {
+          "id": "Evil WPA Hidden",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_EVIL_WPA_HIDDEN", "use_template": "toggle" },
+            { "text": "Evil WPA Hidden", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_EVIL_WPA_HIDDEN", "use_template": "toggle" },
+            { "text": "Evil WPA Hidden", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_EVIL_WPA_HIDDEN"
+        },
+        {
+          "id": "Evil WPA Configuration",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Evil WPA Config", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png" },
+            { "text": "Evil WPA Config", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "evilwpa_wizard"
+        },
+        {
+          "id": "SSID Pool",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "SSID Pool", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "SSID Pool", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "pineap_ssid_pool_list",
+          "variable": "$_PINEAP_SSID_POOL_LIST"
+        },
+        {
+          "id": "Add Network",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Network", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Network", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_PINEAP_SSID_POOL_ADD"
+        }
+      ]
+    },
+    {
+      "page_index": 15,
+      "menu_items": [
+        {
+          "id": "Clear Pool",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/warning.png" },
+            { "text": "Clear Networks", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/warning.png" },
+            { "text": "Clear Networks", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "function_clear_pineap_ssid_pool_list"
+        },
+        {
+          "id": "Client Filter",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "text": "Client Filter:", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FILTER_CLIENT_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Allow",
+                    "text_size": "medium",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Deny",
+                    "text_size": "medium",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "selected_layers": [
+            { "text": "Client Filter:", "text_color_palette": "yellow" },
+            {
+              "variable_name": "$_FILTER_CLIENT_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Allow",
+                    "text_size": "medium",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Deny",
+                    "text_size": "medium",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_CLIENT_MODE"
+        },
+        {
+          "id": "Allowed Client List",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Allowed Client List", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Allowed Client List", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_ALLOW_LIST"
+        },
+        {
+          "id": "Denied Client List",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Denied Client List", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Denied Client List", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_DENY_LIST"
+        },
+        {
+          "id": "Add Allowed Client",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Allowed Client", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Allowed Client", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_ALLOW_ADD"
+        }
+      ]
+    },
+    {
+      "page_index": 16,
+      "menu_items": [
+        {
+          "id": "Add Denied Client",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Denied Client", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Denied Client", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_DENY_ADD"
+        },
+        {
+          "id": "Network Filter",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "text": "Network Filter:", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FILTER_NETWORK_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Allow",
+                    "text_size": "medium",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Deny",
+                    "text_size": "medium",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "selected_layers": [
+            { "text": "Network Filter:", "text_color_palette": "yellow" },
+            {
+              "variable_name": "$_FILTER_NETWORK_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Allow",
+                    "text_size": "medium",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  { "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" },
+                  {
+                    "text": "Deny",
+                    "text_size": "medium",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_NETWORK_MODE"
+        },
+        {
+          "id": "Allowed Network List",
+          "x": 20,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Allowed Network List", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Allowed Network List", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_ALLOW_LIST"
+        },
+        {
+          "id": "Denied Network List",
+          "x": 20,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Denied Network List", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Denied Network List", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_DENY_LIST"
+        },
+        {
+          "id": "Add Allowed Network",
+          "x": 20,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Allowed Network", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Allowed Network", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_ALLOW_ADD"
+        }
+      ]
+    },
+    {
+      "page_index": 17,
+      "menu_items": [
+        {
+          "id": "Add Denied Network",
+          "x": 20,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Denied Network", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png" },
+            { "text": "Add Denied Network", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_DENY_ADD"
+        },
+        {
+          "id": "Clients",
+          "x": 20,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/client.png", "recolor_palette": "blue" },
+            { "text": "Clients", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/client.png", "recolor_palette": "yellow" },
+            { "text": "Clients", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "pineap_clients_submenu",
+          "variable": "$_PINEAP_CLIENTS"
+        }
+      ]
+    }
+  ]
+}

@@ -152,9 +152,24 @@
           "variable": "$_WIGLE_MODE_ENABLED"
         },
         {
-          "id": "Keep Screen Awake",
+          "id": "Censor Mode",
           "x":110,
           "y":125,
+          "layers": [
+            { "variable_name":  "$_CENSOR_MODE", "use_template": "toggle" },
+            { "text": "Censor Mode", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name":  "$_CENSOR_MODE", "use_template": "toggle" },
+            { "text": "Censor Mode", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CENSOR_MODE"
+        },
+        {
+          "id": "Keep Screen Awake",
+          "x":110,
+          "y":160,
           "layers": [
             { "variable_name":  "$_RECON_KEEP_SCREEN_AWAKE", "use_template": "toggle" },
             { "text": "Keep Screen Awake", "x": 40, "text_color_palette": "blue" }
@@ -171,37 +186,3 @@
 
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

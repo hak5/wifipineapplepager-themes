@@ -1,5 +1,5 @@
 # Space Horror
-"Space Horror" is a dark colorful theme optimized for the pager with a space ambience and many unique backgrounds and creatures.  The theme is tested on 1.1.0 and originally built from "Zombie UFO".  I hope you have as much fun using my theme as I did creating it.
+"Space Horror" is a dark colorful theme optimized for the pager with a space ambience and many unique backgrounds and creatures.  The theme is originally built from "Zombie UFO" and I hope you have as much fun using my theme as I did creating it.
 
 
 ![Space Horror Payloads Dashboard](Space_Horror_payloads.png)

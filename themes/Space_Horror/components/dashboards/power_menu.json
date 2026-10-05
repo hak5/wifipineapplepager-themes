@@ -20,17 +20,17 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
+          "id": "Settings",
           "x":45,
           "y":35,
           "layers": [
-            { "text": "Sleep Screen", "text_color_palette": "medium_gray" }
+            { "text": "Settings", "text_color_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -32, "y": 1 },
-            { "text": "Sleep Screen", "text_color_palette": "yellow" }
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
+            { "text": "Settings", "text_color_palette": "yellow" }
           ],
-          "target": "function_sleep_screen"
+          "target": "quick_settings"
         },
         {
           "id": "Lock Screen",
@@ -40,7 +40,7 @@
             { "text": "Lock Screen", "text_color_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -32, "y": 1 },
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
             { "text": "Lock Screen", "text_color_palette": "yellow" }
           ],
           "target": "function_lock_screen"
@@ -53,7 +53,7 @@
             { "text": "Lock Buttons", "text_color_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -32, "y": 1 },
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
             { "text": "Lock Buttons", "text_color_palette": "yellow" }
           ],
           "target": "function_lock_buttons"
@@ -80,7 +80,7 @@
             { "text": "Shutdown", "text_color_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -32, "y": 1 },
+            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
             { "text": "Shutdown", "text_color_palette": "yellow" }
           ],
           "target": "function_shutdown"
@@ -90,4 +90,3 @@
   ]
 
 }
-
