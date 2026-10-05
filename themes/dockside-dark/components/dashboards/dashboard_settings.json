@@ -1,0 +1,284 @@
+{
+  "screen_name": "settings_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "select"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/sys/base.png", "x": 0, "y": 0 },
+      { "text": "Settings", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "General",
+          "target": "settings_general_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_general.png", "x": 10, "y": 62 },
+            { "text": "General", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 59 },
+            { "image_path": "assets/sys/cat_general.png", "x": 10, "y": 62 },
+            { "text": "General", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 65 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            { "text": "Volume", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "medium_gray" },
+            { "text": "Vibrate", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_VIBRATE", "x": 432, "y": 85, "use_template": "toggle" },
+            { "text": "Vibrate w/ Ringtone", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RINGTONE_VIBRATE", "x": 432, "y": 115, "use_template": "toggle" },
+            { "text": "Theme", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "medium_gray" },
+            { "text": "D-Pad LED", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+          ]
+        },
+        {
+          "id": "Display",
+          "target": "settings_display_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_display.png", "x": 10, "y": 88 },
+            { "text": "Display", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 91 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 85 },
+            { "image_path": "assets/sys/cat_display.png", "x": 10, "y": 88 },
+            { "text": "Display", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 91 },
+            { "image_path": "assets/sys/card_308x4x30.png", "x": 162, "y": 50 },
+            { "text": "Brightness", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "medium_gray" },
+            { "text": "Screen Timeout", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
+            { "text": "Dim Brightness", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
+            { "text": "Dim Timeout", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "medium_gray" }
+          ]
+        },
+        {
+          "id": "Ringtone",
+          "target": "settings_ringtone_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_ringtone.png", "x": 10, "y": 114 },
+            { "text": "Ringtone", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 117 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 111 },
+            { "image_path": "assets/sys/cat_ringtone.png", "x": 10, "y": 114 },
+            { "text": "Ringtone", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 117 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            { "text": "Alert", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "medium_gray" },
+            { "text": "Boot", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
+            { "text": "Battery Low", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
+            { "text": "Battery Critical", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "medium_gray" },
+            { "text": "Power Connected", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+          ]
+        },
+        {
+          "id": "Network",
+          "target": "settings_network_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_network.png", "x": 10, "y": 140 },
+            { "text": "Network", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 143 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 137 },
+            { "image_path": "assets/sys/cat_network.png", "x": 10, "y": 140 },
+            { "text": "Network", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 143 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            { "text": "Client Mode", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 432, "y": 55, "use_template": "toggle" },
+            { "text": "Client Mode Setup", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
+            { "text": "Management AP", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "x": 432, "y": 115, "use_template": "toggle" },
+            { "text": "Management AP Setup", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "medium_gray" },
+            { "text": "Hostname", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+          ]
+        },
+        {
+          "id": "System",
+          "target": "settings_system_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_system.png", "x": 10, "y": 166 },
+            { "text": "System", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 169 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 163 },
+            { "image_path": "assets/sys/cat_system.png", "x": 10, "y": 166 },
+            { "text": "System", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 169 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            { "text": "Virtual Pager", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "x": 432, "y": 55, "use_template": "toggle" },
+            { "text": "Root Password", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
+            { "text": "SSH", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_SSH_ENABLED", "x": 432, "y": 115, "use_template": "toggle" },
+            { "text": "PIN Code", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PIN_ENABLED", "x": 432, "y": 145, "use_template": "toggle" },
+            { "text": "PIN Setup", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Date/Time",
+          "target": "settings_datetime_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_clock.png", "x": 10, "y": 62 },
+            { "text": "Clock", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 59 },
+            { "image_path": "assets/sys/cat_clock.png", "x": 10, "y": 62 },
+            { "text": "Clock", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 65 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            {
+              "variable_name": "$_DATETIME",
+              "x": 176,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 34,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "24 Hour Clock", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_CLOCK_24HR", "x": 432, "y": 85, "use_template": "toggle" },
+            { "text": "Timezone", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
+            { "text": "Year", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "medium_gray" },
+            { "text": "Month", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+          ]
+        },
+        {
+          "id": "GPS",
+          "target": "settings_gps_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_gps.png", "x": 10, "y": 88 },
+            { "text": "GPS", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 91 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 85 },
+            { "image_path": "assets/sys/cat_gps.png", "x": 10, "y": 88 },
+            { "text": "GPS", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 91 },
+            { "image_path": "assets/sys/card_308x4x30.png", "x": 162, "y": 50 },
+            { "text": "Lat:", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 210, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Lon:", "x": 322, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 356, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Serial Device", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
+            { "text": "Baud Rate", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
+            { "text": "Restart GPSd", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "accent" }
+          ]
+        },
+        {
+          "id": "Updates",
+          "target": "settings_updates_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_updates.png", "x": 10, "y": 114 },
+            { "text": "Updates", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 117 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 111 },
+            { "image_path": "assets/sys/cat_updates.png", "x": 10, "y": 114 },
+            { "text": "Updates", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 117 },
+            { "image_path": "assets/sys/card_308x3x30.png", "x": 162, "y": 50 },
+            { "text": "Current Version", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FIRMWARE_VERSION",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 17,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Check for Updates", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "accent" },
+            { "text": "Refresh Portal", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "accent" }
+          ]
+        },
+        {
+          "id": "Help",
+          "target": "settings_help_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_help.png", "x": 10, "y": 140 },
+            { "text": "Help", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 143 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 137 },
+            { "image_path": "assets/sys/cat_help.png", "x": 10, "y": 140 },
+            { "text": "Help", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 143 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            { "text": "Tutorial", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "medium_gray" },
+            { "text": "FCC ID: 2A52Y-MK1", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
+            { "text": "License Agreement", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
+            { "text": "Open Source Licenses", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "medium_gray" },
+            { "text": "Help", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+          ]
+        },
+        {
+          "id": "About",
+          "target": "settings_about_submenu",
+          "layers": [
+            { "image_path": "assets/sys/cat_about.png", "x": 10, "y": 166 },
+            { "text": "About", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 169 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 163 },
+            { "image_path": "assets/sys/cat_about.png", "x": 10, "y": 166 },
+            { "text": "About", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 169 },
+            { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+            { "text": "Uptime", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Battery", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 90, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Temperature", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 120, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Free Disk Space", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 150, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "WAN IP", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 180, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    }
+  ]
+}

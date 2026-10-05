@@ -1,0 +1,49 @@
+{
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "screen_name": "alert_info_dialog",
+  "background": {
+    "layers": [
+      { "image_path": "assets/notification_info.png", "x": 57, "y": 4 }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "dialog text",
+      "selected_layers": [
+        { "text": "Alert", "x": 105, "y": 18, "text_size": "small", "text_color_palette": "gray" },
+        {
+          "variable_name": "$_TIMESTAMP_SHORT",
+          "x": 0,
+          "y": 0,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "gray",
+            "max_chars": 12,
+            "wrap_text": false,
+            "max_lines": 1,
+            "center_text_within": {
+              "draw_bounds": false,
+              "start_x": 322,
+              "end_x": 410,
+              "start_y": 14,
+              "end_y": 30
+            }
+          }
+        },
+        {
+          "variable_name": "$_INPUT",
+          "x": 73,
+          "y": 40,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "blue",
+            "max_chars": 44,
+            "wrap_text": true,
+            "max_lines": 14
+          }
+        }
+      ]
+    }
+  ]
+}

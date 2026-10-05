@@ -1,0 +1,235 @@
+{
+  "template": {
+    "screen_name": "pager_portal_update_payloads_list",
+    "status_bar": "default",
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "background": {
+      "layers": [
+        { "image_path": "assets/portal/base.png", "x": 0, "y": 0 },
+        { "image_path": "assets/portal/sidebar_hl.png", "x": 5, "y": 100 },
+        { "text": "Updates", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+        {
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT",
+          "x": 424,
+          "y": 204,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "gray",
+            "max_chars": 6,
+            "wrap_text": false,
+            "max_lines": 1
+          }
+        },
+        { "image_path": "assets/sys/scroll_track_150.png", "x": 460, "y": 40 },
+        { "image_path": "assets/sys/scroll_up_off.png", "x": 462, "y": 44 },
+        { "image_path": "assets/sys/scroll_thumbh_46.png", "x": 464, "y": 58 },
+        { "image_path": "assets/sys/scroll_down_off.png", "x": 462, "y": 179 }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 43 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 48,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_off.png", "x": 396, "y": 45 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_312x28.png", "x": 140, "y": 41 },
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 43 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 48,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_on.png", "x": 396, "y": 45 }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 73 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 78,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_off.png", "x": 396, "y": 75 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_312x28.png", "x": 140, "y": 71 },
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 73 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 78,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_on.png", "x": 396, "y": 75 }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 103 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 108,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_off.png", "x": 396, "y": 105 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_312x28.png", "x": 140, "y": 101 },
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 103 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 108,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_on.png", "x": 396, "y": 105 }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 133 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 138,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_off.png", "x": 396, "y": 135 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_312x28.png", "x": 140, "y": 131 },
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 133 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 138,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_on.png", "x": 396, "y": 135 }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 163 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 168,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_off.png", "x": 396, "y": 165 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_312x28.png", "x": 140, "y": 161 },
+              { "image_path": "assets/portal/pkg.png", "x": 146, "y": 163 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 178,
+                "y": 168,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 26,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "image_path": "assets/portal/pill_update_54x20_on.png", "x": 396, "y": 165 }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}

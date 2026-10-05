@@ -1,0 +1,91 @@
+{
+  "screen_name": "launch_payload_dialog",
+  "status_bar": "default",
+  "windowed_canvas": true,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/launch_payload_dialog/launch_payload_bg.png", "x": 57, "y": 19 },
+      {
+        "variable_name": "$_PAYLOAD_TITLE",
+        "x": 168,
+        "y": 58,
+        "string_template": {
+          "text_color_palette": "blue",
+          "text_size": "medium",
+          "max_chars": 18,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "Author:", "x": 168, "y": 88, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_PAYLOAD_AUTHOR_NAME",
+        "x": 234,
+        "y": 88,
+        "string_template": {
+          "text_size": "small",
+          "max_chars": 22,
+          "wrap_text": false,
+          "max_lines": 1,
+          "text_color_palette": "gray"
+        }
+      },
+      { "text": "Launch this payload?", "x": 168, "y": 38, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "Make sure you trust it", "x": 168, "y": 110, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "before you launch it.", "x": 168, "y": 126, "text_size": "small", "text_color_palette": "gray" }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "Launch",
+      "layers": [
+        { "image_path": "assets/ui/btn_launch_96x32_off.png", "x": 306, "y": 148 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/ui/btn_launch_96x32_on.png", "x": 306, "y": 148 }
+      ],
+      "target": "launch_payload",
+      "variable": "$_INPUT",
+      "animation": [
+        { "image_path": "assets/ui/launch_icon_cursor.png", "x": 84, "y": 46 },
+        { "image_path": "assets/ui/launch_icon.png", "x": 84, "y": 46 }
+      ],
+      "animation_interval": 0.5,
+      "button_map": {
+        "a": "select",
+        "b": "back",
+        "up": "previous",
+        "down": "noop",
+        "left": "goto Cancel",
+        "right": "noop"
+      }
+    },
+    {
+      "id": "Cancel",
+      "layers": [
+        { "image_path": "assets/ui/btn_cancel_96x32_off.png", "x": 202, "y": 148 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/ui/btn_cancel_96x32_on.png", "x": 202, "y": 148 }
+      ],
+      "target": "back",
+      "button_map": {
+        "a": "select",
+        "b": "back",
+        "up": "noop",
+        "down": "next",
+        "left": "back",
+        "right": "goto Launch"
+      }
+    }
+  ]
+}

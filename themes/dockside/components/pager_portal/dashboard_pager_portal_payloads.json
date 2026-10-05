@@ -1,0 +1,76 @@
+{
+  "screen_name": "pager_portal_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/portal/sidebar_hl.png", "x": 5, "y": 74 },
+      { "text": "Payloads", "text_size": "medium", "text_color_palette": "blue", "x": 146, "y": 32 },
+      { "text": "Payloads", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Get Payloads",
+          "layers": [
+            { "image_path": "assets/portal/row_getpayloads_off.png", "x": 146, "y": 56 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_getpayloads_on.png", "x": 146, "y": 56 }
+          ],
+          "target": "pager_portal_get_payloads_dashboard",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "previous",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Update Payloads",
+          "layers": [
+            { "image_path": "assets/portal/row_updatepayloads_off.png", "x": 146, "y": 100 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_updatepayloads_on.png", "x": 146, "y": 100 }
+          ],
+          "target": "pager_portal_update_payloads_dashboard",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "noop",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Uninstall Payloads",
+          "layers": [
+            { "image_path": "assets/portal/row_installedpayloads_off.png", "x": 146, "y": 144 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_installedpayloads_on.png", "x": 146, "y": 144 }
+          ],
+          "target": "pager_portal_installed_payloads_list",
+          "variable": "$_INSTALLED_PAYLOADS_LIST",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "noop",
+            "right": "next"
+          }
+        }
+      ]
+    }
+  ]
+}

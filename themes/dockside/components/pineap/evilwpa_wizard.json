@@ -1,0 +1,127 @@
+{
+  "screen_name": "evilwpa_wizard",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "quit_wizard",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 28, "y": 0 },
+      { "image_path": "assets/sys/card_396x4x30.png", "x": 44, "y": 32 },
+      { "text": "Evil WPA Setup", "x": 96, "y": 6, "text_size": "small", "text_color_palette": "blue" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "ssid",
+          "layers": [
+            { "text": "Network Name", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 43, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 35 },
+            { "text": "Network Name", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 43, "recolor_palette": "white" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SETUP_EVIL_WPA_SSID",
+          "button_map": {
+            "a": "select",
+            "b": "quit_wizard",
+            "up": "noop",
+            "down": "next",
+            "left": "noop",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "bssid",
+          "layers": [
+            { "text": "BSSID Override", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 73, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 65 },
+            { "text": "BSSID Override", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 73, "recolor_palette": "white" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_SETUP_EVIL_WPA_BSSID"
+        },
+        {
+          "id": "enc",
+          "layers": [
+            { "text": "Encryption Type", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 103, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 95 },
+            { "text": "Encryption Type", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 103, "recolor_palette": "white" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_SETUP_EVIL_WPA_ENCRYPTION_TYPE"
+        },
+        {
+          "id": "pass",
+          "layers": [
+            { "text": "Passphrase", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 133, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 125 },
+            { "text": "Passphrase", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 133, "recolor_palette": "white" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SETUP_EVIL_WPA_PASSPHRASE"
+        },
+        {
+          "id": "clear",
+          "target": "function_clear_evil_wpa",
+          "button_map": {
+            "a": "select",
+            "b": "quit_wizard",
+            "up": "goto pass",
+            "down": "noop",
+            "left": "noop",
+            "right": "goto save"
+          },
+          "layers": [
+            { "image_path": "assets/ui/btn_clear_88x28_off.png", "x": 248, "y": 178 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/btn_clear_88x28_on.png", "x": 248, "y": 178 }
+          ]
+        },
+        {
+          "id": "save",
+          "target": "function_save_evil_wpa",
+          "button_map": {
+            "a": "select",
+            "b": "quit_wizard",
+            "up": "goto pass",
+            "down": "noop",
+            "left": "goto clear",
+            "right": "noop"
+          },
+          "layers": [
+            { "image_path": "assets/ui/btn_save_88x28_off.png", "x": 344, "y": 178 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/btn_save_88x28_on.png", "x": 344, "y": 178 }
+          ]
+        }
+      ]
+    }
+  ]
+}

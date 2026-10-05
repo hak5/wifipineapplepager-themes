@@ -1,0 +1,160 @@
+{
+  "screen_name": "pager_portal_view_updatable_payload_info",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/portal/sidebar_hl.png", "x": 5, "y": 100 },
+      { "text": "Payload", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "data",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/portal/pkg_big.png", "x": 146, "y": 38 },
+            {
+              "variable_name": "$_PAYLOAD_TITLE",
+              "x": 214,
+              "y": 40,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "blue",
+                "max_chars": 20,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_AUTHOR_NAME",
+              "x": 214,
+              "y": 64,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 30,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Version", "x": 146, "y": 124, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_PAYLOAD_VERSION",
+              "x": 236,
+              "y": 124,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 8,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Category", "x": 146, "y": 140, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_PAYLOAD_CATEGORY",
+              "x": 236,
+              "y": 140,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 28,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "->", "x": 290, "y": 124, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_UPDATED_PAYLOAD_VERSION",
+              "x": 314,
+              "y": 124,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "accent",
+                "max_chars": 8,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "What's New", "x": 146, "y": 156, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_PAYLOAD_UPDATE_REASON",
+              "x": 236,
+              "y": 156,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 28,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_UPDATED_PAYLOAD_DESCRIPTION",
+              "x": 146,
+              "y": 176,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 40,
+                "wrap_text": true,
+                "max_lines": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "Upgrade",
+          "layers": [
+            { "image_path": "assets/portal/pill_update_96x24_off.png", "x": 214, "y": 86 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/pill_update_96x24_on.png", "x": 214, "y": 86 }
+          ],
+          "target": "function_update_payload",
+          "variable": "$_INPUT",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "noop",
+            "left": "back",
+            "right": "goto Back"
+          }
+        },
+        {
+          "id": "Back",
+          "layers": [
+            { "image_path": "assets/portal/pill_back_70x24_off.png", "x": 318, "y": 86 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/pill_back_70x24_on.png", "x": 318, "y": 86 }
+          ],
+          "target": "back",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "noop",
+            "down": "next",
+            "left": "goto Upgrade",
+            "right": "noop"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "screen_name": "pager_portal_themes_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/portal/sidebar_hl.png", "x": 5, "y": 152 },
+      { "text": "Themes", "text_size": "medium", "text_color_palette": "blue", "x": 146, "y": 32 },
+      { "text": "Themes", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "unselectable": true,
+          "id": "Get Themes",
+          "layers": [
+            { "image_path": "assets/portal/row_browsethemes_off.png", "x": 146, "y": 56 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_browsethemes_on.png", "x": 146, "y": 56 }
+          ]
+        },
+        {
+          "unselectable": true,
+          "id": "Installed Themes",
+          "layers": [
+            { "image_path": "assets/portal/row_installedthemes_off.png", "x": 146, "y": 100 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_installedthemes_on.png", "x": 146, "y": 100 }
+          ]
+        },
+        {
+          "unselectable": true,
+          "id": "Update Themes",
+          "layers": [
+            { "image_path": "assets/portal/row_updatethemes_off.png", "x": 146, "y": 144 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_updatethemes_on.png", "x": 146, "y": 144 }
+          ]
+        }
+      ]
+    }
+  ]
+}

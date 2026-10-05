@@ -1,0 +1,213 @@
+{
+  "template": {
+    "screen_name": "filters_list",
+    "windowed_canvas": true,
+    "cache_canvases": false,
+    "background": {
+      "layers": [
+        { "image_path": "assets/optiondialog/option_dialog_bg_windowed.png", "x": 8, "y": 12 },
+        { "variable_name": "$_INPUT_NAME", "x": 30, "y": 20, "use_template": "string_title" },
+        {
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT",
+          "x": 407,
+          "y": 24,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "gray",
+            "max_chars": 6,
+            "wrap_text": false,
+            "max_lines": 1
+          }
+        },
+        { "image_path": "assets/sys/scroll_track_140.png", "x": 443, "y": 54 },
+        { "image_path": "assets/sys/scroll_up_off.png", "x": 445, "y": 58 },
+        { "image_path": "assets/sys/scroll_thumbh_42.png", "x": 447, "y": 72 },
+        { "image_path": "assets/sys/scroll_down_off.png", "x": 445, "y": 183 }
+      ]
+    },
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 64,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_412x26.png", "x": 22, "y": 57 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 64,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "function_remove_filter_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 92,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_412x26.png", "x": 22, "y": 85 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 92,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "function_remove_filter_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 120,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_412x26.png", "x": 22, "y": 113 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 120,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "function_remove_filter_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 148,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_412x26.png", "x": 22, "y": 141 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 148,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "function_remove_filter_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 176,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_412x26.png", "x": 22, "y": 169 },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 32,
+                "y": 176,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 51,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "function_remove_filter_entry",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}

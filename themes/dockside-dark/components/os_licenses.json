@@ -1,0 +1,98 @@
+{
+  "screen_name": "os_licenses",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Open Source Licenses", "x": 66, "y": 8, "text_size": "small", "text_color_palette": "blue" }
+    ],
+    "background_color": {
+      "r": 30,
+      "g": 30,
+      "b": 30
+    }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "osl0",
+          "layers": [
+            { "text": "gorillamux:......github.com/gorilla/mux\nmsgpack.V5:......github.com/vmihailenco/msgpack/v5\nprotobuf:........google.golang.org/protobuf\nfsnotify:........github.com/fsnotify/fsnotify\nuuid:............github.com/google/uuid\nmmap-go:.........github.com/edsrzf/mmap-go\npixfont:.........github.com/pbnjay/pixfont\ncrypt:...........github.com/GehirnInc/crypt\nsemver:..........github.com/blang/semver\ngopsutil:........github.com/shirou/gopsutil", "x": 14, "y": 34, "text_size": "small", "text_color_palette": "blue", "max_chars": 56, "wrap_text": false, "max_lines": 13 },
+            { "text": "1 of 3", "x": 418, "y": 8, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/sys/scroll_track_186.png", "x": 462, "y": 32 },
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 464, "y": 36 },
+            { "image_path": "assets/sys/scroll_thumbh_50.png", "x": 466, "y": 50 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 464, "y": 207 }
+          ],
+          "selected_layers": [
+            { "text": "gorillamux:......github.com/gorilla/mux\nmsgpack.V5:......github.com/vmihailenco/msgpack/v5\nprotobuf:........google.golang.org/protobuf\nfsnotify:........github.com/fsnotify/fsnotify\nuuid:............github.com/google/uuid\nmmap-go:.........github.com/edsrzf/mmap-go\npixfont:.........github.com/pbnjay/pixfont\ncrypt:...........github.com/GehirnInc/crypt\nsemver:..........github.com/blang/semver\ngopsutil:........github.com/shirou/gopsutil", "x": 14, "y": 34, "text_size": "small", "text_color_palette": "blue", "max_chars": 56, "wrap_text": false, "max_lines": 13 },
+            { "text": "1 of 3", "x": 418, "y": 8, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/sys/scroll_track_186.png", "x": 462, "y": 32 },
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 464, "y": 36 },
+            { "image_path": "assets/sys/scroll_thumbh_50.png", "x": 466, "y": 50 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 464, "y": 207 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "osl1",
+          "layers": [
+            { "text": "nanoid:..........github.com/sixafter/nanoid\nxxh3.hash:.......github.com/zeebo/xxh3\npty:.............github.com/creack/pty\ngorillawebsocket:github.com/gorilla/websocket\ngenetlink:.......github.com/mdlayher/genetlink\nnetlink:.........github.com/mdlayher/netlink\ntagparser:.......github.com/vmihailenco/tagparser/v2\nnetlink.socket:..github.com/mdlayher/socket\ngo-cmp:..........github.com/google/go-cmp\nnative-byte:.....github.com/josharian/native", "x": 14, "y": 34, "text_size": "small", "text_color_palette": "blue", "max_chars": 56, "wrap_text": false, "max_lines": 13 },
+            { "text": "2 of 3", "x": 418, "y": 8, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/sys/scroll_track_186.png", "x": 462, "y": 32 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 464, "y": 36 },
+            { "image_path": "assets/sys/scroll_thumbh_50.png", "x": 466, "y": 100 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 464, "y": 207 }
+          ],
+          "selected_layers": [
+            { "text": "nanoid:..........github.com/sixafter/nanoid\nxxh3.hash:.......github.com/zeebo/xxh3\npty:.............github.com/creack/pty\ngorillawebsocket:github.com/gorilla/websocket\ngenetlink:.......github.com/mdlayher/genetlink\nnetlink:.........github.com/mdlayher/netlink\ntagparser:.......github.com/vmihailenco/tagparser/v2\nnetlink.socket:..github.com/mdlayher/socket\ngo-cmp:..........github.com/google/go-cmp\nnative-byte:.....github.com/josharian/native", "x": 14, "y": 34, "text_size": "small", "text_color_palette": "blue", "max_chars": 56, "wrap_text": false, "max_lines": 13 },
+            { "text": "2 of 3", "x": 418, "y": 8, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/sys/scroll_track_186.png", "x": 462, "y": 32 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 464, "y": 36 },
+            { "image_path": "assets/sys/scroll_thumbh_50.png", "x": 466, "y": 100 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 464, "y": 207 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "osl2",
+          "layers": [
+            { "text": "sysconf:.........github.com/tklauser/go-sysconf\ncpuid:...........github.com/klauspost/cpuid/v2\nnumcpus:.........github.com/tklauser/numcpus\ncxxopts:.........github.com/jarro2783/cxxopts.git\nstduuid:.........github.com/mariusbancila/stduuid.git\nutfcpp:..........github.com/nemtrif/utfcpp.git\nlibwifi:.........libwifi.so\nboost:...........boost.org\nopenwrt:.........openwrt.org", "x": 14, "y": 34, "text_size": "small", "text_color_palette": "blue", "max_chars": 56, "wrap_text": false, "max_lines": 13 },
+            { "text": "3 of 3", "x": 418, "y": 8, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/sys/scroll_track_186.png", "x": 462, "y": 32 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 464, "y": 36 },
+            { "image_path": "assets/sys/scroll_thumbh_50.png", "x": 466, "y": 150 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 464, "y": 207 }
+          ],
+          "selected_layers": [
+            { "text": "sysconf:.........github.com/tklauser/go-sysconf\ncpuid:...........github.com/klauspost/cpuid/v2\nnumcpus:.........github.com/tklauser/numcpus\ncxxopts:.........github.com/jarro2783/cxxopts.git\nstduuid:.........github.com/mariusbancila/stduuid.git\nutfcpp:..........github.com/nemtrif/utfcpp.git\nlibwifi:.........libwifi.so\nboost:...........boost.org\nopenwrt:.........openwrt.org", "x": 14, "y": 34, "text_size": "small", "text_color_palette": "blue", "max_chars": 56, "wrap_text": false, "max_lines": 13 },
+            { "text": "3 of 3", "x": 418, "y": 8, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/sys/scroll_track_186.png", "x": 462, "y": 32 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 464, "y": 36 },
+            { "image_path": "assets/sys/scroll_thumbh_50.png", "x": 466, "y": 150 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 464, "y": 207 }
+          ]
+        }
+      ]
+    }
+  ]
+}

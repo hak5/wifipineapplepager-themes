@@ -1,0 +1,251 @@
+{
+  "template": {
+    "screen_name": "option_picker",
+    "windowed_canvas": true,
+    "cache_canvases": true,
+    "background": {
+      "layers": [
+        { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 47, "y": 12 },
+        { "image_path": "assets/sys/scroll_track_112.png", "x": 400, "y": 54 },
+        { "image_path": "assets/sys/scroll_up_off.png", "x": 402, "y": 58 },
+        { "image_path": "assets/sys/scroll_thumbh_30.png", "x": 404, "y": 72 },
+        { "image_path": "assets/sys/scroll_down_off.png", "x": 402, "y": 155 }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 61, "use_template": "radio" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 64,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_336x26.png", "x": 54, "y": 57 },
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 61, "use_template": "selected_radio_bar" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 64,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 89, "use_template": "radio" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 92,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_336x26.png", "x": 54, "y": 85 },
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 89, "use_template": "selected_radio_bar" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 92,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 117, "use_template": "radio" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 120,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_336x26.png", "x": 54, "y": 113 },
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 117, "use_template": "selected_radio_bar" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 120,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 145, "use_template": "radio" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 148,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_336x26.png", "x": 54, "y": 141 },
+              { "variable_name": "$_LIST_ITEM", "x": 62, "y": 145, "use_template": "selected_radio_bar" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 88,
+                "y": 148,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 38,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "save_cancel_menu": {
+    "screen_name": "option_picker",
+    "background": {
+      "layers": []
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Save",
+            "layers": [
+              { "image_path": "assets/ui/btn_ok_86x26_off.png", "x": 324, "y": 172 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/btn_ok_86x26_on.png", "x": 324, "y": 172 },
+              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+            ],
+            "target": "save",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "noop",
+              "left": "goto Cancel",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Cancel",
+            "layers": [
+              { "image_path": "assets/ui/btn_cancel_86x26_off.png", "x": 230, "y": 172 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/btn_cancel_86x26_on.png", "x": 230, "y": 172 },
+              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+            ],
+            "target": "back",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "noop",
+              "down": "next",
+              "left": "select_list",
+              "right": "goto Save"
+            }
+          },
+          {
+            "id": "Title",
+            "unselectable": true,
+            "layers": [
+              { "variable_name": "$_INPUT_NAME", "x": 62, "y": 20, "use_template": "string_title" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

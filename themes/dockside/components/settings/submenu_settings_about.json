@@ -1,0 +1,388 @@
+{
+  "screen_name": "settings_about_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/sys/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/sys/sidebar_hl.png", "x": 5, "y": 163 },
+      { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+      { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+      { "text": "About", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/cat_clock.png", "x": 10, "y": 62 },
+      { "text": "Clock", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 },
+      { "image_path": "assets/sys/cat_gps.png", "x": 10, "y": 88 },
+      { "text": "GPS", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 91 },
+      { "image_path": "assets/sys/cat_updates.png", "x": 10, "y": 114 },
+      { "text": "Updates", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 117 },
+      { "image_path": "assets/sys/cat_help.png", "x": 10, "y": 140 },
+      { "text": "Help", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 143 },
+      { "image_path": "assets/sys/cat_about.png", "x": 10, "y": 166 },
+      { "text": "About", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 169 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Uptime",
+          "layers": [
+            { "text": "Uptime", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_UPTIME",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 53 },
+            { "text": "Uptime", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_UPTIME",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "Battery",
+          "layers": [
+            { "text": "Battery", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_BATTERY_INFO",
+              "x": 322,
+              "y": 90,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 83 },
+            { "text": "Battery", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_BATTERY_INFO",
+              "x": 322,
+              "y": 90,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "Temperature",
+          "layers": [
+            { "text": "Temperature", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_TEMP",
+              "x": 322,
+              "y": 120,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 113 },
+            { "text": "Temperature", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_TEMP",
+              "x": 322,
+              "y": 120,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "Disk Space",
+          "layers": [
+            { "text": "Free Disk Space", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_STORAGE",
+              "x": 322,
+              "y": 150,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 143 },
+            { "text": "Free Disk Space", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_STORAGE",
+              "x": 322,
+              "y": 150,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "wlan0cli IP",
+          "layers": [
+            { "text": "WAN IP", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_WLAN0CLI_IP",
+              "x": 322,
+              "y": 180,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 173 },
+            { "text": "WAN IP", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_WLAN0CLI_IP",
+              "x": 322,
+              "y": 180,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "scroll_down",
+          "layers": [
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumb.png", "x": 456, "y": 70 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 454, "y": 191 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumb.png", "x": 456, "y": 70 },
+            { "image_path": "assets/sys/scroll_down_on.png", "x": 452, "y": 186 }
+          ],
+          "button_map": {
+            "a": "goto scroll_up",
+            "b": "back",
+            "up": "noop",
+            "down": "goto scroll_up",
+            "left": "back",
+            "right": "noop"
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Loot",
+          "layers": [
+            { "text": "Loot", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_LOOT",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 53 },
+            { "text": "Loot", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_LOOT",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "Packages",
+          "layers": [
+            { "text": "Packages", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_PACKAGES",
+              "x": 322,
+              "y": 90,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 83 },
+            { "text": "Packages", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_PACKAGES",
+              "x": 322,
+              "y": 90,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "Handshakes",
+          "layers": [
+            { "text": "Handshakes", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_HANDSHAKES",
+              "x": 322,
+              "y": 120,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 113 },
+            { "text": "Handshakes", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_HANDSHAKES",
+              "x": 322,
+              "y": 120,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "developer_tools",
+          "layers": [
+            { "text": "Developer Tools", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "Developer Tools", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "white" }
+          ],
+          "target": "developer_menu",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "noop",
+            "down": "noop",
+            "left": "back",
+            "right": "goto scroll_up"
+          }
+        },
+        {
+          "id": "scroll_up",
+          "layers": [
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumb.png", "x": 456, "y": 128 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 454, "y": 191 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/sys/scroll_up_on.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_thumb.png", "x": 456, "y": 128 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 454, "y": 191 }
+          ],
+          "button_map": {
+            "a": "goto scroll_down",
+            "b": "back",
+            "up": "goto scroll_down",
+            "down": "goto developer_tools",
+            "left": "goto developer_tools",
+            "right": "noop"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "screen_name": "power_menu",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/desktop.png", "x": 0, "y": 0 },
+      { "image_path": "assets/power_menu_bg.png", "x": 4, "y": 4 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Sleep Screen",
+          "x": 45,
+          "y": 32,
+          "layers": [
+            { "text": "Sleep Screen", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Sleep Screen", "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_sleep_screen",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "noop",
+            "down": "next",
+            "left": "noop",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Lock Screen",
+          "x": 45,
+          "y": 56,
+          "layers": [
+            { "text": "Lock Screen", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Lock Screen", "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_lock_screen"
+        },
+        {
+          "id": "Lock Buttons",
+          "x": 45,
+          "y": 80,
+          "layers": [
+            { "text": "Lock Buttons", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Lock Buttons", "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_lock_buttons"
+        },
+        {
+          "id": "Nerd Stats",
+          "x": 45,
+          "y": 104,
+          "layers": [
+            { "text": "Nerd Stats", "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_STATS_FOR_NERDS",
+              "x": 172,
+              "y": 4,
+              "toggle_template": {
+                "enabled": [
+                  { "text": "On", "text_size": "small", "text_color_palette": "gray" }
+                ],
+                "disabled": [
+                  { "text": "Off", "text_size": "small", "text_color_palette": "gray" }
+                ]
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Nerd Stats", "text_size": "small", "text_color_palette": "white" },
+            {
+              "variable_name": "$_STATS_FOR_NERDS",
+              "x": 172,
+              "y": 4,
+              "toggle_template": {
+                "enabled": [
+                  { "text": "On", "text_size": "small", "text_color_palette": "white" }
+                ],
+                "disabled": [
+                  { "text": "Off", "text_size": "small", "text_color_palette": "white" }
+                ]
+              }
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_STATS_FOR_NERDS"
+        },
+        {
+          "id": "settingsmenu",
+          "layers": [
+            { "text": "Settings...", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "target": "settings_menu",
+          "x": 45,
+          "y": 138,
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Settings...", "text_size": "small", "text_color_palette": "white" }
+          ]
+        },
+        {
+          "id": "updatemenu",
+          "layers": [
+            { "text": "Check for Updates...", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "target": "check_for_updates",
+          "x": 45,
+          "y": 162,
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Check for Updates...", "text_size": "small", "text_color_palette": "white" }
+          ]
+        },
+        {
+          "id": "shutdown",
+          "x": 45,
+          "y": 194,
+          "layers": [
+            { "text": "Shutdown", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Shutdown", "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_shutdown",
+          "button_map": {
+            "down": "goto egg_safe"
+          }
+        },
+        {
+          "id": "egg_safe",
+          "x": 45,
+          "y": 214,
+          "layers": [
+            { "image_path": "assets/dock/ghost.png", "x": 0, "y": 0 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dock/notice_box.png", "x": 11, "y": -149 },
+            { "text": "It's now safe to turn", "text_color_palette": "blue", "x": 73, "y": -127 },
+            { "text": "off your Pager.", "text_color_palette": "blue", "x": 73, "y": -101 }
+          ],
+          "button_map": {
+            "a": "goto shutdown",
+            "b": "back",
+            "up": "goto shutdown",
+            "down": "noop",
+            "left": "noop",
+            "right": "noop"
+          }
+        }
+      ]
+    }
+  ]
+}

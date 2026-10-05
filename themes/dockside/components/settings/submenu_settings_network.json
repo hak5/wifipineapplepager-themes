@@ -1,0 +1,188 @@
+{
+  "screen_name": "settings_network_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/sys/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/sys/sidebar_hl.png", "x": 5, "y": 137 },
+      { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+      { "text": "Network", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/cat_general.png", "x": 10, "y": 62 },
+      { "text": "General", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 },
+      { "image_path": "assets/sys/cat_display.png", "x": 10, "y": 88 },
+      { "text": "Display", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 91 },
+      { "image_path": "assets/sys/cat_ringtone.png", "x": 10, "y": 114 },
+      { "text": "Ringtone", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 117 },
+      { "image_path": "assets/sys/cat_network.png", "x": 10, "y": 140 },
+      { "text": "Network", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 143 },
+      { "image_path": "assets/sys/cat_system.png", "x": 10, "y": 166 },
+      { "text": "System", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 169 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Client Mode Toggle",
+          "layers": [
+            { "text": "Client Mode", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 53 },
+            { "text": "Client Mode", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED"
+        },
+        {
+          "id": "Client Mode Setup",
+          "layers": [
+            { "text": "Client Mode Setup", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "Client Mode Setup", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
+          ],
+          "target": "client_mode_wizard"
+        },
+        {
+          "id": "Management AP Toggle",
+          "layers": [
+            { "text": "Management AP", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "Management AP", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_MGMT_AP_ENABLED"
+        },
+        {
+          "id": "Management AP Setup",
+          "layers": [
+            { "text": "Management AP Setup", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "Management AP Setup", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "white" }
+          ],
+          "target": "management_ap_wizard"
+        },
+        {
+          "id": "Hostname",
+          "layers": [
+            { "text": "Hostname", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 173 },
+            { "text": "Hostname", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_HOSTNAME"
+        },
+        {
+          "id": "scrollbar_0",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 456, "y": 70 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 454, "y": 191 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "6 GHz",
+          "layers": [
+            { "text": "6 GHz", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_6Ghz_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 53 },
+            { "text": "6 GHz", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_6Ghz_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED"
+        },
+        {
+          "id": "5 GHz",
+          "layers": [
+            { "text": "5 GHz", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_5Ghz_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "5 GHz", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_5Ghz_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED"
+        },
+        {
+          "id": "2.4 GHz",
+          "layers": [
+            { "text": "2.4 GHz", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_2.4Ghz_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "2.4 GHz", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_2.4Ghz_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED"
+        },
+        {
+          "id": "Bluetooth",
+          "layers": [
+            { "text": "Bluetooth", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_BLUETOOTH_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "Bluetooth", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_BLUETOOTH_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BLUETOOTH_ENABLED"
+        },
+        {
+          "id": "scrollbar_1",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 456, "y": 127 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 454, "y": 191 }
+          ]
+        }
+      ]
+    }
+  ]
+}

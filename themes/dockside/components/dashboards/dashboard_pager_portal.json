@@ -1,0 +1,57 @@
+{
+  "screen_name": "pager_portal_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/portal/sidebar_hl.png", "x": 5, "y": 48 },
+      { "text": "Discover", "text_size": "medium", "text_color_palette": "blue", "x": 146, "y": 32 },
+      { "text": "Pager Portal", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Payloads",
+          "layers": [
+            { "image_path": "assets/portal/tile_payloads_off.png", "x": 149, "y": 61 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/tile_payloads_on.png", "x": 146, "y": 58 }
+          ],
+          "target": "pager_portal_payloads_dashboard",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "noop",
+            "left": "previous",
+            "right": "next"
+          }
+        },
+        {
+          "id": "Themes",
+          "layers": [
+            { "image_path": "assets/portal/tile_themes_off.png", "x": 313, "y": 61 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/tile_themes_on.png", "x": 310, "y": 58 }
+          ],
+          "target": "pager_portal_themes_dashboard",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "noop",
+            "down": "next",
+            "left": "previous",
+            "right": "next"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "screen_name": "alerts_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "background": {
+    "layers": [
+      { "image_path": "assets/finder/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/finder/sidebar_hl.png", "x": 5, "y": 92 },
+      { "text": "alerts", "x": 66, "y": 8, "text_size": "small", "text_color_palette": "blue" },
+      { "text": "Favorites", "x": 12, "y": 33, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "Payloads", "x": 34, "y": 52, "text_size": "small", "text_color_palette": "blue" },
+      { "text": "Recon", "x": 34, "y": 74, "text_size": "small", "text_color_palette": "blue" },
+      { "text": "Alerts", "x": 34, "y": 96, "text_size": "small", "text_color_palette": "blue" },
+      { "text": "Loot", "x": 34, "y": 118, "text_size": "small", "text_color_palette": "blue" },
+      { "text": "Locations", "x": 12, "y": 151, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "Pager HD", "x": 34, "y": 170, "text_size": "small", "text_color_palette": "blue" },
+      { "text": "Name", "x": 152, "y": 32, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "Pager HD > payloads > alerts", "x": 28, "y": 202, "text_size": "small", "text_color_palette": "blue" }
+    ],
+    "background_color": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "auth captured",
+          "layers": [
+            { "image_path": "assets/folder.png", "x": 122, "y": 54, "recolor_palette": "accent" },
+            { "text": "Evil AP Auth Captured", "x": 152, "y": 56, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 49 },
+            { "image_path": "assets/folder.png", "x": 122, "y": 54, "recolor_palette": "white" },
+            { "text": "Evil AP Auth Captured", "x": 152, "y": 56, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_AUTH_CAPTURED",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "previous",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "deauth flood",
+          "layers": [
+            { "image_path": "assets/folder.png", "x": 122, "y": 82, "recolor_palette": "accent" },
+            { "text": "Deauth Flood Detected", "x": 152, "y": 84, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 77 },
+            { "image_path": "assets/folder.png", "x": 122, "y": 82, "recolor_palette": "white" },
+            { "text": "Deauth Flood Detected", "x": 152, "y": 84, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_DEAUTH_FLOOD",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "goto newclient",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "newclient",
+          "layers": [
+            { "image_path": "assets/folder.png", "x": 122, "y": 110, "recolor_palette": "accent" },
+            { "text": "New Client Connected", "x": 152, "y": 112, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 105 },
+            { "image_path": "assets/folder.png", "x": 122, "y": 110, "recolor_palette": "white" },
+            { "text": "New Client Connected", "x": 152, "y": 112, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_NEW_CLIENT",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "goto handshakecapture",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "handshakecapture",
+          "layers": [
+            { "image_path": "assets/folder.png", "x": 122, "y": 138, "recolor_palette": "accent" },
+            { "text": "Handshake Captured", "x": 152, "y": 140, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 133 },
+            { "image_path": "assets/folder.png", "x": 122, "y": 138, "recolor_palette": "white" },
+            { "text": "Handshake Captured", "x": 152, "y": 140, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_HANDSHAKE_CAPTURE",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "noop",
+            "right": "next"
+          }
+        }
+      ]
+    }
+  ]
+}

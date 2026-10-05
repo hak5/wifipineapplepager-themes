@@ -1,0 +1,150 @@
+{
+  "screen_name": "pineap_pineap_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/sys/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/sys/sidebar_hl.png", "x": 5, "y": 59 },
+      { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+      { "text": "PineAP", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/cat_pineap.png", "x": 10, "y": 62 },
+      { "text": "PineAP", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 },
+      { "image_path": "assets/sys/cat_openap.png", "x": 10, "y": 88 },
+      { "text": "Open AP", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 91 },
+      { "image_path": "assets/sys/cat_evilwpa.png", "x": 10, "y": 114 },
+      { "text": "Evil WPA", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 117 },
+      { "image_path": "assets/sys/cat_ssidpool.png", "x": 10, "y": 140 },
+      { "text": "SSID Pool", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 143 },
+      { "image_path": "assets/sys/cat_filters.png", "x": 10, "y": 166 },
+      { "text": "Filters", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 169 },
+      { "image_path": "assets/sys/cat_clients.png", "x": 10, "y": 192 },
+      { "text": "Clients", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 195 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Mimic Open Networks",
+          "layers": [
+            { "text": "Mimic Open Networks", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 53 },
+            { "text": "Mimic Open Networks", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_IMPERSONATE_NETWORKS"
+        },
+        {
+          "id": "Collect Probes",
+          "layers": [
+            { "text": "Collect Probes", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "Collect Probes", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_NETWORKS"
+        },
+        {
+          "id": "Advertise Networks",
+          "layers": [
+            { "text": "Advertise Networks", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "x": 414, "y": 115, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "Advertise Networks", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "x": 414, "y": 115, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_ADVERTISE_NETWORKS"
+        },
+        {
+          "id": "Randomize Address",
+          "layers": [
+            { "text": "Randomize Address", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "x": 414, "y": 145, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "Randomize Address", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "x": 414, "y": 145, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_RANDOMIZE_MAC_ADDRESS"
+        },
+        {
+          "id": "Collect Handshakes",
+          "layers": [
+            { "text": "Collect Handshakes", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "x": 414, "y": 175, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 173 },
+            { "text": "Collect Handshakes", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "x": 414, "y": 175, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES"
+        },
+        {
+          "id": "scrollbar_0",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 456, "y": 70 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 454, "y": 191 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Wigle Mode",
+          "layers": [
+            { "text": "Wigle Mode", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 53 },
+            { "text": "Wigle Mode", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "scrollbar_1",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 456, "y": 127 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 454, "y": 191 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "screen_name": "pager_portal_update_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/portal/sidebar_hl.png", "x": 5, "y": 100 },
+      { "text": "Updates", "text_size": "medium", "text_color_palette": "blue", "x": 146, "y": 32 },
+      { "text": "Updates", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 }
+    ]
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "View Updates",
+          "layers": [
+            { "image_path": "assets/portal/row_availableupdates_off.png", "x": 146, "y": 56 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_availableupdates_on.png", "x": 146, "y": 56 }
+          ],
+          "target": "pager_portal_update_payloads_list",
+          "variable": "$_UPDATE_PAYLOADS_LIST",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "previous",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Update All Payloads",
+          "layers": [
+            { "image_path": "assets/portal/row_updateall_off.png", "x": 146, "y": 100 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/row_updateall_on.png", "x": 146, "y": 100 }
+          ],
+          "target": "function_update_all_payloads",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "next",
+            "left": "noop",
+            "right": "next"
+          }
+        }
+      ]
+    }
+  ]
+}

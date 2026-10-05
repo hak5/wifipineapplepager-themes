@@ -1,0 +1,250 @@
+{
+  "screen_name": "pineap_filters_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/sys/base.png", "x": 0, "y": 0 },
+      { "image_path": "assets/sys/sidebar_hl.png", "x": 5, "y": 163 },
+      { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
+      { "text": "Filters", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/cat_pineap.png", "x": 10, "y": 62 },
+      { "text": "PineAP", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 },
+      { "image_path": "assets/sys/cat_openap.png", "x": 10, "y": 88 },
+      { "text": "Open AP", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 91 },
+      { "image_path": "assets/sys/cat_evilwpa.png", "x": 10, "y": 114 },
+      { "text": "Evil WPA", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 117 },
+      { "image_path": "assets/sys/cat_ssidpool.png", "x": 10, "y": 140 },
+      { "text": "SSID Pool", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 143 },
+      { "image_path": "assets/sys/cat_filters.png", "x": 10, "y": 166 },
+      { "text": "Filters", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 169 },
+      { "image_path": "assets/sys/cat_clients.png", "x": 10, "y": 192 },
+      { "text": "Clients", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 195 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Client Filter",
+          "layers": [
+            { "text": "Client Filter", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FILTER_CLIENT_MODE",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 53 },
+            { "text": "Client Filter", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FILTER_CLIENT_MODE",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_CLIENT_MODE"
+        },
+        {
+          "id": "Allowed Client List",
+          "layers": [
+            { "text": "Allowed Client List", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "Allowed Client List", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_ALLOW_LIST"
+        },
+        {
+          "id": "Denied Client List",
+          "layers": [
+            { "text": "Denied Client List", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "Denied Client List", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "white" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_DENY_LIST"
+        },
+        {
+          "id": "Add Allowed Client",
+          "layers": [
+            { "text": "Add Allowed Client", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "Add Allowed Client", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "white" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_ALLOW_ADD"
+        },
+        {
+          "id": "Add Denied Client",
+          "layers": [
+            { "text": "Add Denied Client", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 173 },
+            { "text": "Add Denied Client", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_DENY_ADD"
+        },
+        {
+          "id": "scrollbar_0",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 456, "y": 70 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 454, "y": 191 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Network Filter",
+          "layers": [
+            { "text": "Network Filter", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FILTER_NETWORK_MODE",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_284x28.png", "x": 164, "y": 53 },
+            { "text": "Network Filter", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_FILTER_NETWORK_MODE",
+              "x": 322,
+              "y": 60,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 15,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_NETWORK_MODE"
+        },
+        {
+          "id": "Allowed Network List",
+          "layers": [
+            { "text": "Allowed Network List", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "Allowed Network List", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_ALLOW_LIST"
+        },
+        {
+          "id": "Denied Network List",
+          "layers": [
+            { "text": "Denied Network List", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "Denied Network List", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "white" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_DENY_LIST"
+        },
+        {
+          "id": "Add Allowed Network",
+          "layers": [
+            { "text": "Add Allowed Network", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "Add Allowed Network", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "white" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_ALLOW_ADD"
+        },
+        {
+          "id": "Add Denied Network",
+          "layers": [
+            { "text": "Add Denied Network", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 173 },
+            { "text": "Add Denied Network", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_DENY_ADD"
+        },
+        {
+          "id": "scrollbar_1",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 452, "y": 52 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 454, "y": 56 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 456, "y": 127 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 454, "y": 191 }
+          ]
+        }
+      ]
+    }
+  ]
+}

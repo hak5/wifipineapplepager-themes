@@ -1,0 +1,225 @@
+{
+  "screen_name": "recon_settings",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 28, "y": 0 },
+      { "image_path": "assets/sys/card_396x5x30.png", "x": 44, "y": 32 },
+      { "text": "Recon Settings", "x": 96, "y": 6, "text_size": "small", "text_color_palette": "blue" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Recon Audio Enabled",
+          "layers": [
+            { "text": "Recon Audio", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "x": 386, "y": 37, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 35 },
+            { "text": "Recon Audio", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "x": 386, "y": 37, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_ENABLED"
+        },
+        {
+          "id": "Audio Source",
+          "layers": [
+            { "text": "Audio Source", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_RECON_AUDIO_SRC",
+              "x": 250,
+              "y": 72,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 73, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 65 },
+            { "text": "Audio Source", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" },
+            {
+              "variable_name": "$_RECON_AUDIO_SRC",
+              "x": 250,
+              "y": 72,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "white",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 73, "recolor_palette": "white" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_RECON_AUDIO_SRC"
+        },
+        {
+          "id": "Audio Mode",
+          "layers": [
+            { "text": "Audio Mode", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_RECON_AUDIO_MODE",
+              "x": 250,
+              "y": 102,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 103, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 95 },
+            { "text": "Audio Mode", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" },
+            {
+              "variable_name": "$_RECON_AUDIO_MODE",
+              "x": 250,
+              "y": 102,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "white",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 103, "recolor_palette": "white" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_RECON_AUDIO_MODE"
+        },
+        {
+          "id": "Audio BG",
+          "layers": [
+            { "text": "Background Audio", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "x": 386, "y": 127, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 125 },
+            { "text": "Background Audio", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "x": 386, "y": 127, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_BACKGROUND"
+        },
+        {
+          "id": "Radio Settings",
+          "layers": [
+            { "text": "Radio Settings", "x": 58, "y": 162, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 163, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 155 },
+            { "text": "Radio Settings", "x": 58, "y": 162, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 163, "recolor_palette": "white" }
+          ],
+          "target": "recon_band_settings"
+        },
+        {
+          "id": "scrollbar_0",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 424, "y": 34 },
+            { "image_path": "assets/sys/scroll_up_dim.png", "x": 426, "y": 38 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 428, "y": 52 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 426, "y": 173 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Persist DB",
+          "layers": [
+            { "text": "Save to Recon DB", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PERSIST_RECON_DB", "x": 386, "y": 37, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 35 },
+            { "text": "Save to Recon DB", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PERSIST_RECON_DB", "x": 386, "y": 37, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PERSIST_RECON_DB"
+        },
+        {
+          "id": "Record PCAP",
+          "layers": [
+            { "text": "Record PCAP", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RECORD_PCAP", "x": 386, "y": 67, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 65 },
+            { "text": "Record PCAP", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RECORD_PCAP", "x": 386, "y": 67, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECORD_PCAP"
+        },
+        {
+          "id": "Wigle Mode",
+          "layers": [
+            { "text": "Wigle Mode", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 386, "y": 97, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 95 },
+            { "text": "Wigle Mode", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 386, "y": 97, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "Keep Screen Awake",
+          "layers": [
+            { "text": "Keep Screen Awake", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RECON_KEEP_SCREEN_AWAKE", "x": 386, "y": 127, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 125 },
+            { "text": "Keep Screen Awake", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RECON_KEEP_SCREEN_AWAKE", "x": 386, "y": 127, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_KEEP_SCREEN_AWAKE"
+        },
+        {
+          "id": "scrollbar_1",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 424, "y": 34 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 426, "y": 38 },
+            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 428, "y": 109 },
+            { "image_path": "assets/sys/scroll_down_dim.png", "x": 426, "y": 173 }
+          ]
+        }
+      ]
+    }
+  ]
+}

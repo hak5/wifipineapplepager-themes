@@ -1,0 +1,213 @@
+{
+  "template": {
+    "screen_name": "payloads_for_category_list",
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "background": {
+      "layers": [
+        { "image_path": "assets/finder/base.png", "x": 0, "y": 0 },
+        { "image_path": "assets/finder/sidebar_hl.png", "x": 5, "y": 48 },
+        { "image_path": "assets/finder/kind_divider.png", "x": 384, "y": 31 },
+        { "text": "user", "x": 66, "y": 8, "text_size": "small", "text_color_palette": "blue" },
+        { "text": "Favorites", "x": 12, "y": 33, "text_size": "small", "text_color_palette": "gray" },
+        { "text": "Payloads", "x": 34, "y": 52, "text_size": "small", "text_color_palette": "blue" },
+        { "text": "Recon", "x": 34, "y": 74, "text_size": "small", "text_color_palette": "blue" },
+        { "text": "Alerts", "x": 34, "y": 96, "text_size": "small", "text_color_palette": "blue" },
+        { "text": "Loot", "x": 34, "y": 118, "text_size": "small", "text_color_palette": "blue" },
+        { "text": "Locations", "x": 12, "y": 151, "text_size": "small", "text_color_palette": "gray" },
+        { "text": "Pager HD", "x": 34, "y": 170, "text_size": "small", "text_color_palette": "blue" },
+        { "text": "Name", "x": 152, "y": 32, "text_size": "small", "text_color_palette": "gray" },
+        { "text": "Kind", "x": 392, "y": 32, "text_size": "small", "text_color_palette": "gray" },
+        { "text": "Pager HD > payloads > user", "x": 28, "y": 202, "text_size": "small", "text_color_palette": "blue" },
+        {
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT",
+          "x": 440,
+          "y": 202,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "gray",
+            "max_chars": 5,
+            "wrap_text": false,
+            "max_lines": 1
+          }
+        },
+        { "image_path": "assets/sys/scroll_track_112.png", "x": 462, "y": 48 },
+        { "image_path": "assets/sys/scroll_up_off.png", "x": 464, "y": 52 },
+        { "image_path": "assets/sys/scroll_thumbh_30.png", "x": 466, "y": 66 },
+        { "image_path": "assets/sys/scroll_down_off.png", "x": 464, "y": 149 }
+      ],
+      "background_color": {
+        "r": 30,
+        "g": 30,
+        "b": 30
+      }
+    },
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "image_path": "assets/flame.png", "x": 127, "y": 55, "recolor_palette": "accent" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 56,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 56, "text_size": "small", "text_color_palette": "gray" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 49 },
+              { "image_path": "assets/flame.png", "x": 127, "y": 55, "recolor_palette": "white" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 56,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 56, "text_size": "small", "text_color_palette": "white" }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "image_path": "assets/flame.png", "x": 127, "y": 83, "recolor_palette": "accent" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 84,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 84, "text_size": "small", "text_color_palette": "gray" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 77 },
+              { "image_path": "assets/flame.png", "x": 127, "y": 83, "recolor_palette": "white" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 84,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 84, "text_size": "small", "text_color_palette": "white" }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "image_path": "assets/flame.png", "x": 127, "y": 111, "recolor_palette": "accent" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 112,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 112, "text_size": "small", "text_color_palette": "gray" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 105 },
+              { "image_path": "assets/flame.png", "x": 127, "y": 111, "recolor_palette": "white" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 112,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 112, "text_size": "small", "text_color_palette": "white" }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "image_path": "assets/flame.png", "x": 127, "y": 139, "recolor_palette": "accent" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 140,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "blue",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 140, "text_size": "small", "text_color_palette": "gray" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/ui/sel_344x26.png", "x": 114, "y": 133 },
+              { "image_path": "assets/flame.png", "x": 127, "y": 139, "recolor_palette": "white" },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 152,
+                "y": 140,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "white",
+                  "max_chars": 29,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              { "text": "Payload", "x": 392, "y": 140, "text_size": "small", "text_color_palette": "white" }
+            ],
+            "target": "launch_payload_dialog",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ],
+    "status_bar": "default"
+  }
+}

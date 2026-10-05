@@ -1,0 +1,260 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/desktop.png", "x": 0, "y": 0 },
+      { "image_path": "assets/dashboard/dock_shelf.png", "x": 57, "y": 157 }
+    ],
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "menu_items": [
+    {
+      "id": "pagerportal",
+      "layers": [
+        { "image_path": "assets/dock/portal.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/portal_big.png", "x": -6, "y": -12 },
+        { "image_path": "assets/dock/dot.png", "x": 20, "y": 48 },
+        { "image_path": "assets/dock/label_portal.png", "x": -35, "y": -50 }
+      ],
+      "x": 74,
+      "y": 169,
+      "target": "pager_portal_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "goto pineapple",
+        "up": "goto pineapple",
+        "down": "noop",
+        "left": "previous",
+        "right": "next"
+      }
+    },
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dock/alerts.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/alerts_big.png", "x": -6, "y": -12 },
+        { "image_path": "assets/dock/dot.png", "x": 20, "y": 48 },
+        { "image_path": "assets/dock/label_alerts.png", "x": -13, "y": -50 }
+      ],
+      "x": 128,
+      "y": 169,
+      "target": "alerts_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "goto pineapple",
+        "up": "goto pineapple",
+        "down": "noop",
+        "left": "previous",
+        "right": "next"
+      }
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dock/payloads.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/payloads_big.png", "x": -6, "y": -12 },
+        { "image_path": "assets/dock/dot.png", "x": 20, "y": 48 },
+        { "image_path": "assets/dock/label_payloads.png", "x": -21, "y": -50 }
+      ],
+      "x": 182,
+      "y": 169,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES",
+      "button_map": {
+        "a": "select",
+        "b": "goto pineapple",
+        "up": "goto pineapple",
+        "down": "noop",
+        "left": "previous",
+        "right": "next"
+      }
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dock/recon.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/recon_big.png", "x": -6, "y": -12 },
+        { "image_path": "assets/dock/dot.png", "x": 20, "y": 48 },
+        { "image_path": "assets/dock/label_recon.png", "x": -11, "y": -50 }
+      ],
+      "x": 236,
+      "y": 169,
+      "target": "recon_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "goto pineapple",
+        "up": "goto pineapple",
+        "down": "noop",
+        "left": "previous",
+        "right": "next"
+      }
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dock/pineap.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/pineap_big.png", "x": -6, "y": -12 },
+        { "image_path": "assets/dock/dot.png", "x": 20, "y": 48 },
+        { "image_path": "assets/dock/label_pineap.png", "x": -14, "y": -50 }
+      ],
+      "x": 290,
+      "y": 169,
+      "target": "pineap_menu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pineapple",
+        "up": "goto pineapple",
+        "down": "noop",
+        "left": "previous",
+        "right": "next"
+      }
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dock/settings.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/settings_big.png", "x": -6, "y": -12 },
+        { "image_path": "assets/dock/dot.png", "x": 20, "y": 48 },
+        { "image_path": "assets/dock/label_settings.png", "x": -21, "y": -50 }
+      ],
+      "x": 356,
+      "y": 169,
+      "target": "settings_menu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pineapple",
+        "up": "goto pineapple",
+        "down": "noop",
+        "left": "previous",
+        "right": "noop"
+      }
+    },
+    {
+      "id": "pineapple",
+      "layers": [
+        { "image_path": "assets/dock/ghost.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/pineapple_pressed.png", "x": 0, "y": 0 }
+      ],
+      "x": 4,
+      "y": 4,
+      "target": "power_menu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pagerportal",
+        "up": "noop",
+        "down": "goto pagerportal",
+        "left": "noop",
+        "right": "goto menupager"
+      }
+    },
+    {
+      "id": "menupager",
+      "layers": [
+        { "image_path": "assets/dock/ghost.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/menu_menupager.png", "x": 0, "y": 0 }
+      ],
+      "x": 28,
+      "y": 4,
+      "target": "settings_about_submenu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pagerportal",
+        "up": "noop",
+        "down": "goto pagerportal",
+        "left": "goto pineapple",
+        "right": "goto menudisplay"
+      }
+    },
+    {
+      "id": "menudisplay",
+      "layers": [
+        { "image_path": "assets/dock/ghost.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/menu_menudisplay.png", "x": 0, "y": 0 }
+      ],
+      "x": 77,
+      "y": 4,
+      "target": "settings_display_submenu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pagerportal",
+        "up": "noop",
+        "down": "goto pagerportal",
+        "left": "goto menupager",
+        "right": "goto menusound"
+      }
+    },
+    {
+      "id": "menusound",
+      "layers": [
+        { "image_path": "assets/dock/ghost.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/menu_menusound.png", "x": 0, "y": 0 }
+      ],
+      "x": 131,
+      "y": 4,
+      "target": "settings_ringtone_submenu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pagerportal",
+        "up": "noop",
+        "down": "goto pagerportal",
+        "left": "goto menudisplay",
+        "right": "goto menunetwork"
+      }
+    },
+    {
+      "id": "menunetwork",
+      "layers": [
+        { "image_path": "assets/dock/ghost.png", "x": 0, "y": 0 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dock/menu_menunetwork.png", "x": 0, "y": 0 }
+      ],
+      "x": 179,
+      "y": 4,
+      "target": "settings_network_submenu",
+      "button_map": {
+        "a": "select",
+        "b": "goto pagerportal",
+        "up": "noop",
+        "down": "goto pagerportal",
+        "left": "goto menusound",
+        "right": "noop"
+      }
+    }
+  ]
+}

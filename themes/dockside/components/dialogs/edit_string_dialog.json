@@ -1,0 +1,93 @@
+{
+  "screen_name": "edit_string_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/edit_string_dialog_bg.png", "x": 6, "y": 17 }
+    ]
+  },
+  "title_x": 29,
+  "title_y": 70,
+  "menu_items": [
+    {
+      "id": "Save",
+      "layers": [
+        { "image_path": "assets/ui/btn_save_96x32_off.png", "x": 368, "y": 156 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/ui/btn_save_96x32_on.png", "x": 368, "y": 156 }
+      ],
+      "target": "save",
+      "button_map": {
+        "a": "select",
+        "b": "back",
+        "up": "previous",
+        "down": "noop",
+        "left": "goto Cancel",
+        "right": "noop"
+      }
+    },
+    {
+      "id": "Edit",
+      "layers": [
+        { "image_path": "assets/ui/btn_edit_96x32_off.png", "x": 30, "y": 156 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/ui/btn_edit_96x32_on.png", "x": 30, "y": 156 }
+      ],
+      "target": "keyboard",
+      "variable": "$_INPUT",
+      "button_map": {
+        "a": "select",
+        "b": "back",
+        "up": "noop",
+        "down": "noop",
+        "left": "noop",
+        "right": "goto Cancel"
+      }
+    },
+    {
+      "id": "Cancel",
+      "layers": [
+        { "image_path": "assets/ui/btn_cancel_96x32_off.png", "x": 262, "y": 156 }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/ui/btn_cancel_96x32_on.png", "x": 262, "y": 156 }
+      ],
+      "target": "back",
+      "button_map": {
+        "a": "select",
+        "b": "back",
+        "up": "noop",
+        "down": "next",
+        "left": "goto Edit",
+        "right": "goto Save"
+      }
+    },
+    {
+      "id": "Title",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 40,
+          "y": 35,
+          "string_template": {
+            "text_size": "medium",
+            "text_color_palette": "blue"
+          }
+        },
+        {
+          "variable_name": "$_INPUT",
+          "x": 40,
+          "y": 65,
+          "string_template": {
+            "text_size": "large",
+            "text_color_palette": "blue"
+          }
+        }
+      ]
+    }
+  ]
+}
