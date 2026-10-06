@@ -20,7 +20,7 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
+          "id": "Settings",
           "x":45,
           "y":33,
           "layers": [
@@ -28,7 +28,14 @@
           "selected_layers": [
             { "image_path": "assets/settings/listhighlight.png", "x": 13, "y": 0}
           ],
-          "target": "function_sleep_screen"
+          "button_map": {
+            "a": "goto Brightness",
+            "b": "back",
+            "up": "goto shutdown",
+            "down": "next",
+            "left": "noop",
+            "right": "goto Brightness"
+          }
         },
         {
           "id": "Lock Screen",
@@ -74,11 +81,132 @@
           "selected_layers": [
             { "image_path": "assets/settings/listhighlight.png", "x": 13, "y": 0}
           ],
-          "target": "function_shutdown"
+          "target": "function_shutdown",
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "previous",
+            "down": "goto Settings",
+            "left": "noop",
+            "right": "noop"
+          }
+        },
+		    {
+          "id": "Brightness",
+          "x":0,
+          "y":0,
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_sub_menu.png", "x": 170, "y": 25},
+            { "image_path": "assets/settings/listhighlight.png", "x": 174, "y": 33},
+            { "variable_name":  "$_VIBRATE", "x": 265, "y": 100, "use_template": "checkbox" },
+            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 265, "y": 135, "use_template": "checkbox" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_BRIGHTNESS",
+            "button_map": {
+            "a": "select",
+            "b": "goto Settings",
+            "up": "goto ClientSetup",
+            "down": "next",
+            "left": "goto Settings",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Volume",
+          "x":0,
+          "y":0,
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_sub_menu.png", "x": 170, "y": 25},
+            { "image_path": "assets/settings/listhighlight.png", "x": 174, "y": 63},
+            { "variable_name":  "$_VIBRATE", "x": 265, "y": 100, "use_template": "checkbox" },
+            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 265, "y": 135, "use_template": "checkbox" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_VOLUME",
+          "button_map": {
+            "a": "select",
+            "b": "goto Settings",
+            "up": "previous",
+            "down": "next",
+            "left": "goto Settings",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Vibrate",
+          "x":0,
+          "y":0,
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_sub_menu.png", "x": 170, "y": 25},
+            { "image_path": "assets/settings/listhighlight.png", "x": 174, "y": 96},
+            { "variable_name":  "$_VIBRATE", "x": 265, "y": 100, "use_template": "checkbox" },
+            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 265, "y": 135, "use_template": "checkbox" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_VIBRATE",
+		      "button_map": {
+            "a": "select",
+            "b": "goto Settings",
+            "up": "previous",
+            "down": "next",
+            "left": "goto Settings",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "Client Mode",
+          "x":0,
+          "y":0,
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_sub_menu.png", "x": 170, "y": 25},
+            { "image_path": "assets/settings/listhighlight.png", "x": 174, "y": 131},
+            { "variable_name":  "$_VIBRATE", "x": 265, "y": 100, "use_template": "checkbox" },
+            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 265, "y": 135, "use_template": "checkbox" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED",
+          "button_map": {
+            "a": "select",
+            "b": "goto Settings",
+            "up": "previous",
+            "down": "next",
+            "left": "goto Settings",
+            "right": "noop"
+          }
+        },
+        {
+          "id": "ClientSetup",
+          "x":0,
+          "y":0,
+          "layers": [
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_sub_menu.png", "x": 170, "y": 25},
+            { "image_path": "assets/settings/listhighlight.png", "x": 174, "y": 166},
+            { "variable_name":  "$_VIBRATE", "x": 265, "y": 100, "use_template": "checkbox" },
+            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 265, "y": 135, "use_template": "checkbox" }
+          ],
+          "target": "client_mode_wizard",
+          "button_map": {
+            "a": "select",
+            "b": "goto Settings",
+            "up": "previous",
+            "down": "goto Brightness",
+            "left": "goto Settings",
+            "right": "noop"
+          }
         }
       ]
     }
   ]
-
 }
 
