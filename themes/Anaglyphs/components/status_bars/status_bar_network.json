@@ -67,6 +67,15 @@
         "6":   [{ "image_path": "assets/statusbar/ghz_6.png" }],
         "off": [{ "image_path": "assets/statusbar/ghz_off.png" }]
       }
-    }
+    },
+    "WifiClient": {
+      "x": 182,
+      "y": 3,
+      "layers": {
+        "disabled": [{ "image_path": "assets/statusbar/wifi_off.png", "x": 0, "y": 0 }],
+        "connected": [{ "image_path": "assets/statusbar/wifi_on_connected.png", "x": 0, "y": 0 }],
+        "disconnected": [{ "image_path": "assets/statusbar/wifi_on_disconnected.png", "x": 0, "y": 0 }]
+      }
+	}
   }
 }

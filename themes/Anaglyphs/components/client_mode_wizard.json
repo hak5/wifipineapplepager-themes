@@ -23,7 +23,7 @@
           "id": "client_mode_wizard_title",
           "unselectable": true,
           "layers": [
-            { "x": 100, "y": 25, "text_size": "large", "text_color_palette": "yellow", "text": "Client Mode Setup" }
+            { "x": 100, "y": 25, "text_size": "large", "text_color_palette": "white", "text": "Client Mode Setup" }
           ]
         },
         {
@@ -32,11 +32,15 @@
           "y": 70,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
+            { "text": "Network Name", "x": 39, "text_color_palette": "red3d" },
+            { "text": "Network Name", "x": 41, "text_color_palette": "cyan3d" },
+            { "text": "Network Name", "x": 40, "text_color_palette": "white" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Network Name", "x": 39, "text_color_palette": "cyan3d" },
+            { "text": "Network Name", "x": 41, "text_color_palette": "red3d" },
+            { "text": "Network Name", "x": 40, "text_color_palette": "white" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_CLIENT_MODE_SSID"
@@ -47,11 +51,15 @@
           "y": 105,
           "layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "blue" }
+            { "text": "Encryption Type", "x": 39, "text_color_palette": "red3d" },
+            { "text": "Encryption Type", "x": 41, "text_color_palette": "cyan3d" },
+            { "text": "Encryption Type", "x": 40, "text_color_palette": "white" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Encryption Type", "x": 39, "text_color_palette": "cyan3d" },
+            { "text": "Encryption Type", "x": 41, "text_color_palette": "red3d" },
+            { "text": "Encryption Type", "x": 40, "text_color_palette": "white" }
           ],
           "target": "option_dialog",
           "variable": "$_SETUP_CLIENT_MODE_ENCRYPTION_TYPE"
@@ -62,11 +70,15 @@
           "y": 140,
           "layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "blue" }
+            { "text": "Passphrase", "x": 39, "text_color_palette": "red3d" },
+            { "text": "Passphrase", "x": 41, "text_color_palette": "cyan3d" },
+            { "text": "Passphrase", "x": 40, "text_color_palette": "white" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "yellow" }
+            { "text": "Passphrase", "x": 39, "text_color_palette": "cyan3d" },
+            { "text": "Passphrase", "x": 41, "text_color_palette": "red3d" },
+            { "text": "Passphrase", "x": 40, "text_color_palette": "white" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_CLIENT_MODE_PASSPHRASE"
@@ -77,11 +89,15 @@
           "y": 175,
           "layers": [
             { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 40, "text_color_palette": "blue" }
+            { "text": "Save", "x": 39, "text_color_palette": "red3d" },
+            { "text": "Save", "x": 41, "text_color_palette": "cyan3d" },
+            { "text": "Save", "x": 40, "text_color_palette": "white" }
           ],
           "selected_layers": [
             { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 40, "text_color_palette": "green" }
+            { "text": "Save", "x": 39, "text_color_palette": "cyan3d" },
+            { "text": "Save", "x": 41, "text_color_palette": "red3d" },
+            { "text": "Save", "x": 40, "text_color_palette": "white" }
           ],
           "target": "function_save_wifi_client_mode",
           "button_map": {
@@ -99,11 +115,15 @@
           "y": 175,
           "layers": [
             { "image_path": "assets/x.png", "x": 7, "y": 4 },
-            { "text": "Clear", "x": 40, "text_color_palette": "blue" }
+            { "text": "Clear", "x": 39, "text_color_palette": "red3d" },
+            { "text": "Clear", "x": 41, "text_color_palette": "cyan3d" },
+            { "text": "Clear", "x": 40, "text_color_palette": "white" }
           ],
           "selected_layers": [
             { "image_path": "assets/x.png", "x": 7, "y": 4 },
-            { "text": "Clear", "x": 40, "text_color_palette": "red" }
+            { "text": "Clear", "x": 39, "text_color_palette": "cyan3d" },
+            { "text": "Clear", "x": 41, "text_color_palette": "red3d" },
+            { "text": "Clear", "x": 40, "text_color_palette": "white" }
           ],
           "target": "function_clear_wifi_client_mode",
           "button_map": {

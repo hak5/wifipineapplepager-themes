@@ -20,21 +20,21 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
+          "id": "Settings",
           "x":45,
           "y":35,
           "layers": [
-            { "text": "Sleep Screen", "x": -1, "y": 0, "text_color_palette": "red3d" },
-            { "text": "Sleep Screen", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
-            { "text": "Sleep Screen", "text_color_palette": "white" }
+            { "text": "Settings", "x": -1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Settings", "x": 1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Settings", "text_color_palette": "white" }
           ],
           "selected_layers": [
             { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 0 },
-            { "text": "Sleep Screen", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
-            { "text": "Sleep Screen", "x": 1, "y": 0, "text_color_palette": "red3d" },
-            { "text": "Sleep Screen", "text_color_palette": "white" }
+            { "text": "Settings", "x": -1, "y": 0, "text_color_palette": "cyan3d" },
+            { "text": "Settings", "x": 1, "y": 0, "text_color_palette": "red3d" },
+            { "text": "Settings", "text_color_palette": "white" }
           ],
-          "target": "function_sleep_screen"
+          "target": "quick_settings"
         },
         {
           "id": "Lock Screen",
