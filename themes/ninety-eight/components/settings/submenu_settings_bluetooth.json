@@ -43,6 +43,7 @@
             { "image_path": "assets/slider.png", "x": 298, "y": 8 },
             { "image_path": "assets/menu.png", "recolor_palette": "black" },
             { "variable_name": "$_BT_SCAN_MODE", "x": 170, "string_template": { "text_color_palette": "red" } },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Scan Mode", "x": 40, "text_color_palette": "black" }
           ],
           "target": "option_dialog",
@@ -61,6 +62,7 @@
           ],
           "selected_layers": [
             { "variable_name": "$_BT_ACTIVE_SCAN", "use_template": "checkbox" },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Active Scan", "x": 40, "text_color_palette": "black" }
           ],
           "target": "inline_toggle",
@@ -79,6 +81,7 @@
           ],
           "selected_layers": [
             { "variable_name": "$_BT_NAME_LOOKUP", "use_template": "checkbox" },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Name Lookup", "x": 40, "text_color_palette": "black" }
           ],
           "target": "inline_toggle",
@@ -97,6 +100,7 @@
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "black" },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Classic Sweep", "x": 40, "text_color_palette": "black" }
           ],
           "target": "option_dialog",
@@ -115,6 +119,7 @@
           ],
           "selected_layers": [
             { "variable_name": "$_BT_CODED_PHY", "use_template": "checkbox" },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Scan Coded PHY", "x": 40, "text_color_palette": "black" }
           ],
           "target": "inline_toggle",
@@ -140,6 +145,7 @@
           "selected_layers": [
             { "image_path": "assets/slider.png", "x": 298, "y": 109 },
             { "variable_name": "$_BT_PERSIST_DB", "use_template": "checkbox" },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Save to DB", "x": 40, "text_color_palette": "black" }
           ],
           "target": "inline_toggle",
@@ -158,6 +164,7 @@
           ],
           "selected_layers": [
             { "variable_name": "$_BT_DISCARD_RANDOM", "use_template": "checkbox" },
+            { "image_path": "assets/settings/bodyhighlight.png", "x": 35, "y": -3 },
             { "text": "Ignore Random", "x": 40, "text_color_palette": "black" }
           ],
           "target": "inline_toggle",
