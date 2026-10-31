@@ -1,0 +1,83 @@
+{
+  "screen_name": "pineap_ssidpool_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "PineAP", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "SSID Pool", "x": 10, "y": 18, "text_color_palette": "blue" },
+      { "image_path": "assets/divright.png", "x": 312, "y": 56 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "SSID Pool",
+          "x": 20,
+          "y": 58,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "text": "SSID Pool", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "text": "SSID Pool", "x": 40, "text_color_palette": "yellow" },
+            { "text": "Network names", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "PineAP can", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "impersonate or", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "advertise.", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "gray" }
+          ],
+          "target": "pineap_ssid_pool_list",
+          "variable": "$_PINEAP_SSID_POOL_LIST"
+        },
+        {
+          "id": "Add Network",
+          "x": 20,
+          "y": 90,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Add Network", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Add Network", "x": 40, "text_color_palette": "yellow" },
+            { "text": "Type an SSID to", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "add to the", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "pool.", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "gray" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_PINEAP_SSID_POOL_ADD"
+        },
+        {
+          "id": "Clear Pool",
+          "x": 20,
+          "y": 122,
+          "layers": [
+            { "image_path": "assets/warning.png", "x": 5, "y": 5 },
+            { "text": "Clear Networks", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/warning.png", "x": 5, "y": 5 },
+            { "text": "Clear Networks", "x": 40, "text_color_palette": "yellow" },
+            { "text": "Removes every", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "network from", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "the SSID pool.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "gray" }
+          ],
+          "target": "function_clear_pineap_ssid_pool_list"
+        }
+      ]
+    }
+  ]
+}
