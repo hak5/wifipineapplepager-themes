@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 0, "y": 0 }
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 }
     ]
   },
   "pages": [
@@ -24,12 +24,12 @@
           "x": 110,
           "y": 20,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "variable_name": "$_UI_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "UI Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "UI Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "variable_name": "$_UI_DEBUG_LOG", "use_template": "toggle" },
             { "text": "UI Debug Log", "x": 40, "text_color_palette": "yellow" }
           ],
@@ -50,7 +50,7 @@
           "y": 55,
           "layers": [
             { "variable_name": "$_RENDER_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Render Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Render Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_RENDER_DEBUG_LOG", "use_template": "toggle" },
@@ -65,7 +65,7 @@
           "y": 90,
           "layers": [
             { "variable_name": "$_DATA_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Data Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Data Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_DATA_DEBUG_LOG", "use_template": "toggle" },
@@ -80,7 +80,7 @@
           "y": 125,
           "layers": [
             { "variable_name": "$_EVENT_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Event Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Event Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_EVENT_DEBUG_LOG", "use_template": "toggle" },
@@ -95,7 +95,7 @@
           "y": 160,
           "layers": [
             { "variable_name": "$_STATS_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Stats Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_STATS_DEBUG_LOG", "use_template": "toggle" },
@@ -115,7 +115,7 @@
           "y": 20,
           "layers": [
             { "variable_name": "$_ISOLATED_ERROR_LOG", "use_template": "toggle" },
-            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Isolated Error Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_ISOLATED_ERROR_LOG", "use_template": "toggle" },
@@ -130,7 +130,7 @@
           "y": 55,
           "layers": [
             { "variable_name": "$_CACHE_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Cache Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_CACHE_DEBUG_LOG", "use_template": "toggle" },
@@ -145,7 +145,7 @@
           "y": 90,
           "layers": [
             { "variable_name": "$_SERVICE_DEBUG_LOG", "use_template": "toggle" },
-            { "text": "Service Debug Log", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Service Debug Log", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_SERVICE_DEBUG_LOG", "use_template": "toggle" },
@@ -160,7 +160,7 @@
           "y": 125,
           "layers": [
             { "variable_name": "$_BACKGROUND_CHANGES", "use_template": "toggle" },
-            { "text": "Background Changes", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Background Changes", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_BACKGROUND_CHANGES", "use_template": "toggle" },
@@ -175,7 +175,7 @@
           "y": 160,
           "layers": [
             { "variable_name": "$_TRACE", "use_template": "toggle" },
-            { "text": "Trace ", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Trace ", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_TRACE", "use_template": "toggle" },
@@ -198,7 +198,7 @@
           "y": 160,
           "layers": [
             { "variable_name": "$_TRACE_DEPTH", "x": 120, "use_template": "string" },
-            { "text": "Depth:", "x": 40, "text_color_palette": "medium_gray" }
+            { "text": "Depth:", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "variable_name": "$_TRACE_DEPTH", "x": 120, "use_template": "string" },
@@ -225,33 +225,11 @@
           "x": 110,
           "y": 20,
           "layers": [
-            { "variable_name": "$_DEBUG_LOG_TO_DISK", "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/toggle/enabled/toggle_bg.png", "x": 0, "y": 4, "recolor_palette":  "dark_red"},
-                { "image_path": "assets/toggle/enabled/circle.png","x": 14, "y": 6, "recolor_palette": "red" },
-                { "image_path": "assets/toggle/enabled/check.png","x": 16, "y": 9, "recolor_palette": "dark_red" }
-              ],
-              "disabled": [
-                { "image_path": "assets/toggle/disabled/toggle_disabled_bg.png", "x": 0, "y": 4},
-                { "image_path": "assets/toggle/disabled/circle.png","x": 2, "y": 6 }
-              ]
-            }
-            },
-            { "text": "Write logs to disk", "x": 40, "text_color_palette": "medium_gray" }
+            { "variable_name": "$_DEBUG_LOG_TO_DISK", "toggle_template": { "enabled": [{ "image_path": "assets/toggle/enabled/toggle_bg.png", "x": 0, "y": 4, "recolor_palette": "dark_red" }, { "image_path": "assets/toggle/enabled/circle.png", "x": 14, "y": 6, "recolor_palette": "red" }, { "image_path": "assets/toggle/enabled/check.png", "x": 16, "y": 9, "recolor_palette": "dark_red" }], "disabled": [{ "image_path": "assets/toggle/disabled/toggle_disabled_bg.png", "x": 0, "y": 4 }, { "image_path": "assets/toggle/disabled/circle.png", "x": 2, "y": 6 }] } },
+            { "text": "Write logs to disk", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "variable_name": "$_DEBUG_LOG_TO_DISK", "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/toggle/enabled/toggle_bg.png", "x": 0, "y": 4, "recolor_palette":  "dark_red"},
-                { "image_path": "assets/toggle/enabled/circle.png","x": 14, "y": 6, "recolor_palette": "red" },
-                { "image_path": "assets/toggle/enabled/check.png","x": 16, "y": 9, "recolor_palette": "dark_red" }
-              ],
-              "disabled": [
-                { "image_path": "assets/toggle/disabled/toggle_disabled_bg.png", "x": 0, "y": 4},
-                { "image_path": "assets/toggle/disabled/circle.png","x": 2, "y": 6 }
-              ]
-            }
-            },
+            { "variable_name": "$_DEBUG_LOG_TO_DISK", "toggle_template": { "enabled": [{ "image_path": "assets/toggle/enabled/toggle_bg.png", "x": 0, "y": 4, "recolor_palette": "dark_red" }, { "image_path": "assets/toggle/enabled/circle.png", "x": 14, "y": 6, "recolor_palette": "red" }, { "image_path": "assets/toggle/enabled/check.png", "x": 16, "y": 9, "recolor_palette": "dark_red" }], "disabled": [{ "image_path": "assets/toggle/disabled/toggle_disabled_bg.png", "x": 0, "y": 4 }, { "image_path": "assets/toggle/disabled/circle.png", "x": 2, "y": 6 }] } },
             { "text": "Write logs to disk", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
@@ -270,11 +248,11 @@
           "x": 110,
           "y": 55,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
-            { "text": "Restart Server", "x": 40, "text_color_palette": "medium_gray" }
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
+            { "text": "Restart Server", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/start.png", "x": 2, "y": 2, "recolor_palette": "red" },
+            { "image_path": "assets/start.png", "x": 3, "y": 3, "recolor_palette": "red" },
             { "text": "Restart Server", "x": 40, "text_color_palette": "red" }
           ],
           "target": "debug_function_restart_server"
@@ -284,11 +262,11 @@
           "x": 110,
           "y": 90,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
-            { "text": "Restart PineAPd", "x": 40, "text_color_palette": "medium_gray" }
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
+            { "text": "Restart PineAPd", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
             { "text": "Restart PineAPd", "x": 40, "text_color_palette": "red" }
           ],
           "target": "debug_function_restart_pineap"
@@ -298,11 +276,11 @@
           "x": 110,
           "y": 125,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
-            { "text": "Restart Networking", "x": 40, "text_color_palette": "medium_gray" }
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
+            { "text": "Restart Networking", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
             { "text": "Restart Networking", "x": 40, "text_color_palette": "red" }
           ],
           "target": "debug_function_restart_networking"
@@ -312,11 +290,11 @@
           "x": 110,
           "y": 160,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
-            { "text": "Restart Device", "x": 40, "text_color_palette": "medium_gray" }
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
+            { "text": "Restart Device", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 2, "recolor_palette": "medium_gray"},
+            { "image_path": "assets/start.png", "x": 5, "y": 3, "recolor_palette": "blue" },
             { "text": "Restart Device", "x": 40, "text_color_palette": "red" }
           ],
           "target": "debug_function_restart_device"
