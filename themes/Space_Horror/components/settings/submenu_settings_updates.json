@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "yellow" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "gray" }
+      { "text": "Clock", "x": 10, "y": 50, "text_color_palette": "gray" },
+      { "text": "GPS", "x": 10, "y": 85, "text_color_palette": "gray" },
+      { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "yellow" },
+      { "text": "Help", "x": 10, "y": 155, "text_color_palette": "gray" },
+      { "text": "About", "x": 10, "y": 190, "text_color_palette": "gray" }
     ]
   },
   "pages": [
@@ -28,26 +28,18 @@
       "menu_items": [
         {
           "id": "CurrentVersion",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "unselectable": true,
           "layers": [
             { "text": "Current Version:", "text_color_palette": "blue" },
-            { "variable_name": "$_FIRMWARE_VERSION", "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "blue",
-                "max_chars": 24,
-                "wrap_text": false,
-                "max_lines": 1
-              },
-              "x":221
-            }
+            { "variable_name": "$_FIRMWARE_VERSION", "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 24, "wrap_text": false, "max_lines": 1 }, "x": 221 }
           ]
         },
         {
           "id": "Check for Updates",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
             { "image_path": "assets/wizard.png" },
             { "text": "Check for Updates", "x": 40, "text_color_palette": "blue" }
@@ -60,14 +52,14 @@
         },
         {
           "id": "Check for Portal Updates",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue", "x": 1, "y": 1 },
             { "text": "Refresh Portal", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/autoplay.png", "recolor_palette": "blue" },
+            { "image_path": "assets/autoplay.png", "recolor_palette": "blue", "x": 1, "y": 1 },
             { "text": "Refresh Portal", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "function_refresh_pager_portal_data"
@@ -75,5 +67,4 @@
       ]
     }
   ]
-
 }

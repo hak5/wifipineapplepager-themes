@@ -1,0 +1,68 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "yellow"
+    },
+    "Battery": {
+      "x": 346,
+      "y": 7,
+      "layers": {
+        "discharging":  [{ "image_path": "assets/dashboard_battery_text.png",       "x": 4, "y": -2 }],
+        "charging_25":  [{ "image_path": "assets/dashboard_battery_charge_25.png",  "x": 4, "y": -2 }],
+        "charging_50":  [{ "image_path": "assets/dashboard_battery_charge_50.png",  "x": 4, "y": -2 }],
+        "charging_75":  [{ "image_path": "assets/dashboard_battery_charge_75.png",  "x": 4, "y": -2 }],
+        "charging_100": [{ "image_path": "assets/dashboard_battery_charge_100.png", "x": 4, "y": -2 }],
+        "charged":      [{ "image_path": "assets/dashboard_battery_full.png",       "x": 4, "y": -2 }]
+      }
+    },
+    "GPS": {
+      "x": 249,
+      "y": 4,
+      "layers": {
+        "disconnected": [{ "image_path": "assets/gps_off.png" }],
+        "nofix": [{ "image_path": "assets/gps_off.png" }],
+        "weak": [{ "image_path": "assets/gps.png" }],
+        "acquiring": [{ "image_path": "assets/gps.png" }],
+        "fix": [{ "image_path": "assets/gps.png", "recolor_palette": "green" }]
+      }
+    },
+    "Wigle": {
+      "x": 210,
+      "y": 4,
+      "layers": {
+        "on":  [{ "image_path": "assets/wigle.png", "x": 0, "y": 0 }],
+        "off": [{ "image_path": "assets/wigle_off.png", "x": 0, "y": 0 }]
+      }
+    },
+    "BTDB": {
+      "x": 282,
+      "y": 5,
+      "layers": {
+        "on": [{ "image_path": "assets/database.png" }],
+        "off": [{ "image_path": "assets/database_off.png" }]
+      }
+    },
+    "BTScan": {
+      "x": 315,
+      "y": 5,
+      "layers": {
+        "off": [{ "image_path": "assets/bt_scanoff.png", "x": 1, "y": 4 }],
+        "both": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
+        "both_active": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
+        "classic": [{ "image_path": "assets/bt_mode_classic.png", "recolor_palette": "yellow" }],
+        "le": [{ "image_path": "assets/bt_mode_le.png", "recolor_palette": "yellow" }],
+        "le_active": [{ "image_path": "assets/bt_mode_le.png", "recolor_palette": "yellow" }]
+      }
+    }
+  }
+}

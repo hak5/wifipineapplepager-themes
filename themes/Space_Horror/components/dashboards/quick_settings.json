@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/power_menu_bg.png", "x": 0, "y": 0 }
+      { "image_path": "assets/power_menu_quick_bg.png", "x": 0, "y": 0 }
     ]
   },
   "pages": [

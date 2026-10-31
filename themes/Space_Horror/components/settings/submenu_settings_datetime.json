@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "yellow" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "gray" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "gray" }
+      { "text": "Clock", "x": 10, "y": 50, "text_color_palette": "yellow" },
+      { "text": "GPS", "x": 10, "y": 85, "text_color_palette": "gray" },
+      { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "gray" },
+      { "text": "Help", "x": 10, "y": 155, "text_color_palette": "gray" },
+      { "text": "About", "x": 10, "y": 190, "text_color_palette": "gray" }
     ]
   },
   "pages": [
@@ -28,30 +28,38 @@
       "menu_items": [
         {
           "id": "Date/Time",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "unselectable": true,
           "layers": [
-            { "variable_name": "$_DATETIME", "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "blue",
-                "max_chars": 24,
-                "wrap_text": false,
-                "max_lines": 1
-              }
-            }
+            { "variable_name": "$_DATETIME", "string_template": { "text_size": "medium", "text_color_palette": "blue", "max_chars": 24, "wrap_text": false, "max_lines": 1 } }
           ]
         },
         {
-          "id": "Timezone",
-          "x":170,
-          "y":75,
+          "id": "24 Hour Clock",
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "variable_name": "$_CLOCK_24HR", "use_template": "toggle" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_CLOCK_24HR", "use_template": "toggle" },
+            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLOCK_24HR"
+        },
+        {
+          "id": "Timezone",
+          "x": 170,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Timezone", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Timezone", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
@@ -59,14 +67,14 @@
         },
         {
           "id": "Year",
-          "x":170,
-          "y":100,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Year", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Year", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_number_dialog",
@@ -74,50 +82,20 @@
         },
         {
           "id": "Month",
-          "x":170,
-          "y":125,
+          "x": 170,
+          "y": 190,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "blue" }
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Month", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "yellow" }
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Month", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
           ],
           "target": "edit_number_dialog",
           "variable": "$_MONTH"
-        },
-        {
-          "id": "Day",
-          "x":170,
-          "y":150,
-          "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "blue" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "yellow" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "target": "edit_number_dialog",
-          "variable": "$_DAY"
-        },
-		{
-          "id": "24 Hour Clock",
-          "x":170,
-          "y":175,
-          "layers": [
-            { "variable_name":  "$_CLOCK_24HR", "use_template": "toggle" },
-            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "gray" }
-          ],
-          "selected_layers": [
-            { "variable_name":  "$_CLOCK_24HR", "use_template": "toggle" },
-            { "text": "24 Hour Clock", "x": 40, "text_color_palette": "yellow" }
-          ],
-          "target": "inline_toggle",
-          "variable": "$_CLOCK_24HR"
         }
       ]
     },
@@ -125,32 +103,47 @@
       "page_index": 1,
       "menu_items": [
         {
-          "id": "Hour",
-          "x":170,
-          "y":50,
+          "id": "Day",
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "blue" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Day", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "yellow" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Day", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_DAY"
+        },
+        {
+          "id": "Hour",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Hour", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "Hour", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_number_dialog",
           "variable": "$_HOUR"
         },
         {
           "id": "Minute",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Minute", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Minute", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_number_dialog",
@@ -158,14 +151,14 @@
         },
         {
           "id": "Second",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Second", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Second", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_number_dialog",
@@ -175,45 +168,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

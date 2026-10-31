@@ -51,7 +51,7 @@
       "y": 5,
       "layers": {
         "on":  [{ "image_path": "assets/vibrate.png", "x": 0, "y": 0 }],
-        "off": [{ "image_path": "assets/vibrate.png", "x": 0, "y": 0, "recolor_palette": "gray" }]
+        "off": [{ "image_path": "assets/vibrate_off.png", "x": 0, "y": 0 }]
       }
     },
     "WifiClient": {
@@ -62,6 +62,18 @@
         "connected": [{ "image_path": "assets/wifi_on_connected.png", "x": 0, "y": 0 }],
         "disconnected": [{ "image_path": "assets/wifi_on_disconnected.png", "x": 0, "y": 0 }]
       }
-    }
+    },
+    "BTScan": {
+      "x": 183,
+      "y": 5,
+      "layers": {
+        "off": [{ "image_path": "assets/bt_scanoff.png", "x": 1, "y": 4 }],
+        "both": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
+        "both_active": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
+        "classic": [{ "image_path": "assets/bt_mode_classic.png", "recolor_palette": "yellow" }],
+        "le": [{ "image_path": "assets/bt_mode_le.png", "recolor_palette": "yellow" }],
+        "le_active": [{ "image_path": "assets/bt_mode_le.png", "recolor_palette": "yellow" }]
+      }
+	}
   }
 }

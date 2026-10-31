@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "yellow" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "gray" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "gray" }
+      { "text": "Clock", "x": 10, "y": 50, "text_color_palette": "gray" },
+      { "text": "GPS", "x": 10, "y": 85, "text_color_palette": "yellow" },
+      { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "gray" },
+      { "text": "Help", "x": 10, "y": 155, "text_color_palette": "gray" },
+      { "text": "About", "x": 10, "y": 190, "text_color_palette": "gray" }
     ]
   },
   "pages": [
@@ -27,112 +27,76 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Port",
-          "x":170,
-          "y":50,
+          "id": "Status",
+          "x": 170,
+          "y": 50,
           "unselectable": true,
           "layers": [
-            { "x":0, "text": "Lat:", "text_size": "medium", "text_color": "medium_gray"},
-            { "variable_name": "$_GPS_LAT", "x": 60, "string_template": {"text_size": "medium", "text_color_palette": "gray" } },
-            { "x":160, "text": "Lon:", "text_size": "medium", "text_color": "medium_gray"},
-            { "variable_name": "$_GPS_LON", "x": 220, "string_template": {"text_size": "medium", "text_color_palette": "gray" }}
+            { "x": -2, "text": "Status:", "text_size": "large", "text_color_palette": "medium_gray", "y": -8 },
+            { "variable_name": "$_GPS_READINESS", "x": 149, "string_template": { "text_size": "small", "text_color_palette": "gray" }, "y": 4 }
           ]
         },
         {
-          "id": "Port",
-          "x":170,
-          "y":85,
+          "id": "LatLon",
+          "x": 170,
+          "y": 77,
+          "unselectable": true,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Serial Device", "x": 40, "text_color_palette": "blue" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Serial Device", "x": 40, "text_color_palette": "yellow" }
-          ],
-          "target": "option_dialog",
-          "variable": "$_GPS_DEVICE"
+            { "x": 0, "text": "Lat:", "text_size": "medium", "text_color_palette": "medium_gray", "y": 1 },
+            { "variable_name": "$_GPS_LAT", "x": 60, "string_template": { "text_size": "medium", "text_color_palette": "gray" }, "y": 1 },
+            { "x": 160, "text": "Lon:", "text_size": "medium", "text_color_palette": "medium_gray", "y": 1 },
+            { "variable_name": "$_GPS_LON", "x": 220, "string_template": { "text_size": "medium", "text_color_palette": "gray" }, "y": 1 }
+          ]
         },
         {
-          "id": "Baud Rate",
-          "x":170,
-          "y":120,
+          "id": "ConnType",
+          "x": 170,
+          "y": 133,
+          "unselectable": true,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Baud Rate", "x": 40, "text_color_palette": "blue" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Baud Rate", "x": 40, "text_color_palette": "yellow" }
-          ],
-          "target": "option_dialog",
-          "variable": "$_GPS_BAUD"
+            { "x": 0, "text": "Connected:", "text_size": "small", "text_color_palette": "medium_gray", "y": -23 },
+            { "variable_name": "$_GPS_CONNECTED", "x": 110, "string_template": { "text_size": "small", "text_color_palette": "gray" }, "y": -23, "center_text_within": { "draw_bounds": false, "start_x": 280, "end_x": 306, "start_y": 110, "end_y": 123 } },
+            { "x": 160, "text": "Type:", "text_size": "small", "text_color_palette": "medium_gray", "y": -23 },
+            { "variable_name": "$_GPS_PROTOCOL", "x": 236, "string_template": { "text_size": "small", "text_color_palette": "gray" }, "y": -23, "center_text_within": { "draw_bounds": false, "start_x": 406, "end_x": 441, "start_y": 110, "end_y": 123 } }
+          ]
         },
         {
-          "id": "restart",
-          "x":170,
-          "y":155,
+          "id": "SatsQual",
+          "x": 170,
+          "y": 163,
+          "unselectable": true,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "blue" },
-            { "text": "Restart GPSd", "x": 40,  "text_color_palette": "blue" }
+            { "x": 0, "text": "Satellites:", "text_size": "small", "text_color_palette": "medium_gray", "y": -30 },
+            { "variable_name": "$_GPS_SATS_TRACKED", "x": 118, "string_template": { "text_size": "small", "text_color_palette": "gray" }, "y": -30, "center_text_within": { "draw_bounds": false, "start_x": 288, "end_x": 296, "start_y": 133, "end_y": 146 } },
+            { "x": 160, "text": "Quality:", "text_size": "small", "text_color_palette": "medium_gray", "y": -30 },
+            { "variable_name": "$_GPS_SIGNAL_QUALITY", "x": 241, "string_template": { "text_size": "small", "text_color_palette": "gray" }, "y": -30, "center_text_within": { "draw_bounds": false, "start_x": 411, "end_x": 437, "start_y": 133, "end_y": 146 } }
+          ]
+        },
+        {
+          "id": "advanced",
+          "x": 170,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "text": "Advanced Settings", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "red" },
-            { "text": "Restart GPSd", "x": 40, "text_color_palette": "red" }
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "text": "Advanced Settings", "x": 33, "text_color_palette": "yellow" }
           ],
-          "target": "function_restart_gpsd"
+          "target": "settings_gps_advanced"
+        },
+        {
+          "id": "SatsQual_copy",
+          "x": 249,
+          "y": 181,
+          "unselectable": true,
+          "layers": [
+            { "x": -79, "text": "Precision:", "text_size": "small", "text_color_palette": "medium_gray", "y": -24 },
+            { "variable_name": "$_GPS_ACCURACY", "x": 32, "string_template": { "text_size": "small", "text_color_palette": "medium_gray" }, "y": -24, "center_text_within": { "draw_bounds": false, "start_x": 281, "end_x": 307, "start_y": 157, "end_y": 170 } }
+          ]
         }
       ]
     }
   ]
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

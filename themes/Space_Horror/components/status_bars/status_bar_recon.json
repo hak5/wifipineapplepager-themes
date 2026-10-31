@@ -39,23 +39,24 @@
         "off": [{ "image_path": "assets/ghz_off.png" }]
       }
     },
-    "Brightness": {
+    "BTScan": {
       "x": 282,
       "y": 5,
       "layers": {
-        "15":  [{ "image_path": "assets/dashboard_brightness_2.png" }],
-        "25":  [{ "image_path": "assets/dashboard_brightness_3.png" }],
-        "50":  [{ "image_path": "assets/dashboard_brightness_5.png" }],
-        "75":  [{ "image_path": "assets/dashboard_brightness_7.png" }],
-        "100": [{ "image_path": "assets/dashboard_brightness_8.png" }]
+        "off": [{ "image_path": "assets/bt_scanoff.png", "x": 1, "y": 4 }],
+        "both": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
+        "both_active": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
+        "classic": [{ "image_path": "assets/bt_mode_classic.png", "recolor_palette": "yellow" }],
+        "le": [{ "image_path": "assets/bt_mode_le.png", "recolor_palette": "yellow" }],
+        "le_active": [{ "image_path": "assets/bt_mode_le.png", "recolor_palette": "yellow" }]
       }
     },
     "PCAP": {
       "x": 249,
       "y": 5,
       "layers": {
-        "on":  [{ "image_path": "assets/pcap.png", "recolor_palette":  "red"}],
-        "off": [{ "image_path": "assets/pcap.png", "recolor_palette": "gray" }]
+        "on":  [{ "image_path": "assets/pcap.png" }],
+        "off": [{ "image_path": "assets/pcap_off.png" }]
       }
     },
     "DB": {
@@ -63,15 +64,18 @@
       "y": 5,
       "layers": {
         "on":  [{ "image_path": "assets/database.png" }],
-        "off": [{ "image_path": "assets/database.png", "recolor_palette": "gray" }]
+        "off": [{ "image_path": "assets/database_off.png" }]
       }
     },
     "GPS": {
       "x": 183,
       "y": 4,
       "layers": {
-        "on":   [{ "image_path": "assets/gps.png" }],
-        "off":  [{ "image_path": "assets/gps.png", "recolor_palette": "gray" }]
+        "disconnected": [{ "image_path": "assets/gps_off.png" }],
+        "nofix": [{ "image_path": "assets/gps_off.png" }],
+        "weak": [{ "image_path": "assets/gps.png" }],
+        "acquiring": [{ "image_path": "assets/gps.png" }],
+        "fix": [{ "image_path": "assets/gps.png", "recolor_palette": "green" }]
       }
     },
     "Wigle": {
@@ -79,7 +83,7 @@
       "y": 4,
       "layers": {
         "on":  [{ "image_path": "assets/wigle.png", "x": 0, "y": 0 }],
-        "off": [{ "image_path": "assets/wigle.png", "x": 0, "y": 0, "recolor_palette": "gray" }]
+        "off": [{ "image_path": "assets/wigle_off.png", "x": 0, "y": 0 }]
       }
     }
   }
