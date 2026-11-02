@@ -1,0 +1,12 @@
+{
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "screen_name": "critical_battery_alert",
+  "background": {
+    "layers": [
+      { "image_path": "assets/critical_battery_alert.png", "x": 0, "y": 0 }
+    ]
+  },
+  "menu_items": [
+  ]
+}
