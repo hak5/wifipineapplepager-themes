@@ -81,10 +81,10 @@
           "x": 215,
           "y": 155,
           "layers": [
-            { "text": "Deauth Client", "text_color_palette": "black" }
+            { "text": "Re-auth Client", "text_color_palette": "black" }
           ],
           "selected_layers": [
-            { "text": "Deauth Client", "text_color_palette": "black" },
+            { "text": "Re-auth Client", "text_color_palette": "black" },
             { "image_path": "assets/settings/bodyhighlight.png", "x": -5, "y": -1 }
           ],
           "target": "function_selected_ap_client_deauth"
