@@ -1,6 +1,6 @@
 {
   "screen_name": "pager_portal_update_payloads_dashboard",
-  "status_bar": "default",
+  "status_bar": "min",
   "windowed_canvas": false,
   "cache_canvases": false,
   "background": {
