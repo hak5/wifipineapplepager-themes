@@ -1,0 +1,249 @@
+{
+  "screen_name": "wardriving_dashboard",
+  "status_bar": "gps",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/wardriving_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "GPS_coords",
+          "x": 70,
+          "y": 34,
+          "unselectable": true,
+          "layers": [
+            { "text": "Lat:", "x": 0, "text_color_palette": "medium_gray" },
+            { "variable_name": "$_GPS_LAT", "x": 50, "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 10 }},
+            { "text": "Lon:", "x": 175, "text_color_palette": "medium_gray" },
+            { "variable_name": "$_GPS_LON", "x": 225, "string_template": { "text_size": "medium", "text_color_palette": "yellow", "max_chars": 10 }}
+          ]
+        },
+        {
+          "id": "Wigle",
+          "x": 10,
+          "y": 60,
+          "layers": [
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "2.4GHz",
+          "x": 10,
+          "y": 83,
+          "layers": [
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "2.4 GHz", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "2.4 GHz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED"
+        },
+        {
+          "id": "5GHz",
+          "x": 10,
+          "y": 106,
+          "layers": [
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "5 GHz", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "5 GHz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED"
+        },
+        {
+          "id": "6GHz",
+          "x": 10,
+          "y": 129,
+          "layers": [
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "6 GHz", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle" },
+            { "text": "6 GHz", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED"
+        },
+        {
+          "id": "Bluetooth",
+          "x": 10,
+          "y": 152,
+          "layers": [
+            { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle" },
+            { "text": "Bluetooth", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle" },
+            { "text": "Bluetooth", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BLUETOOTH_ENABLED"
+        },
+        {
+          "id": "RadioSettings",
+          "x": 10,
+          "y": 175,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Radio Settings", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "Radio Settings", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "recon_band_settings"
+        },
+        {
+          "id": "Bluetooth Settings",
+          "x": 10,
+          "y": 198,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "BT Settings", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "BT Settings", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "settings_bluetooth_submenu_explained"
+        },
+		
+		
+		
+        {
+          "id": "GPSSettings",
+          "x": 255,
+          "y": 60,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "GPS Settings", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "GPS Settings", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "settings_gps_advanced"
+        },
+        {
+          "id": "PCAP",
+          "x": 255,
+          "y": 83,
+          "layers": [
+            { "variable_name": "$_RECORD_PCAP", "use_template": "toggle" },
+            { "text": "Record PCAP", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RECORD_PCAP", "use_template": "toggle" },
+            { "text": "Record PCAP", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECORD_PCAP"
+        },
+        {
+          "id": "Persist",
+          "x": 255,
+          "y": 106,
+          "layers": [
+            { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle" },
+            { "text": "Save Recon DB", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle" },
+            { "text": "Save Recon DB", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PERSIST_RECON_DB"
+        },
+        {
+          "id": "Handshakes",
+          "x": 255,
+          "y": 129,
+          "layers": [
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "text": "Handshakes", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "text": "Handshakes", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES"
+        },
+        {
+          "id": "Save to BT DB",
+          "x": 255,
+          "y": 152,
+          "layers": [
+            { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
+            { "text": "Save BT DB", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
+            { "text": "Save BT DB", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_PERSIST_DB"
+        },
+        {
+          "id": "Geiger",
+          "x": 255,
+          "y": 175,
+          "layers": [
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
+            { "text": "Recon Audio", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
+            { "text": "Recon Audio", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_ENABLED"
+        },
+        {
+          "id": "BackgroundAudio",
+          "x": 255,
+          "y": 198,
+          "layers": [
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
+            { "text": "BG Audio", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
+            { "text": "BG Audio", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_BACKGROUND"
+        }		
+      ]
+    }
+  ]
+}
