@@ -79,10 +79,10 @@
           "x": 226,
           "y": 180,
           "layers": [
-            { "text": "Deauth Client", "text_color_palette": "green" }
+            { "text": "Re-auth Client", "text_color_palette": "green" }
           ],
           "selected_layers": [
-            { "text": "Deauth Client", "text_color_palette": "yellow" }
+            { "text": "Re-auth Client", "text_color_palette": "yellow" }
           ],
           "target": "function_selected_ap_client_deauth"
         }
