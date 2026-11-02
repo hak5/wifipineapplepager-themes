@@ -107,14 +107,14 @@
           "x": 226,
           "y": 194,
           "layers": [
-            { "text": "Deauth All Clients", "x": -1, "text_color_palette": "red3d" },
-            { "text": "Deauth All Clients", "x": 1, "text_color_palette": "cyan3d" },
-            { "text": "Deauth All Clients", "text_color_palette": "white" }
+            { "text": "Re-auth All Clients", "x": -1, "text_color_palette": "red3d" },
+            { "text": "Re-auth All Clients", "x": 1, "text_color_palette": "cyan3d" },
+            { "text": "Re-auth All Clients", "text_color_palette": "white" }
           ],
           "selected_layers": [
-            { "text": "Deauth All Clients", "x": -1, "text_color_palette": "cyan3d" },
-            { "text": "Deauth All Clients", "x": 1, "text_color_palette": "red3d" },
-            { "text": "Deauth All Clients", "text_color_palette": "white" }
+            { "text": "Re-auth All Clients", "x": -1, "text_color_palette": "cyan3d" },
+            { "text": "Re-auth All Clients", "x": 1, "text_color_palette": "red3d" },
+            { "text": "Re-auth All Clients", "text_color_palette": "white" }
           ],
           "target": "function_selected_ap_deauth_all_clients"
         }

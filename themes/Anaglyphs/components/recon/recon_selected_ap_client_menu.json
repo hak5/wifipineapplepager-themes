@@ -91,14 +91,14 @@
           "x": 226,
           "y": 180,
           "layers": [
-            { "text": "Deauth Client", "x": -1, "text_color_palette": "red3d" },
-            { "text": "Deauth Client", "x": 1, "text_color_palette": "cyan3d" },
-            { "text": "Deauth Client", "text_color_palette": "white" }
+            { "text": "Re-auth Client", "x": -1, "text_color_palette": "red3d" },
+            { "text": "Re-auth Client", "x": 1, "text_color_palette": "cyan3d" },
+            { "text": "Re-auth Client", "text_color_palette": "white" }
           ],
           "selected_layers": [
-            { "text": "Deauth Client", "x": -1, "text_color_palette": "cyan3d" },
-            { "text": "Deauth Client", "x": 1, "text_color_palette": "red3d" },
-            { "text": "Deauth Client", "text_color_palette": "white" }
+            { "text": "Re-auth Client", "x": -1, "text_color_palette": "cyan3d" },
+            { "text": "Re-auth Client", "x": 1, "text_color_palette": "red3d" },
+            { "text": "Re-auth Client", "text_color_palette": "white" }
           ],
           "target": "function_selected_ap_client_deauth"
         }
