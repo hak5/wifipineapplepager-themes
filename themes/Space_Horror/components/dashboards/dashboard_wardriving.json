@@ -34,24 +34,37 @@
           ]
         },
         {
-          "id": "Wigle",
+          "id": "RadioSettings",
           "x": 10,
           "y": 60,
           "layers": [
-            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
-            { "text": "Wigle", "x": 40, "text_color_palette": "medium_gray" }
+            { "image_path": "assets/menu.png" },
+            { "text": "Radio Settings", "x": 40, "text_color_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
-            { "text": "Wigle", "x": 40, "text_color_palette": "yellow" }
+            { "image_path": "assets/menu.png" },
+            { "text": "Radio Settings", "x": 40, "text_color_palette": "yellow" }
           ],
-          "target": "inline_toggle",
-          "variable": "$_WIGLE_MODE_ENABLED"
+          "target": "recon_band_settings"
+        },
+        {
+          "id": "Bluetooth Settings",
+          "x": 10,
+          "y": 83,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "BT Settings", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "BT Settings", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "settings_bluetooth_submenu_explained"
         },
         {
           "id": "2.4GHz",
           "x": 10,
-          "y": 83,
+          "y": 106,
           "layers": [
             { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle" },
             { "text": "2.4 GHz", "x": 40, "text_color_palette": "medium_gray" }
@@ -66,7 +79,7 @@
         {
           "id": "5GHz",
           "x": 10,
-          "y": 106,
+          "y": 129,
           "layers": [
             { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle" },
             { "text": "5 GHz", "x": 40, "text_color_palette": "medium_gray" }
@@ -81,7 +94,7 @@
         {
           "id": "6GHz",
           "x": 10,
-          "y": 129,
+          "y": 152,
           "layers": [
             { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle" },
             { "text": "6 GHz", "x": 40, "text_color_palette": "medium_gray" }
@@ -96,7 +109,7 @@
         {
           "id": "Bluetooth",
           "x": 10,
-          "y": 152,
+          "y": 175,
           "layers": [
             { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle" },
             { "text": "Bluetooth", "x": 40, "text_color_palette": "medium_gray" }
@@ -109,54 +122,27 @@
           "variable": "$_BLUETOOTH_ENABLED"
         },
         {
-          "id": "RadioSettings",
-          "x": 10,
-          "y": 175,
-          "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Radio Settings", "x": 40, "text_color_palette": "medium_gray" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Radio Settings", "x": 40, "text_color_palette": "yellow" }
-          ],
-          "target": "recon_band_settings"
-        },
-        {
-          "id": "Bluetooth Settings",
+          "id": "Wigle",
           "x": 10,
           "y": 198,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "BT Settings", "x": 40, "text_color_palette": "medium_gray" }
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle", "x": 40, "text_color_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "BT Settings", "x": 40, "text_color_palette": "yellow" }
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle", "x": 40, "text_color_palette": "yellow" }
           ],
-          "target": "settings_bluetooth_submenu_explained"
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
         },
 		
 		
 		
-        {
-          "id": "GPSSettings",
-          "x": 255,
-          "y": 60,
-          "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "GPS Settings", "x": 40, "text_color_palette": "medium_gray" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "GPS Settings", "x": 40, "text_color_palette": "yellow" }
-          ],
-          "target": "settings_gps_advanced"
-        },
         {
           "id": "PCAP",
           "x": 255,
-          "y": 83,
+          "y": 60,
           "layers": [
             { "variable_name": "$_RECORD_PCAP", "use_template": "toggle" },
             { "text": "Record PCAP", "x": 40, "text_color_palette": "medium_gray" }
@@ -171,7 +157,7 @@
         {
           "id": "Persist",
           "x": 255,
-          "y": 106,
+          "y": 83,
           "layers": [
             { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle" },
             { "text": "Save Recon DB", "x": 40, "text_color_palette": "medium_gray" }
@@ -186,7 +172,7 @@
         {
           "id": "Handshakes",
           "x": 255,
-          "y": 129,
+          "y": 106,
           "layers": [
             { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
             { "text": "Handshakes", "x": 40, "text_color_palette": "medium_gray" }
@@ -201,7 +187,7 @@
         {
           "id": "Save to BT DB",
           "x": 255,
-          "y": 152,
+          "y": 129,
           "layers": [
             { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
             { "text": "Save BT DB", "x": 40, "text_color_palette": "medium_gray" }
@@ -216,7 +202,7 @@
         {
           "id": "Geiger",
           "x": 255,
-          "y": 175,
+          "y": 152,
           "layers": [
             { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
             { "text": "Recon Audio", "x": 40, "text_color_palette": "medium_gray" }
@@ -231,7 +217,7 @@
         {
           "id": "BackgroundAudio",
           "x": 255,
-          "y": 198,
+          "y": 175,
           "layers": [
             { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
             { "text": "BG Audio", "x": 40, "text_color_palette": "medium_gray" }
@@ -242,6 +228,20 @@
           ],
           "target": "inline_toggle",
           "variable": "$_RECON_AUDIO_BACKGROUND"
+        },
+        {
+          "id": "GPSSettings",
+          "x": 255,
+          "y": 198,
+          "layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "GPS Settings", "x": 40, "text_color_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png" },
+            { "text": "GPS Settings", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "settings_gps_advanced"
         }		
       ]
     }
