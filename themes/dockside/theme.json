@@ -124,37 +124,17 @@
   "toggle_templates": {
     "toggle": "components/templates/toggle.json",
     "green_toggle": "components/templates/green_toggle.json",
-    "disabled_toggle": "components/templates/disabled_toggle.json",
     "checkbox": "components/templates/checkbox.json"
   },
   "string_templates": {
-    "recon_payload_title": "components/templates/recon_payload_title.json",
-    "recon_payload_title_selected": "components/templates/recon_payload_title_selected.json",
-    "alert_payload_title": "components/templates/alert_payload_title.json",
-    "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
     "timestamp": "components/templates/timestamp.json",
     "spinner_text": "components/templates/spinner_text.json",
     "string": "components/templates/string.json",
-    "payload_name": "components/templates/payload_name_in_list.json",
-    "payload_name_selected": "components/templates/payload_name_in_list_selected.json",
-    "alert_info_dialog_text": "components/templates/alert_info_dialog_text.json",
     "string_title": "components/templates/string_title.json",
-    "error_text": "components/templates/error_text.json",
-    "confirmation_dialog_text": "components/templates/confirmation_dialog_text.json",
-    "option_dialog_string": "components/templates/option_dialog_string.json",
-    "option_dialog_string_selected": "components/templates/option_dialog_string_selected.json",
-    "ssid_pool_string": "components/templates/ssid_pool_string.json",
-    "ssid_pool_string_selected": "components/templates/ssid_pool_string_selected.json",
-    "payload_title": "components/templates/payload_title.json",
-    "list_count": "components/templates/list_count.json",
-    "list_pagination_label": "components/templates/list_pagination_label.json",
-    "string_bar": "components/templates/string_bar.json",
-    "option_dialog_string_selected_bar": "components/templates/option_dialog_string_selected_bar.json",
-    "ssid_pool_string_selected_bar": "components/templates/ssid_pool_string_selected_bar.json"
+    "confirmation_dialog_text": "components/templates/confirmation_dialog_text.json"
   },
   "radio_templates": {
     "radio": "components/templates/radio.json",
-    "selected_radio": "components/templates/selected_radio.json",
     "selected_radio_bar": "components/templates/selected_radio_bar.json"
   },
   "signal_templates": {

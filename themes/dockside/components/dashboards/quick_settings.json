@@ -1,6 +1,6 @@
 {
   "screen_name": "quick_settings",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",
@@ -12,7 +12,8 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/power_menu_bg.png", "x": 4, "y": 4 }
+      { "image_path": "assets/dashboard/desktop.png", "x": 0, "y": 0 },
+      { "image_path": "assets/quick_settings_bg.png", "x": 4, "y": 4 }
     ]
   },
   "pages": [
@@ -22,13 +23,13 @@
         {
           "id": "Brightness",
           "x": 45,
-          "y": 35,
+          "y": 32,
           "layers": [
-            { "text": "Brightness", "text_color_palette": "blue" }
+            { "text": "Brightness...", "text_size": "small", "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_436x27.png", "x": -6, "y": -3 },
-            { "text": "Brightness", "text_color_palette": "white" }
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Brightness...", "text_size": "small", "text_color_palette": "white" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_BRIGHTNESS"
@@ -36,13 +37,13 @@
         {
           "id": "Volume",
           "x": 45,
-          "y": 70,
+          "y": 56,
           "layers": [
-            { "text": "Volume", "text_color_palette": "blue" }
+            { "text": "Volume...", "text_size": "small", "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_436x27.png", "x": -6, "y": -3 },
-            { "text": "Volume", "text_color_palette": "white" }
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Volume...", "text_size": "small", "text_color_palette": "white" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_VOLUME"
@@ -50,15 +51,39 @@
         {
           "id": "Vibrate",
           "x": 45,
-          "y": 105,
+          "y": 80,
           "layers": [
-            { "variable_name": "$_VIBRATE", "x": -38, "use_template": "green_toggle" },
-            { "text": "Vibrate", "text_color_palette": "blue" }
+            { "text": "Vibrate", "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_VIBRATE",
+              "x": 172,
+              "y": 4,
+              "toggle_template": {
+                "enabled": [
+                  { "text": "On", "text_size": "small", "text_color_palette": "gray" }
+                ],
+                "disabled": [
+                  { "text": "Off", "text_size": "small", "text_color_palette": "gray" }
+                ]
+              }
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_472x27.png", "x": -41, "y": -3 },
-            { "variable_name": "$_VIBRATE", "x": -38, "use_template": "green_toggle" },
-            { "text": "Vibrate", "text_color_palette": "white" }
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Vibrate", "text_size": "small", "text_color_palette": "white" },
+            {
+              "variable_name": "$_VIBRATE",
+              "x": 172,
+              "y": 4,
+              "toggle_template": {
+                "enabled": [
+                  { "text": "On", "text_size": "small", "text_color_palette": "white" }
+                ],
+                "disabled": [
+                  { "text": "Off", "text_size": "small", "text_color_palette": "white" }
+                ]
+              }
+            }
           ],
           "target": "inline_toggle",
           "variable": "$_VIBRATE"
@@ -66,15 +91,39 @@
         {
           "id": "Client Mode",
           "x": 45,
-          "y": 140,
+          "y": 104,
           "layers": [
-            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": -38, "use_template": "green_toggle" },
-            { "text": "Client Mode", "text_color_palette": "blue" }
+            { "text": "Client Mode", "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",
+              "x": 172,
+              "y": 4,
+              "toggle_template": {
+                "enabled": [
+                  { "text": "On", "text_size": "small", "text_color_palette": "gray" }
+                ],
+                "disabled": [
+                  { "text": "Off", "text_size": "small", "text_color_palette": "gray" }
+                ]
+              }
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_472x27.png", "x": -41, "y": -3 },
-            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": -38, "use_template": "green_toggle" },
-            { "text": "Client Mode", "text_color_palette": "white" }
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Client Mode", "text_size": "small", "text_color_palette": "white" },
+            {
+              "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",
+              "x": 172,
+              "y": 4,
+              "toggle_template": {
+                "enabled": [
+                  { "text": "On", "text_size": "small", "text_color_palette": "white" }
+                ],
+                "disabled": [
+                  { "text": "Off", "text_size": "small", "text_color_palette": "white" }
+                ]
+              }
+            }
           ],
           "target": "inline_toggle",
           "variable": "$_WIFI_CLIENT_MODE_ENABLED"
@@ -82,13 +131,13 @@
         {
           "id": "Client Setup",
           "x": 45,
-          "y": 175,
+          "y": 138,
           "layers": [
-            { "text": "Client Setup", "text_color_palette": "blue" }
+            { "text": "Client Setup...", "text_size": "small", "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_436x27.png", "x": -6, "y": -3 },
-            { "text": "Client Setup", "text_color_palette": "white" }
+            { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
+            { "text": "Client Setup...", "text_size": "small", "text_color_palette": "white" }
           ],
           "target": "client_mode_wizard"
         }

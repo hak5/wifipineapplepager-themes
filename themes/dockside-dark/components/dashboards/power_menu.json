@@ -1,6 +1,6 @@
 {
   "screen_name": "power_menu",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",
@@ -21,17 +21,17 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Settings",
+          "id": "Sleep Screen",
+          "layers": [
+            { "text": "Sleep Screen", "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "target": "function_sleep_screen",
           "x": 45,
           "y": 32,
-          "layers": [
-            { "text": "Settings", "text_size": "small", "text_color_palette": "blue" }
-          ],
           "selected_layers": [
             { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
-            { "text": "Settings", "text_size": "small", "text_color_palette": "white" }
+            { "text": "Sleep Screen", "text_size": "small", "text_color_palette": "white" }
           ],
-          "target": "quick_settings",
           "button_map": {
             "a": "select",
             "b": "back",
