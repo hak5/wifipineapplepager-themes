@@ -3,7 +3,7 @@
   "graph_width": 78,
   "bar_w": 3,
   "bar_gap": 2,
-  "x_start": 25,
+  "x_start": 24,
   "y_top": 58,
   "y_bottom": 176,
   "y_label_x": 428,
@@ -11,7 +11,7 @@
   "y_half_label_x": 428,
   "y_half_label_y": 110,
   "title_x": 20,
-  "title_y": 45,
+  "title_y": 28,
   "bar_color_palette": "graph",
   "text_color_palette": "gray",
   "debug_graph_bounds": false,
@@ -20,5 +20,8 @@
   "use_nice_labels": true,
   "target_recon_list": "recon_list",
   "status_bar": "recon",
-  "bt_status_bar": "bt_recon"
+  "bt_status_bar": "bt_recon",
+  "subtitle_y": 52,
+  "time_label_x": 20,
+  "time_label_y": 194
 }
