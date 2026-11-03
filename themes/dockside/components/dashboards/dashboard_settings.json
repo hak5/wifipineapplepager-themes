@@ -129,14 +129,14 @@
             { "image_path": "assets/sys/card_308x5x30.png", "x": 162, "y": 50 },
             { "text": "Virtual Pager", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
             { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "x": 432, "y": 55, "use_template": "toggle" },
-            { "text": "Root Password", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
-            { "text": "SSH", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_SSH_ENABLED", "x": 432, "y": 115, "use_template": "toggle" },
-            { "text": "PIN Code", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_PIN_ENABLED", "x": 432, "y": 145, "use_template": "toggle" },
-            { "text": "PIN Setup", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "medium_gray" }
+            { "text": "Client Access", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "x": 432, "y": 85, "use_template": "toggle" },
+            { "text": "Root Password", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
+            { "text": "SSH", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_SSH_ENABLED", "x": 432, "y": 145, "use_template": "toggle" },
+            { "text": "PIN Code", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PIN_ENABLED", "x": 432, "y": 175, "use_template": "toggle" }
           ]
         }
       ]
@@ -189,16 +189,25 @@
             { "image_path": "assets/ui/sel_140x24.png", "x": 5, "y": 85 },
             { "image_path": "assets/sys/cat_gps.png", "x": 10, "y": 88 },
             { "text": "GPS", "text_size": "small", "text_color_palette": "white", "x": 34, "y": 91 },
-            { "image_path": "assets/sys/card_308x4x30.png", "x": 162, "y": 50 },
-            { "text": "Lat:", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "...", "x": 210, "y": 60, "text_size": "small", "text_color_palette": "blue" },
-            { "text": "Lon:", "x": 322, "y": 60, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "...", "x": 356, "y": 60, "text_size": "small", "text_color_palette": "blue" },
-            { "text": "Serial Device", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" },
-            { "text": "Baud Rate", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" },
-            { "text": "Restart GPSd", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "accent" }
+            { "image_path": "assets/sys/card_308x6x25.png", "x": 162, "y": 50 },
+            { "text": "Status", "x": 176, "y": 58, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 58, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Lat:", "x": 176, "y": 83, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 217, "y": 83, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Lon:", "x": 322, "y": 83, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 363, "y": 83, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Connected:", "x": 176, "y": 108, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 272, "y": 108, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Type:", "x": 322, "y": 108, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 372, "y": 108, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Satellites:", "x": 176, "y": 133, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 281, "y": 133, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Quality:", "x": 322, "y": 133, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "...", "x": 400, "y": 133, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "Advanced Settings", "x": 176, "y": 158, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 158, "recolor_palette": "medium_gray" },
+            { "text": "Precision", "x": 176, "y": 183, "text_size": "small", "text_color_palette": "blue" },
+            { "text": "...", "x": 322, "y": 183, "text_size": "small", "text_color_palette": "gray" }
           ]
         },
         {

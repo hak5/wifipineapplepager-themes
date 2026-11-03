@@ -63,7 +63,8 @@
                 "max_lines": 1
               }
             }
-          ]
+          ],
+          "unselectable": true
         },
         {
           "id": "24 Hour Clock",

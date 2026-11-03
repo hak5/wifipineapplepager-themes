@@ -64,13 +64,13 @@
       "y": 5,
       "layers": {
         "15": [
-          { "image_path": "assets/statusbar/dashboard_brightness_2.png" }
+          { "image_path": "assets/statusbar/dashboard_brightness_2.png", "x": 4 }
         ],
         "25": [
-          { "image_path": "assets/statusbar/dashboard_brightness_3.png" }
+          { "image_path": "assets/statusbar/dashboard_brightness_3.png", "x": 4 }
         ],
         "50": [
-          { "image_path": "assets/statusbar/dashboard_brightness_5.png" }
+          { "image_path": "assets/statusbar/dashboard_brightness_5.png", "x": 4 }
         ],
         "75": [
           { "image_path": "assets/statusbar/dashboard_brightness_7.png" }

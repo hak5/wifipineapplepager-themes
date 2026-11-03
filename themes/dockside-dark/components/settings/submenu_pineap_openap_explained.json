@@ -1,0 +1,93 @@
+{
+  "screen_name": "pineap_openap_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Open AP Help", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/card_256x4x30.png", "x": 10, "y": 36 },
+      { "image_path": "assets/sys/card_196x1x168.png", "x": 276, "y": 38 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Open AP",
+          "target": "inline_toggle",
+          "variable": "$_OPEN_AP_ENABLED",
+          "layers": [
+            { "text": "Open AP", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "Open AP", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Broadcasts an", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "open (no-", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "password) AP", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "for clients to", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "join.", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Hidden",
+          "target": "inline_toggle",
+          "variable": "$_OPEN_AP_HIDDEN",
+          "layers": [
+            { "text": "Hidden", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Hidden", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Hides the SSID,", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "so the network", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "name is not", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "beaconed.", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Network Name",
+          "target": "edit_string_dialog",
+          "variable": "$_OPEN_AP_SSID",
+          "layers": [
+            { "text": "Network Name", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "Network Name", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "text": "The SSID name", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "the open AP", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "broadcasts.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "BSSID",
+          "target": "edit_mac_dialog",
+          "variable": "$_OPEN_AP_BSSID",
+          "layers": [
+            { "text": "BSSID Override", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
+            { "text": "BSSID Override", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Overrides the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "AP's MAC/BSSID", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "address. Blank", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "= hardware MAC.", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    }
+  ]
+}

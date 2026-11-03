@@ -47,7 +47,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "white" }
           ],
           "target": "pineap_ssid_pool_list",
-          "variable": "$_PINEAP_SSID_POOL_LIST"
+          "variable": "$_PINEAP_SSID_POOL_LIST",
+          "button_map": {
+            "right": "target pineap_ssidpool_submenu_explained SSID Pool"
+          }
         },
         {
           "id": "Add Network",
@@ -61,7 +64,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "white" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_PINEAP_SSID_POOL_ADD"
+          "variable": "$_PINEAP_SSID_POOL_ADD",
+          "button_map": {
+            "right": "target pineap_ssidpool_submenu_explained Add Network"
+          }
         },
         {
           "id": "Clear Pool",
@@ -72,7 +78,10 @@
             { "image_path": "assets/ui/sel_304x28.png", "x": 164, "y": 113 },
             { "text": "Clear Networks", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" }
           ],
-          "target": "function_clear_pineap_ssid_pool_list"
+          "target": "function_clear_pineap_ssid_pool_list",
+          "button_map": {
+            "right": "target pineap_ssidpool_submenu_explained Clear Pool"
+          }
         }
       ]
     }

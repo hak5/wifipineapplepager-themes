@@ -47,7 +47,10 @@
             { "variable_name": "$_OPEN_AP_ENABLED", "x": 432, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_OPEN_AP_ENABLED"
+          "variable": "$_OPEN_AP_ENABLED",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Open AP"
+          }
         },
         {
           "id": "Hidden",
@@ -61,7 +64,10 @@
             { "variable_name": "$_OPEN_AP_HIDDEN", "x": 432, "y": 85, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_OPEN_AP_HIDDEN"
+          "variable": "$_OPEN_AP_HIDDEN",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Hidden"
+          }
         },
         {
           "id": "Network Name",
@@ -75,7 +81,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "white" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_OPEN_AP_SSID"
+          "variable": "$_OPEN_AP_SSID",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Network Name"
+          }
         },
         {
           "id": "BSSID",
@@ -89,7 +98,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "white" }
           ],
           "target": "edit_mac_dialog",
-          "variable": "$_OPEN_AP_BSSID"
+          "variable": "$_OPEN_AP_BSSID",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained BSSID"
+          }
         }
       ]
     }

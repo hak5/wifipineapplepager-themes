@@ -1,0 +1,60 @@
+{
+  "screen_name": "recon_new_scan_submenu",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 28, "y": 0 },
+      { "image_path": "assets/sys/card_396x3x30.png", "x": 44, "y": 32 },
+      { "text": "Start New Scan", "x": 96, "y": 6, "text_size": "small", "text_color_palette": "blue" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Both",
+          "layers": [
+            { "text": "Both", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "accent" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 35 },
+            { "text": "Both", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_recon_new_scan_all"
+        },
+        {
+          "id": "WiFi",
+          "layers": [
+            { "text": "WiFi", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "accent" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 65 },
+            { "text": "WiFi", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_recon_new_scan_wifi"
+        },
+        {
+          "id": "Bluetooth",
+          "layers": [
+            { "text": "Bluetooth", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "accent" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 95 },
+            { "text": "Bluetooth", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" }
+          ],
+          "target": "function_recon_new_scan_bt"
+        }
+      ]
+    }
+  ]
+}

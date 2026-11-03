@@ -15,7 +15,7 @@
     "layers": [
       { "image_path": "assets/sys/base.png", "x": 0, "y": 0 },
       { "image_path": "assets/sys/sidebar_hl.png", "x": 5, "y": 85 },
-      { "image_path": "assets/sys/card_308x4x30.png", "x": 162, "y": 50 },
+      { "image_path": "assets/sys/card_308x6x25.png", "x": 162, "y": 50 },
       { "text": "GPS", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
       { "image_path": "assets/sys/cat_clock.png", "x": 10, "y": 62 },
       { "text": "Clock", "text_size": "small", "text_color_palette": "blue", "x": 34, "y": 65 },
@@ -34,13 +34,48 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Port_2",
+          "id": "Status",
           "layers": [
-            { "text": "Lat:", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Status", "x": 176, "y": 58, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_GPS_READINESS",
+              "x": 322,
+              "y": 58,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 17,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_304x23.png", "x": 164, "y": 53 },
+            { "text": "Status", "x": 176, "y": 58, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_GPS_READINESS",
+              "x": 322,
+              "y": 58,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 17,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
+        },
+        {
+          "id": "LatLon",
+          "layers": [
+            { "text": "Lat:", "x": 176, "y": 83, "text_size": "small", "text_color_palette": "gray" },
             {
               "variable_name": "$_GPS_LAT",
-              "x": 210,
-              "y": 60,
+              "x": 217,
+              "y": 83,
               "string_template": {
                 "text_size": "small",
                 "text_color_palette": "blue",
@@ -49,11 +84,11 @@
                 "max_lines": 1
               }
             },
-            { "text": "Lon:", "x": 322, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Lon:", "x": 322, "y": 83, "text_size": "small", "text_color_palette": "gray" },
             {
               "variable_name": "$_GPS_LON",
-              "x": 356,
-              "y": 60,
+              "x": 363,
+              "y": 83,
               "string_template": {
                 "text_size": "small",
                 "text_color_palette": "blue",
@@ -64,12 +99,12 @@
             }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/selsoft_304x28.png", "x": 164, "y": 53 },
-            { "text": "Lat:", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "image_path": "assets/ui/selsoft_304x23.png", "x": 164, "y": 78 },
+            { "text": "Lat:", "x": 176, "y": 83, "text_size": "small", "text_color_palette": "gray" },
             {
               "variable_name": "$_GPS_LAT",
-              "x": 210,
-              "y": 60,
+              "x": 217,
+              "y": 83,
               "string_template": {
                 "text_size": "small",
                 "text_color_palette": "blue",
@@ -78,11 +113,11 @@
                 "max_lines": 1
               }
             },
-            { "text": "Lon:", "x": 322, "y": 60, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Lon:", "x": 322, "y": 83, "text_size": "small", "text_color_palette": "gray" },
             {
               "variable_name": "$_GPS_LON",
-              "x": 356,
-              "y": 60,
+              "x": 363,
+              "y": 83,
               "string_template": {
                 "text_size": "small",
                 "text_color_palette": "blue",
@@ -91,46 +126,178 @@
                 "max_lines": 1
               }
             }
-          ]
+          ],
+          "unselectable": true
         },
         {
-          "id": "Port",
+          "id": "ConnType",
           "layers": [
-            { "text": "Serial Device", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "medium_gray" }
+            { "text": "Connected:", "x": 176, "y": 108, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_CONNECTED",
+              "x": 272,
+              "y": 108,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 5,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Type:", "x": 322, "y": 108, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_PROTOCOL",
+              "x": 372,
+              "y": 108,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 11,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_304x28.png", "x": 164, "y": 83 },
-            { "text": "Serial Device", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "white" }
+            { "image_path": "assets/ui/selsoft_304x23.png", "x": 164, "y": 103 },
+            { "text": "Connected:", "x": 176, "y": 108, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_CONNECTED",
+              "x": 272,
+              "y": 108,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 5,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Type:", "x": 322, "y": 108, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_PROTOCOL",
+              "x": 372,
+              "y": 108,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 11,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
           ],
-          "target": "option_dialog",
-          "variable": "$_GPS_DEVICE"
+          "unselectable": true
         },
         {
-          "id": "Baud Rate",
+          "id": "SatsQual",
           "layers": [
-            { "text": "Baud Rate", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "medium_gray" }
+            { "text": "Satellites:", "x": 176, "y": 133, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_SATS_TRACKED",
+              "x": 281,
+              "y": 133,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 4,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Quality:", "x": 322, "y": 133, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_SIGNAL_QUALITY",
+              "x": 400,
+              "y": 133,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 7,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_304x28.png", "x": 164, "y": 113 },
-            { "text": "Baud Rate", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
-            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "white" }
+            { "image_path": "assets/ui/selsoft_304x23.png", "x": 164, "y": 128 },
+            { "text": "Satellites:", "x": 176, "y": 133, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_SATS_TRACKED",
+              "x": 281,
+              "y": 133,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 4,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "text": "Quality:", "x": 322, "y": 133, "text_size": "small", "text_color_palette": "gray" },
+            {
+              "variable_name": "$_GPS_SIGNAL_QUALITY",
+              "x": 400,
+              "y": 133,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "blue",
+                "max_chars": 7,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
           ],
-          "target": "option_dialog",
-          "variable": "$_GPS_BAUD"
+          "unselectable": true
         },
         {
-          "id": "restart",
+          "id": "advanced",
           "layers": [
-            { "text": "Restart GPSd", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "accent" }
+            { "text": "Advanced Settings", "x": 176, "y": 158, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 158, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_304x28.png", "x": 164, "y": 143 },
-            { "text": "Restart GPSd", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" }
+            { "image_path": "assets/ui/sel_304x23.png", "x": 164, "y": 153 },
+            { "text": "Advanced Settings", "x": 176, "y": 158, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 454, "y": 158, "recolor_palette": "white" }
           ],
-          "target": "function_restart_gpsd"
+          "target": "settings_gps_advanced"
+        },
+        {
+          "id": "SatsQual_copy",
+          "layers": [
+            { "text": "Precision", "x": 176, "y": 183, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_GPS_ACCURACY",
+              "x": 322,
+              "y": 183,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 17,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/selsoft_304x23.png", "x": 164, "y": 178 },
+            { "text": "Precision", "x": 176, "y": 183, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_GPS_ACCURACY",
+              "x": 322,
+              "y": 183,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 17,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ],
+          "unselectable": true
         }
       ]
     }

@@ -1,0 +1,157 @@
+{
+  "screen_name": "settings_bluetooth_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Bluetooth Help", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/card_256x5x30.png", "x": 10, "y": 36 },
+      { "image_path": "assets/sys/card_196x1x168.png", "x": 276, "y": 38 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Scan Mode",
+          "target": "option_dialog_narrow",
+          "variable": "$_BT_SCAN_MODE",
+          "layers": [
+            { "text": "Scan Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "Scan Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Radios scanned", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "BT + BLE both", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "BT only Classic", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "LE only BLE", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Classic can", "x": 290, "y": 140, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "impact 2.4 Wi-Fi", "x": 290, "y": 155, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Active Scan",
+          "target": "inline_toggle",
+          "variable": "$_BT_ACTIVE_SCAN",
+          "layers": [
+            { "text": "Active Scan", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Active Scan", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Asks BLE devices", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "for a scan", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "response: more", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "names, but the", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Pager transmits.", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Name Lookup",
+          "target": "inline_toggle",
+          "variable": "$_BT_NAME_LOOKUP",
+          "layers": [
+            { "text": "Name Lookup", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "Name Lookup", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Get BT names", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "On pages for names", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Off no paging", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Paging can", "x": 290, "y": 125, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "impact 2.4 Wi-Fi", "x": 290, "y": 140, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Classic Sweep",
+          "target": "option_dialog_narrow",
+          "variable": "$_BT_CLASSIC_SWEEP",
+          "layers": [
+            { "text": "Classic Sweep", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
+            { "text": "Classic Sweep", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Round / pause", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Mobile 2.5/5s", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Light 2.5/20s", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Balanced 2.5/8s", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Aggressive 10/6s", "x": 290, "y": 125, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Heavy sweeps can", "x": 290, "y": 155, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "impact 2.4 Wi-Fi", "x": 290, "y": 170, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Scan Coded PHY",
+          "target": "inline_toggle",
+          "variable": "$_BT_CODED_PHY",
+          "layers": [
+            { "text": "Scan Coded PHY", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
+            { "text": "Scan Coded PHY", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "text": "LE Coded PHY", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "On long-range LE", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Off 1M only", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "No extra range,", "x": 290, "y": 125, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "splits scan time", "x": 290, "y": 140, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Save to DB",
+          "target": "inline_toggle",
+          "variable": "$_BT_PERSIST_DB",
+          "layers": [
+            { "text": "Save to DB", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "Save to DB", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Logs Bluetooth", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "devices to", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "/root/recon/", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "blue5.db, like", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Save to Recon", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "DB for Wi-Fi.", "x": 290, "y": 125, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Ignore Random",
+          "target": "inline_toggle",
+          "variable": "$_BT_DISCARD_RANDOM",
+          "layers": [
+            { "text": "Ignore Random", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Ignore Random", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Ignores BLE", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "devices with a", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "random address", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "(privacy). They", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "rotate it often.", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    }
+  ]
+}

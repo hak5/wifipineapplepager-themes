@@ -1,8 +1,9 @@
 # Dockside Dark
 
 - Author: Jenx
-- Version: 0.1.0
-- Theme framework: 0.7 (built from the stock `wargames` theme)
+- Version: 0.3.0
+- Firmware: 2.0.0
+- Theme framework: 0.9 (built from the stock `wargames` theme)
 
 ## Description
 
@@ -32,7 +33,10 @@ graphite windows with light text and a bright blue accent.
 - **Pager Portal:** styled like an app store, with Discover tiles, section rows, GET/UPDATE pills
   and payload pages. Its icon shows the Pager itself, drawn like Hak5's Pager character.
 - **Recon:** an activity-monitor style graph, results and clients as tables with column headers,
-  and access point / client details with an info grid beside an actions card.
+  and access point / client details with an info grid beside an actions card. Bluetooth devices
+  get the same table and detail windows, and the new-scan chooser is a small window.
+- **Help:** pressing right on a settings row opens a help window, with the rows beside an info
+  card describing the highlighted one.
 - **Everything else:** the power menu drops down from the pineapple, the payload log is a
   Terminal window, confirmations and option/edit dialogs are sheets, alerts slide in as
   notification cards, setup has a sidebar of steps, the lock screen is a login window,

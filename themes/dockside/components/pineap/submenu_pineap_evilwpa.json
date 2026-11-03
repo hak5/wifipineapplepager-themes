@@ -47,7 +47,10 @@
             { "variable_name": "$_EVIL_WPA_ENABLED", "x": 432, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_EVIL_WPA_ENABLED"
+          "variable": "$_EVIL_WPA_ENABLED",
+          "button_map": {
+            "right": "target pineap_evilwpa_submenu_explained Evil WPA AP"
+          }
         },
         {
           "id": "Hidden",
@@ -61,7 +64,10 @@
             { "variable_name": "$_EVIL_WPA_HIDDEN", "x": 432, "y": 85, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_EVIL_WPA_HIDDEN"
+          "variable": "$_EVIL_WPA_HIDDEN",
+          "button_map": {
+            "right": "target pineap_evilwpa_submenu_explained Hidden"
+          }
         },
         {
           "id": "Setup wizard",
@@ -74,7 +80,10 @@
             { "text": "Configuration", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "white" }
           ],
-          "target": "evilwpa_wizard"
+          "target": "evilwpa_wizard",
+          "button_map": {
+            "right": "target pineap_evilwpa_submenu_explained Setup wizard"
+          }
         }
       ]
     }

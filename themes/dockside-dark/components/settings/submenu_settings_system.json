@@ -45,63 +45,78 @@
             { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_VIRTUAL_PAGER_ENABLED"
+          "variable": "$_VIRTUAL_PAGER_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Virtual Pager"
+          }
+        },
+        {
+          "id": "Client Access",
+          "layers": [
+            { "text": "Client Access", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "Client Access", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLIENT_ACCESS_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Client Access"
+          }
         },
         {
           "id": "Root Password",
           "layers": [
-            { "text": "Root Password", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "medium_gray" }
+            { "text": "Root Password", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
-            { "text": "Root Password", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
-            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "Root Password", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "white" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_SYSTEM_PASSWORD"
+          "variable": "$_SYSTEM_PASSWORD",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Root Password"
+          }
         },
         {
           "id": "SSH",
           "layers": [
-            { "text": "SSH", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_SSH_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
+            { "text": "SSH", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_SSH_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
-            { "text": "SSH", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" },
-            { "variable_name": "$_SSH_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
+            { "text": "SSH", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_SSH_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_SSH_ENABLED"
+          "variable": "$_SSH_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained SSH"
+          }
         },
         {
           "id": "PIN Code",
           "layers": [
-            { "text": "PIN Code", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_PIN_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 143 },
-            { "text": "PIN Code", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
-            { "variable_name": "$_PIN_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
-          ],
-          "target": "inline_toggle",
-          "variable": "$_PIN_ENABLED"
-        },
-        {
-          "id": "PIN Setup",
-          "layers": [
-            { "text": "PIN Setup", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
-            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "medium_gray" }
+            { "text": "PIN Code", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PIN_ENABLED", "x": 414, "y": 175, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 173 },
-            { "text": "PIN Setup", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
-            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
+            { "text": "PIN Code", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PIN_ENABLED", "x": 414, "y": 175, "use_template": "toggle" }
           ],
-          "target": "edit_number_dialog",
-          "variable": "$_SYSTEM_PIN"
+          "target": "inline_toggle",
+          "variable": "$_PIN_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained PIN Code"
+          }
         },
         {
           "id": "scrollbar_0",
@@ -119,29 +134,52 @@
       "page_index": 1,
       "menu_items": [
         {
-          "id": "Network Time (NTP)",
+          "id": "PIN Setup",
           "layers": [
-            { "text": "Network Time (NTP)", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_NTP_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+            { "text": "PIN Setup", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 61, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 53 },
-            { "text": "Network Time (NTP)", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "white" },
-            { "variable_name": "$_NTP_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
+            { "text": "PIN Setup", "x": 176, "y": 60, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 61, "recolor_palette": "white" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN",
+          "button_map": {
+            "right": "target settings_system_submenu_explained PIN Setup"
+          }
+        },
+        {
+          "id": "Network Time (NTP)",
+          "layers": [
+            { "text": "Network Time (NTP)", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_NTP_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
+            { "text": "Network Time (NTP)", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_NTP_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_NTP_ENABLED"
+          "variable": "$_NTP_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Network Time (NTP)"
+          }
         },
         {
           "id": "Factory Reset",
           "layers": [
-            { "text": "Factory Reset", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "red" }
+            { "text": "Factory Reset", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 83 },
-            { "text": "Factory Reset", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" }
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 113 },
+            { "text": "Factory Reset", "x": 176, "y": 120, "text_size": "small", "text_color_palette": "white" }
           ],
-          "target": "function_factory_reset"
+          "target": "function_factory_reset",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Factory Reset"
+          }
         },
         {
           "id": "scrollbar_1",

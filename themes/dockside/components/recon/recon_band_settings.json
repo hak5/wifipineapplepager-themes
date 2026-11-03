@@ -13,7 +13,7 @@
   "background": {
     "layers": [
       { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 28, "y": 0 },
-      { "image_path": "assets/sys/card_396x3x30.png", "x": 44, "y": 32 },
+      { "image_path": "assets/sys/card_396x5x30.png", "x": 44, "y": 32 },
       { "text": "Radio Bands", "x": 96, "y": 6, "text_size": "small", "text_color_palette": "blue" }
     ]
   },
@@ -62,6 +62,33 @@
           ],
           "target": "inline_toggle",
           "variable": "$_2.4Ghz_ENABLED"
+        },
+        {
+          "id": "Bluetooth",
+          "layers": [
+            { "text": "Bluetooth", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_BLUETOOTH_ENABLED", "x": 402, "y": 127, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 125 },
+            { "text": "Bluetooth", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_BLUETOOTH_ENABLED", "x": 402, "y": 127, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BLUETOOTH_ENABLED"
+        },
+        {
+          "id": "Bluetooth Settings",
+          "layers": [
+            { "text": "BT Settings", "x": 58, "y": 162, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 163, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_392x28.png", "x": 46, "y": 155 },
+            { "text": "BT Settings", "x": 58, "y": 162, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 424, "y": 163, "recolor_palette": "white" }
+          ],
+          "target": "settings_bluetooth_submenu_explained"
         }
       ]
     }

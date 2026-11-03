@@ -47,7 +47,10 @@
             { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "x": 414, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_PINEAP_IMPERSONATE_NETWORKS"
+          "variable": "$_PINEAP_IMPERSONATE_NETWORKS",
+          "button_map": {
+            "right": "target pineap_pineap_submenu_explained Mimic Open Networks"
+          }
         },
         {
           "id": "Collect Probes",
@@ -61,7 +64,10 @@
             { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "x": 414, "y": 85, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_PINEAP_COLLECT_NETWORKS"
+          "variable": "$_PINEAP_COLLECT_NETWORKS",
+          "button_map": {
+            "right": "target pineap_pineap_submenu_explained Collect Probes"
+          }
         },
         {
           "id": "Advertise Networks",
@@ -75,7 +81,10 @@
             { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "x": 414, "y": 115, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_PINEAP_ADVERTISE_NETWORKS"
+          "variable": "$_PINEAP_ADVERTISE_NETWORKS",
+          "button_map": {
+            "right": "target pineap_pineap_submenu_explained Advertise Networks"
+          }
         },
         {
           "id": "Randomize Address",
@@ -89,7 +98,10 @@
             { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "x": 414, "y": 145, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_PINEAP_RANDOMIZE_MAC_ADDRESS"
+          "variable": "$_PINEAP_RANDOMIZE_MAC_ADDRESS",
+          "button_map": {
+            "right": "target pineap_pineap_submenu_explained Randomize Address"
+          }
         },
         {
           "id": "Collect Handshakes",
@@ -103,7 +115,10 @@
             { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "x": 414, "y": 175, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_PINEAP_COLLECT_HANDSHAKES"
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES",
+          "button_map": {
+            "right": "target pineap_pineap_submenu_explained Collect Handshakes"
+          }
         },
         {
           "id": "scrollbar_0",
@@ -132,7 +147,10 @@
             { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_WIGLE_MODE_ENABLED"
+          "variable": "$_WIGLE_MODE_ENABLED",
+          "button_map": {
+            "right": "target pineap_pineap_submenu_explained Wigle Mode"
+          }
         },
         {
           "id": "scrollbar_1",

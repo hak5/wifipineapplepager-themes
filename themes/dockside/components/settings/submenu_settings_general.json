@@ -45,7 +45,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "white" }
           ],
           "target": "option_dialog_narrow",
-          "variable": "$_VOLUME"
+          "variable": "$_VOLUME",
+          "button_map": {
+            "right": "target settings_general_submenu_explained Volume"
+          }
         },
         {
           "id": "Vibrate",
@@ -59,7 +62,10 @@
             { "variable_name": "$_VIBRATE", "x": 432, "y": 85, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_VIBRATE"
+          "variable": "$_VIBRATE",
+          "button_map": {
+            "right": "target settings_general_submenu_explained Vibrate"
+          }
         },
         {
           "id": "Vibrate w/ Ringtone",
@@ -73,7 +79,10 @@
             { "variable_name": "$_RINGTONE_VIBRATE", "x": 432, "y": 115, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_RINGTONE_VIBRATE"
+          "variable": "$_RINGTONE_VIBRATE",
+          "button_map": {
+            "right": "target settings_general_submenu_explained Vibrate w/ Ringtone"
+          }
         },
         {
           "id": "Theme",
@@ -87,7 +96,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_THEME"
+          "variable": "$_THEME",
+          "button_map": {
+            "right": "target settings_general_submenu_explained Theme"
+          }
         },
         {
           "id": "DPADLED",
@@ -101,7 +113,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 181, "recolor_palette": "white" }
           ],
           "target": "option_dialog_narrow",
-          "variable": "$_DPAD_LED_COLOR"
+          "variable": "$_DPAD_LED_COLOR",
+          "button_map": {
+            "right": "target settings_general_submenu_explained DPADLED"
+          }
         }
       ]
     }

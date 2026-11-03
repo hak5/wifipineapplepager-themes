@@ -21,17 +21,17 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
+          "id": "Settings",
           "x": 45,
           "y": 32,
           "layers": [
-            { "text": "Sleep Screen", "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Settings", "text_size": "small", "text_color_palette": "blue" }
           ],
           "selected_layers": [
             { "image_path": "assets/dock/menu_highlight.png", "x": -19, "y": -2 },
-            { "text": "Sleep Screen", "text_size": "small", "text_color_palette": "white" }
+            { "text": "Settings", "text_size": "small", "text_color_palette": "white" }
           ],
-          "target": "function_sleep_screen",
+          "target": "quick_settings",
           "button_map": {
             "a": "select",
             "b": "back",
