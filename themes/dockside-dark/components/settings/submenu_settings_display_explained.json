@@ -28,11 +28,13 @@
           "target": "option_dialog_narrow",
           "variable": "$_BRIGHTNESS",
           "layers": [
-            { "text": "Brightness", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Brightness", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Brightness", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
             { "text": "Screen", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "brightness while", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "active.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -43,11 +45,13 @@
           "target": "option_dialog",
           "variable": "$_SCREEN_OFF_TIMEOUT",
           "layers": [
-            { "text": "Screen Timeout", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Screen Timeout", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Screen Timeout", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "white" },
             { "text": "Idle time before", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "the screen", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "sleeps.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -58,11 +62,13 @@
           "target": "option_dialog_narrow",
           "variable": "$_DIM_BRIGHTNESS",
           "layers": [
-            { "text": "Dim Brightness", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Dim Brightness", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
             { "text": "Dim Brightness", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "white" },
             { "text": "Brightness level", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "once the screen", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "dims.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -73,11 +79,13 @@
           "target": "option_dialog",
           "variable": "$_SCREEN_DIM_TIMEOUT",
           "layers": [
-            { "text": "Dim Timeout", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Dim Timeout", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
             { "text": "Dim Timeout", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "white" },
             { "text": "Idle time before", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "the screen dims.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
           ]

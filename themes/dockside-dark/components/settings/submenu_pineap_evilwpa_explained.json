@@ -28,11 +28,13 @@
           "target": "inline_toggle",
           "variable": "$_EVIL_WPA_ENABLED",
           "layers": [
-            { "text": "Evil WPA AP", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Evil WPA AP", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_EVIL_WPA_ENABLED", "x": 224, "y": 41, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Evil WPA AP", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_EVIL_WPA_ENABLED", "x": 224, "y": 41, "use_template": "toggle" },
             { "text": "A WPA-protected", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "rogue AP that", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "mimics a secured", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -46,11 +48,13 @@
           "target": "inline_toggle",
           "variable": "$_EVIL_WPA_HIDDEN",
           "layers": [
-            { "text": "Hidden", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Hidden", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_EVIL_WPA_HIDDEN", "x": 224, "y": 71, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Hidden", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_EVIL_WPA_HIDDEN", "x": 224, "y": 71, "use_template": "toggle" },
             { "text": "Hides the SSID,", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "so the name is", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "not beaconed.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -60,11 +64,13 @@
           "id": "Setup wizard",
           "target": "evilwpa_wizard",
           "layers": [
-            { "text": "Configuration", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Configuration", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
             { "text": "Configuration", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "white" },
             { "text": "Set the SSID and", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "password for the", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "Evil WPA AP.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }

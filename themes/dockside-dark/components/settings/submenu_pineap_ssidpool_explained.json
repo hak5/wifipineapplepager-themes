@@ -28,11 +28,13 @@
           "target": "pineap_ssid_pool_list",
           "variable": "$_PINEAP_SSID_POOL_LIST",
           "layers": [
-            { "text": "SSID Pool", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "SSID Pool", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "SSID Pool", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
             { "text": "Network names", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "PineAP can", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "impersonate or", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -44,11 +46,13 @@
           "target": "edit_string_dialog",
           "variable": "$_PINEAP_SSID_POOL_ADD",
           "layers": [
-            { "text": "Add Network", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Add Network", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Add Network", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "white" },
             { "text": "Type an SSID to", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "add to the", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "pool.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -58,7 +62,7 @@
           "id": "Clear Pool",
           "target": "function_clear_pineap_ssid_pool_list",
           "layers": [
-            { "text": "Clear Networks", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Clear Networks", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "red" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },

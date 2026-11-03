@@ -28,11 +28,13 @@
           "target": "alerts_dialog_submenu",
           "variable": "$_ALERTS_AUTH_CAPTURED",
           "layers": [
-            { "text": "Evil AP Auth Captured", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Evil AP Auth Captured", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Evil AP Auth Captured", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
             { "text": "Payloads that are", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "automatically", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "executed when a", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -46,11 +48,13 @@
           "target": "alerts_dialog_submenu",
           "variable": "$_ALERTS_DEAUTH_FLOOD",
           "layers": [
-            { "text": "Deauth Flood Detected", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Deauth Flood Detected", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Deauth Flood Detected", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "white" },
             { "text": "Payloads that are", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "automatically", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "executed when a", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -64,11 +68,13 @@
           "target": "alerts_dialog_submenu",
           "variable": "$_ALERTS_NEW_CLIENT",
           "layers": [
-            { "text": "New Client Connected", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "New Client Connected", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
             { "text": "New Client Connected", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "white" },
             { "text": "Payloads that are", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "automatically", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "executed when a", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -82,11 +88,13 @@
           "target": "alerts_dialog_submenu",
           "variable": "$_ALERTS_HANDSHAKE_CAPTURE",
           "layers": [
-            { "text": "Handshake Captured", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Handshake Captured", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
             { "text": "Handshake Captured", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "white" },
             { "text": "Payloads that are", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "automatically", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "executed when a", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },

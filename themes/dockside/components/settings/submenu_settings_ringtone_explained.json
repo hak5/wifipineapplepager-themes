@@ -28,11 +28,13 @@
           "target": "option_dialog",
           "variable": "$_ALERT_RINGTONE",
           "layers": [
-            { "text": "Alert", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Alert", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Alert", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
             { "text": "Sound played for", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "alerts.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
           ]
@@ -42,11 +44,13 @@
           "target": "option_dialog",
           "variable": "$_BOOT_RINGTONE",
           "layers": [
-            { "text": "Boot", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Boot", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Boot", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "white" },
             { "text": "Sound played at", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "startup.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
           ]
@@ -56,11 +60,13 @@
           "target": "option_dialog",
           "variable": "$_BATTERY_LOW_RINGTONE",
           "layers": [
-            { "text": "Battery Low", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Battery Low", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
             { "text": "Battery Low", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "white" },
             { "text": "Sound when the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "battery runs", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "low.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -71,11 +77,13 @@
           "target": "option_dialog",
           "variable": "$_BATTERY_CRITICAL_RINGTONE",
           "layers": [
-            { "text": "Battery Critical", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Battery Critical", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
             { "text": "Battery Critical", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "white" },
             { "text": "Sound at", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "critical battery", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "level.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -86,11 +94,13 @@
           "target": "option_dialog",
           "variable": "$_POWER_CONNECTED_RINGTONE",
           "layers": [
-            { "text": "Power Connected", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Power Connected", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
             { "text": "Power Connected", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "white" },
             { "text": "Sound when the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "charger is", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "plugged in.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -106,11 +116,13 @@
           "target": "option_dialog",
           "variable": "$_POWER_DISCONNECTED_RINGTONE",
           "layers": [
-            { "text": "Power Disconnected", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Power Disconnected", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Power Disconnected", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
             { "text": "Sound when the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "charger is", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "unplugged.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -121,11 +133,13 @@
           "target": "option_dialog",
           "variable": "$_PAYLOAD_COMPLETE_RINGTONE",
           "layers": [
-            { "text": "Payload Complete", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Payload Complete", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Payload Complete", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "white" },
             { "text": "Sound when a", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "payload finishes", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "running.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
@@ -136,11 +150,13 @@
           "target": "option_dialog",
           "variable": "$_ERROR_RINGTONE",
           "layers": [
-            { "text": "Error", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Error", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "medium_gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
             { "text": "Error", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "white" },
             { "text": "Sound played on", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "an error.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
           ]

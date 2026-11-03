@@ -28,11 +28,13 @@
           "target": "inline_toggle",
           "variable": "$_PINEAP_IMPERSONATE_NETWORKS",
           "layers": [
-            { "text": "Mimic Open Networks", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Mimic Open Networks", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "x": 224, "y": 41, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Mimic Open Networks", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "x": 224, "y": 41, "use_template": "toggle" },
             { "text": "Answers probes", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "as the open", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "networks devices", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -46,11 +48,13 @@
           "target": "inline_toggle",
           "variable": "$_PINEAP_COLLECT_NETWORKS",
           "layers": [
-            { "text": "Collect Probes", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Collect Probes", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "x": 224, "y": 71, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
             { "text": "Collect Probes", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "x": 224, "y": 71, "use_template": "toggle" },
             { "text": "Auto-adds the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "names devices", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "probe for to the", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -62,11 +66,13 @@
           "target": "inline_toggle",
           "variable": "$_PINEAP_ADVERTISE_NETWORKS",
           "layers": [
-            { "text": "Advertise Networks", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Advertise Networks", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "x": 224, "y": 101, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
             { "text": "Advertise Networks", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "x": 224, "y": 101, "use_template": "toggle" },
             { "text": "Beacons the SSID", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "pool so those", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "names show up in", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -80,11 +86,13 @@
           "target": "inline_toggle",
           "variable": "$_PINEAP_RANDOMIZE_MAC_ADDRESS",
           "layers": [
-            { "text": "Randomize Address", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Randomize Address", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "x": 224, "y": 131, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
             { "text": "Randomize Address", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "x": 224, "y": 131, "use_template": "toggle" },
             { "text": "Uses a random", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "MAC for the AP,", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "so it's not tied", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -96,11 +104,13 @@
           "target": "inline_toggle",
           "variable": "$_PINEAP_COLLECT_HANDSHAKES",
           "layers": [
-            { "text": "Collect Handshakes", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Collect Handshakes", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "x": 224, "y": 161, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
             { "text": "Collect Handshakes", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "x": 224, "y": 161, "use_template": "toggle" },
             { "text": "Captures WPA", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "handshakes seen", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "nearby, saved", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
@@ -118,11 +128,13 @@
           "target": "inline_toggle",
           "variable": "$_WIGLE_MODE_ENABLED",
           "layers": [
-            { "text": "Wigle Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" }
+            { "text": "Wigle Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 224, "y": 41, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
             { "text": "Wigle Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 224, "y": 41, "use_template": "toggle" },
             { "text": "Logs devices", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
             { "text": "with GPS to", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
             { "text": "WiGLE CSV files", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
