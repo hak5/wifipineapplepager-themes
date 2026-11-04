@@ -1,6 +1,6 @@
 {
   "screen_name": "evilwpa_wizard",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
     "a": "select",

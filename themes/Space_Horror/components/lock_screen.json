@@ -1,6 +1,6 @@
 {
-  "screen_name": "lock",
-  "windowed_canvas": true,
+  "screen_name": "lock_screen",
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",

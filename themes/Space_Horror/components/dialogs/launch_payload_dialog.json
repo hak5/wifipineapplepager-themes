@@ -1,7 +1,7 @@
 {
   "screen_name": "launch_payload_dialog",
   "status_bar": "default",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
     "a": "select",

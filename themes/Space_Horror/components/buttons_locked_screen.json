@@ -1,6 +1,6 @@
 {
   "screen_name": "front_buttons_locked",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",

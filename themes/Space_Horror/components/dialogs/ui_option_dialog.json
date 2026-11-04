@@ -1,7 +1,7 @@
 {
   "template": {
     "screen_name": "option_picker",
-    "windowed_canvas": true,
+    "windowed_canvas": false,
     "cache_canvases": true,
     "background": {
       "layers": [

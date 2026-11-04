@@ -14,8 +14,8 @@
   "background": {
     "layers": [
       { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
-      { "text": "Settings", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "gray" },
-      { "text": "Ringtone", "x": 10, "y": 18, "text_color_palette": "blue" },
+      { "text": "Settings", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "yellow" },
+      { "text": "Ringtone", "x": 10, "y": 18, "text_color_palette": "yellow" },
       { "image_path": "assets/divright.png", "x": 312, "y": 56 }
     ]
   },
@@ -34,8 +34,8 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Alert", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound played for", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "alerts.", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound played for", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "alerts.", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_ALERT_RINGTONE"
@@ -51,8 +51,8 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Boot", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound played at", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "startup.", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound played at", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "startup.", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_BOOT_RINGTONE"
@@ -68,9 +68,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Battery Low", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound when the", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "battery runs", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "low.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound when the", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "battery runs", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "low.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_BATTERY_LOW_RINGTONE"
@@ -86,9 +86,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Battery Critical", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound at", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "critical battery", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "level.", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound at", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "critical battery", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "level.", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_BATTERY_CRITICAL_RINGTONE"
@@ -106,9 +106,9 @@
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" },
             { "text": "Power Connected", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound when the", "x": 310, "y": -128, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "charger is", "x": 310, "y": -110, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "plugged in.", "x": 310, "y": -92, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound when the", "x": 310, "y": -128, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "charger is", "x": 310, "y": -110, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "plugged in.", "x": 310, "y": -92, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_POWER_CONNECTED_RINGTONE"
@@ -131,9 +131,9 @@
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" },
             { "text": "Power Disconnected", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound when the", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "charger is", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "unplugged.", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound when the", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "charger is", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "unplugged.", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_POWER_DISCONNECTED_RINGTONE"
@@ -149,9 +149,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Payload Complete", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound when a", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "payload finishes", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "running.", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound when a", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "payload finishes", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "running.", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_PAYLOAD_COMPLETE_RINGTONE"
@@ -167,8 +167,8 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Error", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Sound played on", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "an error.", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Sound played on", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "an error.", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_ERROR_RINGTONE"

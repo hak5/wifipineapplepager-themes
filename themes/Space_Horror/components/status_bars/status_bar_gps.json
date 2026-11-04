@@ -29,7 +29,7 @@
       "x": 317,
       "y": 5,
       "layers": {
-        "mute":   [{ "image_path": "assets/mute.png", "x": 0, "y": 0 }],
+        "mute":   [{ "image_path": "assets/mute.png", "recolor_palette": "dark_red", "x": 0, "y": 0 }],
         "low":    [{ "image_path": "assets/volume_low.png", "x": 0, "y": 0 }],
         "medium": [{ "image_path": "assets/volume_medium.png", "x": 0, "y": 0 }],
         "high":   [{ "image_path": "assets/volume_high.png", "x": 0, "y": 0 }]
@@ -41,7 +41,7 @@
       "layers": {
         "15": [{ "image_path": "assets/dashboard_brightness_2.png", "recolor_palette": "yellow" }],
         "25": [{ "image_path": "assets/dashboard_brightness_3.png", "recolor_palette": "yellow" }],
-        "50": [{ "image_path": "assets/dashboard_brightness_5.png", "recolor_palette": "yellowe" }],
+        "50": [{ "image_path": "assets/dashboard_brightness_5.png", "recolor_palette": "yellow" }],
         "75": [{ "image_path": "assets/dashboard_brightness_7.png", "recolor_palette": "yellow" }],
         "100": [{ "image_path": "assets/dashboard_brightness_8.png", "recolor_palette": "yellow" }]
       }
@@ -51,15 +51,15 @@
       "y": 5,
       "layers": {
         "on":  [{ "image_path": "assets/vibrate.png", "x": 0, "y": 0 }],
-        "off": [{ "image_path": "assets/vibrate_off.png", "x": 0, "y": 0 }]
+        "off": [{ "image_path": "assets/vibrate.png", "recolor_palette": "dark_red", "x": 0, "y": 0 }]
       }
     },
     "GPS": {
       "x": 216,
       "y": 4,
       "layers": {
-        "disconnected": [{ "image_path": "assets/gps_off.png" }],
-        "nofix": [{ "image_path": "assets/gps_off.png" }],
+        "disconnected": [{ "image_path": "assets/gps.png", "recolor_palette": "dark_red" }],
+        "nofix": [{ "image_path": "assets/gps.png", "recolor_palette": "dark_red" }],
         "weak": [{ "image_path": "assets/gps.png" }],
         "acquiring": [{ "image_path": "assets/gps.png" }],
         "fix": [{ "image_path": "assets/gps.png", "recolor_palette": "green" }]

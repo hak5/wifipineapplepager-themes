@@ -31,7 +31,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -51,7 +51,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -71,7 +71,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -93,7 +93,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           }
         ]

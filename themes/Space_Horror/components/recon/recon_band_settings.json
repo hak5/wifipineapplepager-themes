@@ -1,6 +1,6 @@
 {
   "screen_name": "recon_band_settings",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",
@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 }
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 0, "y": 0 }
     ]
   },
   "pages": [

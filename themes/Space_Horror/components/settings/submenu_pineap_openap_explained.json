@@ -14,8 +14,8 @@
   "background": {
     "layers": [
       { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
-      { "text": "PineAP", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "gray" },
-      { "text": "Open AP", "x": 10, "y": 18, "text_color_palette": "blue" },
+      { "text": "PineAP", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "yellow" },
+      { "text": "Open AP", "x": 10, "y": 18, "text_color_palette": "yellow" },
       { "image_path": "assets/divright.png", "x": 312, "y": 56 }
     ]
   },
@@ -34,11 +34,11 @@
           "selected_layers": [
             { "variable_name": "$_OPEN_AP_ENABLED", "use_template": "toggle" },
             { "text": "Open AP", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Broadcasts an", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "open (no-", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "password) AP", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "for clients to", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "join.", "x": 310, "y": 72, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Broadcasts an", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "open (no-", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "password) AP", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "for clients to", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "join.", "x": 310, "y": 72, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_OPEN_AP_ENABLED"
@@ -54,10 +54,10 @@
           "selected_layers": [
             { "variable_name": "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
             { "text": "Hidden", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Hides the SSID,", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "so the network", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "name is not", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "beaconed.", "x": 310, "y": 22, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Hides the SSID,", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "so the network", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "name is not", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "beaconed.", "x": 310, "y": 22, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_OPEN_AP_HIDDEN"
@@ -73,9 +73,9 @@
           "selected_layers": [
             { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "yellow" },
-            { "text": "The SSID name", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "the open AP", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "broadcasts.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "The SSID name", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "the open AP", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "broadcasts.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_OPEN_AP_SSID"
@@ -91,10 +91,10 @@
           "selected_layers": [
             { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "BSSID Override", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Overrides the", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "AP's MAC/BSSID", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "address. Blank", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "= hardware MAC.", "x": 310, "y": -42, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Overrides the", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "AP's MAC/BSSID", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "address. Blank", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "= hardware MAC.", "x": 310, "y": -42, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "edit_mac_dialog",
           "variable": "$_OPEN_AP_BSSID"

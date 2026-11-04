@@ -14,8 +14,8 @@
   "background": {
     "layers": [
       { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
-      { "text": "Settings", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "gray" },
-      { "text": "Network", "x": 10, "y": 18, "text_color_palette": "blue" },
+      { "text": "Settings", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "yellow" },
+      { "text": "Network", "x": 10, "y": 18, "text_color_palette": "yellow" },
       { "image_path": "assets/divright.png", "x": 312, "y": 56 }
     ]
   },
@@ -34,12 +34,12 @@
           "selected_layers": [
             { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "use_template": "toggle" },
             { "text": "Client Mode", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Connects to an", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "upstream Wi-Fi", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "access point as", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "a client to give", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "the Pager access", "x": 310, "y": 72, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "to the internet.", "x": 310, "y": 90, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Connects to an", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "upstream Wi-Fi", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "access point as", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "a client to give", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "the Pager access", "x": 310, "y": 72, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "to the internet.", "x": 310, "y": 90, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_WIFI_CLIENT_MODE_ENABLED"
@@ -55,10 +55,10 @@
           "selected_layers": [
             { "image_path": "assets/wizard.png" },
             { "text": "Client Mode Setup", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Wizard to", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "configure the", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "settings to join", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "a Wi-Fi network.", "x": 310, "y": 22, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Wizard to", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "configure the", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "settings to join", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "a Wi-Fi network.", "x": 310, "y": 22, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "client_mode_wizard"
         },
@@ -73,11 +73,11 @@
           "selected_layers": [
             { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "use_template": "toggle" },
             { "text": "Management AP", "x": 40, "text_color_palette": "yellow" },
-            { "text": "The Pager's own", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "Wi-Fi AP for", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "reaching the", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "device's web UI", "x": 310, "y": -10, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "and SSH access.", "x": 310, "y": 8, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "The Pager's own", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "Wi-Fi AP for", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "reaching the", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "device's web UI", "x": 310, "y": -10, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "and SSH access.", "x": 310, "y": 8, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_WIFI_MGMT_AP_ENABLED"
@@ -93,11 +93,11 @@
           "selected_layers": [
             { "image_path": "assets/wizard.png" },
             { "text": "Management AP Setup", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Wizard to", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "configure the", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "settings for the", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "Pager's", "x": 310, "y": -42, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "Management AP.", "x": 310, "y": -24, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Wizard to", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "configure the", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "settings for the", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "Pager's", "x": 310, "y": -42, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "Management AP.", "x": 310, "y": -24, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "management_ap_wizard"
         },
@@ -114,9 +114,9 @@
             { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" },
             { "text": "Hostname", "x": 40, "text_color_palette": "yellow" },
-            { "text": "The device's", "x": 310, "y": -128, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "network", "x": 310, "y": -110, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "hostname.", "x": 310, "y": -92, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "The device's", "x": 310, "y": -128, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "network", "x": 310, "y": -110, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "hostname.", "x": 310, "y": -92, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_HOSTNAME"
@@ -139,8 +139,8 @@
             { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle" },
             { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" },
             { "text": "6 GHz", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Use the 6 GHz", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "Wi-Fi radio.", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Use the 6 GHz", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "Wi-Fi radio.", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_6Ghz_ENABLED"
@@ -156,8 +156,8 @@
           "selected_layers": [
             { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle" },
             { "text": "5 GHz", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Use the 5 GHz", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "Wi-Fi radio.", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Use the 5 GHz", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "Wi-Fi radio.", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_5Ghz_ENABLED"
@@ -173,8 +173,8 @@
           "selected_layers": [
             { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle" },
             { "text": "2.4 GHz", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Use the 2.4 GHz", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "Wi-Fi radio.", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Use the 2.4 GHz", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "Wi-Fi radio.", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_2.4Ghz_ENABLED"
@@ -190,10 +190,10 @@
           "selected_layers": [
             { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle" },
             { "text": "Bluetooth", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Turns Bluetooth", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "on and starts", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "the blue5", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "scanner.", "x": 310, "y": -42, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Turns Bluetooth", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "on and starts", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "the blue5", "x": 310, "y": -60, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "scanner.", "x": 310, "y": -42, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
           "variable": "$_BLUETOOTH_ENABLED"
@@ -209,9 +209,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Bluetooth Settings", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Opens the blue5", "x": 310, "y": -128, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "scanner", "x": 310, "y": -110, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "settings.", "x": 310, "y": -92, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Opens the blue5", "x": 310, "y": -128, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "scanner", "x": 310, "y": -110, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "settings.", "x": 310, "y": -92, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "settings_bluetooth_submenu"
         }

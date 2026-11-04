@@ -1,5 +1,5 @@
 {
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "screen_name": "alert_warning_dialog",
   "background": {

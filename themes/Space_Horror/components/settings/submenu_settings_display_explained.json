@@ -14,8 +14,8 @@
   "background": {
     "layers": [
       { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
-      { "text": "Settings", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "gray" },
-      { "text": "Display", "x": 10, "y": 18, "text_color_palette": "blue" },
+      { "text": "Settings", "x": 10, "y": 4, "text_size": "small", "text_color_palette": "yellow" },
+      { "text": "Display", "x": 10, "y": 18, "text_color_palette": "yellow" },
       { "image_path": "assets/divright.png", "x": 312, "y": 56 }
     ]
   },
@@ -34,9 +34,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Brightness", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Screen", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "brightness while", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "active.", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Screen", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "brightness while", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "active.", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_BRIGHTNESS"
@@ -52,9 +52,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Screen Timeout", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Idle time before", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "the screen", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "sleeps.", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Idle time before", "x": 310, "y": -32, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "the screen", "x": 310, "y": -14, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "sleeps.", "x": 310, "y": 4, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_SCREEN_OFF_TIMEOUT"
@@ -70,9 +70,9 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Dim Brightness", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Brightness level", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "once the screen", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "dims.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Brightness level", "x": 310, "y": -64, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "once the screen", "x": 310, "y": -46, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "dims.", "x": 310, "y": -28, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog_narrow",
           "variable": "$_DIM_BRIGHTNESS"
@@ -88,8 +88,8 @@
           "selected_layers": [
             { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Dim Timeout", "x": 40, "text_color_palette": "yellow" },
-            { "text": "Idle time before", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "gray" },
-            { "text": "the screen dims.", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "gray" }
+            { "text": "Idle time before", "x": 310, "y": -96, "text_size": "small", "text_color_palette": "yellow" },
+            { "text": "the screen dims.", "x": 310, "y": -78, "text_size": "small", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
           "variable": "$_SCREEN_DIM_TIMEOUT"

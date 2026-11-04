@@ -43,7 +43,7 @@
       "x": 282,
       "y": 5,
       "layers": {
-        "off": [{ "image_path": "assets/bt_scanoff.png", "x": 1, "y": 4 }],
+        "off": [{ "image_path": "assets/bt_scan.png", "recolor_palette": "dark_red", "x": 1, "y": 4 }],
         "both": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
         "both_active": [{ "image_path": "assets/bt_mode_both.png", "recolor_palette": "yellow" }],
         "classic": [{ "image_path": "assets/bt_mode_classic.png", "recolor_palette": "yellow" }],
@@ -56,7 +56,7 @@
       "y": 5,
       "layers": {
         "on":  [{ "image_path": "assets/pcap.png" }],
-        "off": [{ "image_path": "assets/pcap_off.png" }]
+        "off": [{ "image_path": "assets/pcap.png", "recolor_palette": "dark_red" }]
       }
     },
     "DB": {
@@ -64,15 +64,15 @@
       "y": 5,
       "layers": {
         "on":  [{ "image_path": "assets/database.png" }],
-        "off": [{ "image_path": "assets/database_off.png" }]
+        "off": [{ "image_path": "assets/database.png", "recolor_palette": "dark_red" }]
       }
     },
     "GPS": {
       "x": 183,
       "y": 4,
       "layers": {
-        "disconnected": [{ "image_path": "assets/gps_off.png" }],
-        "nofix": [{ "image_path": "assets/gps_off.png" }],
+        "disconnected": [{ "image_path": "assets/gps.png", "recolor_palette": "dark_red" }],
+        "nofix": [{ "image_path": "assets/gps.png", "recolor_palette": "dark_red" }],
         "weak": [{ "image_path": "assets/gps.png" }],
         "acquiring": [{ "image_path": "assets/gps.png" }],
         "fix": [{ "image_path": "assets/gps.png", "recolor_palette": "green" }]
@@ -83,7 +83,7 @@
       "y": 4,
       "layers": {
         "on":  [{ "image_path": "assets/wigle.png", "x": 0, "y": 0 }],
-        "off": [{ "image_path": "assets/wigle_off.png", "x": 0, "y": 0 }]
+        "off": [{ "image_path": "assets/wigle.png", "recolor_palette": "dark_red", "x": 0, "y": 0 }]
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "screen_name": "recon_new_scan_submenu",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",
@@ -12,7 +12,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 },
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 0, "y": 0 },
       { "text": "Start new scan:", "x": 45, "y": 24, "text_size": "large", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 45, "end_x": 455, "start_y": 22, "end_y": 42 } }
     ]
   },

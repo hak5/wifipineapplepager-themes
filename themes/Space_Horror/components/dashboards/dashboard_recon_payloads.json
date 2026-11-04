@@ -2,7 +2,7 @@
   "template": {
     "screen_name": "recon_payloads_dashboard",
     "status_bar": "default",
-    "windowed_canvas": true,
+    "windowed_canvas": false,
     "cache_canvases": false,
     "button_map": {
       "a": "select",
@@ -40,7 +40,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "select"
             }
           },
           {
@@ -63,7 +63,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "select"
             }
           },
           {
@@ -86,7 +86,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "select"
             }
           },
           {
@@ -109,7 +109,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "select"
             }
           },
           {
@@ -132,7 +132,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "select"
             }
           }
         ]
