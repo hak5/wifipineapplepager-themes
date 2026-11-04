@@ -94,10 +94,10 @@
           "x": 215,
           "y": 186,
           "layers": [
-            { "text": "Deauth All Clients", "text_color_palette": "black" }
+            { "text": "Re-auth All Clients", "text_color_palette": "black" }
           ],
           "selected_layers": [
-            { "text": "Deauth All Clients", "text_color_palette": "black" },
+            { "text": "Re-auth All Clients", "text_color_palette": "black" },
             { "image_path": "assets/settings/bodyhighlight.png", "x": -5, "y": -1 }
           ],
           "target": "function_selected_ap_deauth_all_clients"
