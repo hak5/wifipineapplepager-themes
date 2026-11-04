@@ -45,7 +45,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 61, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_ALERT_RINGTONE"
+          "variable": "$_ALERT_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Alert"
+          }
         },
         {
           "id": "Boot",
@@ -59,7 +62,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_BOOT_RINGTONE"
+          "variable": "$_BOOT_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Boot"
+          }
         },
         {
           "id": "Battery Low",
@@ -73,7 +79,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_BATTERY_LOW_RINGTONE"
+          "variable": "$_BATTERY_LOW_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Battery Low"
+          }
         },
         {
           "id": "Battery Critical",
@@ -87,7 +96,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_BATTERY_CRITICAL_RINGTONE"
+          "variable": "$_BATTERY_CRITICAL_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Battery Critical"
+          }
         },
         {
           "id": "Power Connected",
@@ -101,7 +113,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_POWER_CONNECTED_RINGTONE"
+          "variable": "$_POWER_CONNECTED_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Power Connected"
+          }
         },
         {
           "id": "scrollbar_0",
@@ -130,7 +145,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 61, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_POWER_DISCONNECTED_RINGTONE"
+          "variable": "$_POWER_DISCONNECTED_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Power Disconnected"
+          }
         },
         {
           "id": "Payload Complete",
@@ -144,7 +162,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_PAYLOAD_COMPLETE_RINGTONE"
+          "variable": "$_PAYLOAD_COMPLETE_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Payload Complete"
+          }
         },
         {
           "id": "Error",
@@ -158,7 +179,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 121, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_ERROR_RINGTONE"
+          "variable": "$_ERROR_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Error"
+          }
         },
         {
           "id": "scrollbar_1",

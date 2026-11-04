@@ -144,7 +144,7 @@
           "layers": [
             { "image_path": "assets/sys/scroll_track_150.png", "x": 424, "y": 34 },
             { "image_path": "assets/sys/scroll_up_dim.png", "x": 426, "y": 38 },
-            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 428, "y": 52 },
+            { "image_path": "assets/sys/scroll_thumbh_38.png", "x": 428, "y": 52 },
             { "image_path": "assets/sys/scroll_down_off.png", "x": 426, "y": 173 }
           ]
         }
@@ -168,15 +168,29 @@
           "variable": "$_PERSIST_RECON_DB"
         },
         {
-          "id": "Record PCAP",
+          "id": "Persist BT DB",
           "layers": [
-            { "text": "Record PCAP", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_RECORD_PCAP", "x": 386, "y": 67, "use_template": "toggle" }
+            { "text": "Save to BT DB", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_BT_PERSIST_DB", "x": 386, "y": 67, "use_template": "toggle" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 65 },
-            { "text": "Record PCAP", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" },
-            { "variable_name": "$_RECORD_PCAP", "x": 386, "y": 67, "use_template": "toggle" }
+            { "text": "Save to BT DB", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_BT_PERSIST_DB", "x": 386, "y": 67, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_PERSIST_DB"
+        },
+        {
+          "id": "Record PCAP",
+          "layers": [
+            { "text": "Record PCAP", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RECORD_PCAP", "x": 386, "y": 97, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 95 },
+            { "text": "Record PCAP", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RECORD_PCAP", "x": 386, "y": 97, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
           "variable": "$_RECORD_PCAP"
@@ -184,16 +198,110 @@
         {
           "id": "Wigle Mode",
           "layers": [
-            { "text": "Wigle Mode", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "blue" },
-            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 386, "y": 97, "use_template": "toggle" }
+            { "text": "WiGLE Mode", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 386, "y": 127, "use_template": "toggle" }
           ],
           "selected_layers": [
-            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 95 },
-            { "text": "Wigle Mode", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" },
-            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 386, "y": 97, "use_template": "toggle" }
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 125 },
+            { "text": "WiGLE Mode", "x": 58, "y": 132, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "x": 386, "y": 127, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
           "variable": "$_WIGLE_MODE_ENABLED"
+        },
+        {
+          "id": "Censor Mode",
+          "layers": [
+            { "text": "Censor Mode", "x": 58, "y": 162, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_CENSOR_MODE", "x": 386, "y": 157, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 155 },
+            { "text": "Censor Mode", "x": 58, "y": 162, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_CENSOR_MODE", "x": 386, "y": 157, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CENSOR_MODE"
+        },
+        {
+          "id": "scrollbar_1",
+          "unselectable": true,
+          "layers": [
+            { "image_path": "assets/sys/scroll_track_150.png", "x": 424, "y": 34 },
+            { "image_path": "assets/sys/scroll_up_off.png", "x": 426, "y": 38 },
+            { "image_path": "assets/sys/scroll_thumbh_38.png", "x": 428, "y": 90 },
+            { "image_path": "assets/sys/scroll_down_off.png", "x": 426, "y": 173 }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "Live Channel View",
+          "layers": [
+            { "text": "Live Channel View", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RECON_LIVE_CHANNELS", "x": 386, "y": 37, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 35 },
+            { "text": "Live Channel View", "x": 58, "y": 42, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RECON_LIVE_CHANNELS", "x": 386, "y": 37, "use_template": "toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_RECON_LIVE_CHANNELS"
+        },
+        {
+          "id": "WiFi Style",
+          "layers": [
+            { "text": "Bar Style", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "blue" },
+            {
+              "variable_name": "$_RECON_BAR_STYLE",
+              "x": 250,
+              "y": 72,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "gray",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 73, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 65 },
+            { "text": "Bar Style", "x": 58, "y": 72, "text_size": "small", "text_color_palette": "white" },
+            {
+              "variable_name": "$_RECON_BAR_STYLE",
+              "x": 250,
+              "y": 72,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "white",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 73, "recolor_palette": "white" }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_RECON_BAR_STYLE"
+        },
+        {
+          "id": "Start New Scan",
+          "layers": [
+            { "text": "Start New Scan", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 103, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_368x28.png", "x": 46, "y": 95 },
+            { "text": "Start New Scan", "x": 58, "y": 102, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 408, "y": 103, "recolor_palette": "white" }
+          ],
+          "target": "recon_new_scan_submenu"
         },
         {
           "id": "Keep Screen Awake",
@@ -210,12 +318,12 @@
           "variable": "$_RECON_KEEP_SCREEN_AWAKE"
         },
         {
-          "id": "scrollbar_1",
+          "id": "scrollbar_2",
           "unselectable": true,
           "layers": [
             { "image_path": "assets/sys/scroll_track_150.png", "x": 424, "y": 34 },
             { "image_path": "assets/sys/scroll_up_off.png", "x": 426, "y": 38 },
-            { "image_path": "assets/sys/scroll_thumbh_57.png", "x": 428, "y": 109 },
+            { "image_path": "assets/sys/scroll_thumbh_38.png", "x": 428, "y": 128 },
             { "image_path": "assets/sys/scroll_down_dim.png", "x": 426, "y": 173 }
           ]
         }

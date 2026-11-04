@@ -58,7 +58,7 @@
           { "image_path": "assets/statusbar/ghz_25.png" }
         ],
         "26": [
-          { "image_path": "assets/statusbar/ghz_26.png", "x": 0, "y": 1 }
+          { "image_path": "assets/statusbar/ghz_26.png", "y": 1 }
         ],
         "56": [
           { "image_path": "assets/statusbar/ghz_56.png" }
@@ -67,28 +67,31 @@
           { "image_path": "assets/statusbar/ghz_256.png" }
         ],
         "off": [
-          { "image_path": "assets/statusbar/ghz_off.png", "x": 0, "y": 0 }
+          { "image_path": "assets/statusbar/ghz_off.png" }
         ]
       }
     },
-    "Brightness": {
+    "BTScan": {
       "x": 282,
       "y": 5,
       "layers": {
-        "15": [
-          { "image_path": "assets/statusbar/dashboard_brightness_2.png" }
+        "off": [
+          { "image_path": "assets/statusbar/bt_scan.png", "recolor_palette": "gray", "x": 1, "y": 4 }
         ],
-        "25": [
-          { "image_path": "assets/statusbar/dashboard_brightness_3.png" }
+        "both": [
+          { "image_path": "assets/statusbar/bt_mode_both.png", "recolor_palette": "cyan" }
         ],
-        "50": [
-          { "image_path": "assets/statusbar/dashboard_brightness_5.png" }
+        "both_active": [
+          { "image_path": "assets/statusbar/bt_mode_both.png", "recolor_palette": "orange" }
         ],
-        "75": [
-          { "image_path": "assets/statusbar/dashboard_brightness_7.png" }
+        "classic": [
+          { "image_path": "assets/statusbar/bt_mode_classic.png", "recolor_palette": "cyan" }
         ],
-        "100": [
-          { "image_path": "assets/statusbar/dashboard_brightness_8.png" }
+        "le": [
+          { "image_path": "assets/statusbar/bt_mode_le.png", "recolor_palette": "cyan" }
+        ],
+        "le_active": [
+          { "image_path": "assets/statusbar/bt_mode_le.png", "recolor_palette": "orange" }
         ]
       }
     },
@@ -97,10 +100,10 @@
       "y": 5,
       "layers": {
         "on": [
-          { "image_path": "assets/statusbar/pcap.png", "recolor_palette": "red", "x": 0, "y": 0 }
+          { "image_path": "assets/statusbar/pcap.png", "recolor_palette": "red" }
         ],
         "off": [
-          { "image_path": "assets/statusbar/pcap.png", "recolor_palette": "gray", "x": 0, "y": 0 }
+          { "image_path": "assets/statusbar/pcap.png", "recolor_palette": "gray" }
         ]
       }
     },
@@ -120,11 +123,20 @@
       "x": 183,
       "y": 4,
       "layers": {
-        "on": [
-          { "image_path": "assets/statusbar/gps.png" }
-        ],
-        "off": [
+        "disconnected": [
           { "image_path": "assets/statusbar/gps.png", "recolor_palette": "gray" }
+        ],
+        "nofix": [
+          { "image_path": "assets/statusbar/gps.png", "recolor_palette": "red" }
+        ],
+        "weak": [
+          { "image_path": "assets/statusbar/gps.png", "recolor_palette": "orange" }
+        ],
+        "acquiring": [
+          { "image_path": "assets/statusbar/gps.png", "recolor_palette": "yellow" }
+        ],
+        "fix": [
+          { "image_path": "assets/statusbar/gps.png", "recolor_palette": "green" }
         ]
       }
     },

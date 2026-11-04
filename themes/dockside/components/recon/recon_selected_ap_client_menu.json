@@ -187,11 +187,11 @@
           "id": "deauthclient",
           "target": "function_selected_ap_client_deauth",
           "layers": [
-            { "text": "Deauth Client", "x": 226, "y": 134, "text_size": "small", "text_color_palette": "red" }
+            { "text": "Re-auth Client", "x": 226, "y": 134, "text_size": "small", "text_color_palette": "accent" }
           ],
           "selected_layers": [
             { "image_path": "assets/ui/sel_256x28.png", "x": 216, "y": 127 },
-            { "text": "Deauth Client", "x": 226, "y": 134, "text_size": "small", "text_color_palette": "white" }
+            { "text": "Re-auth Client", "x": 226, "y": 134, "text_size": "small", "text_color_palette": "white" }
           ]
         }
       ]

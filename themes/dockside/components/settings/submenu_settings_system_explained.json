@@ -1,0 +1,166 @@
+{
+  "screen_name": "settings_system_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "System Help", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/card_256x5x30.png", "x": 10, "y": 36 },
+      { "image_path": "assets/sys/card_196x1x168.png", "x": 276, "y": 38 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Virtual Pager",
+          "target": "inline_toggle",
+          "variable": "$_VIRTUAL_PAGER_ENABLED",
+          "layers": [
+            { "text": "Virtual Pager", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "x": 224, "y": 41, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "Virtual Pager", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "x": 224, "y": 41, "use_template": "toggle" },
+            { "text": "A remote virtual", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Pager you reach", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "from a browser.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Client Access",
+          "target": "inline_toggle",
+          "variable": "$_CLIENT_ACCESS_ENABLED",
+          "layers": [
+            { "text": "Client Access", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "x": 224, "y": 71, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Client Access", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "x": 224, "y": 71, "use_template": "toggle" },
+            { "text": "Allows Virtual", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Pager and SSH", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "on Client Mode.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Root Password",
+          "target": "edit_string_dialog",
+          "variable": "$_SYSTEM_PASSWORD",
+          "layers": [
+            { "text": "Root Password", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "Root Password", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 107, "recolor_palette": "white" },
+            { "text": "The device root", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "(admin)", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "password.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "SSH",
+          "target": "inline_toggle",
+          "variable": "$_SSH_ENABLED",
+          "layers": [
+            { "text": "SSH", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_SSH_ENABLED", "x": 224, "y": 131, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
+            { "text": "SSH", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_SSH_ENABLED", "x": 224, "y": 131, "use_template": "toggle" },
+            { "text": "Allows SSH", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "shell access to", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "the device.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "PIN Code",
+          "target": "inline_toggle",
+          "variable": "$_PIN_ENABLED",
+          "layers": [
+            { "text": "PIN Code", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_PIN_ENABLED", "x": 224, "y": 161, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
+            { "text": "PIN Code", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_PIN_ENABLED", "x": 224, "y": 161, "use_template": "toggle" },
+            { "text": "Requires a PIN", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "to unlock the", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Pager.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "PIN Setup",
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN",
+          "layers": [
+            { "text": "PIN Setup", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "PIN Setup", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
+            { "text": "Set the unlock", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "PIN code.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Network Time (NTP)",
+          "target": "inline_toggle",
+          "variable": "$_NTP_ENABLED",
+          "layers": [
+            { "text": "Network Time (NTP)", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_NTP_ENABLED", "x": 224, "y": 71, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Network Time (NTP)", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_NTP_ENABLED", "x": 224, "y": 71, "use_template": "toggle" },
+            { "text": "Syncs the clock", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "over the network", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "(NTP).", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Factory Reset",
+          "target": "function_factory_reset",
+          "layers": [
+            { "text": "Factory Reset", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "red" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "Factory Reset", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "text": "Erases settings", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "and restores", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "defaults.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    }
+  ]
+}

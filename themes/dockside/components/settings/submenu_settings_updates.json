@@ -65,7 +65,8 @@
                 "max_lines": 1
               }
             }
-          ]
+          ],
+          "unselectable": true
         },
         {
           "id": "Check for Updates",

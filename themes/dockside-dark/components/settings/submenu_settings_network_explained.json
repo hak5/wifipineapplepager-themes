@@ -1,0 +1,207 @@
+{
+  "screen_name": "settings_network_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Network Help", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/card_256x5x30.png", "x": 10, "y": 36 },
+      { "image_path": "assets/sys/card_196x1x168.png", "x": 276, "y": 38 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Client Mode Toggle",
+          "target": "inline_toggle",
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED",
+          "layers": [
+            { "text": "Client Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 224, "y": 41, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "Client Mode", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 224, "y": 41, "use_template": "toggle" },
+            { "text": "Connects to an", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "upstream Wi-Fi", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "access point as", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "a client to give", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "the Pager access", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "to the internet.", "x": 290, "y": 125, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Client Mode Setup",
+          "target": "client_mode_wizard",
+          "layers": [
+            { "text": "Client Mode Setup", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Client Mode Setup", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 77, "recolor_palette": "white" },
+            { "text": "Wizard to", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "configure the", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "settings to join", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "a Wi-Fi network.", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Management AP Toggle",
+          "target": "inline_toggle",
+          "variable": "$_WIFI_MGMT_AP_ENABLED",
+          "layers": [
+            { "text": "Management AP", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "x": 224, "y": 101, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "Management AP", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "x": 224, "y": 101, "use_template": "toggle" },
+            { "text": "The Pager's own", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Wi-Fi AP for", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "reaching the", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "device's web UI", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "and SSH access.", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Management AP Setup",
+          "target": "management_ap_wizard",
+          "layers": [
+            { "text": "Management AP Setup", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
+            { "text": "Management AP Setup", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "white" },
+            { "text": "Wizard to", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "configure the", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "settings for the", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Pager's", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Management AP.", "x": 290, "y": 110, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Hostname",
+          "target": "edit_string_dialog",
+          "variable": "$_HOSTNAME",
+          "layers": [
+            { "text": "Hostname", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
+            { "text": "Hostname", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "white" },
+            { "text": "The device's", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "network", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "hostname.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "6 GHz",
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED",
+          "layers": [
+            { "text": "6 GHz", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_6Ghz_ENABLED", "x": 224, "y": 41, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "6 GHz", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_6Ghz_ENABLED", "x": 224, "y": 41, "use_template": "toggle" },
+            { "text": "Use the 6 GHz", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Wi-Fi radio.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "5 GHz",
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED",
+          "layers": [
+            { "text": "5 GHz", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_5Ghz_ENABLED", "x": 224, "y": 71, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "5 GHz", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_5Ghz_ENABLED", "x": 224, "y": 71, "use_template": "toggle" },
+            { "text": "Use the 5 GHz", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Wi-Fi radio.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "2.4 GHz",
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED",
+          "layers": [
+            { "text": "2.4 GHz", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_2.4Ghz_ENABLED", "x": 224, "y": 101, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "2.4 GHz", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_2.4Ghz_ENABLED", "x": 224, "y": 101, "use_template": "toggle" },
+            { "text": "Use the 2.4 GHz", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Wi-Fi radio.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Bluetooth",
+          "target": "inline_toggle",
+          "variable": "$_BLUETOOTH_ENABLED",
+          "layers": [
+            { "text": "Bluetooth", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_BLUETOOTH_ENABLED", "x": 224, "y": 131, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
+            { "text": "Bluetooth", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_BLUETOOTH_ENABLED", "x": 224, "y": 131, "use_template": "toggle" },
+            { "text": "Turns Bluetooth", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "on and starts", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "the blue5", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "scanner.", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Bluetooth Settings",
+          "target": "settings_bluetooth_submenu",
+          "layers": [
+            { "text": "Bluetooth Settings", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
+            { "text": "Bluetooth Settings", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "white" },
+            { "text": "Opens the blue5", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "scanner", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "settings.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    }
+  ]
+}

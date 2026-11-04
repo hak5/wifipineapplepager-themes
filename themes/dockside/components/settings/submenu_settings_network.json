@@ -45,7 +45,10 @@
             { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_WIFI_CLIENT_MODE_ENABLED"
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Client Mode Toggle"
+          }
         },
         {
           "id": "Client Mode Setup",
@@ -58,7 +61,10 @@
             { "text": "Client Mode Setup", "x": 176, "y": 90, "text_size": "small", "text_color_palette": "white" },
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 91, "recolor_palette": "white" }
           ],
-          "target": "client_mode_wizard"
+          "target": "client_mode_wizard",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Client Mode Setup"
+          }
         },
         {
           "id": "Management AP Toggle",
@@ -72,7 +78,10 @@
             { "variable_name": "$_WIFI_MGMT_AP_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_WIFI_MGMT_AP_ENABLED"
+          "variable": "$_WIFI_MGMT_AP_ENABLED",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Management AP Toggle"
+          }
         },
         {
           "id": "Management AP Setup",
@@ -85,7 +94,10 @@
             { "text": "Management AP Setup", "x": 176, "y": 150, "text_size": "small", "text_color_palette": "white" },
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 151, "recolor_palette": "white" }
           ],
-          "target": "management_ap_wizard"
+          "target": "management_ap_wizard",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Management AP Setup"
+          }
         },
         {
           "id": "Hostname",
@@ -99,7 +111,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_HOSTNAME"
+          "variable": "$_HOSTNAME",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Hostname"
+          }
         },
         {
           "id": "scrollbar_0",
@@ -128,7 +143,10 @@
             { "variable_name": "$_6Ghz_ENABLED", "x": 414, "y": 55, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_6Ghz_ENABLED"
+          "variable": "$_6Ghz_ENABLED",
+          "button_map": {
+            "right": "target settings_network_submenu_explained 6 GHz"
+          }
         },
         {
           "id": "5 GHz",
@@ -142,7 +160,10 @@
             { "variable_name": "$_5Ghz_ENABLED", "x": 414, "y": 85, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_5Ghz_ENABLED"
+          "variable": "$_5Ghz_ENABLED",
+          "button_map": {
+            "right": "target settings_network_submenu_explained 5 GHz"
+          }
         },
         {
           "id": "2.4 GHz",
@@ -156,7 +177,10 @@
             { "variable_name": "$_2.4Ghz_ENABLED", "x": 414, "y": 115, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_2.4Ghz_ENABLED"
+          "variable": "$_2.4Ghz_ENABLED",
+          "button_map": {
+            "right": "target settings_network_submenu_explained 2.4 GHz"
+          }
         },
         {
           "id": "Bluetooth",
@@ -170,7 +194,26 @@
             { "variable_name": "$_BLUETOOTH_ENABLED", "x": 414, "y": 145, "use_template": "toggle" }
           ],
           "target": "inline_toggle",
-          "variable": "$_BLUETOOTH_ENABLED"
+          "variable": "$_BLUETOOTH_ENABLED",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Bluetooth"
+          }
+        },
+        {
+          "id": "Bluetooth Settings",
+          "layers": [
+            { "text": "Bluetooth Settings", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_284x28.png", "x": 164, "y": 173 },
+            { "text": "Bluetooth Settings", "x": 176, "y": 180, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 436, "y": 181, "recolor_palette": "white" }
+          ],
+          "target": "settings_bluetooth_submenu",
+          "button_map": {
+            "right": "target settings_network_submenu_explained Bluetooth Settings"
+          }
         },
         {
           "id": "scrollbar_1",

@@ -45,7 +45,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 61, "recolor_palette": "white" }
           ],
           "target": "option_dialog_narrow",
-          "variable": "$_BRIGHTNESS"
+          "variable": "$_BRIGHTNESS",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Brightness"
+          }
         },
         {
           "id": "Screen Timeout",
@@ -59,7 +62,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 91, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_SCREEN_OFF_TIMEOUT"
+          "variable": "$_SCREEN_OFF_TIMEOUT",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Screen Timeout"
+          }
         },
         {
           "id": "Dim Brightness",
@@ -73,7 +79,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 121, "recolor_palette": "white" }
           ],
           "target": "option_dialog_narrow",
-          "variable": "$_DIM_BRIGHTNESS"
+          "variable": "$_DIM_BRIGHTNESS",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Dim Brightness"
+          }
         },
         {
           "id": "Dim Timeout",
@@ -87,7 +96,10 @@
             { "image_path": "assets/sys/chevron.png", "x": 454, "y": 151, "recolor_palette": "white" }
           ],
           "target": "option_dialog",
-          "variable": "$_SCREEN_DIM_TIMEOUT"
+          "variable": "$_SCREEN_DIM_TIMEOUT",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Dim Timeout"
+          }
         }
       ]
     }

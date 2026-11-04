@@ -44,12 +44,7 @@
           "target": "alerts_dialog_submenu",
           "variable": "$_ALERTS_AUTH_CAPTURED",
           "button_map": {
-            "a": "select",
-            "b": "back",
-            "up": "previous",
-            "down": "next",
-            "left": "previous",
-            "right": "noop"
+            "right": "target alerts_dashboard_explained auth captured"
           }
         },
         {
@@ -71,7 +66,7 @@
             "up": "previous",
             "down": "next",
             "left": "goto newclient",
-            "right": "noop"
+            "right": "target alerts_dashboard_explained deauth flood"
           }
         },
         {
@@ -93,7 +88,7 @@
             "up": "previous",
             "down": "next",
             "left": "goto handshakecapture",
-            "right": "noop"
+            "right": "target alerts_dashboard_explained new client"
           }
         },
         {
@@ -115,7 +110,7 @@
             "up": "previous",
             "down": "next",
             "left": "noop",
-            "right": "next"
+            "right": "target alerts_dashboard_explained handshake capture"
           }
         }
       ]

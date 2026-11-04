@@ -34,7 +34,7 @@
   "payload_stopped_indicator": [
     { "image_path": "assets/payloadlog/payload_stopped_indicator.png", "x": 0, "y": 179 }
   ],
-  "payload_error_indicator": [
+  "payload_errored_indicator": [
     { "image_path": "assets/payloadlog/payload_error_indicator.png", "x": 0, "y": 181 }
   ],
   "status_bar": "default",

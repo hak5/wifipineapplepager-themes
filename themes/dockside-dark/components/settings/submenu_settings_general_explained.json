@@ -1,0 +1,115 @@
+{
+  "screen_name": "settings_general_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "General Help", "text_size": "small", "text_color_palette": "blue", "x": 66, "y": 8 },
+      { "image_path": "assets/sys/card_256x5x30.png", "x": 10, "y": 36 },
+      { "image_path": "assets/sys/card_196x1x168.png", "x": 276, "y": 38 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Volume",
+          "target": "option_dialog_narrow",
+          "variable": "$_VOLUME",
+          "layers": [
+            { "text": "Volume", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 39 },
+            { "text": "Volume", "x": 24, "y": 46, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 47, "recolor_palette": "white" },
+            { "text": "Speaker volume", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "level.", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Vibrate",
+          "target": "inline_toggle",
+          "variable": "$_VIBRATE",
+          "layers": [
+            { "text": "Vibrate", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_VIBRATE", "x": 224, "y": 71, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 69 },
+            { "text": "Vibrate", "x": 24, "y": 76, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_VIBRATE", "x": 224, "y": 71, "use_template": "toggle" },
+            { "text": "Enables the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "vibration motor", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "for alerts and", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "notifications.", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Vibrate w/ Ringtone",
+          "target": "inline_toggle",
+          "variable": "$_RINGTONE_VIBRATE",
+          "layers": [
+            { "text": "Vibrate w/ Ringtone", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "blue" },
+            { "variable_name": "$_RINGTONE_VIBRATE", "x": 224, "y": 101, "use_template": "toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 99 },
+            { "text": "Vibrate w/ Ringtone", "x": 24, "y": 106, "text_size": "small", "text_color_palette": "white" },
+            { "variable_name": "$_RINGTONE_VIBRATE", "x": 224, "y": 101, "use_template": "toggle" },
+            { "text": "Also vibrates", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "when a ringtone", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "plays. Needs", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "Vibrate on.", "x": 290, "y": 95, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "Theme",
+          "target": "option_dialog",
+          "variable": "$_THEME",
+          "layers": [
+            { "text": "Theme", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 129 },
+            { "text": "Theme", "x": 24, "y": 136, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 137, "recolor_palette": "white" },
+            { "text": "The UI theme /", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "skin used", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "across menus.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        },
+        {
+          "id": "DPADLED",
+          "target": "option_dialog_narrow",
+          "variable": "$_DPAD_LED_COLOR",
+          "layers": [
+            { "text": "D-Pad LED", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "blue" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/ui/sel_252x28.png", "x": 12, "y": 159 },
+            { "text": "D-Pad LED", "x": 24, "y": 166, "text_size": "small", "text_color_palette": "white" },
+            { "image_path": "assets/sys/chevron.png", "x": 250, "y": 167, "recolor_palette": "white" },
+            { "text": "Color of the", "x": 290, "y": 50, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "D-pad backlight", "x": 290, "y": 65, "text_size": "small", "text_color_palette": "gray" },
+            { "text": "LED.", "x": 290, "y": 80, "text_size": "small", "text_color_palette": "gray" }
+          ]
+        }
+      ]
+    }
+  ]
+}

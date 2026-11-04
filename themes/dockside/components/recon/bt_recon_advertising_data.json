@@ -1,0 +1,130 @@
+{
+  "screen_name": "bt_recon_advertising_data",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "back",
+    "b": "back",
+    "up": "noop",
+    "down": "noop",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Advertising Data", "x": 66, "y": 8, "text_size": "small", "text_color_palette": "blue" },
+      {
+        "variable_name": "$_BT_SELECTED_TITLE",
+        "x": 14,
+        "y": 34,
+        "string_template": {
+          "text_size": "medium",
+          "text_color_palette": "blue",
+          "max_chars": 40,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "Flags", "x": 14, "y": 80, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_BT_SELECTED_FLAGS",
+        "x": 110,
+        "y": 80,
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "blue",
+          "max_chars": 44,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "Appearance", "x": 14, "y": 96, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_BT_SELECTED_APPEARANCE",
+        "x": 110,
+        "y": 96,
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "blue",
+          "max_chars": 44,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "TX power", "x": 14, "y": 112, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_BT_SELECTED_TX_POWER",
+        "x": 110,
+        "y": 112,
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "blue",
+          "max_chars": 44,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "Services", "x": 14, "y": 128, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_BT_SELECTED_SERVICES",
+        "x": 110,
+        "y": 128,
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "blue",
+          "max_chars": 44,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "Svc data", "x": 14, "y": 144, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_BT_SELECTED_SVC_DATA",
+        "x": 110,
+        "y": 144,
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "blue",
+          "max_chars": 44,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      },
+      { "text": "Mfr data", "x": 14, "y": 160, "text_size": "small", "text_color_palette": "gray" },
+      {
+        "variable_name": "$_BT_SELECTED_MFR",
+        "x": 110,
+        "y": 160,
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "blue",
+          "max_chars": 44,
+          "wrap_text": false,
+          "max_lines": 1
+        }
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "details",
+          "button_map": {
+            "a": "back",
+            "b": "back",
+            "up": "noop",
+            "down": "noop",
+            "left": "back",
+            "right": "noop"
+          },
+          "layers": [],
+          "selected_layers": []
+        }
+      ]
+    }
+  ]
+}
