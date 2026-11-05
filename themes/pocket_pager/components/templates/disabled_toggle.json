@@ -1,0 +1,8 @@
+{
+  "enabled": [
+    { "image_path": "assets/toggle/enabled/toggle_bg.png", "x": 0, "y": 5, "recolor_palette": "light" }
+  ],
+  "disabled": [
+    { "image_path": "assets/toggle/disabled/toggle_disabled_bg.png", "x": 0, "y": 5, "recolor_palette": "light" }
+  ]
+}

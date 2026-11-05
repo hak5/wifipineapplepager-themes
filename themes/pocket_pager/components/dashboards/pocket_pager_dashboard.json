@@ -1,0 +1,136 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "noop"
+  },
+  "background": {
+    "background_color": { "r": 156, "g": 170, "b": 132 },
+    "layers": [
+      { "image_path": "assets/dashboard/pager_menu.png", "x": 0, "y": 0 }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "RECON",
+      "x": 200,
+      "y": 31,
+      "layers": [
+        { "text": "01", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "medium" },
+        { "text": "RECON", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "dark" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/item_1.png", "x": -186, "y": 0 },
+        { "text": "01", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "RECON", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "SCAN WIFI + BLUETOOTH AROUND YOU", "x": -150, "y": 170, "text_size": "small", "max_chars": 40, "text_color_palette": "dark" }
+      ],
+      "target": "recon_dashboard",
+      "button_map": {
+        "right": "target recon_dashboard"
+      }
+    },
+    {
+      "id": "PINEAP",
+      "x": 200,
+      "y": 58,
+      "layers": [
+        { "text": "02", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "medium" },
+        { "text": "PINEAP\n", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "dark" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/item_2.png", "x": -186, "y": -4 },
+        { "text": "02", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "PINEAP\n", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "ROGUE AP, EVIL WPA, SSID POOL", "x": -150, "y": 143, "text_size": "small", "max_chars": 40, "text_color_palette": "dark" }
+      ],
+      "target": "pineap_menu",
+      "button_map": {
+        "right": "target pineap_menu"
+      }
+    },
+    {
+      "id": "PAYLOADS",
+      "x": 200,
+      "y": 85,
+      "layers": [
+        { "text": "03", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "medium" },
+        { "text": "PAYLOADS\n", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "dark" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/item_3.png", "x": -186, "y": -31 },
+        { "text": "03", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "PAYLOADS\n", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "RUN YOUR PAYLOADS BY CATEGORY", "x": -150, "y": 116, "text_size": "small", "max_chars": 40, "text_color_palette": "dark" }
+      ],
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES",
+      "button_map": {
+        "right": "target payloads_dashboard"
+      }
+    },
+    {
+      "id": "ALERTS",
+      "x": 200,
+      "y": 112,
+      "layers": [
+        { "text": "04", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "medium" },
+        { "text": "ALERTS", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "dark" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/item_4.png", "x": -186, "y": -58 },
+        { "text": "04", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "ALERTS", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "PAYLOADS THAT FIRE ON EVENTS", "x": -150, "y": 89, "text_size": "small", "max_chars": 40, "text_color_palette": "dark" }
+      ],
+      "target": "alerts_dashboard",
+      "button_map": {
+        "right": "target alerts_dashboard"
+      }
+    },
+    {
+      "id": "pagerportal",
+      "x": 200,
+      "y": 139,
+      "layers": [
+        { "text": "05", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "medium" },
+        { "text": "DOWNLOAD", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "dark" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/item_5.png", "x": -186, "y": -85 },
+        { "text": "05", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "DOWNLOAD", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "GET AND UPDATE PAYLOADS + THEMES", "x": -150, "y": 62, "text_size": "small", "max_chars": 40, "text_color_palette": "dark" }
+      ],
+      "target": "pager_portal_dashboard",
+      "button_map": {
+        "right": "target pager_portal_dashboard"
+      }
+    },
+    {
+      "id": "SETTINGS",
+      "x": 200,
+      "y": 166,
+      "layers": [
+        { "text": "06", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "medium" },
+        { "text": "SETTINGS", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "dark" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/item_6.png", "x": -186, "y": -112 },
+        { "text": "06", "x": 6, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "SETTINGS", "x": 48, "y": 1, "text_size": "medium", "text_color_palette": "LCD" },
+        { "text": "DISPLAY, SOUND, NETWORK, SYSTEM", "x": -150, "y": 35, "text_size": "small", "max_chars": 40, "text_color_palette": "dark" }
+      ],
+      "target": "settings_menu",
+      "button_map": {
+        "right": "target settings_menu"
+      }
+    }
+  ]
+}

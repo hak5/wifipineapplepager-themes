@@ -1,0 +1,48 @@
+{
+  "screen_name": "pager_portal_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard_bg2.png", "x": 0, "y": 0 },
+      { "text": "PAGER PORTAL", "text_size": "medium", "text_color_palette": "dark", "x": 12, "y": 2 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Payloads",
+          "layers": [
+            { "text": "Payloads", "x": 254, "y": 62, "text_color_palette": "dark", "text_size": "large" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_249x25.png", "x": 209, "y": 64 },
+            { "text": "Payloads", "x": 254, "y": 62, "text_color_palette": "dark", "text_size": "large" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 215, "y": 75 }
+          ],
+          "x": 20,
+          "y": 35,
+          "target": "pager_portal_payloads_dashboard"
+        },
+        {
+          "id": "Themes",
+          "layers": [
+            { "text": "Themes", "x": 254, "y": 94, "text_color_palette": "dark", "text_size": "large" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_249x25.png", "x": 209, "y": 95 },
+            { "text": "Themes", "x": 254, "y": 94, "text_color_palette": "dark", "text_size": "large" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 215, "y": 106 }
+          ],
+          "x": 20,
+          "y": 35,
+          "target": "pager_portal_themes_dashboard"
+        }
+      ]
+    }
+  ]
+}
