@@ -1,0 +1,113 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "background_color": { "r": 0, "g": 10, "b": 32 },
+    "layers": [
+      { "image_path": "assets/dashboard/big_board.png", "x": 0, "y": 0 }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "RECON",
+      "x": 109,
+      "y": 75,
+      "layers": [
+        { "text": "RECON", "x": 6, "y": 1, "text_size": "small", "text_color_palette": "blue" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/site_recon.png", "x": -22, "y": -44 },
+        { "text": "S01 RECON", "x": -101, "y": 126, "text_size": "small", "text_color_palette": "yellow" },
+        { "text": "scan wifi + bluetooth", "x": -8, "y": 126, "text_size": "small", "max_chars": 24, "text_color_palette": "blue" },
+        { "image_path": "assets/dashboard/sub.png", "x": -68, "y": 5 }
+      ],
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "x": 256,
+      "y": 66,
+      "layers": [
+        { "text": "PAYLOADS", "x": 7, "y": 1, "text_size": "small", "text_color_palette": "blue" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/site_payloads.png", "x": -178, "y": -37 },
+        { "text": "S02 PAYLOADS", "x": -248, "y": 135, "text_size": "small", "text_color_palette": "yellow" },
+        { "text": "run your user payloads", "x": -128, "y": 135, "text_size": "small", "max_chars": 24, "text_color_palette": "blue" },
+        { "image_path": "assets/dashboard/sub.png", "x": -56, "y": 1 }
+      ],
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "PINEAP",
+      "x": 356,
+      "y": 53,
+      "layers": [
+        { "text": "PINEAP", "x": 12, "y": 9, "text_size": "small", "text_color_palette": "blue" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/site_pineap.png", "x": -283, "y": -31 },
+        { "text": "S03 PINEAP", "x": -353, "y": 143, "text_size": "small", "text_color_palette": "yellow" },
+        { "text": "rogue AP + evil WPA", "x": -251, "y": 143, "text_size": "small", "max_chars": 24, "text_color_palette": "blue" },
+        { "image_path": "assets/dashboard/sub.png", "x": 73, "y": 20 }
+      ],
+      "target": "pineap_menu"
+    },
+    {
+      "id": "ALERTS",
+      "x": 264,
+      "y": 120,
+      "layers": [
+        { "text": "ALERTS", "x": 6, "y": -8, "text_size": "small", "text_color_palette": "blue" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/site_alerts.png", "x": -186, "y": -85 },
+        { "text": "S04 ALERTS", "x": -256, "y": 81, "text_size": "small", "text_color_palette": "yellow" },
+        { "text": "fire on wifi events", "x": -154, "y": 81, "text_size": "small", "max_chars": 24, "text_color_palette": "blue" },
+        { "image_path": "assets/dashboard/sub.png", "x": -50, "y": 9 }
+      ],
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "pagerportal",
+      "x": 164,
+      "y": 146,
+      "layers": [
+        { "text": "PORTAL", "x": 4, "y": 3, "text_size": "small", "text_color_palette": "blue" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/site_portal.png", "x": -22, "y": -108 },
+        { "text": "S05 PORTAL", "x": -156, "y": 55, "text_size": "small", "text_color_palette": "yellow" },
+        { "text": "get + update payloads", "x": -54, "y": 55, "text_size": "small", "max_chars": 24, "text_color_palette": "blue" },
+        { "image_path": "assets/dashboard/sub.png", "x": -54, "y": 5 }
+      ],
+      "target": "pager_portal_dashboard"
+    },
+    {
+      "id": "SETTINGS",
+      "x": 418,
+      "y": 156,
+      "layers": [
+        { "text": "SETTINGS", "x": -73, "y": 3, "text_size": "small", "text_color_palette": "blue" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/site_settings.png", "x": -340, "y": -119 },
+        { "text": "S06 SETTINGS", "x": -410, "y": 45, "text_size": "small", "text_color_palette": "yellow" },
+        { "text": "configure the pager", "x": -290, "y": 45, "text_size": "small", "max_chars": 24, "text_color_palette": "blue" },
+        { "image_path": "assets/dashboard/sub.png", "x": -62, "y": 2 }
+      ],
+      "target": "settings_menu"
+    }
+  ]
+}
