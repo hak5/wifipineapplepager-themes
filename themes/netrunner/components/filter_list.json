@@ -1,7 +1,6 @@
 {
   "template": {
     "screen_name": "filters_list",
-    "windowed_canvas": true,
     "cache_canvases": false,
     "background": {
       "layers": [

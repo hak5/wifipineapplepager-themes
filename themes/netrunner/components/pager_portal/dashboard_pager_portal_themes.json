@@ -31,7 +31,6 @@
           ],
           "selected_layers": [
             { "text": "Browse Themes", "x": 160, "y": 60, "text_color_palette": "gray" }
-
           ],
           "x": 60,
           "y": 20
@@ -44,7 +43,6 @@
           ],
           "selected_layers": [
             { "text": "Installed Themes", "x": 160, "y": 87, "text_color_palette": "gray" }
-
           ],
           "x": 60,
           "y": 20

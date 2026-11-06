@@ -30,8 +30,8 @@
               "b": "back",
               "up": "previous",
               "down": "next",
-              "left": "noop",
-              "right": "select_menu"
+              "left": "back",
+              "right": "next_page"
             }
           },
           {
@@ -51,7 +51,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           },
           {
@@ -71,7 +71,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           },
           {
@@ -93,7 +93,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           }
         ]

@@ -142,7 +142,6 @@
     "alert_payload_title": "components/templates/alert_payload_title.json",
     "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
     "timestamp": "components/templates/timestamp.json",
-    "spinner_text": "components/templates/spinner_text.json",
     "string": "components/templates/string.json",
     "payload_name": "components/templates/payload_name_in_list.json",
     "payload_name_selected": "components/templates/payload_name_in_list_selected.json",

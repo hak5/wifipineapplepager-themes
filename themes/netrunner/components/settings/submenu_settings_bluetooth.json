@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/settings_icon.png", "x": 35, "y": 50 },
-      { "image_path": "assets/settings_button_selected.png", "x": 15, "y": 2},
+      { "image_path": "assets/settings_button_selected.png", "x": 15, "y": 2 },
       { "text": "Network", "x": 54, "y": 10, "text_color_palette": "cyan" },
-      { "image_path": "assets/settings_button_unselected.png", "x": 165, "y": 2},
+      { "image_path": "assets/settings_button_unselected.png", "x": 165, "y": 2 },
       { "text": "System", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
-      { "image_path": "assets/settings_button_unselected.png", "x": 315, "y": 2},
+      { "image_path": "assets/settings_button_unselected.png", "x": 315, "y": 2 },
       { "text": "Clock", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
     ]
   },

@@ -21,14 +21,14 @@
       "menu_items": [
         {
           "id": "Recon Audio Enabled",
-          "x":110,
-          "y":20,
+          "x": 110,
+          "y": 20,
           "layers": [
-            { "variable_name":  "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
             { "text": "Recon Audio", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_RECON_AUDIO_ENABLED", "use_template": "toggle" },
             { "text": "Recon Audio", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -36,16 +36,16 @@
         },
         {
           "id": "Audio Source",
-          "x":110,
-          "y":55,
+          "x": 110,
+          "y": 55,
           "layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "dark_cyan" },
-            { "variable_name":  "$_RECON_AUDIO_SRC","x":220, "string_template": { "text_color_palette": "red" } },
+            { "variable_name": "$_RECON_AUDIO_SRC", "x": 220, "string_template": { "text_color_palette": "red" } },
             { "text": "Audio Source:", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "cyan" },
-            { "variable_name":  "$_RECON_AUDIO_SRC","x":220, "string_template": { "text_color_palette": "red" } },
+            { "variable_name": "$_RECON_AUDIO_SRC", "x": 220, "string_template": { "text_color_palette": "red" } },
             { "text": "Audio Source:", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "option_dialog_narrow",
@@ -53,16 +53,16 @@
         },
         {
           "id": "Audio Mode",
-          "x":110,
-          "y":90,
+          "x": 110,
+          "y": 90,
           "layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "dark_cyan" },
-            { "variable_name":  "$_RECON_AUDIO_MODE","x":200, "string_template": { "text_color_palette": "red" }},
+            { "variable_name": "$_RECON_AUDIO_MODE", "x": 200, "string_template": { "text_color_palette": "red" } },
             { "text": "Audio Mode:", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "cyan" },
-            { "variable_name":  "$_RECON_AUDIO_MODE", "x": 200, "string_template": { "text_color_palette": "red" }},
+            { "variable_name": "$_RECON_AUDIO_MODE", "x": 200, "string_template": { "text_color_palette": "red" } },
             { "text": "Audio Mode:", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "option_dialog_narrow",
@@ -70,14 +70,14 @@
         },
         {
           "id": "Audio BG",
-          "x":110,
-          "y":125,
+          "x": 110,
+          "y": 125,
           "layers": [
-            { "variable_name":  "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
             { "text": "Background Audio", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
+            { "variable_name": "$_RECON_AUDIO_BACKGROUND", "use_template": "toggle" },
             { "text": "Background Audio", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -85,17 +85,17 @@
         },
         {
           "id": "Radio Settings",
-          "x":110,
-          "y":160,
+          "x": 110,
+          "y": 160,
           "layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "dark_cyan" },
             { "text": "Radio Settings", "x": 40, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 15, "recolor_palette": "dark_cyan"}
+            { "image_path": "assets/down.png", "x": -20, "y": 15, "recolor_palette": "dark_cyan" }
           ],
           "selected_layers": [
             { "image_path": "assets/menu.png", "recolor_palette": "cyan" },
             { "text": "Radio Settings", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 15, "recolor_palette": "cyan"}
+            { "image_path": "assets/down.png", "x": -20, "y": 15, "recolor_palette": "cyan" }
           ],
           "target": "recon_band_settings"
         }
@@ -106,17 +106,17 @@
       "menu_items": [
         {
           "id": "Persist DB",
-          "x":110,
-          "y":20,
+          "x": 110,
+          "y": 20,
           "layers": [
-            { "variable_name":  "$_PERSIST_RECON_DB", "use_template": "toggle" },
+            { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle" },
             { "text": "Save to Recon DB", "x": 40, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/up.png", "x": -20, "y": -5, "recolor_palette": "dark_cyan"}
+            { "image_path": "assets/up.png", "x": -20, "y": -5, "recolor_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PERSIST_RECON_DB", "use_template": "toggle" },
+            { "variable_name": "$_PERSIST_RECON_DB", "use_template": "toggle" },
             { "text": "Save to Recon DB", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/up.png", "x": -20, "y": -5, "recolor_palette": "dark_cyan"}
+            { "image_path": "assets/up.png", "x": -20, "y": -5, "recolor_palette": "dark_cyan" }
           ],
           "target": "inline_toggle",
           "variable": "$_PERSIST_RECON_DB"
@@ -138,14 +138,14 @@
         },
         {
           "id": "Record PCAP",
-          "x":110,
-          "y":90,
+          "x": 110,
+          "y": 90,
           "layers": [
-            { "variable_name":  "$_RECORD_PCAP", "use_template": "toggle" },
+            { "variable_name": "$_RECORD_PCAP", "use_template": "toggle" },
             { "text": "Record PCAP", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_RECORD_PCAP", "use_template": "toggle" },
+            { "variable_name": "$_RECORD_PCAP", "use_template": "toggle" },
             { "text": "Record PCAP", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -153,14 +153,14 @@
         },
         {
           "id": "Wigle Mode",
-          "x":110,
-          "y":125,
+          "x": 110,
+          "y": 125,
           "layers": [
-            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
             { "text": "Wigle Mode", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
             { "text": "Wigle Mode", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -253,35 +253,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,5 +4,11 @@
   "max_chars": 30,
   "wrap_text": true,
   "max_lines": 11,
-  "center_text_within" : { "draw_bounds": false, "start_x": 100, "end_x": 380, "start_y": 26, "end_y": 190 }
+  "center_text_within": {
+    "draw_bounds": false,
+    "start_x": 100,
+    "end_x": 380,
+    "start_y": 26,
+    "end_y": 190
+  }
 }

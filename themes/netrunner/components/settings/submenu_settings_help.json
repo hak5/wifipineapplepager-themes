@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/settings_icon.png", "x": 35, "y": 50 },
-      { "image_path": "assets/settings_button_unselected.png", "x": 15, "y": 2},
+      { "image_path": "assets/settings_button_unselected.png", "x": 15, "y": 2 },
       { "text": "GPS", "x": 54, "y": 10, "text_color_palette": "dark_cyan" },
-      { "image_path": "assets/settings_button_unselected.png", "x": 165, "y": 2},
+      { "image_path": "assets/settings_button_unselected.png", "x": 165, "y": 2 },
       { "text": "Updates", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
-      { "image_path": "assets/settings_button_selected.png", "x": 315, "y": 2},
+      { "image_path": "assets/settings_button_selected.png", "x": 315, "y": 2 },
       { "text": "Help", "x": 354, "y": 10, "text_color_palette": "cyan" }
     ]
   },
@@ -29,8 +29,8 @@
       "menu_items": [
         {
           "id": "Tutorial",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
             { "image_path": "assets/wizard.png", "recolor_palette": "dark_cyan" },
             { "text": "Tutorial", "x": 40, "text_color_palette": "dark_cyan" }
@@ -43,8 +43,8 @@
         },
         {
           "id": "Regulatory",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
             { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
             { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "dark_cyan" }
@@ -57,8 +57,8 @@
         },
         {
           "id": "License Agreement",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
             { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
             { "text": "License Agreement", "x": 40, "text_color_palette": "dark_cyan" }
@@ -71,8 +71,8 @@
         },
         {
           "id": "Open Source Licenses",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
             { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
             { "text": "Open Source Licenses", "x": 40, "text_color_palette": "dark_cyan" }
@@ -85,8 +85,8 @@
         },
         {
           "id": "Help",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
             { "image_path": "assets/info.png", "recolor_palette": "dark_cyan" },
             { "text": "Help", "x": 40, "text_color_palette": "dark_cyan" }
@@ -100,5 +100,4 @@
       ]
     }
   ]
-
 }

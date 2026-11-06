@@ -118,7 +118,10 @@
               { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 36 },
               { "image_path": "assets/optiondialog/button_outline.png", "x": 361, "y": 36 },
               { "image_path": "assets/optiondialog/check.png", "x": 378, "y": 62, "recolor_palette": "red" },
-              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
             ],
             "target": "save",
             "button_map": {
@@ -135,13 +138,19 @@
             "layers": [
               { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 118 },
               { "image_path": "assets/optiondialog/x.png", "x": 383, "y": 146, "recolor_palette": "red" },
-              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
             ],
             "selected_layers": [
               { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 118 },
               { "image_path": "assets/optiondialog/button_outline.png", "x": 361, "y": 118 },
               { "image_path": "assets/optiondialog/x.png", "x": 383, "y": 146, "recolor_palette": "red" },
-              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
             ],
             "target": "back",
             "button_map": {
@@ -157,12 +166,7 @@
             "id": "Title",
             "unselectable": true,
             "layers": [
-              {
-                "variable_name": "$_INPUT_NAME",
-                "x": 75,
-                "y": 30,
-                "use_template": "string_title"
-              }
+              { "variable_name": "$_INPUT_NAME", "x": 75, "y": 30, "use_template": "string_title" }
             ]
           }
         ]

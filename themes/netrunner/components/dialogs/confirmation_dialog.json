@@ -16,12 +16,12 @@
           "y": 10,
           "x": 2,
           "layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 209, "y": 170 },
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_cancel.png", "x": 209, "y": 170 }
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 209, "y": 170 },
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_cancel.png", "x": 209, "y": 170 }
           ],
           "selected_layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 209, "y": 170 },
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_cancel.png", "x": 209, "y": 170 }
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 209, "y": 170 },
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_cancel.png", "x": 209, "y": 170 }
           ],
           "target": "back"
         },
@@ -30,12 +30,12 @@
           "y": 10,
           "x": 2,
           "layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 346, "y": 170 },
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_confirm.png", "x": 346, "y": 170 }
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_deselected.png", "x": 346, "y": 170 },
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_confirm.png", "x": 346, "y": 170 }
           ],
           "selected_layers": [
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 346, "y": 170 },
-            { "image_path":  "assets/confirmation_dialog/generic_confirmation_button_confirm.png", "x": 346, "y": 170 }
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_selected.png", "x": 346, "y": 170 },
+            { "image_path": "assets/confirmation_dialog/generic_confirmation_button_confirm.png", "x": 346, "y": 170 }
           ],
           "target": "confirm"
         }
@@ -43,4 +43,3 @@
     }
   ]
 }
-

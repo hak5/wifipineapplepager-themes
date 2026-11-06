@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/pineap_icon.png", "x": 35, "y": 50 },
-      { "image_path": "assets/pineap_button_unselected.png", "x": 15, "y": 2},
-      { "text": "SSIDs", "x": 54,  "y": 10,  "text_color_palette": "dark_cyan" },
-      { "image_path": "assets/pineap_button_selected.png", "x": 165, "y": 2},
+      { "image_path": "assets/pineap_button_unselected.png", "x": 15, "y": 2 },
+      { "text": "SSIDs", "x": 54, "y": 10, "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/pineap_button_selected.png", "x": 165, "y": 2 },
       { "text": "Filters", "x": 204, "y": 10, "text_color_palette": "cyan" },
-      { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2},
+      { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2 },
       { "text": "Clients", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
     ]
   },
@@ -29,41 +29,23 @@
       "menu_items": [
         {
           "id": "Client Filter",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
             { "text": "Client Filter:", "text_color_palette": "dark_cyan" },
-            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "dark_yellow", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "dark_red",  "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } }
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "dark_red", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }] } }
           ],
           "selected_layers": [
             { "text": "Client Filter:", "text_color_palette": "cyan" },
-            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "red",  "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } }
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }] } }
           ],
           "target": "inline_toggle",
           "variable": "$_FILTER_CLIENT_MODE"
         },
         {
           "id": "Allowed Client List",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
             { "image_path": "assets/menu.png" },
             { "text": "Allowed Client List", "x": 40, "text_color_palette": "dark_cyan" }
@@ -77,9 +59,8 @@
         },
         {
           "id": "Denied Client List",
-          "x":170,
-          "y":120,
-
+          "x": 170,
+          "y": 120,
           "layers": [
             { "image_path": "assets/menu.png" },
             { "text": "Denied Client List", "x": 40, "text_color_palette": "dark_cyan" }
@@ -93,8 +74,8 @@
         },
         {
           "id": "Add Allowed Client",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Add Allowed Client", "x": 40, "text_color_palette": "dark_cyan" }
@@ -108,65 +89,47 @@
         },
         {
           "id": "Add Denied Client",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Add Denied Client", "x": 40, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Add Denied Client", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
           ],
           "target": "edit_mac_dialog",
           "variable": "$_FILTER_CLIENT_DENY_ADD"
         }
       ]
     },
-     {
+    {
       "page_index": 1,
       "menu_items": [
         {
           "id": "Network Filter",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
             { "text": "Network Filter:", "text_color_palette": "dark_cyan" },
-            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "dark_yellow", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "dark_red",  "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "dark_red", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }] } },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
           ],
           "selected_layers": [
             { "text": "Network Filter:", "text_color_palette": "cyan" },
-            { "variable_name": "$_FILTER_NETWORK_MODE", "x":200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "red",  "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 72, "y": 2, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }] } },
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
           ],
           "target": "inline_toggle",
           "variable": "$_FILTER_NETWORK_MODE"
         },
         {
           "id": "Allowed Network List",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
             { "image_path": "assets/menu.png" },
             { "text": "Allowed Network List", "x": 40, "text_color_palette": "dark_cyan" }
@@ -180,8 +143,8 @@
         },
         {
           "id": "Denied Network List",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
             { "image_path": "assets/menu.png" },
             { "text": "Denied Network List", "x": 40, "text_color_palette": "dark_cyan" }
@@ -195,8 +158,8 @@
         },
         {
           "id": "Add Allowed Network",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Add Allowed Network", "x": 40, "text_color_palette": "dark_cyan" }
@@ -210,8 +173,8 @@
         },
         {
           "id": "Add Denied Network",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Add Denied Network", "x": 40, "text_color_palette": "dark_cyan" }

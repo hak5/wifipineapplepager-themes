@@ -16,7 +16,7 @@
       "layers": [
         { "image_path": "assets/pager_portal/pager_portal_dashboard_bg.png", "x": 0, "y": 0 },
         { "text": "Recon Payloads", "text_size": "large", "text_color_palette": "yellow", "x": 5 },
-        { "variable_name": "$_LIST_SIZE", "x": 375, "y": 206, "string_template": {"text_size":"small","text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 365, "end_x": 385, "start_y": 206, "end_y": 218 }}},
+        { "variable_name": "$_LIST_SIZE", "x": 375, "y": 206, "string_template": { "text_size": "small", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 365, "end_x": 385, "start_y": 206, "end_y": 218 } } },
         { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 390, "y": 206, "use_template": "list_pagination_label" }
       ]
     },
@@ -28,13 +28,11 @@
             "x": 50,
             "y": 40,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 204, "y": 60,
-                "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 204, "y": 60, "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 58, "recolor_palette": "red" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 204, "y": 60,
-              "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 204, "y": 60, "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 58, "recolor_palette": "cyan" }
             ],
             "target": "pager_portal_get_payloads_for_category_list",
@@ -45,13 +43,11 @@
             "x": 50,
             "y": 38,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 89,
-              "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 89, "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 87, "recolor_palette": "red" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 89,
-              "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 89, "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 87, "recolor_palette": "cyan" }
             ],
             "target": "pager_portal_get_payloads_for_category_list",
@@ -62,13 +58,11 @@
             "x": 50,
             "y": 38,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 118,
-              "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 118, "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 116, "recolor_palette": "red" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 118,
-              "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 118, "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 116, "recolor_palette": "cyan" }
             ],
             "target": "pager_portal_get_payloads_for_category_list",
@@ -79,13 +73,11 @@
             "x": 50,
             "y": 38,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 147,
-              "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 147, "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 146, "recolor_palette": "red" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 147,
-              "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 147, "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 146, "recolor_palette": "cyan" }
             ],
             "target": "pager_portal_get_payloads_for_category_list",
@@ -96,13 +88,11 @@
             "x": 50,
             "y": 38,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 176,
-              "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 176, "string_template": { "text_size": "medium", "text_color_palette": "red", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 174, "recolor_palette": "red" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 176,
-              "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 }},
+              { "variable_name": "$_LIST_ITEM", "x": 206, "y": 176, "string_template": { "text_size": "medium", "text_color_palette": "cyan", "max_chars": 20, "wrap_text": false, "max_lines": 1 } },
               { "image_path": "assets/folder.png", "x": 177, "y": 174, "recolor_palette": "cyan" }
             ],
             "target": "pager_portal_get_payloads_for_category_list",

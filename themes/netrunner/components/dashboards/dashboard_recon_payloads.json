@@ -2,7 +2,6 @@
   "template": {
     "screen_name": "payloads_dashboard",
     "status_bar": "",
-    "windowed_canvas": true,
     "cache_canvases": true,
     "button_map": {
       "a": "select",
@@ -41,7 +40,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           },
           {
@@ -65,7 +64,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           },
           {
@@ -77,7 +76,7 @@
               { "image_path": "assets/folder.png", "x": 13, "y": -2, "recolor_palette": "dark_cyan" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 0,  "use_template": "recon_payload_title_selected" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 0, "use_template": "recon_payload_title_selected" },
               { "image_path": "assets/payloads_dashboard/arrow.png", "x": 0, "y": -3 },
               { "image_path": "assets/folder.png", "x": 13, "y": -2, "recolor_palette": "cyan" }
             ],
@@ -89,7 +88,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           },
           {
@@ -101,7 +100,7 @@
               { "image_path": "assets/folder.png", "x": 13, "y": -2, "recolor_palette": "dark_cyan" }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 0,  "use_template": "recon_payload_title_selected" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 0, "use_template": "recon_payload_title_selected" },
               { "image_path": "assets/payloads_dashboard/arrow.png", "x": 0, "y": -3 },
               { "image_path": "assets/folder.png", "x": 13, "y": -2, "recolor_palette": "cyan" }
             ],
@@ -113,7 +112,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           },
           {
@@ -137,7 +136,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "next_page"
             }
           }
         ]

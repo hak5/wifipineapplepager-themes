@@ -21,7 +21,6 @@
           ],
           "selected_layers": [
             { "text": "Get Payloads", "x": 160, "y": 60, "text_color_palette": "cyan" }
-
           ],
           "x": 60,
           "y": 20,
@@ -34,7 +33,6 @@
           ],
           "selected_layers": [
             { "text": "Update Payloads", "x": 160, "y": 87, "text_color_palette": "cyan" }
-
           ],
           "x": 60,
           "y": 20,
@@ -47,7 +45,6 @@
           ],
           "selected_layers": [
             { "text": "Uninstall Payloads", "x": 160, "y": 114, "text_color_palette": "cyan" }
-
           ],
           "x": 60,
           "y": 20,

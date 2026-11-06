@@ -23,12 +23,11 @@
           ],
           "selected_layers": [
             { "text": "User Payloads", "x": 160, "y": 60, "text_color_palette": "cyan" }
-
           ],
           "x": 60,
           "y": 20,
           "target": "pager_portal_get_user_payloads",
-          "variable":"$_GET_USER_PAYLOAD_CATEGORIES"
+          "variable": "$_GET_USER_PAYLOAD_CATEGORIES"
         },
         {
           "id": "Alert Payloads",
@@ -37,12 +36,11 @@
           ],
           "selected_layers": [
             { "text": "Alert Payloads", "x": 160, "y": 87, "text_color_palette": "cyan" }
-
           ],
           "x": 60,
           "y": 20,
           "target": "pager_portal_get_alert_payloads",
-          "variable":"$_GET_ALERT_PAYLOAD_CATEGORIES"
+          "variable": "$_GET_ALERT_PAYLOAD_CATEGORIES"
         },
         {
           "id": "Recon Payloads",
@@ -51,12 +49,11 @@
           ],
           "selected_layers": [
             { "text": "Recon Payloads", "x": 160, "y": 114, "text_color_palette": "cyan" }
-
           ],
           "x": 60,
           "y": 20,
           "target": "pager_portal_get_recon_payloads",
-          "variable":"$_GET_RECON_PAYLOAD_CATEGORIES"
+          "variable": "$_GET_RECON_PAYLOAD_CATEGORIES"
         }
       ]
     }

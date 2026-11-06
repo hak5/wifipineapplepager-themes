@@ -15,11 +15,11 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/pineap_icon.png", "x": 35, "y": 50 },
-      { "image_path": "assets/pineap_button_selected.png", "x": 15, "y": 2},
-      { "text": "PineAP", "x": 54,  "y": 10,  "text_color_palette": "cyan" },
-      { "image_path": "assets/pineap_button_unselected.png", "x": 165, "y": 2},
+      { "image_path": "assets/pineap_button_selected.png", "x": 15, "y": 2 },
+      { "text": "PineAP", "x": 54, "y": 10, "text_color_palette": "cyan" },
+      { "image_path": "assets/pineap_button_unselected.png", "x": 165, "y": 2 },
       { "text": "Open AP", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
-      { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2},
+      { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2 },
       { "text": "Evil WPA", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
     ]
   },
@@ -29,14 +29,14 @@
       "menu_items": [
         {
           "id": "Mimic Open Networks",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "variable_name":  "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
             { "text": "Mimic Open Networks", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
             { "text": "Mimic Open Networks", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -44,14 +44,14 @@
         },
         {
           "id": "Collect Probes",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "variable_name":  "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
             { "text": "Collect Probes", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
             { "text": "Collect Probes", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -59,14 +59,14 @@
         },
         {
           "id": "Advertise Networks",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "variable_name":  "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
             { "text": "Advertise Networks", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
             { "text": "Advertise Networks", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -74,14 +74,14 @@
         },
         {
           "id": "Randomize Address",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "variable_name":  "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
             { "text": "Randomize Address", "x": 40, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
             { "text": "Randomize Address", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "inline_toggle",
@@ -89,17 +89,17 @@
         },
         {
           "id": "Collect Handshakes",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
-            { "variable_name":  "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
             { "text": "Collect Handshakes", "x": 40, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
             { "text": "Collect Handshakes", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray" }
           ],
           "target": "inline_toggle",
           "variable": "$_PINEAP_COLLECT_HANDSHAKES"
@@ -111,17 +111,17 @@
       "menu_items": [
         {
           "id": "Wigle Mode",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
             { "text": "Wigle Mode", "x": 40, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
             { "text": "Wigle Mode", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray" }
           ],
           "target": "inline_toggle",
           "variable": "$_WIGLE_MODE_ENABLED"
@@ -130,37 +130,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,13 +21,13 @@
       "menu_items": [
         {
           "id": "Brightness",
-          "x":20,
-          "y":35,
+          "x": 20,
+          "y": 35,
           "layers": [
             { "text": "Brightness", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Brightness", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog_narrow",
@@ -35,13 +35,13 @@
         },
         {
           "id": "Volume",
-          "x":20,
-          "y":70,
+          "x": 20,
+          "y": 70,
           "layers": [
             { "text": "Volume", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Volume", "text_color_palette": "yellow" }
           ],
           "target": "option_dialog_narrow",
@@ -49,15 +49,15 @@
         },
         {
           "id": "Vibrate",
-          "x":20,
-          "y":105,
+          "x": 20,
+          "y": 105,
           "layers": [
-            { "variable_name":  "$_VIBRATE", "x": 105, "y": -1, "use_template": "toggle" },
+            { "variable_name": "$_VIBRATE", "x": 105, "y": -1, "use_template": "toggle" },
             { "text": "Vibrate", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_VIBRATE", "x": 105, "y": -1, "use_template": "toggle" },
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "variable_name": "$_VIBRATE", "x": 105, "y": -1, "use_template": "toggle" },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Vibrate", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
@@ -65,15 +65,15 @@
         },
         {
           "id": "Client Mode",
-          "x":20,
-          "y":140,
+          "x": 20,
+          "y": 140,
           "layers": [
-            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 160, "y": -1, "use_template": "toggle" },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 160, "y": -1, "use_template": "toggle" },
             { "text": "Client Mode", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_WIFI_CLIENT_MODE_ENABLED", "x": 160, "y": -1, "use_template": "toggle" },
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "variable_name": "$_WIFI_CLIENT_MODE_ENABLED", "x": 160, "y": -1, "use_template": "toggle" },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Client Mode", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
@@ -81,13 +81,13 @@
         },
         {
           "id": "Client Setup",
-          "x":20,
-          "y":175,
+          "x": 20,
+          "y": 175,
           "layers": [
             { "text": "Client Setup", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Client Setup", "text_color_palette": "yellow" }
           ],
           "target": "client_mode_wizard"
@@ -95,5 +95,4 @@
       ]
     }
   ]
-
 }

@@ -21,53 +21,53 @@
       "menu_items": [
         {
           "id": "Sleep Screen",
-          "x":20,
-          "y":35,
+          "x": 20,
+          "y": 35,
           "layers": [
             { "text": "Settings", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Settings", "text_color_palette": "yellow" }
           ],
           "target": "quick_settings"
         },
         {
           "id": "Lock Screen",
-          "x":20,
-          "y":70,
+          "x": 20,
+          "y": 70,
           "layers": [
             { "text": "Lock Screen", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Lock Screen", "text_color_palette": "yellow" }
           ],
           "target": "function_lock_screen"
         },
         {
           "id": "Lock Buttons",
-          "x":20,
-          "y":105,
+          "x": 20,
+          "y": 105,
           "layers": [
             { "text": "Lock Buttons", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Lock Buttons", "text_color_palette": "yellow" }
           ],
           "target": "function_lock_buttons"
         },
         {
           "id": "Nerd Stats",
-          "x":20,
-          "y":140,
+          "x": 20,
+          "y": 140,
           "layers": [
             { "text": "Nerd Stats", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_STATS_FOR_NERDS", "x": 140, "y": -1, "use_template": "toggle" },
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "variable_name": "$_STATS_FOR_NERDS", "x": 140, "y": -1, "use_template": "toggle" },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Nerd Stats", "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
@@ -75,13 +75,13 @@
         },
         {
           "id": "shutdown",
-          "x":20,
-          "y":175,
+          "x": 20,
+          "y": 175,
           "layers": [
             { "text": "Shutdown", "text_color_palette": "red" }
           ],
           "selected_layers": [
-            { "image_path": "assets/pwr-itm-slct.png","x": -10, "y": -5 },
+            { "image_path": "assets/pwr-itm-slct.png", "x": -10, "y": -5 },
             { "text": "Shutdown", "text_color_palette": "yellow" }
           ],
           "target": "function_shutdown"
@@ -89,6 +89,4 @@
       ]
     }
   ]
-
 }
-
