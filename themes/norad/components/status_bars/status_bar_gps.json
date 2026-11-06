@@ -1,0 +1,113 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "blue"
+    },
+    "Battery": {
+      "x": 346,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          { "image_path": "assets/statusbar/dashboard_battery_text.png", "x": 4, "y": 0 }
+        ],
+        "charging_25": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_25.png", "x": 4, "y": 0 }
+        ],
+        "charging_50": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_50.png", "x": 4, "y": 0 }
+        ],
+        "charging_75": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_75.png", "x": 4, "y": 0 }
+        ],
+        "charging_100": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_100.png", "x": 4, "y": 0 }
+        ],
+        "charged": [
+          { "image_path": "assets/statusbar/dashboard_battery_full.png", "x": 4, "y": 0 }
+        ]
+      }
+    },
+    "Volume": {
+      "x": 317,
+      "y": 5,
+      "layers": {
+        "mute": [
+          { "image_path": "assets/statusbar/mute.png", "x": 0, "y": 3 }
+        ],
+        "low": [
+          { "image_path": "assets/statusbar/volume_low.png", "x": 0, "y": 3 }
+        ],
+        "medium": [
+          { "image_path": "assets/statusbar/volume_medium.png", "x": 0, "y": 3 }
+        ],
+        "high": [
+          { "image_path": "assets/statusbar/volume_high.png", "x": 0, "y": 3 }
+        ]
+      }
+    },
+    "Brightness": {
+      "x": 286,
+      "y": 5,
+      "layers": {
+        "15": [
+          { "image_path": "assets/statusbar/dashboard_brightness_2.png", "recolor_palette": "blue", "x": 11, "y": 7 }
+        ],
+        "25": [
+          { "image_path": "assets/statusbar/dashboard_brightness_3.png", "recolor_palette": "blue", "x": 11, "y": 1 }
+        ],
+        "50": [
+          { "image_path": "assets/statusbar/dashboard_brightness_5.png", "recolor_palette": "blue", "x": 4 }
+        ],
+        "75": [
+          { "image_path": "assets/statusbar/dashboard_brightness_7.png", "recolor_palette": "blue", "x": 1, "y": 1 }
+        ],
+        "100": [
+          { "image_path": "assets/statusbar/dashboard_brightness_8.png", "recolor_palette": "blue", "x": 1, "y": 1 }
+        ]
+      }
+    },
+    "Vibrate": {
+      "x": 251,
+      "y": 5,
+      "layers": {
+        "on": [
+          { "image_path": "assets/statusbar/vibrate.png", "x": 2, "y": 3 }
+        ],
+        "off": [
+          { "image_path": "assets/statusbar/vibrate.png", "x": 2, "y": 3, "recolor_palette": "disabled_dark_gray" }
+        ]
+      }
+    },
+    "GPS": {
+      "x": 216,
+      "y": 4,
+      "layers": {
+        "disconnected": [
+          { "image_path": "assets/statusbar/gps_disconnected.png", "recolor_palette": "disabled_dark_gray", "x": 2, "y": 3 }
+        ],
+        "nofix": [
+          { "image_path": "assets/statusbar/gps_nofix.png", "recolor_palette": "red", "x": 2, "y": 3 }
+        ],
+        "weak": [
+          { "image_path": "assets/statusbar/gps_weak.png", "recolor_palette": "orange", "x": 4, "y": 4 }
+        ],
+        "acquiring": [
+          { "image_path": "assets/statusbar/gps_acquiring.png", "recolor_palette": "yellow", "x": 4, "y": 4 }
+        ],
+        "fix": [
+          { "image_path": "assets/statusbar/gps.png", "recolor_palette": "green", "x": 4, "y": 4 }
+        ]
+      }
+    }
+  }
+}
