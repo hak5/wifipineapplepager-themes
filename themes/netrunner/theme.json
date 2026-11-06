@@ -1,12 +1,12 @@
 {
-  "author": "DocVoom",
-  "theme_version": "1.0",
-  "theme_framework_version": "0.5",
+  "theme_version": "2.0.0",
+  "theme_framework_version": "0.9",
 
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
     "network": "components/status_bars/status_bar_network.json",
     "recon": "components/status_bars/status_bar_recon.json",
+    "bt_recon": "components/status_bars/status_bar_bt_recon.json",
     "min": "components/status_bars/status_bar_min.json",
     "gps" : "components/status_bars/status_bar_gps.json"
   },
@@ -18,6 +18,7 @@
     "client_mode_wizard": "components/client_mode_wizard.json",
     "evilwpa_wizard": "components/pineap/evilwpa_wizard.json",
     "power_menu": "components/dashboards/power_menu.json",
+    "quick_settings": "components/dashboards/quick_settings.json",
     "regulatory": "components/settings/regulatory.json",
     "dashboard_path": "components/dashboards/netrunner_dashboard.json",
     "alerts_dashboard": "components/dashboards/dashboard_alerts.json",
@@ -32,30 +33,49 @@
     "settings_display_submenu": "components/settings/submenu_settings_display.json",
     "settings_ringtone_submenu": "components/settings/submenu_settings_ringtone.json",
     "settings_network_submenu": "components/settings/submenu_settings_network.json",
+    "settings_bluetooth_submenu": "components/settings/submenu_settings_bluetooth.json",
     "settings_system_submenu": "components/settings/submenu_settings_system.json",
     "settings_datetime_submenu": "components/settings/submenu_settings_datetime.json",
     "settings_gps_submenu": "components/settings/submenu_settings_gps.json",
+    "settings_gps_advanced": "components/settings/submenu_settings_gps_advanced.json",
     "settings_updates_submenu": "components/settings/submenu_settings_updates.json",
     "settings_help_submenu": "components/settings/submenu_settings_help.json",
     "settings_about_submenu": "components/settings/submenu_settings_about.json",
 
     "recon_settings": "components/recon/recon_settings.json",
     "recon_band_settings": "components/recon/recon_band_settings.json",
+    "recon_new_scan_submenu": "components/recon/recon_new_scan_submenu.json",
     "recon_selected_ap_menu": "components/recon/recon_selected_ap_menu.json",
     "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
+    "bt_recon_selected_device": "components/recon/bt_recon_selected_device.json",
+    "bt_recon_advertising_data": "components/recon/bt_recon_advertising_data.json",
 
     "pineap_menu": "components/dashboards/dashboard_pineap.json",
-    "settings_menu": "components/dashboards/dashboard_settings.json"
+    "settings_menu": "components/dashboards/dashboard_settings.json",
+
+    "pager_portal_dashboard": "components/dashboards/dashboard_pager_portal.json",
+    "pager_portal_update_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_update_payloads.json",
+    "pager_portal_themes_dashboard": "components/pager_portal/dashboard_pager_portal_themes.json",
+    "pager_portal_get_payloads_dashboard": "components/pager_portal/pager_portal_get_payloads_dashboard.json",
+    "pager_portal_view_payload_details": "components/pager_portal/pager_portal_view_payload_info.json",
+    "pager_portal_view_updatable_payload_details": "components/pager_portal/pager_portal_view_updatable_payload_info.json",
+    "pager_portal_view_installed_payload_details": "components/pager_portal/pager_portal_view_installed_payload_info.json"
   },
+
+  "pager_portal_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_payloads.json",
+  "pager_portal_alert_payload_categories": "components/pager_portal/pager_portal_get_alert_payloads.json",
+  "pager_portal_user_payload_categories": "components/pager_portal/pager_portal_get_user_payloads.json",
+  "pager_portal_recon_payload_categories": "components/pager_portal/pager_portal_get_recon_payloads.json",
+  "pager_portal_installed_payloads_list": "components/pager_portal/pager_portal_installed_payloads_list.json",
+  "pager_portal_update_payloads_list": "components/pager_portal/pager_portal_update_payloads_list.json",
+  "pager_portal_get_payloads_for_category_list": "components/pager_portal/pager_portal_get_payloads_for_category_list.json",
 
   "option_dialogs": {
     "option_dialog":  "components/dialogs/ui_option_dialog.json",
-    "option_dialog_recon":  "components/dialogs/ui_option_dialog_recon.json",
-    "option_dialog_alerts":  "components/dialogs/ui_option_dialog_alerts.json",
-    "option_dialog_payloads":  "components/dialogs/ui_option_dialog_payloads.json",
     "option_dialog_narrow":  "components/dialogs/ui_option_dialog_narrow.json"
   },
 
+  "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
 
   "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
   "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
@@ -90,6 +110,7 @@
     "recon_list": "components/recon/recon_results_list.json"
   },
   "recon_ap_clients_list_path": "components/recon/recon_ap_clients_list.json",
+  "bt_recon_list_path": "components/recon/bt_recon_results_list.json",
 
   "edit_string_dialog_path": "components/dialogs/edit_string_dialog.json",
   "edit_ip_dialog_path": "components/dialogs/edit_ip_dialog.json",
@@ -111,12 +132,8 @@
 
   "toggle_templates" : {
     "toggle": "components/templates/toggle.json",
-    "green_toggle": "components/templates/green_toggle.json",
-    "yellow_toggle": "components/templates/yellow_toggle.json",
     "disabled_toggle": "components/templates/disabled_toggle.json",
-    "checkbox": "components/templates/checkbox.json",
-    "pineap_filter_mode": "components/templates/pineap_filter_mode.json",
-    "disabled_pineap_filter_mode": "components/templates/disabled_pineap_filter_mode.json"
+    "checkbox": "components/templates/checkbox.json"
   },
 
   "string_templates": {
@@ -124,10 +141,6 @@
     "recon_payload_title_selected": "components/templates/recon_payload_title_selected.json",
     "alert_payload_title": "components/templates/alert_payload_title.json",
     "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
-    "client_ssid": "components/templates/client_ssid.json",
-    "client_ssid_selected": "components/templates/client_ssid_selected.json",
-    "client_mac": "components/templates/client_mac.json",
-    "client_mac_selected": "components/templates/client_mac_selected.json",
     "timestamp": "components/templates/timestamp.json",
     "spinner_text": "components/templates/spinner_text.json",
     "string": "components/templates/string.json",
@@ -135,19 +148,14 @@
     "payload_name_selected": "components/templates/payload_name_in_list_selected.json",
     "alert_info_dialog_text": "components/templates/alert_info_dialog_text.json",
     "string_title": "components/templates/string_title.json",
-    "selected_string": "components/templates/selected_string.json",
     "error_text": "components/templates/error_text.json",
     "confirmation_dialog_text": "components/templates/confirmation_dialog_text.json",
     "option_dialog_string": "components/templates/option_dialog_string.json",
     "option_dialog_string_selected": "components/templates/option_dialog_string_selected.json",
     "ssid_pool_string": "components/templates/ssid_pool_string.json",
     "ssid_pool_string_selected": "components/templates/ssid_pool_string_selected.json",
-    "network_filter_string": "components/templates/network_filter_string.json",
-    "network_filter_string_selected": "components/templates/network_filter_string_selected.json",
     "payload_title": "components/templates/payload_title.json",
     "list_count": "components/templates/list_count.json",
-    "list_page_total": "components/templates/list_page_total.json",
-    "list_page_current": "components/templates/list_page_total.json",
     "list_pagination_label": "components/templates/list_pagination_label.json"
   },
 
@@ -157,15 +165,15 @@
   },
 
   "signal_templates": {
-    "signal": "components/templates/signal.json",
-    "selected_signal": "components/templates/selected_signal.json"
+    "selected_signal": "components/templates/selected_signal.json",
+    "bt_signal": "components/templates/bt_signal.json"
   },
 
   "color_palette":{
     "black":{ "r":0, "g":0, "b":0 },
     "blue":{ "r":106, "g":210, "b":249 },
-    "red":{ "r":250, "g":72, "b":9 },
-    "dark_red":{ "r":110, "g":31, "b":23 },
+    "red":{ "r":245, "g":45, "b":45 },
+    "dark_red":{ "r":180, "g":15, "b":15 },
     "yellow":{ "r":231, "g":197, "b":74 },
     "gray":{ "r":128, "g":128, "b":128 },
     "green":{ "r":42, "g":180, "b":42 },
@@ -178,7 +186,7 @@
     "dark_orange":{ "r":142, "g":76, "b":26 },
     "light_blue":{ "r":156, "g":226, "b":255 },
     "cyan":{ "r":0, "g":211, "b":223 },
-    "dark_cyan":{ "r":40, "g":120, "b":120 },
+    "dark_cyan":{ "r":0, "g":148, "b":156 },
     "purple":{ "r":132, "g":87, "b":162 },
     "dark_purple":{ "r":77, "g":45, "b":99 },
     "magenta":{ "r":205, "g":85, "b":155 },

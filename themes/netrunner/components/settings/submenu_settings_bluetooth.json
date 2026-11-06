@@ -1,0 +1,149 @@
+{
+  "screen_name": "settings_bluetooth_submenu",
+  "status_bar": "",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/settings_icon.png", "x": 35, "y": 50 },
+      { "image_path": "assets/settings_button_selected.png", "x": 15, "y": 2},
+      { "text": "Network", "x": 54, "y": 10, "text_color_palette": "cyan" },
+      { "image_path": "assets/settings_button_unselected.png", "x": 165, "y": 2},
+      { "text": "System", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/settings_button_unselected.png", "x": 315, "y": 2},
+      { "text": "Clock", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "BT Scan Mode",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "recolor_palette": "red" },
+            { "variable_name": "$_BT_SCAN_MODE", "x": 170, "string_template": { "text_color_palette": "orange" } },
+            { "text": "Scan Mode", "x": 40, "text_color_palette": "red" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "x": 4, "recolor_palette": "cyan" },
+            { "variable_name": "$_BT_SCAN_MODE", "x": 170, "string_template": { "text_color_palette": "orange" } },
+            { "text": "Scan Mode", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BT_SCAN_MODE"
+        },
+        {
+          "id": "BT Active Scan",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_BT_ACTIVE_SCAN", "use_template": "toggle" },
+            { "text": "Active Scan", "x": 40, "text_color_palette": "red" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_ACTIVE_SCAN", "use_template": "toggle" },
+            { "text": "Active Scan", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_ACTIVE_SCAN"
+        },
+        {
+          "id": "BT Name Lookup",
+          "x": 170,
+          "y": 120,
+          "layers": [
+            { "variable_name": "$_BT_NAME_LOOKUP", "use_template": "toggle" },
+            { "text": "Name Lookup", "x": 40, "text_color_palette": "red" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_NAME_LOOKUP", "use_template": "toggle" },
+            { "text": "Name Lookup", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_NAME_LOOKUP"
+        },
+        {
+          "id": "Classic Sweep",
+          "x": 170,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "recolor_palette": "red" },
+            { "text": "Classic Sweep", "x": 40, "text_color_palette": "red" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "x": 4, "recolor_palette": "cyan" },
+            { "text": "Classic Sweep", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BT_CLASSIC_SWEEP"
+        },
+        {
+          "id": "Scan Coded PHY",
+          "x": 170,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_BT_CODED_PHY", "use_template": "toggle" },
+            { "text": "Scan Coded PHY", "x": 40, "text_color_palette": "red" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "red" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_CODED_PHY", "use_template": "toggle" },
+            { "text": "Scan Coded PHY", "x": 40, "text_color_palette": "cyan" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "cyan" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_CODED_PHY"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Save to BT DB",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
+            { "text": "Save to DB", "x": 40, "text_color_palette": "red" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "red" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
+            { "text": "Save to DB", "x": 40, "text_color_palette": "cyan" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "cyan" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_PERSIST_DB"
+        },
+        {
+          "id": "Ignore Random",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_BT_DISCARD_RANDOM", "use_template": "toggle" },
+            { "text": "Ignore Random", "x": 40, "text_color_palette": "red" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_DISCARD_RANDOM", "use_template": "toggle" },
+            { "text": "Ignore Random", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_DISCARD_RANDOM"
+        }
+      ]
+    }
+  ]
+}

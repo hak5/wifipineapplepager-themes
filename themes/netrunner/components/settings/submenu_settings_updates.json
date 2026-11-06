@@ -1,6 +1,6 @@
 {
   "screen_name": "settings_updates_submenu",
-  "status_bar": "default",
+  "status_bar": "",
   "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
@@ -14,12 +14,13 @@
   "background": {
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "dark_red" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "dark_red" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "cyan" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "dark_red" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "dark_red" }
+      { "image_path": "assets/settings_icon.png", "x": 35, "y": 50 },
+      { "image_path": "assets/settings_button_unselected.png", "x": 15, "y": 2},
+      { "text": "GPS", "x": 54, "y": 10, "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/settings_button_selected.png", "x": 165, "y": 2},
+      { "text": "Updates", "x": 204, "y": 10, "text_color_palette": "cyan" },
+      { "image_path": "assets/settings_button_unselected.png", "x": 315, "y": 2},
+      { "text": "Help", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
     ]
   },
   "pages": [
@@ -57,6 +58,34 @@
             { "text": "Check for Updates", "x": 40, "text_color_palette": "cyan" }
           ],
           "target": "check_for_updates"
+        },
+        {
+          "id": "Check for Portal Updates",
+          "x":170,
+          "y":120,
+          "layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "dark_cyan" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/autoplay.png", "recolor_palette": "cyan" },
+            { "text": "Refresh Portal", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "function_refresh_pager_portal_data"
+        },
+        {
+          "id": "pagerportal",
+          "x":170,
+          "y":155,
+          "layers": [
+            { "image_path": "assets/wizard.png", "recolor_palette": "dark_cyan" },
+            { "text": "Pager Portal", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/wizard.png", "recolor_palette": "cyan" },
+            { "text": "Pager Portal", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "pager_portal_dashboard"
         }
       ]
     }

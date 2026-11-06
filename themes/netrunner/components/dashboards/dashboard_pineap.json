@@ -1,20 +1,20 @@
 {
   "screen_name": "pineap_dashboard",
-  "status_bar": "default",
+  "status_bar": "",
   "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
     "a": "select",
     "b": "back",
-    "up": "previous",
-    "down": "next",
-    "left": "back",
-    "right": "select"
+    "up": "back",
+    "down": "select",
+    "left": "previous",
+    "right": "next"
   },
   "background": {
     "layers": [
-      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divleft.png", "x": 138, "y": 50 }
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/pineap_icon.png", "x": 35, "y": 50 }
     ],
     "background_color": { "r": 0, "g": 0, "b": 0 }
   },
@@ -25,11 +25,13 @@
         {
           "id": "PineAP",
           "layers": [
-            { "text": "PineAP", "x": 10, "y": 50, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/down.png", "x": 124, "y": 200, "recolor_palette": "gray"}
+            { "image_path": "assets/pineap_button_unselected.png", "x": 15, "y": 2},
+            { "text": "PineAP", "x": 54, "y": 10, "text_color_palette": "dark_cyan" },
+            { "image_path": "assets/arrow_right.png", "x": 465, "y": 2}
           ],
           "selected_layers": [
-            { "text": "PineAP", "x": 10, "y": 50, "text_color_palette": "cyan" },
+            { "image_path": "assets/pineap_button_selected.png", "x": 15, "y": 2},
+            { "text": "PineAP", "x": 54, "y": 10, "text_color_palette": "cyan" },
 
             { "x": 170, "y": 50,  "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS",       "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "red",           "text": "Mimic Open Networks" },
@@ -45,7 +47,7 @@
 
             { "x": 170, "y": 190,  "variable_name": "$_PINEAP_COLLECT_HANDSHAKES",        "use_template": "disabled_toggle" },
             { "x": 210, "y": 190, "text_color_palette": "red",           "text": "Collect Handshakes" },
-            { "image_path": "assets/down.png", "x": 124, "y": 200, "recolor_palette": "dark_cyan"}
+            { "image_path": "assets/arrow_right.png", "x": 465, "y": 2}
           ],
           "x": 0,
           "y": 0,
@@ -54,10 +56,12 @@
         {
           "id": "Open AP",
           "layers": [
-            { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "dark_cyan" }
+            { "image_path": "assets/pineap_button_unselected.png", "x": 165, "y": 2},
+            { "text": "Open AP", "x": 204, "y": 10, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "cyan" },
+            { "image_path": "assets/pineap_button_selected.png", "x": 165, "y": 2},
+            { "text": "Open AP", "x": 204, "y": 10, "text_color_palette": "cyan" },
 
             { "x": 170, "y": 50,  "variable_name": "$_OPEN_AP_ENABLED",       "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "red",           "text": "Open AP" },
@@ -65,10 +69,10 @@
             { "x": 170, "y": 85,  "variable_name": "$_OPEN_AP_HIDDEN",           "use_template": "disabled_toggle" },
             { "x": 210, "y": 85,  "text_color_palette": "red",           "text": "Hidden" },
 
-            { "x": 170, "y": 120, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 170, "y": 120, "image_path": "assets/disabled_keyboard.png", "recolor_palette": "red"  },
             { "x": 210, "y": 120, "text_color_palette": "red",           "text": "Network Name" },
 
-            { "x": 170, "y": 155, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 170, "y": 155, "image_path": "assets/disabled_keyboard.png", "recolor_palette": "red"  },
             { "x": 210, "y": 155, "text_color_palette": "red",           "text": "BSSID Override" }
           ],
           "x": 0,
@@ -78,10 +82,12 @@
         {
           "id": "Evil WPA",
           "layers": [
-            { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "dark_cyan" }
+            { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2},
+            { "text": "Evil WPA", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "cyan" },
+            { "image_path": "assets/pineap_button_selected.png", "x": 315, "y": 2},
+            { "text": "Evil WPA", "x": 354, "y": 10, "text_color_palette": "cyan" },
 
             { "x": 170, "y": 50,  "variable_name": "$_EVIL_WPA_ENABLED",       "use_template": "disabled_toggle" },
             { "x": 210, "y": 50,  "text_color_palette": "red",           "text": "Evil WPA AP" },
@@ -90,28 +96,38 @@
             { "x": 210, "y": 85,  "text_color_palette": "red",           "text": "Hidden" },
 
             { "image_path": "assets/wizard.png", "x": 170, "y": 120, "recolor_palette": "red" },
-            { "text": "Configuration", "x": 210, "y": 120, "text_color_palette": "red" }
+            { "text": "Configuration", "x": 210, "y": 120, "text_color_palette": "red" },
+            { "image_path": "assets/arrow_right.png", "x": 465, "y": 2, "recolor_palette": "cyan"}
 
           ],
           "x": 0,
           "y": 0,
           "target": "pineap_evilwpa_submenu"
-        },
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
         {
           "id": "SSID Pool",
           "layers": [
-            { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "dark_cyan" }
+            { "image_path": "assets/pineap_button_unselected.png", "x": 15, "y": 2},
+            { "text": "SSIDs", "x": 54, "y": 10, "text_color_palette": "dark_cyan" },
+            { "image_path": "assets/arrow_left.png", "x": 0, "y": 2}
           ],
           "selected_layers": [
-            { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "cyan" },
+            { "image_path": "assets/pineap_button_selected.png", "x": 15, "y": 2},
+            { "text": "SSIDs", "x": 54, "y": 10, "text_color_palette": "cyan" },
+            { "image_path": "assets/arrow_left.png", "x": 0, "y": 2, "recolor_palette": "cyan"},
 
-            { "x": 170, "y": 50, "image_path": "assets/menu_disabled.png"  },
+            { "x": 170, "y": 50, "image_path": "assets/menu_disabled.png", "recolor_palette": "red"  },
             { "x": 210, "y": 50, "text_color_palette": "red",           "text": "SSID Pool" },
 
-            { "x": 170, "y": 85, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 170, "y": 85, "image_path": "assets/disabled_keyboard.png", "recolor_palette": "red"  },
             { "x": 210, "y": 85, "text_color_palette": "red",           "text": "Add Network" },
 
-            { "x": 170, "y": 120, "image_path": "assets/disabled_warning.png"  },
+            { "x": 170, "y": 120, "image_path": "assets/disabled_warning.png", "recolor_palette": "red"  },
             { "x": 210, "y": 120, "text_color_palette": "red",           "text": "Clear Networks" }
           ],
           "x": 0,
@@ -121,10 +137,12 @@
         {
           "id": "Filters",
           "layers": [
-            { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "dark_cyan" }
+            { "image_path": "assets/pineap_button_unselected.png", "x": 165, "y": 2},
+            { "text": "Filters", "x": 204, "y": 10, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "cyan" },
+            { "image_path": "assets/pineap_button_selected.png", "x": 165, "y": 2},
+            { "text": "Filters", "x": 204, "y": 10, "text_color_palette": "cyan" },
 
             { "x": 170, "y": 50, "text_color_palette": "red",           "text": "Client Filter:" },
             { "variable_name": "$_FILTER_CLIENT_MODE", "x": 370, "y":50, "toggle_template": {
@@ -136,36 +154,32 @@
               ]
             }  },
 
-            { "x": 170, "y": 85, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 170, "y": 85, "image_path": "assets/disabled_keyboard.png", "recolor_palette": "red"  },
             { "x": 210, "y": 85, "text_color_palette": "red",           "text": "Allowed Client List" },
 
-            { "x": 170, "y": 120, "image_path": "assets/menu_disabled.png"  },
+            { "x": 170, "y": 120, "image_path": "assets/menu_disabled.png", "recolor_palette": "red"  },
             { "x": 210, "y": 120, "text_color_palette": "red",           "text": "Denied Client List" },
 
-            { "x": 170, "y": 155, "image_path": "assets/disabled_keyboard.png"  },
+            { "x": 170, "y": 155, "image_path": "assets/disabled_keyboard.png", "recolor_palette": "red"  },
             { "x": 210, "y": 155, "text_color_palette": "red",           "text": "Add Allowed Client" },
 
-            { "x": 170, "y": 190, "image_path": "assets/menu_disabled.png"  },
+            { "x": 170, "y": 190, "image_path": "assets/menu_disabled.png", "recolor_palette": "red"  },
             { "x": 210, "y": 190, "text_color_palette": "red",           "text": "Add Denied Client" }
           ],
           "x": 0,
           "y": 0,
           "target": "pineap_filters_submenu"
-        }
-      ]
-    },
-    {
-      "page_index": 1,
-      "menu_items": [
+        },
+
         {
           "id": "Clients",
           "layers": [
-            { "text": "Clients", "x": 10, "y": 50, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/up.png", "x": 124, "y": 46, "recolor_palette": "dark_cyan"}
+            { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2},
+            { "text": "Clients", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
           ],
           "selected_layers": [
-            { "text": "Clients", "x": 10, "y": 50, "text_color_palette": "cyan" },
-            { "image_path": "assets/up.png", "x": 124, "y": 46, "recolor_palette": "cyan"},
+            { "image_path": "assets/pineap_button_selected.png", "x": 315, "y": 2},
+            { "text": "Clients", "x": 354, "y": 10, "text_color_palette": "cyan" },
 
             { "text": "Click to view\n\nconnected clients", "x": 206, "y": 60, "text_color_palette": "cyan", "center_text_within": { "draw_bounds": false, "start_x": 200, "end_x": 440, "start_y": 50, "end_y": 200 }}
           ],

@@ -1,6 +1,6 @@
 {
   "screen_name": "settings_general_submenu",
-  "status_bar": "network",
+  "status_bar": "",
   "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
@@ -14,16 +14,16 @@
   "background": {
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "dark_red" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "dark_red" },
-      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "dark_red" },
-      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "cyan" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "dark_red" }
+      { "image_path": "assets/settings_icon.png", "x": 35, "y": 50 },
+      { "image_path": "assets/settings_button_selected.png", "x": 15, "y": 2},
+      { "text": "Network", "x": 54, "y": 10, "text_color_palette": "cyan" },
+      { "image_path": "assets/settings_button_unselected.png", "x": 165, "y": 2},
+      { "text": "System", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/settings_button_unselected.png", "x": 315, "y": 2},
+      { "text": "Clock", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
     ]
   },
   "pages": [
-
     {
       "page_index": 1,
       "menu_items": [
@@ -92,12 +92,12 @@
           "layers": [
             { "image_path": "assets/keyboard.png", "recolor_palette": "dark_cyan" },
             { "text": "Hostname", "x": 40, "text_color_palette": "dark_cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "dark_cyan"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "dark_cyan" }
           ],
           "selected_layers": [
             { "image_path": "assets/keyboard.png", "recolor_palette": "cyan" },
             { "text": "Hostname", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "cyan"}
+            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "cyan" }
           ],
           "target": "edit_string_dialog",
           "variable": "$_HOSTNAME"
@@ -119,7 +119,7 @@
           "selected_layers": [
             { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle", "recolor_palette": "cyan" },
             { "text": "6 GHz", "x": 40, "text_color_palette": "cyan" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "cyan"}
+            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "cyan" }
           ],
           "target": "inline_toggle",
           "variable": "$_6Ghz_ENABLED"
@@ -168,9 +168,22 @@
           ],
           "target": "inline_toggle",
           "variable": "$_BLUETOOTH_ENABLED"
+        },
+        {
+          "id": "Bluetooth Settings",
+          "x": 170,
+          "y": 190,
+          "layers": [
+            { "image_path": "assets/menu.png", "text_color_palette": "dark_cyan" },
+            { "text": "Bluetooth Settings", "x": 40, "text_color_palette": "dark_cyan" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "text_color_palette": "cyan" },
+            { "text": "Bluetooth Settings", "x": 40, "text_color_palette": "cyan" }
+          ],
+          "target": "settings_bluetooth_submenu"
         }
       ]
     }
-
   ]
 }

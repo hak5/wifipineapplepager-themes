@@ -1,7 +1,7 @@
 {
   "text_size": "small",
-  "text_color_palette": "cyan",
-  "max_chars": 40,
+  "text_color_palette": "yellow",
+  "max_chars": 30,
   "wrap_text": true,
   "max_lines": 13,
   "center_text_within" : { "draw_bounds": false, "start_x": 80, "end_x": 400, "start_y": 26, "end_y": 190 }

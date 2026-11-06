@@ -1,6 +1,6 @@
 {
   "screen_name": "pineap_evilwpa_submenu",
-  "status_bar": "default",
+  "status_bar": "",
   "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
@@ -13,13 +13,14 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "dark_red" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "dark_red" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "cyan" },
-      { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "dark_red" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "dark_red" }
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/pineap_icon.png", "x": 35, "y": 50 },
+      { "image_path": "assets/pineap_button_unselected.png", "x": 15, "y": 2},
+      { "text": "PineAP", "x": 54,  "y": 10,  "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/pineap_button_unselected.png", "x": 165, "y": 2},
+      { "text": "Open AP", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/pineap_button_selected.png", "x": 315, "y": 2},
+      { "text": "Evil WPA", "x": 354, "y": 10, "text_color_palette": "cyan" }
     ]
   },
   "pages": [
