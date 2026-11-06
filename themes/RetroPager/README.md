@@ -1,5 +1,7 @@
 RetroPager Theme
 
+Theme Engine 2.0
+
 This theme is designed to make you WiFi Pager look like an old pager whenever on the home dashboard. Even notification will be themed as an old pager. The reason I created this theme is to make the Pager not look so interesting to people that might see you wearing it. If the screen turns on basically there is nothing of interest to see. I recommend turning off the button lights and the screen brightness also to really make the Pager inconspicuous.
 
 <img width="480" height="222" alt="pager-20261105-193703" src="https://github.com/user-attachments/assets/4eb365b1-ac13-481f-820a-9055711e1d81" />
