@@ -72,7 +72,7 @@
       "target": "payloads_dashboard",
       "variable": "$_PAYLOAD_CATEGORIES",
       "button_map": {
-        "right": "target payloads_dashboard"
+        "right": "select"
       }
     },
     {
