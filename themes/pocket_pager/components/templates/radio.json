@@ -1,0 +1,9 @@
+{
+  "enabled": [
+    { "image_path": "assets/radio/radio_border.png", "x": 3, "y": 3, "recolor_palette": "medium" },
+    { "image_path": "assets/radio/radio_selected.png", "x": 6, "y": 6, "recolor_palette": "dark" }
+  ],
+  "disabled": [
+    { "image_path": "assets/radio/radio_border.png", "x": 3, "y": 3, "recolor_palette": "medium" }
+  ]
+}

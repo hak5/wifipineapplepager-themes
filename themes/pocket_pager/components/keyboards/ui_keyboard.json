@@ -1,0 +1,1428 @@
+{
+  "input_area": {
+    "x": 15,
+    "y": 16,
+    "width": 422,
+    "max_characters": 35,
+    "background": {
+      "layers": []
+    },
+    "per_key_canvas_cache": false
+  },
+  "qwerty": {
+    "screen_name": "US_keyboard_qwerty",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [
+        { "image_path": "assets/keyboard/keyboard_layout_lower.png", "x": 0, "y": 0 }
+      ]
+    },
+    "rows": [
+      [
+        {
+          "id": "1",
+          "x": 7,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "1", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "2",
+          "x": 54,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "2", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "3",
+          "x": 101,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "3", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "4",
+          "x": 148,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "4", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "5",
+          "x": 195,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "5", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "6",
+          "x": 242,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "6", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "7",
+          "x": 289,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "7", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "8",
+          "x": 336,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "8", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "9",
+          "x": 383,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "9", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "0",
+          "x": 430,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "0", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "q",
+          "x": 7,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "q", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ],
+          "selected": true
+        },
+        {
+          "id": "w",
+          "x": 54,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "w", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "e",
+          "x": 101,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "e", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "r",
+          "x": 148,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "r", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "t",
+          "x": 195,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "t", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "y",
+          "x": 242,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "y", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "u",
+          "x": 289,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "u", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "i",
+          "x": 336,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "i", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "o",
+          "x": 383,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "o", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "p",
+          "x": 430,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "p", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "a",
+          "x": 7,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "a", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "s",
+          "x": 54,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "s", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "d",
+          "x": 101,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "d", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "f",
+          "x": 148,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "f", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "g",
+          "x": 195,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "g", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "h",
+          "x": 242,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "h", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "j",
+          "x": 289,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "j", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "k",
+          "x": 336,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "k", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "l",
+          "x": 383,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "l", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "backspace",
+          "x": 430,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u2190", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "capslock",
+          "x": 7,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u2191", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "z",
+          "x": 54,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "z", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "x",
+          "x": 101,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "x", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "c",
+          "x": 148,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "c", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "v",
+          "x": 195,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "v", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "b",
+          "x": 242,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "b", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "n",
+          "x": 289,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "n", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "m",
+          "x": 336,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "m", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ",",
+          "x": 383,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ",", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ".",
+          "x": 430,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ".", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "symbols_toggle",
+          "x": 7,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "#$%", "x": 2, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "-",
+          "x": 54,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "-", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "'",
+          "x": 101,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "'", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "/",
+          "x": 336,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "/", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "?",
+          "x": 383,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "?", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "done",
+          "x": 430,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u221a", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ]
+    ]
+  },
+  "QWERTY": {
+    "screen_name": "US_keyboard_QWERTY",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [
+        { "image_path": "assets/keyboard/keyboard_layout_upper.png", "x": 0, "y": 0 }
+      ]
+    },
+    "rows": [
+      [
+        {
+          "id": "1",
+          "x": 7,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "1", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "2",
+          "x": 54,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "2", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "3",
+          "x": 101,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "3", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "4",
+          "x": 148,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "4", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "5",
+          "x": 195,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "5", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "6",
+          "x": 242,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "6", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "7",
+          "x": 289,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "7", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "8",
+          "x": 336,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "8", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "9",
+          "x": 383,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "9", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "0",
+          "x": 430,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "0", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "Q",
+          "x": 7,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "Q", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ],
+          "selected": true
+        },
+        {
+          "id": "W",
+          "x": 54,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "W", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "E",
+          "x": 101,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "E", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "R",
+          "x": 148,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "R", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "T",
+          "x": 195,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "T", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "Y",
+          "x": 242,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "Y", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "U",
+          "x": 289,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "U", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "I",
+          "x": 336,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "I", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "O",
+          "x": 383,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "O", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "P",
+          "x": 430,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "P", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "A",
+          "x": 7,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "A", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "S",
+          "x": 54,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "S", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "D",
+          "x": 101,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "D", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "F",
+          "x": 148,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "F", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "G",
+          "x": 195,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "G", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "H",
+          "x": 242,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "H", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "J",
+          "x": 289,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "J", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "K",
+          "x": 336,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "K", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "L",
+          "x": 383,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "L", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "backspace",
+          "x": 430,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u2190", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "capslock",
+          "x": 7,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u2191", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "Z",
+          "x": 54,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "Z", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "X",
+          "x": 101,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "X", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "C",
+          "x": 148,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "C", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "V",
+          "x": 195,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "V", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "B",
+          "x": 242,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "B", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "N",
+          "x": 289,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "N", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "M",
+          "x": 336,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "M", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ",",
+          "x": 383,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ",", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ".",
+          "x": 430,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ".", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "symbols_toggle",
+          "x": 7,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "#$%", "x": 2, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "-",
+          "x": 54,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "-", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "'",
+          "x": 101,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "'", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "/",
+          "x": 336,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "/", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "?",
+          "x": 383,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "?", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "done",
+          "x": 430,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u221a", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ]
+    ]
+  },
+  "symbols": {
+    "screen_name": "US_keyboard_symbols",
+    "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
+      "layers": [
+        { "image_path": "assets/keyboard/keyboard_layout_symbols.png", "x": 0, "y": 0 }
+      ]
+    },
+    "rows": [
+      [
+        {
+          "id": "1",
+          "x": 7,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "1", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "2",
+          "x": 54,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "2", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "3",
+          "x": 101,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "3", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "4",
+          "x": 148,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "4", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "5",
+          "x": 195,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "5", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "6",
+          "x": 242,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "6", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "7",
+          "x": 289,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "7", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "8",
+          "x": 336,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "8", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "9",
+          "x": 383,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "9", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "0",
+          "x": 430,
+          "y": 59,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "0", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "!",
+          "x": 7,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "!", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "@",
+          "x": 54,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "@", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "#",
+          "x": 101,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "#", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "$",
+          "x": 148,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "$", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "%",
+          "x": 195,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "%", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "^",
+          "x": 242,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "^", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "&",
+          "x": 289,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "&", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "*",
+          "x": 336,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "*", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "(",
+          "x": 383,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "(", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ")",
+          "x": 430,
+          "y": 90,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ")", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "~",
+          "x": 7,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "~", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "<",
+          "x": 54,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "<", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ">",
+          "x": 101,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ">", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "+",
+          "x": 148,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "+", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "=",
+          "x": 195,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "=", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ":",
+          "x": 242,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ":", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ";",
+          "x": 289,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ";", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "[",
+          "x": 336,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "[", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "]",
+          "x": 383,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "]", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "backspace",
+          "x": 430,
+          "y": 121,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u2190", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "capslock",
+          "x": 7,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u2191", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "_",
+          "x": 54,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "_", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "\"",
+          "x": 101,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\"", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "`",
+          "x": 148,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "`", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "{",
+          "x": 195,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "{", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "}",
+          "x": 242,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "}", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "|",
+          "x": 289,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "|", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "\\",
+          "x": 336,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\\", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ",",
+          "x": 383,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ",", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": ".",
+          "x": 430,
+          "y": 152,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": ".", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "symbols_toggle",
+          "x": 7,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "#$%", "x": 2, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ],
+          "selected": true
+        },
+        {
+          "id": "-",
+          "x": 54,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "-", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "'",
+          "x": 101,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "'", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "space",
+          "x": 148,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_spacebar-4x.png", "x": 0, "y": 0 },
+            { "text": "space", "x": 60, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "/",
+          "x": 336,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "/", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "?",
+          "x": 383,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "?", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        },
+        {
+          "id": "done",
+          "x": 430,
+          "y": 183,
+          "selected_layers": [
+            { "image_path": "assets/keyboard/_key-bg.png", "x": 0, "y": 0 },
+            { "text": "\u221a", "x": 15, "y": 2, "text_size": "medium", "text_color_palette": "LCD" }
+          ]
+        }
+      ]
+    ]
+  }
+}

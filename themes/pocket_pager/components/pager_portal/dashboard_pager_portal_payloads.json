@@ -1,0 +1,63 @@
+{
+  "screen_name": "pager_portal_payloads_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/pager_portal/pager_portal_dashboard_payloads.png", "x": 0, "y": 0 },
+      { "text": "PAYLOAD PORTAL", "text_size": "medium", "text_color_palette": "dark", "x": 12, "y": 2 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Get Payloads",
+          "layers": [
+            { "text": "Get Payloads", "x": 160, "y": 61, "text_color_palette": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_299x25.png", "x": 119, "y": 58 },
+            { "text": "Get Payloads", "x": 160, "y": 61, "text_color_palette": "dark" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 127, "y": 68 }
+          ],
+          "x": 60,
+          "y": 20,
+          "target": "pager_portal_get_payloads_dashboard"
+        },
+        {
+          "id": "Update Payloads",
+          "layers": [
+            { "text": "Update Payloads", "x": 160, "y": 88, "text_color_palette": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_299x25.png", "x": 119, "y": 85 },
+            { "text": "Update Payloads", "x": 160, "y": 88, "text_color_palette": "dark" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 127, "y": 95 }
+          ],
+          "x": 60,
+          "y": 20,
+          "target": "pager_portal_update_payloads_dashboard"
+        },
+        {
+          "id": "Uninstall Payloads",
+          "layers": [
+            { "text": "Uninstall Payloads", "x": 160, "y": 116, "text_color_palette": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_299x25.png", "x": 119, "y": 113 },
+            { "text": "Uninstall Payloads", "x": 160, "y": 116, "text_color_palette": "dark" },
+            { "image_path": "assets/alerts_dashboard/sub.png", "x": 127, "y": 123 }
+          ],
+          "x": 60,
+          "y": 20,
+          "target": "pager_portal_installed_payloads_list",
+          "variable": "$_INSTALLED_PAYLOADS_LIST"
+        }
+      ]
+    }
+  ]
+}

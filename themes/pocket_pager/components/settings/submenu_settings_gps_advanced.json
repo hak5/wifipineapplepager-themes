@@ -1,0 +1,112 @@
+{
+  "screen_name": "settings_gps_advanced",
+  "status_bar": "gps",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divright.png", "x": 146, "y": 50 },
+      { "text": "Clock", "x": 10, "y": 50, "text_color_palette": "medium" },
+      { "image_path": "assets/select/current_section.png", "x": 4, "y": 84 },
+      { "text": "GPS", "x": 10, "y": 85, "text_color_palette": "dark" },
+      { "text": "Updates", "x": 10, "y": 120, "text_color_palette": "medium" },
+      { "text": "Help", "x": 10, "y": 155, "text_color_palette": "medium" },
+      { "text": "About", "x": 10, "y": 190, "text_color_palette": "medium" },
+      { "text": "GPSd Compatability Mode Only:", "text_color_palette": "medium", "x": 170, "y": 124, "text_size": "small" },
+      { "image_path": "assets/help.png", "x": 450, "y": 33, "recolor_palette": "medium" },
+      { "text": ">", "x": 463, "y": 32, "text_size": "small", "text_color_palette": "medium" },
+      { "text": "SETTINGS", "text_color_palette": "dark", "x": 12, "y": 2 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Service",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            { "text": "GPS Service:", "text_color_palette": "dark" },
+            { "variable_name": "$_GPS_NATIVE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "medium" }, { "text": "native", "text_size": "medium", "text_color_palette": "dark", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "medium" }, { "text": "gpsd", "text_size": "medium", "text_color_palette": "dark", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }] } }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_313x26.png", "x": -6, "y": -2 },
+            { "text": "GPS Service:", "text_color_palette": "dark" },
+            { "variable_name": "$_GPS_NATIVE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "medium" }, { "text": "native", "text_size": "medium", "text_color_palette": "dark", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "medium" }, { "text": "gpsd", "text_size": "medium", "text_color_palette": "dark", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }] } }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_GPS_NATIVE",
+          "button_map": {
+            "right": "target settings_gps_advanced_explained Service"
+          }
+        },
+        {
+          "id": "Port",
+          "x": 170,
+          "y": 52,
+          "layers": [
+            { "image_path": "assets/menu.png", "y": 36, "x": 4 },
+            { "text": "Serial Device", "x": 40, "text_color_palette": "dark", "y": 33 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_309x27.png", "x": -2, "y": 32 },
+            { "image_path": "assets/menu.png", "y": 36, "x": 4 },
+            { "text": "Serial Device", "x": 40, "text_color_palette": "dark", "y": 33 }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_DEVICE",
+          "button_map": {
+            "right": "target settings_gps_advanced_explained Port"
+          }
+        },
+        {
+          "id": "Baud Rate",
+          "x": 170,
+          "y": 120,
+          "layers": [
+            { "image_path": "assets/menu.png", "y": 36, "x": 4 },
+            { "text": "GPSd Baud Rate", "x": 40, "text_color_palette": "dark", "y": 33 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_309x27.png", "x": -2, "y": 32 },
+            { "image_path": "assets/menu.png", "y": 36, "x": 4 },
+            { "text": "GPSd Baud Rate", "x": 40, "text_color_palette": "dark", "y": 33 }
+          ],
+          "target": "option_dialog",
+          "variable": "$_GPS_BAUD",
+          "button_map": {
+            "right": "target settings_gps_advanced_explained Baud Rate"
+          }
+        },
+        {
+          "id": "restart",
+          "x": 170,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/start.png", "x": 11, "y": 41, "recolor_palette": "dark" },
+            { "text": "Restart GPSd", "x": 40, "text_color_palette": "dark", "y": 33 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/select/box_308x25.png", "x": -1, "y": 32 },
+            { "image_path": "assets/start.png", "x": 11, "y": 41, "recolor_palette": "dark" },
+            { "text": "Restart GPSd", "x": 40, "text_color_palette": "dark", "y": 33 }
+          ],
+          "target": "function_restart_gpsd",
+          "button_map": {
+            "right": "target settings_gps_advanced_explained restart"
+          }
+        }
+      ]
+    }
+  ]
+}
