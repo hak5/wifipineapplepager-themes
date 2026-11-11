@@ -1,0 +1,135 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": {
+      "r": 255,
+      "g": 153,
+      "b": 38
+    }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "dark"
+    },
+    "Battery": {
+      "x": 346,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "red"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 23,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 23,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 31,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_full.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "green"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ]
+      }
+    }
+  }
+}
