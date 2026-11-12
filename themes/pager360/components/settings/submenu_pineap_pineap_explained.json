@@ -1,0 +1,170 @@
+{
+  "screen_name": "pineap_pineap_submenu_explained",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/pineap/detail_legend_bg.png", "x": 0, "y": 0 },
+      { "text": "PineAP » Settings", "x": 12, "y": 29, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "Settings", "x": 12, "y": 2, "text_color_palette": "bl_white", "text_size": "medium" },
+      { "image_path": "assets/divright.png", "x": 316, "y": 31 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Mimic Open Networks",
+          "x": 20,
+          "y": 47,
+          "layers": [
+            { "image_path": "assets/select/card_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
+            { "text": "Mimic Open Networks", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "toggle" },
+            { "text": "Mimic Open Networks", "x": 40, "text_color_palette": "dark_green" },
+            { "text": "Answers probes", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "as the open", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "networks devices", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "look for, so", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "they connect", "x": 310, "y": 72, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "here instead.", "x": 310, "y": 90, "text_size": "small", "text_color_palette": "dark_green" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_IMPERSONATE_NETWORKS"
+        },
+        {
+          "id": "Collect Probes",
+          "x": 20,
+          "y": 76,
+          "layers": [
+            { "image_path": "assets/select/card_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
+            { "text": "Collect Probes", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "toggle" },
+            { "text": "Collect Probes", "x": 40, "text_color_palette": "dark_green" },
+            { "text": "Auto-adds the", "x": 310, "y": -29, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "names devices", "x": 310, "y": -11, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "probe for to the", "x": 310, "y": 7, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "SSID pool.", "x": 310, "y": 25, "text_size": "small", "text_color_palette": "dark_green" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_NETWORKS"
+        },
+        {
+          "id": "Advertise Networks",
+          "x": 20,
+          "y": 105,
+          "layers": [
+            { "image_path": "assets/select/card_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
+            { "text": "Advertise Networks", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "toggle" },
+            { "text": "Advertise Networks", "x": 40, "text_color_palette": "dark_green" },
+            { "text": "Beacons the SSID", "x": 310, "y": -58, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "pool so those", "x": 310, "y": -40, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "names show up in", "x": 310, "y": -22, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "device scans.", "x": 310, "y": -4, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "Needs Open AP", "x": 310, "y": 32, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "and Mimic on.", "x": 310, "y": 50, "text_size": "small", "text_color_palette": "dark_green" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_ADVERTISE_NETWORKS"
+        },
+        {
+          "id": "Randomize Address",
+          "x": 20,
+          "y": 134,
+          "layers": [
+            { "image_path": "assets/select/card_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
+            { "text": "Randomize Address", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "toggle" },
+            { "text": "Randomize Address", "x": 40, "text_color_palette": "dark_green" },
+            { "text": "Uses a random", "x": 310, "y": -87, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "MAC for the AP,", "x": 310, "y": -69, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "so it's not tied", "x": 310, "y": -51, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "to the hardware.", "x": 310, "y": -33, "text_size": "small", "text_color_palette": "dark_green" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_RANDOMIZE_MAC_ADDRESS"
+        },
+        {
+          "id": "Collect Handshakes",
+          "x": 20,
+          "y": 163,
+          "layers": [
+            { "image_path": "assets/select/card_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "text": "Collect Handshakes", "x": 40, "text_color_palette": "bl_white" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "toggle" },
+            { "text": "Collect Handshakes", "x": 40, "text_color_palette": "dark_green" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "dark_green" },
+            { "text": "Captures WPA", "x": 310, "y": -116, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "handshakes seen", "x": 310, "y": -98, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "nearby, saved", "x": 310, "y": -80, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "for offline", "x": 310, "y": -62, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "analysis.", "x": 310, "y": -44, "text_size": "small", "text_color_palette": "dark_green" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Wigle Mode",
+          "x": 20,
+          "y": 47,
+          "layers": [
+            { "image_path": "assets/select/card_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "Wigle Mode", "x": 40, "text_color_palette": "bl_white" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_296x26.png", "x": -6, "y": -2 },
+            { "variable_name": "$_WIGLE_MODE_ENABLED", "use_template": "toggle" },
+            { "text": "WiGLE Mode", "x": 40, "text_color_palette": "dark_green" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "dark_green" },
+            { "text": "Logs devices", "x": 310, "y": 0, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "with GPS to", "x": 310, "y": 18, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "WiGLE CSV files", "x": 310, "y": 36, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "(WiFi and BT)", "x": 310, "y": 54, "text_size": "small", "text_color_palette": "dark_green" },
+            { "text": "for mapping.", "x": 310, "y": 72, "text_size": "small", "text_color_palette": "dark_green" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED"
+        }
+      ]
+    }
+  ]
+}

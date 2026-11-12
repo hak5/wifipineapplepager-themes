@@ -1,0 +1,95 @@
+{
+  "screen_name": "power_menu",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/power_guide_bg.png", "x": 0, "y": 0 }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Lock Screen",
+          "x": 12,
+          "y": 66,
+          "layers": [
+            { "text": "Lock Screen", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_row_selected.png", "x": 0, "y": 0 },
+            { "text": "Lock Screen", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "target": "function_lock_screen"
+        },
+        {
+          "id": "Lock Buttons",
+          "x": 12,
+          "y": 87,
+          "layers": [
+            { "text": "Lock Buttons", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_row_selected.png", "x": 0, "y": 0 },
+            { "text": "Lock Buttons", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "target": "function_lock_buttons"
+        },
+        {
+          "id": "Nerd Stats",
+          "x": 12,
+          "y": 108,
+          "layers": [
+            { "text": "Nerd Stats", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" },
+            { "variable_name": "$_STATS_FOR_NERDS", "x": 176, "y": -2, "use_template": "green_toggle" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_row_selected.png", "x": 0, "y": 0 },
+            { "text": "Nerd Stats", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" },
+            { "variable_name": "$_STATS_FOR_NERDS", "x": 176, "y": -2, "use_template": "green_toggle" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_STATS_FOR_NERDS"
+        },
+        {
+          "id": "shutdown",
+          "x": 12,
+          "y": 129,
+          "layers": [
+            { "text": "Shutdown", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_row_selected.png", "x": 0, "y": 0 },
+            { "text": "Shutdown", "x": 8, "y": 1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "target": "function_shutdown"
+        },
+        {
+          "id": "Settings",
+          "x": 18,
+          "y": 175,
+          "layers": [
+            { "image_path": "assets/power_pill.png", "x": 0, "y": 0 },
+            { "text": "Quick Settings", "x": 8, "y": -1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/power_pill_selected.png", "x": 0, "y": 0 },
+            { "text": "Quick Settings", "x": 8, "y": -1, "text_size": "small", "text_color_palette": "bl_ink" }
+          ],
+          "target": "quick_settings"
+        }
+      ]
+    }
+  ],
+  "status_bar": "pager360mk2_guide"
+}

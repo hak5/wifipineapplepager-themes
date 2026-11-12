@@ -1,0 +1,42 @@
+{
+  "background": {
+    "layers": [
+      { "image_path": "assets/list/payload_log_bg.png", "x": 0, "y": 0 },
+      { "variable_name": "$_INPUT_NAME", "use_template": "payload_title", "x": 34, "y": 1 }
+    ]
+  },
+  "scroll_pause_indicator": [
+    { "image_path": "assets/payloads/payloadlog/scroll_pause_indicator.png", "x": 461, "y": 104, "recolor_palette": "bl_ink_lt" }
+  ],
+  "scroll_up_indicator": [
+    { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 465, "y": 33, "recolor_palette": "bl_ink_lt" }
+  ],
+  "scroll_down_indicator": [
+    { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 465, "y": 175, "recolor_palette": "bl_ink_lt" }
+  ],
+  "payload_running_indicator": [
+    { "image_path": "assets/list/log_ring_running.png", "x": 4, "y": 0 },
+    { "image_path": "assets/list/log_state_running.png", "x": 12, "y": 203 }
+  ],
+  "payload_complete_indicator": [
+    { "image_path": "assets/list/log_ring_complete.png", "x": 4, "y": 0 },
+    { "image_path": "assets/list/log_state_complete.png", "x": 12, "y": 203 }
+  ],
+  "payload_stopped_indicator": [
+    { "image_path": "assets/list/log_ring_stopped.png", "x": 4, "y": 0 },
+    { "image_path": "assets/list/log_state_stopped.png", "x": 12, "y": 203 }
+  ],
+  "payload_errored_indicator": [
+    { "image_path": "assets/list/log_ring_errored.png", "x": 4, "y": 0 },
+    { "image_path": "assets/list/log_state_errored.png", "x": 12, "y": 203 }
+  ],
+  "status_bar": "default",
+  "refresh_interval": 0.75,
+  "visible_lines": 12,
+  "text_size": "small",
+  "max_chars": 50,
+  "start_x": 8,
+  "start_y": 32,
+  "default_text_color": { "r": 41, "g": 45, "b": 41 },
+  "error_text_color": { "r": 181, "g": 28, "b": 16 }
+}

@@ -1,0 +1,162 @@
+{
+  "screen_name": "pineap_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "select"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/pineap/pineap_legend_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "PineAP",
+          "layers": [
+            { "image_path": "assets/select/card_138x25.png", "x": 4, "y": 33 },
+            { "text": "PineAP", "x": 10, "y": 34, "text_color_palette": "bl_white" },
+            { "image_path": "assets/down.png", "x": 150, "y": 178, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_138x25.png", "x": 4, "y": 33 },
+            { "text": "PineAP", "x": 10, "y": 34, "text_color_palette": "dark_green" },
+            { "x": 170, "y": 34, "variable_name": "$_PINEAP_IMPERSONATE_NETWORKS", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 34, "text_color_palette": "dark_green", "text": "Mimic Open Networks" },
+            { "x": 170, "y": 66, "variable_name": "$_PINEAP_COLLECT_NETWORKS", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 66, "text_color_palette": "dark_green", "text": "Collect Probes" },
+            { "x": 170, "y": 98, "variable_name": "$_PINEAP_ADVERTISE_NETWORKS", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 98, "text_color_palette": "dark_green", "text": "Advertise Networks" },
+            { "x": 170, "y": 130, "variable_name": "$_PINEAP_RANDOMIZE_MAC_ADDRESS", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 130, "text_color_palette": "dark_green", "text": "Randomize Address" },
+            { "x": 170, "y": 162, "variable_name": "$_PINEAP_COLLECT_HANDSHAKES", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 162, "text_color_palette": "dark_green", "text": "Collect Handshakes" },
+            { "image_path": "assets/down.png", "x": 150, "y": 178, "recolor_palette": "dark_green" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "pineap_pineap_submenu"
+        },
+        {
+          "id": "Open AP",
+          "layers": [
+            { "image_path": "assets/select/card_138x25.png", "x": 4, "y": 65 },
+            { "text": "Open AP", "x": 10, "y": 66, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_138x25.png", "x": 4, "y": 65 },
+            { "text": "Open AP", "x": 10, "y": 66, "text_color_palette": "dark_green" },
+            { "x": 170, "y": 34, "variable_name": "$_OPEN_AP_ENABLED", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 34, "text_color_palette": "dark_green", "text": "Open AP" },
+            { "x": 170, "y": 66, "variable_name": "$_OPEN_AP_HIDDEN", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 66, "text_color_palette": "dark_green", "text": "Hidden" },
+            { "x": 183, "y": 117, "image_path": "assets/disabled_keyboard.png" },
+            { "x": 210, "y": 98, "text_color_palette": "dark_green", "text": "Network Name" },
+            { "x": 183, "y": 149, "image_path": "assets/disabled_keyboard.png" },
+            { "x": 210, "y": 130, "text_color_palette": "dark_green", "text": "BSSID Override" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "pineap_openap_submenu"
+        },
+        {
+          "id": "Evil WPA",
+          "layers": [
+            { "image_path": "assets/select/card_138x25.png", "x": 4, "y": 97 },
+            { "text": "Evil WPA", "x": 10, "y": 98, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_138x25.png", "x": 4, "y": 97 },
+            { "text": "Evil WPA", "x": 10, "y": 98, "text_color_palette": "dark_green" },
+            { "x": 170, "y": 34, "variable_name": "$_EVIL_WPA_ENABLED", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 34, "text_color_palette": "dark_green", "text": "Evil WPA AP" },
+            { "x": 170, "y": 66, "variable_name": "$_EVIL_WPA_HIDDEN", "use_template": "disabled_toggle" },
+            { "x": 210, "y": 66, "text_color_palette": "dark_green", "text": "Hidden" },
+            { "image_path": "assets/wizard.png", "x": 180, "y": 105, "recolor_palette": "dark_green" },
+            { "text": "Configuration", "x": 210, "y": 98, "text_color_palette": "dark_green" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "pineap_evilwpa_submenu"
+        },
+        {
+          "id": "SSID Pool",
+          "layers": [
+            { "image_path": "assets/select/card_138x25.png", "x": 4, "y": 129 },
+            { "text": "SSID Pool", "x": 10, "y": 130, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_138x25.png", "x": 4, "y": 129 },
+            { "text": "SSID Pool", "x": 10, "y": 130, "text_color_palette": "dark_green" },
+            { "x": 174, "y": 39, "image_path": "assets/menu_disabled.png" },
+            { "x": 210, "y": 34, "text_color_palette": "dark_green", "text": "SSID Pool" },
+            { "x": 183, "y": 85, "image_path": "assets/disabled_keyboard.png" },
+            { "x": 210, "y": 66, "text_color_palette": "dark_green", "text": "Add Network" },
+            { "x": 187, "y": 107, "image_path": "assets/disabled_warning.png" },
+            { "x": 210, "y": 98, "text_color_palette": "dark_green", "text": "Clear Networks" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "pineap_ssidpool_submenu"
+        },
+        {
+          "id": "Filters",
+          "layers": [
+            { "image_path": "assets/select/card_138x25.png", "x": 4, "y": 161 },
+            { "text": "Filters", "x": 10, "y": 162, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_138x25.png", "x": 4, "y": 161 },
+            { "text": "Filters", "x": 10, "y": 162, "text_color_palette": "dark_green" },
+            { "x": 170, "y": 34, "text_color_palette": "dark_green", "text": "Client Filter:" },
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 370, "y": 34, "toggle_template": { "enabled": [{ "text": "Allow", "text_size": "medium", "text_color_palette": "dark_green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 29, "end_y": 55 } }], "disabled": [{ "text": "Deny", "text_size": "medium", "text_color_palette": "dark_green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 29, "end_y": 55 } }] } },
+            { "x": 174, "y": 71, "image_path": "assets/menu_disabled.png" },
+            { "x": 210, "y": 66, "text_color_palette": "dark_green", "text": "Allowed Client List" },
+            { "x": 174, "y": 103, "image_path": "assets/menu_disabled.png" },
+            { "x": 210, "y": 98, "text_color_palette": "dark_green", "text": "Denied Client List" },
+            { "x": 183, "y": 149, "image_path": "assets/disabled_keyboard.png" },
+            { "x": 210, "y": 130, "text_color_palette": "dark_green", "text": "Add Allowed Client" },
+            { "x": 183, "y": 181, "image_path": "assets/disabled_keyboard.png" },
+            { "x": 210, "y": 162, "text_color_palette": "dark_green", "text": "Add Denied Client" }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "pineap_filters_submenu"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Clients",
+          "layers": [
+            { "image_path": "assets/select/card_138x25.png", "x": 4, "y": 33 },
+            { "text": "Clients", "x": 10, "y": 34, "text_color_palette": "bl_white" },
+            { "image_path": "assets/up.png", "x": 150, "y": 36, "recolor_palette": "medium_gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_138x25.png", "x": 4, "y": 33 },
+            { "text": "Clients", "x": 10, "y": 34, "text_color_palette": "dark_green" },
+            { "image_path": "assets/up.png", "x": 150, "y": 36, "recolor_palette": "dark_green" },
+            { "text": "Click to view\n\nconnected clients", "x": 206, "y": 44, "text_color_palette": "dark_green", "center_text_within": { "draw_bounds": false, "start_x": 200, "end_x": 440, "start_y": 34, "end_y": 184 } }
+          ],
+          "x": 0,
+          "y": 0,
+          "target": "pineap_clients_list",
+          "variable": "$_PINEAPPLE_CLIENTS"
+        }
+      ]
+    }
+  ]
+}

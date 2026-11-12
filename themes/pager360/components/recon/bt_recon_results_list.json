@@ -1,0 +1,177 @@
+{
+  "template": {
+    "screen_name": "bt_recon_results_list",
+    "status_bar": "bt_recon",
+    "refresh_interval": 1,
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "query_sort": "active",
+    "query_ascending": false,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "background": {
+      "layers": [
+        { "image_path": "assets/list/bt_recon_results_list_bg.png", "x": 0, "y": 0 },
+        { "x": 80, "y": 201, "variable_name": "$_BT_LIST_PAGINATOR_LABEL_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 8, "wrap_text": false, "max_lines": 1, "center_text_within": { "draw_bounds": false, "start_x": 78, "end_x": 150, "start_y": 201, "end_y": 217 } } },
+        { "x": 160, "y": 201, "variable_name": "$_BT_LIST_SIZE", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 5, "wrap_text": false, "max_lines": 1, "center_text_within": { "draw_bounds": false, "start_x": 158, "end_x": 202, "start_y": 201, "end_y": 217 } } }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "autoupdate",
+            "x": 5,
+            "y": 3,
+            "layers": [
+              { "image_path": "assets/autoplay_stopped.png", "recolor_palette": "bl_ink_lt", "x": 9, "y": 10 }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/recon_chip.png", "x": 2, "y": 1 },
+              { "variable_name": "$_BT_LIST_AUTOUPDATING", "toggle_template": { "enabled": [{ "image_path": "assets/recon/autoplay.png", "recolor_palette": "bl_white", "x": 9, "y": 9 }], "disabled": [{ "image_path": "assets/autoplay_stopped.png", "recolor_palette": "bl_white", "x": 9, "y": 10 }] } }
+            ],
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "target function_recon_ring_prev",
+              "right": "target function_recon_ring_next"
+            }
+          },
+          {
+            "id": "Row0",
+            "x": 55,
+            "y": 29,
+            "layers": [
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal_selected" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/recon_row_selected_two.png", "x": -51, "y": 0 },
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } }
+            ],
+            "target": "bt_recon_selected_device"
+          },
+          {
+            "id": "Row1",
+            "x": 55,
+            "y": 62,
+            "layers": [
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal_selected" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/recon_row_selected_two.png", "x": -51, "y": 0 },
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } }
+            ],
+            "target": "bt_recon_selected_device"
+          },
+          {
+            "id": "Row2",
+            "x": 55,
+            "y": 95,
+            "layers": [
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal_selected" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/recon_row_selected_two.png", "x": -51, "y": 0 },
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } }
+            ],
+            "target": "bt_recon_selected_device"
+          },
+          {
+            "id": "Row3",
+            "x": 55,
+            "y": 128,
+            "layers": [
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal_selected" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/recon_row_selected_two.png", "x": -51, "y": 0 },
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } }
+            ],
+            "target": "bt_recon_selected_device"
+          },
+          {
+            "id": "Row4",
+            "x": 55,
+            "y": 161,
+            "layers": [
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal_selected" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_ink_lt" } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/recon_row_selected_two.png", "x": -51, "y": 0 },
+              { "x": -38, "y": 6, "variable_name": "$_BT_RESULT_RSSI", "use_template": "bt_signal" },
+              { "y": -3, "variable_name": "$_BT_RESULT_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 31, "wrap_text": false, "max_lines": 1 } },
+              { "x": 4, "y": 18, "variable_name": "$_BT_RESULT_MAC", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 172, "y": 18, "variable_name": "$_BT_RESULT_TYPE", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 214, "y": 18, "variable_name": "$_BT_RESULT_RSSI", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } },
+              { "x": 256, "y": 18, "variable_name": "$_BT_RESULT_VENDOR_SHORT", "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 13 } },
+              { "x": 372, "y": 18, "variable_name": "$_BT_RESULT_LAST_SEEN", "string_template": { "text_size": "small", "text_color_palette": "bl_white" } }
+            ],
+            "target": "bt_recon_selected_device"
+          }
+        ]
+      }
+    ]
+  }
+}

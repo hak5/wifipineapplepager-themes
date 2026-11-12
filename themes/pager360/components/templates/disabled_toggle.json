@@ -1,0 +1,8 @@
+{
+  "enabled": [
+    { "image_path": "assets/toggle/enabled/disabled_toggle_bg_copy.png", "x": 0, "y": 5 }
+  ],
+  "disabled": [
+    { "image_path": "assets/toggle/disabled/disabled_toggle_disabled_bg_copy.png", "x": 0, "y": 5 }
+  ]
+}

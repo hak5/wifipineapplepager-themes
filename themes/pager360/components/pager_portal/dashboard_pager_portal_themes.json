@@ -1,0 +1,71 @@
+{
+  "screen_name": "pager_portal_themes_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/list/bg_download_3.png", "x": 0, "y": 0 },
+      { "text": "Themes Portal", "text_size": "medium", "text_color_palette": "bl_white", "x": 12, "y": 2 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "unselectable": true,
+          "id": "Coming soon",
+          "layers": [
+            { "text": "Coming soon", "x": 322, "y": 156, "text_color_palette": "dark_red", "text_size": "medium" }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "unselectable": true,
+          "id": "Get Themes",
+          "layers": [
+            { "image_path": "assets/portal/list/icon_view.png", "x": 14, "y": 37, "recolor_palette": "bl_silver" },
+            { "text": "Browse Themes", "x": 42, "y": 35, "text_color_palette": "bl_silver", "text_size": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/list/icon_view.png", "x": 14, "y": 37, "recolor_palette": "bl_silver" },
+            { "text": "Browse Themes", "x": 42, "y": 35, "text_color_palette": "bl_silver", "text_size": "medium" }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "unselectable": true,
+          "id": "Installed Themes",
+          "layers": [
+            { "image_path": "assets/portal/list/icon_themes.png", "x": 14, "y": 69, "recolor_palette": "bl_silver" },
+            { "text": "Installed Themes", "x": 42, "y": 67, "text_color_palette": "bl_silver", "text_size": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/list/icon_themes.png", "x": 14, "y": 69, "recolor_palette": "bl_silver" },
+            { "text": "Installed Themes", "x": 42, "y": 67, "text_color_palette": "bl_silver", "text_size": "medium" }
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "unselectable": true,
+          "id": "Update Themes",
+          "layers": [
+            { "image_path": "assets/portal/list/icon_update.png", "x": 14, "y": 101, "recolor_palette": "bl_silver" },
+            { "text": "Update Themes", "x": 42, "y": 99, "text_color_palette": "bl_silver", "text_size": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/list/icon_update.png", "x": 14, "y": 101, "recolor_palette": "bl_silver" },
+            { "text": "Update Themes", "x": 42, "y": 99, "text_color_palette": "bl_silver", "text_size": "medium" }
+          ],
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
+}

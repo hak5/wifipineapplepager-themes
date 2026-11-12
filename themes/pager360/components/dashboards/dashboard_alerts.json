@@ -1,0 +1,138 @@
+{
+  "screen_name": "alerts_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "background": {
+    "layers": [
+      { "image_path": "assets/alerts_dashboard/alerts_grid_bg.png", "x": 0, "y": 0 },
+      { "text": "Alerts", "text_size": "medium", "text_color_palette": "bl_white", "x": 12, "y": 2 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "title_x": 52,
+  "title_y": 172,
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "auth captured",
+          "layers": [
+            { "image_path": "assets/alerts_dashboard/tile_pineap.png", "x": 2, "y": 2 },
+            { "text": "Evil AP", "x": 10, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Evil AP", "x": 9, "y": 82, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/tile_pineap_selected.png", "x": 0, "y": 0 },
+            { "text": "Evil AP", "x": 10, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Evil AP", "x": 9, "y": 82, "text_size": "small", "text_color_palette": "bl_white" },
+            { "text": "Evil AP Auth Captured", "x": 3, "y": -49, "text_size": "medium", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Evil AP Auth Captured", "x": 2, "y": -50, "text_size": "medium", "text_color_palette": "bl_white" },
+            { "text": "A: payloads for this event", "x": 3, "y": -26, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "A: payloads for this event", "x": 2, "y": -27, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "x": 128,
+          "y": 82,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_AUTH_CAPTURED",
+          "button_map": {
+            "left": "previous",
+            "right": "next",
+            "up": "noop",
+            "down": "target alerts_dashboard_explained auth captured",
+            "a": "select",
+            "b": "back"
+          }
+        },
+        {
+          "id": "deauth flood",
+          "layers": [
+            { "image_path": "assets/alerts_dashboard/tile_alerts.png", "x": 2, "y": 2 },
+            { "text": "Deauth", "x": 15, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Deauth", "x": 14, "y": 82, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/tile_alerts_selected.png", "x": 0, "y": 0 },
+            { "text": "Deauth", "x": 15, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Deauth", "x": 14, "y": 82, "text_size": "small", "text_color_palette": "bl_white" },
+            { "text": "Deauth Flood Detected", "x": -80, "y": -49, "text_size": "medium", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Deauth Flood Detected", "x": -81, "y": -50, "text_size": "medium", "text_color_palette": "bl_white" },
+            { "text": "A: payloads for this event", "x": -80, "y": -26, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "A: payloads for this event", "x": -81, "y": -27, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "x": 211,
+          "y": 82,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_DEAUTH_FLOOD",
+          "button_map": {
+            "left": "previous",
+            "right": "next",
+            "up": "noop",
+            "down": "target alerts_dashboard_explained deauth flood",
+            "a": "select",
+            "b": "back"
+          }
+        },
+        {
+          "id": "new client",
+          "layers": [
+            { "image_path": "assets/alerts_dashboard/tile_portal.png", "x": 2, "y": 2 },
+            { "text": "Client", "x": 15, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Client", "x": 14, "y": 82, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/tile_portal_selected.png", "x": 0, "y": 0 },
+            { "text": "Client", "x": 15, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Client", "x": 14, "y": 82, "text_size": "small", "text_color_palette": "bl_white" },
+            { "text": "New Client Connected", "x": -163, "y": -49, "text_size": "medium", "text_color_palette": "bl_gr_shadow" },
+            { "text": "New Client Connected", "x": -164, "y": -50, "text_size": "medium", "text_color_palette": "bl_white" },
+            { "text": "A: payloads for this event", "x": -163, "y": -26, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "A: payloads for this event", "x": -164, "y": -27, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "x": 294,
+          "y": 82,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_NEW_CLIENT",
+          "button_map": {
+            "left": "previous",
+            "right": "next",
+            "up": "noop",
+            "down": "target alerts_dashboard_explained new client",
+            "a": "select",
+            "b": "back"
+          }
+        },
+        {
+          "id": "handshake capture",
+          "layers": [
+            { "image_path": "assets/alerts_dashboard/tile_recon.png", "x": 2, "y": 2 },
+            { "text": "Handshake", "x": 1, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Handshake", "x": 0, "y": 82, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/alerts_dashboard/tile_recon_selected.png", "x": 0, "y": 0 },
+            { "text": "Handshake", "x": 1, "y": 83, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Handshake", "x": 0, "y": 82, "text_size": "small", "text_color_palette": "bl_white" },
+            { "text": "Handshake Captured", "x": -246, "y": -49, "text_size": "medium", "text_color_palette": "bl_gr_shadow" },
+            { "text": "Handshake Captured", "x": -247, "y": -50, "text_size": "medium", "text_color_palette": "bl_white" },
+            { "text": "A: payloads for this event", "x": -246, "y": -26, "text_size": "small", "text_color_palette": "bl_gr_shadow" },
+            { "text": "A: payloads for this event", "x": -247, "y": -27, "text_size": "small", "text_color_palette": "bl_mint" }
+          ],
+          "x": 377,
+          "y": 82,
+          "target": "alerts_dialog_submenu",
+          "variable": "$_ALERTS_HANDSHAKE_CAPTURE",
+          "button_map": {
+            "left": "previous",
+            "right": "next",
+            "up": "noop",
+            "down": "target alerts_dashboard_explained handshake capture",
+            "a": "select",
+            "b": "back"
+          }
+        }
+      ]
+    }
+  ]
+}

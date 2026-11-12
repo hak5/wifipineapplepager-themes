@@ -1,0 +1,89 @@
+{
+  "template": {
+    "screen_name": "pineap_ssid_pool_list",
+    "status_bar": "default",
+    "cache_canvases": false,
+    "background": {
+      "layers": [
+        { "image_path": "assets/list/ssid_pool_bg.png", "x": 0, "y": 0 },
+        { "variable_name": "$_INPUT_NAME", "x": 10, "y": 1, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 15, "wrap_text": false, "max_lines": 1 } },
+        { "variable_name": "$_LIST_SIZE", "x": 34, "y": 31, "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 4, "wrap_text": false, "max_lines": 1 } },
+        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 384, "y": 31, "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 8, "wrap_text": false, "max_lines": 1, "center_text_within": { "draw_bounds": false, "start_x": 372, "end_x": 468, "start_y": 31, "end_y": 47 } } }
+      ]
+    },
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 53, "use_template": "ssid_pool_string" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/pineap_row_selected.png", "x": 4, "y": 52 },
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 53, "use_template": "ssid_pool_string_selected" }
+            ],
+            "target": "function_remove_ssid_pool_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 81, "use_template": "ssid_pool_string" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/pineap_row_selected.png", "x": 4, "y": 80 },
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 81, "use_template": "ssid_pool_string_selected" }
+            ],
+            "target": "function_remove_ssid_pool_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 109, "use_template": "ssid_pool_string" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/pineap_row_selected.png", "x": 4, "y": 108 },
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 109, "use_template": "ssid_pool_string_selected" }
+            ],
+            "target": "function_remove_ssid_pool_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 137, "use_template": "ssid_pool_string" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/pineap_row_selected.png", "x": 4, "y": 136 },
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 137, "use_template": "ssid_pool_string_selected" }
+            ],
+            "target": "function_remove_ssid_pool_entry",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 165, "use_template": "ssid_pool_string" }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/list/pineap_row_selected.png", "x": 4, "y": 164 },
+              { "variable_name": "$_LIST_ITEM", "x": 14, "y": 165, "use_template": "ssid_pool_string_selected" }
+            ],
+            "target": "function_remove_ssid_pool_entry",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}

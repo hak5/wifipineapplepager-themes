@@ -1,0 +1,45 @@
+# pager360mk5
+
+- **Author:** korben
+- **Description:** An original homage to the mid-2000s console dashboard, with one colour per section: Payloads pinkish purple, Recon red, PineAP yellow, Alerts green, Portal orange, Settings grey.
+  - **Blades:** silver, with engraved names reading bottom to top; the open blade is lit in its section's colour.
+  - **Home screen:** every section is a blade. Left / right swing to the previous / next blade; up / down move through the open blade's rows; A opens the row. Each blade has a card, three or four rows that open Pager screens directly, a Power Options button, and the section's icon, name and a description of the focused row on the right.
+  - **Submenus:** a full-width frame in the section's colour with soft light, a header strip and the title; rows sit on light see-through cards and the focused row is a white card with dark text. Settings and PineAP submenus have a bar along the bottom with the Back / Select buttons and, where a page has help, the help hint.
+  - **Alerts:** one picture tile per alert event; left / right move between them, A opens the event's payloads, down explains it.
+  - **Power menu:** a yellow guide panel over the dimmed screen you were on, with a battery and time card, the menu rows and a Quick Settings button.
+  - **Quick Settings:** the same yellow guide panel, with one row each for Brightness, Volume, Vibrate, Client Mode and Client Setup; each row has its icon on the left and the toggles sit on the right.
+  - **Lists:** full-screen silver guide lists. A grey header band carries the title and the status bar; the rows are ruled, and the selected row is a glossy bar in the section's colour (purple for payloads, red for Recon, yellow for PineAP, green for alert payloads); the footer shows the buttons.
+    - Payload lists and the PineAP SSID pool, filter and client lists have a tab row under the header with the number of items, the list's name and the page.
+    - Recon's network, client and Bluetooth lists have two lines a row, so the list's name sits on a tab in the header and the page and count sit in the footer. The play / stop control for live updates is on that tab.
+    - In the SSID pool and filter lists the A button removes the entry, and in the PineAP client list it kicks the client; the footer says so.
+  - **Payload log:** the same silver frame. A small ring of light at the top left shows the payload's state (one green light running, four complete, dark stopped, three red on error) and the footer names it.
+  - **Pager Portal:** every Portal screen is a full-screen store page: a graphite header and footer, rows with an icon each on the orange panel, a white card on the selected row, and a pane on the right. Menus and lists show the section tile in the pane; the Install, Update and Manage pages show the payload's author, version, date and category there, with the description below.
+  - **Launch payload:** a floating graphite window, so the list you came from stays visible around it.
+  - **Ring of light:** every message from the system uses the same three parts: a dark grey capsule, a silver orb with a pineapple cut into it, and a ring of four lights around the orb. The lights tell you what kind of message it is.
+    - Alert (titled ACHIEVEMENT): one green light. Warning: two amber. Error: three red.
+    - Low battery: one amber. Critical battery: one red. Too hot: the left half red.
+    - Lock screen, controls locked and the resting screen: the ring is dark and the orb unlit.
+    - Spinner: the green lights chase clockwise around the orb.
+    - Launching a payload: READY with the orb lit, then GO with all four lights on.
+  - **Alert pop-ups:** the title (ACHIEVEMENT, WARNING or ERROR) is in caps with the time at the top right, and the message is centred beside the ring.
+  - **Boot animation:** ribbons of light swirl into the silver orb, the pineapple lights up green, and the name appears.
+  - **Dialogs:** graphite glass windows with a soft shadow. Option pickers have a title line, ruled rows and the Back / Select buttons along the bottom; the confirmation dialog stacks Cancel and Confirm as two rows.
+  - **Keyboards:** glossy silver keys.
+
+  All artwork is original and generated in code. It uses no console names, logos, sounds, fonts or screenshots; the light ring and the orb are original drawings.
+- **Firmware:** WiFi Pineapple Pager, firmware 2.0.0, theme framework 0.9
+- **Known limitations:**
+  - Keyboards stay green, and Recon's settings windows stay red.
+  - The payload log shows 12 lines (13 before) and a payload description shows 5 lines, to make room for the footer.
+  - Settings and PineAP rows sit closer together than before (32 pixels apart, 29 on the help pages) to make room for the bar.
+  - The payload lists inside a category now cover the whole screen, so they show the status bar themselves; the stock theme draws them as a window with no status bar.
+  - The Portal's Themes page lists three rows that can't be selected yet ("Coming soon", as in the stock theme).
+  - Screens shared by every section can't follow the section colour, because the theme can't tell which section opened them: keyboards stay green, and dialogs and system messages are graphite.
+  - The boot animation plays at the firmware's fixed 1 frame per second, and the spinner at 0.4 seconds a frame.
+  - Toggles, radios and status icons stay green everywhere, so "on" looks the same in every section.
+  - Switching blades is instant; the theme framework has no animation for it.
+  - The home status bar shows the time and battery only: the header of the rightmost blades has no room for more (the other screens show the full status bar).
+  - Recon payloads aren't on the home screen: they need a target picked in Recon.
+  - The Alerts tiles don't show which events have payloads turned on (the firmware doesn't give the theme that state).
+  - The battery percentage colour (green, yellow, orange or red) is set by the firmware, not the theme.
+  - The help, licence and Virtual Pager QR screens use the stock images.

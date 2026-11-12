@@ -1,0 +1,243 @@
+{
+  "screen_name": "pineap_filters_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/pineap/pineap_legend_bg.png", "x": 0, "y": 0 },
+      { "text": "PineAP", "x": 10, "y": 34, "text_color_palette": "gray" },
+      { "text": "Open AP", "x": 10, "y": 66, "text_color_palette": "gray" },
+      { "text": "Evil WPA", "x": 10, "y": 98, "text_color_palette": "gray" },
+      { "text": "SSID Pool", "x": 10, "y": 130, "text_color_palette": "gray" },
+      { "image_path": "assets/select/current_section.png", "x": 4, "y": 161 },
+      { "text": "Filters", "x": 10, "y": 162, "text_color_palette": "dark_green" },
+      { "image_path": "assets/help.png", "x": 12, "y": 203, "recolor_palette": "gray" },
+      { "text": "> Help", "x": 30, "y": 201, "text_size": "small", "text_color_palette": "bl_white" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Client Filter",
+          "x": 170,
+          "y": 34,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "text": "Client Filter:", "text_color_palette": "bl_white" },
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 29, "end_y": 55 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 29, "end_y": 55 } }] } }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "text": "Client Filter:", "text_color_palette": "dark_green" },
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "dark_green" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "dark_green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 29, "end_y": 55 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "dark_green" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 29, "end_y": 55 } }] } }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_CLIENT_MODE",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Client Filter"
+          }
+        },
+        {
+          "id": "Allowed Client List",
+          "x": 170,
+          "y": 66,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3 },
+            { "text": "Allowed Client List", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3, "recolor_palette": "dark_green" },
+            { "text": "Allowed Client List", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_ALLOW_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Allowed Client List"
+          }
+        },
+        {
+          "id": "Denied Client List",
+          "x": 170,
+          "y": 98,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3 },
+            { "text": "Denied Client List", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3, "recolor_palette": "dark_green" },
+            { "text": "Denied Client List", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_DENY_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Denied Client List"
+          }
+        },
+        {
+          "id": "Add Allowed Client",
+          "x": 170,
+          "y": 130,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19 },
+            { "text": "Add Allowed Client", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19, "recolor_palette": "dark_green" },
+            { "text": "Add Allowed Client", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_ALLOW_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Allowed Client"
+          }
+        },
+        {
+          "id": "Add Denied Client",
+          "x": 170,
+          "y": 162,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19 },
+            { "text": "Add Denied Client", "x": 40, "text_color_palette": "bl_white" },
+            { "image_path": "assets/down.png", "x": -20, "y": 16, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19, "recolor_palette": "dark_green" },
+            { "text": "Add Denied Client", "x": 40, "text_color_palette": "dark_green" },
+            { "image_path": "assets/down.png", "x": -20, "y": 16, "recolor_palette": "dark_green" }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_DENY_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Denied Client"
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Network Filter",
+          "x": 170,
+          "y": 34,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "text": "Network Filter:", "text_color_palette": "bl_white" },
+            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 29, "end_y": 55 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 29, "end_y": 55 } }] } },
+            { "image_path": "assets/up.png", "x": -19, "y": -2, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "text": "Network Filter:", "text_color_palette": "dark_green" },
+            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "dark_green" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "dark_green", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 29, "end_y": 55 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 83, "y": 8, "recolor_palette": "dark_green" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 29, "end_y": 55 } }] } },
+            { "image_path": "assets/up.png", "x": -19, "y": -2, "recolor_palette": "bl_white" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_NETWORK_MODE",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Network Filter"
+          }
+        },
+        {
+          "id": "Allowed Network List",
+          "x": 170,
+          "y": 66,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3 },
+            { "text": "Allowed Network List", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3, "recolor_palette": "dark_green" },
+            { "text": "Allowed Network List", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_ALLOW_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Allowed Network List"
+          }
+        },
+        {
+          "id": "Denied Network List",
+          "x": 170,
+          "y": 98,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3 },
+            { "text": "Denied Network List", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/menu.png", "x": 4, "y": 3, "recolor_palette": "dark_green" },
+            { "text": "Denied Network List", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_DENY_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Denied Network List"
+          }
+        },
+        {
+          "id": "Add Allowed Network",
+          "x": 170,
+          "y": 130,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19 },
+            { "text": "Add Allowed Network", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19, "recolor_palette": "dark_green" },
+            { "text": "Add Allowed Network", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_ALLOW_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Allowed Network"
+          }
+        },
+        {
+          "id": "Add Denied Network",
+          "x": 170,
+          "y": 162,
+          "layers": [
+            { "image_path": "assets/select/card_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19 },
+            { "text": "Add Denied Network", "x": 40, "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/pineap/select/box_313x26.png", "x": -6, "y": -1 },
+            { "image_path": "assets/keyboard.png", "x": 13, "y": 19, "recolor_palette": "dark_green" },
+            { "text": "Add Denied Network", "x": 40, "text_color_palette": "dark_green" }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_DENY_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Denied Network"
+          }
+        }
+      ]
+    }
+  ]
+}
