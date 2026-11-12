@@ -1,0 +1,105 @@
+{
+  "template": {
+    "screen_name": "pager_portal_update_payloads_list",
+    "status_bar": "min",
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "background": {
+      "layers": [
+        { "image_path": "assets/portal/list/bg_payloads_list.png", "x": 0, "y": 0 },
+        { "text": "Update Payloads", "text_size": "medium", "text_color_palette": "bl_white", "x": 12, "y": 2 },
+        { "variable_name": "$_LIST_SIZE", "x": 357, "y": 148, "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 3, "wrap_text": false, "max_lines": 1, "center_text_within": { "draw_bounds": false, "start_x": 357, "end_x": 385, "start_y": 148, "end_y": 164 } } },
+        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 80, "y": 201, "string_template": { "text_size": "small", "text_color_palette": "bl_white", "max_chars": 8, "wrap_text": false, "max_lines": 1, "center_text_within": { "draw_bounds": false, "start_x": 78, "end_x": 152, "start_y": 201, "end_y": 217 } } }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "x": 0,
+            "layers": [
+              { "image_path": "assets/folder.png", "x": 14, "y": 37, "recolor_palette": "bl_white" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 35, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/portal/list/row_selected.png", "x": 4, "y": 32 },
+              { "image_path": "assets/folder.png", "x": 14, "y": 37, "recolor_palette": "bl_ink" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 35, "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot1",
+            "x": 0,
+            "layers": [
+              { "image_path": "assets/folder.png", "x": 14, "y": 69, "recolor_palette": "bl_white" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 67, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/portal/list/row_selected.png", "x": 4, "y": 64 },
+              { "image_path": "assets/folder.png", "x": 14, "y": 69, "recolor_palette": "bl_ink" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 67, "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot2",
+            "x": 0,
+            "layers": [
+              { "image_path": "assets/folder.png", "x": 14, "y": 101, "recolor_palette": "bl_white" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 99, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/portal/list/row_selected.png", "x": 4, "y": 96 },
+              { "image_path": "assets/folder.png", "x": 14, "y": 101, "recolor_palette": "bl_ink" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 99, "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot3",
+            "x": 0,
+            "layers": [
+              { "image_path": "assets/folder.png", "x": 14, "y": 133, "recolor_palette": "bl_white" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 131, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/portal/list/row_selected.png", "x": 4, "y": 128 },
+              { "image_path": "assets/folder.png", "x": 14, "y": 133, "recolor_palette": "bl_ink" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 131, "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          },
+          {
+            "id": "Slot4",
+            "x": 0,
+            "layers": [
+              { "image_path": "assets/folder.png", "x": 14, "y": 165, "recolor_palette": "bl_white" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 163, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "selected_layers": [
+              { "image_path": "assets/portal/list/row_selected.png", "x": 4, "y": 160 },
+              { "image_path": "assets/folder.png", "x": 14, "y": 165, "recolor_palette": "bl_ink" },
+              { "variable_name": "$_LIST_ITEM", "x": 42, "y": 163, "string_template": { "text_size": "medium", "text_color_palette": "bl_ink", "max_chars": 20, "wrap_text": false, "max_lines": 1 } }
+            ],
+            "target": "pager_portal_view_updatable_payload_details",
+            "variable": "$_LIST_ITEM"
+          }
+        ]
+      }
+    ]
+  }
+}

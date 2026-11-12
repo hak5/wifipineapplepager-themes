@@ -1,0 +1,14 @@
+{
+  "text_size": "small",
+  "text_color_palette": "bl_hi",
+  "max_chars": 42,
+  "wrap_text": true,
+  "max_lines": 8,
+  "center_text_within": {
+    "draw_bounds": false,
+    "start_x": 44,
+    "end_x": 436,
+    "start_y": 22,
+    "end_y": 130
+  }
+}

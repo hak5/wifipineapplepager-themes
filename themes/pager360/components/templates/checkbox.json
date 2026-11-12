@@ -1,0 +1,9 @@
+{
+  "enabled": [
+    { "image_path": "assets/checkbox.png", "x": 1, "y": 2, "recolor_palette": "bl_white" },
+    { "image_path": "assets/x.png", "x": 5, "y": 7, "recolor_palette": "dark_green" }
+  ],
+  "disabled": [
+    { "image_path": "assets/checkbox.png", "x": 1, "y": 2, "recolor_palette": "bl_white" }
+  ]
+}

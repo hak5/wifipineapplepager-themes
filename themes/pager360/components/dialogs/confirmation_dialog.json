@@ -1,0 +1,43 @@
+{
+  "screen_name": "confirmation_dialog",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      { "image_path": "assets/dialog/confirm_window.png", "x": 18, "y": 4 },
+      { "variable_name": "$_INPUT", "x": 60, "y": 60, "use_template": "confirmation_dialog_text" }
+    ]
+  },
+  "pages": [
+    {
+      "menu_items": [
+        {
+          "id": "Save",
+          "y": 0,
+          "x": 0,
+          "layers": [
+            { "text": "Cancel", "x": 202, "y": 135, "text_size": "medium", "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dialog/row_selected.png", "x": 44, "y": 134 },
+            { "text": "Cancel", "x": 202, "y": 135, "text_size": "medium", "text_color_palette": "bl_ink" }
+          ],
+          "target": "back"
+        },
+        {
+          "id": "Cancel",
+          "y": 0,
+          "x": 0,
+          "layers": [
+            { "text": "Confirm", "x": 195, "y": 163, "text_size": "medium", "text_color_palette": "bl_white" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/dialog/row_selected.png", "x": 44, "y": 162 },
+            { "text": "Confirm", "x": 195, "y": 163, "text_size": "medium", "text_color_palette": "bl_ink" }
+          ],
+          "target": "confirm"
+        }
+      ]
+    }
+  ]
+}

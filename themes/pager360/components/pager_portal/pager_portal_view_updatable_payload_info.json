@@ -1,0 +1,72 @@
+{
+  "screen_name": "pager_portal_view_updatable_payload_info",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/portal/list/detail_update_bg.png", "x": 0, "y": 0 },
+      { "text": "Update Payload", "x": 12, "y": 2, "text_size": "medium", "text_color_palette": "bl_white" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "data",
+          "unselectable": true,
+          "layers": [
+            { "x": 12, "y": 29, "variable_name": "$_PAYLOAD_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 32, "wrap_text": false, "max_lines": 1 } },
+            { "x": 300, "y": 61, "variable_name": "$_PAYLOAD_AUTHOR_NAME", "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 18, "wrap_text": false, "max_lines": 1 } },
+            { "x": 300, "y": 74, "variable_name": "$_PAYLOAD_VERSION", "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 6, "wrap_text": false, "max_lines": 1 } },
+            { "x": 358, "y": 74, "text": "->", "text_size": "small", "text_color_palette": "bl_ink_lt" },
+            { "x": 382, "y": 74, "variable_name": "$_UPDATED_PAYLOAD_VERSION", "string_template": { "text_size": "small", "text_color_palette": "bl_gr_dk", "max_chars": 9, "wrap_text": false, "max_lines": 1 } },
+            { "x": 300, "y": 87, "variable_name": "$_PAYLOAD_UPDATE_REASON", "string_template": { "text_size": "small", "text_color_palette": "dark_red", "max_chars": 18, "wrap_text": false, "max_lines": 1 } },
+            { "x": 300, "y": 100, "variable_name": "$_PAYLOAD_CATEGORY", "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 18, "wrap_text": false, "max_lines": 1 } },
+            { "x": 12, "y": 124, "variable_name": "$_UPDATED_PAYLOAD_DESCRIPTION", "string_template": { "max_chars": 50, "wrap_text": true, "max_lines": 5, "text_size": "small", "text_color_palette": "bl_white", "center_text_within": { "draw_bounds": false, "start_x": 12, "end_x": 468, "start_y": 124, "end_y": 189 } } }
+          ]
+        },
+        {
+          "id": "Upgrade",
+          "x": 0,
+          "y": 0,
+          "layers": [
+            { "image_path": "assets/portal/list/icon_update.png", "x": 14, "y": 62, "recolor_palette": "bl_white" },
+            { "text": "Upgrade", "x": 42, "y": 60, "text_color_palette": "bl_white", "text_size": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/list/row_selected_narrow.png", "x": 4, "y": 58 },
+            { "image_path": "assets/portal/list/icon_update.png", "x": 14, "y": 62, "recolor_palette": "bl_ink" },
+            { "text": "Upgrade", "x": 42, "y": 60, "text_color_palette": "bl_ink", "text_size": "medium" }
+          ],
+          "target": "function_update_payload",
+          "variable": "$_INPUT"
+        },
+        {
+          "id": "Back",
+          "x": 0,
+          "y": 0,
+          "layers": [
+            { "image_path": "assets/portal/list/icon_back.png", "x": 14, "y": 92, "recolor_palette": "bl_white" },
+            { "text": "Back", "x": 42, "y": 90, "text_color_palette": "bl_white", "text_size": "medium" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/portal/list/row_selected_narrow.png", "x": 4, "y": 88 },
+            { "image_path": "assets/portal/list/icon_back.png", "x": 14, "y": 92, "recolor_palette": "bl_ink" },
+            { "text": "Back", "x": 42, "y": 90, "text_color_palette": "bl_ink", "text_size": "medium" }
+          ],
+          "target": "back"
+        }
+      ]
+    }
+  ]
+}
