@@ -2,6 +2,7 @@
   "background": {
     "layers": [
       { "image_path": "assets/list/payload_log_bg.png", "x": 0, "y": 0 },
+      { "variable_name": "$_INPUT_NAME", "use_template": "payload_title", "x": 34, "y": 1 },
       { "variable_name": "$_INPUT_NAME", "use_template": "payload_title", "x": 34, "y": 1 }
     ]
   },

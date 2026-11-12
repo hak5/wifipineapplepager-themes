@@ -14,8 +14,10 @@
   "background": {
     "layers": [
       { "image_path": "assets/settings/detail_legend_bg.png", "x": 0, "y": 0 },
-      { "text": "Settings » General", "x": 12, "y": 29, "text_size": "small", "text_color_palette": "gray" },
-      { "text": "General", "x": 12, "y": 2, "text_color_palette": "bl_white", "text_size": "medium" },
+      { "text": "Settings » General", "x": 12, "y": 29, "text_size": "small", "text_color_palette": "black" },
+      { "text": "Settings » General", "x": 11, "y": 28, "text_size": "small", "text_color_palette": "gray" },
+      { "text": "General", "x": 12, "y": 2, "text_color_palette": "black", "text_size": "medium" },
+      { "text": "General", "x": 11, "y": 1, "text_color_palette": "bl_white", "text_size": "medium" },
       { "image_path": "assets/divright.png", "x": 316, "y": 31 }
     ]
   },

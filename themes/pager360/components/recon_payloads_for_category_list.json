@@ -7,7 +7,8 @@
     "background": {
       "layers": [
         { "image_path": "assets/list/recon_category_bg.png", "x": 0, "y": 0 },
-        { "variable_name": "$_INPUT_NAME", "x": 10, "y": 1, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 15, "wrap_text": false, "max_lines": 1 } },
+        { "variable_name": "$_INPUT_NAME", "x": 10, "y": 1, "string_template": { "text_size": "medium", "text_color_palette": "black", "max_chars": 15, "wrap_text": false, "max_lines": 1 } },
+        { "variable_name": "$_INPUT_NAME", "x": 9, "y": 0, "string_template": { "text_size": "medium", "text_color_palette": "bl_white", "max_chars": 15, "wrap_text": false, "max_lines": 1 } },
         { "variable_name": "$_LIST_SIZE", "x": 34, "y": 31, "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 4, "wrap_text": false, "max_lines": 1 } },
         { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 384, "y": 31, "string_template": { "text_size": "small", "text_color_palette": "bl_ink", "max_chars": 8, "wrap_text": false, "max_lines": 1, "center_text_within": { "draw_bounds": false, "start_x": 372, "end_x": 468, "start_y": 31, "end_y": 47 } } }
       ]

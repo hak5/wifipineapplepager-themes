@@ -20,7 +20,9 @@
       { "text": "Updates", "x": 10, "y": 98, "text_color_palette": "gray" },
       { "text": "Help", "x": 10, "y": 130, "text_color_palette": "gray" },
       { "image_path": "assets/select/current_section.png", "x": 4, "y": 161 },
-      { "text": "About", "x": 10, "y": 162, "text_color_palette": "dark_green" }
+      { "text": "About", "x": 10, "y": 162, "text_color_palette": "dark_green" },
+      { "text": "Made with Theme Studio Pro", "text_color_palette": "disabled_dark_gray", "x": 15, "y": 201, "text_size": "small" },
+      { "text": "Made with Theme Studio Pro", "text_color_palette": "disabled_light_gray", "x": 14, "y": 200, "text_size": "small" }
     ]
   },
   "pages": [

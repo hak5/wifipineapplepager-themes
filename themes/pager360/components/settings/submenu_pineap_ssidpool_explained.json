@@ -15,7 +15,8 @@
     "layers": [
       { "image_path": "assets/pineap/detail_legend_bg.png", "x": 0, "y": 0 },
       { "text": "PineAP » SSID Pool", "x": 12, "y": 29, "text_size": "small", "text_color_palette": "gray" },
-      { "text": "SSID Pool", "x": 12, "y": 2, "text_color_palette": "bl_white", "text_size": "medium" },
+      { "text": "SSID Pool", "x": 12, "y": 2, "text_color_palette": "black", "text_size": "medium" },
+      { "text": "SSID Pool", "x": 11, "y": 1, "text_color_palette": "bl_white", "text_size": "medium" },
       { "image_path": "assets/divright.png", "x": 316, "y": 31 }
     ]
   },
