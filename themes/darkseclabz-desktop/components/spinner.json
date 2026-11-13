@@ -1,0 +1,83 @@
+{
+  "screen_name": "spinner",
+  "windowed_canvas": true,
+  "cache_canvases": true,
+  "menu_items": [
+    {
+      "id": "spinner",
+      "animation_interval": 0.12,
+      "animation": [
+        {
+          "image_path": "assets/spinner/wait-01.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-02.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-03.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-04.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-05.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-06.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-07.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-08.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-09.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-10.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-11.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/spinner/wait-12.png",
+          "x": 140,
+          "y": 40
+        }
+      ]
+    },
+    {
+      "id": "spinner_text",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT",
+          "use_template": "spinner_text"
+        }
+      ]
+    }
+  ]
+}
