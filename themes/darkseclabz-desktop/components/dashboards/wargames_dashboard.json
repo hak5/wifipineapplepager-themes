@@ -28,177 +28,87 @@
   "menu_items": [
     {
       "id": "pagerportal",
-      "layers": [
-        {
-          "text": "PAGER PORTAL",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "blue"
-        }
-      ],
+      "layers": [],
       "selected_layers": [
         {
           "image_path": "assets/dashboard/glass-1.png",
-          "x": -79,
-          "y": -185
-        },
-        {
-          "text": "PAGER PORTAL",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "dsl_white"
+          "x": 0,
+          "y": 0
         }
       ],
-      "x": 79,
-      "y": 185,
+      "x": 0,
+      "y": 0,
       "target": "pager_portal_dashboard"
     },
     {
       "id": "ALERTS",
-      "layers": [
-        {
-          "text": "ALERTS",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "blue"
-        }
-      ],
+      "layers": [],
       "selected_layers": [
         {
           "image_path": "assets/dashboard/glass-2.png",
-          "x": -143,
-          "y": -185
-        },
-        {
-          "text": "ALERTS",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "dsl_white"
+          "x": 0,
+          "y": 0
         }
       ],
-      "x": 143,
-      "y": 185,
+      "x": 0,
+      "y": 0,
       "target": "alerts_dashboard"
     },
     {
       "id": "PAYLOADS",
-      "layers": [
-        {
-          "text": "PAYLOADS",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "blue"
-        }
-      ],
+      "layers": [],
       "selected_layers": [
         {
           "image_path": "assets/dashboard/glass-3.png",
-          "x": -207,
-          "y": -185
-        },
-        {
-          "text": "PAYLOADS",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "dsl_white"
+          "x": 0,
+          "y": 0
         }
       ],
-      "x": 207,
-      "y": 185,
+      "x": 0,
+      "y": 0,
       "target": "payloads_dashboard",
       "variable": "$_PAYLOAD_CATEGORIES"
     },
     {
       "id": "RECON",
-      "layers": [
-        {
-          "text": "RECON",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "blue"
-        }
-      ],
+      "layers": [],
       "selected_layers": [
         {
           "image_path": "assets/dashboard/glass-4.png",
-          "x": -271,
-          "y": -185
-        },
-        {
-          "text": "RECON",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "dsl_white"
+          "x": 0,
+          "y": 0
         }
       ],
-      "x": 271,
-      "y": 185,
+      "x": 0,
+      "y": 0,
       "target": "recon_dashboard"
     },
     {
       "id": "PINEAP",
-      "layers": [
-        {
-          "text": "PINEAP",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "blue"
-        }
-      ],
+      "layers": [],
       "selected_layers": [
         {
           "image_path": "assets/dashboard/glass-5.png",
-          "x": -335,
-          "y": -185
-        },
-        {
-          "text": "PINEAP",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "dsl_white"
+          "x": 0,
+          "y": 0
         }
       ],
-      "x": 335,
-      "y": 185,
+      "x": 0,
+      "y": 0,
       "target": "pineap_menu"
     },
     {
       "id": "SETTINGS",
-      "layers": [
-        {
-          "text": "SETTINGS",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "blue"
-        }
-      ],
+      "layers": [],
       "selected_layers": [
         {
           "image_path": "assets/dashboard/glass-6.png",
-          "x": -399,
-          "y": -185
-        },
-        {
-          "text": "SETTINGS",
-          "x": -30,
-          "y": -50,
-          "text_size": "medium",
-          "text_color_palette": "dsl_white"
+          "x": 0,
+          "y": 0
         }
       ],
-      "x": 399,
-      "y": 185,
+      "x": 0,
+      "y": 0,
       "target": "settings_menu"
     }
   ]
