@@ -6,7 +6,7 @@ Darkseclabz design and skull artwork on the official Wargames theme by Hak5.
 
 - **Theme name:** Darkseclabz Glitch
 - **Author:** sinXne0 (Darkseclabz)
-- **Version:** 1.0.0
+- **Version:** 1.0.1
 - **Firmware:** WiFi Pineapple Pager 2.0.0-stable
 - **Theme framework:** 0.9
 - **Baseline:** Hak5 Wargames 2.0.0
@@ -49,6 +49,17 @@ cp -r darkseclabz-glitch /root/themes/
 - Validated against the 2.0.0-stable firmware image and the public Wargames
   source. Future firmware or theme-framework changes may require updates.
 - Tested at the Pager's native 480 × 222 resolution only.
+
+## Changelog
+
+### 1.0.1
+
+- `components/lock_screen.json`: `windowed_canvas` is now `false`. The lock
+  screen background is a full-screen opaque image, so the windowed canvas was
+  keeping an unused copy of the previous screen without ever caching it.
+- `components/os_licenses.json`: both pages now use `back` instead of
+  targeting `dashboard`, which had pushed a fresh copy of the boot dashboard
+  onto the navigation stack each time the licenses screen was dismissed.
 
 ## Credits
 
