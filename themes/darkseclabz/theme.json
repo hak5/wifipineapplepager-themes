@@ -1,6 +1,6 @@
 {
   "author": "Darkseclabz • Wargames base by Hak5",
-  "theme_version": "1.0.0",
+  "theme_version": "1.0.1",
   "theme_framework_version": "0.9",
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
