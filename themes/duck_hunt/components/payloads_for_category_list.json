@@ -1,14 +1,57 @@
 {
   "template": {
     "screen_name": "payloads_for_category_list",
-    "windowed_canvas": true,
-    "cache_canvases": true,
+    "windowed_canvas": false,
+    "cache_canvases": false,
     "background": {
       "layers": [
-        { "image_path": "assets/optiondialog/option_dialog_bg_windowed_purple.png", "x": 8, "y": 12 },
-        { "variable_name": "$_INPUT_NAME", "x": 35, "y": 25, "use_template": "string_title" },
-        { "variable_name": "$_LIST_SIZE", "x": 425, "y": 45, "string_template":{ "text_size": "small", "text_color_palette": "medium_gray","center_text_within": { "draw_bounds": false, "start_x": 415, "end_x": 440, "start_y": 45, "end_y": 58 }}},
-        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 415, "y": 32, "use_template": "list_pagination_label" }
+        {
+          "image_path": "assets/nes/complete_pager_portal_get_alert_payloads.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/alert_payloads_for_category_list_bg.png",
+          "x": 59,
+          "y": 13
+        },
+        {
+          "image_path": "assets/nes/overlays/alert_payloads_for_category_list_bg_3.png",
+          "x": 34,
+          "y": 207
+        },
+        {
+          "image_path": "assets/nes/overlays/alert_payloads_for_category_list_bg_2.png",
+          "x": 58,
+          "y": 207
+        },
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 83,
+          "y": 30,
+          "use_template": "string_title"
+        },
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 84,
+          "y": 30,
+          "use_template": "string_title"
+        },
+        {
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT",
+          "x": 0,
+          "y": 0,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "soft_white",
+            "center_text_within": {
+              "start_x": 290,
+              "end_x": 365,
+              "start_y": 207,
+              "end_y": 220
+            }
+          }
+        }
       ]
     },
     "button_map": {
@@ -25,14 +68,61 @@
           {
             "id": "Slot0",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 76, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 78, "recolor_palette": "magenta" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "medium_gray" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 76,
+                "use_template": "payload_name"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 76,
+                "use_template": "payload_name"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 79,
+                "recolor_palette": "magenta"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 452,
+                "y": 79,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 76, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 78, "recolor_palette": "magenta" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70, "recolor_palette": "medium_gray" }
+              {
+                "image_path": "assets/nes/focus_374_28.png",
+                "x": 72,
+                "y": 72
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 76,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 76,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 79,
+                "recolor_palette": "magenta"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 452,
+                "y": 79,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "target": "launch_payload_dialog",
             "variable": "$_LIST_ITEM"
@@ -40,12 +130,49 @@
           {
             "id": "Slot1",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 103, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 105,"recolor_palette": "magenta"  }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 103,
+                "use_template": "payload_name"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 103,
+                "use_template": "payload_name"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 106,
+                "recolor_palette": "magenta"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 103, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 105,"recolor_palette": "magenta"  }
+              {
+                "image_path": "assets/nes/focus_374_28.png",
+                "x": 72,
+                "y": 99
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 103,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 103,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 106,
+                "recolor_palette": "magenta"
+              }
             ],
             "target": "launch_payload_dialog",
             "variable": "$_LIST_ITEM"
@@ -53,12 +180,49 @@
           {
             "id": "Slot2",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 130, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 132,"recolor_palette": "magenta"  }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 130,
+                "use_template": "payload_name"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 130,
+                "use_template": "payload_name"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 133,
+                "recolor_palette": "magenta"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 130, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 132,"recolor_palette": "magenta"  }
+              {
+                "image_path": "assets/nes/focus_374_28.png",
+                "x": 72,
+                "y": 126
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 130,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 130,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 133,
+                "recolor_palette": "magenta"
+              }
             ],
             "target": "launch_payload_dialog",
             "variable": "$_LIST_ITEM"
@@ -66,14 +230,61 @@
           {
             "id": "Slot3",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 157, "use_template": "payload_name" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 160,"recolor_palette": "magenta"  },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette":  "medium_gray"}
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 157,
+                "use_template": "payload_name"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 157,
+                "use_template": "payload_name"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 161,
+                "recolor_palette": "magenta"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_down_indicator.png",
+                "x": 452,
+                "y": 160,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 84, "y": 157, "use_template": "payload_name_selected" },
-              { "image_path": "assets/flame.png", "x": 64, "y": 160,"recolor_palette": "magenta"  },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175, "recolor_palette":  "medium_gray"}
+              {
+                "image_path": "assets/nes/focus_374_28.png",
+                "x": 72,
+                "y": 153
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 84,
+                "y": 157,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 85,
+                "y": 157,
+                "use_template": "payload_name_selected"
+              },
+              {
+                "image_path": "assets/flame.png",
+                "x": 65,
+                "y": 161,
+                "recolor_palette": "magenta"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_down_indicator.png",
+                "x": 452,
+                "y": 160,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "target": "launch_payload_dialog",
             "variable": "$_LIST_ITEM"

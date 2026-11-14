@@ -1,7 +1,7 @@
 {
   "screen_name": "management_ap_wizard",
-  "windowed_canvas": true,
-  "cache_canvases": true,
+  "windowed_canvas": false,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -12,7 +12,26 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/management_ap_wizard_bg_2.png",
+        "x": 113,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/management_ap_wizard_bg.png",
+        "x": 185,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/client_mode_wizard_bg.png",
+        "x": 34,
+        "y": 207
+      }
     ]
   },
   "pages": [
@@ -22,66 +41,138 @@
         {
           "id": "management_ap_wizard_title",
           "unselectable": true,
-          "layers": [
-            { "x": 90, "y": 25, "text_size": "large", "text_color_palette": "purple", "text": "Management AP Setup" }
-          ]
+          "layers": []
         },
         {
           "id": "ssid",
-          "x": 140,
-          "y": 70,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_ssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_ssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_MGMT_AP_SSID"
         },
         {
           "id": "enc",
-          "x": 140,
-          "y": 105,
+          "x": 119,
+          "y": 103,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_enc.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_enc.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
           "variable": "$_SETUP_MGMT_AP_ENCRYPTION_TYPE"
         },
         {
           "id": "pass",
-          "x": 140,
-          "y": 140,
+          "x": 119,
+          "y": 134,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_pass.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_pass.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_MGMT_AP_PASSPHRASE"
         },
         {
           "id": "save",
-          "x": 120,
-          "y": 175,
+          "x": 115,
+          "y": 174,
           "layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/setup_button_save.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 40, "text_color_palette": "green" }
+            {
+              "image_path": "assets/nes/setup_button_save.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/focus_154_30.png",
+              "x": -2,
+              "y": -2
+            }
           ],
           "target": "function_save_mgmt_ap",
           "button_map": {
@@ -95,15 +186,26 @@
         },
         {
           "id": "clear",
-          "x": 250,
-          "y": 175,
+          "x": 300,
+          "y": 174,
           "layers": [
-            { "image_path": "assets/x.png", "x": 7, "y": 4 },
-            { "text": "Clear", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/setup_button_clear.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/x.png", "x": 7, "y": 4 },
-            { "text": "Clear", "x": 40, "text_color_palette": "red" }
+            {
+              "image_path": "assets/nes/setup_button_clear.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/focus_154_30.png",
+              "x": -2,
+              "y": -2
+            }
           ],
           "target": "function_clear_mgmt_ap",
           "button_map": {

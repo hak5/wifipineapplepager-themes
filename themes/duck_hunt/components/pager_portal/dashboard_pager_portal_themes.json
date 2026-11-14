@@ -1,0 +1,70 @@
+{
+  "screen_name": "pager_portal_themes_dashboard",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/nes/game_dashboard_alerts.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/dashboard_pager_portal_payloads_bg_3.png",
+        "x": 93,
+        "y": 16
+      },
+      {
+        "image_path": "assets/nes/overlays/dashboard_pager_portal_themes_bg.png",
+        "x": 203,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/dashboard_pager_portal_payloads_bg_2.png",
+        "x": 366,
+        "y": 58
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "INSTALLED THEMES",
+          "x": 122,
+          "y": 76,
+          "target": "option_dialog",
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_themes_installed_themes.png",
+              "x": 5,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_257_29.png",
+              "x": -14,
+              "y": -6
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_themes_installed_themes.png",
+              "x": 5,
+              "y": 0
+            }
+          ],
+          "variable": "$_THEME"
+        }
+      ]
+    }
+  ],
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "select"
+  }
+}

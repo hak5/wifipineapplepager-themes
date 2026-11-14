@@ -4,9 +4,17 @@
   "cache_canvases": false,
   "background": {
     "layers": [
-      { "image_path": "assets/low_battery_alert.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/critical_battery_alert.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/low_battery_alert_bg.png",
+        "x": 18,
+        "y": 30
+      }
     ]
   },
-  "menu_items": [
-  ]
+  "menu_items": []
 }

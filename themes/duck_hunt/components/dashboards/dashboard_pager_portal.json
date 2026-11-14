@@ -1,0 +1,171 @@
+{
+  "screen_name": "pager_portal_dashboard",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/nes/game_dashboard_alerts.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/dashboard_pager_portal_bg.png",
+        "x": 93,
+        "y": 14
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "GET PAYLOADS",
+          "x": 114,
+          "y": 69,
+          "target": "pager_portal_get_payloads_dashboard",
+          "layers": [
+            {
+              "image_path": "assets/nes/portal_icon_0.png",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_get_payloads.png",
+              "x": 40,
+              "y": 5
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_256_34.png",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "image_path": "assets/nes/portal_icon_0.png",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_get_payloads.png",
+              "x": 40,
+              "y": 5
+            }
+          ]
+        },
+        {
+          "id": "UPDATE PAYLOADS",
+          "x": 114,
+          "y": 106,
+          "target": "pager_portal_update_payloads_dashboard",
+          "layers": [
+            {
+              "image_path": "assets/nes/portal_icon_0.png",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_update_payloads.png",
+              "x": 40,
+              "y": 5
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_256_34.png",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "image_path": "assets/nes/portal_icon_0.png",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_update_payloads.png",
+              "x": 40,
+              "y": 5
+            }
+          ]
+        },
+        {
+          "id": "THEMES",
+          "x": 114,
+          "y": 143,
+          "target": "option_dialog",
+          "layers": [
+            {
+              "image_path": "assets/nes/portal_icon_2.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_themes.png",
+              "x": 40,
+              "y": 5
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_256_34.png",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "image_path": "assets/nes/portal_icon_2.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_themes.png",
+              "x": 40,
+              "y": 5
+            }
+          ],
+          "variable": "$_THEME"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "MANAGE INSTALLED",
+          "x": 120,
+          "y": 85,
+          "target": "pager_portal_installed_payloads_list",
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_manage_installed.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_250_29.png",
+              "x": -13,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pager_portal_manage_installed_selected.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "variable": "$_INSTALLED_PAYLOADS_LIST"
+        }
+      ]
+    }
+  ],
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  }
+}

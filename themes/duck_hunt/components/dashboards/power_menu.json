@@ -1,6 +1,6 @@
 {
   "screen_name": "power_menu",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
     "a": "select",
@@ -12,7 +12,26 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/power_menu_bg.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/nes/game_dashboard_alerts.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/power_menu_bg_2.png",
+        "x": 183,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/power_menu_bg.png",
+        "x": 243,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/client_mode_wizard_bg.png",
+        "x": 34,
+        "y": 207
+      }
     ]
   },
   "pages": [
@@ -20,74 +39,132 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
-          "x":45,
-          "y":35,
+          "id": "Settings",
+          "x": 133,
+          "y": 72,
           "layers": [
-            { "text": "Sleep Screen", "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/labels/power_menu_settings.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
-            { "text": "Sleep Screen", "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_246_23.png",
+              "x": -12,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/labels/power_menu_settings.png",
+              "x": 6,
+              "y": 0
+            }
           ],
-          "target": "function_sleep_screen"
+          "target": "quick_settings"
         },
         {
           "id": "Lock Screen",
-          "x":45,
-          "y":70,
+          "x": 133,
+          "y": 96,
           "layers": [
-            { "text": "Lock Screen", "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/labels/power_menu_lock_screen.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
-            { "text": "Lock Screen", "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_246_23.png",
+              "x": -12,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/labels/power_menu_lock_screen.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "target": "function_lock_screen"
         },
         {
           "id": "Lock Buttons",
-          "x":45,
-          "y":105,
+          "x": 133,
+          "y": 120,
           "layers": [
-            { "text": "Lock Buttons", "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/labels/power_menu_lock_buttons.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
-            { "text": "Lock Buttons", "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_246_23.png",
+              "x": -12,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/labels/power_menu_lock_buttons.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "target": "function_lock_buttons"
         },
         {
           "id": "Nerd Stats",
-          "x":45,
-          "y":140,
+          "x": 133,
+          "y": 144,
           "layers": [
-            { "text": "Nerd Stats", "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/labels/power_menu_nerd_stats.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_STATS_FOR_NERDS", "x": -38, "use_template": "toggle" },
-            { "text": "Nerd Stats", "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_246_23.png",
+              "x": -12,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/labels/power_menu_nerd_stats.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
           "variable": "$_STATS_FOR_NERDS"
         },
         {
           "id": "shutdown",
-          "x":45,
-          "y":175,
+          "x": 133,
+          "y": 168,
           "layers": [
-            { "text": "Shutdown", "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/labels/power_menu_shutdown.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -38, "y": 5 },
-            { "text": "Shutdown", "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_246_23.png",
+              "x": -12,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/labels/power_menu_shutdown.png",
+              "x": 6,
+              "y": 0
+            }
           ],
           "target": "function_shutdown"
         }
       ]
     }
   ]
-
 }
-

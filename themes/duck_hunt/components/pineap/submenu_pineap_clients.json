@@ -1,10 +1,9 @@
 {
-  "template":
-  {
+  "template": {
     "screen_name": "pineap_clients_submenu",
     "status_bar": "default",
     "windowed_canvas": false,
-    "cache_canvases": true,
+    "cache_canvases": false,
     "button_map": {
       "a": "select",
       "b": "back",
@@ -15,9 +14,21 @@
     },
     "background": {
       "layers": [
-        { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-        { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-        { "text": "Clients",    "x": 10, "y": 50,  "text_color_palette": "purple" }
+        {
+          "image_path": "assets/pineap_bg.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/divright.png",
+          "x": 145,
+          "y": 50
+        },
+        {
+          "x": 10,
+          "y": 50,
+          "image_path": "assets/nes/labels/fallback_menu_clients_selected.png"
+        }
       ]
     },
     "pages": [
@@ -26,66 +37,121 @@
           {
             "id": "Client 1",
             "layers": [
-              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "blue"},
-              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
-                "text_size": "medium",
-                "text_color_palette": "orange",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
-                "text_size": "small",
-                "text_color_palette": "orange",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "gray",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } },
-              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "gray",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } }
+              {
+                "image_path": "assets/client.png",
+                "x": 170,
+                "y": 71,
+                "recolor_palette": "soft_white"
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_IP",
+                "x": 200,
+                "y": 60,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_MAC",
+                "x": 200,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL",
+                "x": 364,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "gray",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE",
+                "x": 399,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "gray",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              }
             ],
             "selected_layers": [
-              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "yellow"},
-              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
-                "text_size": "medium",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } },
-              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } }
+              {
+                "image_path": "assets/nes/focus_284_28.png",
+                "x": 188,
+                "y": 56
+              },
+              {
+                "image_path": "assets/client.png",
+                "x": 170,
+                "y": 71,
+                "recolor_palette": "yellow"
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_IP",
+                "x": 200,
+                "y": 60,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_MAC",
+                "x": 200,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL",
+                "x": 364,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE",
+                "x": 399,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              }
             ],
             "target": "function_pineap_client_kick",
             "variable": "$_LIST_ITEM"
@@ -94,66 +160,121 @@
             "id": "Client 2",
             "y": 50,
             "layers": [
-              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "blue"},
-              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
-                "text_size": "medium",
-                "text_color_palette": "orange",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
-                "text_size": "small",
-                "text_color_palette": "orange",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "gray",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } },
-              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "gray",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } }
+              {
+                "image_path": "assets/client.png",
+                "x": 170,
+                "y": 71,
+                "recolor_palette": "soft_white"
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_IP",
+                "x": 200,
+                "y": 60,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_MAC",
+                "x": 200,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL",
+                "x": 364,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "gray",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE",
+                "x": 399,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "gray",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              }
             ],
             "selected_layers": [
-              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "yellow"},
-              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
-                "text_size": "medium",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } },
-              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } }
+              {
+                "image_path": "assets/nes/focus_284_28.png",
+                "x": 188,
+                "y": 56
+              },
+              {
+                "image_path": "assets/client.png",
+                "x": 170,
+                "y": 71,
+                "recolor_palette": "yellow"
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_IP",
+                "x": 200,
+                "y": 60,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_MAC",
+                "x": 200,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL",
+                "x": 364,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE",
+                "x": 399,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              }
             ],
             "target": "function_pineap_client_kick",
             "variable": "$_LIST_ITEM"
@@ -162,66 +283,121 @@
             "id": "Client 3",
             "y": 100,
             "layers": [
-              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "blue"},
-              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
-                "text_size": "medium",
-                "text_color_palette": "orange",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
-                "text_size": "small",
-                "text_color_palette": "orange",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "gray",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } },
-              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "gray",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } }
+              {
+                "image_path": "assets/client.png",
+                "x": 170,
+                "y": 71,
+                "recolor_palette": "soft_white"
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_IP",
+                "x": 200,
+                "y": 60,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_MAC",
+                "x": 200,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL",
+                "x": 364,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "gray",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE",
+                "x": 399,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "gray",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              }
             ],
             "selected_layers": [
-              { "image_path": "assets/client.png","x": 165, "y": 70, "recolor_palette": "yellow"},
-              { "variable_name": "$_LIST_ITEM_CLIENT_IP", "x": 200, "y": 60,"string_template": {
-                "text_size": "medium",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_MAC", "x": 200, "y": 81,"string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              }  },
-              { "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL", "x": 364, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } },
-              { "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE", "x": 399, "y": 81,  "string_template": {
-                "text_size": "small",
-                "text_color_palette": "purple",
-                "max_chars": 32,
-                "wrap_text": true,
-                "max_lines": 1
-              } }
+              {
+                "image_path": "assets/nes/focus_284_28.png",
+                "x": 188,
+                "y": 56
+              },
+              {
+                "image_path": "assets/client.png",
+                "x": 170,
+                "y": 71,
+                "recolor_palette": "yellow"
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_IP",
+                "x": 200,
+                "y": 60,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_MAC",
+                "x": 200,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_SIGNAL",
+                "x": 364,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM_CLIENT_INTERFACE",
+                "x": 399,
+                "y": 81,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "yellow",
+                  "max_chars": 32,
+                  "wrap_text": true,
+                  "max_lines": 1
+                }
+              }
             ],
             "target": "function_pineap_client_kick",
             "variable": "$_LIST_ITEM"

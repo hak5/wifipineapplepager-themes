@@ -1,7 +1,7 @@
 {
   "template": {
     "screen_name": "recon_results_list",
-    "status_bar": "recon",
+    "status_bar": "nes_wifi",
     "refresh_interval": 1,
     "windowed_canvas": false,
     "cache_canvases": false,
@@ -18,31 +18,49 @@
     },
     "background": {
       "layers": [
-        { "image_path": "assets/recon/recon_list_bg.png", "x": 0, "y": 0 },
-        { "x": 0,  "y": 0, "variable_name": "$_RECON_LIST_PAGINATOR_LABEL_SHORT", "string_template": { "text_size": "small",  "text_color_palette": "orange", "center_text_within": { "draw_bounds": false, "start_x": 8, "end_x": 70, "start_y": 3, "end_y": 12 } }},
-        { "x": 0,  "y": 12, "variable_name": "$_RECON_LIST_SIZE", "string_template": { "text_size": "small",  "text_color_palette": "orange", "center_text_within": { "draw_bounds": false, "start_x": 8, "end_x": 72, "start_y": 13, "end_y": 28 }}}
+        {
+          "image_path": "assets/nes/recon_results_list.png",
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     "pages": [
       {
         "menu_items": [
-          { "_comment": "required menu item, must exist, must be first item, must have id autoupdate",
+          {
+            "_comment": "required menu item, must exist, must be first item, must have id autoupdate",
             "id": "autoupdate",
-            "x": 77,
+            "x": 344,
             "y": 3,
             "layers": [
-              {"image_path": "assets/autoplay_stopped.png", "recolor_palette": "gray" }
+              {
+                "image_path": "assets/autoplay_stopped.png",
+                "x": 0,
+                "y": 3
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_RECON_LIST_AUTOUPDATING",
-              "toggle_template": {
-                "enabled": [
-                  {"image_path": "assets/autoplay.png",  "recolor_palette": "green" }
-                ],
-                "disabled": [
-                  {"image_path": "assets/autoplay_stopped.png",  "recolor_palette": "yellow" }
-                ]
-              }
+              {
+                "variable_name": "$_RECON_LIST_AUTOUPDATING",
+                "toggle_template": {
+                  "enabled": [
+                    {
+                      "image_path": "assets/autoplay.png",
+                      "recolor_palette": "green",
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "disabled": [
+                    {
+                      "image_path": "assets/autoplay_stopped.png",
+                      "recolor_palette": "yellow",
+                      "x": 1,
+                      "y": 3
+                    }
+                  ]
+                }
               }
             ],
             "button_map": {
@@ -50,134 +68,438 @@
               "b": "back",
               "up": "previous",
               "down": "next",
-              "left": "back",
-              "right": "noop"
+              "left": "target function_recon_ring_prev",
+              "right": "target function_recon_ring_next"
             }
           },
-          { "id": "Row0", "x":55, "y":40,
+          {
+            "id": "Row0",
+            "x": 13,
+            "y": 43,
+            "target": "recon_selected_ap_menu",
             "layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "orange" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 10,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 11,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/recon_results_list_row0.png",
+                "x": 265,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_CHANNEL",
+                "x": 286,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE",
+                "x": 314,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "selected_signal"
+              }
             ],
             "selected_layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "purple" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "target": "recon_selected_ap_menu"
+              {
+                "image_path": "assets/nes/focus_454_34.png",
+                "x": -7,
+                "y": -6
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 10,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 11,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/recon_results_list_row0.png",
+                "x": 265,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_CHANNEL",
+                "x": 286,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE",
+                "x": 314,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "selected_signal"
+              }
+            ]
           },
-          { "id": "Row1", "x":55, "y":75,
+          {
+            "id": "Row1",
+            "x": 13,
+            "y": 85,
+            "target": "recon_selected_ap_menu",
             "layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "orange" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 10,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 11,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/recon_results_list_row0.png",
+                "x": 265,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_CHANNEL",
+                "x": 286,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE",
+                "x": 314,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "selected_signal"
+              }
             ],
             "selected_layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "purple" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "target": "recon_selected_ap_menu"
+              {
+                "image_path": "assets/nes/focus_454_34.png",
+                "x": -7,
+                "y": -6
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 10,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 11,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/recon_results_list_row0.png",
+                "x": 265,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_CHANNEL",
+                "x": 286,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE",
+                "x": 314,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "selected_signal"
+              }
+            ]
           },
-          { "id": "Row2", "x":55, "y":110,
+          {
+            "id": "Row2",
+            "x": 13,
+            "y": 127,
+            "target": "recon_selected_ap_menu",
             "layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "orange" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 10,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 11,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/recon_results_list_row0.png",
+                "x": 265,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_CHANNEL",
+                "x": 286,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE",
+                "x": 314,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "selected_signal"
+              }
             ],
             "selected_layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "purple" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "target": "recon_selected_ap_menu"
-          },
-          { "id": "Row3", "x":55, "y":145,
-            "layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "orange" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "selected_layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "purple" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "target": "recon_selected_ap_menu"
-          },
-          { "id": "Row4", "x":55, "y":180,
-            "layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "orange" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "selected_layers": [
-              { "x": -38, "y": 0,  "variable_name": "$_RECON_RESULT_RSSI", "use_template": "selected_signal" },
-              {                   "variable_name": "$_RECON_RESULT_SSID",            "string_template": { "text_size": "medium", "text_color_palette": "purple" }},
-              { "x": 10,  "y":21, "variable_name": "$_RECON_RESULT_BSSID",           "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 178, "y":21, "variable_name": "$_RECON_RESULT_RSSI",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 220, "y":21, "variable_name": "$_RECON_RESULT_FREQ",            "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 268, "y":21, "variable_name": "$_RECON_RESULT_CHANNEL",         "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 302, "y": 21, "image_path":  "assets/client.png",                                                              "recolor_palette": "navy" },
-              { "x": 310, "y":21, "variable_name": "$_RECON_RESULT_CLIENT_COUNT",    "string_template": { "text_size": "small",  "text_color_palette": "gray" }},
-              { "x": 340, "y":21, "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE", "string_template": { "text_size": "small",  "text_color_palette": "gray" }}
-            ],
-            "target": "recon_selected_ap_menu"
+              {
+                "image_path": "assets/nes/focus_454_34.png",
+                "x": -7,
+                "y": -6
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 10,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_SSID",
+                "x": 11,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 19
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/recon_results_list_row0.png",
+                "x": 265,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_CHANNEL",
+                "x": 286,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_ENCRYPTION_TYPE",
+                "x": 314,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_RECON_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "selected_signal"
+              }
+            ]
           }
         ]
       }

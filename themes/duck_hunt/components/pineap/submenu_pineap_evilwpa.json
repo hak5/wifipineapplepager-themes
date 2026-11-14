@@ -1,8 +1,7 @@
 {
   "screen_name": "pineap_evilwpa_submenu",
-  "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -13,13 +12,16 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "purple" },
-      { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "gray" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_pineap_evilwpa_bg.png",
+        "x": 113,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,83 +30,125 @@
       "menu_items": [
         {
           "id": "Evil WPA AP",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "variable_name":  "$_EVIL_WPA_ENABLED", "use_template": "toggle" },
-            { "text": "Evil WPA AP", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_EVIL_WPA_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_evil_wpa_ap.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_EVIL_WPA_ENABLED", "use_template": "toggle" },
-            { "text": "Evil WPA AP", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_EVIL_WPA_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_evil_wpa_ap.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_EVIL_WPA_ENABLED"
+          "variable": "$_EVIL_WPA_ENABLED",
+          "button_map": {
+            "right": "target pineap_evilwpa_submenu_explained Evil WPA AP"
+          }
         },
         {
           "id": "Hidden",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "variable_name":  "$_EVIL_WPA_HIDDEN", "use_template": "toggle" },
-            { "text": "Hidden", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_EVIL_WPA_HIDDEN",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_pineap_evilwpa_hidden.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_EVIL_WPA_HIDDEN", "use_template": "toggle" },
-            { "text": "Hidden", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_EVIL_WPA_HIDDEN",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_pineap_evilwpa_hidden.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_EVIL_WPA_HIDDEN"
+          "variable": "$_EVIL_WPA_HIDDEN",
+          "button_map": {
+            "right": "target pineap_evilwpa_submenu_explained Hidden"
+          }
         },
         {
           "id": "Setup wizard",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Configuration", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_pineap_evilwpa_setup_wizard.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Configuration", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_pineap_evilwpa_setup_wizard.png",
+              "x": 27,
+              "y": 0
+            }
           ],
-          "target": "evilwpa_wizard"
+          "target": "evilwpa_wizard",
+          "button_map": {
+            "right": "target pineap_evilwpa_submenu_explained Setup wizard"
+          }
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

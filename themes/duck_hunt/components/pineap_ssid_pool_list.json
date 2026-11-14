@@ -1,15 +1,54 @@
 {
   "template": {
     "screen_name": "pineap_ssid_pool_list",
-    "windowed_canvas": true,
+    "windowed_canvas": false,
     "cache_canvases": false,
     "background": {
       "layers": [
-        { "image_path": "assets/optiondialog/option_dialog_bg_windowed.png", "x": 8, "y": 12 },
-        { "variable_name": "$_INPUT_NAME", "x": 35, "y": 25, "use_template": "string_title" },
-        { "text":  "Size:", "text_size":  "small", "x": 330, "y": 25 },
-        { "variable_name": "$_LIST_SIZE", "x": 340, "y": 40, "use_template": "list_count" },
-        { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 395, "y": 33, "use_template": "list_pagination_label" }
+        {
+          "image_path": "assets/nes/complete_pager_portal_get_alert_payloads.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/alert_payloads_for_category_list_bg.png",
+          "x": 59,
+          "y": 13
+        },
+        {
+          "image_path": "assets/nes/overlays/alert_payloads_for_category_list_bg_3.png",
+          "x": 34,
+          "y": 207
+        },
+        {
+          "image_path": "assets/nes/overlays/alert_payloads_for_category_list_bg_2.png",
+          "x": 58,
+          "y": 207
+        },
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 83,
+          "y": 30,
+          "use_template": "string_title"
+        },
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 84,
+          "y": 30,
+          "use_template": "string_title"
+        },
+        {
+          "variable_name": "$_LIST_SIZE",
+          "x": 340,
+          "y": 40,
+          "use_template": "list_count"
+        },
+        {
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT",
+          "x": 395,
+          "y": 33,
+          "use_template": "list_pagination_label"
+        }
       ]
     },
     "button_map": {
@@ -26,12 +65,47 @@
           {
             "id": "Slot0",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 63, "use_template": "ssid_pool_string" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 63,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 63,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 37,
+                "y": 70
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 63, "use_template": "ssid_pool_string_selected" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              {
+                "image_path": "assets/nes/focus_409_28.png",
+                "x": 63,
+                "y": 59
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 63,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 63,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 37,
+                "y": 70
+              }
             ],
             "target": "function_remove_ssid_pool_entry",
             "variable": "$_LIST_ITEM"
@@ -39,12 +113,47 @@
           {
             "id": "Slot1",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 90, "use_template": "ssid_pool_string" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 90,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 90,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 37,
+                "y": 70
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 90, "use_template": "ssid_pool_string_selected" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 37, "y": 70 }
+              {
+                "image_path": "assets/nes/focus_409_28.png",
+                "x": 63,
+                "y": 86
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 90,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 90,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 37,
+                "y": 70
+              }
             ],
             "target": "function_remove_ssid_pool_entry",
             "variable": "$_LIST_ITEM"
@@ -52,10 +161,37 @@
           {
             "id": "Slot2",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 117, "use_template": "ssid_pool_string" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 117,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 117,
+                "use_template": "ssid_pool_string"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 117, "use_template": "ssid_pool_string_selected" }
+              {
+                "image_path": "assets/nes/focus_409_28.png",
+                "x": 63,
+                "y": 113
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 117,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 117,
+                "use_template": "ssid_pool_string_selected"
+              }
             ],
             "target": "function_remove_ssid_pool_entry",
             "variable": "$_LIST_ITEM"
@@ -63,10 +199,37 @@
           {
             "id": "Slot3",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 144, "use_template": "ssid_pool_string" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 144,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 144,
+                "use_template": "ssid_pool_string"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 144, "use_template": "ssid_pool_string_selected" }
+              {
+                "image_path": "assets/nes/focus_409_28.png",
+                "x": 63,
+                "y": 140
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 144,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 144,
+                "use_template": "ssid_pool_string_selected"
+              }
             ],
             "target": "function_remove_ssid_pool_entry",
             "variable": "$_LIST_ITEM"
@@ -74,12 +237,47 @@
           {
             "id": "Slot4",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 171, "use_template": "ssid_pool_string" },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175 }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 171,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 171,
+                "use_template": "ssid_pool_string"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_down_indicator.png",
+                "x": 37,
+                "y": 175
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 75, "y": 171, "use_template": "ssid_pool_string_selected" },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 37, "y": 175 }
+              {
+                "image_path": "assets/nes/focus_409_28.png",
+                "x": 63,
+                "y": 167
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 75,
+                "y": 171,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 76,
+                "y": 171,
+                "use_template": "ssid_pool_string_selected"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_down_indicator.png",
+                "x": 37,
+                "y": 175
+              }
             ],
             "target": "function_remove_ssid_pool_entry",
             "variable": "$_LIST_ITEM"
