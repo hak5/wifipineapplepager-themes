@@ -1,8 +1,7 @@
 {
-  "screen_name": "settings_general_submenu",
-  "status_bar": "default",
+  "screen_name": "settings_display_submenu",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -13,13 +12,21 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "purple" },
-      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "orange" },
-      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "orange" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_display_bg.png",
+        "x": 113,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_display_bg_2.png",
+        "x": 149,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,115 +35,161 @@
       "menu_items": [
         {
           "id": "Brightness",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_sun.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_brightness.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Brightness", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_sun.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_brightness.png",
+              "x": 27,
+              "y": 0
+            }
           ],
-          "target": "option_dialog_narrow",
-          "variable": "$_BRIGHTNESS"
+          "target": "nes_brightness_picker",
+          "variable": "$_BRIGHTNESS",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Brightness"
+          }
         },
         {
           "id": "Screen Timeout",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_screen_timeout.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Screen Timeout", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_screen_timeout.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_SCREEN_OFF_TIMEOUT"
+          "variable": "$_SCREEN_OFF_TIMEOUT",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Screen Timeout"
+          }
         },
         {
           "id": "Dim Brightness",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_sun.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_dim_brightness.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Brightness", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_sun.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_dim_brightness.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog_narrow",
-          "variable": "$_DIM_BRIGHTNESS"
+          "variable": "$_DIM_BRIGHTNESS",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Dim Brightness"
+          }
         },
         {
           "id": "Dim Timeout",
-          "x":170,
-          "y":155,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_dim_timeout.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Dim Timeout", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_dim_timeout.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_SCREEN_DIM_TIMEOUT"
+          "variable": "$_SCREEN_DIM_TIMEOUT",
+          "button_map": {
+            "right": "target settings_display_submenu_explained Dim Timeout"
+          }
         }
       ]
     }
   ]
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

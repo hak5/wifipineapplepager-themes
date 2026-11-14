@@ -1,10 +1,46 @@
 {
- "animation": {
+  "animation": {
     "frames": [
-        { "image_path": "assets/boot_animation/init-1.png","x": 0, "y": 0 },
-        { "image_path": "assets/boot_animation/init-2.png","x": 0, "y": 0 },
-        { "image_path": "assets/boot_animation/init-3.png","x": 0, "y": 0 },
-        { "image_path": "assets/boot_animation/init-4.png","x": 0, "y": 0 }
+      {
+        "image_path": "assets/nes/boot_0.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_1.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_2.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_3.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_4.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_5.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_6.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/boot_7.png",
+        "x": 0,
+        "y": 0
+      }
     ]
- }
+  }
 }

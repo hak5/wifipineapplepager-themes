@@ -1,0 +1,166 @@
+{
+  "screen_name": "bt_recon_advertising_data",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "back",
+    "b": "back",
+    "up": "noop",
+    "down": "noop",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/pineap_bg.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/bt_recon_advertising_data_bg_2.png",
+        "x": 10,
+        "y": 31
+      },
+      {
+        "image_path": "assets/nes/overlays/bt_recon_advertising_data_bg.png",
+        "x": 1,
+        "y": 45
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data_5.png"
+      },
+      {
+        "x": 15,
+        "y": 33,
+        "variable_name": "$_BT_SELECTED_TITLE",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "green",
+          "max_chars": 46
+        }
+      },
+      {
+        "x": 17,
+        "y": 54,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data_4.png"
+      },
+      {
+        "x": 140,
+        "y": 54,
+        "variable_name": "$_BT_SELECTED_FLAGS",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "disabled_light_gray",
+          "max_chars": 34
+        }
+      },
+      {
+        "x": 17,
+        "y": 72,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data_3.png"
+      },
+      {
+        "x": 140,
+        "y": 72,
+        "variable_name": "$_BT_SELECTED_APPEARANCE",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "disabled_light_gray",
+          "max_chars": 10
+        }
+      },
+      {
+        "x": 270,
+        "y": 72,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data.png"
+      },
+      {
+        "x": 370,
+        "y": 72,
+        "variable_name": "$_BT_SELECTED_TX_POWER",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "disabled_light_gray",
+          "max_chars": 6
+        }
+      },
+      {
+        "x": 17,
+        "y": 90,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data_2.png"
+      },
+      {
+        "x": 140,
+        "y": 90,
+        "variable_name": "$_BT_SELECTED_SERVICES",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "disabled_light_gray",
+          "max_chars": 34,
+          "wrap_text": true,
+          "max_lines": 2
+        }
+      },
+      {
+        "x": 17,
+        "y": 121,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data_6.png"
+      },
+      {
+        "x": 140,
+        "y": 121,
+        "variable_name": "$_BT_SELECTED_SVC_DATA",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "disabled_light_gray",
+          "max_chars": 34,
+          "wrap_text": true,
+          "max_lines": 2
+        }
+      },
+      {
+        "x": 17,
+        "y": 152,
+        "image_path": "assets/nes/labels/bt_recon_advertising_data_7.png"
+      },
+      {
+        "x": 140,
+        "y": 152,
+        "variable_name": "$_BT_SELECTED_MFR",
+        "string_template": {
+          "text_size": "small",
+          "text_color_palette": "disabled_light_gray",
+          "max_chars": 34,
+          "wrap_text": true,
+          "max_lines": 3
+        }
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "details",
+          "x": 0,
+          "y": 0,
+          "layers": [],
+          "selected_layers": [],
+          "button_map": {
+            "a": "back",
+            "b": "back",
+            "up": "noop",
+            "down": "noop",
+            "left": "back",
+            "right": "noop"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,7 @@
 {
   "screen_name": "pineap_evilwpa_submenu",
-  "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -13,13 +12,16 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "gray" },
-      { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "purple" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "gray" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_pineap_ssidpool_bg.png",
+        "x": 113,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,82 +30,121 @@
       "menu_items": [
         {
           "id": "SSID Pool",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "SSID Pool", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pineap_ssid_pool.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "SSID Pool", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pineap_ssid_pool.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "pineap_ssid_pool_list",
-          "variable": "$_PINEAP_SSID_POOL_LIST"
-        },        {
+          "variable": "$_PINEAP_SSID_POOL_LIST",
+          "button_map": {
+            "right": "target pineap_ssidpool_submenu_explained SSID Pool"
+          }
+        },
+        {
           "id": "Add Network",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Add Network", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_add_network.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Add Network", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_add_network.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_PINEAP_SSID_POOL_ADD"
+          "variable": "$_PINEAP_SSID_POOL_ADD",
+          "button_map": {
+            "right": "target pineap_ssidpool_submenu_explained Add Network"
+          }
         },
         {
           "id": "Clear Pool",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/warning.png" },
-            { "text": "Clear Networks", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_clear_pool.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/warning.png" },
-            { "text": "Clear Networks", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_clear_pool.png",
+              "x": 27,
+              "y": 0
+            }
           ],
-          "target": "function_clear_pineap_ssid_pool_list"
+          "target": "function_clear_pineap_ssid_pool_list",
+          "button_map": {
+            "right": "target pineap_ssidpool_submenu_explained Clear Pool"
+          }
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,7 @@
 {
-  "screen_name": "settings_general_submenu",
-  "status_bar": "default",
+  "screen_name": "settings_ringtone_submenu",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -13,13 +12,16 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "orange" },
-      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "purple" },
-      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "orange" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_ringtone_bg.png",
+        "x": 113,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,80 +30,198 @@
       "menu_items": [
         {
           "id": "Alert",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Alert", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_ringtone_alert.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Alert", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_ringtone_alert.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_ALERT_RINGTONE"
+          "variable": "$_ALERT_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Alert"
+          }
         },
         {
           "id": "Boot",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Boot", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_ringtone_boot.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Boot", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_ringtone_boot.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_BOOT_RINGTONE"
+          "variable": "$_BOOT_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Boot"
+          }
         },
         {
           "id": "Battery Low",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Battery Low", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_battery_low_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Battery Low", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_battery_low_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_BATTERY_LOW_RINGTONE"
+          "variable": "$_BATTERY_LOW_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Battery Low"
+          }
         },
         {
           "id": "Battery Critical",
-          "x":170,
-          "y":155,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Battery Critical", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_battery_critical_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Battery Critical", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_battery_critical_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_BATTERY_CRITICAL_RINGTONE"
+          "variable": "$_BATTERY_CRITICAL_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Battery Critical"
+          }
         },
         {
           "id": "Power Connected",
-          "x":170,
-          "y":190,
+          "x": 119,
+          "y": 168,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Power Connected", "x": 40, "text_color_palette": "orange" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_power_connected_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Power Connected", "x": 40, "text_color_palette": "purple" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_power_connected_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_POWER_CONNECTED_RINGTONE"
+          "variable": "$_POWER_CONNECTED_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Power Connected"
+          }
         }
       ]
     },
@@ -110,94 +230,122 @@
       "menu_items": [
         {
           "id": "Power Disconnected",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Power Disconnected", "x": 40, "text_color_palette": "orange" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_power_disconnected_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Power Disconnected", "x": 40, "text_color_palette": "purple" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_power_disconnected_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_POWER_DISCONNECTED_RINGTONE"
+          "variable": "$_POWER_DISCONNECTED_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Power Disconnected"
+          }
         },
         {
           "id": "Payload Complete",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Payload Complete", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_payload_complete_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Payload Complete", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_payload_complete_ringtone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_PAYLOAD_COMPLETE_RINGTONE"
+          "variable": "$_PAYLOAD_COMPLETE_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Payload Complete"
+          }
         },
         {
           "id": "Error",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Error", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_ringtone_error.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Error", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_ringtone_error.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
-          "variable": "$_ERROR_RINGTONE"
+          "variable": "$_ERROR_RINGTONE",
+          "button_map": {
+            "right": "target settings_ringtone_submenu_explained Error"
+          }
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

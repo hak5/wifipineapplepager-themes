@@ -1,0 +1,16 @@
+{
+  "enabled": [
+    {
+      "image_path": "assets/nes/labels/nes_onoff.png",
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "disabled": [
+    {
+      "image_path": "assets/nes/labels/nes_onoff_2.png",
+      "x": 0,
+      "y": 0
+    }
+  ]
+}

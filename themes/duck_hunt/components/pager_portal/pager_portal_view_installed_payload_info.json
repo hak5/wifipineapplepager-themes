@@ -1,0 +1,262 @@
+{
+  "screen_name": "pager_portal_view_installed_payload_info",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/nes/complete_pager_portal_view_payload_info.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/pager_portal_view_installed_payload_info_bg_2.png",
+        "x": 173,
+        "y": 33
+      },
+      {
+        "image_path": "assets/nes/overlays/pager_portal_view_installed_payload_info_bg.png",
+        "x": 269,
+        "y": 33
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "data",
+          "unselectable": true,
+          "layers": [
+            {
+              "variable_name": "$_PAYLOAD_TITLE",
+              "x": 88,
+              "y": 61,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
+                "max_chars": 29,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_TITLE",
+              "x": 89,
+              "y": 61,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
+                "max_chars": 29,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_AUTHOR_NAME",
+              "x": 88,
+              "y": 84,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 28,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_data.png",
+              "x": 88,
+              "y": 108
+            },
+            {
+              "variable_name": "$_PAYLOAD_VERSION",
+              "x": 142,
+              "y": 104,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 8,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_data_2.png",
+              "x": 88,
+              "y": 129
+            },
+            {
+              "variable_name": "$_PAYLOAD_CATEGORY",
+              "x": 148,
+              "y": 125,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 28,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_DESCRIPTION",
+              "x": 88,
+              "y": 145,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 45,
+                "wrap_text": true,
+                "max_lines": 2
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_UPDATED_AT",
+              "x": 308,
+              "y": 104,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 19,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "x": 106,
+          "y": 176,
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_uninstall.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_160_23.png",
+              "x": -27,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_uninstall.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "target": "function_uninstall_payload",
+          "variable": "$_INPUT"
+        },
+        {
+          "id": "Back",
+          "x": 333,
+          "y": 176,
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_back.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_93_23.png",
+              "x": -24,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_back.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "target": "back"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "description",
+          "unselectable": true,
+          "layers": [
+            {
+              "variable_name": "$_PAYLOAD_TITLE",
+              "x": 88,
+              "y": 63,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
+                "max_chars": 28,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_TITLE",
+              "x": 89,
+              "y": 63,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
+                "max_chars": 28,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "variable_name": "$_PAYLOAD_DESCRIPTION",
+              "x": 88,
+              "y": 91,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 45,
+                "wrap_text": true,
+                "max_lines": 8
+              }
+            }
+          ]
+        },
+        {
+          "id": "Back",
+          "x": 333,
+          "y": 176,
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_back.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_93_23.png",
+              "x": -24,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/pager_portal_view_installed_payload_info_back.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "target": "back"
+        }
+      ]
+    }
+  ]
+}

@@ -5,18 +5,58 @@
   "menu_items": [
     {
       "id": "spinner",
-      "animation_interval": 0.400,
+      "animation_interval": 0.18,
       "animation": [
-        { "image_path": "assets/spinner/spinner1.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner2.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner3.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner4.png","x": 140, "y": 40 }
+        {
+          "image_path": "assets/nes/loading_0.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_1.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_2.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_3.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_4.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_5.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_6.png",
+          "x": 104,
+          "y": 29
+        },
+        {
+          "image_path": "assets/nes/loading_7.png",
+          "x": 104,
+          "y": 29
+        }
       ]
-    }, {
+    },
+    {
       "id": "spinner_text",
       "unselectable": true,
       "layers": [
-        { "variable_name": "$_INPUT", "use_template": "spinner_text" }
+        {
+          "variable_name": "$_INPUT",
+          "use_template": "spinner_text"
+        }
       ]
     }
   ]

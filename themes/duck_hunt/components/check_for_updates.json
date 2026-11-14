@@ -4,7 +4,7 @@
   "downloading_percentage": {
     "string_template": {
       "text_size": "large",
-      "text_color_palette": "purple",
+      "text_color_palette": "red",
       "max_chars": 5,
       "wrap_text": false,
       "max_lines": 1,
@@ -15,7 +15,7 @@
         "start_y": 72,
         "end_y": 105
       }
-  }
+    }
   },
   "validating_image_path": "assets/upgrade/validating_upgrade.png"
 }

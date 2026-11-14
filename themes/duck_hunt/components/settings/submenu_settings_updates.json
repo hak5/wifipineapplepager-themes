@@ -1,6 +1,5 @@
 {
   "screen_name": "settings_updates_submenu",
-  "status_bar": "default",
   "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
@@ -13,13 +12,26 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "orange" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "purple" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "orange" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_updates_bg_3.png",
+        "x": 113,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_updates_bg_2.png",
+        "x": 137,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_updates_bg.png",
+        "x": 185,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,38 +40,134 @@
       "menu_items": [
         {
           "id": "CurrentVersion",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "unselectable": true,
           "layers": [
-            { "text": "Current Version:", "text_color_palette": "orange" },
-            { "variable_name": "$_FIRMWARE_VERSION", "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
-                "max_chars": 24,
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_current_version.png",
+              "x": 27,
+              "y": 0
+            },
+            {
+              "variable_name": "$_FIRMWARE_VERSION",
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 10,
                 "wrap_text": false,
                 "max_lines": 1
               },
-              "x":221
+              "x": 240,
+              "y": 2
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_current_version.png",
+              "x": 27,
+              "y": 0
+            },
+            {
+              "variable_name": "$_FIRMWARE_VERSION",
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 10,
+                "wrap_text": false,
+                "max_lines": 1
+              },
+              "x": 240,
+              "y": 2
             }
           ]
         },
         {
           "id": "Check for Updates",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Check for Updates", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_check_for_updates.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Check for Updates", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_check_for_updates.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "check_for_updates"
+        },
+        {
+          "id": "Check for Portal Updates",
+          "x": 119,
+          "y": 120,
+          "layers": [
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_refresh_portal.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_refresh_portal.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "target": "function_refresh_pager_portal_data"
         }
       ]
     }
   ]
-
 }

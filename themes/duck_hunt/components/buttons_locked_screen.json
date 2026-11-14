@@ -12,7 +12,16 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/buttons_locked.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/lock_screen.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/buttons_locked_screen_bg.png",
+        "x": 232,
+        "y": 54
+      }
     ]
   },
   "pages": [
@@ -21,44 +30,9 @@
       "menu_items": [
         {
           "id": "lock_screen",
-          "selected_layers": [
-          ]
+          "selected_layers": []
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

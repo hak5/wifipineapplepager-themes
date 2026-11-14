@@ -1,0 +1,375 @@
+{
+  "template": {
+    "screen_name": "pager_portal_installed_payloads_list",
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "background": {
+      "layers": [
+        {
+          "image_path": "assets/nes/complete_pager_portal_get_alert_payloads.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/pager_portal_installed_payloads_list_bg.png",
+          "x": 168,
+          "y": 35
+        },
+        {
+          "image_path": "assets/nes/overlays/pager_portal_installed_payloads_list_bg_2.png",
+          "x": 348,
+          "y": 35
+        },
+        {
+          "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT",
+          "x": 0,
+          "y": 0,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "soft_white",
+            "center_text_within": {
+              "start_x": 290,
+              "end_x": 365,
+              "start_y": 207,
+              "end_y": 220
+            }
+          }
+        }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_367_27.png",
+                "x": -13,
+                "y": -1
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "pager_portal_view_installed_payload_details",
+            "variable": "$_LIST_ITEM",
+            "x": 102,
+            "y": 68
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_367_27.png",
+                "x": -13,
+                "y": -1
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "pager_portal_view_installed_payload_details",
+            "variable": "$_LIST_ITEM",
+            "x": 102,
+            "y": 92
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_367_27.png",
+                "x": -13,
+                "y": -1
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "pager_portal_view_installed_payload_details",
+            "variable": "$_LIST_ITEM",
+            "x": 102,
+            "y": 116
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_367_27.png",
+                "x": -13,
+                "y": -1
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "pager_portal_view_installed_payload_details",
+            "variable": "$_LIST_ITEM",
+            "x": 102,
+            "y": 140
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_367_27.png",
+                "x": -13,
+                "y": -1
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 6,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 7,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 27,
+                  "wrap_text": false,
+                  "max_lines": 1
+                }
+              }
+            ],
+            "target": "pager_portal_view_installed_payload_details",
+            "variable": "$_LIST_ITEM",
+            "x": 102,
+            "y": 164
+          }
+        ]
+      }
+    ]
+  }
+}
