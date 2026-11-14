@@ -1,16 +1,17 @@
 {
+  "theme_name": "DedSec",
+  "_comment": "DedSec theme by Ser0ka. Updated for WiFi Pineapple Pager firmware 2.0.0 by wickednull.",
   "author": "Ser0ka",
-  "theme_version": "1.0",
-  "theme_framework_version": "0.5",
-
+  "theme_version": "2.0.0",
+  "theme_framework_version": "0.9",
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
     "network": "components/status_bars/status_bar_network.json",
     "recon": "components/status_bars/status_bar_recon.json",
     "min": "components/status_bars/status_bar_min.json",
-    "gps" : "components/status_bars/status_bar_gps.json"
+    "gps": "components/status_bars/status_bar_gps.json",
+    "bt_recon": "components/status_bars/status_bar_bt_recon.json"
   },
-
   "generic_menus": {
     "tutorial": "components/tutorial.json",
     "os_licenses": "components/os_licenses.json",
@@ -21,13 +22,11 @@
     "regulatory": "components/settings/regulatory.json",
     "dashboard_path": "components/dashboards/deadsec_dashboard.json",
     "alerts_dashboard": "components/dashboards/dashboard_alerts.json",
-
     "pineap_pineap_submenu": "components/pineap/submenu_pineap_pineap.json",
     "pineap_evilwpa_submenu": "components/pineap/submenu_pineap_evilwpa.json",
     "pineap_filters_submenu": "components/pineap/submenu_pineap_filters.json",
     "pineap_openap_submenu": "components/pineap/submenu_pineap_openap.json",
     "pineap_ssidpool_submenu": "components/pineap/submenu_pineap_ssidpool.json",
-
     "settings_general_submenu": "components/settings/submenu_settings_general.json",
     "settings_display_submenu": "components/settings/submenu_settings_display.json",
     "settings_ringtone_submenu": "components/settings/submenu_settings_ringtone.json",
@@ -38,52 +37,66 @@
     "settings_updates_submenu": "components/settings/submenu_settings_updates.json",
     "settings_help_submenu": "components/settings/submenu_settings_help.json",
     "settings_about_submenu": "components/settings/submenu_settings_about.json",
-
     "recon_settings": "components/recon/recon_settings.json",
     "recon_band_settings": "components/recon/recon_band_settings.json",
     "recon_selected_ap_menu": "components/recon/recon_selected_ap_menu.json",
     "recon_selected_ap_client_menu": "components/recon/recon_selected_ap_client_menu.json",
-
     "pineap_menu": "components/dashboards/dashboard_pineap.json",
     "settings_menu": "components/dashboards/dashboard_settings.json",
-    "wigle_menu": "components/dashboards/dashboard_wigle.json"
+    "wigle_menu": "components/dashboards/dashboard_wigle.json",
+    "quick_settings": "components/dashboards/quick_settings.json",
+    "alerts_dashboard_explained": "components/dashboards/dashboard_alerts_explained.json",
+    "pineap_pineap_submenu_explained": "components/settings/submenu_pineap_pineap_explained.json",
+    "pineap_evilwpa_submenu_explained": "components/settings/submenu_pineap_evilwpa_explained.json",
+    "pineap_filters_submenu_explained": "components/settings/submenu_pineap_filters_explained.json",
+    "pineap_openap_submenu_explained": "components/settings/submenu_pineap_openap_explained.json",
+    "pineap_ssidpool_submenu_explained": "components/settings/submenu_pineap_ssidpool_explained.json",
+    "settings_general_submenu_explained": "components/settings/submenu_settings_general_explained.json",
+    "settings_display_submenu_explained": "components/settings/submenu_settings_display_explained.json",
+    "settings_ringtone_submenu_explained": "components/settings/submenu_settings_ringtone_explained.json",
+    "settings_network_submenu_explained": "components/settings/submenu_settings_network_explained.json",
+    "settings_bluetooth_submenu": "components/settings/submenu_settings_bluetooth.json",
+    "settings_bluetooth_submenu_explained": "components/settings/submenu_settings_bluetooth_explained.json",
+    "settings_system_submenu_explained": "components/settings/submenu_settings_system_explained.json",
+    "settings_gps_advanced": "components/settings/submenu_settings_gps_advanced.json",
+    "settings_gps_advanced_explained": "components/settings/submenu_settings_gps_advanced_explained.json",
+    "recon_new_scan_submenu": "components/recon/recon_new_scan_submenu.json",
+    "bt_recon_selected_device": "components/recon/bt_recon_selected_device.json",
+    "bt_recon_advertising_data": "components/recon/bt_recon_advertising_data.json",
+    "pager_portal_dashboard": "components/dashboards/dashboard_pager_portal.json",
+    "pager_portal_update_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_update_payloads.json",
+    "pager_portal_themes_dashboard": "components/pager_portal/dashboard_pager_portal_themes.json",
+    "pager_portal_get_payloads_dashboard": "components/pager_portal/pager_portal_get_payloads_dashboard.json",
+    "pager_portal_view_payload_details": "components/pager_portal/pager_portal_view_payload_info.json",
+    "pager_portal_view_updatable_payload_details": "components/pager_portal/pager_portal_view_updatable_payload_info.json",
+    "pager_portal_view_installed_payload_details": "components/pager_portal/pager_portal_view_installed_payload_info.json"
   },
-
   "option_dialogs": {
-    "option_dialog":  "components/dialogs/ui_option_dialog.json",
-    "option_dialog_recon":  "components/dialogs/ui_option_dialog_recon.json",
-    "option_dialog_alerts":  "components/dialogs/ui_option_dialog_alerts.json",
-    "option_dialog_payloads":  "components/dialogs/ui_option_dialog_payloads.json",
-    "option_dialog_narrow":  "components/dialogs/ui_option_dialog_narrow.json"
+    "option_dialog": "components/dialogs/ui_option_dialog.json",
+    "option_dialog_recon": "components/dialogs/ui_option_dialog_recon.json",
+    "option_dialog_alerts": "components/dialogs/ui_option_dialog_alerts.json",
+    "option_dialog_payloads": "components/dialogs/ui_option_dialog_payloads.json",
+    "option_dialog_narrow": "components/dialogs/ui_option_dialog_narrow.json"
   },
-
-
   "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",
   "payloads_dashboard_path": "components/dashboards/dashboard_payloads.json",
   "payloads_for_category_list_path": "components/payloads_for_category_list.json",
   "payload_log_path": "components/payload_log.json",
-
   "filter_list_path": "components/filter_list.json",
   "pineap_ssid_pool_list_path": "components/pineap_ssid_pool_list.json",
   "pineap_clients_list_path": "components/pineap/submenu_pineap_clients.json",
-
   "alerts_dialog_submenu_path": "components/alert_payloads_for_category_list.json",
-
   "low_battery_alert_path": "components/alerts/low_battery_alert.json",
   "critical_battery_alert_path": "components/alerts/critical_battery_alert.json",
-
   "error_dialog_path": "components/alerts/alert_error_dialog.json",
   "alert_dialog_path": "components/alerts/alert_info_dialog.json",
   "warning_dialog_path": "components/alerts/alert_warning_dialog.json",
-
   "spinner_path": "components/spinner.json",
   "boot_spinner_path": "components/boot_animation.json",
-
   "keyboard_path": "components/keyboards/ui_keyboard.json",
   "number_keyboard_path": "components/keyboards/ui_keyboard_numeric.json",
   "ip_keyboard_path": "components/keyboards/ui_keyboard_ip.json",
   "mac_keyboard_path": "components/keyboards/ui_keyboard_hex.json",
-
   "recon_payloads_dashboard_path": "components/dashboards/dashboard_recon_payloads.json",
   "recon_payloads_for_category_list_path": "components/recon_payloads_for_category_list.json",
   "recon_dashboard_path": "components/dashboards/dashboard_recon.json",
@@ -91,14 +104,11 @@
     "recon_list": "components/recon/recon_results_list.json"
   },
   "recon_ap_clients_list_path": "components/recon/recon_ap_clients_list.json",
-
   "edit_string_dialog_path": "components/dialogs/edit_string_dialog.json",
   "edit_ip_dialog_path": "components/dialogs/edit_ip_dialog.json",
   "edit_mac_dialog_path": "components/dialogs/edit_mac_dialog.json",
   "edit_number_dialog_path": "components/dialogs/edit_number_dialog.json",
-
   "confirmation_dialog_path": "components/dialogs/confirmation_dialog.json",
-
   "setup_wizard_path": "components/setup_wizard.json",
   "checking_for_updates_path": "components/check_for_updates.json",
   "developer_menu_path": "components/developer_menu.json",
@@ -109,8 +119,7 @@
   "help_info_path": "assets/help_qr.png",
   "license_info_path": "assets/license_qr.png",
   "virtual_pager_info_path": "assets/virt_qr.png",
-
-  "toggle_templates" : {
+  "toggle_templates": {
     "toggle": "components/templates/toggle.json",
     "green_toggle": "components/templates/green_toggle.json",
     "disabled_toggle": "components/templates/disabled_toggle.json",
@@ -118,7 +127,6 @@
     "pineap_filter_mode": "components/templates/pineap_filter_mode.json",
     "disabled_pineap_filter_mode": "components/templates/disabled_pineap_filter_mode.json"
   },
-
   "string_templates": {
     "recon_payload_title": "components/templates/recon_payload_title.json",
     "recon_payload_title_selected": "components/templates/recon_payload_title_selected.json",
@@ -147,69 +155,196 @@
     "payload_title": "components/templates/payload_title.json",
     "list_count": "components/templates/list_count.json",
     "list_page_total": "components/templates/list_page_total.json",
-    "list_page_current": "components/templates/list_page_total.json",
+    "list_page_current": "components/templates/list_page_current.json",
     "list_pagination_label": "components/templates/list_pagination_label.json"
   },
-
   "radio_templates": {
     "radio": "components/templates/radio.json",
     "selected_radio": "components/templates/selected_radio.json"
   },
-
   "signal_templates": {
     "signal": "components/templates/signal.json",
-    "selected_signal": "components/templates/selected_signal.json"
+    "selected_signal": "components/templates/selected_signal.json",
+    "bt_signal": "components/templates/bt_signal.json"
   },
-
-  "color_palette":{
-    "black":{ "r":0, "g":0, "b":0 },
-    "blue":{ "r":106, "g":210, "b":249 },
-    "red":{ "r":250, "g":72, "b":9 },
-    "dark_red":{ "r":110, "g":31, "b":23 },
-    "yellow":{ "r":231, "g":197, "b":74 },
-    "gray":{ "r":128, "g":128, "b":128 },
-    "green":{ "r":42, "g":180, "b":42 },
-    "dark_green":{ "r":2, "g":101, "b":2 },
-    "disabled_light_gray":{ "r":167, "g":167, "b":167 },
-    "disabled_dark_gray":{ "r":61, "g":61, "b":61 },
-    "medium_gray":{ "r":100, "g":100, "b":100 },
-
-    "orange":{ "r":214, "g":133, "b":39 },
-    "dark_orange":{ "r":142, "g":76, "b":26 },
-    "light_blue":{ "r":156, "g":226, "b":255 },
-    "cyan":{ "r":96, "g":205, "b":205 },
-    "dark_cyan":{ "r":40, "g":120, "b":120 },
-    "purple":{ "r":132, "g":87, "b":162 },
-    "dark_purple":{ "r":77, "g":45, "b":99 },
-    "magenta":{ "r":205, "g":85, "b":155 },
-    "dark_magenta":{ "r":120, "g":45, "b":90 },
-    "light_green":{ "r":110, "g":220, "b":110 },
-    "olive":{ "r":140, "g":135, "b":55 },
-    "dark_olive":{ "r":80, "g":75, "b":30 },
-    "brown":{ "r":120, "g":72, "b":30 },
-    "tan":{ "r":200, "g":170, "b":120 },
-    "teal":{ "r":48, "g":150, "b":140 },
-    "dark_teal":{ "r":20, "g":90, "b":85 },
-    "navy":{ "r":15, "g":35, "b":75 },
-    "light_yellow":{ "r":250, "g":225, "b":120 },
-    "soft_white":{ "r":230, "g":230, "b":220 }
+  "color_palette": {
+    "black": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "blue": {
+      "r": 106,
+      "g": 210,
+      "b": 249
+    },
+    "red": {
+      "r": 250,
+      "g": 72,
+      "b": 9
+    },
+    "dark_red": {
+      "r": 110,
+      "g": 31,
+      "b": 23
+    },
+    "yellow": {
+      "r": 231,
+      "g": 197,
+      "b": 74
+    },
+    "gray": {
+      "r": 128,
+      "g": 128,
+      "b": 128
+    },
+    "green": {
+      "r": 42,
+      "g": 180,
+      "b": 42
+    },
+    "dark_green": {
+      "r": 2,
+      "g": 101,
+      "b": 2
+    },
+    "disabled_light_gray": {
+      "r": 167,
+      "g": 167,
+      "b": 167
+    },
+    "disabled_dark_gray": {
+      "r": 61,
+      "g": 61,
+      "b": 61
+    },
+    "medium_gray": {
+      "r": 100,
+      "g": 100,
+      "b": 100
+    },
+    "orange": {
+      "r": 214,
+      "g": 133,
+      "b": 39
+    },
+    "dark_orange": {
+      "r": 142,
+      "g": 76,
+      "b": 26
+    },
+    "light_blue": {
+      "r": 156,
+      "g": 226,
+      "b": 255
+    },
+    "cyan": {
+      "r": 96,
+      "g": 205,
+      "b": 205
+    },
+    "dark_cyan": {
+      "r": 40,
+      "g": 120,
+      "b": 120
+    },
+    "purple": {
+      "r": 132,
+      "g": 87,
+      "b": 162
+    },
+    "dark_purple": {
+      "r": 77,
+      "g": 45,
+      "b": 99
+    },
+    "magenta": {
+      "r": 205,
+      "g": 85,
+      "b": 155
+    },
+    "dark_magenta": {
+      "r": 120,
+      "g": 45,
+      "b": 90
+    },
+    "light_green": {
+      "r": 110,
+      "g": 220,
+      "b": 110
+    },
+    "olive": {
+      "r": 140,
+      "g": 135,
+      "b": 55
+    },
+    "dark_olive": {
+      "r": 80,
+      "g": 75,
+      "b": 30
+    },
+    "brown": {
+      "r": 120,
+      "g": 72,
+      "b": 30
+    },
+    "tan": {
+      "r": 200,
+      "g": 170,
+      "b": 120
+    },
+    "teal": {
+      "r": 48,
+      "g": 150,
+      "b": 140
+    },
+    "dark_teal": {
+      "r": 20,
+      "g": 90,
+      "b": 85
+    },
+    "navy": {
+      "r": 15,
+      "g": 35,
+      "b": 75
+    },
+    "light_yellow": {
+      "r": 250,
+      "g": 225,
+      "b": 120
+    },
+    "soft_white": {
+      "r": 230,
+      "g": 230,
+      "b": 220
+    },
+    "white": {
+      "r": 255,
+      "g": 255,
+      "b": 255
+    }
   },
-
-  "_unused" : {
-    "commands" : {
+  "_unused": {
+    "commands": {
       "restart_pineapd": "service pineapd restart",
       "restart_networking": "service network restart",
       "reboot": "reboot",
       "log_temps": "/root/battest.sh > /tmp/temps.log",
       "restart_go": "service pineapplepager restart"
     },
-
     "payload_shortcuts": {
       "test1": "/root/payloads/user/cat1/test1",
       "test2": "/root/payloads/user/cat1/test2"
     },
-
-    "simple_images": {
-    }
-  }
+    "simple_images": {}
+  },
+  "pager_portal_payloads_dashboard": "components/pager_portal/dashboard_pager_portal_payloads.json",
+  "pager_portal_alert_payload_categories": "components/pager_portal/pager_portal_get_alert_payloads.json",
+  "pager_portal_user_payload_categories": "components/pager_portal/pager_portal_get_user_payloads.json",
+  "pager_portal_recon_payload_categories": "components/pager_portal/pager_portal_get_recon_payloads.json",
+  "pager_portal_installed_payloads_list": "components/pager_portal/pager_portal_installed_payloads_list.json",
+  "pager_portal_update_payloads_list": "components/pager_portal/pager_portal_update_payloads_list.json",
+  "pager_portal_get_payloads_for_category_list": "components/pager_portal/pager_portal_get_payloads_for_category_list.json",
+  "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
+  "bt_recon_list_path": "components/recon/bt_recon_results_list.json"
 }

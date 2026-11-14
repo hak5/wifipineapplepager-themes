@@ -12,7 +12,11 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/power_menu_bg.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/power_menu_bg.png",
+        "x": 0,
+        "y": 0
+      }
     ]
   },
   "pages": [
@@ -20,74 +24,145 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Sleep Screen",
-          "x":60,
-          "y":35,
+          "id": "Settings",
+          "x": 60,
+          "y": 18,
           "layers": [
-            { "text": "Sleep Screen", "text_color_palette": "green" }
+            {
+              "text": "Settings",
+              "text_color_palette": "green"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -75, "y": -15 },
-            { "text": "Sleep Screen", "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/alerts_dashboard/sub.png",
+              "x": -75,
+              "y": -15
+            },
+            {
+              "text": "Settings",
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "quick_settings"
+        },
+        {
+          "id": "Sleep Screen",
+          "x": 60,
+          "y": 53,
+          "layers": [
+            {
+              "text": "Sleep Screen",
+              "text_color_palette": "green"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/alerts_dashboard/sub.png",
+              "x": -75,
+              "y": -15
+            },
+            {
+              "text": "Sleep Screen",
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "function_sleep_screen"
         },
         {
           "id": "Lock Screen",
-          "x":60,
-          "y":70,
+          "x": 60,
+          "y": 88,
           "layers": [
-            { "text": "Lock Screen", "text_color_palette": "green" }
+            {
+              "text": "Lock Screen",
+              "text_color_palette": "green"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -75, "y": -15 },
-            { "text": "Lock Screen", "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/alerts_dashboard/sub.png",
+              "x": -75,
+              "y": -15
+            },
+            {
+              "text": "Lock Screen",
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "function_lock_screen"
         },
         {
           "id": "Lock Buttons",
-          "x":60,
-          "y":105,
+          "x": 60,
+          "y": 123,
           "layers": [
-            { "text": "Lock Buttons", "text_color_palette": "green" }
+            {
+              "text": "Lock Buttons",
+              "text_color_palette": "green"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -75, "y": -15 },
-            { "text": "Lock Buttons", "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/alerts_dashboard/sub.png",
+              "x": -75,
+              "y": -15
+            },
+            {
+              "text": "Lock Buttons",
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "function_lock_buttons"
         },
         {
           "id": "Nerd Stats",
-          "x":60,
-          "y":140,
+          "x": 60,
+          "y": 158,
           "layers": [
-            { "text": "Nerd Stats", "text_color_palette": "green" }
+            {
+              "text": "Nerd Stats",
+              "text_color_palette": "green"
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_STATS_FOR_NERDS", "x": -38, "use_template": "green_toggle" },
-            { "text": "Nerd Stats", "text_color_palette": "yellow" }
+            {
+              "variable_name": "$_STATS_FOR_NERDS",
+              "x": -38,
+              "use_template": "green_toggle"
+            },
+            {
+              "text": "Nerd Stats",
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "inline_toggle",
           "variable": "$_STATS_FOR_NERDS"
         },
         {
           "id": "shutdown",
-          "x":60,
-          "y":175,
+          "x": 60,
+          "y": 193,
           "layers": [
-            { "text": "Shutdown", "text_color_palette": "green" }
+            {
+              "text": "Shutdown",
+              "text_color_palette": "green"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/alerts_dashboard/sub.png","x": -75, "y": -15 },
-            { "text": "Shutdown", "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/alerts_dashboard/sub.png",
+              "x": -75,
+              "y": -15
+            },
+            {
+              "text": "Shutdown",
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "function_shutdown"
         }
       ]
     }
   ]
-
 }
-
