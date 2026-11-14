@@ -1,8 +1,8 @@
 {
   "template": {
-    "screen_name": "payloads_dashboard",
+    "screen_name": "recon_payloads_dashboard",
     "status_bar": "default",
-    "windowed_canvas": true,
+    "windowed_canvas": false,
     "cache_canvases": true,
     "button_map": {
       "a": "select",
@@ -14,8 +14,17 @@
     },
     "background": {
       "layers": [
-        { "image_path": "assets/payloads_dashboard/recon_payloads_bg.png", "x": 0, "y": 0 },
-        { "text":  "Payloads", "text_size": "large", "text_color_palette":  "red", "x": 3 }
+        {
+          "image_path": "assets/payloads_dashboard/recon_payloads_bg.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "Payloads",
+          "text_size": "large",
+          "text_color_palette": "red",
+          "x": 3
+        }
       ]
     },
     "pages": [
@@ -26,13 +35,37 @@
             "x": 140,
             "y": 60,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title" },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title"
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": -50, "y": -15 },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title_selected"
+              },
+              {
+                "image_path": "assets/alerts_dashboard/sub.png",
+                "x": -50,
+                "y": -15
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "target": "recon_payloads_for_category_list",
             "variable": "$_LIST_ITEM",
@@ -42,7 +75,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -50,13 +83,37 @@
             "x": 140,
             "y": 87,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title" },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title"
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": -50, "y": -15 },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title_selected"
+              },
+              {
+                "image_path": "assets/alerts_dashboard/sub.png",
+                "x": -50,
+                "y": -15
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "target": "recon_payloads_for_category_list",
             "variable": "$_LIST_ITEM",
@@ -66,7 +123,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -74,13 +131,37 @@
             "x": 140,
             "y": 118,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title" },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title"
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0,  "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title_selected"
+              },
+              {
+                "image_path": "assets/alerts_dashboard/sub.png",
+                "x": 0,
+                "y": 7
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "target": "recon_payloads_for_category_list",
             "variable": "$_LIST_ITEM",
@@ -90,7 +171,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -98,13 +179,37 @@
             "x": 140,
             "y": 146,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title" },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title"
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0,  "use_template": "recon_payload_title_selected" },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title_selected"
+              },
+              {
+                "image_path": "assets/alerts_dashboard/sub.png",
+                "x": 0,
+                "y": 7
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "target": "recon_payloads_for_category_list",
             "variable": "$_LIST_ITEM",
@@ -114,7 +219,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           },
           {
@@ -122,13 +227,39 @@
             "x": 140,
             "y": 175,
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "use_template": "recon_payload_title" },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "use_template": "recon_payload_title"
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 64, "y": 0, "string_template": { "text_color_palette":  "red" } },
-              { "image_path": "assets/alerts_dashboard/sub.png", "x": 0, "y": 7 },
-              { "image_path": "assets/folder.png", "x": 32, "y": 0, "recolor_palette": "red" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 64,
+                "y": 0,
+                "string_template": {
+                  "text_color_palette": "red"
+                }
+              },
+              {
+                "image_path": "assets/alerts_dashboard/sub.png",
+                "x": 0,
+                "y": 7
+              },
+              {
+                "image_path": "assets/folder.png",
+                "x": 32,
+                "y": 0,
+                "recolor_palette": "red"
+              }
             ],
             "target": "recon_payloads_for_category_list",
             "variable": "$_LIST_ITEM",
@@ -138,7 +269,7 @@
               "up": "previous",
               "down": "next",
               "left": "noop",
-              "right": "select_menu"
+              "right": "noop"
             }
           }
         ]

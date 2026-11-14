@@ -13,19 +13,42 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/dashboard/deadsec_r_bg.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/dashboard/deadsec_r_bg.png",
+        "x": 0,
+        "y": 0
+      }
     ],
-    "background_color": { "r": 0, "g": 0, "b": 0 }
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
   },
   "menu_items": [
     {
       "id": "ALERTS",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/item_bg.png", "x": 0, "y": 0, "recolor_palette": "white" },
-        { "text": "ALERTS", "x": -300, "y":  110, "text_size": "large", "text_color_palette": "white" }
+        {
+          "image_path": "assets/dashboard/item_bg.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "ALERTS",
+          "x": -300,
+          "y": 110,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
       ],
       "x": 304,
       "y": 63,
@@ -34,12 +57,26 @@
     {
       "id": "PAYLOADS",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
-        
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0, "recolor_palette": "white" },
-        { "text": "PAYLOADS", "x": -349, "y": 103, "text_size": "large", "text_color_palette": "white" }
+        {
+          "image_path": "assets/dashboard/item_bg.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "PAYLOADS",
+          "x": -349,
+          "y": 103,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
       ],
       "x": 352,
       "y": 70,
@@ -49,11 +86,26 @@
     {
       "id": "RECON",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0, "recolor_palette": "white"  },
-        { "text": "RECON", "x": -395, "y":  97, "text_size": "large", "text_color_palette": "white" }
+        {
+          "image_path": "assets/dashboard/item_bg.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "RECON",
+          "x": -395,
+          "y": 97,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
       ],
       "x": 400,
       "y": 76,
@@ -62,11 +114,26 @@
     {
       "id": "PINEAP",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0, "recolor_palette": "white"  },
-        { "text": "PINEAP", "x": -289, "y":  67, "text_size": "large", "text_color_palette": "white" }
+        {
+          "image_path": "assets/dashboard/item_bg.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "PINEAP",
+          "x": -289,
+          "y": 67,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
       ],
       "x": 294,
       "y": 106,
@@ -75,28 +142,86 @@
     {
       "id": "SETTINGS",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 0, "y": 0, "recolor_palette": "white" },
-        { "text": "SETTINGS", "x": -339, "y":  62, "text_size": "large", "text_color_palette": "white" }
+        {
+          "image_path": "assets/dashboard/item_bg.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "SETTINGS",
+          "x": -339,
+          "y": 62,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
       ],
       "x": 342,
       "y": 112,
       "target": "settings_menu"
     },
-        {
+    {
       "id": "WIGLE",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg_inv.png","x": 0, "y": 0 }
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/item_bg_finger.png","x": 0, "y": 0, "recolor_palette": "white" },
-        { "text": "WIGLE", "x": -387, "y":  56, "text_size": "large", "text_color_palette": "white" }
+        {
+          "image_path": "assets/dashboard/item_bg_finger.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "WIGLE",
+          "x": -387,
+          "y": 56,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
       ],
       "x": 390,
       "y": 117,
       "target": "wigle_menu"
+    },
+    {
+      "id": "PORTAL",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/item_bg_inv.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/item_bg_portal_selected.png",
+          "x": 0,
+          "y": 0,
+          "recolor_palette": "white"
+        },
+        {
+          "text": "PORTAL",
+          "x": -382,
+          "y": 17,
+          "text_size": "large",
+          "text_color_palette": "white"
+        }
+      ],
+      "x": 385,
+      "y": 156,
+      "target": "pager_portal_dashboard"
     }
   ]
 }

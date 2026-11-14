@@ -1,15 +1,33 @@
-A Theme for the Hak5 pineapple pager - inspired by Watchdogs 2 dedsec 
+# DedSec
 
-> **Note:** Still WIP!
+A theme for the Hak5 WiFi Pineapple Pager inspired by Watch Dogs 2 and the DedSec crew.
 
-Check out the new dashboard: 
+- **Author:** Ser0ka
+- **2.0.0 update:** wickednull
+- **Theme version:** 2.0.0
+- **Firmware:** WiFi Pineapple Pager 2.0.0
+- **Pager Portal art:** adapted from the Darkseclabz Glitch theme assets
 
-Live
-https://youtube.com/shorts/Akzyx11bdaM
+## Features
 
-Virtual Pager
-https://youtube.com/shorts/jum2Mt82ux0
+- Custom DedSec dashboard with a glitch-art tablet layout
+- Pager Portal screens for payloads, updates, and theme management
+- Bluetooth recon screens and status bar
+- Native GPS, advanced GPS, and WiGLE status support
+- Quick Settings panel
+- Updated 2.0 recon, settings, alert, and payload screens
+- Explain screens for settings, recon, and PineAP options
+- Custom boot, payload launch, and WiGLE animations
 
-Installing Pager Themes
+## Notes
 
-To install a new theme, simply copy it to /root/themes/, or /mmc/root/themes/ (Create the themes directory if it doesn't exist yet).
+- The main dashboard keeps the WiGLE shortcut and adds a dedicated **PORTAL**
+  button below it for Pager Portal.
+- WiGLE mode and GPS options are also available from Settings and Recon.
+- Pager Portal theme browsing and updating are placeholders in firmware 2.0.0
+  and are presented as "Coming soon" by the stock theme.
+
+## Installing Pager Themes
+
+To install this theme, copy the `dedsec` directory to `/root/themes/`, or
+`/mmc/root/themes/` (create the `themes` directory if it does not exist yet).

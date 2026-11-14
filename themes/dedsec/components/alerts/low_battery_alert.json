@@ -1,12 +1,15 @@
 {
   "screen_name": "low_battery_alert",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": false,
   "background": {
     "layers": [
-      { "image_path": "assets/low_battery_alert.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/low_battery_alert.png",
+        "x": 0,
+        "y": 0
+      }
     ]
   },
-  "menu_items": [
-  ]
+  "menu_items": []
 }
