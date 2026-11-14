@@ -73,9 +73,6 @@
   },
   "option_dialogs": {
     "option_dialog": "components/dialogs/ui_option_dialog.json",
-    "option_dialog_recon": "components/dialogs/ui_option_dialog_recon.json",
-    "option_dialog_alerts": "components/dialogs/ui_option_dialog_alerts.json",
-    "option_dialog_payloads": "components/dialogs/ui_option_dialog_payloads.json",
     "option_dialog_narrow": "components/dialogs/ui_option_dialog_narrow.json"
   },
   "launch_payload_dialog_path": "components/dialogs/launch_payload_dialog.json",

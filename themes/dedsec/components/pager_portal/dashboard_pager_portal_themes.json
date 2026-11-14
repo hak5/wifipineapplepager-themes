@@ -117,6 +117,28 @@
           ],
           "x": 60,
           "y": 20
+        },
+        {
+          "id": "Back",
+          "x": 60,
+          "y": 20,
+          "layers": [
+            {
+              "text": "Back",
+              "x": 200,
+              "y": 141,
+              "text_color_palette": "magenta"
+            }
+          ],
+          "selected_layers": [
+            {
+              "text": "Back",
+              "x": 200,
+              "y": 141,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "back"
         }
       ]
     }
