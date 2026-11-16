@@ -1,29 +1,27 @@
-# GS Yellow Theme v1.6.1 — WiFi Pineapple Pager
+# GS Yellow Theme — WiFi Pineapple Pager
 
-Author: GhostStrats
+**Author:** GhostStrats (@Ghoststrats)  
+**Theme version:** 1.6.1  
+**Theme framework version:** 0.5  
+**Firmware developed/tested for:** WiFi Pineapple Pager firmware (exact firmware build not recorded; confirm on your device before use)
 
 ## Description
-A black-and-yellow theme with custom swipe dashboard panels, faded GS backgrounds,
-reworked keyboards, matching spinner and boot animation, and custom low/critical battery screens.
 
-## Important installation fix
-This release corrects the ZIP exported with an uppercase versioned folder name and
-indexed-color assets with missing transparency. The folder must be named `gs-yellow-theme`.
+GS Yellow Theme is a high-contrast black-and-yellow community theme for the Hak5 WiFi Pineapple Pager. It features custom swipe-through dashboard art for Alerts, Payloads, Recon, PineAP, and Settings; yellow status icons; redesigned menus and keyboards; GS artwork on the lock screen; a frame-based boot animation; and customized low/critical battery alerts. The payload confirmation uses a minimal dark-to-yellow-eyes animation.
 
-1. Extract this ZIP on your computer; do not place the ZIP itself in the Pager themes directory.
-2. Copy the **gs-yellow-theme** folder directly to `/root/themes/` or `/mmc/root/themes/`.
-3. Confirm the file is at `/root/themes/gs-yellow-theme/theme.json` (or the matching `/mmc/root/themes/...` path).
-4. Remove/rename the older broken folder `GS_Yellow_Theme_WiFi_Pineapple_Pager_v1_6` from the Pager themes directory, if present.
-5. On the Pager choose **Settings → Display → Theme** and select the new theme.
-6. If the theme doesn't appear, return to the default theme and check the folder location, firmware support, and that the assets copied completely.
+## Installation
 
-## Compatibility
-Designed from an existing Pager theme using `theme_framework_version: 0.5`.
-Firmware/hardware: not independently tested on a physical Pager. Actual supported firmware version not verified.
-Known limitations: theme compatibility may depend on firmware changes. Keep a working backup theme.
-This is an unofficial custom theme, not an official Hak5 product.
+Copy the `gs-yellow-theme` directory to `/root/themes/` or `/mmc/root/themes/` on the Pager. Confirm that `theme.json` is directly inside that directory. On the Pager, select the theme from **Settings > Display > Theme**. Keep the built-in theme available as a fallback.
 
-## Troubleshooting
-If the interface becomes inaccessible, connect with a supported device management method/SSH
-and remove the faulty folder from `/root/themes/` or `/mmc/root/themes/`, then restart UI/device
-and choose a known-good theme. Do not overwrite the built-in default theme.
+## Testing and known limitations
+
+- The author has confirmed that the repaired v1.6.1 theme loads on a physical WiFi Pineapple Pager. This does not establish compatibility with all firmware builds or exhaustively test every UI screen.
+- The exact firmware version used for the reported successful test was not recorded.
+- Some animations and layouts may be affected by future Pager firmware/theme-framework changes.
+- If the theme causes an error, switch back to a known-good theme and remove or replace the custom theme folder.
+
+## Credits and disclaimer
+
+Custom theme design: **GhostStrats**. Based on the WiFi Pineapple Pager theme framework and existing Pager theme structures. WiFi Pineapple and associated Hak5 product names and marks belong to Hak5 LLC. This is an independent, **unofficial community theme**, not an official Hak5 product or firmware.
+
+All theme assets are supplied for the Pager UI; this theme does not change wireless or payload behavior.
