@@ -1,0 +1,18 @@
+{
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "screen_name": "alert_warning_dialog",
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_warning.png", "x": 28, "y": 0 }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "dialog text",
+      "selected_layers": [
+        { "variable_name": "$_INPUT", "x": 60, "y": 60, "use_template": "alert_info_dialog_text" }
+      ]
+    }
+  ]
+}

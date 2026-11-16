@@ -1,0 +1,193 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/dashboard/wargames_bg_updated.png",
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "menu_items": [
+    {
+      "id": "pagerportal",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/glitch-portal-off.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/glitch-portal-on.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "PAGER PORTAL",
+          "x": 11,
+          "y": 101,
+          "text_size": "medium",
+          "text_color_palette": "dsl_white"
+        }
+      ],
+      "x": 13,
+      "y": 80,
+      "target": "pager_portal_dashboard"
+    },
+    {
+      "id": "ALERTS",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/glitch-alerts-off.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/glitch-alerts-on.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "ALERTS",
+          "x": -61,
+          "y": 98,
+          "text_size": "medium",
+          "text_color_palette": "dsl_white"
+        }
+      ],
+      "x": 85,
+      "y": 83,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/glitch-payloads-off.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/glitch-payloads-on.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "PAYLOADS",
+          "x": -133,
+          "y": 95,
+          "text_size": "medium",
+          "text_color_palette": "dsl_white"
+        }
+      ],
+      "x": 157,
+      "y": 86,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/glitch-recon-off.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/glitch-recon-on.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "RECON",
+          "x": 14,
+          "y": 55,
+          "text_size": "medium",
+          "text_color_palette": "dsl_white"
+        }
+      ],
+      "x": 10,
+      "y": 126,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/glitch-pineap-off.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/glitch-pineap-on.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "PINEAP",
+          "x": -58,
+          "y": 52,
+          "text_size": "medium",
+          "text_color_palette": "dsl_white"
+        }
+      ],
+      "x": 82,
+      "y": 129,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        {
+          "image_path": "assets/dashboard/glitch-settings-off.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/dashboard/glitch-settings-on.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "text": "SETTINGS",
+          "x": -130,
+          "y": 49,
+          "text_size": "medium",
+          "text_color_palette": "dsl_white"
+        }
+      ],
+      "x": 154,
+      "y": 132,
+      "target": "settings_menu"
+    }
+  ]
+}
