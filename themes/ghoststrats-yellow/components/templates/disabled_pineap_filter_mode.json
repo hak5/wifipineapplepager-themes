@@ -1,0 +1,16 @@
+{
+  "enabled": [
+    {
+      "text": "Allow",
+      "text_size": "medium",
+      "text_color_palette": "yellow"
+    }
+  ],
+  "disabled": [
+    {
+      "text": "Deny",
+      "text_size": "medium",
+      "text_color_palette": "yellow"
+    }
+  ]
+}
