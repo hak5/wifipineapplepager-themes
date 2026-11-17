@@ -1,0 +1,281 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": {
+      "r": 181,
+      "g": 188,
+      "b": 139
+    }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "dark"
+    },
+    "Battery": {
+      "x": 346,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "red"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 23,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 23,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 31,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_full.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "green"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ]
+      }
+    },
+    "Volume": {
+      "x": 317,
+      "y": 5,
+      "layers": {
+        "mute": [
+          {
+            "image_path": "assets/statusbar/mute.png",
+            "x": 0,
+            "y": 3
+          }
+        ],
+        "low": [
+          {
+            "image_path": "assets/statusbar/volume_low.png",
+            "x": 0,
+            "y": 3
+          }
+        ],
+        "medium": [
+          {
+            "image_path": "assets/statusbar/volume_medium.png",
+            "x": 0,
+            "y": 3
+          }
+        ],
+        "high": [
+          {
+            "image_path": "assets/statusbar/volume_high.png",
+            "x": 0,
+            "y": 3
+          }
+        ]
+      }
+    },
+    "Brightness": {
+      "x": 286,
+      "y": 5,
+      "layers": {
+        "15": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_2.png",
+            "recolor_palette": "dark",
+            "x": 11,
+            "y": 7
+          }
+        ],
+        "25": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_3.png",
+            "recolor_palette": "dark",
+            "x": 11,
+            "y": 1
+          }
+        ],
+        "50": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_5.png",
+            "recolor_palette": "dark",
+            "x": 4
+          }
+        ],
+        "75": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_7.png",
+            "recolor_palette": "dark",
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "100": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_8.png",
+            "recolor_palette": "dark",
+            "x": 1,
+            "y": 1
+          }
+        ]
+      }
+    },
+    "Vibrate": {
+      "x": 251,
+      "y": 6,
+      "layers": {
+        "on": [
+          {
+            "image_path": "assets/statusbar/vibrate.png",
+            "x": 2,
+            "y": 3
+          }
+        ],
+        "off": [
+          {
+            "image_path": "assets/statusbar/vibrate.png",
+            "x": 2,
+            "y": 3,
+            "recolor_palette": "light"
+          }
+        ]
+      }
+    },
+    "GPS": {
+      "x": 216,
+      "y": 4,
+      "layers": {
+        "disconnected": [
+          {
+            "image_path": "assets/statusbar/gps_disconnected.png",
+            "recolor_palette": "light",
+            "x": 2,
+            "y": 3
+          }
+        ],
+        "nofix": [
+          {
+            "image_path": "assets/statusbar/gps_nofix.png",
+            "recolor_palette": "dark",
+            "x": 2,
+            "y": 3
+          }
+        ],
+        "weak": [
+          {
+            "image_path": "assets/statusbar/gps_weak.png",
+            "recolor_palette": "dark",
+            "x": 4,
+            "y": 4
+          }
+        ],
+        "acquiring": [
+          {
+            "image_path": "assets/statusbar/gps_acquiring.png",
+            "recolor_palette": "dark",
+            "x": 4,
+            "y": 4
+          }
+        ],
+        "fix": [
+          {
+            "image_path": "assets/statusbar/gps.png",
+            "recolor_palette": "dark",
+            "x": 4,
+            "y": 4
+          }
+        ]
+      }
+    }
+  }
+}

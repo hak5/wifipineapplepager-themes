@@ -1,0 +1,262 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": {
+      "r": 181,
+      "g": 188,
+      "b": 139
+    }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "dark"
+    },
+    "Battery": {
+      "x": 346,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "red"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 23,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 15,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 23,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 31,
+            "y": 2,
+            "recolor_palette": "orange"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_full.png",
+            "x": 7,
+            "y": 2,
+            "recolor_palette": "green"
+          },
+          {
+            "image_path": "assets/statusbar/battery_outline.png",
+            "x": 3,
+            "y": -1
+          }
+        ]
+      }
+    },
+    "Volume": {
+      "x": 319,
+      "y": 4,
+      "layers": {
+        "mute": [
+          {
+            "image_path": "assets/statusbar/mute.png",
+            "x": 0,
+            "y": 3
+          }
+        ],
+        "low": [
+          {
+            "image_path": "assets/statusbar/volume_low.png",
+            "x": 0,
+            "y": 3
+          }
+        ],
+        "medium": [
+          {
+            "image_path": "assets/statusbar/volume_medium.png",
+            "x": 0,
+            "y": 3
+          }
+        ],
+        "high": [
+          {
+            "image_path": "assets/statusbar/volume_high.png",
+            "x": 0,
+            "y": 3
+          }
+        ]
+      }
+    },
+    "Brightness": {
+      "x": 288,
+      "y": 4,
+      "layers": {
+        "15": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_2.png",
+            "recolor_palette": "dark",
+            "x": 11,
+            "y": 7
+          }
+        ],
+        "25": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_3.png",
+            "recolor_palette": "dark",
+            "x": 11,
+            "y": 1
+          }
+        ],
+        "50": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_5.png",
+            "recolor_palette": "dark",
+            "x": 4
+          }
+        ],
+        "75": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_7.png",
+            "recolor_palette": "dark",
+            "x": 1,
+            "y": 1
+          }
+        ],
+        "100": [
+          {
+            "image_path": "assets/statusbar/dashboard_brightness_8.png",
+            "recolor_palette": "dark",
+            "x": 1,
+            "y": 1
+          }
+        ]
+      }
+    },
+    "Vibrate": {
+      "x": 253,
+      "y": 4,
+      "layers": {
+        "on": [
+          {
+            "image_path": "assets/statusbar/vibrate.png",
+            "x": 2,
+            "y": 5
+          }
+        ],
+        "off": [
+          {
+            "image_path": "assets/statusbar/vibrate.png",
+            "x": 2,
+            "y": 5,
+            "recolor_palette": "light"
+          }
+        ]
+      }
+    },
+    "WifiClient": {
+      "x": 219,
+      "y": 2,
+      "layers": {
+        "disabled": [
+          {
+            "image_path": "assets/statusbar/wifi_off.png",
+            "x": 0,
+            "y": 6
+          }
+        ],
+        "connected": [
+          {
+            "image_path": "assets/statusbar/wifi_on_connected.png",
+            "x": 0,
+            "y": 6
+          }
+        ],
+        "disconnected": [
+          {
+            "image_path": "assets/statusbar/wifi_on_disconnected.png",
+            "x": 0,
+            "y": 2
+          }
+        ]
+      }
+    }
+  }
+}

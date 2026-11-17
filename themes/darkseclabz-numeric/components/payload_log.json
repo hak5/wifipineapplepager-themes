@@ -1,0 +1,83 @@
+{
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/payloadlog/payload_log_bg.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "variable_name": "$_INPUT_NAME",
+        "use_template": "payload_title",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "scroll_pause_indicator": [
+    {
+      "image_path": "assets/payloadlog/scroll_pause_indicator.png",
+      "x": 457,
+      "y": 108
+    }
+  ],
+  "scroll_up_indicator": [
+    {
+      "image_path": "assets/payloadlog/scroll_up_indicator.png",
+      "x": 465,
+      "y": 34
+    }
+  ],
+  "scroll_down_indicator": [
+    {
+      "image_path": "assets/payloadlog/scroll_down_indicator.png",
+      "x": 465,
+      "y": 180
+    }
+  ],
+  "payload_running_indicator": [
+    {
+      "image_path": "assets/payloadlog/payload_running_indicator.png",
+      "x": 0,
+      "y": 203
+    }
+  ],
+  "payload_complete_indicator": [
+    {
+      "image_path": "assets/payloadlog/payload_complete_indicator.png",
+      "x": 0,
+      "y": 203
+    }
+  ],
+  "payload_stopped_indicator": [
+    {
+      "image_path": "assets/payloadlog/payload_stopped_indicator.png",
+      "x": 0,
+      "y": 203
+    }
+  ],
+  "payload_errored_indicator": [
+    {
+      "image_path": "assets/payloadlog/payload_error_indicator.png",
+      "x": 0,
+      "y": 203
+    }
+  ],
+  "status_bar": "default",
+  "refresh_interval": 0.75,
+  "visible_lines": 13,
+  "text_size": "small",
+  "max_chars": 50,
+  "start_x": 6,
+  "start_y": 32,
+  "default_text_color": {
+    "r": 26,
+    "g": 38,
+    "b": 31
+  },
+  "error_text_color": {
+    "r": 26,
+    "g": 38,
+    "b": 31
+  }
+}
