@@ -1,7 +1,5 @@
 # Themes Library for the [WiFi Pineapple Pager](https://hak5.org/products/wifi-pineapple-pager) by [Hak5](https://hak5.org)
 
-> **Note:** This repository is under construction.
-
 This repository contains **community-developed themes** for the Hak5 **WiFi Pineapple Pager**.  
 Themes define the **visual appearance, layout, colors, fonts, icons, and UI components** used by the device.
 
@@ -27,10 +25,6 @@ See [Legal and Disclaimers](#legal).
 <div align="center">
 <a href="https://hak5.org/discord"><img src="https://img.shields.io/discord/506629366659153951?label=Hak5%20Discord&style=for-the-badge"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://youtube.com/hak5"><img src="https://img.shields.io/youtube/channel/views/UC3s0BtrBJpwNDaflRSoiieQ?label=YouTube%20Views&style=for-the-badge"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://youtube.com/hak5"><img src="https://img.shields.io/youtube/channel/subscribers/UC3s0BtrBJpwNDaflRSoiieQ?style=for-the-badge"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://twitter.com/hak5"><img src="https://img.shields.io/badge/follow-%40hak5-1DA1F2?logo=twitter&style=for-the-badge"/></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://instagram.com/hak5gear"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
@@ -47,6 +41,7 @@ Join the community on **[Hak5 Discord](https://hak5.org/discord)**
 
 - [About the WiFi Pineapple Pager](#about-the-wifi-pineapple-pager)
 - [About Pager Themes](#about-pager-themes)
+- [Build Your Themes with Theme Studio Pro](#build-your-themes-with-theme-studio-pro)
 - [Installing Pager Themes](#installing-pager-themes)
 - [Contributing Themes](#contributing-themes)
 - [Theme Guidelines](#theme-guidelines)
@@ -58,12 +53,14 @@ Join the community on **[Hak5 Discord](https://hak5.org/discord)**
 ## Shop
 
 - [WiFi Pineapple Pager](https://hak5.org/products/wifi-pineapple-pager)
+- [Theme Studio Pro](https://shop.hak5.org/products/theme-studio-pro)
 - [PayloadStudio Pro](https://hak5.org/products/payload-studio-pro)
 - [Shop All Hak5 Tools](https://shop.hak5.org)
 
 ## Documentation / Learn More
 
 - [WiFi Pineapple Pager Documentation](https://docs.hak5.org)
+- [Theme Studio Pro Documentation](https://documentation.hak5.org/theme-studio)
 
 ## Community
 
@@ -104,6 +101,45 @@ Pager themes are **UI composition and UX behavior definitions**, typically compo
 Themes are loaded dynamically by the Pager UI framework and can be switched at runtime.
 
 Themes in this repository are the **source assets** used directly by the device — **no compilation required**.
+
+---
+
+## Build Your Themes with [Theme Studio Pro](https://themestudio.hak5.org)
+
+<p align="center">
+Make designing your own WiFi Pineapple Pager themes 10x easier, right in your browser. (Runs offline)
+<br/><br/>
+<a href="https://themestudio.hak5.org"><img src="https://shop.hak5.org/cdn/shop/files/wifi-pineapple-pager-theme-studio-pro-icon_180x.jpg?v=1793480335" alt="Theme Studio Pro"></a>
+<br/>
+<i>Theme Studio Pro is the theme editor for the WiFi Pineapple Pager. It draws every screen exactly as the Pager draws it, so what you see in the editor is what your Pager shows.
+<br/><br/>
+There's nothing to install. Sign in, start a theme, and edit it on the screen: click anything to select it, drag it into place, change its text and colors, and paint its images. When you're done, export the theme and copy it to your Pager.
+<br/><br/></i>
+<a href="https://shop.hak5.org/products/theme-studio-pro">Get Theme Studio Pro</a> and <b>make your Pager unmistakably yours!</b>
+<br/>
+<a href="https://documentation.hak5.org/theme-studio">Read the Theme Studio Pro documentation</a>
+<br/><br/>
+<a href="https://documentation.hak5.org/theme-studio"><img src="https://1168486578-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FYUw5FdwX3RNc9Yxd0SzQ%2Fuploads%2Fgit-blob-2e866e6ae9783e776c38a3a02de1a7046b2a2eb8%2Feditor-overview.png?alt=media" width="800" alt="Theme Studio Pro with the default theme's dashboard open"></a>
+<br/>
+<i>Theme Studio Pro with the default theme's dashboard open</i>
+<br/><br/>
+<a href="https://documentation.hak5.org/theme-studio/getting-started/your-first-theme"><img src="https://1168486578-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FYUw5FdwX3RNc9Yxd0SzQ%2Fuploads%2Fgit-blob-b7d4d146ce816ffb456baf54169e5c02bf149f48%2Femulate.png?alt=media" width="800" alt="Trying a menu with the Pager's buttons in Emulate"></a>
+<br/>
+<i>Trying a menu with the Pager's buttons in Emulate</i>
+</p>
+
+With Theme Studio Pro you can:
+
+- **Start a theme** from a copy of the default theme, open one you already have, or browse the community themes
+- **Edit screens visually**: select text, images, variables and menu items, then move, align, restyle or edit them, with undo for every change
+- **Change it once, everywhere**: move, recolor or swap an image, and its copies on other screens can follow after you review each one
+- **Line things up** with ruler guides, smart guides and a measure tool
+- **Paint your images** in the built-in asset editor, with layers, pixel-art tools and the Pager's own fonts
+- **Try your menus** with the Pager's buttons in Emulate
+- **Check your theme** for anything that would stop it loading or look wrong on the Pager
+- **Keep up with the firmware**: see what each firmware release changed for themes and add it to yours
+- **Optimize images** so your theme stays small
+- **Export** the theme as a zip, or save it straight to a folder on your computer
 
 ---
 
@@ -159,7 +195,7 @@ Each theme must include:
     - Known limitations
     - Firmware version developed for
 
-> A complete list of required component definitions will be added to this README, for now, reference the default theme (wargames) as an example
+> Reference the default theme (wargames) as an example. The theme file format is documented in the [Theme Files reference](https://documentation.hak5.org/theme-studio/reference/theme-files).
 ---
 
 ### Design Best Practices
