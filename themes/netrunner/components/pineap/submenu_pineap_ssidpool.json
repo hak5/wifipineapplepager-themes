@@ -1,6 +1,6 @@
 {
   "screen_name": "pineap_evilwpa_submenu",
-  "status_bar": "default",
+  "status_bar": "",
   "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
@@ -13,13 +13,14 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "dark_red" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "dark_red" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "dark_red" },
-      { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "cyan" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "dark_red" }
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/pineap_icon.png", "x": 35, "y": 50 },
+      { "image_path": "assets/pineap_button_selected.png", "x": 15, "y": 2 },
+      { "text": "SSIDs", "x": 54, "y": 10, "text_color_palette": "cyan" },
+      { "image_path": "assets/pineap_button_unselected.png", "x": 165, "y": 2 },
+      { "text": "Filters", "x": 204, "y": 10, "text_color_palette": "dark_cyan" },
+      { "image_path": "assets/pineap_button_unselected.png", "x": 315, "y": 2 },
+      { "text": "Clients", "x": 354, "y": 10, "text_color_palette": "dark_cyan" }
     ]
   },
   "pages": [
@@ -28,8 +29,8 @@
       "menu_items": [
         {
           "id": "SSID Pool",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
             { "image_path": "assets/menu.png" },
             { "text": "SSID Pool", "x": 40, "text_color_palette": "dark_cyan" }
@@ -40,10 +41,11 @@
           ],
           "target": "pineap_ssid_pool_list",
           "variable": "$_PINEAP_SSID_POOL_LIST"
-        },        {
+        },
+        {
           "id": "Add Network",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
             { "image_path": "assets/keyboard.png" },
             { "text": "Add Network", "x": 40, "text_color_palette": "dark_cyan" }
@@ -57,8 +59,8 @@
         },
         {
           "id": "Clear Pool",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
             { "image_path": "assets/warning.png" },
             { "text": "Clear Networks", "x": 40, "text_color_palette": "dark_cyan" }
@@ -73,37 +75,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

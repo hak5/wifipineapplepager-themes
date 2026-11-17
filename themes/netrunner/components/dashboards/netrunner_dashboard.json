@@ -27,7 +27,7 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/qh-highlighted.png" },
         { "image_path": "assets/dashboard/qh-alerts.png" },
-        { "image_path": "assets/dashboard/alert_hack.png", "x": 360, "y": 95 }
+        { "image_path": "assets/dashboard/alert-QH.png", "x": 260, "y": 137 }
       ],
       "x": 0,
       "y": 3,
@@ -42,7 +42,7 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/qh-highlighted.png" },
         { "image_path": "assets/dashboard/qh-payloads.png" },
-        { "image_path": "assets/dashboard/payloads_hack.png", "x": 360, "y": 51 }
+        { "image_path": "assets/dashboard/payloads-QH.png", "x": 260, "y": 93 }
       ],
       "x": 0,
       "y": 47,
@@ -58,7 +58,7 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/qh-highlighted.png" },
         { "image_path": "assets/dashboard/qh-recon.png" },
-        { "image_path": "assets/dashboard/recon_hack.png", "x": 360, "y": 7 }
+        { "image_path": "assets/dashboard/recon-QH.png", "x": 260, "y": 49 }
       ],
       "x": 0,
       "y": 91,
@@ -73,7 +73,7 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/qh-highlighted.png" },
         { "image_path": "assets/dashboard/qh-pineap.png" },
-        { "image_path": "assets/dashboard/pineap_hack.png", "x": 360, "y": -37 }
+        { "image_path": "assets/dashboard/pineap-QH.png", "x": 260, "y": 5 }
       ],
       "x": 0,
       "y": 135,
@@ -88,7 +88,7 @@
       "selected_layers": [
         { "image_path": "assets/dashboard/qh-highlighted.png" },
         { "image_path": "assets/dashboard/qh-settings.png" },
-        { "image_path": "assets/dashboard/settings_hack.png", "x": 360, "y": -81 }
+        { "image_path": "assets/dashboard/settings-QH.png", "x": 260, "y": -39 }
       ],
       "x": 0,
       "y": 179,
