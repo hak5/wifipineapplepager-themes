@@ -9,33 +9,230 @@
     },
     "per_key_canvas_cache": false
   },
-
   "qwerty": {
     "screen_name": "US_keyboard_numeric",
     "background": {
-      "background_color": { "r": 0, "g": 0, "b": 0 },
-      "layers": [{"image_path":  "assets/keyboard/keyboard_layout_numeric.png", "x": 0, "y": 0}]
+      "background_color": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "layers": [
+        {
+          "image_path": "assets/keyboard/keyboard_layout_ip.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg.png",
+          "x": 92,
+          "y": 64
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_12.png",
+          "x": 145,
+          "y": 64
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_11.png",
+          "x": 198,
+          "y": 64
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_9.png",
+          "x": 231,
+          "y": 76
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_5.png",
+          "x": 265,
+          "y": 64
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg.png",
+          "x": 92,
+          "y": 101
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_3.png",
+          "x": 145,
+          "y": 101
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_11.png",
+          "x": 198,
+          "y": 101
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_10.png",
+          "x": 265,
+          "y": 101
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_8.png",
+          "x": 346,
+          "y": 101
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg.png",
+          "x": 92,
+          "y": 138
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_6.png",
+          "x": 145,
+          "y": 138
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_11.png",
+          "x": 198,
+          "y": 138
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_4.png",
+          "x": 231,
+          "y": 150
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_7.png",
+          "x": 265,
+          "y": 138
+        },
+        {
+          "image_path": "assets/nes/overlays/ui_keyboard_numeric_bg_2.png",
+          "x": 129,
+          "y": 175
+        }
+      ]
     },
     "rows": [
       [
-        { "id": "7", "x": 172,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "8", "x": 219,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "9", "x": 266,   "y": 59, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+        {
+          "id": "7",
+          "x": 131,
+          "y": 64,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "x": 205,
+          "y": 64,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "x": 279,
+          "y": 64,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        }
       ],
       [
-        { "id": "4", "x": 172,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "5", "x": 219,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "6", "x": 266,   "y": 90, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+        {
+          "id": "4",
+          "x": 131,
+          "y": 101,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "x": 205,
+          "y": 101,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "x": 279,
+          "y": 101,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        }
       ],
       [
-        { "id": "1", "x": 172,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "2", "x": 219,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "3", "x": 266,  "y": 121, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+        {
+          "id": "1",
+          "x": 131,
+          "y": 138,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "x": 205,
+          "y": 138,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "x": 279,
+          "y": 138,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        }
       ],
       [
-        { "id": "done",      "x": 172,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "0",         "x": 219,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] },
-        { "id": "backspace", "x": 266,  "y": 152, "selected_layers": [{"image_path":  "assets/keyboard/_key-bg.png"}] }
+        {
+          "id": "done",
+          "x": 131,
+          "y": 175,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "0",
+          "x": 205,
+          "y": 175,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        },
+        {
+          "id": "backspace",
+          "x": 279,
+          "y": 175,
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard/nes_numeric_key.png"
+            }
+          ]
+        }
       ]
     ]
   }

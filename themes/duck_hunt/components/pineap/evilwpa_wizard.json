@@ -1,7 +1,7 @@
 {
   "screen_name": "evilwpa_wizard",
-  "windowed_canvas": true,
-  "cache_canvases": true,
+  "windowed_canvas": false,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "quit_wizard",
@@ -12,7 +12,21 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/evilwpa_wizard_bg.png",
+        "x": 113,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/client_mode_wizard_bg.png",
+        "x": 34,
+        "y": 207
+      }
     ]
   },
   "pages": [
@@ -22,21 +36,40 @@
         {
           "id": "evilwpa_wizard_title",
           "unselectable": true,
-          "layers": [
-            { "x": 125, "y": 20, "text_size": "large", "text_color_palette": "red", "text": "Evil WPA Setup" }
-          ]
+          "layers": []
         },
         {
           "id": "ssid",
-          "x": 136,
-          "y": 60,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_ssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_ssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_EVIL_WPA_SSID",
@@ -51,60 +84,134 @@
         },
         {
           "id": "bssid",
-          "x": 136,
-          "y": 90,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "BSSID Override", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/evilwpa_wizard_bssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "BSSID Override", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/evilwpa_wizard_bssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_mac_dialog",
           "variable": "$_SETUP_EVIL_WPA_BSSID"
         },
         {
           "id": "enc",
-          "x": 136,
+          "x": 119,
           "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_enc.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_enc.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
           "variable": "$_SETUP_EVIL_WPA_ENCRYPTION_TYPE"
         },
         {
           "id": "pass",
-          "x": 136,
-          "y": 150,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_pass.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_27.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_pass.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_EVIL_WPA_PASSPHRASE"
         },
         {
           "id": "save",
-          "x": 120,
-          "y": 180,
+          "x": 115,
+          "y": 174,
           "layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 34, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/setup_button_save.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/wizard.png", "recolor_palette": "green" },
-            { "text": "Save", "x": 34, "text_color_palette": "green" }
+            {
+              "image_path": "assets/nes/setup_button_save.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/focus_154_30.png",
+              "x": -2,
+              "y": -2
+            }
           ],
           "target": "function_save_evil_wpa",
           "button_map": {
@@ -118,15 +225,26 @@
         },
         {
           "id": "clear",
-          "x": 250,
-          "y": 180,
+          "x": 300,
+          "y": 174,
           "layers": [
-            { "image_path": "assets/x.png", "x": 12, "y": 4 },
-            { "text": "Clear", "x": 38, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/setup_button_clear.png",
+              "x": 0,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/x.png", "x": 12, "y": 4, "recolor_palette": "red" },
-            { "text": "Clear", "x": 38, "text_color_palette": "red" }
+            {
+              "image_path": "assets/nes/setup_button_clear.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/focus_154_30.png",
+              "x": -2,
+              "y": -2
+            }
           ],
           "target": "function_clear_evil_wpa",
           "button_map": {

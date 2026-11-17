@@ -1,0 +1,126 @@
+{
+  "background": {
+    "layers": []
+  },
+  "status_bar_items": {
+    "Battery": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_text.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_50.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_75.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_100.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_100.png",
+            "x": 4,
+            "y": -2
+          }
+        ]
+      }
+    },
+    "WifiClient": {
+      "x": 306,
+      "y": 3,
+      "layers": {
+        "disabled": [
+          {
+            "image_path": "assets/statusbar/wifi_off.png",
+            "x": 0,
+            "y": 2
+          }
+        ],
+        "connected": [
+          {
+            "image_path": "assets/statusbar/wifi_off.png",
+            "x": 0,
+            "y": 2
+          }
+        ],
+        "disconnected": [
+          {
+            "image_path": "assets/statusbar/wifi_off.png",
+            "x": 0,
+            "y": 2
+          }
+        ]
+      }
+    },
+    "BTScan": {
+      "x": 342,
+      "y": 5,
+      "layers": {
+        "off": [
+          {
+            "image_path": "assets/statusbar/bt_scan.png",
+            "recolor_palette": "gray",
+            "x": 1,
+            "y": 4
+          }
+        ],
+        "both": [
+          {
+            "image_path": "assets/statusbar/bt_mode_both.png",
+            "recolor_palette": "cyan"
+          }
+        ],
+        "both_active": [
+          {
+            "image_path": "assets/statusbar/bt_mode_both.png",
+            "recolor_palette": "orange"
+          }
+        ],
+        "classic": [
+          {
+            "image_path": "assets/statusbar/bt_mode_both.png",
+            "recolor_palette": "cyan"
+          }
+        ],
+        "le": [
+          {
+            "image_path": "assets/statusbar/bt_mode_both.png",
+            "recolor_palette": "cyan"
+          }
+        ],
+        "le_active": [
+          {
+            "image_path": "assets/statusbar/bt_mode_both.png",
+            "recolor_palette": "orange"
+          }
+        ]
+      }
+    }
+  }
+}

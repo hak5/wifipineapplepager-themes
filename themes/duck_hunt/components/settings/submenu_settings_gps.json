@@ -1,6 +1,5 @@
 {
-  "screen_name": "settings_general_submenu",
-  "status_bar": "gps",
+  "screen_name": "settings_gps_submenu",
   "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
@@ -13,13 +12,26 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "purple" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "orange" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "orange" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_gps_bg_2.png",
+        "x": 173,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_gps_bg.png",
+        "x": 209,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/dashboard_settings_bg.png",
+        "x": 34,
+        "y": 207
+      }
     ]
   },
   "pages": [
@@ -27,112 +39,207 @@
       "page_index": 0,
       "menu_items": [
         {
-          "id": "Port",
-          "x":170,
-          "y":50,
+          "id": "Status",
+          "x": 113,
+          "y": 69,
           "unselectable": true,
           "layers": [
-            { "x":0, "text": "Lat:", "text_size": "medium", "text_color": "medium_gray"},
-            { "variable_name": "$_GPS_LAT", "x": 60, "string_template": {"text_size": "medium", "text_color_palette": "orange" } },
-            { "x":160, "text": "Lon:", "text_size": "medium", "text_color": "medium_gray"},
-            { "variable_name": "$_GPS_LON", "x": 220, "string_template": {"text_size": "medium", "text_color_palette": "orange" }}
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_status.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_READINESS",
+              "x": 80,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 32,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
           ]
         },
         {
-          "id": "Port",
-          "x":170,
-          "y":85,
+          "id": "LatLon",
+          "x": 113,
+          "y": 86,
+          "unselectable": true,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Serial Device", "x": 40, "text_color_palette": "orange" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Serial Device", "x": 40, "text_color_palette": "purple" }
-          ],
-          "target": "option_dialog",
-          "variable": "$_GPS_DEVICE"
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_latlon_2.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_LAT",
+              "x": 80,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 20,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_latlon.png",
+              "x": 0,
+              "y": 17
+            },
+            {
+              "variable_name": "$_GPS_LON",
+              "x": 80,
+              "y": 15,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 20,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
         },
         {
-          "id": "Baud Rate",
-          "x":170,
-          "y":120,
+          "id": "ConnType",
+          "x": 113,
+          "y": 120,
+          "unselectable": true,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Baud Rate", "x": 40, "text_color_palette": "orange" }
-          ],
-          "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Baud Rate", "x": 40, "text_color_palette": "purple" }
-          ],
-          "target": "option_dialog",
-          "variable": "$_GPS_BAUD"
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_conntype_2.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_CONNECTED",
+              "x": 80,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 8,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_conntype.png",
+              "x": 200,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_PROTOCOL",
+              "x": 280,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 12,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
         },
         {
-          "id": "restart",
-          "x":170,
-          "y":155,
+          "id": "SatsQual",
+          "x": 113,
+          "y": 137,
+          "unselectable": true,
           "layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "purple" },
-            { "text": "Restart GPSd", "x": 40,  "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_satsqual.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_SATS_TRACKED",
+              "x": 80,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 6,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_satsqual_2.png",
+              "x": 200,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_SIGNAL_QUALITY",
+              "x": 280,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 12,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "advanced",
+          "x": 113,
+          "y": 179,
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_advanced.png",
+              "x": 7,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/start.png", "x": 4, "y": 1, "recolor_palette": "purple" },
-            { "text": "Restart GPSd", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_23.png",
+              "x": -7,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_advanced.png",
+              "x": 7,
+              "y": 0
+            }
           ],
-          "target": "function_restart_gpsd"
+          "target": "settings_gps_advanced"
+        },
+        {
+          "id": "SatsQual_copy",
+          "x": 113,
+          "y": 154,
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/submenu_settings_gps_satsqual_copy.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_ACCURACY",
+              "x": 80,
+              "y": -2,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 24,
+                "wrap_text": false,
+                "max_lines": 1
+              }
+            }
+          ]
         }
       ]
     }
   ]
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

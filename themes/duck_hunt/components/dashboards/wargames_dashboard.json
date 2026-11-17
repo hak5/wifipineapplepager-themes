@@ -1,6 +1,6 @@
 {
   "screen_name": "main_dashboard",
-  "status_bar": "default",
+  "status_bar": "nes_main",
   "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
@@ -13,91 +13,199 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/dashboard/wargames_bg.png", "x": 0, "y": 0 }
-    ],
-    "background_color": { "r": 0, "g": 0, "b": 0 }
+      {
+        "image_path": "assets/keyboard/keyboard_layout_ip.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/wargames_dashboard_bg.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
   },
   "menu_items": [
     {
       "id": "ALERTS",
+      "x": 188,
+      "y": 38,
+      "target": "alerts_dashboard",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
-        { "image_path": "assets/dashboard/alerts.png", "x": 19, "y": 18, "recolor_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_bell.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
-        { "image_path": "assets/dashboard/item_bg.png", "x": 4, "y": 5, "recolor_palette": "cyan" },
-        { "image_path": "assets/dashboard/alerts.png", "x": 19, "y": 18, "recolor_palette": "purple" },
-        { "text": "ALERTS", "x": -211, "y":  92, "text_size": "large", "text_color_palette": "orange" }
-      ],
-      "x": 263,
-      "y": 79,
-      "target": "alerts_dashboard"
+        {
+          "image_path": "assets/nes/tile_halo.png",
+          "x": -5,
+          "y": -5
+        },
+        {
+          "image_path": "assets/nes/tile_bell_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 176,
+          "y": 169,
+          "image_path": "assets/nes/labels/wargames_dashboard_alerts_selected.png"
+        }
+      ]
     },
     {
       "id": "PAYLOADS",
+      "x": 284,
+      "y": 38,
+      "target": "payloads_dashboard",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
-        { "image_path": "assets/dashboard/payloads.png", "x": 23, "y": 18, "recolor_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_cartridge.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "cyan" },
-        { "image_path": "assets/dashboard/payloads.png", "x": 23, "y": 18,  "recolor_palette": "purple" },
-        { "text": "PAYLOADS", "x": -247, "y":  55, "text_size": "large", "text_color_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_halo.png",
+          "x": -5,
+          "y": -5
+        },
+        {
+          "image_path": "assets/nes/tile_cartridge_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 169,
+          "image_path": "assets/nes/labels/wargames_dashboard_payloads_selected.png"
+        }
       ],
-      "x": 299,
-      "y": 116,
-      "target": "payloads_dashboard",
       "variable": "$_PAYLOAD_CATEGORIES"
     },
     {
       "id": "RECON",
+      "x": 380,
+      "y": 38,
+      "target": "recon_dashboard",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
-        { "image_path": "assets/dashboard/recon.png", "x": 19, "y": 22, "recolor_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_target.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "cyan"  },
-        { "image_path": "assets/dashboard/recon.png", "x": 19, "y": 22, "recolor_palette": "purple"  },
-        { "text": "RECON", "x": -283, "y":  91, "text_size": "large", "text_color_palette": "orange" }
-      ],
-      "x": 335,
-      "y": 80,
-      "target": "recon_dashboard"
+        {
+          "image_path": "assets/nes/tile_halo.png",
+          "x": -5,
+          "y": -5
+        },
+        {
+          "image_path": "assets/nes/tile_target_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -16,
+          "y": 169,
+          "image_path": "assets/nes/labels/wargames_dashboard_recon_selected.png"
+        }
+      ]
     },
     {
       "id": "PINEAP",
+      "x": 188,
+      "y": 118,
+      "target": "pineap_menu",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
-        { "image_path": "assets/dashboard/pineap.png", "x": 19, "y": 19, "recolor_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_pineapple.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "cyan"  },
-        { "image_path": "assets/dashboard/pineap.png", "x": 19, "y": 19, "recolor_palette": "purple"  },
-        { "text": "PINEAP", "x": -321, "y":  55, "text_size": "large", "text_color_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_halo.png",
+          "x": -5,
+          "y": -5
+        },
+        {
+          "image_path": "assets/nes/tile_pineapple_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 176,
+          "y": 89,
+          "image_path": "assets/nes/labels/dashboard_pineap_pineap.png"
+        }
+      ]
+    },
+    {
+      "id": "PORTAL",
+      "x": 284,
+      "y": 118,
+      "target": "pager_portal_dashboard",
+      "layers": [
+        {
+          "image_path": "assets/nes/tile_portal.png",
+          "x": 0,
+          "y": 0
+        }
       ],
-      "x": 373,
-      "y": 115,
-      "target": "pineap_menu"
+      "selected_layers": [
+        {
+          "image_path": "assets/nes/tile_halo.png",
+          "x": -5,
+          "y": -5
+        },
+        {
+          "image_path": "assets/nes/tile_portal_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 89,
+          "image_path": "assets/nes/labels/wargames_dashboard_portal_selected.png"
+        }
+      ]
     },
     {
       "id": "SETTINGS",
+      "x": 380,
+      "y": 118,
+      "target": "settings_menu",
       "layers": [
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5 },
-        { "image_path": "assets/dashboard/settings.png", "x": 19, "y": 19, "recolor_palette": "orange" }
+        {
+          "image_path": "assets/nes/tile_gear.png",
+          "x": 0,
+          "y": 0
+        }
       ],
       "selected_layers": [
-        { "image_path": "assets/dashboard/highlight.png","x": 0, "y": 0 },
-        { "image_path": "assets/dashboard/item_bg.png","x": 4, "y": 5, "recolor_palette": "cyan" },
-        { "image_path": "assets/dashboard/settings.png", "x": 19, "y": 19, "recolor_palette": "purple" },
-        { "text": "SETTINGS", "x": -358, "y":  90, "text_size": "large", "text_color_palette": "orange" }
-      ],
-      "x": 410,
-      "y": 80,
-      "target": "settings_menu"
+        {
+          "image_path": "assets/nes/tile_halo.png",
+          "x": -5,
+          "y": -5
+        },
+        {
+          "image_path": "assets/nes/tile_gear_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -16,
+          "y": 89,
+          "image_path": "assets/nes/labels/submenu_pineap_pineap_explained.png"
+        }
+      ]
     }
   ]
 }

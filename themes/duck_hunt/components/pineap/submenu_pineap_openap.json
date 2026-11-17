@@ -1,8 +1,7 @@
 {
   "screen_name": "pineap_openap_submenu",
-  "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -13,13 +12,21 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "purple" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "gray" },
-      { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "gray" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_pineap_openap_bg.png",
+        "x": 119,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_pineap_openap_bg_2.png",
+        "x": 137,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,99 +35,165 @@
       "menu_items": [
         {
           "id": "Open AP",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "variable_name":  "$_OPEN_AP_ENABLED", "use_template": "toggle" },
-            { "text": "Open AP", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_OPEN_AP_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pineap_open_ap.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_OPEN_AP_ENABLED", "use_template": "toggle" },
-            { "text": "Open AP", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_OPEN_AP_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_pineap_open_ap.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_OPEN_AP_ENABLED"
+          "variable": "$_OPEN_AP_ENABLED",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Open AP"
+          }
         },
         {
           "id": "Hidden",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "variable_name":  "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
-            { "text": "Hidden", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_OPEN_AP_HIDDEN",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_pineap_evilwpa_hidden.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
-            { "text": "Hidden", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_OPEN_AP_HIDDEN",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_pineap_evilwpa_hidden.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_OPEN_AP_HIDDEN"
+          "variable": "$_OPEN_AP_HIDDEN",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Hidden"
+          }
         },
         {
           "id": "Network Name",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_ssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/client_mode_wizard_ssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_OPEN_AP_SSID"
+          "variable": "$_OPEN_AP_SSID",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Network Name"
+          }
         },
         {
           "id": "BSSID",
-          "x":170,
-          "y":155,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "BSSID Override", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/evilwpa_wizard_bssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "BSSID Override", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/evilwpa_wizard_bssid.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_mac_dialog",
-          "variable": "$_OPEN_AP_BSSID"
+          "variable": "$_OPEN_AP_BSSID",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained BSSID"
+          }
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

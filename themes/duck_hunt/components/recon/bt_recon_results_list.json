@@ -1,0 +1,462 @@
+{
+  "template": {
+    "screen_name": "bt_recon_results_list",
+    "status_bar": "nes_bt",
+    "refresh_interval": 1,
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "query_sort": "active",
+    "query_ascending": false,
+    "button_map": {
+      "a": "select",
+      "b": "back",
+      "up": "previous",
+      "down": "next",
+      "left": "previous_page",
+      "right": "next_page"
+    },
+    "background": {
+      "layers": [
+        {
+          "image_path": "assets/nes/recon_results_list.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/bt_recon_results_list_bg.png",
+          "x": 16,
+          "y": 4
+        },
+        {
+          "image_path": "assets/nes/overlays/bt_recon_results_list_bg_2.png",
+          "x": 409,
+          "y": 165
+        }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "autoupdate",
+            "x": 344,
+            "y": 3,
+            "layers": [
+              {
+                "image_path": "assets/autoplay_stopped.png",
+                "x": 0,
+                "y": 3
+              }
+            ],
+            "selected_layers": [
+              {
+                "variable_name": "$_BT_LIST_AUTOUPDATING",
+                "toggle_template": {
+                  "enabled": [
+                    {
+                      "image_path": "assets/autoplay.png",
+                      "recolor_palette": "green",
+                      "x": 1,
+                      "y": 1
+                    }
+                  ],
+                  "disabled": [
+                    {
+                      "image_path": "assets/autoplay_stopped.png",
+                      "recolor_palette": "yellow",
+                      "x": 1,
+                      "y": 3
+                    }
+                  ]
+                }
+              }
+            ],
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "target function_recon_ring_prev",
+              "right": "target function_recon_ring_next"
+            }
+          },
+          {
+            "id": "Row0",
+            "x": 13,
+            "y": 43,
+            "target": "bt_recon_selected_device",
+            "layers": [
+              {
+                "image_path": "assets/nes/bt_row.png",
+                "x": 5,
+                "y": 3
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 31,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 32,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TYPE",
+                "x": 289,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "bt_signal"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_454_34.png",
+                "x": -7,
+                "y": -6
+              },
+              {
+                "image_path": "assets/nes/bt_row.png",
+                "x": 5,
+                "y": 3
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 31,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 32,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TYPE",
+                "x": 289,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "bt_signal"
+              }
+            ]
+          },
+          {
+            "id": "Row1",
+            "x": 13,
+            "y": 85,
+            "target": "bt_recon_selected_device",
+            "layers": [
+              {
+                "image_path": "assets/nes/bt_row.png",
+                "x": 5,
+                "y": 3
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 31,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 32,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TYPE",
+                "x": 289,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "bt_signal"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_454_34.png",
+                "x": -7,
+                "y": -6
+              },
+              {
+                "image_path": "assets/nes/bt_row.png",
+                "x": 5,
+                "y": 3
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 31,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 32,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TYPE",
+                "x": 289,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "bt_signal"
+              }
+            ]
+          },
+          {
+            "id": "Row2",
+            "x": 13,
+            "y": 127,
+            "target": "bt_recon_selected_device",
+            "layers": [
+              {
+                "image_path": "assets/nes/bt_row.png",
+                "x": 5,
+                "y": 3
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 31,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 32,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TYPE",
+                "x": 289,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "bt_signal"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_454_34.png",
+                "x": -7,
+                "y": -6
+              },
+              {
+                "image_path": "assets/nes/bt_row.png",
+                "x": 5,
+                "y": 3
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 31,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TITLE",
+                "x": 32,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 18
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_TYPE",
+                "x": 289,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 5
+                }
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 357,
+                "y": 3,
+                "string_template": {
+                  "text_size": "small",
+                  "text_color_palette": "soft_white"
+                }
+              },
+              {
+                "image_path": "assets/nes/labels/bt_recon_results_list_row0.png",
+                "x": 393,
+                "y": 5
+              },
+              {
+                "variable_name": "$_BT_RESULT_RSSI",
+                "x": 423,
+                "y": 1,
+                "use_template": "bt_signal"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

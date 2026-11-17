@@ -1,6 +1,5 @@
 {
   "screen_name": "settings_help_submenu",
-  "status_bar": "default",
   "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
@@ -13,13 +12,16 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "orange" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "orange" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "purple" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "orange" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_help_bg.png",
+        "x": 113,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,76 +30,180 @@
       "menu_items": [
         {
           "id": "Tutorial",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Tutorial", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_tutorial.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Tutorial", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_tutorial.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "tutorial"
         },
         {
           "id": "Regulatory",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_regulatory.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "FCC ID: 2A52Y-MK1", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_regulatory.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "regulatory"
         },
         {
           "id": "License Agreement",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "License Agreement", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_license_agreement.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "License Agreement", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_license_agreement.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "license_dialog"
         },
         {
           "id": "Open Source Licenses",
-          "x":170,
-          "y":155,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_open_source_licenses.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "Open Source Licenses", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_open_source_licenses.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "os_licenses"
         },
         {
           "id": "Help",
-          "x":170,
-          "y":190,
+          "x": 119,
+          "y": 168,
           "layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "Help", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_settings_help.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/info.png" },
-            { "text": "Help", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/dashboard_settings_help.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "help_dialog"
         }
       ]
     }
   ]
-
 }

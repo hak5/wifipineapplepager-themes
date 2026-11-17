@@ -1,8 +1,7 @@
 {
-  "screen_name": "settings_general_submenu",
-  "status_bar": "default",
+  "screen_name": "settings_system_submenu",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -13,13 +12,21 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "orange" },
-      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "orange" },
-      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "purple" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_system_bg.png",
+        "x": 113,
+        "y": 35
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_system_bg_2.png",
+        "x": 149,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,80 +35,206 @@
       "menu_items": [
         {
           "id": "Virtual Pager",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "variable_name":  "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
-            { "text": "Virtual Pager", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_VIRTUAL_PAGER_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_virtual_pager.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
-            { "text": "Virtual Pager", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_VIRTUAL_PAGER_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_virtual_pager.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_VIRTUAL_PAGER_ENABLED"
+          "variable": "$_VIRTUAL_PAGER_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Virtual Pager"
+          }
+        },
+        {
+          "id": "Client Access",
+          "x": 119,
+          "y": 96,
+          "layers": [
+            {
+              "variable_name": "$_CLIENT_ACCESS_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_client_access.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_CLIENT_ACCESS_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_client_access.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLIENT_ACCESS_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Client Access"
+          }
         },
         {
           "id": "Root Password",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Root Password", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_lock.png",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_root_password.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Root Password", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_lock.png",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_root_password.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_SYSTEM_PASSWORD"
+          "variable": "$_SYSTEM_PASSWORD",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Root Password"
+          }
         },
         {
           "id": "SSH",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "variable_name":  "$_SSH_ENABLED", "use_template": "toggle" },
-            { "text": "SSH", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_SSH_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_ssh.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_SSH_ENABLED", "use_template": "toggle" },
-            { "text": "SSH", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_SSH_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_ssh.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_SSH_ENABLED"
+          "variable": "$_SSH_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained SSH"
+          }
         },
         {
           "id": "PIN Code",
-          "x":170,
-          "y":155,
+          "x": 119,
+          "y": 168,
           "layers": [
-            { "variable_name":  "$_PIN_ENABLED", "use_template": "toggle" },
-            { "text": "PIN Code", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_PIN_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_pin_code.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PIN_ENABLED", "use_template": "toggle" },
-            { "text": "PIN Code", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_PIN_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_pin_code.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_PIN_ENABLED"
-        },
-        {
-          "id": "PIN Setup",
-          "x":170,
-          "y":190,
-          "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "PIN Setup", "x": 40, "text_color_palette": "orange" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "PIN Setup", "x": 40, "text_color_palette": "purple" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "target": "edit_number_dialog",
-          "variable": "$_SYSTEM_PIN"
+          "variable": "$_PIN_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained PIN Code"
+          }
         }
       ]
     },
@@ -109,35 +242,122 @@
       "page_index": 1,
       "menu_items": [
         {
-          "id": "Network Time (NTP)",
-          "x":170,
-          "y":50,
+          "id": "PIN Setup",
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "variable_name":  "$_NTP_ENABLED", "use_template": "toggle" },
-            { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "orange" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_pin_setup.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "variable_name":  "$_NTP_ENABLED", "use_template": "toggle" },
-            { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "purple" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_pin_setup.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN",
+          "button_map": {
+            "right": "target settings_system_submenu_explained PIN Setup"
+          }
+        },
+        {
+          "id": "Network Time (NTP)",
+          "x": 119,
+          "y": 96,
+          "layers": [
+            {
+              "variable_name": "$_NTP_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_system_network_time_ntp.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_NTP_ENABLED",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_system_network_time_ntp.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "inline_toggle",
-          "variable": "$_NTP_ENABLED"
+          "variable": "$_NTP_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Network Time (NTP)"
+          }
         },
         {
           "id": "Factory Reset",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/warning.png" },
-            { "text": "Factory Reset", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_factory_reset.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/warning.png" },
-            { "text": "Factory Reset", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_factory_reset.png",
+              "x": 27,
+              "y": 0
+            }
           ],
-          "target": "function_factory_reset"
+          "target": "function_factory_reset",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Factory Reset"
+          }
         }
       ]
     }

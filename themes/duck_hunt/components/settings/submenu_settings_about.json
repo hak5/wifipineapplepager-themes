@@ -1,5 +1,5 @@
 {
-  "screen_name": "settings_help_submenu",
+  "screen_name": "settings_about_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
   "cache_canvases": false,
@@ -13,13 +13,46 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "orange" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "orange" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "orange" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "purple" }
+      {
+        "image_path": "assets/pineap_bg.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_about_bg.png",
+        "x": 10,
+        "y": 31
+      },
+      {
+        "image_path": "assets/divright.png",
+        "x": 145,
+        "y": 50
+      },
+      {
+        "x": 10,
+        "y": 50,
+        "image_path": "assets/nes/labels/submenu_settings_about.png"
+      },
+      {
+        "x": 10,
+        "y": 85,
+        "image_path": "assets/nes/labels/submenu_settings_about_5.png"
+      },
+      {
+        "x": 10,
+        "y": 120,
+        "image_path": "assets/nes/labels/submenu_settings_about_2.png"
+      },
+      {
+        "x": 10,
+        "y": 155,
+        "image_path": "assets/nes/labels/submenu_settings_about_3.png"
+      },
+      {
+        "x": 10,
+        "y": 190,
+        "image_path": "assets/nes/labels/submenu_settings_about_4.png"
+      }
     ]
   },
   "pages": [
@@ -28,13 +61,20 @@
       "menu_items": [
         {
           "id": "Uptime",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "text": "Uptime:", "text_color_palette": "purple" },
-            { "variable_name": "$_UPTIME", "x": 120, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_uptime.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_UPTIME",
+              "x": 120,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -42,10 +82,22 @@
             }
           ],
           "selected_layers": [
-            { "text": "Uptime:", "text_color_palette": "purple" },
-            { "variable_name": "$_UPTIME", "x": 120, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_uptime.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_UPTIME",
+              "x": 120,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -64,13 +116,20 @@
         },
         {
           "id": "Battery",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "text": "Battery:", "text_color_palette": "purple" },
-            { "variable_name": "$_BATTERY_INFO", "x": 110, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_battery.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_BATTERY_INFO",
+              "x": 110,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 16,
                 "wrap_text": false,
                 "max_lines": 1
@@ -78,10 +137,22 @@
             }
           ],
           "selected_layers": [
-            { "text": "Battery:", "text_color_palette": "purple" },
-            { "variable_name": "$_BATTERY_INFO", "x": 110, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_battery.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_BATTERY_INFO",
+              "x": 110,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 16,
                 "wrap_text": false,
                 "max_lines": 1
@@ -91,13 +162,20 @@
         },
         {
           "id": "Temperature",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "text": "Temperature:", "text_color_palette": "purple" },
-            { "variable_name": "$_TEMP", "x": 180, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_temperature.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_TEMP",
+              "x": 180,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -105,10 +183,22 @@
             }
           ],
           "selected_layers": [
-            { "text": "Temperature:", "text_color_palette": "purple" },
-            { "variable_name": "$_TEMP", "x": 180, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_temperature.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_TEMP",
+              "x": 180,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -118,13 +208,20 @@
         },
         {
           "id": "Disk Space",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "text": "Free Disk Space:", "text_color_palette": "purple" },
-            { "variable_name": "$_STORAGE", "x": 215, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_disk_space.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_STORAGE",
+              "x": 215,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -132,10 +229,22 @@
             }
           ],
           "selected_layers": [
-            { "text": "Free Disk Space:", "text_color_palette": "purple" },
-            { "variable_name": "$_STORAGE", "x": 215, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_disk_space.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_STORAGE",
+              "x": 215,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -145,31 +254,60 @@
         },
         {
           "id": "wlan0cli IP",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
-            { "text": "WAN IP:", "text_color_palette": "purple" },
-            { "variable_name": "$_WLAN0CLI_IP", "x": 100, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_wlan0cli_ip.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_WLAN0CLI_IP",
+              "x": 100,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 17,
                 "wrap_text": false,
                 "max_lines": 1
               }
             },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/down.png",
+              "x": -15,
+              "y": 17,
+              "recolor_palette": "gray"
+            }
           ],
           "selected_layers": [
-            { "text": "WAN IP:", "text_color_palette": "purple" },
-            { "variable_name": "$_WLAN0CLI_IP", "x": 100, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_wlan0cli_ip.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_WLAN0CLI_IP",
+              "x": 100,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 17,
                 "wrap_text": false,
                 "max_lines": 1
               }
             },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/down.png",
+              "x": -15,
+              "y": 17,
+              "recolor_palette": "gray"
+            }
           ]
         }
       ]
@@ -179,31 +317,60 @@
       "menu_items": [
         {
           "id": "Loot",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "text": "Loot:", "text_color_palette": "purple" },
-            { "variable_name": "$_LOOT", "x": 80, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_loot.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_LOOT",
+              "x": 80,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
               }
             },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/up.png",
+              "x": -15,
+              "y": 3,
+              "recolor_palette": "gray"
+            }
           ],
           "selected_layers": [
-            { "text": "Loot:", "text_color_palette": "purple" },
-            { "variable_name": "$_LOOT", "x": 80, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_loot.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_LOOT",
+              "x": 80,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
               }
             },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/up.png",
+              "x": -15,
+              "y": 3,
+              "recolor_palette": "gray"
+            }
           ],
           "button_map": {
             "a": "select",
@@ -216,14 +383,20 @@
         },
         {
           "id": "Packages",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "text": "Packages:", "text_color_palette": "purple" },
-            { "variable_name": "$_PACKAGES", "x": 120, "string_template":
-              {
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_packages.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_PACKAGES",
+              "x": 120,
+              "string_template": {
                 "text_size": "medium",
-                "text_color_palette": "orange",
+                "text_color_palette": "soft_white",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -231,10 +404,22 @@
             }
           ],
           "selected_layers": [
-            { "text": "Packages:", "text_color_palette": "purple" },
-            { "variable_name": "$_PACKAGES", "x": 120,  "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_packages.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_PACKAGES",
+              "x": 120,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -244,13 +429,20 @@
         },
         {
           "id": "Handshakes",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "text": "Handshakes:", "text_color_palette": "purple" },
-            { "variable_name": "$_HANDSHAKES", "x": 150, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_handshakes.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_HANDSHAKES",
+              "x": 150,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "soft_white",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -258,10 +450,22 @@
             }
           ],
           "selected_layers": [
-            { "text": "Handshakes:", "text_color_palette": "purple" },
-            { "variable_name": "$_HANDSHAKES", "x": 150, "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
+            {
+              "image_path": "assets/nes/focus_310_28.png",
+              "x": -12,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_about_handshakes.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_HANDSHAKES",
+              "x": 150,
+              "string_template": {
+                "text_size": "medium",
+                "text_color_palette": "yellow",
                 "max_chars": 12,
                 "wrap_text": false,
                 "max_lines": 1
@@ -272,43 +476,4 @@
       ]
     }
   ]
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

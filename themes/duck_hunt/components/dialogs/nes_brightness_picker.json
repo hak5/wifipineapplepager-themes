@@ -1,0 +1,468 @@
+{
+  "template": {
+    "screen_name": "nes_brightness_picker",
+    "windowed_canvas": false,
+    "cache_canvases": false,
+    "background": {
+      "layers": [
+        {
+          "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/nes_brightness_picker_bg_2.png",
+          "x": 113,
+          "y": 35
+        },
+        {
+          "image_path": "assets/nes/overlays/nes_brightness_picker_bg.png",
+          "x": 34,
+          "y": 207
+        },
+        {
+          "image_path": "assets/nes/overlays/nes_brightness_picker_bg_3.png",
+          "x": 338,
+          "y": 207
+        }
+      ]
+    },
+    "pages": [
+      {
+        "page_index": 0,
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 73,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_0.png",
+                "x": 141,
+                "y": 73
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 70,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 70,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_274_25.png",
+                "x": 106,
+                "y": 69
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 73,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_0.png",
+                "x": 141,
+                "y": 73
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 70,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 70,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 97,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_1.png",
+                "x": 141,
+                "y": 97
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 94,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 94,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_274_25.png",
+                "x": 106,
+                "y": 93
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 97,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_1.png",
+                "x": 141,
+                "y": 97
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 94,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 94,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 121,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_2.png",
+                "x": 141,
+                "y": 121
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 118,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 118,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_274_25.png",
+                "x": 106,
+                "y": 117
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 121,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_2.png",
+                "x": 141,
+                "y": 121
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 118,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 118,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 145,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_3.png",
+                "x": 141,
+                "y": 145
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 142,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 142,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_274_25.png",
+                "x": 106,
+                "y": 141
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 145,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_3.png",
+                "x": 141,
+                "y": 145
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 142,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 142,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot4",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 169,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_4.png",
+                "x": 141,
+                "y": 169
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 166,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 166,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_274_25.png",
+                "x": 106,
+                "y": 165
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 113,
+                "y": 169,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/nes/pick_brightness_4.png",
+                "x": 141,
+                "y": 169
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 300,
+                "y": 166,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 301,
+                "y": 166,
+                "use_template": "option_dialog_string"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "save_cancel_menu": {
+    "screen_name": "option_picker",
+    "background": {
+      "layers": []
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Save",
+            "layers": [
+              {
+                "image_path": "assets/nes/level_save.png",
+                "x": 385,
+                "y": 80
+              },
+              {
+                "variable": "$_LIST_ITEM",
+                "_comment": "this is just a required cache busting hack"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/level_save.png",
+                "x": 385,
+                "y": 80
+              },
+              {
+                "image_path": "assets/nes/focus_76_42.png",
+                "x": 384,
+                "y": 79
+              },
+              {
+                "variable": "$_LIST_ITEM",
+                "_comment": "this is just a required cache busting hack"
+              }
+            ],
+            "target": "save",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "next",
+              "left": "select_list",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Cancel",
+            "layers": [
+              {
+                "image_path": "assets/nes/level_back.png",
+                "x": 385,
+                "y": 133
+              },
+              {
+                "variable": "$_LIST_ITEM",
+                "_comment": "this is just a required cache busting hack"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/level_back.png",
+                "x": 385,
+                "y": 133
+              },
+              {
+                "image_path": "assets/nes/focus_76_42.png",
+                "x": 384,
+                "y": 132
+              },
+              {
+                "variable": "$_LIST_ITEM",
+                "_comment": "this is just a required cache busting hack"
+              }
+            ],
+            "target": "back",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "next",
+              "left": "select_list",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Title",
+            "unselectable": true,
+            "layers": []
+          }
+        ]
+      }
+    ]
+  }
+}

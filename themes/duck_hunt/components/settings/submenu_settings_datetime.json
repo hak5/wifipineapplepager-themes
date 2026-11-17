@@ -1,6 +1,5 @@
 {
   "screen_name": "settings_datetime_submenu",
-  "status_bar": "default",
   "windowed_canvas": false,
   "cache_canvases": false,
   "button_map": {
@@ -13,13 +12,16 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
-      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "Clock", "x": 10, "y": 50,  "text_color_palette": "purple" },
-      { "text": "GPS",       "x": 10, "y": 85,  "text_color_palette": "orange" },
-      { "text": "Updates",   "x": 10, "y": 120, "text_color_palette": "orange" },
-      { "text": "Help",      "x": 10, "y": 155, "text_color_palette": "orange" },
-      { "text": "About",     "x": 10, "y": 190, "text_color_palette": "orange" }
+      {
+        "image_path": "assets/nes/game_submenu_settings_gps_advanced.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/submenu_settings_datetime_bg.png",
+        "x": 119,
+        "y": 35
+      }
     ]
   },
   "pages": [
@@ -28,81 +30,208 @@
       "menu_items": [
         {
           "id": "Date/Time",
-          "x":170,
-          "y":50,
+          "x": 119,
+          "y": 72,
           "unselectable": true,
           "layers": [
-            { "variable_name": "$_DATETIME", "string_template":
-              { "text_size": "medium",
-                "text_color_palette": "orange",
-                "max_chars": 24,
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_datetime_date_time.png",
+              "x": 27,
+              "y": 0
+            },
+            {
+              "variable_name": "$_DATETIME",
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 10,
                 "wrap_text": false,
                 "max_lines": 1
-              }
+              },
+              "x": 240,
+              "y": 2
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/submenu_settings_datetime_date_time.png",
+              "x": 27,
+              "y": 0
+            },
+            {
+              "variable_name": "$_DATETIME",
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "soft_white",
+                "max_chars": 10,
+                "wrap_text": false,
+                "max_lines": 1
+              },
+              "x": 240,
+              "y": 2
             }
           ]
         },
         {
-          "id": "Timezone",
-          "x":170,
-          "y":85,
+          "id": "24 Hour Clock",
+          "x": 119,
+          "y": 96,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Timezone", "x": 40, "text_color_palette": "orange" }
+            {
+              "variable_name": "$_CLOCK_24HR",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_24_hour_clock.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Timezone", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "variable_name": "$_CLOCK_24HR",
+              "use_template": "toggle",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_24_hour_clock.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLOCK_24HR"
+        },
+        {
+          "id": "Timezone",
+          "x": 119,
+          "y": 120,
+          "layers": [
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_timezone.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_timezone.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "option_dialog",
           "variable": "$_TIMEZONE"
         },
         {
           "id": "Year",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Year", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_year.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Year", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_year.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_number_dialog",
           "variable": "$_YEAR"
         },
         {
           "id": "Month",
-          "x":170,
-          "y":155,
+          "x": 119,
+          "y": 168,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_month.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Month", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_month.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_number_dialog",
           "variable": "$_MONTH"
-        },
-        {
-          "id": "Day",
-          "x":170,
-          "y":190,
-          "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "orange" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Day", "x": 40, "text_color_palette": "purple" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "target": "edit_number_dialog",
-          "variable": "$_DAY"
         }
       ]
     },
@@ -110,48 +239,145 @@
       "page_index": 1,
       "menu_items": [
         {
-          "id": "Hour",
-          "x":170,
-          "y":50,
+          "id": "Day",
+          "x": 119,
+          "y": 72,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "orange" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_day.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Hour", "x": 40, "text_color_palette": "purple" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_day.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_DAY"
+        },
+        {
+          "id": "Hour",
+          "x": 119,
+          "y": 96,
+          "layers": [
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_hour.png",
+              "x": 27,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_hour.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_number_dialog",
           "variable": "$_HOUR"
         },
         {
           "id": "Minute",
-          "x":170,
-          "y":85,
+          "x": 119,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Minute", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_minute.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Minute", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_minute.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_number_dialog",
           "variable": "$_MINUTE"
         },
         {
           "id": "Second",
-          "x":170,
-          "y":120,
+          "x": 119,
+          "y": 144,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Second", "x": 40, "text_color_palette": "orange" }
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_second.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Second", "x": 40, "text_color_palette": "purple" }
+            {
+              "image_path": "assets/nes/focus_350_25.png",
+              "x": -13,
+              "y": -5
+            },
+            {
+              "image_path": "assets/nes/action_target.png",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_second.png",
+              "x": 27,
+              "y": 0
+            }
           ],
           "target": "edit_number_dialog",
           "variable": "$_SECOND"
@@ -160,45 +386,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

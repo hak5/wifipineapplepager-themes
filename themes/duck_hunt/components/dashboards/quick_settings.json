@@ -1,0 +1,239 @@
+{
+  "screen_name": "quick_settings",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous_page",
+    "right": "next_page"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/nes/recon_results_list.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/nes/overlays/quick_settings_bg_2.png",
+        "x": 16,
+        "y": 4
+      },
+      {
+        "image_path": "assets/nes/overlays/quick_settings_bg.png",
+        "x": 0,
+        "y": 30
+      },
+      {
+        "image_path": "assets/nes/overlays/quick_settings_bg_3.png",
+        "x": 34,
+        "y": 207
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Brightness",
+          "x": 47,
+          "y": 59,
+          "layers": [
+            {
+              "image_path": "assets/nes/quick_sun.png",
+              "x": -4,
+              "y": -3
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_brightness.png",
+              "x": 24,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_327_29.png",
+              "x": -9,
+              "y": -6
+            },
+            {
+              "image_path": "assets/nes/quick_sun.png",
+              "x": -4,
+              "y": -3
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_brightness.png",
+              "x": 24,
+              "y": 0
+            }
+          ],
+          "target": "nes_brightness_picker",
+          "variable": "$_BRIGHTNESS"
+        },
+        {
+          "id": "Volume",
+          "x": 47,
+          "y": 93,
+          "layers": [
+            {
+              "image_path": "assets/nes/quick_sound.png",
+              "x": -3,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_volume.png",
+              "x": 24,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_327_29.png",
+              "x": -9,
+              "y": -6
+            },
+            {
+              "image_path": "assets/nes/quick_sound.png",
+              "x": -3,
+              "y": 0
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_volume.png",
+              "x": 24,
+              "y": 0
+            }
+          ],
+          "target": "nes_volume_picker",
+          "variable": "$_VOLUME"
+        },
+        {
+          "id": "Vibrate",
+          "x": 47,
+          "y": 127,
+          "layers": [
+            {
+              "image_path": "assets/nes/quick_vibrate.png",
+              "x": -3,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_vibrate.png",
+              "x": 24,
+              "y": 0
+            },
+            {
+              "variable_name": "$_VIBRATE",
+              "x": 217,
+              "use_template": "nes_onoff"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_327_29.png",
+              "x": -9,
+              "y": -6
+            },
+            {
+              "image_path": "assets/nes/quick_vibrate.png",
+              "x": -3,
+              "y": 1
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_vibrate.png",
+              "x": 24,
+              "y": 0
+            },
+            {
+              "variable_name": "$_VIBRATE",
+              "x": 217,
+              "use_template": "nes_onoff"
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_VIBRATE"
+        },
+        {
+          "id": "Client Mode",
+          "x": 47,
+          "y": 161,
+          "layers": [
+            {
+              "image_path": "assets/nes/quick_wifi.png",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_client_mode.png",
+              "x": 24,
+              "y": 0
+            },
+            {
+              "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",
+              "x": 217,
+              "use_template": "nes_onoff"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_327_29.png",
+              "x": -9,
+              "y": -6
+            },
+            {
+              "image_path": "assets/nes/quick_wifi.png",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "image_path": "assets/nes/labels/fallback_menu_client_mode.png",
+              "x": 24,
+              "y": 0
+            },
+            {
+              "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",
+              "x": 217,
+              "use_template": "nes_onoff"
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "CLIENT SETUP",
+          "x": 72,
+          "y": 75,
+          "target": "client_mode_wizard",
+          "layers": [
+            {
+              "image_path": "assets/nes/labels/quick_settings_client_setup.png",
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/nes/focus_290_29.png",
+              "x": -13,
+              "y": -4
+            },
+            {
+              "image_path": "assets/nes/labels/quick_settings_client_setup_selected.png",
+              "x": 0,
+              "y": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "status_bar": "nes_quick"
+}

@@ -1,5 +1,5 @@
 {
-  "screen_name": "lock",
+  "screen_name": "lock_screen",
   "windowed_canvas": true,
   "cache_canvases": false,
   "button_map": {
@@ -12,7 +12,11 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/lock_screen.png", "x": 0, "y": 0 }
+      {
+        "image_path": "assets/lock_screen.png",
+        "x": 0,
+        "y": 0
+      }
     ]
   },
   "pages": [
@@ -23,7 +27,13 @@
           "id": "lock_screen",
           "selected_layers": [
             {
-              "x":200, "y":110, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,              
+              "x": 200,
+              "y": 110,
+              "text_color_palette": "yellow",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
               "text": "Press 'A'\nto unlock"
             }
           ]
@@ -32,37 +42,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

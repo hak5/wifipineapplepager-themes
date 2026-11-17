@@ -1,0 +1,130 @@
+{
+  "background": {
+    "layers": []
+  },
+  "status_bar_items": {
+    "Battery": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_text.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_25.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_50.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_75.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_100.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/statusbar/dashboard_battery_charge_100.png",
+            "x": 4,
+            "y": -2
+          }
+        ]
+      }
+    },
+    "Volume": {
+      "x": 260,
+      "y": 95,
+      "layers": {
+        "mute": [
+          {
+            "image_path": "assets/nes/meter_Volume_mute.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "low": [
+          {
+            "image_path": "assets/nes/meter_Brightness_25.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "medium": [
+          {
+            "image_path": "assets/nes/meter_Volume_medium.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "high": [
+          {
+            "image_path": "assets/nes/meter_Brightness_100.png",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      }
+    },
+    "Brightness": {
+      "x": 260,
+      "y": 61,
+      "layers": {
+        "15": [
+          {
+            "image_path": "assets/nes/meter_Brightness_15.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "25": [
+          {
+            "image_path": "assets/nes/meter_Brightness_25.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "50": [
+          {
+            "image_path": "assets/nes/meter_Brightness_50.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "75": [
+          {
+            "image_path": "assets/nes/meter_Brightness_75.png",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "100": [
+          {
+            "image_path": "assets/nes/meter_Brightness_100.png",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "template": {
+    "screen_name": "duckyscript_option_picker",
+    "windowed_canvas": false,
+    "cache_canvases": true,
+    "background": {
+      "layers": [
+        {
+          "image_path": "assets/nes/game_dashboard_alerts.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/nes/overlays/duckyscript_list_picker_bg.png",
+          "x": 102,
+          "y": 16
+        },
+        {
+          "image_path": "assets/nes/overlays/client_mode_wizard_bg.png",
+          "x": 34,
+          "y": 207
+        },
+        {
+          "image_path": "assets/nes/overlays/duckyscript_list_picker_bg_3.png",
+          "x": 374,
+          "y": 207
+        },
+        {
+          "image_path": "assets/nes/overlays/duckyscript_list_picker_bg_2.png",
+          "x": 398,
+          "y": 207
+        },
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 132,
+          "y": 44,
+          "string_template": {
+            "text_size": "medium",
+            "text_color_palette": "soft_white",
+            "max_chars": 18
+          }
+        },
+        {
+          "variable_name": "$_INPUT_NAME",
+          "x": 133,
+          "y": 44,
+          "string_template": {
+            "text_size": "medium",
+            "text_color_palette": "soft_white",
+            "max_chars": 18
+          }
+        }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "x": 128,
+            "y": 82,
+            "target": "select",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 52,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 53,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 21,
+                "y": 2,
+                "use_template": "radio"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_247_28.png",
+                "x": -3,
+                "y": -2
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 52,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 53,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 21,
+                "y": 2,
+                "use_template": "selected_radio"
+              }
+            ],
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "previous_page",
+              "right": "next_page"
+            }
+          },
+          {
+            "id": "Slot1",
+            "x": 128,
+            "y": 116,
+            "target": "select",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 52,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 53,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 21,
+                "y": 2,
+                "use_template": "radio"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_247_28.png",
+                "x": -3,
+                "y": -2
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 52,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 53,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 21,
+                "y": 2,
+                "use_template": "selected_radio"
+              }
+            ],
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "previous_page",
+              "right": "next_page"
+            }
+          },
+          {
+            "id": "Slot2",
+            "x": 128,
+            "y": 150,
+            "target": "select",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 52,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 53,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 21,
+                "y": 2,
+                "use_template": "radio"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/nes/focus_247_28.png",
+                "x": -3,
+                "y": -2
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 52,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 53,
+                "y": 0,
+                "string_template": {
+                  "text_size": "medium",
+                  "text_color_palette": "soft_white",
+                  "max_chars": 15
+                }
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 21,
+                "y": 2,
+                "use_template": "selected_radio"
+              }
+            ],
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "previous_page",
+              "right": "next_page"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
