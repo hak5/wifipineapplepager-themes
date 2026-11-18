@@ -1,0 +1,100 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "black",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/wargames_bg_updated.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "Message",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/message.png", "x": 0, "y": 0 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "message"
+    },
+    {
+      "id": "pagerportal",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/pagerportal_logo2.png", "x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/pagerportal_logo.png", "x": 220, "y": 98, "recolor_palette": "black", "width": 60, "height": 60 }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "pager_portal_dashboard"
+    },
+    {
+      "id": "ALERTS",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/alerts2.png", "x": 0, "y": 0 },
+		{ "image_path": "assets/dashboard/alerts.png", "x": 225, "y": 103, "recolor_palette": "black" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/payloads2.png", "x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/payloads.png", "x": 240, "y": 98, "recolor_palette": "black" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/recon2.png", "x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/recon.png", "x": 210, "y": 110, "recolor_palette": "black" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/pineap2.png", "x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/pineap.png", "x": 225, "y": 100, "recolor_palette": "black" }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/settings2.png", "x": 0, "y": 0 },
+        { "image_path": "assets/dashboard/settings.png", "x": 240, "y": 102, "recolor_palette": "black" }
+		
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "settings_menu"
+    }
+  ]
+}

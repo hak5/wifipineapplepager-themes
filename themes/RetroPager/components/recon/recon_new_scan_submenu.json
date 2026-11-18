@@ -1,0 +1,62 @@
+{
+  "screen_name": "recon_new_scan_submenu",
+  "windowed_canvas": true,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 30, "y": 0 },
+      { "text": "Start new scan:", "x": 45, "y": 24, "text_size": "large", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 45, "end_x": 455, "start_y": 22, "end_y": 42 } }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Both",
+          "x": 222,
+          "y": 70,
+          "layers": [
+            { "text": "Both", "x": 0, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "Both", "x": 0, "text_color_palette": "yellow" }
+          ],
+          "target": "function_recon_new_scan_all"
+        },
+        {
+          "id": "WiFi",
+          "x": 222,
+          "y": 105,
+          "layers": [
+            { "text": "WiFi", "x": 0, "text_color_palette": "blue", "y": -1 }
+          ],
+          "selected_layers": [
+            { "text": "WiFi", "x": 0, "text_color_palette": "yellow", "y": -1 }
+          ],
+          "target": "function_recon_new_scan_wifi"
+        },
+        {
+          "id": "Bluetooth",
+          "x": 199,
+          "y": 140,
+          "layers": [
+            { "text": "Bluetooth", "x": -8, "text_color_palette": "blue", "y": 1 }
+          ],
+          "selected_layers": [
+            { "text": "Bluetooth", "x": -8, "text_color_palette": "yellow", "y": 1 }
+          ],
+          "target": "function_recon_new_scan_bt"
+        }
+      ]
+    }
+  ]
+}
