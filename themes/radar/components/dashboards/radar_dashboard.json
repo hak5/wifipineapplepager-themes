@@ -1,0 +1,131 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/radar_bg.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "pagerportal",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png", "x": -5, "y": -38, "recolor_palette": "disabled_light_gray" },
+        { "image_path": "assets/dashboard/pagerportal_logo.png", "x": 10, "y": -24, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": -9, "y": -43 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": -5, "y": -38, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/pagerportal_logo.png", "x": 10, "y": -24, "recolor_palette": "yellow" },
+        { "text": "PORTAL", "x": -170, "y": 55, "text_size": "large", "text_color_palette": "magenta" },
+        { "image_path": "assets/launch_payload_dialog/animation/radar1.png", "x": -200, "y": -107 },
+        { "text": "Pager Portal: Download Payloads and Themes", "x": -4, "text_color_palette": "magenta", "wrap_text": true, "max_lines": 2, "text_size": "small", "y": 54, "max_chars": 30, "line_height": 0 }
+      ],
+      "x": 227,
+      "y": 116,
+      "target": "pager_portal_dashboard"
+    },
+    {
+      "id": "ALERTS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png", "x": -4, "y": -38, "recolor_palette": "disabled_light_gray" },
+        { "image_path": "assets/dashboard/alerts.png", "x": 12, "y": -25, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": -7, "y": -44 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": -4, "y": -38, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/alerts.png", "x": 12, "y": -25, "recolor_palette": "yellow" },
+        { "text": "ALERTS", "x": -205, "y": 92, "text_size": "large", "text_color_palette": "magenta" },
+        { "image_path": "assets/launch_payload_dialog/animation/radar2.png", "x": -237, "y": -71 },
+        { "text": "Alerts: Triggered by Payloads Events", "x": -40, "text_color_palette": "magenta", "wrap_text": true, "max_lines": 3, "text_size": "small", "y": 91, "max_chars": 28, "line_height": 0 }
+      ],
+      "x": 263,
+      "y": 79,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -38, "recolor_palette": "disabled_light_gray" },
+        { "image_path": "assets/dashboard/payloads.png", "x": 16, "y": -25, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": -6, "y": -44 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -38, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/payloads.png", "x": 16, "y": -25, "recolor_palette": "yellow" },
+        { "text": "PAYLOADS", "x": -256, "y": 55, "text_size": "large", "text_color_palette": "magenta" },
+        { "image_path": "assets/launch_payload_dialog/animation/radar3.png", "x": -273, "y": -108 },
+        { "text": "Payloads: Scripts to run by Categories", "x": -76, "text_color_palette": "magenta", "wrap_text": true, "max_lines": 2, "text_size": "small", "y": 54, "max_chars": 28, "line_height": 0 }
+      ],
+      "x": 299,
+      "y": 116,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -39, "recolor_palette": "disabled_light_gray" },
+        { "image_path": "assets/dashboard/recon.png", "x": 12, "y": -21, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": -7, "y": -45 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -39, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/recon.png", "x": 12, "y": -21, "recolor_palette": "yellow" },
+        { "text": "RECON", "x": -274, "y": 91, "text_size": "large", "text_color_palette": "magenta" },
+        { "image_path": "assets/launch_payload_dialog/animation/radar4.png", "x": -308, "y": -71 },
+        { "text": "Recon: Scan the airwaves! WiFi + BT", "x": -110, "text_color_palette": "magenta", "wrap_text": true, "max_lines": 2, "text_size": "small", "y": 91, "max_chars": 28, "line_height": 0 }
+      ],
+      "x": 335,
+      "y": 80,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -37, "recolor_palette": "disabled_light_gray" },
+        { "image_path": "assets/dashboard/pineap.png", "x": 12, "y": -23, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": -6, "y": -42 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -37, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/pineap.png", "x": 12, "y": -23, "recolor_palette": "yellow" },
+        { "text": "PINEAP", "x": -318, "y": 56, "text_size": "large", "text_color_palette": "magenta" },
+        { "image_path": "assets/launch_payload_dialog/animation/radar5.png", "x": -347, "y": -107 },
+        { "text": "PineAP: Rogue AP, Evil, SSID, Access Portals", "x": -148, "text_color_palette": "magenta", "wrap_text": true, "max_lines": 2, "text_size": "small", "y": 56, "max_chars": 28, "line_height": 0 }
+      ],
+      "x": 373,
+      "y": 115,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -39, "recolor_palette": "disabled_light_gray" },
+        { "image_path": "assets/dashboard/settings.png", "x": 12, "y": -23, "recolor_palette": "green" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/highlight.png", "x": -7, "y": -45 },
+        { "image_path": "assets/dashboard/item_bg.png", "x": -3, "y": -39, "recolor_palette": "magenta" },
+        { "image_path": "assets/dashboard/settings.png", "x": 12, "y": -23, "recolor_palette": "yellow" },
+        { "text": "SETTINGS", "x": -372, "y": 91, "text_size": "large", "text_color_palette": "magenta" },
+        { "image_path": "assets/launch_payload_dialog/animation/radar6.png", "x": -384, "y": -72 },
+        { "text": "Settings: Configure this pager. Display, System, Network", "x": -185, "text_color_palette": "magenta", "wrap_text": true, "max_lines": 3, "text_size": "small", "y": 91, "max_chars": 28, "line_height": 0 }
+      ],
+      "x": 410,
+      "y": 80,
+      "target": "settings_menu"
+    }
+  ]
+}
