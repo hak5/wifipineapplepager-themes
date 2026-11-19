@@ -1,0 +1,15 @@
+{
+  "screen_name": "low_battery_alert",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/valleytech_surfaces/low_battery.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "menu_items": []
+}
