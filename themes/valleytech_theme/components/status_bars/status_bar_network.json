@@ -1,0 +1,293 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 400,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "yellow"
+    },
+    "Battery": {
+      "x": 346,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/dashboard_battery_text.png",
+            "x": 4,
+            "y": -2,
+            "recolor_palette": "white"
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_25.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_50.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_75.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_100.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charged.png",
+            "x": 4,
+            "y": -2
+          }
+        ]
+      }
+    },
+    "Volume": {
+      "x": 317,
+      "y": 5,
+      "layers": {
+        "mute": [
+          {
+            "image_path": "assets/mute.png",
+            "x": 0,
+            "y": 0,
+            "recolor_palette": "ui_off"
+          }
+        ],
+        "low": [
+          {
+            "image_path": "assets/volume_low.png",
+            "x": 0,
+            "y": 0,
+            "recolor_palette": "white"
+          }
+        ],
+        "medium": [
+          {
+            "image_path": "assets/volume_medium.png",
+            "x": 0,
+            "y": 0,
+            "recolor_palette": "white"
+          }
+        ],
+        "high": [
+          {
+            "image_path": "assets/volume_high.png",
+            "x": 0,
+            "y": 0,
+            "recolor_palette": "white"
+          }
+        ]
+      }
+    },
+    "Brightness": {
+      "x": 286,
+      "y": 5,
+      "layers": {
+        "15": [
+          {
+            "image_path": "assets/dashboard_brightness_2.png",
+            "recolor_palette": "white"
+          }
+        ],
+        "25": [
+          {
+            "image_path": "assets/dashboard_brightness_3.png",
+            "recolor_palette": "white"
+          }
+        ],
+        "50": [
+          {
+            "image_path": "assets/dashboard_brightness_5.png",
+            "recolor_palette": "white"
+          }
+        ],
+        "75": [
+          {
+            "image_path": "assets/dashboard_brightness_7.png",
+            "recolor_palette": "white"
+          }
+        ],
+        "100": [
+          {
+            "image_path": "assets/dashboard_brightness_8.png",
+            "recolor_palette": "white"
+          }
+        ]
+      }
+    },
+    "Vibrate": {
+      "x": 251,
+      "y": 5,
+      "layers": {
+        "on": [
+          {
+            "image_path": "assets/vibrate.png",
+            "x": 0,
+            "y": 0,
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "off": [
+          {
+            "image_path": "assets/vibrate.png",
+            "x": 0,
+            "y": 0,
+            "recolor_palette": "ui_off"
+          }
+        ]
+      }
+    },
+    "FrequencyIndicators": {
+      "x": 216,
+      "y": 5,
+      "layers": {
+        "2": [
+          {
+            "image_path": "assets/ghz_2.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "25": [
+          {
+            "image_path": "assets/ghz_25.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "256": [
+          {
+            "image_path": "assets/ghz_256.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "26": [
+          {
+            "image_path": "assets/ghz_26.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "56": [
+          {
+            "image_path": "assets/ghz_56.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "5": [
+          {
+            "image_path": "assets/ghz_5.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "6": [
+          {
+            "image_path": "assets/ghz_6.png",
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "off": [
+          {
+            "image_path": "assets/ghz_off.png",
+            "recolor_palette": "ui_off"
+          }
+        ]
+      }
+    },
+    "BTScan": {
+      "x": 183,
+      "y": 5,
+      "layers": {
+        "off": [
+          {
+            "image_path": "assets/firmware20/statusbar/bt_scan.png",
+            "recolor_palette": "gray",
+            "x": 1,
+            "y": 4
+          }
+        ],
+        "both": [
+          {
+            "image_path": "assets/firmware20/statusbar/bt_mode_both.png",
+            "recolor_palette": "cyan"
+          }
+        ],
+        "both_active": [
+          {
+            "image_path": "assets/firmware20/statusbar/bt_mode_both.png",
+            "recolor_palette": "orange"
+          }
+        ],
+        "classic": [
+          {
+            "image_path": "assets/firmware20/statusbar/bt_mode_classic.png",
+            "recolor_palette": "cyan"
+          }
+        ],
+        "le": [
+          {
+            "image_path": "assets/firmware20/statusbar/bt_mode_le.png",
+            "recolor_palette": "cyan"
+          }
+        ],
+        "le_active": [
+          {
+            "image_path": "assets/firmware20/statusbar/bt_mode_le.png",
+            "recolor_palette": "orange"
+          }
+        ]
+      }
+    },
+    "WifiClient": {
+      "x": 150,
+      "y": 3,
+      "layers": {
+        "disabled": [
+          {
+            "image_path": "assets/firmware20/statusbar/wifi_off.png",
+            "x": 0,
+            "y": 2
+          }
+        ],
+        "connected": [
+          {
+            "image_path": "assets/firmware20/statusbar/wifi_on_connected.png",
+            "x": 0,
+            "y": 2,
+            "recolor_palette": "ui_active"
+          }
+        ],
+        "disconnected": [
+          {
+            "image_path": "assets/firmware20/statusbar/wifi_on_disconnected.png",
+            "x": 0,
+            "y": 2,
+            "recolor_palette": "ui_off"
+          }
+        ]
+      }
+    }
+  }
+}

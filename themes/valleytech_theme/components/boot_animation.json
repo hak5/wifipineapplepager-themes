@@ -1,0 +1,26 @@
+{
+  "animation": {
+    "frames": [
+      {
+        "image_path": "assets/valleytech_surfaces/boot_1.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/valleytech_surfaces/boot_2.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/valleytech_surfaces/boot_3.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/valleytech_surfaces/boot_4.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  }
+}

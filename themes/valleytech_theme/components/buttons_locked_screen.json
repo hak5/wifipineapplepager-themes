@@ -1,0 +1,50 @@
+{
+  "screen_name": "front_buttons_locked",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "background_color": {
+      "r": 8,
+      "g": 9,
+      "b": 11
+    },
+    "layers": [
+      {
+        "image_path": "assets/valleytech_surfaces/brand_base.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "text": "DOUBLE TAP POWER TO UNLOCK",
+        "text_size": "medium",
+        "text_color_palette": "white",
+        "center_text_within": {
+          "draw_bounds": false,
+          "start_x": 20,
+          "end_x": 460,
+          "start_y": 166,
+          "end_y": 190
+        }
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "lock_screen",
+          "selected_layers": []
+        }
+      ]
+    }
+  ]
+}

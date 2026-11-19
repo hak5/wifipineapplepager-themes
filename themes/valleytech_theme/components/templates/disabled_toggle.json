@@ -1,0 +1,18 @@
+{
+  "enabled": [
+    {
+      "image_path": "assets/fieldkit/toggle_on_crisp.png",
+      "x": 0,
+      "y": 4,
+      "recolor_palette": "disabled_light_gray"
+    }
+  ],
+  "disabled": [
+    {
+      "image_path": "assets/fieldkit/toggle_off_crisp.png",
+      "x": 0,
+      "y": 4,
+      "recolor_palette": "disabled_light_gray"
+    }
+  ]
+}

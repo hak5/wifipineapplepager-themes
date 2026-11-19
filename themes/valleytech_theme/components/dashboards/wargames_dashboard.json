@@ -1,0 +1,420 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "valleytech",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "background_color": {
+      "r": 8,
+      "g": 9,
+      "b": 11
+    },
+    "layers": [
+      {
+        "image_path": "assets/valleytech_grid/home_background.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/valleytech_grid/vts_header.png",
+        "x": 7,
+        "y": 1
+      },
+      {
+        "text": "VALLEYTECH",
+        "x": 35,
+        "y": 4,
+        "text_size": "medium",
+        "text_color_palette": "field_text"
+      }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "WARDRIVING",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/bwm_wardrive.png",
+          "x": 53,
+          "y": 4
+        },
+        {
+          "text": "WARDRIVING",
+          "text_size": "medium",
+          "text_color_palette": "field_text",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 4,
+            "end_x": 156,
+            "start_y": 86,
+            "end_y": 116
+          }
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/bwm_wardrive.png",
+          "x": 53,
+          "y": 4
+        },
+        {
+          "text": "WARDRIVING",
+          "text_size": "medium",
+          "text_color_palette": "field_gold",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 4,
+            "end_x": 156,
+            "start_y": 86,
+            "end_y": 116
+          }
+        }
+      ],
+      "x": 4,
+      "y": 30,
+      "target": "wardriving_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto RECON",
+        "down": "goto RECON",
+        "left": "goto PAYLOADS",
+        "right": "goto ALERTS"
+      }
+    },
+    {
+      "id": "ALERTS",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_alerts.png",
+          "x": 52,
+          "y": 6
+        },
+        {
+          "text": "ALERTS",
+          "text_size": "medium",
+          "text_color_palette": "field_text",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 164,
+            "end_x": 316,
+            "start_y": 86,
+            "end_y": 116
+          }
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_alerts.png",
+          "x": 52,
+          "y": 6,
+          "recolor_palette": "field_gold"
+        },
+        {
+          "text": "ALERTS",
+          "text_size": "medium",
+          "text_color_palette": "field_gold",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 164,
+            "end_x": 316,
+            "start_y": 86,
+            "end_y": 116
+          }
+        }
+      ],
+      "x": 164,
+      "y": 30,
+      "target": "alerts_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto PINEAP",
+        "down": "goto PINEAP",
+        "left": "goto WARDRIVING",
+        "right": "goto PAYLOADS"
+      }
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_payloads.png",
+          "x": 52,
+          "y": 6
+        },
+        {
+          "text": "PAYLOADS",
+          "text_size": "medium",
+          "text_color_palette": "field_text",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 324,
+            "end_x": 476,
+            "start_y": 86,
+            "end_y": 116
+          }
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_payloads.png",
+          "x": 52,
+          "y": 6,
+          "recolor_palette": "field_gold"
+        },
+        {
+          "text": "PAYLOADS",
+          "text_size": "medium",
+          "text_color_palette": "field_gold",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 324,
+            "end_x": 476,
+            "start_y": 86,
+            "end_y": 116
+          }
+        }
+      ],
+      "x": 324,
+      "y": 30,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto SETTINGS",
+        "down": "goto SETTINGS",
+        "left": "goto ALERTS",
+        "right": "goto WARDRIVING"
+      }
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_recon.png",
+          "x": 52,
+          "y": 6
+        },
+        {
+          "text": "RECON",
+          "text_size": "medium",
+          "text_color_palette": "field_text",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 4,
+            "end_x": 156,
+            "start_y": 180,
+            "end_y": 210
+          }
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_recon.png",
+          "x": 52,
+          "y": 6,
+          "recolor_palette": "field_gold"
+        },
+        {
+          "text": "RECON",
+          "text_size": "medium",
+          "text_color_palette": "field_gold",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 4,
+            "end_x": 156,
+            "start_y": 180,
+            "end_y": 210
+          }
+        }
+      ],
+      "x": 4,
+      "y": 124,
+      "target": "recon_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto WARDRIVING",
+        "down": "goto WARDRIVING",
+        "left": "goto SETTINGS",
+        "right": "goto PINEAP"
+      }
+    },
+    {
+      "id": "PINEAP",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_pineap.png",
+          "x": 52,
+          "y": 6
+        },
+        {
+          "text": "PINEAP",
+          "text_size": "medium",
+          "text_color_palette": "field_text",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 164,
+            "end_x": 316,
+            "start_y": 180,
+            "end_y": 210
+          }
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_pineap.png",
+          "x": 52,
+          "y": 6,
+          "recolor_palette": "field_gold"
+        },
+        {
+          "text": "PINEAP",
+          "text_size": "medium",
+          "text_color_palette": "field_gold",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 164,
+            "end_x": 316,
+            "start_y": 180,
+            "end_y": 210
+          }
+        }
+      ],
+      "x": 164,
+      "y": 124,
+      "target": "pineap_menu",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto ALERTS",
+        "down": "goto ALERTS",
+        "left": "goto RECON",
+        "right": "goto SETTINGS"
+      }
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_settings.png",
+          "x": 52,
+          "y": 6
+        },
+        {
+          "text": "SETTINGS",
+          "text_size": "medium",
+          "text_color_palette": "field_text",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 324,
+            "end_x": 476,
+            "start_y": 180,
+            "end_y": 210
+          }
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "image_path": "assets/valleytech_grid/icon_settings.png",
+          "x": 52,
+          "y": 6,
+          "recolor_palette": "field_gold"
+        },
+        {
+          "text": "SETTINGS",
+          "text_size": "medium",
+          "text_color_palette": "field_gold",
+          "center_text_within": {
+            "draw_bounds": false,
+            "start_x": 324,
+            "end_x": 476,
+            "start_y": 180,
+            "end_y": 210
+          }
+        }
+      ],
+      "x": 324,
+      "y": 124,
+      "target": "settings_menu",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto PAYLOADS",
+        "down": "goto PAYLOADS",
+        "left": "goto PINEAP",
+        "right": "goto RECON"
+      }
+    }
+  ]
+}

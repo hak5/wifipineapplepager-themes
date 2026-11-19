@@ -1,0 +1,14 @@
+{
+  "text_size": "small",
+  "text_color_palette": "white",
+  "max_chars": 48,
+  "wrap_text": true,
+  "max_lines": 2,
+  "center_text_within": {
+    "draw_bounds": false,
+    "start_x": 20,
+    "end_x": 460,
+    "start_y": 155,
+    "end_y": 197
+  }
+}

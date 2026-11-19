@@ -1,0 +1,1703 @@
+{
+  "screen_name": "wardriving_dashboard",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "background_color": {
+      "r": 8,
+      "g": 9,
+      "b": 11
+    },
+    "layers": [
+      {
+        "image_path": "assets/valleytech_grid/wardrive_background.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "text": "WARDRIVING",
+        "x": 5,
+        "y": 3,
+        "text_size": "medium",
+        "text_color_palette": "field_text"
+      },
+      {
+        "text": "CAPTURE",
+        "x": 7,
+        "y": 44,
+        "text_size": "small",
+        "text_color_palette": "field_muted"
+      },
+      {
+        "text": "RADIO",
+        "x": 127,
+        "y": 44,
+        "text_size": "small",
+        "text_color_palette": "field_muted"
+      },
+      {
+        "text": "GPS",
+        "x": 247,
+        "y": 44,
+        "text_size": "small",
+        "text_color_palette": "field_muted"
+      },
+      {
+        "text": "TOOLS",
+        "x": 367,
+        "y": 44,
+        "text_size": "small",
+        "text_color_palette": "field_muted"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "field_telemetry",
+          "unselectable": true,
+          "x": 0,
+          "y": 0,
+          "layers": [
+            {
+              "text": "LAT",
+              "x": 4,
+              "y": 28,
+              "text_size": "small",
+              "text_color_palette": "field_muted"
+            },
+            {
+              "variable_name": "$_GPS_LAT",
+              "x": 34,
+              "y": 28,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "field_text",
+                "max_chars": 13
+              }
+            },
+            {
+              "text": "LON",
+              "x": 157,
+              "y": 28,
+              "text_size": "small",
+              "text_color_palette": "field_muted"
+            },
+            {
+              "variable_name": "$_GPS_LON",
+              "x": 187,
+              "y": 28,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "field_text",
+                "max_chars": 13
+              }
+            },
+            {
+              "text": "FIX",
+              "x": 310,
+              "y": 28,
+              "text_size": "small",
+              "text_color_palette": "field_muted"
+            },
+            {
+              "variable_name": "$_GPS_READINESS",
+              "x": 340,
+              "y": 28,
+              "string_template": {
+                "text_size": "small",
+                "text_color_palette": "field_gold",
+                "max_chars": 17
+              }
+            }
+          ]
+        },
+        {
+          "id": "field_wigle",
+          "target": "inline_toggle",
+          "variable": "$_WIGLE_MODE_ENABLED",
+          "x": 2,
+          "y": 61,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_WIGLE_MODE_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "WiGLE",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_WIGLE_MODE_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "WiGLE",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "WIGLE CSV LOGGING",
+              "x": 168,
+              "y": -55,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_upload_archive",
+            "down": "goto field_pcap",
+            "left": "goto field_recon",
+            "right": "goto field_band24"
+          }
+        },
+        {
+          "id": "field_band24",
+          "target": "inline_toggle",
+          "variable": "$_2.4Ghz_ENABLED",
+          "x": 122,
+          "y": 61,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_2.4Ghz_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "2.4 GHz",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_2.4Ghz_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "2.4 GHz",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "2.4 GHZ BAND",
+              "x": 48,
+              "y": -55,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_upload_archive",
+            "down": "goto field_band5",
+            "left": "goto field_wigle",
+            "right": "goto field_gps_native"
+          }
+        },
+        {
+          "id": "field_gps_native",
+          "target": "inline_toggle",
+          "variable": "$_GPS_NATIVE",
+          "x": 242,
+          "y": 61,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_NATIVE",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "variable_name": "$_GPS_NATIVE",
+              "x": 31,
+              "y": 3,
+              "toggle_template": {
+                "enabled": [
+                  {
+                    "text": "NATIVE",
+                    "x": 0,
+                    "y": 0,
+                    "text_size": "small",
+                    "text_color_palette": "field_text"
+                  }
+                ],
+                "disabled": [
+                  {
+                    "text": "GPSd",
+                    "x": 0,
+                    "y": 0,
+                    "text_size": "small",
+                    "text_color_palette": "field_text"
+                  }
+                ]
+              }
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_GPS_NATIVE",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "variable_name": "$_GPS_NATIVE",
+              "x": 31,
+              "y": 3,
+              "toggle_template": {
+                "enabled": [
+                  {
+                    "text": "NATIVE",
+                    "x": 0,
+                    "y": 0,
+                    "text_size": "small",
+                    "text_color_palette": "field_gold"
+                  }
+                ],
+                "disabled": [
+                  {
+                    "text": "GPSd",
+                    "x": 0,
+                    "y": 0,
+                    "text_size": "small",
+                    "text_color_palette": "field_gold"
+                  }
+                ]
+              }
+            },
+            {
+              "text": "GPS SERVICE",
+              "x": -72,
+              "y": -55,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_upload_archive",
+            "down": "goto field_gps_device",
+            "left": "goto field_band24",
+            "right": "goto field_recon"
+          }
+        },
+        {
+          "id": "field_recon",
+          "target": "recon_dashboard",
+          "x": 362,
+          "y": 61,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "RECON",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "RECON",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "OPEN RECON",
+              "x": -192,
+              "y": -55,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_upload_archive",
+            "down": "goto field_scan_options",
+            "left": "goto field_gps_native",
+            "right": "goto field_wigle"
+          }
+        },
+        {
+          "id": "field_pcap",
+          "target": "inline_toggle",
+          "variable": "$_RECORD_PCAP",
+          "x": 2,
+          "y": 83,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECORD_PCAP",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "PCAP",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECORD_PCAP",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "PCAP",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "RECORD PCAP",
+              "x": 168,
+              "y": -77,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_wigle",
+            "down": "goto field_wifi_db",
+            "left": "goto field_scan_options",
+            "right": "goto field_band5"
+          }
+        },
+        {
+          "id": "field_band5",
+          "target": "inline_toggle",
+          "variable": "$_5Ghz_ENABLED",
+          "x": 122,
+          "y": 83,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_5Ghz_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "5 GHz",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_5Ghz_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "5 GHz",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "5 GHZ BAND",
+              "x": 48,
+              "y": -77,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_band24",
+            "down": "goto field_band6",
+            "left": "goto field_pcap",
+            "right": "goto field_gps_device"
+          }
+        },
+        {
+          "id": "field_gps_device",
+          "target": "option_dialog",
+          "variable": "$_GPS_DEVICE",
+          "x": 242,
+          "y": 83,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "GPS PORT",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "GPS PORT",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "GPS SERIAL DEVICE",
+              "x": -72,
+              "y": -77,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_gps_native",
+            "down": "goto field_gps_baud",
+            "left": "goto field_band5",
+            "right": "goto field_scan_options"
+          }
+        },
+        {
+          "id": "field_scan_options",
+          "target": "recon_settings",
+          "x": 362,
+          "y": 83,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "SCAN OPTS",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "SCAN OPTS",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "RECON SCAN OPTIONS",
+              "x": -192,
+              "y": -77,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_recon",
+            "down": "goto field_new_scan",
+            "left": "goto field_gps_device",
+            "right": "goto field_pcap"
+          }
+        },
+        {
+          "id": "field_wifi_db",
+          "target": "inline_toggle",
+          "variable": "$_PERSIST_RECON_DB",
+          "x": 2,
+          "y": 105,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_PERSIST_RECON_DB",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "WI-FI DB",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_PERSIST_RECON_DB",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "WI-FI DB",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "PERSIST WI-FI DATABASE",
+              "x": 168,
+              "y": -99,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_pcap",
+            "down": "goto field_bt_db",
+            "left": "goto field_new_scan",
+            "right": "goto field_band6"
+          }
+        },
+        {
+          "id": "field_band6",
+          "target": "inline_toggle",
+          "variable": "$_6Ghz_ENABLED",
+          "x": 122,
+          "y": 105,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_6Ghz_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "6 GHz",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_6Ghz_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "6 GHz",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "6 GHZ BAND",
+              "x": 48,
+              "y": -99,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_band5",
+            "down": "goto field_handshakes",
+            "left": "goto field_wifi_db",
+            "right": "goto field_gps_baud"
+          }
+        },
+        {
+          "id": "field_gps_baud",
+          "target": "option_dialog",
+          "variable": "$_GPS_BAUD",
+          "x": 242,
+          "y": 105,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "GPSd BAUD",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "GPSd BAUD",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "GPSd BAUD RATE",
+              "x": -72,
+              "y": -99,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_gps_device",
+            "down": "goto field_gps_restart",
+            "left": "goto field_band6",
+            "right": "goto field_new_scan"
+          }
+        },
+        {
+          "id": "field_new_scan",
+          "target": "recon_new_scan_submenu",
+          "x": 362,
+          "y": 105,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "NEW SCAN",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "NEW SCAN",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "START A NEW RECON SCAN",
+              "x": -192,
+              "y": -99,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_scan_options",
+            "down": "goto field_audio",
+            "left": "goto field_gps_baud",
+            "right": "goto field_wifi_db"
+          }
+        },
+        {
+          "id": "field_bt_db",
+          "target": "inline_toggle",
+          "variable": "$_BT_PERSIST_DB",
+          "x": 2,
+          "y": 127,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_BT_PERSIST_DB",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "BT DB",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_BT_PERSIST_DB",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "BT DB",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "PERSIST BLUETOOTH DATABASE",
+              "x": 168,
+              "y": -121,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_wifi_db",
+            "down": "goto field_live",
+            "left": "goto field_audio",
+            "right": "goto field_handshakes"
+          }
+        },
+        {
+          "id": "field_handshakes",
+          "target": "inline_toggle",
+          "variable": "$_PINEAP_COLLECT_HANDSHAKES",
+          "x": 122,
+          "y": 127,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_PINEAP_COLLECT_HANDSHAKES",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "HANDSHAKE",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_PINEAP_COLLECT_HANDSHAKES",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "HANDSHAKE",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "COLLECT HANDSHAKES",
+              "x": 48,
+              "y": -121,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_band6",
+            "down": "goto field_bt_options",
+            "left": "goto field_bt_db",
+            "right": "goto field_gps_restart"
+          }
+        },
+        {
+          "id": "field_gps_restart",
+          "target": "function_restart_gpsd",
+          "x": 242,
+          "y": 127,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "GPSd RST",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "GPSd RST",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "RESTART GPSd SERVICE",
+              "x": -72,
+              "y": -121,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_gps_baud",
+            "down": "goto field_gps_advanced",
+            "left": "goto field_handshakes",
+            "right": "goto field_audio"
+          }
+        },
+        {
+          "id": "field_audio",
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_ENABLED",
+          "x": 362,
+          "y": 127,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_AUDIO_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "AUDIO",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_AUDIO_ENABLED",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "AUDIO",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "RECON AUDIO",
+              "x": -192,
+              "y": -121,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_new_scan",
+            "down": "goto field_audio_bg",
+            "left": "goto field_gps_restart",
+            "right": "goto field_bt_db"
+          }
+        },
+        {
+          "id": "field_live",
+          "target": "inline_toggle",
+          "variable": "$_RECON_LIVE_CHANNELS",
+          "x": 2,
+          "y": 149,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_LIVE_CHANNELS",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "LIVE CHAN",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_LIVE_CHANNELS",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "LIVE CHAN",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "LIVE CHANNEL UPDATES",
+              "x": 168,
+              "y": -143,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_bt_db",
+            "down": "goto field_awake",
+            "left": "goto field_audio_bg",
+            "right": "goto field_bt_options"
+          }
+        },
+        {
+          "id": "field_bt_options",
+          "target": "settings_bluetooth_submenu",
+          "x": 122,
+          "y": 149,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "BLUETOOTH",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "BLUETOOTH",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "BLUETOOTH SETTINGS",
+              "x": 48,
+              "y": -143,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_handshakes",
+            "down": "goto field_channels",
+            "left": "goto field_live",
+            "right": "goto field_gps_advanced"
+          }
+        },
+        {
+          "id": "field_gps_advanced",
+          "target": "settings_gps_advanced",
+          "x": 242,
+          "y": 149,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "GPS OPTS",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "GPS OPTS",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "ADVANCED GPS OPTIONS",
+              "x": -72,
+              "y": -143,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_gps_restart",
+            "down": "goto field_gps",
+            "left": "goto field_bt_options",
+            "right": "goto field_audio_bg"
+          }
+        },
+        {
+          "id": "field_audio_bg",
+          "target": "inline_toggle",
+          "variable": "$_RECON_AUDIO_BACKGROUND",
+          "x": 362,
+          "y": 149,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_AUDIO_BACKGROUND",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "BG AUDIO",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_AUDIO_BACKGROUND",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "BG AUDIO",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "BACKGROUND RECON AUDIO",
+              "x": -192,
+              "y": -143,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_audio",
+            "down": "goto field_return",
+            "left": "goto field_gps_advanced",
+            "right": "goto field_live"
+          }
+        },
+        {
+          "id": "field_awake",
+          "target": "inline_toggle",
+          "variable": "$_RECON_KEEP_SCREEN_AWAKE",
+          "x": 2,
+          "y": 171,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_KEEP_SCREEN_AWAKE",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "RECON AWK",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "variable_name": "$_RECON_KEEP_SCREEN_AWAKE",
+              "use_template": "toggle",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "text": "RECON AWK",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "KEEP RECON SCREEN AWAKE",
+              "x": 168,
+              "y": -165,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_live",
+            "down": "goto field_upload_archive",
+            "left": "goto field_return",
+            "right": "goto field_channels"
+          }
+        },
+        {
+          "id": "field_channels",
+          "target": "recon_band_settings",
+          "x": 122,
+          "y": 171,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "BAND/CHAN",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "BAND/CHAN",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "BANDS AND CHANNELS",
+              "x": 48,
+              "y": -165,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_bt_options",
+            "down": "goto field_upload_archive",
+            "left": "goto field_awake",
+            "right": "goto field_gps"
+          }
+        },
+        {
+          "id": "field_gps",
+          "target": "settings_gps_submenu",
+          "x": 242,
+          "y": 171,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "GPS STATE",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "GPS STATE",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "GPS STATUS AND COORDINATES",
+              "x": -72,
+              "y": -165,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_gps_advanced",
+            "down": "goto field_upload_archive",
+            "left": "goto field_channels",
+            "right": "goto field_return"
+          }
+        },
+        {
+          "id": "field_return",
+          "target": "back",
+          "x": 362,
+          "y": 171,
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_text"
+            },
+            {
+              "text": "BACK",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/control_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/action_arrow.png",
+              "x": 9,
+              "y": 4,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "BACK",
+              "x": 31,
+              "y": 3,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "RETURN TO PREVIOUS SCREEN",
+              "x": -192,
+              "y": -165,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_audio_bg",
+            "down": "goto field_upload_archive",
+            "left": "goto field_gps",
+            "right": "goto field_awake"
+          }
+        },
+        {
+          "id": "field_upload_archive",
+          "x": 2,
+          "y": 196,
+          "target": "execute_payload_wigle_upload",
+          "layers": [
+            {
+              "image_path": "assets/valleytech_grid/upload_idle.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/upload_arrow.png",
+              "x": 11,
+              "y": 3
+            },
+            {
+              "text": "UPLOAD & ARCHIVE",
+              "x": 37,
+              "y": 4,
+              "text_size": "small",
+              "text_color_palette": "field_text"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_grid/upload_selected.png",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "image_path": "assets/valleytech_grid/upload_arrow.png",
+              "x": 11,
+              "y": 3,
+              "recolor_palette": "field_gold"
+            },
+            {
+              "text": "UPLOAD & ARCHIVE",
+              "x": 37,
+              "y": 4,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            },
+            {
+              "text": "WIGLE LOG UPLOAD / ARCHIVE",
+              "x": 168,
+              "y": -190,
+              "text_size": "small",
+              "text_color_palette": "field_gold"
+            }
+          ],
+          "button_map": {
+            "a": "select",
+            "b": "back",
+            "up": "goto field_awake",
+            "down": "goto field_wigle",
+            "left": "goto field_return",
+            "right": "goto field_wigle"
+          }
+        }
+      ]
+    }
+  ]
+}
