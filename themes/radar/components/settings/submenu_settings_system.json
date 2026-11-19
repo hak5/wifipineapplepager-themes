@@ -1,8 +1,8 @@
 {
-  "screen_name": "settings_general_submenu",
+  "screen_name": "settings_system_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -15,11 +15,13 @@
     "layers": [
       { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "General",  "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Display",  "x": 10, "y": 85,  "text_color_palette": "gray" },
+      { "text": "General", "x": 10, "y": 50, "text_color_palette": "gray" },
+      { "text": "Display", "x": 10, "y": 85, "text_color_palette": "gray" },
       { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" },
-      { "text": "Network",  "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "System",   "x": 10, "y": 190, "text_color_palette": "yellow" }
+      { "text": "Network", "x": 10, "y": 155, "text_color_palette": "gray" },
+      { "text": "System", "x": 10, "y": 190, "text_color_palette": "yellow" },
+      { "image_path": "assets/help.png", "x": 447, "y": 27, "recolor_palette": "gray" },
+      { "text": ">", "x": 461, "y": 27, "text_size": "small", "text_color_palette": "gray" }
     ]
   },
   "pages": [
@@ -28,80 +30,93 @@
       "menu_items": [
         {
           "id": "Virtual Pager",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "variable_name":  "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
             { "text": "Virtual Pager", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_VIRTUAL_PAGER_ENABLED", "use_template": "toggle" },
             { "text": "Virtual Pager", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
-          "variable": "$_VIRTUAL_PAGER_ENABLED"
+          "variable": "$_VIRTUAL_PAGER_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Virtual Pager"
+          }
+        },
+        {
+          "id": "Client Access",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "use_template": "toggle" },
+            { "text": "Client Access", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_CLIENT_ACCESS_ENABLED", "use_template": "toggle" },
+            { "text": "Client Access", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_CLIENT_ACCESS_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Client Access"
+          }
         },
         {
           "id": "Root Password",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Root Password", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Root Password", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_SYSTEM_PASSWORD"
+          "variable": "$_SYSTEM_PASSWORD",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Root Password"
+          }
         },
         {
           "id": "SSH",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "variable_name":  "$_SSH_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_SSH_ENABLED", "use_template": "toggle" },
             { "text": "SSH", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_SSH_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_SSH_ENABLED", "use_template": "toggle" },
             { "text": "SSH", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
-          "variable": "$_SSH_ENABLED"
+          "variable": "$_SSH_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained SSH"
+          }
         },
         {
           "id": "PIN Code",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 190,
           "layers": [
-            { "variable_name":  "$_PIN_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_PIN_ENABLED", "use_template": "toggle" },
             { "text": "PIN Code", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_PIN_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_PIN_ENABLED", "use_template": "toggle" },
             { "text": "PIN Code", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
-          "variable": "$_PIN_ENABLED"
-        },
-        {
-          "id": "PIN Setup",
-          "x":170,
-          "y":190,
-          "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "PIN Setup", "x": 40, "text_color_palette": "blue" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "PIN Setup", "x": 40, "text_color_palette": "yellow" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
-          ],
-          "target": "edit_number_dialog",
-          "variable": "$_SYSTEM_PIN"
+          "variable": "$_PIN_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained PIN Code"
+          }
         }
       ]
     },
@@ -109,35 +124,61 @@
       "page_index": 1,
       "menu_items": [
         {
-          "id": "Network Time (NTP)",
-          "x":170,
-          "y":50,
+          "id": "PIN Setup",
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "variable_name":  "$_NTP_ENABLED", "use_template": "toggle" },
-            { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "blue" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "PIN Setup", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_NTP_ENABLED", "use_template": "toggle" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
+            { "text": "PIN Setup", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN",
+          "button_map": {
+            "right": "target settings_system_submenu_explained PIN Setup"
+          }
+        },
+        {
+          "id": "Network Time (NTP)",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_NTP_ENABLED", "use_template": "toggle" },
+            { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_NTP_ENABLED", "use_template": "toggle" },
             { "text": "Network Time (NTP)", "x": 40, "text_color_palette": "yellow" },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
           ],
           "target": "inline_toggle",
-          "variable": "$_NTP_ENABLED"
+          "variable": "$_NTP_ENABLED",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Network Time (NTP)"
+          }
         },
         {
           "id": "Factory Reset",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/warning.png" },
+            { "image_path": "assets/warning.png", "x": 5, "y": 5 },
             { "text": "Factory Reset", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/warning.png" },
+            { "image_path": "assets/warning.png", "x": 5, "y": 5 },
             { "text": "Factory Reset", "x": 40, "text_color_palette": "yellow" }
           ],
-          "target": "function_factory_reset"
+          "target": "function_factory_reset",
+          "button_map": {
+            "right": "target settings_system_submenu_explained Factory Reset"
+          }
         }
       ]
     }

@@ -1,0 +1,57 @@
+{
+  "screen_name": "bt_recon_selected_device",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "noop",
+    "down": "noop",
+    "left": "back",
+    "right": "bt_recon_advertising_data"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Bluetooth Device", "x": 5, "y": 0, "text_size": "large", "text_color_palette": "blue" },
+      { "x": 15, "y": 33, "variable_name": "$_BT_SELECTED_TITLE", "string_template": { "text_size": "medium", "text_color_palette": "green", "max_chars": 34 } },
+      { "x": 19, "y": 59, "variable_name": "$_BT_SELECTED_MAC", "string_template": { "text_size": "small", "text_color_palette": "green" } },
+      { "x": 190, "y": 59, "variable_name": "$_BT_SELECTED_ADDR_KIND", "string_template": { "text_size": "small", "text_color_palette": "medium_gray", "max_chars": 30 } },
+      { "x": 17, "y": 78, "text": "Type:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 78, "variable_name": "$_BT_SELECTED_TYPE_LONG", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 36 } },
+      { "x": 17, "y": 96, "text": "Signal:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 96, "variable_name": "$_BT_SELECTED_SIGNAL_SUMMARY", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 36 } },
+      { "x": 17, "y": 114, "text": "Vendor:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 114, "variable_name": "$_BT_SELECTED_VENDOR", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 36 } },
+      { "x": 17, "y": 132, "text": "Class:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 132, "variable_name": "$_BT_SELECTED_CLASS", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 36 } },
+      { "x": 17, "y": 150, "text": "Seen:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 150, "variable_name": "$_BT_SELECTED_SEEN", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 36 } },
+      { "x": 17, "y": 168, "text": "Packets:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 168, "variable_name": "$_BT_SELECTED_PACKETS", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 10 } },
+      { "x": 250, "y": 168, "text": "Connectable:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 370, "y": 168, "variable_name": "$_BT_SELECTED_CONNECTABLE", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 4 } }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "advertising_data",
+          "x": 230,
+          "y": 194,
+          "layers": [
+            { "text": "> Advertising data", "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "text": "View Advertising data", "text_color_palette": "yellow", "x": -110, "y": -2 },
+            { "image_path": "assets/menu.png", "x": -140, "y": 4, "recolor_palette": "yellow" }
+          ],
+          "target": "bt_recon_advertising_data"
+        }
+      ]
+    }
+  ]
+}
