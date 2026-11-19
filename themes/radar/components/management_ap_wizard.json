@@ -1,7 +1,6 @@
 {
   "screen_name": "management_ap_wizard",
-  "windowed_canvas": true,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -12,7 +11,7 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+      { "image_path": "assets/alert_dialog_bg_term_blue.png", "x": 0, "y": 0 }
     ]
   },
   "pages": [
@@ -31,11 +30,11 @@
           "x": 140,
           "y": 70,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
@@ -46,11 +45,11 @@
           "x": 140,
           "y": 105,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Encryption Type", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Encryption Type", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
@@ -61,11 +60,11 @@
           "x": 140,
           "y": 140,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Passphrase", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Passphrase", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",

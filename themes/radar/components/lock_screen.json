@@ -1,6 +1,5 @@
 {
-  "screen_name": "lock",
-  "windowed_canvas": true,
+  "screen_name": "lock_screen",
   "cache_canvases": false,
   "button_map": {
     "a": "select",
@@ -12,7 +11,8 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/lock_screen.png", "x": 0, "y": 0 }
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/Lock.png", "x": 0, "y": 0 }
     ]
   },
   "pages": [
@@ -22,47 +22,10 @@
         {
           "id": "lock_screen",
           "selected_layers": [
-            {
-              "x":200, "y":110, "text_color_palette": "black", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10,              
-              "text": "Press 'A'\nto unlock"
-            }
+            { "x": 200, "y": 128, "text_color_palette": "soft_white", "text_size": "small", "max_chars": 42, "wrap_text": true, "max_lines": 10, "text": "Press 'A'\nto unlock" }
           ]
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

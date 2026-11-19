@@ -7,17 +7,22 @@
       "id": "spinner",
       "animation_interval": 0.400,
       "animation": [
-        { "image_path": "assets/spinner/spinner1.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner2.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner3.png","x": 140, "y": 40 },
-        { "image_path": "assets/spinner/spinner4.png","x": 140, "y": 40 }
-      ]
-    }, {
+        { "image_path": "assets/spinner/spinner1.png", "x": 184, "y": 42 },
+        { "image_path": "assets/spinner/spinner2.png", "x": 184, "y": 42 },
+        { "image_path": "assets/spinner/spinner3.png", "x": 184, "y": 42 },
+        { "image_path": "assets/spinner/spinner4.png", "x": 189, "y": 46 }
+      ],
+      "x": -9,
+      "y": -8,
+      "layers": []
+    },
+    {
       "id": "spinner_text",
       "unselectable": true,
       "layers": [
-        { "variable_name": "$_INPUT", "use_template": "spinner_text" }
-      ]
+        { "variable_name": "$_INPUT", "use_template": "spinner_text", "x": -13, "y": -2 }
+      ],
+      "x": -3
     }
   ]
 }
