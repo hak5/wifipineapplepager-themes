@@ -1,0 +1,119 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "background_color": { "r": 25, "g": 8, "b": 49 },
+    "layers": [
+      { "image_path": "assets/dashboard/scene.png", "x": 0, "y": 0 }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "PAYLOADS",
+      "x": 37,
+      "y": 200,
+      "layers": [
+        { "text": "PAYLOADS", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_mid" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/tab_83.png", "x": -6, "y": -2 },
+        { "text": "PAYLOADS", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_ink" },
+        { "image_path": "assets/dashboard/title_payloads.png", "x": 72, "y": -110 },
+        { "image_path": "assets/dashboard/hint_payloads.png", "x": 67, "y": -52 },
+        { "text": "Run a job. Pick a payload and go.", "x": 83, "y": -49, "text_size": "small", "text_color_palette": "dc_cream" }
+      ],
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "RECON",
+      "x": 120,
+      "y": 200,
+      "layers": [
+        { "text": "RECON", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_mid" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/tab_56.png", "x": -6, "y": -2 },
+        { "text": "RECON", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_ink" },
+        { "image_path": "assets/dashboard/title_recon.png", "x": -11, "y": -110 },
+        { "image_path": "assets/dashboard/hint_recon.png", "x": -16, "y": -52 },
+        { "text": "Case the strip: WiFi and Bluetooth.", "x": 0, "y": -49, "text_size": "small", "text_color_palette": "dc_cream" }
+      ],
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "x": 176,
+      "y": 200,
+      "layers": [
+        { "text": "PINEAP", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_mid" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/tab_65.png", "x": -6, "y": -2 },
+        { "text": "PINEAP", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_ink" },
+        { "image_path": "assets/dashboard/title_pineap.png", "x": -67, "y": -110 },
+        { "image_path": "assets/dashboard/hint_pineap.png", "x": -72, "y": -52 },
+        { "text": "Open a front: rogue APs, SSID pools.", "x": -56, "y": -49, "text_size": "small", "text_color_palette": "dc_cream" }
+      ],
+      "target": "pineap_menu"
+    },
+    {
+      "id": "ALERTS",
+      "x": 241,
+      "y": 200,
+      "layers": [
+        { "text": "ALERTS", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_mid" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/tab_65.png", "x": -6, "y": -2 },
+        { "text": "ALERTS", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_ink" },
+        { "image_path": "assets/dashboard/title_alerts.png", "x": -132, "y": -110 },
+        { "image_path": "assets/dashboard/hint_alerts.png", "x": -137, "y": -52 },
+        { "text": "Lookouts: payloads that watch the air.", "x": -121, "y": -49, "text_size": "small", "text_color_palette": "dc_cream" }
+      ],
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "pagerportal",
+      "x": 306,
+      "y": 200,
+      "layers": [
+        { "text": "PORTAL", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_mid" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/tab_65.png", "x": -6, "y": -2 },
+        { "text": "PORTAL", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_ink" },
+        { "image_path": "assets/dashboard/title_portal.png", "x": -197, "y": -110 },
+        { "image_path": "assets/dashboard/hint_portal.png", "x": -202, "y": -52 },
+        { "text": "The supplier: new payloads, updates.", "x": -186, "y": -49, "text_size": "small", "text_color_palette": "dc_cream" }
+      ],
+      "target": "pager_portal_dashboard"
+    },
+    {
+      "id": "SETTINGS",
+      "x": 371,
+      "y": 200,
+      "layers": [
+        { "text": "SETTINGS", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_mid" }
+      ],
+      "selected_layers": [
+        { "image_path": "assets/dashboard/tab_83.png", "x": -6, "y": -2 },
+        { "text": "SETTINGS", "x": 0, "y": 0, "text_size": "small", "text_color_palette": "dc_ink" },
+        { "image_path": "assets/dashboard/title_settings.png", "x": -261, "y": -110 },
+        { "image_path": "assets/dashboard/hint_settings.png", "x": -267, "y": -52 },
+        { "text": "Brightness, sound, lock and theme.", "x": -251, "y": -49, "text_size": "small", "text_color_palette": "dc_cream" }
+      ],
+      "target": "settings_menu"
+    }
+  ]
+}
