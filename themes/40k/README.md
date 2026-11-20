@@ -1,6 +1,6 @@
 # 40k
 
-An unofficial Warhammer 40K / Inquisition-inspired skin for the WiFi Pineapple Pager. It
+A Warhammer 40K / Inquisition-inspired skin for the WiFi Pineapple Pager. It
 combines the original INQUISITOR wheel states with the component-ready artwork
 from `INQUISITOR_40K_FW2_BUILD_KIT.zip` and maps them onto a complete Hak5
 **Wargames 2.0** theme. Every menu, toggle, wizard, dialog, status bar and
@@ -12,15 +12,15 @@ placed behind the real UI.
 Copy the folder to the Pager and select the theme:
 
 ```sh
-cp -r inquisitor_40k /root/themes/
-# or: cp -r inquisitor_40k /mmc/root/themes/
+cp -r 40k /root/themes/
+# or: cp -r 40k /mmc/root/themes/
 ```
 
 Then choose **40k** under **Settings -> General -> Theme** and
 confirm the UI reload.
 
 ```text
-inquisitor_40k/
+40k/
 ├── theme.json
 ├── components/          # Wargames 2.0 layouts, retained so all actions work
 └── assets/
@@ -60,17 +60,10 @@ inquisitor_40k/
   `pager_portal_dashboard` target. Historical `wardrive` filenames are retained
   to preserve references. Unused legacy mockups may retain their original captions.
 - Target firmware: **Pager 2.0.0-stable**, theme framework 0.9. Layouts and
-  component definitions are from Hak5's Wargames theme. Device testing is
-  pending.
-- Unofficial fan-made visual theme. Not affiliated with Hak5 or Games Workshop.
+  component definitions are from Hak5's Wargames theme.
 
 ## Credits
 
 Wargames layout and retained components: Hak5. Original INQUISITOR 40K wheel
 artwork: the supplied reference pack. Component-ready backgrounds, panels,
 icons and animation frames: the supplied FW2 build kit.
-
-## Revision 1.0.1
-
-See CHANGELOG.txt for exact changes, validation and device-test limitations.
-The supplied firmware 2.0 theme is the baseline; this revision is not device-tested.
