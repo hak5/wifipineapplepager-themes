@@ -1,0 +1,30 @@
+INQUISITOR 40K — 1.0.1 — 2026-11-20
+Target: user-supplied working Pager firmware 2.0 theme, framework 0.9.
+
+CHANGES
+- Replaced six baked dashboard picker rectangles with RGBA gold-arc and underline overlays. Neutralized the permanently highlighted Recon rim.
+- Dashboard lettering and menu identity now read exactly “Portal”. Its target remains pager_portal_dashboard. Historical wardrive asset filenames remain intact.
+- Replaced harsh flat center blocks in live screen/dialog/power-menu/loading backgrounds with subdued cathedral artwork assembled from the supplied art. No static menu labels were added behind live controls.
+- Restored matching boot backdrops while retaining frame-specific spinner pixels, header/footer text, frame order, and timing.
+- Added transparent fills to auxiliary panel artwork and source mockups; retained intentional icon silhouettes, QR backgrounds, keyboard/button fills and warning screens.
+- Preserved all original PNG dimensions, filenames, component paths, menu order, button maps, actions, variables, and templates. No routes were repurposed.
+- 168 PNG files changed; theme version increased from 1.0.0 to 1.0.1.
+
+VERIFIED OFF DEVICE
+- 563 PNGs decode successfully; 135 component JSON files parse successfully.
+- 1,404 file references resolve with exact case; no unknown palette references.
+- Original image dimensions retained for every PNG. All 130 referenced assets with official counterparts match official dimensions. Six custom battery images have no upstream counterpart; their supplied dimensions are preserved.
+- All functional component fields compared with the uploaded ZIP and preserved. All six dashboard targets retained, including Portal.
+- 171 PNGs are referenced by the runtime theme. 392 unreferenced source/alternative assets are retained, not silently wired into menus. These include legacy mockups and stock alternate artwork.
+- All asset contact sheets inspected; archive CRC checked after packaging.
+
+DEVICE TESTING STILL REQUIRED
+Actual firmware 2.0 loading, PNG alpha compositing, cached selection repainting, D-pad/A/B navigation, status-bar layering, live text contrast, dialog/keyboard legibility, scrolling, animation playback and each functional screen must be tested on the Pager. Previews are offline artwork composites, not firmware screenshots. Static checks cannot prove every runtime asset loads or every action executes on hardware.
+
+INSTALL
+Back up the working theme. Extract and copy only the inquisitor_40k folder to /root/themes/ or /mmc/root/themes/, replacing the old theme folder after backing it up. Select INQUISITOR 40K and reload the UI. The review folder is for your computer, not the Pager.
+
+REFERENCE
+Official Hak5 Wargames source (retrieved 2026-11-20):
+https://github.com/hak5/wifipineapplepager-themes/tree/master/themes/wargames
+All 135 official component files were retrieved for comparison. The supplied working components remain the functional baseline; unrelated differences were not overwritten.
