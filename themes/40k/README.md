@@ -46,6 +46,9 @@ confirm the UI reload.
   confirmation dialog uses dedicated yes/no button artwork.
 - **System screens** - retained 12-frame FW2 boot animation and spinner timing,
   with continuous dim cathedral backdrops replacing flat center blocks.
+- **Support artwork** - the remaining INQUISITOR icon set is applied to
+  checkboxes, radios, toggles, arrows, status-bar glyphs, alert screens,
+  payload-log indicators and the launch-payload animation.
 - **Palette** - gold, amber and rust values derived from the original pack,
   applied to all text/UI colours.
 - **Status bar** - an FW2 panel sits behind the live indicators. Baked headers
