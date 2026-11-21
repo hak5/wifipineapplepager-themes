@@ -23,10 +23,23 @@ confirm the UI reload.
 40k/
 ├── theme.json
 ├── components/          # Wargames 2.0 layouts, retained so all actions work
+├── ringtones/           # bundled RTTTL ringtone (machine_spirit.rtttl)
 └── assets/
     ├── inquisitor/      # original 37-image reference pack
     ├── inquisitor_fw2/  # FW2 build-kit backgrounds, panels, icons, frames
     └── ...              # reskinned Wargames support artwork
+```
+
+### Boot ringtone
+
+`ringtones/machine_spirit.rtttl` is the INQUISITOR "Machine Spirit" boot
+melody shipped with the theme. Themes cannot change device settings, so to make
+it play at startup copy it into `/root/ringtones/` once and select
+**Machine Spirit** under **Settings -> General -> Ringtone -> Boot**.
+
+```sh
+mkdir -p /root/ringtones
+cp ringtones/machine_spirit.rtttl /root/ringtones/
 ```
 
 ## What is themed
