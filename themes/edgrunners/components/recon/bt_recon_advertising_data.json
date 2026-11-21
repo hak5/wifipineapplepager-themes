@@ -1,0 +1,55 @@
+{
+  "screen_name": "bt_recon_advertising_data",
+  "status_bar": "min",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "back",
+    "b": "back",
+    "up": "noop",
+    "down": "noop",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/blank_recon_bg.png", "x": 0, "y": 0 },
+      { "text": "Advertising Data", "x": 5, "y": 0, "text_size": "large", "text_color_palette": "blue" },
+      { "x": 15, "y": 33, "variable_name": "$_BT_SELECTED_TITLE", "string_template": { "text_size": "small", "text_color_palette": "green", "max_chars": 46 } },
+      { "x": 17, "y": 54, "text": "Flags:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 54, "variable_name": "$_BT_SELECTED_FLAGS", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 34 } },
+      { "x": 17, "y": 72, "text": "Appearance:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 72, "variable_name": "$_BT_SELECTED_APPEARANCE", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 10 } },
+      { "x": 270, "y": 72, "text": "TX power:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 370, "y": 72, "variable_name": "$_BT_SELECTED_TX_POWER", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 6 } },
+      { "x": 17, "y": 90, "text": "Services:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 90, "variable_name": "$_BT_SELECTED_SERVICES", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 34, "wrap_text": true, "max_lines": 2 } },
+      { "x": 17, "y": 121, "text": "Svc data:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 121, "variable_name": "$_BT_SELECTED_SVC_DATA", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 34, "wrap_text": true, "max_lines": 2 } },
+      { "x": 17, "y": 152, "text": "Mfr data:", "text_size": "small", "text_color_palette": "medium_gray" },
+      { "x": 140, "y": 152, "variable_name": "$_BT_SELECTED_MFR", "string_template": { "text_size": "small", "text_color_palette": "disabled_light_gray", "max_chars": 34, "wrap_text": true, "max_lines": 3 } }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "details",
+          "x": 0,
+          "y": 0,
+          "layers": [],
+          "selected_layers": [],
+          "button_map": {
+            "a": "back",
+            "b": "back",
+            "up": "noop",
+            "down": "noop",
+            "left": "back",
+            "right": "noop"
+          }
+        }
+      ]
+    }
+  ]
+}
