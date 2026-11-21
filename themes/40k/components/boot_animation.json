@@ -1,0 +1,66 @@
+{
+  "animation": {
+    "frames": [
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_00.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_01.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_02.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_03.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_04.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_05.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_06.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_07.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_08.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_09.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_10.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/inquisitor_fw2/boot_frame_11.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  }
+}

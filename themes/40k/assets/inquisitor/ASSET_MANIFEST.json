@@ -1,0 +1,52 @@
+{
+  "reference": "User-supplied 708.png",
+  "target_resolution": [
+    480,
+    222
+  ],
+  "selection_order": [
+    "RECON",
+    "PINEAP",
+    "PAYLOADS",
+    "Portal",
+    "ALERTS",
+    "SETTINGS"
+  ],
+  "assets": [
+    "boot.png",
+    "dashboard_selected_0_recon.png",
+    "dashboard_selected_1_pineap.png",
+    "dashboard_selected_2_payloads.png",
+    "dashboard_selected_3_wardrive.png",
+    "dashboard_selected_4_alerts.png",
+    "dashboard_selected_5_settings.png",
+    "dialog.png",
+    "error.png",
+    "icon_alerts.png",
+    "icon_back.png",
+    "icon_battery.png",
+    "icon_payloads.png",
+    "icon_pineap.png",
+    "icon_recon.png",
+    "icon_select.png",
+    "icon_settings.png",
+    "icon_wardrive.png",
+    "icon_wifi.png",
+    "keyboard.png",
+    "loading.png",
+    "lock.png",
+    "notification.png",
+    "reboot.png",
+    "reference_dashboard.png",
+    "screen_alerts.png",
+    "screen_payloads.png",
+    "screen_pineap.png",
+    "screen_recon.png",
+    "screen_settings.png",
+    "screen_wardrive.png",
+    "shutdown.png",
+    "success.png"
+  ],
+  "status": "Complete reference-based visual asset pack; not a validated firmware theme",
+  "notes": "dashboard_selected_*.png are transparent selection overlays over reference_dashboard.png; historical wardrive filenames retained for compatibility."
+}
