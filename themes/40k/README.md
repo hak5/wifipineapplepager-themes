@@ -38,8 +38,12 @@ confirm the UI reload.
   Settings keep their live Wargames component layouts. Their backgrounds,
   icons and list panels are reskinned from the FW2 build kit; all labels,
   values and selections are drawn by the Pager.
+- **Payload selection** - the left column of the payload lists carries
+  INQUISITOR side art, scaled to the original aspect ratio and kept clear of
+  every option and its selection indicator.
 - **Dialogs and keyboards** - FW2 dialog/list/keyboard backgrounds and panel
-  art are applied, while every message, input and option remains live.
+  art are applied, while every message, input and option remains live. The
+  confirmation dialog uses dedicated yes/no button artwork.
 - **System screens** - retained 12-frame FW2 boot animation and spinner timing,
   with continuous dim cathedral backdrops replacing flat center blocks.
 - **Palette** - gold, amber and rust values derived from the original pack,

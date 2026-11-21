@@ -20,6 +20,11 @@
           "y": 0
         },
         {
+          "image_path": "assets/payloads_dashboard/payload_left_art.png",
+          "x": 10,
+          "y": 25
+        },
+        {
           "variable_name": "$_LIST_SIZE",
           "x": 375,
           "y": 206,
