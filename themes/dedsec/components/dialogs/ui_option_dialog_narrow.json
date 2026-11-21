@@ -5,7 +5,11 @@
     "cache_canvases": true,
     "background": {
       "layers": [
-        { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 18, "y": 12 }
+        {
+          "image_path": "assets/optiondialog/option_dialog_bg_narrow.png",
+          "x": 17,
+          "y": 12
+        }
       ]
     },
     "pages": [
@@ -14,14 +18,44 @@
           {
             "id": "Slot0",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 70, "use_template": "option_dialog_string" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 72, "use_template": "radio" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 82, "y": 70, "recolor_palette": "medium_gray" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 70,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 72,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 82,
+                "y": 70,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 70, "use_template": "option_dialog_string_selected" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 72, "use_template": "selected_radio" },
-              { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 82, "y": 70, "recolor_palette": "medium_gray" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 70,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 72,
+                "use_template": "selected_radio"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_up_indicator.png",
+                "x": 82,
+                "y": 70,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "target": "select",
             "button_map": {
@@ -36,12 +70,32 @@
           {
             "id": "Slot1",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 100, "use_template": "option_dialog_string" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 102, "use_template": "radio" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 100,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 102,
+                "use_template": "radio"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 100, "use_template": "option_dialog_string_selected" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 102, "use_template": "selected_radio" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 100,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 102,
+                "use_template": "selected_radio"
+              }
             ],
             "target": "select",
             "button_map": {
@@ -56,12 +110,32 @@
           {
             "id": "Slot2",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 130, "use_template": "option_dialog_string" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 132, "use_template": "radio" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 130,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 132,
+                "use_template": "radio"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 130, "use_template": "option_dialog_string_selected" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 132, "use_template": "selected_radio" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 130,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 132,
+                "use_template": "selected_radio"
+              }
             ],
             "target": "select",
             "button_map": {
@@ -76,14 +150,44 @@
           {
             "id": "Slot3",
             "layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 160, "use_template": "option_dialog_string" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 162, "use_template": "radio" },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 82, "y": 175, "recolor_palette": "medium_gray" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 160,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 162,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_down_indicator.png",
+                "x": 82,
+                "y": 175,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "selected_layers": [
-              { "variable_name": "$_LIST_ITEM", "x": 145, "y": 160, "use_template": "option_dialog_string_selected" },
-              { "variable_name": "$_LIST_ITEM", "x": 111, "y": 162, "use_template": "selected_radio" },
-              { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 82, "y": 175, "recolor_palette": "medium_gray" }
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 145,
+                "y": 160,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 111,
+                "y": 162,
+                "use_template": "selected_radio"
+              },
+              {
+                "image_path": "assets/payloadlog/scroll_down_indicator.png",
+                "x": 82,
+                "y": 175,
+                "recolor_palette": "medium_gray"
+              }
             ],
             "target": "select",
             "button_map": {
@@ -110,16 +214,49 @@
           {
             "id": "Save",
             "layers": [
-              { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 36 },
-              { "image_path": "assets/optiondialog/button_outline.png", "x": 361, "y": 36 },
-              { "image_path": "assets/optiondialog/check.png", "x": 378, "y": 62 },
-              { "_comment": "this is just a required cache busting hack", "variable_name": "$_LIST_ITEM" }
+              {
+                "image_path": "assets/optiondialog/button_bg.png",
+                "x": 362,
+                "y": 37
+              },
+              {
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 361,
+                "y": 36
+              },
+              {
+                "image_path": "assets/optiondialog/check.png",
+                "x": 378,
+                "y": 63
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable_name": "$_LIST_ITEM"
+              }
             ],
             "selected_layers": [
-              { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 36, "recolor_palette": "green" },
-              { "image_path": "assets/optiondialog/button_outline.png", "x": 361, "y": 36, "recolor_palette": "black" },
-              { "image_path": "assets/optiondialog/check.png", "x": 378, "y": 62, "recolor_palette": "black" },
-              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+              {
+                "image_path": "assets/optiondialog/button_bg.png",
+                "x": 362,
+                "y": 37,
+                "recolor_palette": "green"
+              },
+              {
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 361,
+                "y": 36,
+                "recolor_palette": "black"
+              },
+              {
+                "image_path": "assets/optiondialog/check.png",
+                "x": 378,
+                "y": 63,
+                "recolor_palette": "black"
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
             ],
             "target": "save",
             "button_map": {
@@ -134,16 +271,49 @@
           {
             "id": "Cancel",
             "layers": [
-              { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 118 },
-              { "image_path": "assets/optiondialog/button_outline.png", "x": 361, "y": 118 },
-              { "image_path": "assets/optiondialog/x.png", "x": 383, "y": 146 },
-              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+              {
+                "image_path": "assets/optiondialog/button_bg.png",
+                "x": 362,
+                "y": 119
+              },
+              {
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 361,
+                "y": 118
+              },
+              {
+                "image_path": "assets/optiondialog/x.png",
+                "x": 383,
+                "y": 146
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
             ],
             "selected_layers": [
-              { "image_path": "assets/optiondialog/button_bg.png", "x": 361, "y": 118, "recolor_palette": "red" },
-              { "image_path": "assets/optiondialog/button_outline.png", "x": 361, "y": 118, "recolor_palette": "black" },
-              { "image_path": "assets/optiondialog/x.png", "x": 383, "y": 146, "recolor_palette": "black" },
-              { "_comment": "this is just a required cache busting hack", "variable": "$_LIST_ITEM" }
+              {
+                "image_path": "assets/optiondialog/button_bg.png",
+                "x": 362,
+                "y": 119,
+                "recolor_palette": "red"
+              },
+              {
+                "image_path": "assets/optiondialog/button_outline.png",
+                "x": 361,
+                "y": 118,
+                "recolor_palette": "black"
+              },
+              {
+                "image_path": "assets/optiondialog/x.png",
+                "x": 383,
+                "y": 146,
+                "recolor_palette": "black"
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
             ],
             "target": "back",
             "button_map": {

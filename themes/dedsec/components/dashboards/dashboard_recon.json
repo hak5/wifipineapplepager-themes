@@ -19,5 +19,6 @@
   "tight_scale_bars": false,
   "use_nice_labels": true,
   "target_recon_list": "recon_list",
-  "status_bar": "recon"
+  "status_bar": "recon",
+  "bt_status_bar": "bt_recon"
 }
