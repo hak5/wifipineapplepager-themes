@@ -1,0 +1,41 @@
+{
+  "screen_name": "ethernetwizard_lab_dialog",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "back",
+    "b": "back",
+    "up": "noop",
+    "down": "noop",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/ew_lab_qr.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "ethernetwizard_lab",
+          "button_map": {
+            "a": "back",
+            "b": "back",
+            "up": "noop",
+            "down": "noop",
+            "left": "back",
+            "right": "noop"
+          },
+          "selected_layers": []
+        }
+      ]
+    }
+  ]
+}

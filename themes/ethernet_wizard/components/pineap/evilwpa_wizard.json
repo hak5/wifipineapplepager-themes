@@ -1,7 +1,7 @@
 {
   "screen_name": "evilwpa_wizard",
   "windowed_canvas": true,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "quit_wizard",
@@ -31,11 +31,11 @@
           "x": 136,
           "y": 60,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
@@ -54,11 +54,11 @@
           "x": 136,
           "y": 90,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "BSSID Override", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "BSSID Override", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_mac_dialog",
@@ -69,11 +69,11 @@
           "x": 136,
           "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Encryption Type", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Encryption Type", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "option_dialog",
@@ -84,11 +84,11 @@
           "x": 136,
           "y": 150,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Passphrase", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Passphrase", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",

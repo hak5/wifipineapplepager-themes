@@ -2,7 +2,7 @@
   "screen_name": "pineap_filters_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -15,11 +15,13 @@
     "layers": [
       { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "gray" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "gray" },
+      { "text": "PineAP", "x": 10, "y": 50, "text_color_palette": "gray" },
+      { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "gray" },
+      { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "gray" },
       { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "yellow" }
+      { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "yellow" },
+      { "image_path": "assets/help.png", "x": 447, "y": 27, "recolor_palette": "gray" },
+      { "text": ">", "x": 461, "y": 27, "text_size": "small", "text_color_palette": "gray" }
     ]
   },
   "pages": [
@@ -28,199 +30,192 @@
       "menu_items": [
         {
           "id": "Client Filter",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
             { "text": "Client Filter:", "text_color_palette": "blue" },
-            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "red",  "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } }
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }] } }
           ],
           "selected_layers": [
             { "text": "Client Filter:", "text_color_palette": "yellow" },
-            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "red",  "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } }
+            { "variable_name": "$_FILTER_CLIENT_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 360, "end_x": 440, "start_y": 45, "end_y": 71 } }] } }
           ],
           "target": "inline_toggle",
-          "variable": "$_FILTER_CLIENT_MODE"
+          "variable": "$_FILTER_CLIENT_MODE",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Client Filter"
+          }
         },
         {
           "id": "Allowed Client List",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Allowed Client List", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Allowed Client List", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "filter_list",
-          "variable": "$_FILTER_CLIENT_ALLOW_LIST"
+          "variable": "$_FILTER_CLIENT_ALLOW_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Allowed Client List"
+          }
         },
         {
           "id": "Denied Client List",
-          "x":170,
-          "y":120,
-
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Denied Client List", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Denied Client List", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "filter_list",
-          "variable": "$_FILTER_CLIENT_DENY_LIST"
+          "variable": "$_FILTER_CLIENT_DENY_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Denied Client List"
+          }
         },
         {
           "id": "Add Allowed Client",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Allowed Client", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Allowed Client", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_mac_dialog",
-          "variable": "$_FILTER_CLIENT_ALLOW_ADD"
+          "variable": "$_FILTER_CLIENT_ALLOW_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Allowed Client"
+          }
         },
         {
           "id": "Add Denied Client",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Denied Client", "x": 40, "text_color_palette": "blue" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Denied Client", "x": 40, "text_color_palette": "yellow" },
-            { "image_path": "assets/down.png", "x": -20, "y": 10, "recolor_palette": "gray"}
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
           ],
           "target": "edit_mac_dialog",
-          "variable": "$_FILTER_CLIENT_DENY_ADD"
+          "variable": "$_FILTER_CLIENT_DENY_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Denied Client"
+          }
         }
       ]
     },
-     {
+    {
       "page_index": 1,
       "menu_items": [
         {
           "id": "Network Filter",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
             { "text": "Network Filter:", "text_color_palette": "blue" },
-            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "red",  "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }] } },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
           ],
           "selected_layers": [
             { "text": "Network Filter:", "text_color_palette": "yellow" },
-            { "variable_name": "$_FILTER_NETWORK_MODE", "x":200, "toggle_template": {
-              "enabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2, "recolor_palette":  "gray" },
-                { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ],
-              "disabled": [
-                { "image_path": "assets/swap.png","x": 72, "y": 2 , "recolor_palette":  "gray"},
-                { "text": "Deny", "text_size": "medium", "text_color_palette": "red",  "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71} }
-              ]
-            } },
-            { "image_path": "assets/up.png", "x": -20, "y": -4, "recolor_palette": "gray"}
+            { "variable_name": "$_FILTER_NETWORK_MODE", "x": 200, "toggle_template": { "enabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Allow", "text_size": "medium", "text_color_palette": "green", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }], "disabled": [{ "image_path": "assets/swap.png", "x": 76, "y": 4, "recolor_palette": "gray" }, { "text": "Deny", "text_size": "medium", "text_color_palette": "red", "center_text_within": { "draw_bounds": false, "start_x": 370, "end_x": 440, "start_y": 45, "end_y": 71 } }] } },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
           ],
           "target": "inline_toggle",
-          "variable": "$_FILTER_NETWORK_MODE"
+          "variable": "$_FILTER_NETWORK_MODE",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Network Filter"
+          }
         },
         {
           "id": "Allowed Network List",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Allowed Network List", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Allowed Network List", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "filter_list",
-          "variable": "$_FILTER_NETWORK_ALLOW_LIST"
+          "variable": "$_FILTER_NETWORK_ALLOW_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Allowed Network List"
+          }
         },
         {
           "id": "Denied Network List",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Denied Network List", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
             { "text": "Denied Network List", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "filter_list",
-          "variable": "$_FILTER_NETWORK_DENY_LIST"
+          "variable": "$_FILTER_NETWORK_DENY_LIST",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Denied Network List"
+          }
         },
         {
           "id": "Add Allowed Network",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Allowed Network", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Allowed Network", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_FILTER_NETWORK_ALLOW_ADD"
+          "variable": "$_FILTER_NETWORK_ALLOW_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Allowed Network"
+          }
         },
         {
           "id": "Add Denied Network",
-          "x":170,
-          "y":190,
+          "x": 170,
+          "y": 190,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Denied Network", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Add Denied Network", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_FILTER_NETWORK_DENY_ADD"
+          "variable": "$_FILTER_NETWORK_DENY_ADD",
+          "button_map": {
+            "right": "target pineap_filters_submenu_explained Add Denied Network"
+          }
         }
       ]
     }

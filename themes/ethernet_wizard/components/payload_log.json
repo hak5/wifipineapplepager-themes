@@ -6,24 +6,24 @@
     ]
   },
   "scroll_pause_indicator": [
-      { "image_path": "assets/payloadlog/scroll_pause_indicator.png", "x": 457, "y": 108 }
+    { "image_path": "assets/payloadlog/scroll_pause_indicator.png", "x": 457, "y": 108 }
   ],
   "scroll_up_indicator": [
-      { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 465, "y": 40 }
+    { "image_path": "assets/payloadlog/scroll_up_indicator.png", "x": 465, "y": 40 }
   ],
   "scroll_down_indicator": [
-      { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 465, "y": 180 }
+    { "image_path": "assets/payloadlog/scroll_down_indicator.png", "x": 465, "y": 180 }
   ],
   "payload_running_indicator": [
-      { "image_path": "assets/payloadlog/payload_running_indicator.png", "x": 0, "y": 179 }
+    { "image_path": "assets/payloadlog/payload_running_indicator.png", "x": 0, "y": 179 }
   ],
   "payload_complete_indicator": [
-      { "image_path": "assets/payloadlog/payload_complete_indicator.png", "x": 0, "y": 179 }
+    { "image_path": "assets/payloadlog/payload_complete_indicator.png", "x": 0, "y": 179 }
   ],
   "payload_stopped_indicator": [
     { "image_path": "assets/payloadlog/payload_stopped_indicator.png", "x": 0, "y": 179 }
   ],
-  "payload_error_indicator": [
+  "payload_errored_indicator": [
     { "image_path": "assets/payloadlog/payload_error_indicator.png", "x": 0, "y": 179 }
   ],
   "status_bar": "default",
@@ -33,6 +33,6 @@
   "max_chars": 50,
   "start_x": 6,
   "start_y": 24,
-  "default_text_color": { "r": 255,"g": 255,"b": 255,"a": 255 },
-  "error_text_color": { "r": 255,"g": 0,"b": 0,"a": 255 }
+  "default_text_color": { "r": 255, "g": 255, "b": 255, "a": 255 },
+  "error_text_color": { "r": 255, "g": 0, "b": 0, "a": 255 }
 }
