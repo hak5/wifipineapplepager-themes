@@ -1,0 +1,52 @@
+{
+  "screen_name": "spinner",
+  "windowed_canvas": true,
+  "cache_canvases": true,
+  "menu_items": [
+    {
+      "id": "spinner",
+      "animation_interval": 0.4,
+      "animation": [
+        {
+          "image_path": "assets/inquisitor_fw2/spinner_00.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/inquisitor_fw2/spinner_03.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/inquisitor_fw2/spinner_06.png",
+          "x": 140,
+          "y": 40
+        },
+        {
+          "image_path": "assets/inquisitor_fw2/spinner_09.png",
+          "x": 140,
+          "y": 40
+        }
+      ]
+    },
+    {
+      "id": "spinner_text",
+      "unselectable": true,
+      "layers": [
+        {
+          "variable_name": "$_INPUT",
+          "use_template": "spinner_text"
+        }
+      ]
+    }
+  ],
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/inquisitor_fw2/background_loading.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  }
+}

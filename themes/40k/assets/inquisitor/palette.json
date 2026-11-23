@@ -1,0 +1,9 @@
+{
+  "background": "#090708",
+  "panel": "#080708",
+  "primary": "#ffc070",
+  "secondary": "#e2b16c",
+  "selected": "#703019",
+  "border": "#ae4c2b",
+  "danger": "#ff6840"
+}

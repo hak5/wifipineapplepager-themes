@@ -1,0 +1,115 @@
+{
+  "screen_name": "main_dashboard",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "previous",
+    "right": "next"
+  },
+  "background": {
+    "background_color": {
+      "r": 9,
+      "g": 7,
+      "b": 8
+    },
+    "layers": [
+      {
+        "image_path": "assets/inquisitor/reference_dashboard.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "menu_items": [
+    {
+      "id": "RECON",
+      "layers": [],
+      "selected_layers": [
+        {
+          "image_path": "assets/inquisitor/dashboard_selected_0_recon.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "recon_dashboard"
+    },
+    {
+      "id": "PINEAP",
+      "layers": [],
+      "selected_layers": [
+        {
+          "image_path": "assets/inquisitor/dashboard_selected_1_pineap.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "pineap_menu"
+    },
+    {
+      "id": "PAYLOADS",
+      "layers": [],
+      "selected_layers": [
+        {
+          "image_path": "assets/inquisitor/dashboard_selected_2_payloads.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "payloads_dashboard",
+      "variable": "$_PAYLOAD_CATEGORIES"
+    },
+    {
+      "id": "Portal",
+      "layers": [],
+      "selected_layers": [
+        {
+          "image_path": "assets/inquisitor/dashboard_selected_3_wardrive.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "pager_portal_dashboard"
+    },
+    {
+      "id": "ALERTS",
+      "layers": [],
+      "selected_layers": [
+        {
+          "image_path": "assets/inquisitor/dashboard_selected_4_alerts.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "alerts_dashboard"
+    },
+    {
+      "id": "SETTINGS",
+      "layers": [],
+      "selected_layers": [
+        {
+          "image_path": "assets/inquisitor/dashboard_selected_5_settings.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 0,
+      "y": 0,
+      "target": "settings_menu"
+    }
+  ]
+}
