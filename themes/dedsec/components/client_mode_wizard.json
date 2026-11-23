@@ -1,7 +1,7 @@
 {
   "screen_name": "client_mode_wizard",
   "windowed_canvas": true,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -12,7 +12,11 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/optiondialog/option_dialog_bg_narrow.png", "x": 15, "y": 14 }
+      {
+        "image_path": "assets/optiondialog/option_dialog_bg_narrow.png",
+        "x": 15,
+        "y": 14
+      }
     ]
   },
   "pages": [
@@ -23,7 +27,13 @@
           "id": "client_mode_wizard_title",
           "unselectable": true,
           "layers": [
-            { "x": 100, "y": 25, "text_size": "large", "text_color_palette": "yellow", "text": "Client Mode Setup" }
+            {
+              "x": 100,
+              "y": 25,
+              "text_size": "large",
+              "text_color_palette": "yellow",
+              "text": "Client Mode Setup"
+            }
           ]
         },
         {
@@ -31,12 +41,28 @@
           "x": 140,
           "y": 70,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 3,
+              "y": 4
+            },
+            {
+              "text": "Network Name",
+              "x": 40,
+              "text_color_palette": "magenta"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 3,
+              "y": 4
+            },
+            {
+              "text": "Network Name",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_CLIENT_MODE_SSID"
@@ -46,12 +72,28 @@
           "x": 140,
           "y": 105,
           "layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "blue" }
+            {
+              "image_path": "assets/menu.png",
+              "x": 4,
+              "y": 5
+            },
+            {
+              "text": "Encryption Type",
+              "x": 40,
+              "text_color_palette": "magenta"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/menu.png" },
-            { "text": "Encryption Type", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/menu.png",
+              "x": 4,
+              "y": 5
+            },
+            {
+              "text": "Encryption Type",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "option_dialog",
           "variable": "$_SETUP_CLIENT_MODE_ENCRYPTION_TYPE"
@@ -61,12 +103,28 @@
           "x": 140,
           "y": 140,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "blue" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 3,
+              "y": 4
+            },
+            {
+              "text": "Passphrase",
+              "x": 40,
+              "text_color_palette": "magenta"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
-            { "text": "Passphrase", "x": 40, "text_color_palette": "yellow" }
+            {
+              "image_path": "assets/keyboard.png",
+              "x": 3,
+              "y": 4
+            },
+            {
+              "text": "Passphrase",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
           ],
           "target": "edit_string_dialog",
           "variable": "$_SETUP_CLIENT_MODE_PASSPHRASE"
@@ -76,12 +134,24 @@
           "x": 120,
           "y": 175,
           "layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 40, "text_color_palette": "blue" }
+            {
+              "image_path": "assets/wizard.png"
+            },
+            {
+              "text": "Save",
+              "x": 40,
+              "text_color_palette": "magenta"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/wizard.png" },
-            { "text": "Save", "x": 40, "text_color_palette": "green" }
+            {
+              "image_path": "assets/wizard.png"
+            },
+            {
+              "text": "Save",
+              "x": 40,
+              "text_color_palette": "green"
+            }
           ],
           "target": "function_save_wifi_client_mode",
           "button_map": {
@@ -98,14 +168,30 @@
           "x": 250,
           "y": 175,
           "layers": [
-            { "image_path": "assets/x.png", "x": 7, "y": 4 },
-            { "text": "Clear", "x": 40, "text_color_palette": "blue" }
+            {
+              "image_path": "assets/x.png",
+              "x": 7,
+              "y": 4
+            },
+            {
+              "text": "Clear",
+              "x": 40,
+              "text_color_palette": "magenta"
+            }
           ],
           "selected_layers": [
-            { "image_path": "assets/x.png", "x": 7, "y": 4 },
-            { "text": "Clear", "x": 40, "text_color_palette": "red" }
+            {
+              "image_path": "assets/x.png",
+              "x": 7,
+              "y": 4
+            },
+            {
+              "text": "Clear",
+              "x": 40,
+              "text_color_palette": "red"
+            }
           ],
-          "target": "function_clear_client_mode",
+          "target": "function_clear_wifi_client_mode",
           "button_map": {
             "a": "select",
             "b": "back",

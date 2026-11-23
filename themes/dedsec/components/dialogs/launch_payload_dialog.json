@@ -1,7 +1,7 @@
 {
   "screen_name": "launch_payload_dialog",
   "status_bar": "default",
-  "windowed_canvas": true,
+  "windowed_canvas": false,
   "cache_canvases": true,
   "button_map": {
     "a": "select",
@@ -13,35 +13,70 @@
   },
   "background": {
     "layers": [
-      { "image_path": "assets/launch_payload_dialog/launch_payload_bg.png", "x": 0, "y": 0 },
-      { "variable_name": "$_INPUT_NAME", "x":  50, "y": 60, "string_template": {"text_size": "small", "max_chars": 22, "wrap_text": false, "max_lines": 1, "text_color_palette": "magenta" }}
+      {
+        "image_path": "assets/launch_payload_dialog/launch_payload_bg.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "variable_name": "$_INPUT_NAME",
+        "x": 50,
+        "y": 60,
+        "string_template": {
+          "text_size": "small",
+          "max_chars": 22,
+          "wrap_text": false,
+          "max_lines": 1,
+          "text_color_palette": "magenta"
+        }
+      }
     ]
   },
   "menu_items": [
     {
       "id": "Launch",
-      "layers": [
-        
-      ],
+      "layers": [],
       "selected_layers": [
-        { "image_path": "assets/launch_payload_dialog/launch_button.png","x": 57, "y": 130 }
+        {
+          "image_path": "assets/launch_payload_dialog/launch_button.png",
+          "x": 57,
+          "y": 130
+        }
       ],
       "target": "launch_payload",
       "variable": "$_INPUT",
       "animation": [
-        { "image_path": "assets/launch_payload_dialog/animation/reaper-1.png","x": 290, "y": 90 },
-        { "image_path": "assets/launch_payload_dialog/animation/reaper-2.png","x": 290, "y": 90 },
-	      { "image_path": "assets/launch_payload_dialog/animation/reaper-3.png","x": 290, "y": 90 },
-	      { "image_path": "assets/launch_payload_dialog/animation/reaper-4.png","x": 290, "y": 90 }
+        {
+          "image_path": "assets/launch_payload_dialog/animation/reaper-1.png",
+          "x": 290,
+          "y": 90
+        },
+        {
+          "image_path": "assets/launch_payload_dialog/animation/reaper-2.png",
+          "x": 290,
+          "y": 90
+        },
+        {
+          "image_path": "assets/launch_payload_dialog/animation/reaper-3.png",
+          "x": 290,
+          "y": 90
+        },
+        {
+          "image_path": "assets/launch_payload_dialog/animation/reaper-4.png",
+          "x": 290,
+          "y": 90
+        }
       ]
     },
     {
       "id": "Cancel",
-      "layers": [
-        
-      ],
+      "layers": [],
       "selected_layers": [
-        { "image_path": "assets/launch_payload_dialog/cancel_button.png","x": 145, "y": 130 }
+        {
+          "image_path": "assets/launch_payload_dialog/cancel_button.png",
+          "x": 145,
+          "y": 130
+        }
       ],
       "target": "back"
     }
