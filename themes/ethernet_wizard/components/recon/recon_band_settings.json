@@ -21,84 +21,79 @@
       "menu_items": [
         {
           "id": "6ghz",
-          "x":180,
-          "y":60,
+          "x": 185,
+          "y": 20,
           "layers": [
-            { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "6Ghz", "x": 40, "text_color_palette": "blue" }
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle", "x": 8, "y": 0 },
+            { "text": "6Ghz", "x": 48, "text_color_palette": "blue", "y": 0 }
           ],
           "selected_layers": [
-            { "variable_name":  "$_6Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "6Ghz", "x": 40, "text_color_palette": "yellow" }
+            { "variable_name": "$_6Ghz_ENABLED", "use_template": "toggle", "x": 8, "y": 0 },
+            { "text": "6Ghz", "x": 48, "text_color_palette": "yellow", "y": 0 }
           ],
           "target": "inline_toggle",
           "variable": "$_6Ghz_ENABLED"
         },
         {
           "id": "5ghz",
-          "x":180,
-          "y":95,
+          "x": 185,
+          "y": 56,
           "layers": [
-            { "variable_name":  "$_5Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "5Ghz", "x": 40, "text_color_palette": "blue" }
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle", "x": 8, "y": 0 },
+            { "text": "5Ghz", "x": 48, "text_color_palette": "blue", "y": 0 }
           ],
           "selected_layers": [
-            { "variable_name":  "$_5Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "5Ghz", "x": 40, "text_color_palette": "yellow" }
+            { "variable_name": "$_5Ghz_ENABLED", "use_template": "toggle", "x": 8, "y": 0 },
+            { "text": "5Ghz", "x": 48, "text_color_palette": "yellow", "y": 0 }
           ],
           "target": "inline_toggle",
           "variable": "$_5Ghz_ENABLED"
         },
         {
           "id": "2.4Ghz",
-          "x":180,
-          "y":130,
+          "x": 185,
+          "y": 92,
           "layers": [
-            { "variable_name":  "$_2.4Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "2.4Ghz", "x": 40, "text_color_palette": "blue" }
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle", "x": -2, "y": 0 },
+            { "text": "2.4Ghz", "x": 38, "text_color_palette": "blue", "y": 0 }
           ],
           "selected_layers": [
-            { "variable_name":  "$_2.4Ghz_ENABLED", "use_template": "toggle" },
-            { "text": "2.4Ghz", "x": 40, "text_color_palette": "yellow" }
+            { "variable_name": "$_2.4Ghz_ENABLED", "use_template": "toggle", "x": -2, "y": 0 },
+            { "text": "2.4Ghz", "x": 38, "text_color_palette": "yellow", "y": 0 }
           ],
           "target": "inline_toggle",
           "variable": "$_2.4Ghz_ENABLED"
+        },
+        {
+          "id": "Bluetooth",
+          "x": 185,
+          "y": 128,
+          "layers": [
+            { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle", "x": -19, "y": 0 },
+            { "text": "Bluetooth", "x": 21, "text_color_palette": "blue", "y": 0 }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BLUETOOTH_ENABLED", "use_template": "toggle", "x": -19, "y": 0 },
+            { "text": "Bluetooth", "x": 21, "text_color_palette": "yellow", "y": 0 }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BLUETOOTH_ENABLED"
+        },
+        {
+          "id": "Bluetooth Settings",
+          "x": 185,
+          "y": 164,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": -27, "y": 5 },
+            { "text": "BT Settings", "x": 9, "text_color_palette": "blue", "y": 0 }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "x": -27, "y": 5 },
+            { "text": "BT Settings", "x": 9, "text_color_palette": "yellow", "y": 0 }
+          ],
+          "target": "settings_bluetooth_submenu_explained"
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

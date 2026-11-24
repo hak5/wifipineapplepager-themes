@@ -7,7 +7,7 @@
       "layers": [
         { "image_path": "assets/optiondialog/option_dialog_bg_windowed.png", "x": 8, "y": 12 },
         { "variable_name": "$_INPUT_NAME", "x": 35, "y": 25, "use_template": "string_title" },
-        { "text":  "Size:", "text_size":  "small", "x": 330, "y": 25 },
+        { "text": "Size:", "text_size": "small", "x": 330, "y": 25 },
         { "variable_name": "$_LIST_SIZE", "x": 340, "y": 40, "use_template": "list_count" },
         { "variable_name": "$_LIST_PAGINATOR_LABEL_SHORT", "x": 395, "y": 33, "use_template": "list_pagination_label" }
       ]
