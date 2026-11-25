@@ -17,6 +17,7 @@
       "right": "next_page"
     },
     "background": {
+      "background_color": { "r": 0, "g": 0, "b": 0 },
       "layers": [
         { "image_path": "assets/recon/recon_list_bg.png", "x": 0, "y": 0 },
         { "x": 0, "y": 0, "variable_name": "$_RECON_LIST_PAGINATOR_LABEL_SHORT", "string_template": { "text_size": "small", "text_color_palette": "yellow", "center_text_within": { "draw_bounds": false, "start_x": 8, "end_x": 70, "start_y": 3, "end_y": 12 } } },
