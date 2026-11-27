@@ -224,6 +224,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 5
+            },
+            {
               "image_path": "assets/fieldkit/focus.png",
               "x": -4,
               "y": -2

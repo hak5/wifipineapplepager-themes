@@ -1,6 +1,6 @@
 {
   "author": "Valleytech Solutions / Your Pal Kal; based on Zombie Joe",
-  "theme_version": "2.1.0",
+  "theme_version": "2.4.1",
   "theme_framework_version": "0.9",
   "status_bars": {
     "default": "components/status_bars/status_bar.json",
@@ -128,7 +128,6 @@
     "alert_payload_title": "components/templates/alert_payload_title.json",
     "alert_payload_title_selected": "components/templates/alert_payload_title_selected.json",
     "timestamp": "components/templates/timestamp.json",
-    "spinner_text": "components/templates/spinner_text.json",
     "string": "components/templates/string.json",
     "payload_name": "components/templates/payload_name_in_list.json",
     "payload_name_selected": "components/templates/payload_name_in_list_selected.json",
@@ -367,6 +366,11 @@
       "r": 57,
       "g": 61,
       "b": 67
+    },
+    "selection_ink": {
+      "r": 16,
+      "g": 15,
+      "b": 16
     }
   },
   "_unused": {
@@ -393,6 +397,8 @@
   "duckyscript_list_picker": "components/dialogs/duckyscript_list_picker.json",
   "bt_recon_list_path": "components/recon/bt_recon_results_list.json",
   "payload_shortcuts": {
-    "wigle_upload": "/root/payloads/user/exfiltration/valleytech_wigle_upload"
+    "wigle_upload": "/root/payloads/user/exfiltration/valleytech_wigle_upload",
+    "quartermaster": "/root/payloads/user/reconnaissance/quartermaster",
+    "biscuit_node": "/root/payloads/user/reconnaissance/biscuit_pager_node"
   }
 }

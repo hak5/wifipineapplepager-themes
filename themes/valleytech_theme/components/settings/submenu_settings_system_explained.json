@@ -59,6 +59,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "variable_name": "$_VIRTUAL_PAGER_ENABLED",
               "use_template": "toggle"
             },
@@ -108,6 +113,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "variable_name": "$_CLIENT_ACCESS_ENABLED",
               "use_template": "toggle"
@@ -161,6 +171,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "image_path": "assets/firmware20/keyboard.png",
               "x": 3,
               "y": 4,
@@ -213,6 +228,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "variable_name": "$_SSH_ENABLED",
               "use_template": "toggle"
             },
@@ -262,6 +282,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "variable_name": "$_PIN_ENABLED",
               "use_template": "toggle"
@@ -326,6 +351,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "image_path": "assets/firmware20/keyboard.png",
               "x": 3,
               "y": 4,
@@ -382,6 +412,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "variable_name": "$_NTP_ENABLED",
               "use_template": "toggle"
@@ -440,6 +475,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "image_path": "assets/firmware20/warning.png",
               "x": 5,

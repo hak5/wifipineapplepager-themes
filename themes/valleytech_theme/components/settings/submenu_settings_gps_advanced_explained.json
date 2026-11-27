@@ -102,6 +102,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "variable_name": "$_GPS_NATIVE",
               "x": 0,
               "toggle_template": {
@@ -225,6 +230,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "x": 4,
               "y": 5,
@@ -294,6 +304,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 34
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "y": 36,
               "x": 4,
@@ -356,6 +371,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 37
+            },
             {
               "image_path": "assets/firmware20/start.png",
               "x": 5,

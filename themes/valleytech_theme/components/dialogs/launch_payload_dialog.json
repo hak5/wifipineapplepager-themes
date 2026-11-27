@@ -72,6 +72,11 @@
       ],
       "selected_layers": [
         {
+          "image_path": "assets/valleytech_surfaces/focus_launch.png",
+          "x": 62,
+          "y": 117
+        },
+        {
           "x": 62,
           "y": 117
         },
@@ -79,18 +84,13 @@
           "image_path": "assets/flame.png",
           "x": 126,
           "y": 159,
-          "recolor_palette": "green"
-        },
-        {
-          "image_path": "assets/payload_dialog_selected_box.png",
-          "x": 62,
-          "y": 117
+          "recolor_palette": "selection_ink"
         },
         {
           "text": "Launch",
           "x": 81,
           "y": 125,
-          "text_color_palette": "green",
+          "text_color_palette": "selection_ink",
           "text_size": "large"
         }
       ],
@@ -151,6 +151,11 @@
       ],
       "selected_layers": [
         {
+          "image_path": "assets/valleytech_surfaces/focus_launch.png",
+          "x": 200,
+          "y": 117
+        },
+        {
           "x": 200,
           "y": 117
         },
@@ -158,18 +163,13 @@
           "image_path": "assets/x.png",
           "x": 261,
           "y": 160,
-          "recolor_palette": "red"
-        },
-        {
-          "image_path": "assets/payload_dialog_selected_box.png",
-          "x": 200,
-          "y": 117
+          "recolor_palette": "selection_ink"
         },
         {
           "text": "Cancel",
           "x": 222,
           "y": 125,
-          "text_color_palette": "red",
+          "text_color_palette": "selection_ink",
           "text_size": "large"
         }
       ],

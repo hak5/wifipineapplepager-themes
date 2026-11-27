@@ -47,7 +47,7 @@
               "image_path": "assets/x.png",
               "x": 167,
               "y": 170,
-              "recolor_palette": "red"
+              "recolor_palette": "selection_ink"
             }
           ],
           "target": "back"
@@ -79,7 +79,7 @@
               "image_path": "assets/check.png",
               "x": 299,
               "y": 168,
-              "recolor_palette": "green"
+              "recolor_palette": "selection_ink"
             }
           ],
           "target": "confirm"

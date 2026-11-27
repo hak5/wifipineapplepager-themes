@@ -136,6 +136,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "text": "GPS Service:",
               "text_color_palette": "yellow"
             },
@@ -212,6 +217,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 36
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "y": 38,
               "x": 4,
@@ -250,6 +260,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 36
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "y": 38,
               "x": 4,
@@ -287,6 +302,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 36
+            },
             {
               "image_path": "assets/firmware20/start.png",
               "x": 5,

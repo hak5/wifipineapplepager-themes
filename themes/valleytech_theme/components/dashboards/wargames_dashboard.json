@@ -2,7 +2,7 @@
   "screen_name": "main_dashboard",
   "status_bar": "valleytech",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "noop",
@@ -13,27 +13,15 @@
   },
   "background": {
     "background_color": {
-      "r": 8,
-      "g": 9,
-      "b": 11
+      "r": 12,
+      "g": 15,
+      "b": 19
     },
     "layers": [
       {
-        "image_path": "assets/valleytech_grid/home_background.png",
+        "image_path": "assets/valleytech_home/launcher_field.png",
         "x": 0,
         "y": 0
-      },
-      {
-        "image_path": "assets/valleytech_grid/vts_header.png",
-        "x": 7,
-        "y": 1
-      },
-      {
-        "text": "VALLEYTECH",
-        "x": 35,
-        "y": 4,
-        "text_size": "medium",
-        "text_color_palette": "field_text"
       }
     ]
   },
@@ -42,124 +30,139 @@
       "id": "WARDRIVING",
       "layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "image_path": "assets/valleytech_home/wardriving.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/bwm_wardrive.png",
-          "x": 53,
-          "y": 4
-        },
-        {
-          "text": "WARDRIVING",
-          "text_size": "medium",
-          "text_color_palette": "field_text",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 4,
-            "end_x": 156,
-            "start_y": 86,
-            "end_y": 116
-          }
         }
       ],
       "selected_layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "image_path": "assets/valleytech_home/wardriving_focus.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/bwm_wardrive.png",
-          "x": 53,
-          "y": 4
-        },
-        {
-          "text": "WARDRIVING",
-          "text_size": "medium",
-          "text_color_palette": "field_gold",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 4,
-            "end_x": 156,
-            "start_y": 86,
-            "end_y": 116
-          }
         }
       ],
-      "x": 4,
-      "y": 30,
+      "x": 7,
+      "y": 32,
       "target": "wardriving_dashboard",
       "button_map": {
         "a": "select",
         "b": "noop",
-        "up": "goto RECON",
+        "up": "goto PINEAP",
+        "down": "goto BISCUIT_NODE",
+        "left": "goto QUARTERMASTER",
+        "right": "goto QUARTERMASTER"
+      }
+    },
+    {
+      "id": "QUARTERMASTER",
+      "target": "execute_payload_quartermaster",
+      "x": 245,
+      "y": 32,
+      "layers": [
+        {
+          "image_path": "assets/valleytech_home/quartermaster.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_home/quartermaster_focus.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto SETTINGS",
         "down": "goto RECON",
-        "left": "goto PAYLOADS",
-        "right": "goto ALERTS"
+        "left": "goto WARDRIVING",
+        "right": "goto WARDRIVING"
+      }
+    },
+    {
+      "id": "BISCUIT_NODE",
+      "target": "execute_payload_biscuit_node",
+      "x": 7,
+      "y": 78,
+      "layers": [
+        {
+          "image_path": "assets/valleytech_home/biscuit_node.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_home/biscuit_node_focus.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto WARDRIVING",
+        "down": "goto ALERTS",
+        "left": "goto RECON",
+        "right": "goto RECON"
+      }
+    },
+    {
+      "id": "RECON",
+      "layers": [
+        {
+          "image_path": "assets/valleytech_home/recon.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "selected_layers": [
+        {
+          "image_path": "assets/valleytech_home/recon_focus.png",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "x": 245,
+      "y": 78,
+      "target": "recon_dashboard",
+      "button_map": {
+        "a": "select",
+        "b": "noop",
+        "up": "goto QUARTERMASTER",
+        "down": "goto PAYLOADS",
+        "left": "goto BISCUIT_NODE",
+        "right": "goto BISCUIT_NODE"
       }
     },
     {
       "id": "ALERTS",
       "layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "image_path": "assets/valleytech_home/alerts.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_alerts.png",
-          "x": 52,
-          "y": 6
-        },
-        {
-          "text": "ALERTS",
-          "text_size": "medium",
-          "text_color_palette": "field_text",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 164,
-            "end_x": 316,
-            "start_y": 86,
-            "end_y": 116
-          }
         }
       ],
       "selected_layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "image_path": "assets/valleytech_home/alerts_focus.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_alerts.png",
-          "x": 52,
-          "y": 6,
-          "recolor_palette": "field_gold"
-        },
-        {
-          "text": "ALERTS",
-          "text_size": "medium",
-          "text_color_palette": "field_gold",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 164,
-            "end_x": 316,
-            "start_y": 86,
-            "end_y": 116
-          }
         }
       ],
-      "x": 164,
-      "y": 30,
+      "x": 7,
+      "y": 124,
       "target": "alerts_dashboard",
       "button_map": {
         "a": "select",
         "b": "noop",
-        "up": "goto PINEAP",
+        "up": "goto BISCUIT_NODE",
         "down": "goto PINEAP",
-        "left": "goto WARDRIVING",
+        "left": "goto PAYLOADS",
         "right": "goto PAYLOADS"
       }
     },
@@ -167,189 +170,56 @@
       "id": "PAYLOADS",
       "layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "image_path": "assets/valleytech_home/payloads.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_payloads.png",
-          "x": 52,
-          "y": 6
-        },
-        {
-          "text": "PAYLOADS",
-          "text_size": "medium",
-          "text_color_palette": "field_text",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 324,
-            "end_x": 476,
-            "start_y": 86,
-            "end_y": 116
-          }
         }
       ],
       "selected_layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "image_path": "assets/valleytech_home/payloads_focus.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_payloads.png",
-          "x": 52,
-          "y": 6,
-          "recolor_palette": "field_gold"
-        },
-        {
-          "text": "PAYLOADS",
-          "text_size": "medium",
-          "text_color_palette": "field_gold",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 324,
-            "end_x": 476,
-            "start_y": 86,
-            "end_y": 116
-          }
         }
       ],
-      "x": 324,
-      "y": 30,
+      "x": 245,
+      "y": 124,
       "target": "payloads_dashboard",
       "variable": "$_PAYLOAD_CATEGORIES",
       "button_map": {
         "a": "select",
         "b": "noop",
-        "up": "goto SETTINGS",
+        "up": "goto RECON",
         "down": "goto SETTINGS",
         "left": "goto ALERTS",
-        "right": "goto WARDRIVING"
-      }
-    },
-    {
-      "id": "RECON",
-      "layers": [
-        {
-          "image_path": "assets/valleytech_grid/home_tile_idle.png",
-          "x": 0,
-          "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_recon.png",
-          "x": 52,
-          "y": 6
-        },
-        {
-          "text": "RECON",
-          "text_size": "medium",
-          "text_color_palette": "field_text",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 4,
-            "end_x": 156,
-            "start_y": 180,
-            "end_y": 210
-          }
-        }
-      ],
-      "selected_layers": [
-        {
-          "image_path": "assets/valleytech_grid/home_tile_selected.png",
-          "x": 0,
-          "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_recon.png",
-          "x": 52,
-          "y": 6,
-          "recolor_palette": "field_gold"
-        },
-        {
-          "text": "RECON",
-          "text_size": "medium",
-          "text_color_palette": "field_gold",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 4,
-            "end_x": 156,
-            "start_y": 180,
-            "end_y": 210
-          }
-        }
-      ],
-      "x": 4,
-      "y": 124,
-      "target": "recon_dashboard",
-      "button_map": {
-        "a": "select",
-        "b": "noop",
-        "up": "goto WARDRIVING",
-        "down": "goto WARDRIVING",
-        "left": "goto SETTINGS",
-        "right": "goto PINEAP"
+        "right": "goto ALERTS"
       }
     },
     {
       "id": "PINEAP",
       "layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "image_path": "assets/valleytech_home/pineap.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_pineap.png",
-          "x": 52,
-          "y": 6
-        },
-        {
-          "text": "PINEAP",
-          "text_size": "medium",
-          "text_color_palette": "field_text",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 164,
-            "end_x": 316,
-            "start_y": 180,
-            "end_y": 210
-          }
         }
       ],
       "selected_layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "image_path": "assets/valleytech_home/pineap_focus.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_pineap.png",
-          "x": 52,
-          "y": 6,
-          "recolor_palette": "field_gold"
-        },
-        {
-          "text": "PINEAP",
-          "text_size": "medium",
-          "text_color_palette": "field_gold",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 164,
-            "end_x": 316,
-            "start_y": 180,
-            "end_y": 210
-          }
         }
       ],
-      "x": 164,
-      "y": 124,
+      "x": 7,
+      "y": 170,
       "target": "pineap_menu",
       "button_map": {
         "a": "select",
         "b": "noop",
         "up": "goto ALERTS",
-        "down": "goto ALERTS",
-        "left": "goto RECON",
+        "down": "goto WARDRIVING",
+        "left": "goto SETTINGS",
         "right": "goto SETTINGS"
       }
     },
@@ -357,64 +227,49 @@
       "id": "SETTINGS",
       "layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_idle.png",
+          "image_path": "assets/valleytech_home/settings.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_settings.png",
-          "x": 52,
-          "y": 6
-        },
-        {
-          "text": "SETTINGS",
-          "text_size": "medium",
-          "text_color_palette": "field_text",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 324,
-            "end_x": 476,
-            "start_y": 180,
-            "end_y": 210
-          }
         }
       ],
       "selected_layers": [
         {
-          "image_path": "assets/valleytech_grid/home_tile_selected.png",
+          "image_path": "assets/valleytech_home/settings_focus.png",
           "x": 0,
           "y": 0
-        },
-        {
-          "image_path": "assets/valleytech_grid/icon_settings.png",
-          "x": 52,
-          "y": 6,
-          "recolor_palette": "field_gold"
-        },
-        {
-          "text": "SETTINGS",
-          "text_size": "medium",
-          "text_color_palette": "field_gold",
-          "center_text_within": {
-            "draw_bounds": false,
-            "start_x": 324,
-            "end_x": 476,
-            "start_y": 180,
-            "end_y": 210
-          }
         }
       ],
-      "x": 324,
-      "y": 124,
+      "x": 245,
+      "y": 170,
       "target": "settings_menu",
       "button_map": {
         "a": "select",
         "b": "noop",
         "up": "goto PAYLOADS",
-        "down": "goto PAYLOADS",
+        "down": "goto QUARTERMASTER",
         "left": "goto PINEAP",
-        "right": "goto RECON"
+        "right": "goto PINEAP"
       }
+    },
+    {
+      "id": "home_battery_readout",
+      "unselectable": true,
+      "x": 335,
+      "y": 7,
+      "layers": [
+        {
+          "variable_name": "$_BATTERY_INFO",
+          "x": 0,
+          "y": 0,
+          "string_template": {
+            "text_size": "small",
+            "text_color_palette": "field_text",
+            "max_chars": 16,
+            "wrap_text": false,
+            "max_lines": 1
+          }
+        }
+      ]
     }
   ]
 }

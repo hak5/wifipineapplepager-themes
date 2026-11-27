@@ -5,7 +5,7 @@
   "background": {
     "layers": [
       {
-        "image_path": "assets/valleytech_surfaces/brand_base.png",
+        "image_path": "assets/valleytech_surfaces/boot_1.png",
         "x": 0,
         "y": 0
       }
@@ -24,33 +24,23 @@
       "animation": [
         {
           "image_path": "assets/valleytech_surfaces/activity_1.png",
-          "x": 20,
-          "y": 205
+          "x": 426,
+          "y": 196
         },
         {
           "image_path": "assets/valleytech_surfaces/activity_2.png",
-          "x": 20,
-          "y": 205
+          "x": 426,
+          "y": 196
         },
         {
           "image_path": "assets/valleytech_surfaces/activity_3.png",
-          "x": 20,
-          "y": 205
+          "x": 426,
+          "y": 196
         },
         {
           "image_path": "assets/valleytech_surfaces/activity_4.png",
-          "x": 20,
-          "y": 205
-        }
-      ]
-    },
-    {
-      "id": "spinner_text",
-      "unselectable": true,
-      "layers": [
-        {
-          "variable_name": "$_INPUT",
-          "use_template": "spinner_text"
+          "x": 426,
+          "y": 196
         }
       ]
     }

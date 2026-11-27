@@ -61,6 +61,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "x": 4,
               "y": 5,
@@ -105,6 +110,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "variable_name": "$_VIBRATE",
               "use_template": "toggle"
@@ -162,6 +172,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "variable_name": "$_RINGTONE_VIBRATE",
               "use_template": "toggle"
@@ -222,6 +237,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "x": 4,
               "y": 5,
@@ -275,6 +295,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -15,
+              "y": 3
+            },
             {
               "image_path": "assets/firmware20/menu.png",
               "x": 4,

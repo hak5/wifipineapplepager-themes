@@ -51,6 +51,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 53
+            },
+            {
               "x": 20,
               "y": 50,
               "text_color_palette": "yellow",
@@ -139,6 +144,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 78
+            },
+            {
               "text": "Display",
               "x": 20,
               "y": 75,
@@ -208,6 +218,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 103
+            },
             {
               "text": "Ringtone",
               "x": 20,
@@ -291,6 +306,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 128
+            },
+            {
               "text": "Network",
               "x": 20,
               "y": 125,
@@ -372,6 +392,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 153
+            },
             {
               "text": "System",
               "x": 20,
@@ -465,6 +490,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 53
+            },
             {
               "text": "Clock",
               "x": 20,
@@ -566,6 +596,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 78
+            },
+            {
               "text": "GPS",
               "x": 20,
               "y": 75,
@@ -638,6 +673,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 103
+            },
+            {
               "text": "Updates",
               "x": 20,
               "y": 100,
@@ -689,6 +729,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 128
+            },
             {
               "text": "Help",
               "x": 20,
@@ -771,6 +816,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": 5,
+              "y": 153
+            },
             {
               "text": "About",
               "x": 20,

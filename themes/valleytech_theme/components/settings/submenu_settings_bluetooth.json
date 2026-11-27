@@ -97,6 +97,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "image_path": "assets/firmware20/menu.png",
               "x": 4,
               "y": 5,
@@ -138,6 +143,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "variable_name": "$_BT_ACTIVE_SCAN",
               "use_template": "toggle"
             },
@@ -169,6 +179,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "variable_name": "$_BT_NAME_LOOKUP",
               "use_template": "toggle"
@@ -203,6 +218,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "image_path": "assets/firmware20/menu.png",
               "x": 4,
@@ -243,6 +263,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "variable_name": "$_BT_CODED_PHY",
               "use_template": "toggle"
@@ -293,6 +318,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "variable_name": "$_BT_PERSIST_DB",
               "use_template": "toggle"
             },
@@ -330,6 +360,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "variable_name": "$_BT_DISCARD_RANDOM",
               "use_template": "toggle"

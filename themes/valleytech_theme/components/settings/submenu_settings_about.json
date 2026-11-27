@@ -81,6 +81,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "text": "Uptime:",
               "text_color_palette": "yellow"
             },
@@ -129,6 +134,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "text": "Battery:",
               "text_color_palette": "yellow"
             },
@@ -168,6 +178,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "text": "Temperature:",
               "text_color_palette": "yellow"
             },
@@ -206,6 +221,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "text": "Free Disk Space:",
               "text_color_palette": "yellow"
@@ -251,6 +271,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "text": "WAN IP:",
               "text_color_palette": "yellow"
@@ -308,6 +333,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "text": "Loot:",
               "text_color_palette": "yellow"
             },
@@ -361,6 +391,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "text": "Packages:",
               "text_color_palette": "yellow"
             },
@@ -399,6 +434,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "text": "Handshakes:",
               "text_color_palette": "yellow"

@@ -93,6 +93,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "image_path": "assets/menu.png",
               "recolor_palette": "yellow"
             },
@@ -122,6 +127,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "image_path": "assets/keyboard.png",
               "recolor_palette": "yellow"
             },
@@ -150,6 +160,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "image_path": "assets/keyboard.png",
               "recolor_palette": "yellow"
@@ -186,6 +201,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "image_path": "assets/keyboard.png",
               "recolor_palette": "yellow"
             },
@@ -221,6 +241,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "variable_name": "$_CLOCK_24HR",
               "use_template": "toggle",
@@ -263,6 +288,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "image_path": "assets/keyboard.png",
               "recolor_palette": "yellow"
             },
@@ -298,6 +328,11 @@
           ],
           "selected_layers": [
             {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
+            {
               "image_path": "assets/keyboard.png",
               "recolor_palette": "yellow"
             },
@@ -326,6 +361,11 @@
             }
           ],
           "selected_layers": [
+            {
+              "image_path": "assets/valleytech_surfaces/focus_cursor.png",
+              "x": -20,
+              "y": 3
+            },
             {
               "image_path": "assets/keyboard.png",
               "recolor_palette": "yellow"
