@@ -1,0 +1,171 @@
+{
+  "screen_name": "settings_bluetooth_submenu",
+  "status_bar": "network",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/settings_bg.png", "x": 0, "y": 0 },
+      { "image_path": "assets/divright.png", "x": 140, "y": 50 },
+      { "text": "General", "x": 10, "y": 50, "text_color_palette": "gray" },
+      { "text": "Display", "x": 10, "y": 85, "text_color_palette": "gray" },
+      { "text": "Ringtone", "x": 10, "y": 120, "text_color_palette": "gray" },
+      { "text": "Network", "x": 10, "y": 155, "text_color_palette": "yellow" },
+      { "text": "System", "x": 10, "y": 190, "text_color_palette": "gray" },
+      { "image_path": "assets/help.png", "x": 447, "y": 27, "recolor_palette": "gray" },
+      { "text": ">", "x": 461, "y": 27, "text_size": "small", "text_color_palette": "gray" }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "BT Scan Mode",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "variable_name": "$_BT_SCAN_MODE", "x": 170, "string_template": { "text_color_palette": "red" } },
+            { "text": "Scan Mode", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "variable_name": "$_BT_SCAN_MODE", "x": 170, "string_template": { "text_color_palette": "red" } },
+            { "text": "Scan Mode", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BT_SCAN_MODE",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Scan Mode"
+          }
+        },
+        {
+          "id": "BT Active Scan",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_BT_ACTIVE_SCAN", "use_template": "toggle" },
+            { "text": "Active Scan", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_ACTIVE_SCAN", "use_template": "toggle" },
+            { "text": "Active Scan", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_ACTIVE_SCAN",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Active Scan"
+          }
+        },
+        {
+          "id": "BT Name Lookup",
+          "x": 170,
+          "y": 120,
+          "layers": [
+            { "variable_name": "$_BT_NAME_LOOKUP", "use_template": "toggle" },
+            { "text": "Name Lookup", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_NAME_LOOKUP", "use_template": "toggle" },
+            { "text": "Name Lookup", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_NAME_LOOKUP",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Name Lookup"
+          }
+        },
+        {
+          "id": "Classic Sweep",
+          "x": 170,
+          "y": 155,
+          "layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "text": "Classic Sweep", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "image_path": "assets/menu.png", "x": 4, "y": 5 },
+            { "text": "Classic Sweep", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "option_dialog",
+          "variable": "$_BT_CLASSIC_SWEEP",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Classic Sweep"
+          }
+        },
+        {
+          "id": "Scan Coded PHY",
+          "x": 170,
+          "y": 190,
+          "layers": [
+            { "variable_name": "$_BT_CODED_PHY", "use_template": "toggle" },
+            { "text": "Scan Coded PHY", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_CODED_PHY", "use_template": "toggle" },
+            { "text": "Scan Coded PHY", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/down.png", "x": -16, "y": 16, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_CODED_PHY",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Scan Coded PHY"
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Save to BT DB",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
+            { "text": "Save to DB", "x": 40, "text_color_palette": "blue" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_PERSIST_DB", "use_template": "toggle" },
+            { "text": "Save to DB", "x": 40, "text_color_palette": "yellow" },
+            { "image_path": "assets/up.png", "x": -16, "y": 2, "recolor_palette": "gray" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_PERSIST_DB",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Save to DB"
+          }
+        },
+        {
+          "id": "Ignore Random",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            { "variable_name": "$_BT_DISCARD_RANDOM", "use_template": "toggle" },
+            { "text": "Ignore Random", "x": 40, "text_color_palette": "blue" }
+          ],
+          "selected_layers": [
+            { "variable_name": "$_BT_DISCARD_RANDOM", "use_template": "toggle" },
+            { "text": "Ignore Random", "x": 40, "text_color_palette": "yellow" }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_BT_DISCARD_RANDOM",
+          "button_map": {
+            "right": "target settings_bluetooth_submenu_explained Ignore Random"
+          }
+        }
+      ]
+    }
+  ]
+}
