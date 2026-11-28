@@ -1,0 +1,48 @@
+{
+  "screen_name": "spinner",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/valleytech_surfaces/boot_1.png",
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "background_color": {
+      "r": 8,
+      "g": 9,
+      "b": 11
+    }
+  },
+  "menu_items": [
+    {
+      "id": "spinner",
+      "unselectable": true,
+      "animation_interval": 0.4,
+      "animation": [
+        {
+          "image_path": "assets/valleytech_surfaces/activity_1.png",
+          "x": 426,
+          "y": 196
+        },
+        {
+          "image_path": "assets/valleytech_surfaces/activity_2.png",
+          "x": 426,
+          "y": 196
+        },
+        {
+          "image_path": "assets/valleytech_surfaces/activity_3.png",
+          "x": 426,
+          "y": 196
+        },
+        {
+          "image_path": "assets/valleytech_surfaces/activity_4.png",
+          "x": 426,
+          "y": 196
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "screen_name": "quick_settings",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/valleytech_surfaces/settings_bg.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Brightness",
+          "x": 85,
+          "y": 60,
+          "layers": [
+            {
+              "text": "Brightness",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "image_path": "assets/firmware20/alerts_dashboard/sub.png",
+              "x": -38,
+              "y": 5,
+              "recolor_palette": "yellow"
+            },
+            {
+              "text": "Brightness",
+              "text_color_palette": "focus_ink"
+            }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_BRIGHTNESS"
+        },
+        {
+          "id": "Volume",
+          "x": 85,
+          "y": 88,
+          "layers": [
+            {
+              "text": "Volume",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "image_path": "assets/firmware20/alerts_dashboard/sub.png",
+              "x": -38,
+              "y": 5,
+              "recolor_palette": "yellow"
+            },
+            {
+              "text": "Volume",
+              "text_color_palette": "focus_ink"
+            }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_VOLUME"
+        },
+        {
+          "id": "Vibrate",
+          "x": 85,
+          "y": 116,
+          "layers": [
+            {
+              "variable_name": "$_VIBRATE",
+              "x": -38,
+              "use_template": "green_toggle"
+            },
+            {
+              "text": "Vibrate",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "variable_name": "$_VIBRATE",
+              "x": -38,
+              "use_template": "green_toggle"
+            },
+            {
+              "text": "Vibrate",
+              "text_color_palette": "focus_ink"
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_VIBRATE"
+        },
+        {
+          "id": "Client Mode",
+          "x": 85,
+          "y": 144,
+          "layers": [
+            {
+              "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",
+              "x": -38,
+              "use_template": "green_toggle"
+            },
+            {
+              "text": "Client Mode",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "variable_name": "$_WIFI_CLIENT_MODE_ENABLED",
+              "x": -38,
+              "use_template": "green_toggle"
+            },
+            {
+              "text": "Client Mode",
+              "text_color_palette": "focus_ink"
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_WIFI_CLIENT_MODE_ENABLED"
+        },
+        {
+          "id": "Client Setup",
+          "x": 85,
+          "y": 172,
+          "layers": [
+            {
+              "text": "Client Setup",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "image_path": "assets/firmware20/alerts_dashboard/sub.png",
+              "x": -38,
+              "y": 5,
+              "recolor_palette": "yellow"
+            },
+            {
+              "text": "Client Setup",
+              "text_color_palette": "focus_ink"
+            }
+          ],
+          "target": "client_mode_wizard"
+        }
+      ]
+    }
+  ]
+}

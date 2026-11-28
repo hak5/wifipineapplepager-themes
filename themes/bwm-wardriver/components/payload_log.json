@@ -1,0 +1,85 @@
+{
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/valleytech_surfaces/payload_log_bg.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "variable_name": "$_INPUT_NAME",
+        "use_template": "payload_title",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "scroll_pause_indicator": [
+    {
+      "image_path": "assets/scroll_pause_indicator.png",
+      "x": 457,
+      "y": 108
+    }
+  ],
+  "scroll_up_indicator": [
+    {
+      "image_path": "assets/scroll_up_indicator.png",
+      "x": 465,
+      "y": 40
+    }
+  ],
+  "scroll_down_indicator": [
+    {
+      "image_path": "assets/scroll_down_indicator.png",
+      "x": 465,
+      "y": 180
+    }
+  ],
+  "payload_running_indicator": [
+    {
+      "image_path": "assets/valleytech_ui/payload_running.png",
+      "x": 0,
+      "y": 179
+    }
+  ],
+  "payload_complete_indicator": [
+    {
+      "image_path": "assets/valleytech_ui/payload_complete.png",
+      "x": 0,
+      "y": 179
+    }
+  ],
+  "payload_stopped_indicator": [
+    {
+      "image_path": "assets/valleytech_ui/payload_stopped.png",
+      "x": 0,
+      "y": 178
+    }
+  ],
+  "status_bar": "default",
+  "refresh_interval": 0.75,
+  "visible_lines": 14,
+  "text_size": "small",
+  "max_chars": 50,
+  "start_x": 6,
+  "start_y": 24,
+  "default_text_color": {
+    "r": 242,
+    "g": 242,
+    "b": 242,
+    "a": 255
+  },
+  "error_text_color": {
+    "r": 240,
+    "g": 215,
+    "b": 149,
+    "a": 255
+  },
+  "payload_errored_indicator": [
+    {
+      "image_path": "assets/valleytech_ui/payload_error.png",
+      "x": 0,
+      "y": 178
+    }
+  ]
+}

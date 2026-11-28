@@ -1,0 +1,366 @@
+{
+  "template": {
+    "screen_name": "option_picker",
+    "windowed_canvas": false,
+    "cache_canvases": true,
+    "background": {
+      "layers": [
+        {
+          "image_path": "assets/valleytech_surfaces/option_dialog_bg_windowed.png",
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Slot0",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 70,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 72,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/scroll_up_indicator.png",
+                "x": 12,
+                "y": 70,
+                "recolor_palette": "medium_gray"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/valleytech_surfaces/picker_focus.png",
+                "x": 26,
+                "y": 67
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 70,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 72,
+                "use_template": "selected_radio"
+              },
+              {
+                "image_path": "assets/scroll_up_indicator.png",
+                "x": 12,
+                "y": 70,
+                "recolor_palette": "medium_gray"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot1",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 100,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 102,
+                "use_template": "radio"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/valleytech_surfaces/picker_focus.png",
+                "x": 26,
+                "y": 97
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 100,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 102,
+                "use_template": "selected_radio"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot2",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 130,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 132,
+                "use_template": "radio"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/valleytech_surfaces/picker_focus.png",
+                "x": 26,
+                "y": 127
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 130,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 132,
+                "use_template": "selected_radio"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          },
+          {
+            "id": "Slot3",
+            "layers": [
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 160,
+                "use_template": "option_dialog_string"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 162,
+                "use_template": "radio"
+              },
+              {
+                "image_path": "assets/scroll_down_indicator.png",
+                "x": 12,
+                "y": 175,
+                "recolor_palette": "medium_gray"
+              }
+            ],
+            "selected_layers": [
+              {
+                "image_path": "assets/valleytech_surfaces/picker_focus.png",
+                "x": 26,
+                "y": 157
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 68,
+                "y": 160,
+                "use_template": "option_dialog_string_selected"
+              },
+              {
+                "variable_name": "$_LIST_ITEM",
+                "x": 43,
+                "y": 162,
+                "use_template": "selected_radio"
+              },
+              {
+                "image_path": "assets/scroll_down_indicator.png",
+                "x": 12,
+                "y": 175,
+                "recolor_palette": "medium_gray"
+              }
+            ],
+            "target": "select",
+            "button_map": {
+              "a": "select",
+              "b": "back",
+              "up": "previous",
+              "down": "next",
+              "left": "noop",
+              "right": "select_menu"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "save_cancel_menu": {
+    "screen_name": "option_picker",
+    "background": {
+      "layers": []
+    },
+    "pages": [
+      {
+        "menu_items": [
+          {
+            "id": "Save",
+            "layers": [
+              {
+                "x": 407,
+                "y": 36,
+                "image_path": "assets/button_bg.png"
+              },
+              {
+                "image_path": "assets/button_outline.png",
+                "recolor_palette": "disabled_light_gray",
+                "x": 407,
+                "y": 36
+              },
+              {
+                "image_path": "assets/check.png",
+                "x": 424,
+                "y": 62,
+                "recolor_palette": "gray"
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable_name": "$_LIST_ITEM"
+              }
+            ],
+            "selected_layers": [
+              {
+                "x": 407,
+                "y": 36,
+                "image_path": "assets/valleytech_surfaces/picker_button_focus.png"
+              },
+              {
+                "image_path": "assets/button_outline.png",
+                "x": 407,
+                "y": 36,
+                "recolor_palette": "focus_ink"
+              },
+              {
+                "image_path": "assets/check.png",
+                "x": 424,
+                "y": 62,
+                "recolor_palette": "focus_ink"
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
+            ],
+            "target": "save",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "next",
+              "left": "select_list",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Cancel",
+            "layers": [
+              {
+                "x": 407,
+                "y": 118,
+                "image_path": "assets/button_bg.png"
+              },
+              {
+                "image_path": "assets/button_outline.png",
+                "x": 407,
+                "y": 118,
+                "recolor_palette": "disabled_light_gray"
+              },
+              {
+                "image_path": "assets/x.png",
+                "x": 430,
+                "y": 146,
+                "recolor_palette": "gray"
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
+            ],
+            "selected_layers": [
+              {
+                "x": 407,
+                "y": 118,
+                "image_path": "assets/valleytech_surfaces/picker_button_focus.png"
+              },
+              {
+                "image_path": "assets/button_outline.png",
+                "x": 407,
+                "y": 118,
+                "recolor_palette": "focus_ink"
+              },
+              {
+                "image_path": "assets/x.png",
+                "x": 430,
+                "y": 146,
+                "recolor_palette": "focus_ink"
+              },
+              {
+                "_comment": "this is just a required cache busting hack",
+                "variable": "$_LIST_ITEM"
+              }
+            ],
+            "target": "back",
+            "button_map": {
+              "a": "select",
+              "b": "select_list",
+              "up": "previous",
+              "down": "next",
+              "left": "select_list",
+              "right": "noop"
+            }
+          },
+          {
+            "id": "Title",
+            "unselectable": true,
+            "layers": [
+              {
+                "variable_name": "$_INPUT_NAME",
+                "x": 32,
+                "y": 30,
+                "use_template": "string_title"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

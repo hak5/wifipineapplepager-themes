@@ -1,0 +1,16 @@
+{
+  "enabled": [
+    {
+      "image_path": "assets/fieldkit/toggle_on_crisp.png",
+      "x": 0,
+      "y": 4
+    }
+  ],
+  "disabled": [
+    {
+      "image_path": "assets/fieldkit/toggle_off_crisp.png",
+      "x": 0,
+      "y": 4
+    }
+  ]
+}

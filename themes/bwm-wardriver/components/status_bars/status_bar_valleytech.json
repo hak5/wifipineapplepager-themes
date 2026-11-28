@@ -1,0 +1,70 @@
+{
+  "background": {
+    "cache_canvases": false,
+    "layers": [],
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "status_bar_items": {
+    "Time": {
+      "x": 9,
+      "y": 7,
+      "layers": {
+        "default": []
+      },
+      "recolor_palette": "field_gold"
+    },
+    "Battery": {
+      "x": 288,
+      "y": 7,
+      "layers": {
+        "discharging": [
+          {
+            "image_path": "assets/dashboard_battery_text.png",
+            "x": 4,
+            "y": -2,
+            "recolor_palette": "white"
+          }
+        ],
+        "charging_25": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_25.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_50": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_50.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_75": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_75.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charging_100": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charge_100.png",
+            "x": 4,
+            "y": -2
+          }
+        ],
+        "charged": [
+          {
+            "image_path": "assets/valleytech_ui/battery_charged.png",
+            "x": 4,
+            "y": -2
+          }
+        ]
+      }
+    }
+  }
+}
