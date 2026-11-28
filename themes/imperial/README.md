@@ -42,13 +42,9 @@ positions are taken from the stock Wargames layouts, so every key stays on the
 firmware's hit box.
 
 ## Known limitations
-- Not yet tested on real Pager hardware; screens were checked with the
-  project's approximate previewer (`tools/preview.py`), not the device.
-- Recoloured icons assume the firmware replaces the icon's RGB with the flat
-  palette colour and keeps its alpha. If the firmware shades instead, some
-  small glyphs may look slightly different.
-- Header artwork sits under the firmware status bar. If the firmware paints
-  a solid strip behind the status icons, part of the header art is hidden.
+- Tested on a WiFi Pineapple Pager running firmware 2.1.0. Hak5 does not
+  guarantee theme compatibility across firmware versions, so later firmware may
+  need updates.
 - A few text colours were changed in component JSON so they stay readable on
   the dark art. The lock screen hint and the tutorial text use `soft_white`
   instead of `black`.
