@@ -6,52 +6,101 @@
   },
   "status_bar_items": {
     "Time": {
-      "x": 397,
+      "x": 400,
       "y": 9,
       "layers": {
         "default": []
       },
-      "recolor_palette": "soft_white"
+      "recolor_palette": "green"
     },
     "Battery": {
       "x": 346,
-      "y": 9,
+      "y": 7,
       "layers": {
-        "discharging":  [{ "image_path": "assets/statusbar/dashboard_battery_text.png",       "x": 4, "y": -2}],
-        "charging_25":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_25.png",  "x": 4, "y": -2}],
-        "charging_50":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_50.png",  "x": 4, "y": -2}],
-        "charging_75":  [{ "image_path": "assets/statusbar/dashboard_battery_charge_75.png",  "x": 4, "y": -2}],
-        "charging_100": [{ "image_path": "assets/statusbar/dashboard_battery_charge_100.png", "x": 4, "y": -2}],
-        "charged":      [{ "image_path": "assets/statusbar/dashboard_battery_full.png",       "x": 4, "y": -2}]
+        "discharging": [
+          { "image_path": "assets/statusbar/dashboard_battery_text.png", "x": 4, "y": 0 }
+        ],
+        "charging_25": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_25.png", "x": 4, "y": 0 }
+        ],
+        "charging_50": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_50.png", "x": 4, "y": 0 }
+        ],
+        "charging_75": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_75.png", "x": 4, "y": 0 }
+        ],
+        "charging_100": [
+          { "image_path": "assets/statusbar/dashboard_battery_charge_100.png", "x": 4, "y": 0 }
+        ],
+        "charged": [
+          { "image_path": "assets/statusbar/dashboard_battery_full.png", "x": 4, "y": 0 }
+        ]
       }
     },
     "Volume": {
       "x": 317,
-      "y": 7,
+      "y": 5,
       "layers": {
-        "mute":   [{ "image_path": "assets/statusbar/mute.png", "x": 0, "y": 0, "recolor_palette": "gray" }],
-        "low":    [{ "image_path": "assets/statusbar/volume_low.png", "x": 0, "y": 0, "recolor_palette": "soft_white" }],
-        "medium": [{ "image_path": "assets/statusbar/volume_medium.png", "x": 0, "y": 0, "recolor_palette": "soft_white" }],
-        "high":   [{ "image_path": "assets/statusbar/volume_high.png", "x": 0, "y": 0, "recolor_palette": "soft_white" }]
+        "mute": [
+          { "image_path": "assets/statusbar/mute.png", "recolor_palette": "red", "x": 5, "y": 2 }
+        ],
+        "low": [
+          { "image_path": "assets/statusbar/volume_low.png", "x": 5, "y": 2, "recolor_palette": "green" }
+        ],
+        "medium": [
+          { "image_path": "assets/statusbar/volume_medium.png", "recolor_palette": "green", "x": 5, "y": 2 }
+        ],
+        "high": [
+          { "image_path": "assets/statusbar/volume_high.png", "recolor_palette": "green", "x": 5, "y": 2 }
+        ]
       }
     },
     "Brightness": {
       "x": 286,
-      "y": 7,
+      "y": 5,
       "layers": {
-        "15": [{ "image_path": "assets/statusbar/dashboard_brightness_2.png", "recolor_palette": "soft_white" }],
-        "25": [{ "image_path": "assets/statusbar/dashboard_brightness_3.png", "recolor_palette": "soft_white" }],
-        "50": [{ "image_path": "assets/statusbar/dashboard_brightness_5.png", "recolor_palette": "soft_white" }],
-        "75": [{ "image_path": "assets/statusbar/dashboard_brightness_7.png", "recolor_palette": "soft_white" }],
-        "100": [{ "image_path": "assets/statusbar/dashboard_brightness_8.png", "recolor_palette": "soft_white" }]
+        "15": [
+          { "image_path": "assets/statusbar/dashboard_brightness_2.png", "recolor_palette": "green", "x": 5, "y": 2 }
+        ],
+        "25": [
+          { "image_path": "assets/statusbar/dashboard_brightness_3.png", "recolor_palette": "green", "x": 5, "y": 2 }
+        ],
+        "50": [
+          { "image_path": "assets/statusbar/dashboard_brightness_5.png", "recolor_palette": "green", "x": 5, "y": 2 }
+        ],
+        "75": [
+          { "image_path": "assets/statusbar/dashboard_brightness_7.png", "y": 2, "x": 5, "recolor_palette": "green" }
+        ],
+        "100": [
+          { "image_path": "assets/statusbar/dashboard_brightness_8.png", "recolor_palette": "green", "y": 2, "x": 5 }
+        ]
       }
     },
     "Vibrate": {
       "x": 251,
-      "y": 9,
+      "y": 5,
       "layers": {
-        "on":  [{ "image_path": "assets/statusbar/vibrate.png", "x": 0, "y": 0, "recolor_palette": "soft_white" }],
-        "off": [{ "image_path": "assets/statusbar/vibrate.png", "x": 0, "y": 0, "recolor_palette": "gray" }]
+        "on": [
+          { "image_path": "assets/statusbar/vibrate.png", "x": 6, "y": 3 }
+        ],
+        "off": [
+          { "image_path": "assets/statusbar/vibrate.png", "x": 6, "y": 3, "recolor_palette": "green" }
+        ]
+      }
+    },
+    "WifiClient": {
+      "x": 217,
+      "y": 3,
+      "layers": {
+        "disabled": [
+          { "image_path": "assets/statusbar/wifi_off.png", "x": 14, "y": 4 }
+        ],
+        "connected": [
+          { "image_path": "assets/statusbar/wifi_on_connected.png", "x": 14, "y": 4 }
+        ],
+        "disconnected": [
+          { "image_path": "assets/statusbar/wifi_on_disconnected.png", "x": 14, "y": 4 }
+        ]
       }
     }
   }

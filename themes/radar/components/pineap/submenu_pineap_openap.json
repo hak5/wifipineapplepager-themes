@@ -2,7 +2,7 @@
   "screen_name": "pineap_openap_submenu",
   "status_bar": "default",
   "windowed_canvas": false,
-  "cache_canvases": true,
+  "cache_canvases": false,
   "button_map": {
     "a": "select",
     "b": "back",
@@ -15,11 +15,13 @@
     "layers": [
       { "image_path": "assets/pineap_bg.png", "x": 0, "y": 0 },
       { "image_path": "assets/divright.png", "x": 140, "y": 50 },
-      { "text": "PineAP",    "x": 10, "y": 50,  "text_color_palette": "gray" },
-      { "text": "Open AP",   "x": 10, "y": 85,  "text_color_palette": "yellow" },
-      { "text": "Evil WPA",  "x": 10, "y": 120, "text_color_palette": "gray" },
+      { "text": "PineAP", "x": 10, "y": 50, "text_color_palette": "gray" },
+      { "text": "Open AP", "x": 10, "y": 85, "text_color_palette": "yellow" },
+      { "text": "Evil WPA", "x": 10, "y": 120, "text_color_palette": "gray" },
       { "text": "SSID Pool", "x": 10, "y": 155, "text_color_palette": "gray" },
-      { "text": "Filters",   "x": 10, "y": 190, "text_color_palette": "gray" }
+      { "text": "Filters", "x": 10, "y": 190, "text_color_palette": "gray" },
+      { "image_path": "assets/help.png", "x": 447, "y": 27, "recolor_palette": "gray" },
+      { "text": ">", "x": 461, "y": 27, "text_size": "small", "text_color_palette": "gray" }
     ]
   },
   "pages": [
@@ -28,99 +30,77 @@
       "menu_items": [
         {
           "id": "Open AP",
-          "x":170,
-          "y":50,
+          "x": 170,
+          "y": 50,
           "layers": [
-            { "variable_name":  "$_OPEN_AP_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_OPEN_AP_ENABLED", "use_template": "toggle" },
             { "text": "Open AP", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_OPEN_AP_ENABLED", "use_template": "toggle" },
+            { "variable_name": "$_OPEN_AP_ENABLED", "use_template": "toggle" },
             { "text": "Open AP", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
-          "variable": "$_OPEN_AP_ENABLED"
+          "variable": "$_OPEN_AP_ENABLED",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Open AP"
+          }
         },
         {
           "id": "Hidden",
-          "x":170,
-          "y":85,
+          "x": 170,
+          "y": 85,
           "layers": [
-            { "variable_name":  "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
+            { "variable_name": "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
             { "text": "Hidden", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "variable_name":  "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
+            { "variable_name": "$_OPEN_AP_HIDDEN", "use_template": "toggle" },
             { "text": "Hidden", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "inline_toggle",
-          "variable": "$_OPEN_AP_HIDDEN"
+          "variable": "$_OPEN_AP_HIDDEN",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Hidden"
+          }
         },
         {
           "id": "Network Name",
-          "x":170,
-          "y":120,
+          "x": 170,
+          "y": 120,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "Network Name", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_string_dialog",
-          "variable": "$_OPEN_AP_SSID"
+          "variable": "$_OPEN_AP_SSID",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained Network Name"
+          }
         },
         {
           "id": "BSSID",
-          "x":170,
-          "y":155,
+          "x": 170,
+          "y": 155,
           "layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "BSSID Override", "x": 40, "text_color_palette": "blue" }
           ],
           "selected_layers": [
-            { "image_path": "assets/keyboard.png" },
+            { "image_path": "assets/keyboard.png", "x": 3, "y": 4 },
             { "text": "BSSID Override", "x": 40, "text_color_palette": "yellow" }
           ],
           "target": "edit_mac_dialog",
-          "variable": "$_OPEN_AP_BSSID"
+          "variable": "$_OPEN_AP_BSSID",
+          "button_map": {
+            "right": "target pineap_openap_submenu_explained BSSID"
+          }
         }
       ]
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
