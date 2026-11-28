@@ -1,0 +1,28 @@
+{
+  "screen_name": "message",
+  "status_bar": "black",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "select"
+  },
+  "background": {
+    "layers": [
+      { "image_path": "assets/dashboard/wargames_bg_updated.png", "x": 0, "y": 0 }
+    ],
+    "background_color": { "r": 0, "g": 0, "b": 0 }
+  },
+  "menu_items": [
+    {
+      "id": "dialog text",
+      "selected_layers": [
+        { "image_path": "assets/dashboard/hello.png", "x": 0, "y": 0 }
+      ]
+    }
+  ]
+}
