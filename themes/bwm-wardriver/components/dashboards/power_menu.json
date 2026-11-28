@@ -1,0 +1,160 @@
+{
+  "screen_name": "power_menu",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/valleytech_surfaces/power_menu_bg.png",
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Settings",
+          "x": 85,
+          "y": 65,
+          "target": "quick_settings",
+          "layers": [
+            {
+              "text": "Quick Settings",
+              "text_size": "medium",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "text": "Quick Settings",
+              "text_size": "medium",
+              "text_color_palette": "focus_ink"
+            }
+          ]
+        },
+        {
+          "id": "Lock Screen",
+          "x": 85,
+          "y": 89,
+          "target": "function_lock_screen",
+          "layers": [
+            {
+              "text": "Lock Screen",
+              "text_size": "medium",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "text": "Lock Screen",
+              "text_size": "medium",
+              "text_color_palette": "focus_ink"
+            }
+          ]
+        },
+        {
+          "id": "Lock Buttons",
+          "x": 85,
+          "y": 113,
+          "target": "function_lock_buttons",
+          "layers": [
+            {
+              "text": "Lock Buttons",
+              "text_size": "medium",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "text": "Lock Buttons",
+              "text_size": "medium",
+              "text_color_palette": "focus_ink"
+            }
+          ]
+        },
+        {
+          "id": "Nerd Stats",
+          "x": 85,
+          "y": 137,
+          "target": "inline_toggle",
+          "variable": "$_STATS_FOR_NERDS",
+          "layers": [
+            {
+              "text": "Nerd Stats",
+              "text_size": "medium",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "variable_name": "$_STATS_FOR_NERDS",
+              "x": -35,
+              "use_template": "toggle"
+            },
+            {
+              "text": "Nerd Stats",
+              "text_size": "medium",
+              "text_color_palette": "focus_ink"
+            }
+          ]
+        },
+        {
+          "id": "shutdown",
+          "x": 85,
+          "y": 161,
+          "target": "function_shutdown",
+          "layers": [
+            {
+              "text": "Shutdown",
+              "text_size": "medium",
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/valleytech_ui/menu_408x24.png",
+              "x": -53,
+              "y": -1
+            },
+            {
+              "text": "Shutdown",
+              "text_size": "medium",
+              "text_color_palette": "focus_ink"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
